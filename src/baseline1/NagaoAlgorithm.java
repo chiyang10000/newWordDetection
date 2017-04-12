@@ -77,7 +77,7 @@ public class NagaoAlgorithm {
 		for(int i = 1; i < leftPTable.size(); i++)
 			leftLTable[i] = coPrefixLength(leftPTable.get(i-1), leftPTable.get(i));
 
-		System.out.println("Info: [Nagao Algorithm Step 2]: having sorted PTable and counted left and right LTable");
+		//System.out.println("Info: [Nagao Algorithm Step 2]: having sorted PTable and counted left and right LTable");
 	}
 	//according to pTable and lTable, count statistical result: TF, neighbor distribution
 	private void countTFNeighbor(){
@@ -120,7 +120,7 @@ public class NagaoAlgorithm {
 				}
 			}
 		}
-		System.out.println("Info: [Nagao Algorithm Step 3]: having counted TF and Neighbor");
+		//System.out.println("Info: [Nagao Algorithm Step 3]: having counted TF and Neighbor");
 	}
 	//according to wordTFNeighbor, count MI of word
 	private double countMI(String word){
@@ -181,7 +181,7 @@ public class NagaoAlgorithm {
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
-		System.out.println("Info: [Nagao Algorithm Step 4]: having saved to file");
+		//System.out.println("Info: [Nagao Algorithm Step 4]: having saved to file");
 	}
 	//apply nagao algorithm to input file
 	public static void applyNagao(String[] inputs, String out, String stopList){
@@ -199,7 +199,7 @@ public class NagaoAlgorithm {
 				throw new RuntimeException();
 			}
 		}
-		System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
+		//System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
 		//step 2: sort PTable and count LTable
 		nagao.countLTable();
 		//step3: count TF and Neighbor
@@ -228,7 +228,7 @@ public class NagaoAlgorithm {
 				throw new RuntimeException();
 			}
 		}
-		System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
+		//System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
 		//step 2: sort PTable and count LTable
 		nagao.countLTable();
 		//step3: count TF and Neighbor
