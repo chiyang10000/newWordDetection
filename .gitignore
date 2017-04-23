@@ -1,0 +1,7 @@
+.idea
+out
+target
+tmp/*
+data/*.src
+data/*.ans
+data/basicWordList.txt

@@ -1,4 +1,6 @@
-package baseline1;
+package NagaoAlgorithm;
+
+import evaluate.Corpus;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -26,7 +28,7 @@ public class NagaoAlgorithm {
 	private Map<String, TFNeighbor> wordTFNeighbor;
 
 	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
-	private final static String stopwords = "的是都也";
+	private final static String stopwords = "的很了么呢是嘛都也于与在";
 
 	private NagaoAlgorithm(){
 		//default N = 5
@@ -183,31 +185,7 @@ public class NagaoAlgorithm {
 		}
 		//System.out.println("Info: [Nagao Algorithm Step 4]: having saved to file");
 	}
-	//apply nagao algorithm to input file
-	public static void applyNagao(String[] inputs, String out, String stopList){
-		NagaoAlgorithm nagao = new NagaoAlgorithm();
-		//step 1: add phrases to PTable
-		String line;
-		for(String in : inputs){
-			try {
-				BufferedReader br = new BufferedReader(new FileReader(in));
-				while((line = br.readLine()) != null){
-					nagao.addToPTable(line);
-				}
-				br.close();
-			} catch (IOException e) {
-				throw new RuntimeException();
-			}
-		}
-		//System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
-		//step 2: sort PTable and count LTable
-		nagao.countLTable();
-		//step3: count TF and Neighbor
-		nagao.countTFNeighbor();
-		//step4: save TF NeighborInfo and MI
-		nagao.saveTFNeighborInfoMI(out, stopList, "20,3,3,5".split(","));
-	}
-	public static void applyNagao(String[] inputs, String out, String stopList, int n, String filter){
+	public static void detect(String[] inputs, String out, String stopList, int n, String filter){
 		NagaoAlgorithm nagao = new NagaoAlgorithm();
 		nagao.setN(n);
 		String[] threshold = filter.split(",");
@@ -225,7 +203,7 @@ public class NagaoAlgorithm {
 				}
 				br.close();
 			} catch (IOException e) {
-				throw new RuntimeException();
+				e.printStackTrace();
 			}
 		}
 		//System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
@@ -239,10 +217,4 @@ public class NagaoAlgorithm {
 	private void setN(int n){
 		N = n;
 	}
-
-	public static void main(String[] args) {
-		String[] ins = {"E://test//ganfen.txt"};
-		applyNagao(ins, "E://test//out.txt", "E://test//stoplist.txt");
-	}
-
 }

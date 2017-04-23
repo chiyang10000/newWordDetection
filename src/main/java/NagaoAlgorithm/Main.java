@@ -1,4 +1,4 @@
-package baseline1;
+package NagaoAlgorithm;
 
 public class Main {
 

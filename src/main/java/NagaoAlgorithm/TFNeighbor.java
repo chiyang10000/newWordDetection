@@ -1,4 +1,4 @@
-package baseline1;
+package NagaoAlgorithm;
 
 import java.util.HashMap;
 import java.util.Map;
