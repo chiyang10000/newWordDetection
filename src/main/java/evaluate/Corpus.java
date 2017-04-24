@@ -103,8 +103,6 @@ public class Corpus {
 	public static void main(String... args) {
 		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
 		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
-		//extractNewWord(newWordFiles);// create test data
-		//convertSrcToBEMS("tmp3.txt", new String[]{"data/1_5000_1.segged.txt.src"});
-		//convertBEMSToSeg("data/train.bems", "tmp1.txt", "tmp2.txt");
+		extractNewWord(newWordFiles);// create test data
 	}
 }

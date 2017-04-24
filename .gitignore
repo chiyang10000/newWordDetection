@@ -1,8 +1,9 @@
 .idea
 out
 target
-tmp/*
+!tmp/readme.md
 data/*.src
 data/*.ans
+data/test
 data/basicWordList.txt
 *.log
