@@ -64,7 +64,8 @@ public class Corpus {
 				newWordList = new HashSet<>();
 				BufferedReader reader = new BufferedReader(new FileReader(newWordFile));
 				newWordFile = newWordFile.replaceAll("^.*/", "");
-				BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/" + newWordFile + ".src")), ansWriter = new BufferedWriter(new FileWriter("data/" + newWordFile + ".ans"));
+				BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".src")),
+						ansWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".ans"));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
 					String[] segs = tmp.split(" ");
@@ -180,9 +181,8 @@ public class Corpus {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			BufferedWriter writerSeg = new BufferedWriter(new FileWriter(segFile));
 			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(newWordFile));
-			String tmp = reader.readLine();
-			while (true) {
-				if (tmp == null) break;
+			String tmp;
+			while ( (tmp = reader.readLine()) !=null) {
 				if (tmp.length() == 0) {
 					writerSeg.newLine();
 					continue;
@@ -203,7 +203,6 @@ public class Corpus {
 					writerNewWord.append(word);
 					writerNewWord.newLine();
 				}
-				tmp = reader.readLine();
 			}
 			writerNewWord.close();
 			writerSeg.close();
@@ -215,10 +214,10 @@ public class Corpus {
 	public static void main(String... args) {
 		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
 		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
-		//extractNewWord(newWordFiles);
+		extractNewWord(newWordFiles);// create test data
 		//convertToTrainBEMS("data/train.bems", newWordFiles);
 		//convertToTrainBEMS("data/train0.bems", basicWordFiles);
-		convertSrcToBEMS("tmp3.txt", new String[]{"data/1_5000_1.segged.txt.src"});
+		//convertSrcToBEMS("tmp3.txt", new String[]{"data/1_5000_1.segged.txt.src"});
 		//convertBEMSToSeg("data/train.bems", "tmp1.txt", "tmp2.txt");
 	}
 }

@@ -1,6 +1,7 @@
 package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
+import singleCharacterCRF.singleCharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,10 @@ import java.util.HashSet;
  */
 public class Test {
 	static final Logger logger = LoggerFactory.getLogger("report");
+
+	public static void testOnSeg() {
+
+	}
 
 	public static void test(String golden, String ans) {
 		int hit = 0, select = 0, sum = 0;
@@ -46,7 +51,7 @@ public class Test {
 
 	public static void main(String... args) {
 		int counter = 0;
-		File[] files = new File("data").listFiles();
+		File[] files = new File("data/test").listFiles();
 		for (File file : files)
 			if (file.getName().matches(".*\\.src")) {
 				String inputFile = file.getAbsolutePath();
@@ -55,16 +60,21 @@ public class Test {
 
 				counter++;
 				logger.info("Test {}", counter);
+
+				/*
 				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm", inputFile.replaceAll("^.*\\\\", ""));
 				NagaoAlgorithm.detect(new String[]{inputFile}, outputFile, "data/basicWordList.txt", 10, "10,3,3,5");
 				Test.test(answerFile, outputFile);
+				*/
 
 				System.out.println("-------");
-				outputFile = outputFile = String.format("tmp/%s_%s", "singleCharacterCRF", inputFile.replaceAll("^.*\\\\", ""));
-				//singleCharacterCRF.detect(inputFile, outputFile);
-				//Test.test(answerFile, outputFile);
+
+				outputFile = String.format("tmp/%s_%s", "singleCharacterCRF.", inputFile.replaceAll("^.*\\\\", ""));
+				singleCharacterCRF.detect(inputFile, outputFile);
+				Test.test(answerFile, outputFile);
 
 				System.out.println();
+				//if (counter >0) break;
 			}
 	}
 }
