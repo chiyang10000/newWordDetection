@@ -99,8 +99,8 @@ public class singleCharacterCRF extends CrfWrapper {
 	}
 	public static void main(String... args) {
 		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
-		convertToTrainBEMS("data/train0.bems", basicWordFiles);
+		convertToTrainBEMS("tmp/train0.bems", basicWordFiles);
 		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
-		convertToTrainBEMS("data/train.bems", newWordFiles);
+		convertToTrainBEMS("tmp/train.bems", newWordFiles);
 	}
 }

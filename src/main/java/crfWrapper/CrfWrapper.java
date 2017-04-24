@@ -13,7 +13,7 @@ import java.util.HashSet;
 abstract public class CrfWrapper {
 	private static Logger logger = LoggerFactory.getLogger(CrfWrapper.class);
 	static String model = new File("data/model/singleCharacterCRF.model").getAbsolutePath();
-	static String crf_test = new File("lib/crf_test").getAbsolutePath();
+	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String shell = "";
 	static {
 		if (System.getProperty("os.name").contains("Win") ) {
