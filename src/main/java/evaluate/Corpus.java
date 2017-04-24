@@ -2,6 +2,7 @@ package evaluate;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import singleCharacterCRF.singleCharacterCRF;
 
 import java.io.*;
 import java.util.HashSet;
@@ -93,130 +94,16 @@ public class Corpus {
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含英文和数字的不算
-		if (!word.matches("[\\pP\\p{Punct}]") && !word.matches(".*[\\d\\w]+.*"))
+		if (!word.matches(".*[\\pP]+.*") && !word.matches(".*[\\d\\w]+.*"))
 			if (!basicWordList.contains(word))
 				return true;
 		return false;
 	}
 
-	/**
-	 * @param inputFiles
-	 */
-	public static void convertToTrainBEMS(String outputFile, String... inputFiles) {
-		try {
-			for (String inputFile : inputFiles) {
-				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-				String tmp;
-				while ((tmp = reader.readLine()) != null) {
-					if (tmp.trim().length() == 0) continue;
-					String[] segs = tmp.split(" +");
-					for (String seg : segs) {
-						//System.out.println(seg);
-						String word = (seg.split("/")[0]);
-						if (word.length() == 0) {
-							writer.append(String.format("%s\t%s", '/', 'S'));
-							writer.newLine();
-						}// 两个斜线
-						else if (word.length() == 1) {
-							writer.append(String.format("%s\t%s", word.charAt(0), 'S'));
-							writer.newLine();
-						} else {
-							writer.append(String.format("%s\t%s", word.charAt(0), 'B'));
-							writer.newLine();
-							for (int i = 1; i < word.length() - 1; i++) {
-								writer.append(String.format("%s\t%s", word.charAt(i), 'M'));
-								writer.newLine();
-							}
-							writer.append(String.format("%s\t%s", word.charAt(word.length() - 1), 'E'));
-							writer.newLine();
-						}
-					}
-					writer.append(' ');
-					writer.newLine();
-				}
-				writer.close();
-			}
-		} catch (java.io.IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static void convertSrcToBEMS(String outputFile, String... inputFiles) {
-		//
-		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			BufferedReader reader;
-			String tmp;
-			for (String inputFile: inputFiles) {
-				reader = new BufferedReader(new FileReader(inputFile));
-				while ((tmp = reader.readLine()) !=null) {
-					String[] tmps = tmp.split("[，。]");
-					int offset = 0;
-					for (String sentence: tmps) {
-						offset += sentence.length() + 1;
-						//考虑没有逗号和句号的行
-						for (int i = 0; i < sentence.length(); i++){
-							writer.append(sentence.charAt(i));
-							writer.newLine();
-						}
-						if (offset - 1 < tmp.length()) {
-							writer.append(tmp.charAt(offset - 1));
-							writer.newLine();
-						}
-						writer.newLine();
-					}
-				}
-			}
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static void convertBEMSToSeg(String inputFile, String segFile, String newWordFile) {
-		//write segFile and new word File
-		HashSet<String> newWordList = new HashSet<>();
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			BufferedWriter writerSeg = new BufferedWriter(new FileWriter(segFile));
-			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(newWordFile));
-			String tmp;
-			while ( (tmp = reader.readLine()) !=null) {
-				if (tmp.length() == 0) {
-					writerSeg.newLine();
-					continue;
-				}
-				StringBuilder wordBuffer = new StringBuilder();
-				wordBuffer.append(tmp.split("\t", 2)[0]);
-				if (tmp.charAt(tmp.length() - 1) == 'B') {
-					do {
-						tmp = reader.readLine();
-						wordBuffer.append(tmp.split("\t", 2)[0]);
-					}while (tmp.charAt(tmp.length() - 1) != 'E');
-				}
-
-				String word = wordBuffer.toString();
-				writerSeg.append(word + ' ');
-				if (isNewWord(word) && !newWordList.contains(word)) {
-					newWordList.add(word);
-					writerNewWord.append(word);
-					writerNewWord.newLine();
-				}
-			}
-			writerNewWord.close();
-			writerSeg.close();
-		} catch (java.io.IOException e) {
-			e.printStackTrace();
-		}
-	}
-
 	public static void main(String... args) {
 		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
 		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
-		extractNewWord(newWordFiles);// create test data
-		//convertToTrainBEMS("data/train.bems", newWordFiles);
-		//convertToTrainBEMS("data/train0.bems", basicWordFiles);
+		//extractNewWord(newWordFiles);// create test data
 		//convertSrcToBEMS("tmp3.txt", new String[]{"data/1_5000_1.segged.txt.src"});
 		//convertBEMSToSeg("data/train.bems", "tmp1.txt", "tmp2.txt");
 	}
