@@ -5,3 +5,4 @@ tmp/*
 data/*.src
 data/*.ans
 data/basicWordList.txt
+*.log
