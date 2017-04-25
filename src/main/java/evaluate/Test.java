@@ -69,7 +69,7 @@ public class Test {
 
 				System.out.println("-------");
 
-				outputFile = String.format("tmp/%s_%s", "singleCharacterCRF.", inputFile.replaceAll("^.*\\\\", ""));
+				outputFile = String.format("tmp/%s_%s", "singleCharacterCRF.", file.getName());
 				singleCharacterCRF.detect(inputFile, outputFile);
 				Test.test(answerFile, outputFile);
 

@@ -17,7 +17,7 @@ public class Corpus {
 
 	static {
 		//basic word list comes from 人民日报语料
-		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
+		String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
 		for (String basicWordFile : basicWordFiles) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(basicWordFile));
@@ -93,16 +93,17 @@ public class Corpus {
 	}
 
 	public static boolean isNewWord(String word) {
-		//标点符号，含英文和数字的不算
-		if (!word.matches(".*[\\pP]+.*") && !word.matches(".*[\\d\\w]+.*"))
-			if (!basicWordList.contains(word))
-				return true;
+		//标点符号，含字母和数字的不算
+		if (word.matches(".*[\\p{IsPunct}\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*"))
+			return false;
+		if (!basicWordList.contains(word))
+			return true;
 		return false;
 	}
 
 	public static void main(String... args) {
-		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
-		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
+		String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
+				"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
 		extractNewWord(newWordFiles);// create test data
 	}
 }

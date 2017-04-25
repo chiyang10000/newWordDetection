@@ -9,53 +9,61 @@ public class TFNeighbor {
 	private Map<Character, Integer> leftNeighbor;
 	private Map<Character, Integer> rightNeighbor;
 
-	TFNeighbor(){
+	TFNeighbor() {
 		leftNeighbor = new HashMap<Character, Integer>();
 		rightNeighbor = new HashMap<Character, Integer>();
 	}
+
 	//add word to leftNeighbor
-	public void addToLeftNeighbor(char word){
+	public void addToLeftNeighbor(char word) {
 		//leftNeighbor.put(word, 1 + leftNeighbor.getOrDefault(word, 0));
 		Integer number = leftNeighbor.get(word);
-		leftNeighbor.put(word, number == null? 1: 1+number);
+		leftNeighbor.put(word, number == null ? 1 : 1 + number);
 	}
+
 	//add word to rightNeighbor
-	public void addToRightNeighbor(char word){
+	public void addToRightNeighbor(char word) {
 		//rightNeighbor.put(word, 1 + rightNeighbor.getOrDefault(word, 0));
 		Integer number = rightNeighbor.get(word);
-		rightNeighbor.put(word, number == null? 1: 1+number);
+		rightNeighbor.put(word, number == null ? 1 : 1 + number);
 	}
+
 	//increment tf
-	public void incrementTF(){
+	public void incrementTF() {
 		tf++;
 	}
-	public int getLeftNeighborNumber(){
+
+	public int getLeftNeighborNumber() {
 		return leftNeighbor.size();
 	}
-	public int getRightNeighborNumber(){
+
+	public int getRightNeighborNumber() {
 		return rightNeighbor.size();
 	}
-	public double getLeftNeighborEntropy(){
+
+	public double getLeftNeighborEntropy() {
 		double entropy = 0;
 		int sum = 0;
-		for(int number : leftNeighbor.values()){
-			entropy += number*Math.log(number);
+		for (int number : leftNeighbor.values()) {
+			entropy += number * Math.log(number);
 			sum += number;
 		}
-		if(sum == 0)  return 0;
-		return Math.log(sum) - entropy/sum;
+		if (sum == 0) return 0;
+		return Math.log(sum) - entropy / sum;
 	}
-	public double getRightNeighborEntropy(){
+
+	public double getRightNeighborEntropy() {
 		double entropy = 0;
 		int sum = 0;
-		for(int number : rightNeighbor.values()){
-			entropy += number*Math.log(number);
+		for (int number : rightNeighbor.values()) {
+			entropy += number * Math.log(number);
 			sum += number;
 		}
-		if(sum == 0)  return 0;
-		return Math.log(sum) - entropy/sum;
+		if (sum == 0) return 0;
+		return Math.log(sum) - entropy / sum;
 	}
-	public int getTF(){
+
+	public int getTF() {
 		return tf;
 	}
 }

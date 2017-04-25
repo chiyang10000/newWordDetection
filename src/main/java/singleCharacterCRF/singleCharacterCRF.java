@@ -1,36 +1,42 @@
 package singleCharacterCRF;
 
-import crfWrapper.CrfWrapper;
+import Config.Config;
+import crfWrapper.crfppWrapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 
 /**
  * Created by wan on 4/24/2017.
  */
-public class singleCharacterCRF extends CrfWrapper {
+public class singleCharacterCRF extends crfppWrapper {
+	private static final Logger logger = LoggerFactory.getLogger(singleCharacterCRF.class);
+
 	public static void detect(String inputFile, String outputFile) {
-		String bemsInputFile = "tmp/singleCharacterCRF.bems.in.txt";
+		//String bemsInputFile = "tmp/singleCharacterCRF.bems.in.txt";
+		String bemsInputFile = inputFile + ".txt";
 		String bemsOutputFile = "tmp/singleCharacterCRF.bems.out.txt";
 		convertSrcToBEMS(bemsInputFile, inputFile);
-		decode(bemsInputFile,bemsOutputFile);
+		decode(bemsInputFile, bemsOutputFile);
 		convertBEMSToSeg(bemsOutputFile, "tmp/singleCharacterCRF.txt", outputFile);
 	}
 
 	public static void convertSrcToBEMS(String outputFile, String... inputFiles) {
-		//
+		logger.debug("convert {} to {}", inputFiles, outputFile);
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 			BufferedReader reader;
 			String tmp;
-			for (String inputFile: inputFiles) {
+			for (String inputFile : inputFiles) {
 				reader = new BufferedReader(new FileReader(inputFile));
-				while ((tmp = reader.readLine()) !=null) {
-					String[] tmps = tmp.split("\\pP");
+				while ((tmp = reader.readLine()) != null) {
+					String[] tmps = tmp.split(Config.seperatorRegx);
 					int offset = 0;
-					for (String sentence: tmps) {
+					for (String sentence : tmps) {
 						offset += sentence.length() + 1;
 						//考虑没有逗号和句号的行
-						for (int i = 0; i < sentence.length(); i++){
+						for (int i = 0; i < sentence.length(); i++) {
 							writer.append(sentence.charAt(i));
 							writer.newLine();
 						}
@@ -53,6 +59,7 @@ public class singleCharacterCRF extends CrfWrapper {
 	 * @param inputFiles
 	 */
 	public static void convertToTrainBEMS(String outputFile, String... inputFiles) {
+		logger.debug("convert {} to {}", inputFiles, outputFile);
 		try {
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -71,11 +78,11 @@ public class singleCharacterCRF extends CrfWrapper {
 							writer.newLine();
 						}// 两个斜线
 						else if (word.length() == 1) {
-							if (word.matches("\\pP"))
+							if (word.matches(Config.seperatorRegx))
 								writer.newLine();
 							writer.append(String.format("%s\t%s", word.charAt(0), 'S'));
 							writer.newLine();
-							if (word.matches("\\pP"))
+							if (word.matches(Config.seperatorRegx))
 								writer.newLine();
 						} else {
 							writer.append(String.format("%s\t%s", word.charAt(0), 'B'));
@@ -97,10 +104,15 @@ public class singleCharacterCRF extends CrfWrapper {
 			e.printStackTrace();
 		}
 	}
+
 	public static void main(String... args) {
-		String[] basicWordFiles = {"data/2000-01-粗标.txt", "data/2000-02-粗标.txt", "data/2000-03-粗标.txt"};
-		convertToTrainBEMS("tmp/train0.bems", basicWordFiles);
-		String[] newWordFiles = {"data/1_5000_1.segged.txt", "data/1_5000_2.segged.txt", "data/1_5000_3.segged.txt", "data/1_5000_4.segged.txt", "data/1_5000_5.segged.txt"};
-		convertToTrainBEMS("tmp/train.bems", newWordFiles);
+		String trainData = "tmp/singleCharacterCRF.crf";
+		String template = "data/crf-template/singleCharacterCRF.template";
+		String model = "data/model/singleCharacterCRF.model";
+
+		String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
+		convertToTrainBEMS(trainData, basicWordFiles);
+
+		train(template, trainData, model);
 	}
 }
