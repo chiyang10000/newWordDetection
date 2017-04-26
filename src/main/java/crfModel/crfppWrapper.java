@@ -1,4 +1,4 @@
-package crfWrapper;
+package crfModel;
 
 import evaluate.Corpus;
 import org.slf4j.Logger;
@@ -12,7 +12,6 @@ import java.util.HashSet;
  */
 abstract public class crfppWrapper {
 	private static Logger logger = LoggerFactory.getLogger(crfppWrapper.class);
-	static String model = new File("data/model/singleCharacterCRF.model").getAbsolutePath();
 	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	static String shell = "";
@@ -23,12 +22,9 @@ abstract public class crfppWrapper {
 			crf_test += ".exe";
 			crf_learn += ".exe";
 		}
-		//windows 和 linux这里有区别
+		//windows 和 unix这里有区别
 		if (!new File(crf_test).exists())
 			logger.error("{} not exits!", crf_test);
-		if (!new File(model).exists())
-			logger.error("{} not exits!", model);
-
 	}
 
 	private static void runCommand(String cmd) {
@@ -54,8 +50,8 @@ abstract public class crfppWrapper {
 		}
 	}
 
-	public static void decode(String bemsInputFile, String bemsOutputFile) {
-		String cmd = String.join(" ", shell, crf_test, "-m", model, bemsInputFile, "-o", bemsOutputFile);
+	public static void decode(String modelFile, String bemsInputFile, String bemsOutputFile) {
+		String cmd = String.join(" ", shell, crf_test, "-m", modelFile, bemsInputFile, "-o", bemsOutputFile);
 		runCommand(cmd);
 	}
 
@@ -63,6 +59,12 @@ abstract public class crfppWrapper {
 		String cmd = String.join(" ", shell, crf_learn, template, trainData, model, "-t");
 		runCommand(cmd);
 	}
+
+	/*
+	abstract public void convertLabelToRes();
+	abstract public void convertToTrain();
+	abstract public void convertSrcToLabel();
+	*/
 
 	public static void convertBEMSToSeg(String inputFile, String segFile, String newWordFile) {
 		//write segFile and new word File
@@ -97,6 +99,7 @@ abstract public class crfppWrapper {
 			writerNewWord.close();
 			writerSeg.close();
 		} catch (java.io.IOException e) {
+			logger.error("err!");
 			e.printStackTrace();
 		}
 	}

@@ -1,38 +1,31 @@
 package NagaoAlgorithm;
 
+import Config.Config;
 import evaluate.Corpus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 
 public class NagaoAlgorithm {
 
+	static private Logger logger = LoggerFactory.getLogger(NagaoAlgorithm.class);
 	private int N;
 
 	private List<String> leftPTable;
 	private int[] leftLTable;
 	private List<String> rightPTable;
 	private int[] rightLTable;
-	private double wordNumber;
+	private double wordNumber;// 语料的总字数
 
-	private Map<String, TFNeighbor> wordTFNeighbor;
+	public Map<String, TFNeighbor> wordTFNeighbor;
 
 	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
 	private final static String stopwords = "的很了么呢是嘛都也于与在";
 
-	private NagaoAlgorithm() {
-		//default N = 5
-		N = 5;
+	public NagaoAlgorithm() {
+		N = 20;
 		leftPTable = new ArrayList<String>();
 		rightPTable = new ArrayList<String>();
 		wordTFNeighbor = new HashMap<String, TFNeighbor>();
@@ -40,10 +33,7 @@ public class NagaoAlgorithm {
 
 	//reverse phrase
 	private String reverse(String phrase) {
-		StringBuilder reversePhrase = new StringBuilder();
-		for (int i = phrase.length() - 1; i >= 0; i--)
-			reversePhrase.append(phrase.charAt(i));
-		return reversePhrase.toString();
+		return new StringBuffer(phrase).reverse().toString();
 	}
 
 	//co-prefix length of s1 and s2
@@ -59,13 +49,16 @@ public class NagaoAlgorithm {
 	//add substring of line to pTable
 	private void addToPTable(String line) {
 		//split line according to consecutive none Chinese character
-		String[] phrases = line.split("[^\u4E00-\u9FA5]+|[" + stopwords + "]");
+		String[] phrases = line.split(Config.sepSentenceRegex + "|[" + stopwords + "]");
+		//String[] phrases = {line};//line.split("[^\u4E00-\u9FA5]+|[" + stopwords + "]");
 		for (String phrase : phrases) {
 			for (int i = 0; i < phrase.length(); i++)
 				rightPTable.add(phrase.substring(i));
+
 			String reversePhrase = reverse(phrase);
 			for (int i = 0; i < reversePhrase.length(); i++)
 				leftPTable.add(reversePhrase.substring(i));
+
 			wordNumber += phrase.length();
 		}
 	}
@@ -74,15 +67,15 @@ public class NagaoAlgorithm {
 	private void countLTable() {
 		Collections.sort(rightPTable);
 		rightLTable = new int[rightPTable.size()];
+		rightLTable[0] = 0;
 		for (int i = 1; i < rightPTable.size(); i++)
 			rightLTable[i] = coPrefixLength(rightPTable.get(i - 1), rightPTable.get(i));
 
 		Collections.sort(leftPTable);
 		leftLTable = new int[leftPTable.size()];
+		leftLTable[0] = 0;
 		for (int i = 1; i < leftPTable.size(); i++)
 			leftLTable[i] = coPrefixLength(leftPTable.get(i - 1), leftPTable.get(i));
-
-		//System.out.println("Info: [Nagao Algorithm Step 2]: having sorted PTable and counted left and right LTable");
 	}
 
 	//according to pTable and lTable, count statistical result: TF, neighbor distribution
@@ -111,7 +104,7 @@ public class NagaoAlgorithm {
 		for (int pIndex = 0; pIndex < leftPTable.size(); pIndex++) {
 			String phrase = leftPTable.get(pIndex);
 			for (int length = 1 + leftLTable[pIndex]; length <= N && length <= phrase.length(); length++) {
-				String word = reverse(phrase.substring(0, length));
+				String word = reverse(phrase.substring(0, length));// 翻转了两次得到原来的词
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 				if (phrase.length() > length)
 					tfNeighbor.addToLeftNeighbor(phrase.charAt(length));
@@ -131,7 +124,7 @@ public class NagaoAlgorithm {
 	private double countMI(String word) {
 		if (word.length() <= 1) return 0;
 		double coProbability = wordTFNeighbor.get(word).getTF() / wordNumber;
-		List<Double> mi = new ArrayList<Double>(word.length());
+		List<Double> mi = new ArrayList<>(word.length());
 		for (int pos = 1; pos < word.length(); pos++) {
 			String leftPart = word.substring(0, pos);
 			String rightPart = word.substring(pos);
@@ -142,35 +135,53 @@ public class NagaoAlgorithm {
 		return Collections.min(mi);
 	}
 
-	//save TF, (left and right) neighbor number, neighbor entropy, mutual information
-	private void saveTFNeighborInfoMI(String out, String stopList, String[] threshold) {
-		try {
-			//read stop words file
-			Set<String> stopWords = new HashSet<String>();
-			BufferedReader br = new BufferedReader(new FileReader(stopList));
-			String line;
-			while ((line = br.readLine()) != null) {
-				if (line.length() > 1)
-					stopWords.add(line);
+	private void saveTFNeighborInfoMI(String out) {
+	}
+
+	public void scan(String[] inputFiles) {
+		String line;
+		for (String inputFile : inputFiles) {
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+				while ((line = reader.readLine()) != null) {
+					// todo 用标点分割每一句。
+					addToPTable(line);
+				}
+				reader.close();
+			} catch (IOException e) {
+				logger.error("scan [{}] error!", inputFiles);
+				e.printStackTrace();
 			}
-			br.close();
+		}
+		countLTable();
+		countTFNeighbor();
+	}
+
+	public void detect(String[] inputs, String out, int n, int thresholdTF, double thresholdMI,
+					   double thresholdNeighborEntropy) {
+		NagaoAlgorithm nagao = this;
+		nagao.setN(n);
+		nagao.scan(inputs);
+
+		try {
 			//output words TF, neighbor info, MI
 			BufferedWriter bw = new BufferedWriter(new FileWriter(out));
-			for (Map.Entry<String, TFNeighbor> entry : wordTFNeighbor.entrySet()) {
-				if (entry.getKey().length() <= 1 || stopWords.contains(entry.getKey())) continue;
-				TFNeighbor tfNeighbor = entry.getValue();
-
+			for (String word : nagao.wordTFNeighbor.keySet()) {
+				if (word.length() <= 1 || !Corpus.isNewWord(word))
+					continue;
+				TFNeighbor tfNeighbor = nagao.wordTFNeighbor.get(word);
 
 				int tf, leftNeighborNumber, rightNeighborNumber;
 				double mi;
 				tf = tfNeighbor.getTF();
 				leftNeighborNumber = tfNeighbor.getLeftNeighborNumber();
 				rightNeighborNumber = tfNeighbor.getRightNeighborNumber();
-				mi = countMI(entry.getKey());
-				if (tf > Integer.parseInt(threshold[0]) && leftNeighborNumber > Integer.parseInt(threshold[1]) &&
-						rightNeighborNumber > Integer.parseInt(threshold[2]) && mi > Integer.parseInt(threshold[3])) {
+				mi = nagao.countMI(word);
+
+				if (tf > thresholdTF && tfNeighbor.getNeighborEntropy() > thresholdNeighborEntropy  && mi >
+						thresholdMI) {
 					StringBuilder sb = new StringBuilder();
-					sb.append(entry.getKey());
+					sb.append(word);
 					/*
 					sb.append(",").append(tf);
 					sb.append(",").append(leftNeighborNumber);
@@ -187,37 +198,6 @@ public class NagaoAlgorithm {
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
-		//System.out.println("Info: [Nagao Algorithm Step 4]: having saved to file");
-	}
-
-	public static void detect(String[] inputs, String out, String stopList, int n, String filter) {
-		NagaoAlgorithm nagao = new NagaoAlgorithm();
-		nagao.setN(n);
-		String[] threshold = filter.split(",");
-		if (threshold.length != 4) {
-			System.out.println("ERROR: filter must have 4 numbers, seperated with ',' ");
-			return;
-		}
-		//step 1: add phrases to PTable
-		String line;
-		for (String in : inputs) {
-			try {
-				BufferedReader br = new BufferedReader(new FileReader(in));
-				while ((line = br.readLine()) != null) {
-					nagao.addToPTable(line);
-				}
-				br.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		//System.out.println("Info: [Nagao Algorithm Step 1]: having added all left and right substrings to PTable");
-		//step 2: sort PTable and count LTable
-		nagao.countLTable();
-		//step3: count TF and Neighbor
-		nagao.countTFNeighbor();
-		//step4: save TF NeighborInfo and MI
-		nagao.saveTFNeighborInfoMI(out, stopList, threshold);
 	}
 
 	private void setN(int n) {

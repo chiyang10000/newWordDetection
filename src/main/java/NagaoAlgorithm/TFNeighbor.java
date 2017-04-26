@@ -1,8 +1,12 @@
 package NagaoAlgorithm;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 统计左右字频, 自己的频率
+ */
 public class TFNeighbor {
 
 	private int tf;
@@ -61,6 +65,10 @@ public class TFNeighbor {
 		}
 		if (sum == 0) return 0;
 		return Math.log(sum) - entropy / sum;
+	}
+
+	public double getNeighborEntropy() {
+		return Math.min(getLeftNeighborEntropy(), getRightNeighborEntropy());
 	}
 
 	public int getTF() {

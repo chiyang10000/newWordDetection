@@ -1,7 +1,7 @@
 package evaluate;
 
+import crfModel.singleCharacterCRF;
 import NagaoAlgorithm.NagaoAlgorithm;
-import singleCharacterCRF.singleCharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +18,7 @@ public class Test {
 	static final Logger logger = LoggerFactory.getLogger("report");
 
 	public static void testOnSeg() {
+		// todo
 
 	}
 
@@ -61,17 +62,19 @@ public class Test {
 				counter++;
 				logger.info("Test {}", counter);
 
-				/*
-				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm", inputFile.replaceAll("^.*\\\\", ""));
-				NagaoAlgorithm.detect(new String[]{inputFile}, outputFile, "data/basicWordList.txt", 10, "10,3,3,5");
+				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm.", file.getName());
+				NagaoAlgorithm nagao = new NagaoAlgorithm();
+				nagao.detect(new String[]{inputFile}, outputFile, 10, 10, 3,  1.5);
 				Test.test(answerFile, outputFile);
-				*/
 
 				System.out.println("-------");
 
-				outputFile = String.format("tmp/%s_%s", "singleCharacterCRF.", file.getName());
+				/*
+				outputFile = String.format("tmp/%s_%s", "crfModel.", file.getName());
 				singleCharacterCRF.detect(inputFile, outputFile);
+				Corpus.addWordInfo(outputFile, outputFile+".tmp", nagao);
 				Test.test(answerFile, outputFile);
+				*/
 
 				System.out.println();
 				//if (counter >0) break;

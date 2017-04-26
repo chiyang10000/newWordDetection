@@ -1,10 +1,12 @@
 package evaluate;
 
+import Config.Config;
+import NagaoAlgorithm.NagaoAlgorithm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import singleCharacterCRF.singleCharacterCRF;
 
 import java.io.*;
+import java.text.MessageFormat;
 import java.util.HashSet;
 
 /**
@@ -17,19 +19,18 @@ public class Corpus {
 
 	static {
 		//basic word list comes from 人民日报语料
-		String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
-		for (String basicWordFile : basicWordFiles) {
+		for (String basicWordFile : Config.basicWordFiles) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(basicWordFile));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
-					String[] segs = tmp.split(" ");
+					String[] segs = tmp.split(Config.sepWordRegex);
 					for (String word : segs)
-						basicWordList.add(word.split("/")[0]);
+						basicWordList.add(word.split(Config.sepPosRegex)[0]);
 				}
 			} catch (java.io.IOException e) {
 				e.printStackTrace();
-				System.err.println("reading file error");
+				logger.error("Reading {} err!", basicWordFile);
 			}
 		}
 		for (String word : basicWordList) {
@@ -49,6 +50,7 @@ public class Corpus {
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+			logger.info("err");
 		}
 	}
 
@@ -58,20 +60,20 @@ public class Corpus {
 	 *
 	 * @param newWordFiles
 	 */
-	public static void extractNewWord(String... newWordFiles) {
+	public static void extractNewWord(String[] newWordFiles) {
 		HashSet<String> newWordList;
 		try {
 			for (String newWordFile : newWordFiles) {
 				newWordList = new HashSet<>();
 				BufferedReader reader = new BufferedReader(new FileReader(newWordFile));
-				newWordFile = newWordFile.replaceAll("^.*/", "");
+				newWordFile = newWordFile.replaceAll("^.*/", "");// 保留单独的文件名
 				BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".src")),
 						ansWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".ans"));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
-					String[] segs = tmp.split(" ");
+					String[] segs = tmp.split(Config.sepWordRegex);
 					for (String seg : segs) {
-						String word = (seg.split("/")[0]);
+						String word = (seg.split(Config.sepPosRegex)[0]);
 						srcWriter.append(word);
 						if (isNewWord(word)) {
 							if (!newWordList.contains(word)) {
@@ -88,22 +90,37 @@ public class Corpus {
 				ansWriter.close();
 			}
 		} catch (java.io.IOException e) {
+			logger.error("err!");
 			e.printStackTrace();
 		}
 	}
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含字母和数字的不算
-		if (word.matches(".*[\\p{IsPunct}\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*"))
+		if (word.matches(Config.newWordExcludeRegex))
 			return false;
 		if (!basicWordList.contains(word))
 			return true;
 		return false;
 	}
 
+	public static void addWordInfo(String wordFile, String outputFile, NagaoAlgorithm nago) {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			String tmp;
+			while ((tmp = reader.readLine()) != null) {
+				logger.info(tmp);
+				writer.append(String.format("%s\t%d", tmp, nago.wordTFNeighbor.get(tmp).getTF()));
+				writer.newLine();
+			}
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static void main(String... args) {
-		String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
-				"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
-		extractNewWord(newWordFiles);// create test data
+		extractNewWord(Config.newWordFiles);// create test data
 	}
 }
