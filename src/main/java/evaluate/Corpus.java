@@ -97,7 +97,7 @@ public class Corpus {
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含字母和数字的不算
-		if (word.matches(Config.newWordExcludeRegex))
+		if (word.matches(Config.newWordExcludeRegex) )
 			return false;
 		if (!basicWordList.contains(word))
 			return true;
@@ -110,8 +110,11 @@ public class Corpus {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 			String tmp;
 			while ((tmp = reader.readLine()) != null) {
-				logger.info(tmp);
-				writer.append(String.format("%s\t%d", tmp, nago.wordTFNeighbor.get(tmp).getTF()));
+				//logger.info(tmp);
+				int tf = 0;
+				if (nago.wordTFNeighbor.containsKey(tmp))
+					tf = nago.wordTFNeighbor.get(tmp).getTF();
+				writer.append(String.format("%s\t%d", tmp, tf));
 				writer.newLine();
 			}
 			writer.close();

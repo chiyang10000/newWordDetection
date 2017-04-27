@@ -49,7 +49,7 @@ public class NagaoAlgorithm {
 	//add substring of line to pTable
 	private void addToPTable(String line) {
 		//split line according to consecutive none Chinese character
-		String[] phrases = line.split(Config.sepSentenceRegex + "|[" + stopwords + "]");
+		String[] phrases = line.split(Config.sepSentenceRegex);// + "|[" + stopwords + "]");
 		//String[] phrases = {line};//line.split("[^\u4E00-\u9FA5]+|[" + stopwords + "]");
 		for (String phrase : phrases) {
 			for (int i = 0; i < phrase.length(); i++)

@@ -62,19 +62,19 @@ public class Test {
 				counter++;
 				logger.info("Test {}", counter);
 
+
 				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm.", file.getName());
 				NagaoAlgorithm nagao = new NagaoAlgorithm();
-				nagao.detect(new String[]{inputFile}, outputFile, 10, 10, 3,  1.5);
+				nagao.detect(new String[]{inputFile}, outputFile, 20, 10, 3,  1.5);
 				Test.test(answerFile, outputFile);
 
 				System.out.println("-------");
+				Corpus.addWordInfo(answerFile, "tmp/" + file.getName(), nagao);
 
-				/*
 				outputFile = String.format("tmp/%s_%s", "crfModel.", file.getName());
 				singleCharacterCRF.detect(inputFile, outputFile);
 				Corpus.addWordInfo(outputFile, outputFile+".tmp", nagao);
 				Test.test(answerFile, outputFile);
-				*/
 
 				System.out.println();
 				//if (counter >0) break;

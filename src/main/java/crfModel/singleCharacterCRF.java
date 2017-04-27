@@ -12,7 +12,7 @@ import java.io.*;
 public class singleCharacterCRF extends crfppWrapper {
 	private static final Logger logger = LoggerFactory.getLogger(singleCharacterCRF.class);
 	static String trainData = "tmp/crfModel.crf";
-	static String template = "data/crf-template/crfModel.template";
+	static String template = "data/crf-template/singleCharacterCRF.template";
 	static String model = "data/model/singleCharacterCRF.model";
 
 	public static void detect(String inputFile, String outputFile) {
