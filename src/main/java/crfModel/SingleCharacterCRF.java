@@ -1,29 +1,27 @@
 package crfModel;
 
 import Config.Config;
+import evaluate.Corpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.util.HashSet;
 
 /**
  * Created by wan on 4/24/2017.
  */
-public class singleCharacterCRF extends crfppWrapper {
-	private static final Logger logger = LoggerFactory.getLogger(singleCharacterCRF.class);
+public class SingleCharacterCRF extends crfppWrapper {
+	private static final Logger logger = LoggerFactory.getLogger(SingleCharacterCRF.class);
 	static String trainData = "tmp/crfModel.crf";
-	static String template = "data/crf-template/singleCharacterCRF.template";
-	static String model = "data/model/singleCharacterCRF.model";
+	static String template = "data/crf-template/SingleCharacterCRF.template";
 
-	public static void detect(String inputFile, String outputFile) {
-		String bemsInputFile = inputFile + ".txt";
-		String bemsOutputFile = "tmp/crfModel.bems.out.txt";
-		convertSrcToBEMS(new String[]{inputFile}, bemsInputFile);
-		decode(model, bemsInputFile, bemsOutputFile);
-		convertBEMSToSeg(bemsOutputFile, "tmp/crfModel.txt", outputFile);
+	{
+		model ="data/model/SingleCharacterCRF.model";
 	}
 
-	public static void convertSrcToBEMS(String[] inputFiles, String outputFile) {
+
+	public void convertSrc2TestInput(String[] inputFiles, String outputFile) {
 		logger.debug("convert {} to {}", inputFiles, outputFile);
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -36,7 +34,7 @@ public class singleCharacterCRF extends crfppWrapper {
 					int offset = 0;
 					for (String sentence : tmps) {
 						offset += sentence.length() + 1;
-						//考虑没有逗号和句号的行
+						// todo 考虑没有逗号和句号的行
 						for (int i = 0; i < sentence.length(); i++) {
 							writer.append(sentence.charAt(i));
 							writer.newLine();
@@ -56,15 +54,12 @@ public class singleCharacterCRF extends crfppWrapper {
 		}
 	}
 
-	/**
-	 * @param inputFiles
-	 */
-	public static void convertToTrainBEMS(String[] inputFiles, String outputFile) {
-		logger.debug("convert {} to {}", inputFiles, outputFile);
+	public void convert2TrainInput(String[] inputFiles, String trainFile) {
+		logger.debug("convert {} to {}", inputFiles, trainFile);
 		try {
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+				BufferedWriter writer = new BufferedWriter(new FileWriter(trainFile));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
 					if (tmp.trim().length() == 0) continue;
@@ -106,11 +101,42 @@ public class singleCharacterCRF extends crfppWrapper {
 		}
 	}
 
+	public void convertTestOuput2Res(String inputFile, String newWordFile) {
+		//write segFile and new word File
+		HashSet<String> newWordList = new HashSet<>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			//BufferedWriter writerSeg = new BufferedWriter(new FileWriter(segFile));
+			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(newWordFile));
+			String tmp;
+			while ((tmp = reader.readLine()) != null) {
+				StringBuilder wordBuffer = new StringBuilder();
+				if (tmp.length() == 0)
+					continue;
+				wordBuffer.append(tmp.split("\t", 2)[0]);
+				if (tmp.charAt(tmp.length() - 1) == 'B') {
+					do {
+						tmp = reader.readLine();
+						wordBuffer.append(tmp.split("\t", 2)[0]);
+					} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != 'E');
+				}
+
+				String word = wordBuffer.toString();
+				if (Corpus.isNewWord(word) && !newWordList.contains(word)) {
+					newWordList.add(word);
+					writerNewWord.append(word);
+					writerNewWord.newLine();
+				}
+			}
+			writerNewWord.close();
+		} catch (IOException e) {
+			logger.error("err!");
+			e.printStackTrace();
+		}
+	}
 	public static void main(String... args) {
-
 		String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
-		convertToTrainBEMS(basicWordFiles, trainData);
-
-		train(template, trainData, model);
+		new SingleCharacterCRF().convert2TrainInput(basicWordFiles, trainData);
+		train(template, trainData, new SingleCharacterCRF().model);
 	}
 }

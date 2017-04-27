@@ -1,7 +1,7 @@
 package evaluate;
 
-import crfModel.singleCharacterCRF;
 import NagaoAlgorithm.NagaoAlgorithm;
+import crfModel.SingleCharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -64,16 +64,16 @@ public class Test {
 
 
 				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm.", file.getName());
-				NagaoAlgorithm nagao = new NagaoAlgorithm();
-				nagao.detect(new String[]{inputFile}, outputFile, 20, 10, 3,  1.5);
+				NagaoAlgorithm nagao = new NagaoAlgorithm(10);
+				nagao.detect(new String[]{inputFile}, outputFile, 10, 3, 1.5);
 				Test.test(answerFile, outputFile);
 
 				System.out.println("-------");
-				Corpus.addWordInfo(answerFile, "tmp/" + file.getName(), nagao);
+				nagao.addWordInfo(answerFile, "tmp/" + file.getName());
 
 				outputFile = String.format("tmp/%s_%s", "crfModel.", file.getName());
-				singleCharacterCRF.detect(inputFile, outputFile);
-				Corpus.addWordInfo(outputFile, outputFile+".tmp", nagao);
+				new SingleCharacterCRF().detect(inputFile, outputFile);
+				nagao.addWordInfo(outputFile, outputFile + ".tmp");
 				Test.test(answerFile, outputFile);
 
 				System.out.println();

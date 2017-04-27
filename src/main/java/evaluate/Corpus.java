@@ -1,13 +1,14 @@
 package evaluate;
 
 import Config.Config;
-import NagaoAlgorithm.NagaoAlgorithm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * Created by wan on 4/7/2017.
@@ -58,72 +59,83 @@ public class Corpus {
 	 * 将已分词文档转化为原始未分词语料和对应的新词文件
 	 * 放在data文件夹底下
 	 *
-	 * @param newWordFiles
+	 * @param
 	 */
-	public static void extractNewWord(String[] newWordFiles) {
-		HashSet<String> newWordList;
+	public static HashSet<String> extractNewWord(String inputFile) {
+		HashSet<String> newWordList = new HashSet<>();
 		try {
-			for (String newWordFile : newWordFiles) {
-				newWordList = new HashSet<>();
-				BufferedReader reader = new BufferedReader(new FileReader(newWordFile));
-				newWordFile = newWordFile.replaceAll("^.*/", "");// 保留单独的文件名
-				BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".src")),
-						ansWriter = new BufferedWriter(new FileWriter("data/test/" + newWordFile + ".ans"));
-				String tmp;
-				while ((tmp = reader.readLine()) != null) {
-					String[] segs = tmp.split(Config.sepWordRegex);
-					for (String seg : segs) {
-						String word = (seg.split(Config.sepPosRegex)[0]);
-						srcWriter.append(word);
-						if (isNewWord(word)) {
-							if (!newWordList.contains(word)) {
-								ansWriter.append(word);
-								ansWriter.newLine();
-							}
-							newWordList.add(word);
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
+			BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/test/" + inputFile + ".src")),
+					ansWriter = new BufferedWriter(new FileWriter("data/test/" + inputFile + ".ans"));
+			String tmp;
+			while ((tmp = reader.readLine()) != null) {
+				String[] segs = tmp.split(Config.sepWordRegex);
+				for (String seg : segs) {
+					String word = (seg.split(Config.sepPosRegex)[0]);
+					srcWriter.append(word);
+					if (isNewWord(word)) {
+						if (!newWordList.contains(word)) {
+							ansWriter.append(word);
+							ansWriter.newLine();
 						}
+						newWordList.add(word);
 					}
-					srcWriter.newLine();
 				}
-				logger.info("{} new words in {}", newWordList.size(), newWordFile);
-				srcWriter.close();
-				ansWriter.close();
+				srcWriter.newLine();
 			}
+			logger.info("{} new words in {}", newWordList.size(), inputFile);
+			srcWriter.close();
+			ansWriter.close();
+			//}
 		} catch (java.io.IOException e) {
 			logger.error("err!");
 			e.printStackTrace();
 		}
+		return newWordList;
 	}
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含字母和数字的不算
-		if (word.matches(Config.newWordExcludeRegex) )
+		if (word.matches(Config.newWordExcludeRegex))
 			return false;
 		if (!basicWordList.contains(word))
 			return true;
 		return false;
 	}
 
-	public static void addWordInfo(String wordFile, String outputFile, NagaoAlgorithm nago) {
+	public static void shuffleAndSplit(String[] inputFiles, String trainFile, String testFile) {
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
-				//logger.info(tmp);
-				int tf = 0;
-				if (nago.wordTFNeighbor.containsKey(tmp))
-					tf = nago.wordTFNeighbor.get(tmp).getTF();
-				writer.append(String.format("%s\t%d", tmp, tf));
+			List<String> lines = new ArrayList<>();
+			for (String inputfile : inputFiles) {
+				BufferedReader reader = new BufferedReader(new FileReader(inputfile));
+				String line;
+				while ((line = reader.readLine()) != null) {
+					lines.add(line);
+				}
+			}
+			Collections.shuffle(lines);
+			BufferedWriter writer;
+			writer = new BufferedWriter(new FileWriter(testFile));
+			int i;
+			for (i = 0; i < lines.size() / 5; i++) {
+				writer.append(lines.get(i));
 				writer.newLine();
 			}
-			writer.close();
+			writer = new BufferedWriter(new FileWriter(trainFile));
+			for (; i < lines.size(); i++) {
+				writer.append(lines.get(i));
+				writer.newLine();
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public static void main(String... args) {
-		extractNewWord(Config.newWordFiles);// create test data
+		shuffleAndSplit(Config.newWordFiles, "data/raw/train.txt", "data/raw/test.txt");
+		extractNewWord("data/raw/train.txt");
+		extractNewWord("data/raw/test.txt");// create test data
 	}
 }

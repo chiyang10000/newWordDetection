@@ -1,11 +1,12 @@
 package crfModel;
 
-import evaluate.Corpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
-import java.util.HashSet;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Created by wan on 4/24/2017.
@@ -15,6 +16,7 @@ abstract public class crfppWrapper {
 	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	static String shell = "";
+	String model;
 
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
@@ -60,47 +62,16 @@ abstract public class crfppWrapper {
 		runCommand(cmd);
 	}
 
-	/*
-	abstract public void convertLabelToRes();
-	abstract public void convertToTrain();
-	abstract public void convertSrcToLabel();
-	*/
-
-	public static void convertBEMSToSeg(String inputFile, String segFile, String newWordFile) {
-		//write segFile and new word File
-		HashSet<String> newWordList = new HashSet<>();
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			BufferedWriter writerSeg = new BufferedWriter(new FileWriter(segFile));
-			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(newWordFile));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
-				if (tmp.length() == 0) {
-					writerSeg.newLine();
-					continue;
-				}
-				StringBuilder wordBuffer = new StringBuilder();
-				wordBuffer.append(tmp.split("\t", 2)[0]);
-				if (tmp.charAt(tmp.length() - 1) == 'B') {
-					do {
-						tmp = reader.readLine();
-						wordBuffer.append(tmp.split("\t", 2)[0]);
-					} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != 'E');
-				}
-
-				String word = wordBuffer.toString();
-				writerSeg.append(word + ' ');
-				if (Corpus.isNewWord(word) && !newWordList.contains(word)) {
-					newWordList.add(word);
-					writerNewWord.append(word);
-					writerNewWord.newLine();
-				}
-			}
-			writerNewWord.close();
-			writerSeg.close();
-		} catch (java.io.IOException e) {
-			logger.error("err!");
-			e.printStackTrace();
-		}
+	public void detect(String inputFile, String outputFile) {
+		String crfppInput = inputFile + ".txt";
+		String crfppOutput = "tmp/crfModel.bems.out.txt";
+		convertSrc2TestInput(new String[]{inputFile}, crfppInput);
+		decode(model, crfppInput, crfppOutput);
+		convertTestOuput2Res(crfppOutput, outputFile);
 	}
+
+	abstract public void convert2TrainInput(String[] inputFiles, String trainFile);
+	abstract public void convertSrc2TestInput(String[] inputFiles, String crfppInput);
+	abstract public void convertTestOuput2Res(String crfppOutput, String resFile);
+
 }

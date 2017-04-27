@@ -11,7 +11,7 @@ import java.util.*;
 public class NagaoAlgorithm {
 
 	static private Logger logger = LoggerFactory.getLogger(NagaoAlgorithm.class);
-	private int N;
+	private int maxWordLength;
 
 	private List<String> leftPTable;
 	private int[] leftLTable;
@@ -24,11 +24,30 @@ public class NagaoAlgorithm {
 	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
 	private final static String stopwords = "的很了么呢是嘛都也于与在";
 
-	public NagaoAlgorithm() {
-		N = 20;
+	public NagaoAlgorithm(int maxWordLength) {
+		this.maxWordLength = maxWordLength;
 		leftPTable = new ArrayList<String>();
 		rightPTable = new ArrayList<String>();
 		wordTFNeighbor = new HashMap<String, TFNeighbor>();
+	}
+
+	public void addWordInfo(String wordFile, String outputFile) {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			String tmp;
+			while ((tmp = reader.readLine()) != null) {
+				//logger.info(tmp);
+				int tf = 0;
+				if (wordTFNeighbor.containsKey(tmp))
+					tf = wordTFNeighbor.get(tmp).getTF();
+				writer.append(String.format("%s\t%d", tmp, tf));
+				writer.newLine();
+			}
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	//reverse phrase
@@ -83,7 +102,7 @@ public class NagaoAlgorithm {
 		//get TF and right neighbor
 		for (int pIndex = 0; pIndex < rightPTable.size(); pIndex++) {
 			String phrase = rightPTable.get(pIndex);
-			for (int length = 1 + rightLTable[pIndex]; length <= N && length <= phrase.length(); length++) {
+			for (int length = 1 + rightLTable[pIndex]; length <= maxWordLength && length <= phrase.length(); length++) {
 				String word = phrase.substring(0, length);
 				TFNeighbor tfNeighbor = new TFNeighbor();
 				tfNeighbor.incrementTF();
@@ -103,7 +122,7 @@ public class NagaoAlgorithm {
 		//get left neighbor
 		for (int pIndex = 0; pIndex < leftPTable.size(); pIndex++) {
 			String phrase = leftPTable.get(pIndex);
-			for (int length = 1 + leftLTable[pIndex]; length <= N && length <= phrase.length(); length++) {
+			for (int length = 1 + leftLTable[pIndex]; length <= maxWordLength && length <= phrase.length(); length++) {
 				String word = reverse(phrase.substring(0, length));// 翻转了两次得到原来的词
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 				if (phrase.length() > length)
@@ -157,10 +176,9 @@ public class NagaoAlgorithm {
 		countTFNeighbor();
 	}
 
-	public void detect(String[] inputs, String out, int n, int thresholdTF, double thresholdMI,
+	public void detect(String[] inputs, String out, int thresholdTF, double thresholdMI,
 					   double thresholdNeighborEntropy) {
 		NagaoAlgorithm nagao = this;
-		nagao.setN(n);
 		nagao.scan(inputs);
 
 		try {
@@ -178,7 +196,7 @@ public class NagaoAlgorithm {
 				rightNeighborNumber = tfNeighbor.getRightNeighborNumber();
 				mi = nagao.countMI(word);
 
-				if (tf > thresholdTF && tfNeighbor.getNeighborEntropy() > thresholdNeighborEntropy  && mi >
+				if (tf > thresholdTF && tfNeighbor.getNeighborEntropy() > thresholdNeighborEntropy && mi >
 						thresholdMI) {
 					StringBuilder sb = new StringBuilder();
 					sb.append(word);
@@ -200,7 +218,7 @@ public class NagaoAlgorithm {
 		}
 	}
 
-	private void setN(int n) {
-		N = n;
+	private void setMaxWordLength(int maxWordLength) {
+		this.maxWordLength = maxWordLength;
 	}
 }
