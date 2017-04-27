@@ -157,7 +157,7 @@
 作为/p 反舰/n 导弹/n 高空/s 弹道/n 的话/u 面对/v 现代/t 舰载/b 防空/vn 系统/n 比/p 亚音速/n 导弹/n 还/d 好/a 拦截/v ，/w 即使/c 是/v 掠/v 海/n 飞行/v 弹道/n 对/p 舰载/b 红外/b 系统/n 来说/u 也/d 很/d 容易/a 对/p 其/r 进行/v 探测/vn ；/w 作为/p 巡航导弹/n ，/w 即使/c 采用/v 了/u 毫米波/n 制导/v 性能/n 也/d 无法/v 令人满意/a ，/w 射程/n ，/w 精度/n ，/w 突防/vn 能力/n 无法/v 兼顾/v 。/w 
 不过/c 对于/p 对手/n 巴基斯坦/ns 这样/r 缺乏/v 先进/a 防空/vn 导弹/n 的/u 国家/n ，/w 布拉莫斯/nz 导弹/n 仍然/d 如/v 冷战/n 时代/n 的/u 苏制/n 超音速/n 导弹/n 一样/a 构成/v 了/u 致命/a 的/u 威胁/vn 。/w 
 布拉莫斯/nz 导弹/n 固然/c 言过其实/v ，/w 不过/c 对于/p 印度/ns 还/d 是/v 一/m 件/q 很/d 有效/a 的/u 武器/n 。/w 
-印度/ns 媒体/n ：/w 印/ns 俄/ns 将/d 联合/v 研制/v 超高/b 音速/n 巡航导弹/n ?/w 
+印度/ns 媒体/n ：/w 印/ns 俄/ns 将/d 联合/v 研制/v 超高/b 音速/n 巡航导弹/n ？/w 
 新华网/nz 孟买/ns ９月/t ６日/t 电/n （/w 记者/n 聂云/nr ）/w 据/p 印度/ns 媒体/n ６日/t 报道/v ，/w 印度/ns 与/p 俄罗斯/ns 将/d 联合/v 研制/v 最/d 大/a 时速/n 可/v 达/v ６０００/m 公里/q 的/u 超高/b 音速/n 巡航导弹/n 。/w 
 《/w 印度/ns 时报/n 》/w 援引/v 印度/ns 国防部/nt 一/m 位/q 官员/n 的/u 话/n 报道/v ，/w 超高/b 音速/n 巡航导弹/n 将/d 在/p 超音速/n 巡航导弹/n “/w 布拉莫斯/nz ”/w 的/u 基础/n 上/f 研制/v ，/w 射程/n 为/v ３００/m 公里/q 左右/m ，/w 最/d 大/a 时速/n 可/v 达/v ６０００/m 公里/q ，/w 而/c 印/ns 俄/ns 合作/v 研制/v 的/u “/w 布拉莫斯/nz ”/w 目前/t 最/d 大/a 时速/n 约/d ３０００/m 公里/q 。/w 
 这/r 位/q 官员/n 说/v ，/w 俄罗斯/ns 总统/n 梅德韦杰夫/nr 今年/t １２月/t 将/d 访问/v 印度/ns 。/w 
@@ -217,7 +217,7 @@
 (/w 中国船舶工业综合技术经济研究院/nt 吴小兰/nr )/w 
 印度/ns 称/v 两/m 年/q 后/f 试射/v 烈火6/nz 导弹/n 可/v 打/v 到/v 北美洲/ns 
 原/b 题/n ：/w 印媒/n 称/v 两/m 年/q 后/f 试射/v 烈火-6/nz 
-本报/r 特约/b 记者/n ?/w 李晓东/nr 
+本报/r 特约/b 记者/n ？/w 李晓东/nr 
 据/p 印度/ns IBN/nx 新闻网/n 23日/t 报道/v ，/w 印度/ns 有望/v 在/p 两/m 年/q 后/f 发射/v 印度/ns 首/m 枚/q “/w 烈火-6/nz ”/w 型/n 洲际/b 弹道导弹/n 。/w 
 据/p 报道/v ，/w 一/m 名/q 印度国防研究与发展组织/nt 的/u 高级/a 科学家/n 近日/t 表示/v ，/w 该/r 组织/n 有关/v “/w 烈火-6/nz ”/w 洲际/b 导弹/n 的/u 整体/n 设计/v 和/c 图纸/n 绘制/v 工作/v 业已/d 全面/a 展开/v 。/w 
 根据/p 设计/v 要求/v ，/w “/w 烈火-6/nz ”/w 型/n 洲际/b 弹道导弹/n 的/u 最/d 大/a 射程/n 将/d 会/v 达到/v 8000/m 到/c 1万/m 公里/q 之间/f ，/w 其/r 最/d 大/a 射程/n 几乎/d 为/v 印度/ns 4月/t 刚/d 首次/m 成功/a 试射/v 的/u “/w 烈火-5/nz ”/w 型/n 远程/b 弹道导弹/n 射程/n 的/u 一/m 倍/q 。/w 
@@ -437,7 +437,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 此/r 次/q 试验/v 成功/a 对/p 技术/n 进行/v 了/u 验证/vn ，/w 这些/r 技术/n 将/d 集成/v 到/p 印度/ns 导弹/n 防御/v 能力/n 上/f 。/w 
 (/w 中国航天系统科学与工程研究院/nt 陈菲/nr 王宜晓/nr )/w 
 印度/ns 欲/d 对/p 邻国/n 形成/v "/w 布拉莫斯/nz "/w 导弹/n 包围圈/n 
-2010-03-28/t 03:28/t 来源/v ：/w 新京报/nz 共/d ?/w 0/m ?/w 条/q 评论/n 关键/a 字/n ：/w 布拉莫斯/nz ，/w 印度/ns 陆军/n ，/w 印度/ns 海军/n 
+2010-03-28/t 03:28/t 来源/v ：/w 新京报/nz 共/d ？/w 0/m ？/w 条/q 评论/n 关键/a 字/n ：/w 布拉莫斯/nz ，/w 印度/ns 陆军/n ，/w 印度/ns 海军/n 
 27日/t ，/w 印度/ns 军方/n 成功/a 试射/v 两/m 枚/q 可/v 携带/v 核弹头/n 的/u 国产/b 短程/b 导弹/n ;/w 21日/t ，/w 印度/ns 首次/m 成功/a 进行/v 新型/b 巡航导弹/n “/w 布拉莫斯/nz ”/w 的/u 垂直/vn 试射/vn 更/d 引/v 人/n 关注/v 。/w 
 俄罗斯/ns 最近/t 表示/v 不/d 会/v 向/p 印度/ns 转让/v 导弹/n 冲压/vn 发动机/n 、/w 导引头/n 等/u 制造/v 技术/n ，/w 这/r 意味/n 着/u 印度/ns 无法/v 独立/a 完成/v 布拉莫斯/nz 导弹/n 的/u 生产/vn 。/w 
 2008年/t 8月/t 20日/t ，/w 布拉莫斯/nz 反舰/n 导弹/n 曾/d 在/p 莫斯科/ns 国际/n 军事/n 装备/n 沙龙/n 上/f 展出/v 。/w 
@@ -493,7 +493,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 此外/c ，/w 俄罗斯/ns 最近/t 表示/v 不/d 会/v 向/p 印度/ns 转让/v 导弹/n 冲压/vn 发动机/n 、/w 导引头/n 等/u 制造/v 技术/n ，/w 这/r 意味/n 着/u 印度/ns 无法/v 独立/a 完成/v 布拉莫斯/nz 导弹/n 的/u 生产/vn 。/w 
 (/w 本文/r 来源/n ：/w 新京报/nz )/w 
 印度/ns 陆军/n 声称/v 为/p 对抗/v 中/ns 巴/ns 导弹/n 大量/m 装备/v 布拉莫斯/nz 
-2010-03-23/t 08:24/t 来源/v ：/w 东方网/nz 作者/n ：/w 春风/n 共/d ?/w 0/m ?/w 条/q 评论/n 关键/a 字/n ：/w 布拉莫斯/nz ，/w 印度/ns 陆军/n ，/w 印度/ns 海军/n 
+2010-03-23/t 08:24/t 来源/v ：/w 东方网/nz 作者/n ：/w 春风/n 共/d ？/w 0/m ？/w 条/q 评论/n 关键/a 字/n ：/w 布拉莫斯/nz ，/w 印度/ns 陆军/n ，/w 印度/ns 海军/n 
 印度/ns 时报/n 报道/v ，/w 印度/ns 海军/n 一/m 名/q 高级/a 官员/n 21日/t 说/v ，/w 印度/ns 海军/n 当天/t 在/p 东部/f 奥里萨邦/ns 沿海地区/s 成功/a 进行/v 了/u 新型/b 巡航导弹/n “/w 布拉莫斯/nz ”/w 的/u 垂直/vn 试射/vn 。/w 
 有/v 报道/n 称/v ，/w 印度/ns 与/c 俄罗斯/ns 已/d 开始/v 启动/v 了/u “/w 极/n 超音速/n ”/w “/w 布拉莫斯-2/nz ”/w 导弹/n 的/u 初步/d 研制/v 工作/v 。/w 
 俄/ns 印/ns 联合/v 研制/v 的/u “/w 布拉莫斯/nz ”/w 巡航导弹/n 
@@ -667,11 +667,11 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 据/p 防务/n 世界/n 网站/n 2015年/t 1月/t 13日/t 报道/v ，/w 印度/ns “/w 无畏/nz ”/w （/w Nirbhay/nx ）/w 远程/b 亚/b 声速/n 巡航导弹/n 将/d 使用/v 全新/b 小型/b 涡扇/n 发动机/n ，/w 该/r 发动机/n 由/p 印度燃气涡轮开发公司/nt （/w GTRE/nx ）/w 制造/v 。/w 
 根据/p 印度国防研究与发展组织/nt 的/u 消息/n （/w DRDO/nx ）/w ，/w GTRE/nx 目前/t 正在/d 进行/v 巡航导弹/n 发动机/n 的/u 地面/n 试验/vn ，/w 目前/t 尚未/d 对/p 该/r 发动机/n 正式/a 命名/v 。/w 
 发动机/n 的/u 技术/n 指标/n 尚未/d 透露/v 。/w 
-GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f 曾/d 为/p 印度/ns 空军/n “/w 光辉/nz ”/w 式/n （/w Tejas/nx ）/w 轻型/b 战斗机/n 制造/v 卡佛里/nz I型/b （/w Kaveri/nx ?/w I/nx ）/w 发动机/n 。/w 
+GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f 曾/d 为/p 印度/ns 空军/n “/w 光辉/nz ”/w 式/n （/w Tejas/nx ）/w 轻型/b 战斗机/n 制造/v 卡佛里/nz I型/b （/w Kaveri/nx ？/w I/nx ）/w 发动机/n 。/w 
 由于/c 发动机/n 动力/n 不足/v ，/w Kaveri/nx 项目/n 最终/d 被/p 终止/v 。/w 
-“/w 无畏/nz ”/w -/w 1/m （/w Nirbhay/nx ?/w I/nx ）/w 是/v 适用/v 于/p 海军/n 的/u 巡航导弹/n ，/w 既/c 可/v 用于/v 舰射/v 又/d 可/v 用于/v 潜射/v ，/w 射程/n 为/v 1500/m 千米/q ，/w 全/a 重/n 1000/m 千克/q ，/w 其/r 目前/t 所/u 使用/v 的/u 发动机/n 采用/v 冲压式/n 喷气/v 技术/n 。/w 
+“/w 无畏/nz ”/w -/w 1/m （/w Nirbhay/nx ？/w I/nx ）/w 是/v 适用/v 于/p 海军/n 的/u 巡航导弹/n ，/w 既/c 可/v 用于/v 舰射/v 又/d 可/v 用于/v 潜射/v ，/w 射程/n 为/v 1500/m 千米/q ，/w 全/a 重/n 1000/m 千克/q ，/w 其/r 目前/t 所/u 使用/v 的/u 发动机/n 采用/v 冲压式/n 喷气/v 技术/n 。/w 
 在/p 2014年/t 10月/t DRDO/nx 对/p 该/r 导弹/n 成功/a 进行/v 了/u 试验/vn ，/w 结果/d 表明/v 其/r 全部/m 参数/n 都/d 达到/v 了/u 相应/vn 标准/n 。/w 
-兼任/v 印度/ns 国防部长/n 的/u 科学/n 顾问/n 和/c DRDO/nx 负责人/n 的/u 钱德尔将军/nr （/w General/nx ?/w Avinash/nx ?/w Chander/nx ）/w 在/p 2014年/t 那/r 次/q 导弹/n 成功/a 试射/v 后/f 曾/d 称/v ：/w “/w 陆/n 、/w 海/n 、/w 空/n 、/w 潜/v 四/n 种/q 版本/n 的/u “/w 无畏/nz ”/w 巡航导弹/n 将/d 陆续/d 研发/v 费/n ，/w 其/r 第一/m 个/q 版本/n ——/w 对/p 陆/n 攻击/v 巡航导弹/n 将/d 在/p 3/m 年/q 内/f 交付/v 。/w ”/w （/w 中国航天系统科学与工程研究院/nt 孙硕/nr 张连庆/nr ）/w 
+兼任/v 印度/ns 国防部长/n 的/u 科学/n 顾问/n 和/c DRDO/nx 负责人/n 的/u 钱德尔将军/nr （/w General/nx ？/w Avinash/nx ？/w Chander/nx ）/w 在/p 2014年/t 那/r 次/q 导弹/n 成功/a 试射/v 后/f 曾/d 称/v ：/w “/w 陆/n 、/w 海/n 、/w 空/n 、/w 潜/v 四/n 种/q 版本/n 的/u “/w 无畏/nz ”/w 巡航导弹/n 将/d 陆续/d 研发/v 费/n ，/w 其/r 第一/m 个/q 版本/n ——/w 对/p 陆/n 攻击/v 巡航导弹/n 将/d 在/p 3/m 年/q 内/f 交付/v 。/w ”/w （/w 中国航天系统科学与工程研究院/nt 孙硕/nr 张连庆/nr ）/w 
 印度/ns 计划/v 在/p 中/ns 印/ns 边境/s 部署/v 超音速/n 巡航导弹/n 
 有/v 消息/n 称/v ，/w 8月/t 3日/t ，/w 印/ns 政府/n 已/d 批准/v 陆军/n 采购/v 近/a 百/m 枚/q 升级版/n “/w 布拉莫斯/nz ”/w 超音速/n 巡航导弹/n 并/c 计划/v 部署/v 在/p 该国/r 东北部/f 地区/n 。/w 
 该/r 新闻/n 甫/d 一/m 公布/v ，/w 引起/v 媒体/n 普遍/a 关注/v 。/w 
@@ -775,7 +775,7 @@ GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f �
 印度/ns 媒体/n 报道/v ，/w 海基/n 和/c 陆基/n “/w 布拉莫斯/nz ”/w 导弹/n 已/d 通过/v 测试/v 并/c 开始/v 在/p 印度/ns 海军/n 和/c 陆军/n 服役/v ，/w 空基/n “/w 布拉莫斯/nz ”/w 导弹/n 飞行/v 测试/v 定于/v 今年/t 年底/t 完成/v 。/w 
 印度/ns 空军/n 打算/v 用/p 空基/n “/w 布拉莫斯/nz ”/w 导弹/n 武装/v 苏-30MKI型/b 战斗机/n 。/w 
 美媒/n ：/w 印度/ns 研制/v 射程/n 1000/m 公里/q 的/u 超音速/n 巡航导弹/n 
-?/w 据/p 美国/ns 《/w 航宇/nz 日报/n 》/w 近日/t 报道/v 新德里/ns ——/w 印度/ns 正在/d 研制/v 一/m 种/q 新型/b 喷气/vn 动力/n 巡航导弹/n ，/w 该/r 型/n 导弹/n 属于/v 远程/b 巡航导弹/n （/w LRCM/nx ）/w ，/w 射程/n 1000/m 公里/q （/w 620/m 英里/q ）/w ，/w 速度/n 3.2/m 马赫/q ，/w 具备/v 运载/v 核弹头/n 的/u 能力/n ，/w 反映/v 了/u 印度/ns 导弹/n 研发/v 部门/n 的/u 发展/vn 水平/n 。/w 
+？/w 据/p 美国/ns 《/w 航宇/nz 日报/n 》/w 近日/t 报道/v 新德里/ns ——/w 印度/ns 正在/d 研制/v 一/m 种/q 新型/b 喷气/vn 动力/n 巡航导弹/n ，/w 该/r 型/n 导弹/n 属于/v 远程/b 巡航导弹/n （/w LRCM/nx ）/w ，/w 射程/n 1000/m 公里/q （/w 620/m 英里/q ）/w ，/w 速度/n 3.2/m 马赫/q ，/w 具备/v 运载/v 核弹头/n 的/u 能力/n ，/w 反映/v 了/u 印度/ns 导弹/n 研发/v 部门/n 的/u 发展/vn 水平/n 。/w 
 目前/t 出现/v 的/u 武器/n 图表/n 显示/v ，/w 该/r 导弹/n 为/v 液体/n 推进/v ，/w 由/p 印度先进系统实验室/nt （/w ASL/nx ）/w 研发/v ，/w 可/v 用作/v 地/n 对/p 地/n 、/w 空/n 对/p 地/n 和/c 反舰/n 导弹/n 。/w 
 印度/ns 计划/v 在/p 2014/t -/w 2015年/t 间/f 进行/v LRCM/nx 的/u 首次/m 试射/vn ，/w 由于/c 喷气/vn 推进/vn 技术/n 的/u 问题/n ，/w 试射/v 还/d 存在/v 很/d 大/a 的/u 不确定性/n 。/w 
 LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计划/n 中/f 最/d 新/a 的/u 一个/m ，/w 与/p 当前/t 正在/d 进行/v 的/u 其它/r 两/m 个/q 巡航导弹/n 发展/vn 计划/n （/w 与/p 俄罗斯/ns 合作/v 的/u 布拉莫斯-2/nz 超声速/n 巡航导弹/n 、/w “/w 无畏/nz ”/w （/w Nirbhay/nx ）/w 超声速/n 巡航导弹/n ）/w 显著/a 不同/a 。/w 
@@ -786,7 +786,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 若/c 要/v 满足/v 计划/n 的/u 最终/b 期限/n ，/w 所有/b 这些/r 关键/a 技术/n 的/u 研发/vn 必须/d 在/p 2012年/t 前/f 完成/v 。/w 
 该/r 导弹/n 的/u 总体/n 布局/n 与/p MBDA公司/nt 的/u ASMP-A/nx 空射型/b 核/n 巡航导弹/n 非常/d 类似/a 。/w 
 虽然/c 不/d 能/v 直接/a 确认/v MBDA公司/nt 在/p 印度/ns 的/u LRCM/nx 计划/n 中/f 以/p 某种/r 形式/n 发挥/v 了/u 作用/n ，/w 但/c MBDA公司/nt 确实/d 与/p 印度国防研发组织/nt 之间/f 签署/v 有/v 技术/n 合作/v 的/u 框架/n 协议/n 。/w 
-?/w LRCM/nx 项目/n 是/v 印度/ns 三/m 个/q 巡航导弹/n 计划/n 之一/r 。/w 
+？/w LRCM/nx 项目/n 是/v 印度/ns 三/m 个/q 巡航导弹/n 计划/n 之一/r 。/w 
 “/w 无畏/nz ”/w 超声速/n 巡航导弹/n 与/p LRCM/nx 射程/n 相当/v ，/w 有/v 可能/n 在/p 2011年/t 2月/t 的/u 班加罗尔/ns 航展/n 上/f 公开/a 展示/v ，/w 该/r 型/n 导弹/n 使用/v 涡扇/n 发动机/n ，/w 可/v 用作/v 地/n 对/p 地/n 和/c 空射/vn 导弹/n 。/w 
 9月/t 5日/t ，/w 俄/ns 印/ns 联合/v 研制/v 的/u 布拉莫斯/nz 超声速/n 巡航导弹/n 进行/v 了/u 第23/m 次/q 试射/vn ，/w 在/p 这/r 次/q 试射/v 中/f ，/w 导弹/n 进行/v 了/u 超声速/n 俯冲/v 。/w （/w 中国航空工业发展研究中心/nt 王睿/nr ）/w 
 印度/ns 成功/a 试射/v 超音速/n 巡航导弹/n 
@@ -797,7 +797,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 “/w 布拉莫斯/nz ”/w 导弹/n 射程/n 290/m 公里/q ，/w 可/v 搭载/v 重/a 达/v 300/m 公斤/q 常规/n 弹头/n ，/w 最/d 大/a 飞行/vn 速度/n 2.8/m 马赫/q 即/v 2.8/m 倍/q 音速/n 。/w 
 印度/ns 媒体/n 报道/v ，/w 海基/n 和/c 陆基/n “/w 布拉莫斯/nz ”/w 导弹/n 已/d 通过/v 测试/v 并/c 开始/v 在/p 印度/ns 海军/n 和/c 陆军/n 服役/v ，/w 空基/n “/w 布拉莫斯/nz ”/w 导弹/n 飞行/v 测试/v 定于/v 今年/t 年底/t 完成/v 。/w 
 印度/ns 空军/n 打算/v 用/p 空基/n “/w 布拉莫斯/nz ”/w 导弹/n 武装/v 苏-30MKI型/b 战斗机/n 。/w 
-印度/ns 巡航导弹/n 登场/v ?/w 中/ns 印/ns 边境/s 军备/n 升级/v ?/w 
+印度/ns 巡航导弹/n 登场/v ？/w 中/ns 印/ns 边境/s 军备/n 升级/v ？/w 
 据/p 印度/ns 媒体/n 称/v ，/w 近日/t 印度/ns 政府/n 已经/d 批准/v 在/p “/w 阿鲁纳恰尔邦/ns ”/w （/w 即/v 我/r 藏南/ns 地区/n ）/w 部署/v 布拉莫斯/nz 巡航导弹/n ，/w 这/r 是/v 印度/ns 首次/m 部署/v 针对/p 中国/ns 的/u 攻击性/n 战术/n 导弹/n 。/w 
 某/r 印媒/n 近期/t 刊登/v 的/u 一/m 张/q 照片/n 中/f 有/v 印度/ns 陆军/n 的/u 一个/m 标语牌/n ，/w 上面/f 写/v 到/v “/w 我们/r 迟早/d 要/v 进入/v 拉萨/ns 和/c 北京/ns ”/w 。/w 
 步步/v 升级/v 武器/n 装备/n ，/w 加紧/v 厉兵秣马/v ，/w 介入/v 南海/ns 争端/n ，/w 印度/ns 这个/r 以/p “/w 非暴力/n 不/d 合作/v ”/w 闻名于世/v 的/u 国家/n ，/w 究竟/d 要/v 将/p 中/ns 印/ns 关系/n 引/v 向/p 何方/r ？/w 
@@ -945,7 +945,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 “/w 科钦/nz ”/w 号/n 是/v 第二/m 艘/q “/w 加尔各答/ns ”/w 级/n 驱逐舰/n ，/w 于/p 今年/t 9月/t 服役/v ，/w 排水量/n 7500/m 吨/q ，/w 船/n 长/a 164/m 米/q ，/w 船/n 宽/a 17/m 米/q ，/w 由/p 四/m 个/q 燃气轮机/n 提供/v 动力/n ，/w 巡航/vn 速度/n 达/v 30/m 节/q 以上/f 。/w 
 除了/p 能够/v 发射/v “/w 布拉莫斯/nz ”/w 导弹/n ，/w 该/r 舰/n 还/d 配备/v 增强型/b 武器/n 和/c 传感器/n ，/w 包括/v 76/m 毫米/q 口径/n 超/b 快速/b 火炮/n （/w SRGM/nx ）/w 和/c AK630/nx 近程/b 武器/n 防御/vn 系统/n （/w CIWS/nx ）/w 。/w 
 此外/c ，/w 战舰/n 配备/v 有/v 印度/ns 自/r 产/v 的/u 火箭/n 发射器/n (/w IRL/nx )/w ，/w 自/r 产/v 的/u 双筒式/n 鱼雷/n 发射器/n (/w ITTL/nx )/w ，/w 舰/n 首/n 安装/v 有/v 新/a 一/m 代/q HUMSA/nx 声呐/n 。/w 
-（/w 中国船舶工业综合技术经济研究院/nt 志伟/nr ）/w ?/w ?/w 
+（/w 中国船舶工业综合技术经济研究院/nt 志伟/nr ）/w ？/w ？/w 
 (/w 原/b 标题/n ：/w 印度/ns 海军/n “/w 科钦/nz ”/w 号/q 驱逐舰/n 试射/v “/w 布拉莫斯/nz ”/w 超音速/n 巡航导弹/n )/w 
 印度/ns 陆军/n 成功/a 试射/v “/w 布拉莫斯/nz ”/w 超音速/n 巡航导弹/n 
 原/b 标题/n ：/w 印度/ns 陆军/n 成功/a 试射/v “/w 布拉莫斯/nz ”/w 巡航导弹/n 
