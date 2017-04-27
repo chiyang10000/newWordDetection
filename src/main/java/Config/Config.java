@@ -4,7 +4,7 @@ package Config;
  * Created by wan on 4/25/2017.
  */
 public class Config {
-	final public static String sepSentenceRegex = "[°~～\\pP&&[^-.%－·@?]]";
+	final public static String sepSentenceRegex = "[°~～\\pP&&[^-.%－·．@／]]+";
 	final public static String sepWordRegex = " ";
 	final public static String sepPosRegex = "/";
 	final public static String newWordExcludeRegex = ".*[\\p{IsPunct}\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*";

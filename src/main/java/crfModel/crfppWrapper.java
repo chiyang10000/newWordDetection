@@ -16,7 +16,7 @@ abstract public class crfppWrapper {
 	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	static String shell = "";
-	String model;
+	String model, template, trainData;
 
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
@@ -57,14 +57,14 @@ abstract public class crfppWrapper {
 		runCommand(cmd);
 	}
 
-	public static void train(String template, String trainData, String model) {
+	public void train() {
 		String cmd = String.join(" ", shell, crf_learn, template, trainData, model, "-t");
 		runCommand(cmd);
 	}
 
 	public void detect(String inputFile, String outputFile) {
-		String crfppInput = inputFile + ".txt";
-		String crfppOutput = "tmp/crfModel.bems.out.txt";
+		String crfppInput = inputFile + ".crfin";
+		String crfppOutput = inputFile + ".crfout";
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput);
 		decode(model, crfppInput, crfppOutput);
 		convertTestOuput2Res(crfppOutput, outputFile);

@@ -1,6 +1,7 @@
 package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
+import crfModel.SegementCRF;
 import crfModel.SingleCharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,6 +54,7 @@ public class Test {
 	public static void main(String... args) {
 		int counter = 0;
 		File[] files = new File("data/test").listFiles();
+		SegementCRF segementCRF = new SegementCRF("data/test/train.txt.src", "data/test/test.txt.src");
 		for (File file : files)
 			if (file.getName().matches(".*\\.src")) {
 				String inputFile = file.getAbsolutePath();
@@ -63,19 +65,26 @@ public class Test {
 				logger.info("Test {}", counter);
 
 
+				/*
 				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm.", file.getName());
 				NagaoAlgorithm nagao = new NagaoAlgorithm(10);
 				nagao.detect(new String[]{inputFile}, outputFile, 10, 3, 1.5);
 				Test.test(answerFile, outputFile);
+				*/
 
 				System.out.println("-------");
-				nagao.addWordInfo(answerFile, "tmp/" + file.getName());
+				//nagao.addWordInfo(answerFile, "tmp/" + file.getName());
 
 				outputFile = String.format("tmp/%s_%s", "crfModel.", file.getName());
 				new SingleCharacterCRF().detect(inputFile, outputFile);
-				nagao.addWordInfo(outputFile, outputFile + ".tmp");
+				//nagao.addWordInfo(outputFile, outputFile + ".tmp");
 				Test.test(answerFile, outputFile);
 
+				System.out.println("-------");
+
+				outputFile = String.format("tmp/%s_%s", "crfModel.", file.getName());
+				segementCRF.detect(inputFile, outputFile);
+				Test.test(answerFile, outputFile);
 				System.out.println();
 				//if (counter >0) break;
 			}

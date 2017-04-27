@@ -13,11 +13,11 @@ import java.util.HashSet;
  */
 public class SingleCharacterCRF extends crfppWrapper {
 	private static final Logger logger = LoggerFactory.getLogger(SingleCharacterCRF.class);
-	static String trainData = "tmp/crfModel.crf";
-	static String template = "data/crf-template/SingleCharacterCRF.template";
 
 	{
+		template = "data/crf-template/SingleCharacterCRF.template";
 		model ="data/model/SingleCharacterCRF.model";
+		trainData = "tmp/crfModel.crf";
 	}
 
 
@@ -102,11 +102,9 @@ public class SingleCharacterCRF extends crfppWrapper {
 	}
 
 	public void convertTestOuput2Res(String inputFile, String newWordFile) {
-		//write segFile and new word File
 		HashSet<String> newWordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			//BufferedWriter writerSeg = new BufferedWriter(new FileWriter(segFile));
 			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(newWordFile));
 			String tmp;
 			while ((tmp = reader.readLine()) != null) {
@@ -135,8 +133,9 @@ public class SingleCharacterCRF extends crfppWrapper {
 		}
 	}
 	public static void main(String... args) {
-		String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
-		new SingleCharacterCRF().convert2TrainInput(basicWordFiles, trainData);
-		train(template, trainData, new SingleCharacterCRF().model);
+		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
+		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
+		singleCharacterCRF.convert2TrainInput(corpus, singleCharacterCRF.trainData);
+		singleCharacterCRF.train();
 	}
 }

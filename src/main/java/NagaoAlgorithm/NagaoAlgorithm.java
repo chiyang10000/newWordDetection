@@ -10,25 +10,50 @@ import java.util.*;
 
 public class NagaoAlgorithm {
 
+	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
+	static private final String stopwords = "的很了么呢是嘛都也于与在";
 	static private Logger logger = LoggerFactory.getLogger(NagaoAlgorithm.class);
+	public Map<String, TFNeighbor> wordTFNeighbor;
 	private int maxWordLength;
-
 	private List<String> leftPTable;
 	private int[] leftLTable;
 	private List<String> rightPTable;
 	private int[] rightLTable;
 	private double wordNumber;// 语料的总字数
 
-	public Map<String, TFNeighbor> wordTFNeighbor;
-
-	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
-	private final static String stopwords = "的很了么呢是嘛都也于与在";
-
 	public NagaoAlgorithm(int maxWordLength) {
 		this.maxWordLength = maxWordLength;
 		leftPTable = new ArrayList<String>();
 		rightPTable = new ArrayList<String>();
 		wordTFNeighbor = new HashMap<String, TFNeighbor>();
+	}
+
+	public DiscreteTFNeighbor discreteTFNeighbor;
+	public void calcDiscreteTFNeighbor(HashSet<String> wordList, int levelNum) {
+		logger.info("running ...");
+		double[] mi = new double[wordList.size()];
+		double[] tf = new double[wordList.size()];
+		double[] le = new double[wordList.size()];
+		double[] re = new double[wordList.size()];
+		int i = 0;
+		for (String word: wordList) {
+			TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
+			//logger.info(word);
+			try {
+				mi[i] = countMI(word);
+				tf[i] = tfNeighbor.getTF();
+				le[i] = tfNeighbor.getLeftNeighborEntropy();
+				re[i] = tfNeighbor.getRightNeighborEntropy();
+			} catch (NullPointerException e) {
+				mi[i] = 0;
+				tf[i] = 0;
+				le[i] = 0;
+				re[i] = 0;
+				logger.error("<{}> is not counted in nagao algorithm", word);
+			}
+			i++;
+		}
+		discreteTFNeighbor = new DiscreteTFNeighbor(levelNum, mi, tf, le, re);
 	}
 
 	public void addWordInfo(String wordFile, String outputFile) {
@@ -84,6 +109,7 @@ public class NagaoAlgorithm {
 
 	//count lTable
 	private void countLTable() {
+		logger.info("calc LTable");
 		Collections.sort(rightPTable);
 		rightLTable = new int[rightPTable.size()];
 		rightLTable[0] = 0;
@@ -98,12 +124,15 @@ public class NagaoAlgorithm {
 	}
 
 	//according to pTable and lTable, count statistical result: TF, neighbor distribution
-	private void countTFNeighbor() {
+	public void countTFNeighbor(HashSet<String> wordlist) {
 		//get TF and right neighbor
 		for (int pIndex = 0; pIndex < rightPTable.size(); pIndex++) {
 			String phrase = rightPTable.get(pIndex);
-			for (int length = 1 + rightLTable[pIndex]; length <= maxWordLength && length <= phrase.length(); length++) {
+			for (int length = 1 + rightLTable[pIndex]; length <= maxWordLength && length <= phrase.length();
+				 length++) {
 				String word = phrase.substring(0, length);
+				if (wordlist !=null && !wordlist.contains(word))
+					continue;
 				TFNeighbor tfNeighbor = new TFNeighbor();
 				tfNeighbor.incrementTF();
 				if (phrase.length() > length)
@@ -124,6 +153,8 @@ public class NagaoAlgorithm {
 			String phrase = leftPTable.get(pIndex);
 			for (int length = 1 + leftLTable[pIndex]; length <= maxWordLength && length <= phrase.length(); length++) {
 				String word = reverse(phrase.substring(0, length));// 翻转了两次得到原来的词
+				if (wordlist !=null && !wordlist.contains(word))
+					continue;
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 				if (phrase.length() > length)
 					tfNeighbor.addToLeftNeighbor(phrase.charAt(length));
@@ -140,7 +171,7 @@ public class NagaoAlgorithm {
 	}
 
 	//according to wordTFNeighbor, count MI of word
-	private double countMI(String word) {
+	public double countMI(String word) {
 		if (word.length() <= 1) return 0;
 		double coProbability = wordTFNeighbor.get(word).getTF() / wordNumber;
 		List<Double> mi = new ArrayList<>(word.length());
@@ -159,6 +190,7 @@ public class NagaoAlgorithm {
 
 	public void scan(String[] inputFiles) {
 		String line;
+		logger.info("add PTable");
 		for (String inputFile : inputFiles) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -173,13 +205,13 @@ public class NagaoAlgorithm {
 			}
 		}
 		countLTable();
-		countTFNeighbor();
 	}
 
 	public void detect(String[] inputs, String out, int thresholdTF, double thresholdMI,
 					   double thresholdNeighborEntropy) {
 		NagaoAlgorithm nagao = this;
 		nagao.scan(inputs);
+		countTFNeighbor(null);
 
 		try {
 			//output words TF, neighbor info, MI
