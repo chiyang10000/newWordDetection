@@ -49,7 +49,6 @@ public class SegementCRF extends crfppWrapper {
 		}
 
 		nagao.countTFNeighbor(null);
-		nagao.calcDiscreteTFNeighbor(wordList, 10);
 		template = "data/crf-template/SegmentCRF.template";
 		model = "data/model/SegmentCRF.model";
 		trainData = "tmp/SegmentCRF.crf";
@@ -58,7 +57,7 @@ public class SegementCRF extends crfppWrapper {
 	public static void main(String... args) {
 		String[] inputFiles = {"data/raw/train.txt"};
 		SegementCRF segementCRF = new SegementCRF("data/test/train.txt.src", "data/test/test.txt.src");
-		segementCRF.convert2TrainInput(inputFiles, segementCRF.trainData);
+		segementCRF.convert2TrainInput(inputFiles);
 		segementCRF.train();
 		//segementCRF.convertSrc2TestInput(new String[]{"data/test/test.txt.src"}, "tmp/xxx.txt");
 	}
@@ -66,14 +65,15 @@ public class SegementCRF extends crfppWrapper {
 	/**
 	 *
 	 * @param inputFiles
-	 * @param trainFile
 	 */
 	@Override
-	public void convert2TrainInput(String[] inputFiles, String trainFile) {
+	public void convert2TrainInput(String[] inputFiles) {
+		nagao.calcDiscreteTFNeighbor(wordList, Config.levelNum);
+		logger.info("levelNum is {}", Config.levelNum);
 		BufferedReader reader;
 		String line;
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(trainFile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(trainData));
 			for (String inputFile: inputFiles){
 				reader = new BufferedReader(new FileReader(inputFile));
 				while ( (line = reader.readLine()) != null) {

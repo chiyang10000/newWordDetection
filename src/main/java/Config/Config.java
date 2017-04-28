@@ -18,6 +18,7 @@ public class Config {
 	final public static double thresholdRightEntropy = 1;
 	final public static double thresholdLeftNumber = 1;
 	final public static double thresholdLeftRightNumber = 1;
+	public static int levelNum = 11;
 
 	public static void main(String... args) {
 		if ("·".matches(sepSentenceRegex))

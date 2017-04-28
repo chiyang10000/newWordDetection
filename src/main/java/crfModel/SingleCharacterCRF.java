@@ -54,12 +54,12 @@ public class SingleCharacterCRF extends crfppWrapper {
 		}
 	}
 
-	public void convert2TrainInput(String[] inputFiles, String trainFile) {
-		logger.debug("convert {} to {}", inputFiles, trainFile);
+	public void convert2TrainInput(String[] inputFiles) {
+		logger.debug("convert {} to {}", inputFiles, trainData);
 		try {
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				BufferedWriter writer = new BufferedWriter(new FileWriter(trainFile));
+				BufferedWriter writer = new BufferedWriter(new FileWriter(trainData));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
 					if (tmp.trim().length() == 0) continue;
@@ -135,7 +135,7 @@ public class SingleCharacterCRF extends crfppWrapper {
 	public static void main(String... args) {
 		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
 		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
-		singleCharacterCRF.convert2TrainInput(corpus, singleCharacterCRF.trainData);
+		singleCharacterCRF.convert2TrainInput(corpus);
 		singleCharacterCRF.train();
 	}
 }

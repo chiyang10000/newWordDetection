@@ -70,7 +70,7 @@ abstract public class crfppWrapper {
 		convertTestOuput2Res(crfppOutput, outputFile);
 	}
 
-	abstract public void convert2TrainInput(String[] inputFiles, String trainFile);
+	abstract public void convert2TrainInput(String[] inputFiles);
 	abstract public void convertSrc2TestInput(String[] inputFiles, String crfppInput);
 	abstract public void convertTestOuput2Res(String crfppOutput, String resFile);
 
