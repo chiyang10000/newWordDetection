@@ -1,9 +1,7 @@
 package evaluate;
 
-import Config.Config;
-import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.Ansj;
-import crfModel.SegementCRF;
+import crfModel.SegementationCRF;
 import crfModel.SingleCharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.HashSet;
 
 
@@ -45,7 +44,6 @@ public class Test {
 		} catch (java.io.IOException e) {
 			e.printStackTrace();
 		}
-		//System.out.println("evaluate on " + golden);
 		logger.info("select " + select + " hit " + hit + " total " + sum);
 		float p = (float) hit / select;
 		float r = (float) hit / sum;
@@ -54,49 +52,45 @@ public class Test {
 	}
 
 	public static void main(String... args) {
-		int counter = 0;
 		File[] files = new File("data/test").listFiles();
-		SegementCRF segementCRF = new SegementCRF("data/test/train.txt.src", "data/test/test.txt.src");
-		//for (Config.levelNum = 5; Config.levelNum < 16; Config.levelNum++) {
-			//segementCRF.convert2TrainInput(new String[]{"data/raw/train.txt"});
-			//segementCRF.train();
-			for (File file : files)
-				if (file.getName().matches(".*\\.src")) {
-					String inputFile = file.getAbsolutePath();
-					String answerFile = inputFile.replace(".src", ".ans");
-					String outputFile;
-					counter++;
-					logger.info("Test {}", counter);
+
+		SegementationCRF segementationCRF = new SegementationCRF("data/test/train.txt.src", "data/test/test.txt.src");
+		segementationCRF.train(new String[]{"data/raw/train.txt"});
+		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
+		//singleCharacterCRF.train(new String[]{"data/raw/train.txt"});
+		Ansj ansj = new Ansj();
+		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<NewWordDetector>();
+		newWordDetectors.add(singleCharacterCRF);
+		newWordDetectors.add(ansj);
+		newWordDetectors.add(segementationCRF);
+
+		for (File file : files)
+			if (file.getName().matches(".*\\.src") && !file.getName().matches(".*train.*")) {
+				String inputFile = file.getAbsolutePath();
+				String answerFile = inputFile.replace(".src", ".corpus.ans");
+				String outputFile;
+				logger.info("Test on {}", file.getName());
+				segementationCRF.nagao.addWordInfo(answerFile, "tmp/" + file.getName() + ".corpus.ans");
+
 				/*
-				outputFile = String.format("tmp/%s_%s", "NagaoAlgorithm.", file.getName());
+				outputFile = String.format("tmp/%s%s", "NagaoAlgorithm.", file.getName());
 				NagaoAlgorithm nagao = new NagaoAlgorithm(10);
 				nagao.detect(new String[]{inputFile}, outputFile, 10, 3, 1.5);
 				Test.test(answerFile, outputFile);
 				*/
 
-					System.out.println("-------");
-					//nagao.addWordInfo(answerFile, "tmp/" + file.getName());
-/*
-				outputFile = String.format("tmp/%s.%s", "SingleCrfModel.", file.getName());
-				new SingleCharacterCRF().detect(inputFile, outputFile);
-				//nagao.addWordInfo(outputFile, outputFile + ".tmp");
-				Test.test(answerFile, outputFile);
-
-				System.out.println("-------");
-				*/
-
-					outputFile = String.format("tmp/%s.%s", "SegmentCrfModel.", file.getName());
-					segementCRF.detect(inputFile, outputFile);
+				segementationCRF.convert2TrainInput(new String[]{"data/raw/" + file.getName().replace(".src", "")});
+				logger.info("Most recall of ansj is {}", segementationCRF.mostRecallInTraindata);
+				for (NewWordDetector newWordDetector : newWordDetectors) {
+					//if (newWordDetector != segementationCRF) continue;
+					outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), file.getName());
+					newWordDetector.detect(inputFile, outputFile);
+					segementationCRF.nagao.addWordInfo(outputFile, outputFile + ".txt");
 					Test.test(answerFile, outputFile);
-					System.out.println();
+				}
 
-					outputFile = String.format("tmp/%s.%s", "Ansj.", file.getName());
-					new Ansj().detect(inputFile, outputFile);
-					Test.test(answerFile, outputFile);
+				logger.info("-----------------------------------");
 
-
-					//if (counter >0) break;
-				//}
-		}
+			}
 	}
 }

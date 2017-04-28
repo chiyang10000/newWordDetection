@@ -47,7 +47,7 @@
 主要/b 情报/n 与/c 电子战/n 装备/n 是/v 12/m 架/q OH-58/nx 侦察/vn 直升机/n 、/w 3/m 架/q EH—60/nx 专用/vn 电子战/n 直升机/n 、/w 12/m 部/q 地面/n 侦察/vn 雷达/n 、/w 30/m 余/m 部/q (/w 套/q )/w 电子战/n 设备/n 。/w 
 师属/b AN／TSQ—114A型/b 车载式/b 甚高频/b 通信/v 测向/vn 系统/n ，/w 每/r 分钟/q 可/v 对/p 6/m 部/q 电台/n 测向/v 。/w 
 师/n 军事/n 情报营/n 利用/v 远/a 距离/n 技术/n 侦察/vn 手段/n 及/c 投掷式/b 遥感/n 侦察/vn 系统/n 可/v 直接/a 侦察/v 监视/v 100/m 公里/q 范围/n 内/f 的/u 敌情/n ，/w 并/c 可/v 向/p 300/m 一/m 400/m 公里/q 纵深/n 派出/v 远程/b 地面/n 侦察/v 。/w 
-全/a 师/n 在/p 进攻/v 中/f 可/v 派出/v 250/m ～/w 270/m 个/q 侦察/vn 单位/n ，/w 防御/v 中/f 可/v 派出/v 170/m ～/w 180/m 个/q 侦察/vn 单位/n 。/w 
+全/a 师/n 在/p 进攻/v 中/f 可/v 派出/v 250/m ~/w 270/m 个/q 侦察/vn 单位/n ，/w 防御/v 中/f 可/v 派出/v 170/m ~/w 180/m 个/q 侦察/vn 单位/n 。/w 
 师属/b 空中/s 骑兵/n 侦察/vn 中队/n 的/u 电子/n 设备/n 主要/d 以/p 直升机/n 为/v 平台/n ，/w 侦收/v 的/u 频段/n 宽/a 、/w 距离/n 远/a 、/w 精度/n 高/a 。/w 
 12/m 架/q OH—58D/nx 轻型/b 攻击/vn 与/c 侦察/vn 直升机/n 能够/v 独立/a 地/u 遂行/v 纵深/n 侦察/vn 任务/n ，/w 可/d 对/p 师/n 整个/b 作战/vn 地域/n 和/c 关心/vn 地域/n (/w 即/v 由/p 己方/n 前锋线/n 向前/v 延伸/v 150/m 公里/q )/w 的/u 敌军/n 部署/vn 、/w C3I/nx 设施/n 进行/v 快速/b 的/u 空中/s 侦察/vn 、/w 识别/vn 和/c 定位/vn 。/w 
 师/n 地面/n 无线电/n 技术/n 侦察/vn 距离/n 500/m 公里/q ，/w 直升机/n 空中/s 侦察/vn 距离/n 150/m 公里/q 。/w 
@@ -56,8 +56,8 @@
 师属/b 炮兵/n 下/f 辖/v 的/u 目标/n 搜索连/n 的/u AN／TPQ-36型/b 反/n 炮兵/n 雷达/n ，/w 可/v 探测/v 12/m 公里/q 以内/f 的/u 敌/n 迫击炮/n 和/c 24/m 公里/q 以内/f 的/u 榴炮/n 或/c 火箭炮/n 阵地/n 。/w 
 (/w 2/m )/w 电子战/n 能力/n ：/w 第1/m 骑兵师/n 编制/n 专用/vn 电子战/n 飞机/n 3/m 架/q (/w EH-60/nx )/w ，/w 各型/r 电子战/n 设备/n 30/m 余/m 部/q ，/w 能够/v 为/v 师/n 提供/v 高频/b 和/c 甚高频/b 通信/vn 拦截/vn 和/c 干扰/vn 能力/n ，/w 可/v 在/p 师/n 的/u 整个/b 作战/v 纵深/n 实施/v 攻击/v 干扰/v 。/w 
 3/m 部/q 直升机/n 载/v AN／ALQ-151/nx 通信/vn 干扰/vn 系统/n 可/v 从/p 空中/s 截获/v 和/c 识别/v 敌/n 指挥/n ；/w 控制/vn 、/w 通信/vn 系统/n 。/w 
-师/n 的/u 车载式/b 电子/n 干扰/vn 能力/n 可/v 达到/v ：/w 地面/n 30/m 公里/q 、/w 空中/s 40/m 公里/q ，/w 定期/d 监视/v 40/m ～/w 50/m 个/q 无线/b 电网/n 、/w 15/m 部/q 雷达/n 。/w 
-1/m 小时/n 内/f 测向/v 定位/v 60/m -/w 80/m 个/q 短波/n 电台/n 坐标/n 、/w 24/m ～/w 30/m 部/q 地面/n 雷达/n 坐标/n ，/w 干扰/v 压制/v 30/m 个/q 无线/b 电网/n 、/w 10/m -/w 15/m 部/q 雷达/n 。/w 
+师/n 的/u 车载式/b 电子/n 干扰/vn 能力/n 可/v 达到/v ：/w 地面/n 30/m 公里/q 、/w 空中/s 40/m 公里/q ，/w 定期/d 监视/v 40/m ~/w 50/m 个/q 无线/b 电网/n 、/w 15/m 部/q 雷达/n 。/w 
+1/m 小时/n 内/f 测向/v 定位/v 60/m -/w 80/m 个/q 短波/n 电台/n 坐标/n 、/w 24/m ~/w 30/m 部/q 地面/n 雷达/n 坐标/n ，/w 干扰/v 压制/v 30/m 个/q 无线/b 电网/n 、/w 10/m -/w 15/m 部/q 雷达/n 。/w 
 有效/a 压制/v 敌/n 第一/m 梯队团/n 的/u 指挥/vn 通信网/n 和/c 电子/n 发射/v 发置/v 。/w 
 该师/r 还/d 具备/v 很/d 强/a 的/u 电子/n 设备/n 硬/a 摧毁/vn 能力/n 。/w 
 师属/b 骑兵/n 中队/n 的/u 侦察/vn 直升机/n 与/c 攻击/vn 直升机/n 按/p 12:8/m 的/u 比例/n 缩/v 成/v ，/w 具备/v 很/d 强/a 的/u 目标/n 探测/vn 技术/n 与/c 精确/a 制导/vn 技术/n 相/d 结合/v 的/u 实体/n 摧毁/vn 能力/n 。/w 
@@ -67,10 +67,10 @@
 海湾/n 战争/n 中/f ，/w 第1/m 骑兵师/n 使用/v 了/u 移动/vn 用户/n 设备网/n ，/w 8/m 部/q RT一1539型/b 数字/n 无线电台/n 组成/v 的/u 无线电/n 入口/n 单元/n 每/r 秒钟/q 可/v 传递/v 25.6/m 万/m 比特/q (/w 3.2/m 万/m 个/q 字节/n )/w 的/u 信息量/n 。/w 
 全/a 师/n 共/d 装备/v 19/m 部/q AN／TTC-48V型/b 小型/b 用户/n 节点/n 交换机/n ，/w 配备/v 到/v 营/n 一级/b 的/u V1型/b 可/v 联接/v 26/m 个/q 数字/n 用户/n 终端/n ，/w 配备/v 至/v 旅/n 一级/b 的/u V2型/b 可/v 联接/v 41/m 个/q 数字/n 用户/n 终端/n 。/w 
 师/n 通信营/n 可/v 为/p 师/n 提供/v 6/m 个/q 调频/vn 无线电站/n 以/c 扩大/v 师/n 的/u 作战/vn 活动/n 和/c 情报网/n 。/w 
-全/a 师/n 装备/n 机载式/b 、/w 背负式/b 和/c 车载式/b 三/m 种/q 类型/n 的/u 单信道/b 战术/n 电台/n 5200/m 余/m 部/q ，/w 最/d 大/a 通信/vn 距离/n 8/m ～/w 35/m 公里/q ，/w 由于/c 采用/v 了/u 扩频/vn 、/w 跳频/vn 、/w 反/b 电子/n 干扰/vn 先进/a 技术/n ，/w 能够/v 提供/v 高度/d 可靠/a 的/u 保密/vn 通话/vn 和/c 数据/n 通信/vn ，/w 是/v 骑师/n 前方/s 地域/n 部队/n 主要/b 的/u 指挥/vn 控制/vn 手段/n 。/w 
+全/a 师/n 装备/n 机载式/b 、/w 背负式/b 和/c 车载式/b 三/m 种/q 类型/n 的/u 单信道/b 战术/n 电台/n 5200/m 余/m 部/q ，/w 最/d 大/a 通信/vn 距离/n 8/m ~/w 35/m 公里/q ，/w 由于/c 采用/v 了/u 扩频/vn 、/w 跳频/vn 、/w 反/b 电子/n 干扰/vn 先进/a 技术/n ，/w 能够/v 提供/v 高度/d 可靠/a 的/u 保密/vn 通话/vn 和/c 数据/n 通信/vn ，/w 是/v 骑师/n 前方/s 地域/n 部队/n 主要/b 的/u 指挥/vn 控制/vn 手段/n 。/w 
 5./m 防空/vn 能力/n 
-第1/m 骑兵师/n 有/v 较/d 强/a 的/u 防空/vn 自卫/vn 能力/n ，/w 表现/v 在/p 三/m 个/q 方面/n ：/w 一/m 是/v 师属/b 防空/vn 炮兵营/n 装备/n “/w 复仇者/nz ”/w 自行/d 防空/vn 导弹/n 系统/n 36/m 部/q ，/w 可/v 在/p 行进/v 间/f 发射/v ，/w 具有/v 全向/v 攻击/v 和/c “/w 发射/v 后/f 不/d 管/v ”/w 的/u 能力/n ，/w 师属/b 防空营/n 24/m 门/q 改进型/b “/w 火神/n ”/w 高炮/n (/w 每/r 分钟/q 射速/n 3000/m 发/q ，/w 自动/d 搜索/v 和/c 识别/v 目标/n 时间/n 不/d 到/v 2/m 秒钟/q )/w ，/w 在/p 师/n 前方/s 地域/n 警戒/vn 雷达/n 以及/c 师/n 骑兵/n 中队/n OH—58D/nx 侦察/vn 直升机/n 的/u 配合/v 下/f ，/w 能/v 有效/a 地/u 对/p 师/n 作战/vn 地域/n 内/f 的/u 低空/s (/w 1.2/m ～/w 3.8/m 公里/q )/w 来/v 袭/v 敌机/n 进行/v 打击/v ，/w 掩护/v 师/n 主要/d 作战/vn 队形/n 的/u 空中/s 安全/an 。/w 
-二/m 是/v 师/n 航空旅/n 的/u 36/m 架/q “/w 阿帕奇/nr ”/w 攻击/vn 直升机/n 和/c 24/m 架/q “/w 黑鹰/nz ”/w 多/a 用途/n 直升机/n 均/d 可/v 挂载/v 4/m ～/w 8/m 枚/q “/w 毒刺/nz ”/w 空对空导弹/n ，/w 有/v 一定/b 的/u 防空/vn 自卫/vn 能力/n 。/w 
+第1/m 骑兵师/n 有/v 较/d 强/a 的/u 防空/vn 自卫/vn 能力/n ，/w 表现/v 在/p 三/m 个/q 方面/n ：/w 一/m 是/v 师属/b 防空/vn 炮兵营/n 装备/n “/w 复仇者/nz ”/w 自行/d 防空/vn 导弹/n 系统/n 36/m 部/q ，/w 可/v 在/p 行进/v 间/f 发射/v ，/w 具有/v 全向/v 攻击/v 和/c “/w 发射/v 后/f 不/d 管/v ”/w 的/u 能力/n ，/w 师属/b 防空营/n 24/m 门/q 改进型/b “/w 火神/n ”/w 高炮/n (/w 每/r 分钟/q 射速/n 3000/m 发/q ，/w 自动/d 搜索/v 和/c 识别/v 目标/n 时间/n 不/d 到/v 2/m 秒钟/q )/w ，/w 在/p 师/n 前方/s 地域/n 警戒/vn 雷达/n 以及/c 师/n 骑兵/n 中队/n OH—58D/nx 侦察/vn 直升机/n 的/u 配合/v 下/f ，/w 能/v 有效/a 地/u 对/p 师/n 作战/vn 地域/n 内/f 的/u 低空/s (/w 1.2/m ~/w 3.8/m 公里/q )/w 来/v 袭/v 敌机/n 进行/v 打击/v ，/w 掩护/v 师/n 主要/d 作战/vn 队形/n 的/u 空中/s 安全/an 。/w 
+二/m 是/v 师/n 航空旅/n 的/u 36/m 架/q “/w 阿帕奇/nr ”/w 攻击/vn 直升机/n 和/c 24/m 架/q “/w 黑鹰/nz ”/w 多/a 用途/n 直升机/n 均/d 可/v 挂载/v 4/m ~/w 8/m 枚/q “/w 毒刺/nz ”/w 空对空导弹/n ，/w 有/v 一定/b 的/u 防空/vn 自卫/vn 能力/n 。/w 
 三/m 是/v 该师/r 6/m 个/q 坦克营/n 的/u 348/m 辆/q M1A1/nx 主战/b 坦克/n ，/w 共/d 装有/v 696/m 挺/q 高射/b 机枪/n ，/w 具备/v 一定/b 的/u 对/v 低空/s 来/v 袭/v 敌机/n 和/c 直升机/n 的/u 防卫/vn 能力/n 。/w 
 6./m 防化/vn 能力/n 
 师属/b 防化连/n (/w 第68/m 防化连/n )/w 编/v 有/v 一个/m 核生化/vn 分队/n 和/c 4/m 个/q 消除/vn 沾染排/n 、/w l/m 个/q 烟幕排/n ，/w 能够/v 完成/v 本师/r 的/u 核生化/vn 侦察/vn 、/w 洗/v 消/v 和/c 发/v 烟/n 任务/n 。/w 
@@ -84,10 +84,10 @@
 依靠/v 师/n 自身/r 的/u 工兵/n 力量/n ，/w 可/v 完成/v 师/n 战斗/vn 工程/n 保障/v 、/w 机动/b 与/c 反/b 机动/b 任务/n 。/w 
 快速/d 构筑/v 与/c 维持/v 师/n 战斗/vn 地域/n 内/f 的/u 主要/b 作战/vn 道路/n 、/w 拦阻/v 阵地/n 和/c 波涉场/n 的/u 进出/vn 道路/n 和/c 主要/b 桥梁/n 。/w 
 师/n 的/u 攻击/vn 架桥/vn 分队/n 使用/v MAB/nx 自行/b 舟桥/n 能够/v 在/p 跨度/n 144/m 米/q 的/u 河上/s 快速/d 架设/v 4/m 个/q 载重/v 60/m 吨/q 的/u 漕渡门桥/ns 。/w 
-使用/v MI/nx 主战/b 坦克/n 底盘/n 的/u HAB/nx 重型/b 冲击/vn 桥/n 可/v 伴随/v 坦克师/n 的/u 突击/vn 行动/n ，/w 在/p 敌火/n 下/f 快速/d 架设/v 跨度/n 32/m 米/q 载重/v 70/m 吨/q 的/u 门桥/n ，/w 保障/v 坦克/n 装甲/b 战斗/vn 车辆/n 克服/v 沟/n 壕/n 等/u 障碍/n ，/w 架设/vn 与/c 撤/vn 收/vn 时间/n 仅/d 为/v 3/m ～/w 10/m 分钟/q 。/w 
+使用/v MI/nx 主战/b 坦克/n 底盘/n 的/u HAB/nx 重型/b 冲击/vn 桥/n 可/v 伴随/v 坦克师/n 的/u 突击/vn 行动/n ，/w 在/p 敌火/n 下/f 快速/d 架设/v 跨度/n 32/m 米/q 载重/v 70/m 吨/q 的/u 门桥/n ，/w 保障/v 坦克/n 装甲/b 战斗/vn 车辆/n 克服/v 沟/n 壕/n 等/u 障碍/n ，/w 架设/vn 与/c 撤/vn 收/vn 时间/n 仅/d 为/v 3/m ~/w 10/m 分钟/q 。/w 
 工兵旅/n 编/v 有/v 24/m 门/q 90/m 毫米/q 无坐力炮/n ，/w 可/v 协助/v 师/n 对/v 敌/n 筑垒/vn 地域/n 进行/v 破障/v 攻击/v 。/w 
 在/p 进攻/v 时/n ，/w 师/n 每个/r 坦克营/n 或/c 机步营/n 在/p 1/m 个/q 工兵排/n 的/u 支援/vn 下/f ，/w 以/p 机械/n 作业/n 方式/n (/w 坦克/n 扫雷犁/nz ／/w 扫雪滚/nz )/w 在/p 雪场/n 中/f 开辟/v 120/m 米/q 通路/n 仅/d 需要/v 10/m 分钟/q 。/w 
-在/p 防御/v 时/n ，/w 该师/r 1/m 个/q 工兵连/n 在/p 24/m 小时/n 内/f 可/v 构筑/v 1/m 万/m ～/w 1.4/m 万/m 米/q 的/u 反/b 坦克壕/n 。/w 
+在/p 防御/v 时/n ，/w 该师/r 1/m 个/q 工兵连/n 在/p 24/m 小时/n 内/f 可/v 构筑/v 1/m 万/m ~/w 1.4/m 万/m 米/q 的/u 反/b 坦克壕/n 。/w 
 师/n 装备/v 的/u 18/m 部/q “/w 火山/n ”/w 布雷/vn 系统/n ，/w 如/c 使用/v 6/m 架/q UH一6O/nx 多/a 用途/n 直升机/n 快速/d 布设/v 临时/b 雷场/n ，/w 飞行/v 3/m 个/q 航次/n 便/d 可/v 布设/v 18/m 处/q 标准/a 雷场/n (/w 1/m 个/q 直升机/n 架次/q 可/v 布设/v 300/m 米/q X200/nx 米/q 混合/vn 雷场/n )/w 。/w 
 师/n 3/m 个/q 24/m 门/q 制/v 的/u 155/m 毫米/q 炮兵营/n 基本/a 携/v 行/n 量/n 中/f 的/u 撒布/v 地雷/n 于/p 母弹/n 可/v 布设/v 15/m 处/q 高/a 密度/n 雷场/n 、/w 57/m 处/q 低/a 密度/n 雷场/n 。/w 
 布设/v 1/m 处/q 高/a 密度/n 雪场/n 的/u 时间/n 仅/d 需/v 1/m 分钟/q 。/w 
@@ -101,7 +101,7 @@
 该师/r 装甲旅/n 6/m 个/q 坦克营/n 的/u MIAI/nx 主战/b 坦克/n 采用/v 新型/b 的/u 全景/n 热成像/vn 观察仪/n 和/c 热成像/vn 瞄准镜/n ，/w 大大/d 提高/v 了/u 夜间/t 机动/b 和/c 探测/vn 与/c 攻击/vn 目标/n 的/u 能力/n 。/w 
 1994年/t 后/f 改装/v 的/u 部分/n MIA2/nx 主战/b 坦克/n 装备/n 的/u “/w 指挥员/n 独立/a 热成像/vn 观察仪/n ”/w 和/c 驾驶员/n 热成像仪/n 采用/v 被动式/b 红外/b 技术/n ，/w 更/d 不易/a 被/p 敌方/n 发觉/v ，/w 夜间/t 行动/v 的/u 隐蔽性/n 更/d 强/a 。/w 
 该师/r 机步旅/v 3/m 个/q 机步营/n 的/u M2/nx “/w 布雷德利/nr ”/w 系列/n 战车/n 在/p 其/r 观测/v 与/c 指挥/v 系统/n 中/f 装有/v 昼夜/n 观察仪/n 和/c 红外/b 热成像/vn 系统/n 。/w 
-238/m 部/q 车载/n “/w 陶/a ”/w 式/b 反/b 坦克/n 导弹/n 发射/vn 系统/n 配备/v 的/u AN／TAS-4/nx 热成像/vn 瞄准仪/n 可/v 在/p 夜间/t 对/p 2/m ～/w 6/m 公里/q 的/u 装甲/b 目标/n 进行/v 探测/vn 和/c 瞄准/vn 射击/vn 。/w 
+238/m 部/q 车载/n “/w 陶/a ”/w 式/b 反/b 坦克/n 导弹/n 发射/vn 系统/n 配备/v 的/u AN／TAS-4/nx 热成像/vn 瞄准仪/n 可/v 在/p 夜间/t 对/p 2/m ~/w 6/m 公里/q 的/u 装甲/b 目标/n 进行/v 探测/vn 和/c 瞄准/vn 射击/vn 。/w 
 由于/c 拥有/v 较/d 强/a 的/u 夜战/vn 能力/n ，/w 美军/n 认为/v ，/w 骑兵师/n 可/v 实施/v 昼夜/n 连续/a 作战/v 的/u 高速/b 突击/vn ，/w 且/c 攻击/v 的/u 最佳/z 时间/n 是/v 在/v 夜间/t 。/w 
 9./m 后勤/n 支援/vn 能力/n 
 第1/m 骑兵师/n 的/u 师级/b 后勤/n 支援/v 由/p 本师/r 支援/vn 司令部/n 提供/v 。/w 
@@ -257,7 +257,7 @@ M113/nx 装甲/b 输送车/n 只/d 装备/v 一/m 挺/q 外/f 置/v 机枪/n ，
 2./m 兵力/n 不/d 能/v 一/m 次/q 到位/v ，/w 留下/v 易/a 受/v 攻击/v 之/u 窗/n 
 由于/c 受/v 运输/vn 能力/n 、/w 空降/vn 场地/n 、/w 敌情/n 等/u 条件/n 的/u 制约/vn ，/w 第82/m 空降师/n 准备/v 投入/v 战斗/v 的/u 兵力/n ，/w 只能/v 被/p 分期/v 分批/v 地/u 投送/v 到/v 预定/vn 地点/n ，/w 而/c 不/d 可能/v 一/m 次/q 到位/v 。/w 
 这样/r ，/w 首次/m 到达/v 的/u 兵力/n 就/d 很/d 可能/v 处于/v 势单力薄/v 的/u 境地/n ，/w 极/d 易/a 遭受/v 对方/n 的/u 攻击/vn 。/w 
-在/p 海湾/n 战争/n 中/f ，/w 由于/c C～141/nx 运输机/n 严重/a 不足/v ，/w 第82/m 空降师/n 的/u 战备/vn 值班旅/n 用/v 了/u 7/m 天/q ，/w 全/a 师/n 用/v 了/u 1/m 个/q 月/n 零/m 两天/t ，/w 才/d 全部/d 部署/v 到/v 海湾/n 。/w 
+在/p 海湾/n 战争/n 中/f ，/w 由于/c C~141/nx 运输机/n 严重/a 不足/v ，/w 第82/m 空降师/n 的/u 战备/vn 值班旅/n 用/v 了/u 7/m 天/q ，/w 全/a 师/n 用/v 了/u 1/m 个/q 月/n 零/m 两天/t ，/w 才/d 全部/d 部署/v 到/v 海湾/n 。/w 
 假如/c 伊军/n 在/p 这/r 期间/f 对/p 先期/d 到达/v 的/u 第82/m 空降师/n 发动/v 攻击/v ，/w 后果/n 会/v 怎么样/r 呢/y ？/w 在/p 入侵/v 巴拿马/ns 作战/v 中/f ，/w 第82/m 空降师/n 第1/m 旅/n 第2/m 营/n 在/p 攻占/v 维也霍/ns 要塞/n 时/n ，/w 9/m 架/q “/w 黑鹰/nz ”/w 直升机/n 用/v 了/u 3/m 个/q 波次/n 才/d 把/p 全/a 营/n 攻击/vn 部队/n 机降/v 到/v “/w 童子军/n 着陆场/n ”/w 和/c “/w 狮/n 着陆场/n ”/w 。/w 
 如果/c 巴军/n 能/v 抓住/v 美军/n 最初/b 兵力/n 薄弱/a 的/u 时机/n ，/w 集中/v 兵力/n 对/p 其/r 实施/v 强有力/a 的/u 进攻/vn ，/w 美军/n 必定/d 遭受/v 惨重/a 损失/n 。/w 
 3．/m 一旦/d 降/v 到/v 地面/n ，/w 机动/b 能力/n 有限/a 
@@ -352,9 +352,9 @@ OH-58D/nx 直升机/n 上/f 装备/v 的/u 毫米波/n 雷达/n 、/w 低/a 照�
 (/w 2/m )/w 电子战/n 能力/n 。/w 
 第10/m 山地师/n 编制/v 专用/v 电子战/n 直升机/n 3/m 架/q (/w EH-60/nx )/w 各型/r 电子战/n 设备/n 20/m 余/m 部/q 。/w 
 3/m 部/q 直升机/n 载/v 的/u AN／ALQ-151/nx 通信/vn 干扰/vn 系统/n 可/v 从/p 空中/s 截获/v 和/c 识别/v 敌/n 指挥/n 、/w 控制/vn 、/w 通信/vn 系统/n ，/w 并/c 对/p 其/r 定位/v 和/c 干扰/v ，/w 能够/v 为/p 师/n 提供/v 高频/b 和/c 甚高频/b 通信/vn 拦截/vn 和/c 干扰/vn 能力/n ，/w 可/v 在/p 师/n 的/u 整个/b 作战/v 纵深/n 实施/v 攻击/v 干扰/v 。/w 
-美军/n 各种/r 轻型师/n 装备/v 的/u AN／GLA-3B/nx 大功率/b 通信/vn 干扰机/n ，/w 有效/a 干扰/v 功率/n 1450/m ～/w 2300/m 瓦/q ，/w 可/v 有效/a 压制/v 敌方/n 高频/b ／/w 甚高频/b 话音/n 和/c 数据/n 通信/v 。/w 
-能够/v 定期/d 监视/v 敌方/n 30/m ～/w 40/m 个/q 无线/b 电网/n 、/w 10/m ～/w 15/m 部/q 雷达/n 。/w 
-1/m 小时/n 内/f 测向/v 定位/v 50/m ～/w 60/m 个/q 短波/n 电台/n 坐标/n 、/w 20/m 部/q 地面/n 雷达/n 坐标/n ，/w 干扰/v 压制/v 30/m 个/q 无线/b 电网/n 、/w 10/m ～/w 15/m 部/q 雷达/n 。/w 
+美军/n 各种/r 轻型师/n 装备/v 的/u AN／GLA-3B/nx 大功率/b 通信/vn 干扰机/n ，/w 有效/a 干扰/v 功率/n 1450/m ~/w 2300/m 瓦/q ，/w 可/v 有效/a 压制/v 敌方/n 高频/b ／/w 甚高频/b 话音/n 和/c 数据/n 通信/v 。/w 
+能够/v 定期/d 监视/v 敌方/n 30/m ~/w 40/m 个/q 无线/b 电网/n 、/w 10/m ~/w 15/m 部/q 雷达/n 。/w 
+1/m 小时/n 内/f 测向/v 定位/v 50/m ~/w 60/m 个/q 短波/n 电台/n 坐标/n 、/w 20/m 部/q 地面/n 雷达/n 坐标/n ，/w 干扰/v 压制/v 30/m 个/q 无线/b 电网/n 、/w 10/m ~/w 15/m 部/q 雷达/n 。/w 
 可/v 压制/v 敌/n 第一/m 梯队团/n 的/u 指挥/vn 通信网/n 和/c 电子/n 发射/vn 装置/n 。/w 
 该师/r 还/d 具备/v 很/d 强/a 的/u 电子/n 设备/n 硬/d 摧毁/v 能力/n 。/w 
 师属/b 骑兵/n 中队/n 的/u 侦察/vn 直升机/n 与/c 攻击/vn 直升机/n 按/p 12:8/m 的/u 比例/n 编成/v ，/w 具备/v 很/d 强/a 的/u 目标/n 探测/vn 技术/n 与/c 精确/a 制导/vn 技术/n 相/d 结合/v 的/u 实体/n 摧毁/vn 能力/n 。/w 
@@ -378,14 +378,14 @@ OH-58D/nx 直升机/n 上/f 装备/v 的/u 毫米波/n 雷达/n 、/w 低/a 照�
 在/p 防御/v 时/n 的/u 反/b 机动/b 作战/vn 中/f ，/w 师/n 使用/v “/w 火山/n ”/w 布雷/vn 系统/n ，/w 用/v 6/m 架/q UH-60/nx 直升机/n 多/a 飞行/vn 3/m 个/q 航次/n 便/d 可/v 布设/v 18/m 处/q 标准/a 雷场/n (/w 1/m 个/q 直升机/n 架次/q 可/v 布设/v 300×200/m 米/q 混合/vn 雷场/n )/w 。/w 
 师/n 3/m 个/q 18/m 门/q 制/v 的/u 105/m 毫米/q 榴炮营/n 基本/a 携行量/n 中/f 的/u 撒布/vn 地雷/n 子母弹/n 可/v 布设/v 12/m 处/q 高/a 密度/n 雷场/n 、/w 45/m 处/q 低/a 密度/n 雷场/n 。/w 
 布设/v 1/m 处/q 高/a 密度/n 雷场/n 的/u 时间/n 仅/d 需/v 1/m 分钟/q 。/w 
-用/v 1/m 个/q 105/m 毫米/q 榴炮营/n 可/v 快速/d 投射/v 遥控/v 反/b 装甲/b 雷场/n ，/w 投射/v 距离/n 4/m ～/w 17/m 公里/q ，/w 一/m 次/q 投射/v 可/v 布设/v 400×400/m 米/q 标准/n 雷场/n 。/w 
+用/v 1/m 个/q 105/m 毫米/q 榴炮营/n 可/v 快速/d 投射/v 遥控/v 反/b 装甲/b 雷场/n ，/w 投射/v 距离/n 4/m ~/w 17/m 公里/q ，/w 一/m 次/q 投射/v 可/v 布设/v 400×400/m 米/q 标准/n 雷场/n 。/w 
 师/n 工兵营/n 装备/v 的/u 8/m 辆/q M9型/b 装甲/b 战斗/vn 工程车/n 能够/v 以/p 48/m 公里/q 的/u 时速/n 伴随/v 进攻/vn 部队/n 进行/v 快速/b 工程/n 保障/vn 。/w 
 8./m 夜战/vn 能力/n 
 第10/m 山地师/n 装备/v 各类/r 夜视/b 器材/n 1200/m 余/m 件/q 。/w 
 师/n 航空旅/n 全部/m 战斗/vn 与/c 运输/vn 直升机/n 均/d 配备/v 夜视/b 系统/n ，/w 能够/v 在/p 夜间/t 起飞/v 和/c 机降/v 并/c 识别/v 和/c 攻击/v 目标/n 。/w 
 “/w 阿帕奇/nr ”/w 攻击/vn 直升机/n PNNS/nx 夜视/b 系统/n 在/p 夜间/t 对/p 坦克/n 的/u 探测/vn 距离/n 达/v 12/m 公里/q ，/w 识别/v 和/c 攻击/v 距离/n 为/v 7/m 公里/q 。/w 
 全/a 师/n 基本/a 作战/vn 单位/n 和/c 步兵/n 班组/n 均/d 配备/v 了/u AN／PVS-2／5型/b 夜视仪/n 和/c 夜视镜/n 900/m 余/m 件/q ，/w 可/v 进行/v 夜间/t 观察/v 和/c 瞄准/v 射击/v 。/w 
-3/m 个/q 步兵旅/v 的/u 98/m 部/q “/w 陶/a ”/w 式/b 和/c “/w 标枪/n ”/w 反/b 坦克/n 导弹/n 发射架/n 用/v AN／TAS-4/nx 热成像/vn 瞄准仪/n 可/v 在/p 夜间/t 对/p 2/m ～/w 6/m 公里/q 的/u 装甲/b 目标/n 进行/v 探测/v 和/c 瞄准/v 射击/v 。/w 
+3/m 个/q 步兵旅/v 的/u 98/m 部/q “/w 陶/a ”/w 式/b 和/c “/w 标枪/n ”/w 反/b 坦克/n 导弹/n 发射架/n 用/v AN／TAS-4/nx 热成像/vn 瞄准仪/n 可/v 在/p 夜间/t 对/p 2/m ~/w 6/m 公里/q 的/u 装甲/b 目标/n 进行/v 探测/v 和/c 瞄准/v 射击/v 。/w 
 师/n 炮兵/n 装备/v 的/u 红外/b 焦面/n 热像仪/n 配合/v 前方/s 地域/n 的/u 炮位/n 侦察/vn 雷达/n 可/v 有效/a 地/u 进行/v 夜间/t 火力/n 支援/vn 任务/n 。/w 
 9./m 后勤/n 支援/vn 能力/n 
 第10/m 山地师/n 的/u 师级/b 后勤/n 支援/vn 是/v 由/p 师/n 支援/vn 司令部/n 及/c 司令部/n 连/n 、/w 1/m 个/q 补给/vn 与/v 运输营/n 、/w 1/m 个/q 卫生营/n 、/w 1/m 个/q 维修营/n 和/c 1/m 个/q 运输/vn 直升机/n 维修连/n 提供/v 的/u 。/w 
@@ -435,21 +435,21 @@ OH-58D/nx 直升机/n 上/f 装备/v 的/u 毫米波/n 雷达/n 、/w 低/a 照�
 二/m 、/w 作战/vn 能力/n 
 1./m 机动力/n 
 在/p 战略/n 机动/b 能力/n 方面/n ，/w 第3/m 机步师/n 除/p 师/n 先头/f 部队/n 和/c 师属/b 航空旅/n 可/v 通过/p 军事/n 空运/vn 司令部/n 的/u C-5/nx 运输机/n 和/c C-14/nx 或/c 141B/nx 运输机/n 快速/d 投送/v 外/f (/w C-5A/nx 运输机/n 装载/v 6/m 架/q ，/w AH-64/nx 攻击/vn 直升机/n 仅/d 需/v 7/m 个/q 小时/n ，/w 直升机/n 旅翼/n 不/d 需/v 拆卸/v ，/w 运抵/v 战区/n 后/f 可/v 迅速/a 投入/v 作战/v )/w ，/w 师/n 其余/r 重装备/n (/w 290/m 辆/q 重型/b 坦克/n 、/w 380/m 辆/q 步兵/n 和/c 骑兵/n 战车/n 、/w 308/m 辆/q 全/a 履带/n 装甲/b 人员/n 输送车/n 、/w 72/m 门/q 155/m 毫米/q 自行/d 榴弹炮/n 、/w 9/m 门/q 12/m 管/q 227/m 毫米/q 多/a 管/q 火箭炮/n 等/u )/w 必须/d 通过/p 军事/n 海运/v 从/p 美/ns 本土/n 投送/v 到/v 危机/n 地区/n 。/w 
-由于/p 海运/vn 时间/n 较/d 长/a (/w 使用/v 快速/b 运输船/n 从/p 美国/ns 本土/n 投送/v 到/v 东北亚/n 或/c 海湾/n 地区/n 最/d 快/a 也/d 要/v 2/m ～/w 3/m 周/n 时间/n )/w ，/w 为/p 使/v 该师/r 尽快/d 形成/v 战斗力/n 、/w “/w 通常/d 将/p 该师/r 人员/n 全部/m 空运/v 至/v 战区/n ，/w 并/c 启用/v 战区/n 预置/vn 和/c 海上/s 预置/vn 装备/n (/w 如/v 美军/n 在/p 科威特/ns 、/w 沙特/ns 和/c 卡塔尔/ns 预置/v 了/u 可/v 装备/n 3/m 个/q 旅/n 的/u M1A1/nx 主战/b 坦克/n 和/c 装甲车/n )/w 。/w 
+由于/p 海运/vn 时间/n 较/d 长/a (/w 使用/v 快速/b 运输船/n 从/p 美国/ns 本土/n 投送/v 到/v 东北亚/n 或/c 海湾/n 地区/n 最/d 快/a 也/d 要/v 2/m ~/w 3/m 周/n 时间/n )/w ，/w 为/p 使/v 该师/r 尽快/d 形成/v 战斗力/n 、/w “/w 通常/d 将/p 该师/r 人员/n 全部/m 空运/v 至/v 战区/n ，/w 并/c 启用/v 战区/n 预置/vn 和/c 海上/s 预置/vn 装备/n (/w 如/v 美军/n 在/p 科威特/ns 、/w 沙特/ns 和/c 卡塔尔/ns 预置/v 了/u 可/v 装备/n 3/m 个/q 旅/n 的/u M1A1/nx 主战/b 坦克/n 和/c 装甲车/n )/w 。/w 
 从/p 海湾/n 战争/n 以及/c 战后/t “/w 警惕/v 勇士/n ”/w 行动/v 看/v ，/w 该师/r 两/m 次/q 采取/v 的/u 都/d 是/v 这种/r 战略/n 机动/b 模式/n 。/w 
 在/p 战术/n 机动/b 能力/n 方面/n ，/w 全/a 师/n 编/v 有/v 各种/r 作战/vn 和/c 输送/vn 车辆/n 5748/m 部/q ，/w 各型/r 直升机/n 121/m 架/q ，/w 具有/v 较/d 强/a 的/u 地面/n 和/c 立体/b 机动/b 能力/n ，/w 昼间/t 地面/n 机动/b 速度/n 为/v 30/m 公里／小时/q ，/w 夜间/t 25/m 公里／小时/q 。/w 
 全/a 师/n 完成/v 接/v 敌/n 运动/n 约/d 需/v 2/m 小时/n 。/w 
-在/p 非作战/b 条件/n 下/f ，/w 一/m 昼夜/q 机动/b 距离/n 可/v 达/v 500/m 公里/q ，/w 在/p 战斗/vn 条件/n 下/f 一/m 昼夜/n 可/v 机动/b 150/m ～/w 200/m 公里/q 。/w 
+在/p 非作战/b 条件/n 下/f ，/w 一/m 昼夜/q 机动/b 距离/n 可/v 达/v 500/m 公里/q ，/w 在/p 战斗/vn 条件/n 下/f 一/m 昼夜/n 可/v 机动/b 150/m ~/w 200/m 公里/q 。/w 
 该师/r 全部/m 280/m 辆/q M2/nx 步兵/n 战车/n 和/c 100/m 辆/q M3/nx 骑兵/n 战车/n 以及/c 308/m 辆/q M113/nx 装甲/b 人员/n 输送车/n 均/d 具备/v 两栖/b 机动/b 能力/n ，/w 能/v 克服/v 水库/n 进行/v 机动/b 作战/v 。/w 
 该师/r 航空旅/n 的/u 2/m 个/q 攻击/vn 直升机/n 营/n 机动/b 作战/vn 半径/n 可/v 达/v 230/m 公里/q 。/w 
-该师/r 空中/s 突击连/n 装备/v 15/m 架/q UH-60/nx “/w 黑鹰/nz ”/w 直升机/n ，/w 可/v 一/m 次/q 空中/s 机动/b 1/m 个/q 步兵连/n ，/w 空中/s 机动/b 速度/n 可/v 达/v 200/m 公里／小时/q ，/w 即便/c 在/p 掠/v 地/n 高度/d (/w 7/m ～/w 30/m 米/q )/w 飞行/v ，/w 也/d 可/v 达/v 150/m 公里／小时/q ，/w 是/v 其/r 坦克/n 和/c 机械/n 部队/n 机动/b 速度/n 的/u 3/m ～/w 4/m 倍/q ，/w 可/v 配合/v 该师/r 进行/v 连级/b 规模/n 的/u 空中/s 突击/vn 作战/vn 和/c 机降/vn 作战/vn 。/w 
+该师/r 空中/s 突击连/n 装备/v 15/m 架/q UH-60/nx “/w 黑鹰/nz ”/w 直升机/n ，/w 可/v 一/m 次/q 空中/s 机动/b 1/m 个/q 步兵连/n ，/w 空中/s 机动/b 速度/n 可/v 达/v 200/m 公里／小时/q ，/w 即便/c 在/p 掠/v 地/n 高度/d (/w 7/m ~/w 30/m 米/q )/w 飞行/v ，/w 也/d 可/v 达/v 150/m 公里／小时/q ，/w 是/v 其/r 坦克/n 和/c 机械/n 部队/n 机动/b 速度/n 的/u 3/m ~/w 4/m 倍/q ，/w 可/v 配合/v 该师/r 进行/v 连级/b 规模/n 的/u 空中/s 突击/vn 作战/vn 和/c 机降/vn 作战/vn 。/w 
 2./m 火力/n 
 (/w l/nx )/w 压制/v 火力/n ：/w 该师/r 编/v 有/v 3/m 个/q 155/m 毫米/q 自行/d 榴炮营/n (/w 72/m 门/q )/w 和/c 1/m 个/q 多/a 管/q 火箭炮/n 连/n (/w 9/m 门/q )/w ，/w 可/v 在/p 各种/r 气象/n 和/c 地形/n 条件/n 下/f 为/v 师/n 提供/v 核/n 和/c 非核/n 炮兵/n 火力/n 支援/v 。/w 
 师属/b 3/m 个/q 榴炮营/v 采用/v 集中/v 射击/v 方法/n ，/w 每/r 分钟/q 可/v 发射/v 288/m 发/q 炮弹/n ，/w 有效/a 压制/v 和/c 摧毁/v 纵深/n 30/m 公里/q 内/f 的/u 敌军/n 步兵/n 、/w 装甲/b 目标/n 和/c 炮兵群/n 。/w 
 多/a 管/q 火箭炮/n 连/n 的/u 每门/r 12/m 管/q 火箭炮/n 的/u 压制/vn 效力/n 相当于/v 1/m 个/q 野炮营/n 24/m 门/q 155/m 毫米/q 的/u 榴弹炮/n ，/w 毁伤/vn 距离/n 达/v 35/m 公里/q ，/w 能够/v 为/v 师/n 提供/v 大面积/d 瞬时/t 密集/a 压制/v 火力/n 。/w 
 1/m 门/q 火箭炮/n 一/m 次/q 齐/d 射/v 12/m 枚/q 火箭弹/n 可/v 压制/v 12/m 万/m 平方米/q 的/u 地域/n 。/w 
 而且/c 该师/r 炮兵/n 全部/m 履带化/v 、/w 自行化/v ，/w 机动性/n 强/n ，/w 能够/v 快速/d 转移/v 发射/vn 阵地/n ，/w 因而/c 能/v 对/p 更/d 大/a 纵深/n 的/u 敌军/n 目标/n 实施/v 火力/n 袭击/v 。/w 
-第3/m 机步师/n 还/d 编/v 有/v 66/m 门/q 107/m 毫米/q 迫击炮/n ，/w 可/v 对/p 0.8/m ～/w 6.8/m 公里/q 内/f 的/u 敌军/n 目标/n 形成/v 每/r 分钟/q 1188/m 发/q 的/u 压制/vn 毁伤/vn 能力/n 。/w 
+第3/m 机步师/n 还/d 编/v 有/v 66/m 门/q 107/m 毫米/q 迫击炮/n ，/w 可/v 对/p 0.8/m ~/w 6.8/m 公里/q 内/f 的/u 敌军/n 目标/n 形成/v 每/r 分钟/q 1188/m 发/q 的/u 压制/vn 毁伤/vn 能力/n 。/w 
 师/n 炮兵/n 战术/n 指挥/vn 系统/n ，/w 运算/vn 速度/n 800/m 万/m 条/q 指令／秒/n ，/w 每/r 小时/n 可/v 处理/v 720/m 项/q 火力/n 任务/n 。/w 
 1994年/t 起/f 该师/r 装备/v 的/u “/w 帕拉丁/nr ”/w 155/m 毫米/q 自行/d 榴炮/n ，/w 配备/v 弹道/n 计算机/n 和/c 自动/d 定位/vn 定向/vn 系统/n ，/w 行进/v 间/f 射击/v 反应/vn 时间/n 少于/v 60秒/t 。/w 
 (/w 2/m )/w 反/b 坦克/n 火力/n ：/w 第3/m 机步师/n 建制/n 内/f 的/u 反/b 坦克/n 火力/n 由/p 两/m 部分/n 组成/v 。/w 
@@ -471,7 +471,7 @@ OH-58D/nx 直升机/n 上/f 装备/v 的/u 毫米波/n 雷达/n 、/w 低/a 照�
 3./m 情报/n 与/c 电子战/n 能力/n 
 (/w 1/m )/w 情报/n 侦察/vn 能力/n ：/w 第3/m 机步师/n 的/u 主要/b 情报/n 与/c 电子战/n 力量/n 是/v 建制/n 内/f 的/u 军事/n 情报营/n (/w 下/f 辖/v 收集/vn 与/c 干扰连/n 、/w 情报/n 与/c 监视连/n 和/c 电子战/v 连/n )/w 以及/c 空中/s 骑兵/n 中队/n (/w 下/f 辖/v 2/m 个/q 空中/s 骑兵队/n )/w 。/w 
 主要/b 情报/n 与/c 电子战/n 装备/n 是/v 12/m 架/q OH-58/nx 侦察/vn 直升机/n 、/w 3/m 架/q UH-60/nx 专用/vn 电子战/n 直升机/n 、/w 12/m 部/q 地面/n 侦察/vn 雷达/n 和/c 27/m 部/q (/w 套/q )/w 电子战/n 设备/n 。/w 
-师/n 军事/n 情报营/n 利用/v 远/a 距离/n 技术/n 侦察/vn 手段/n 及/c 投掷式/b 遥感/n 侦察/vn 系统/n 可/v 直接/a 侦察/v 监视/v 100/m 公里/q 范围/n 内/f 的/u 敌情/n ，/w 并/c 可/v 向/p 300/m ～/w 400/m 公里/q 纵深/n 派出/v 远程/b 地面/n 侦察/vn 分队/n 。/w 
+师/n 军事/n 情报营/n 利用/v 远/a 距离/n 技术/n 侦察/vn 手段/n 及/c 投掷式/b 遥感/n 侦察/vn 系统/n 可/v 直接/a 侦察/v 监视/v 100/m 公里/q 范围/n 内/f 的/u 敌情/n ，/w 并/c 可/v 向/p 300/m ~/w 400/m 公里/q 纵深/n 派出/v 远程/b 地面/n 侦察/vn 分队/n 。/w 
 全/a 师/n 在/p 进攻/v 中/f 可/v 派出/v 250/m -/w 270/m 个/q 侦察/vn 单位/n ，/w 防御/v 中/f 可/v 派出/v 170/m -/w 180/m 个/q 侦察/vn 单位/n 。/w 
 师属/b 空中/s 骑兵/n 侦察/vn 中队/n 的/u 电子/n 设备/n 主要/d 以/p 直升机/n 为/v 平台/n ，/w 侦收/v 的/u 频段/n 宽/a 、/w 距离/n 远/a 、/w 精度/n 高/a 。/w 
 12/m 架/q OH-58D/nx 轻型/b 攻击/vn 与/c 侦察/vn 直升机/n 能够/v 独立/a 地/u 进行/v 纵深/n 侦察/vn 任务/n ，/w 可/v 对/p 师/n 整个/b 作战/vn 地域/n 和/c 关心/vn 地域/n (/w 即/v 由/p 己方/n 前锋线/n 向前/v 延伸/v 150/m 公里/q )/w 的/u 敌军/n 部署/v 、/w C3I/nx 设施/n 进行/v 快速/b 的/u 空中/s 侦察/vn 和/c 识别/vn 定位/vn 。/w 
@@ -779,7 +779,7 @@ F—22/nx 采用/v 政党/n 双垂尾/n 双发/n 单座/n 布局/n 。/w
 F—22/nx 尺寸/n :/w 翼展/n 13.56/m 米/q ；/w 机身/n 18.92/m 米/q ；/w 机高/n 5.00/m 米/q ；/w 机翼/n 面积/n 78.80/m 米/q 。/w 
 重量/n :/w 额定/b 起飞/vn 重量/n 27.216/m 公斤/q 。/w 
 动力/n 装置/n :/w 两/m 台/q 普惠/nz 公司/n 的/u F119-PW-100/nx 带/v 加力/n 的/u 涡轮/n 风扇/n 发动机/n (/w 2×13/m ，/w 900/m 公斤/q 力/n )/w 。/w 
-飞行/vn 特性/n :/w 最/a 高/a 飞行/vn 速度/n 1950/m 公里／小时/q ；/w 近/v 地/u 最/a 高/a 飞行/vn 速度/n 1480/m 公里／小时/q ；/w 实际/a 最/d 大/a 飞机/n 高度/n 18/m ，/w 1000/m 米/q ；/w 作战/vn 半径/n 1300/m ～/w 1500/m 公里/q ；/w 最/d 大/a 使用/v 过载/v 9.0/m 。/w 
+飞行/vn 特性/n :/w 最/a 高/a 飞行/vn 速度/n 1950/m 公里／小时/q ；/w 近/v 地/u 最/a 高/a 飞行/vn 速度/n 1480/m 公里／小时/q ；/w 实际/a 最/d 大/a 飞机/n 高度/n 18/m ，/w 1000/m 米/q ；/w 作战/vn 半径/n 1300/m ~/w 1500/m 公里/q ；/w 最/d 大/a 使用/v 过载/v 9.0/m 。/w 
 结构/n 特点/n :/w 在/p 平面/n 内/f 为/v 带/v 高位/n 梯形/n 机翼/n 的/u 带/v 尾翼/n 的/u 综合/vn 气动力/n 系统/n ，/w 包括/v 彼此/r 隔开/v 很/d 宽/a 和/c 带/v 方向舵/n 并/c 朝/v 外/f 倾斜/v 的/u 垂直/vn 尾翼/n ，/w 并且/c 水平/a 安定面/n 直接/a 靠近/v 机翼/n 布置/v 。/w 
 按照/p 技术/n 标准/n (/w 小/a 反射/vn 外形/n 、/w 用/v 吸收/v 无线电波/n 的/u 材料/n 、/w 用/v 无线电/n 电子/n 对抗/vn 器材/n 和/c 小/a 辐射/v 的/u 机载/b 无线电/n 电子/n 设备/n 装备/v 战斗机/n ，/w 其/r 设计/v 最/d 小/a 有/v 交错/v 射面/n 为/v 0.1/m 平方米/q 左右/m 。/w 
 在/p 机体/n 上/f 广泛/a 使用/v 含/v 热/a 塑/v (/w 12%/m )/w 和/c 热/a 作用/v (/w 10%/m )/w 的/u 聚合/vn 复合材料/n (/w KM/nx )/w 。/w 
@@ -998,7 +998,7 @@ Sir-A/nx 是/v 一/m 部/q HH/nx 极化/v L/nx 波段/n SAR/nx ，/w 天线/n �
 Sir-B/nx 是/v Sir-A/nx 的/u 改进型/b ，/w 仍/d 采用/v HH/nx 极化/v L/nx 波段/n 的/u 工作/vn 方式/n ，/w 但/c 其/r 天线/n 波束/n 指向/n 可以/v 机械/n 改变/v ，/w 提高/v 了/u 对/p 重点/n 地区/n 的/u 观测/vn 实效性/n 。/w 
 Sir-C／X-SAR/nx 是/v 在/p Sir-A/nx ，/w Sir-B/nx 基础/n 上/f 发展/v 起来/v 的/u ，/w 并/c 引入/v 很多/m 新/a 技术/n ，/w 是/v 当时/t 最/d 先进/a 的/u 航天/n 雷达/n 系统/n :/w 具有/v L/nx 、/w C/nx 和/c X/nx 3/m 个/q 波段/n ，/w 采用/v 4/m 种/q 极化/v (/w HH/nx ，/w HV/nx ，/w VH/nx 和/c VV/nx )/w ，/w 其/r 下/f 视角/n 和/c 测绘带/n 都/d 可/v 在/p 大/a 范围/n 内/f 改变/v 。/w 
 “/w 长曲棍球/nz ”/w (/w Lacrosse/nx )/w 系列/n SAR/nx 卫星/n ，/w 是/v 当今/t 世界/n 上/f 最/d 先进/a 的/u 军用/b 雷达/n 侦察/vn 卫星/n ，/w 已/d 成为/v 美国/ns 卫星/n 侦察/v 情报/n 的/u 主要/b 来源/n 。/w 
-自/p 1988年/t 12月/t 2日/t ，/w 由/p 美国/ns “/w 亚特兰蒂斯/nz ”/w 号/n 航天飞机/n 将/p 世界/n 上/f 第1/m 颗/q 高/a 分辨率/n 雷达/n 成像/vn 卫星/n “/w 长曲棍球-1/nz (/w Lacrosse-1/nx )/w ”/w 送入/v 预定/vn 轨道/n 后/f ，/w 又/d 分别/d 在/p 1991年/t 3月/t 、/w 1997年/t 10月/t 、/w 2000年/t 8月/t 和/c 2005年/t 4月/t 将/p Lacrosse-2/nx 、/w Lacrosse-3/nx 、/w Lacrosse-4/nx 、/w Lacrosse-5/nx 送入/v 太空/s ，/w 目前/t 在/p 轨/n 工作/v 的/u 有/v Lacrosse-2/nx ～/w Lacrosse-5/nx 。/w 
+自/p 1988年/t 12月/t 2日/t ，/w 由/p 美国/ns “/w 亚特兰蒂斯/nz ”/w 号/n 航天飞机/n 将/p 世界/n 上/f 第1/m 颗/q 高/a 分辨率/n 雷达/n 成像/vn 卫星/n “/w 长曲棍球-1/nz (/w Lacrosse-1/nx )/w ”/w 送入/v 预定/vn 轨道/n 后/f ，/w 又/d 分别/d 在/p 1991年/t 3月/t 、/w 1997年/t 10月/t 、/w 2000年/t 8月/t 和/c 2005年/t 4月/t 将/p Lacrosse-2/nx 、/w Lacrosse-3/nx 、/w Lacrosse-4/nx 、/w Lacrosse-5/nx 送入/v 太空/s ，/w 目前/t 在/p 轨/n 工作/v 的/u 有/v Lacrosse-2/nx ~/w Lacrosse-5/nx 。/w 
 4/m 颗/q 卫星/n 以/p 双星组/n 网/n ，/w 采用/v X/nx 、/w L/nx 2/m 个/q 频段/n 和/c 双/m 极化/v 的/u 工作/vn 方式/n ，/w 其/r 地面/n 分辨率/n 达到/v 1/m m/q (/w 标准/n 模式/n )/w 、/w 3/m m/q (/w 宽扫/vn 模式/n )/w 和/c 0.3/m m/q (/w 精扫/vn 模式/n )/w ，/w 在/p 宽扫/vn 模式/n 下/f ，/w 其/r 地面/n 覆盖/vn 面积/n 可/v 达/v 几百/m km2/q 。/w 
 欧空局/nt (/w ESA/nx )/w 
 欧空局/nt 分别/d 于/p 1991年/t 7月/t 和/c 1995年/t 4月/t ，/w 发射/v 了/u 欧洲遥感卫星/nz (/w EuropeanRemoteSensingSatellite/nx ，/w ERS/nx )/w 系列/n 民用/b 雷达/n 成像/vn 卫星/n :/w ERS-1/nx 和/c ERS-2/nx ，/w 主要/d 用于/v 对/p 陆地/n 、/w 海洋/n 、/w 冰川/n 、/w 海岸线/n 等/u 成像/v 。/w 
@@ -1019,8 +1019,8 @@ SAR-LUPE/nx 是/v 德国/ns 第1/m 个/q 军用/n 天基/n 雷达/n 侦察/vn �
 整个/b 卫星/n 系统/n ，/w 天/n 可以/v 提供/v 全球/n 从/p 北纬/b 80/m °/q 到/v 南纬/b 80/m °/q 地区/n 的/u 30/m 多/m 幅/q 图像/n ，/w 具有/v SpotLight/nx 和/c Strip-Map/nx 2/m 种/q 工作/vn 模式/n ，/w 并且/c 具有/v 星际/n 链路/n 能力/n ，/w 缩短/v 了/u 系统/n 相应/vn 时间/n ，/w 具备/v 对/p “/w 热点/n ”/w 地区/n 每天/r 30/m 次/q 以上/f 的/u 成像/vn 能力/n 。/w 
 俄罗斯/ns 
 1987年/t 7月/t 25日/t ，/w 前苏联/ns 成功/a 发射/v 第1/m 个/q 雷达/n 卫星/n 演示/vn 验证/vn 项目/n Cosmos-1870/nx ，/w 在/p 此/r 基础/n 上/f ，/w 俄罗斯/ns 分别/d 于/p 1991年/t 3月/t 31日/t 和/c 1998年/t 将/p “/w 钻石/nz ”/w (/w Almaz/nx )/w 系列/n 雷达/n 成像/vn 卫星/n —/w —/w Almaz-1/nx 和/c Almaz-1B/nx 送入/v 倾角/n 73/m °/q 的/u 非/b 太阳/n 同步/vn 圆形/n 近/a 地/n 轨道/n 。/w 
-其中/r ，/w Almaz-1/nx 是/v 一/m 颗/q 对/p 地/n 观测/vn 卫星/n 雷达/n 成像/vn 卫星/n ，/w 工作/v 在/p S/nx 波段/n (/w 中心/n 频率/n 3.125/m GHz/q )/w ，/w 采用/v 单/m 极化/v (/w HH/nx )/w 、/w 双/m 侧视/vn 工作/vn 方式/n ，/w 入射角/n 可变/v (/w 30/m °/q ～/w 60/m °/q )/w ，/w 分辨率/n 达到/v (/w 10/m m/q ～/w 15/m m/q )/w 。/w 
-Almaz-1B/nx 是/v 一/m 颗/q 用于/v 海洋/n 和/c 陆地/n 探测/v 的/u 雷达/n 卫星/n ，/w 卫星/n 上/f 搭载/v 3/m 种/q SAR/nx 载荷/n :/w SAR-10/nx (/w 波长/n 9.6/m cm/q ，/w 分辨率/n 5/m m/q ～/w 40/m m/q )/w 、/w SAR-70/nx (/w 波长/n 7/m cm/q ，/w 分辨率/n 15/m m/q ～/w 60/m m/q )/w 和/c SAR-10/nx (/w 波长/n 3.6/m cm/q 、/w 分辨率/n 5/m m/q ～/w 7/m m/q )/w ，/w 这/r 3/m 种/q SAR/nx 载荷/n 均/d 采用/v HH/nx 极化/vn 方式/n 。/w 
+其中/r ，/w Almaz-1/nx 是/v 一/m 颗/q 对/p 地/n 观测/vn 卫星/n 雷达/n 成像/vn 卫星/n ，/w 工作/v 在/p S/nx 波段/n (/w 中心/n 频率/n 3.125/m GHz/q )/w ，/w 采用/v 单/m 极化/v (/w HH/nx )/w 、/w 双/m 侧视/vn 工作/vn 方式/n ，/w 入射角/n 可变/v (/w 30/m °/q ~/w 60/m °/q )/w ，/w 分辨率/n 达到/v (/w 10/m m/q ~/w 15/m m/q )/w 。/w 
+Almaz-1B/nx 是/v 一/m 颗/q 用于/v 海洋/n 和/c 陆地/n 探测/v 的/u 雷达/n 卫星/n ，/w 卫星/n 上/f 搭载/v 3/m 种/q SAR/nx 载荷/n :/w SAR-10/nx (/w 波长/n 9.6/m cm/q ，/w 分辨率/n 5/m m/q ~/w 40/m m/q )/w 、/w SAR-70/nx (/w 波长/n 7/m cm/q ，/w 分辨率/n 15/m m/q ~/w 60/m m/q )/w 和/c SAR-10/nx (/w 波长/n 3.6/m cm/q 、/w 分辨率/n 5/m m/q ~/w 7/m m/q )/w ，/w 这/r 3/m 种/q SAR/nx 载荷/n 均/d 采用/v HH/nx 极化/vn 方式/n 。/w 
 此外/c ，/w 俄罗斯/ns 还/d 将/d 发射/v Arkon-2/nx 多/a 功能/n 雷达/n 卫星/n 、/w Kondor-E/nx 小型/b 极地/n 轨道/n 雷达/n 卫星/n 。/w 
 加拿大航天局/nt (/w CAS/nx )/w 
 加拿大航天局/nt 于/p 1989年/t 开始/v 进行/v SAR/nx 卫星/n ———/w RadarSat-1/nx 的/u 研制/vn ，/w 并/c 于/p 1995年/t 11月/t 4日/t 在/p 美国/ns 范登堡空军基地/ns 发射/v 成功/a ，/w 1996年/t 4月/t 正式/a 工作/v ，/w 是/v 加拿大/ns 的/u 第1/m 颗/q 商业/n 对/p 地/n 观测/vn 卫星/n ，/w 主要/d 监测/v 地球/n 环境/n 和/c 自然/n 资源/n 变化/v 。/w 
@@ -1049,8 +1049,8 @@ TecSAR/nx 是/v 以色列/ns 国防部/nt 的/u 第1/m 颗/q 雷达/n 成像/vn 
 （/w 4/m ）/w 对/p 复杂/a 目标/n 环境/n 的/u 适应/vn 能力/n 强/a ；/w 
 （/w 5/m ）/w 抗干扰/n 性能/n 好/a 。/w 
 全/a 固态/n 相控阵/n 雷达/n 的/u 可靠性/n 高/a ，/w 即使/c 少量/m 组件/n 失效/v 仍/d 能/v 正常/a 工作/v 。/w 
-美中不足/v 的/u 是/v ，/w 相控阵/n 雷达/n 设备/n 复杂/a 、/w 造价/n 昂贵/a ，/w 且/c 波束/n 扫描/v 范围/n 有限/a ，/w 最/d 大/a 扫描角/n 为/v 90/m °/q ～/w 120/m °/q 。/w 
-当/p 需要/v 进行/v 全方位/n 监视/vn 时/n ，/w 需/v 配置/v 3/m ～/w 4/m 个/q 天线/n 阵面/n 。/w 
+美中不足/v 的/u 是/v ，/w 相控阵/n 雷达/n 设备/n 复杂/a 、/w 造价/n 昂贵/a ，/w 且/c 波束/n 扫描/v 范围/n 有限/a ，/w 最/d 大/a 扫描角/n 为/v 90/m °/q ~/w 120/m °/q 。/w 
+当/p 需要/v 进行/v 全方位/n 监视/vn 时/n ，/w 需/v 配置/v 3/m ~/w 4/m 个/q 天线/n 阵面/n 。/w 
 相控阵/n 雷达/n 与/p 机械/n 扫描/vn 雷达/n 相比/v ，/w 扫描/v 更/d 灵活/a 、/w 性能/n 更/d 可靠/a 、/w 抗干扰/n 能力/n 更/d 强/a ，/w 能/v 快速/d 适应/v 战场/n 条件/n 的/u 变化/vn 。/w 
 多/a 功能/n 相控阵/n 雷达/n 已/d 广泛/a 用于/v 地面/n 远程/b 预警/vn 系统/n 、/w 机载/b 和/c 舰载/b 防空/vn 系统/n 、/w 机载/b 和/c 舰载/b 系统/n 、/w 炮位/n 测量/v 、/w 靶场/n 测量/v 等/u 。/w 
 美国/ns “/w 爱国者/nz ”/w 防空/vn 系统/n 的/u AN／MPQ-53/nx 雷达/n 、/w 舰载/b “/w 宙斯盾/nz ”/w 指挥/vn 控制/vn 系统/n 中/f 的/u 雷达/n 、/w B-1B/nx 轰炸机/n 上/f 的/u APQ-164/nx 雷达/n 、/w 俄罗斯/ns C-300/nx 防空/vn 武器/n 系统/n 的/u 多/a 功能/n 雷达/n 等/u 都/d 是/v 典型/a 的/u 相控阵/n 雷达/n 。/w 
@@ -1122,7 +1122,7 @@ TecSAR/nx 是/v 以色列/ns 国防部/nt 的/u 第1/m 颗/q 雷达/n 成像/vn 
 航空母舰/n 编队/n 的/u 预警/vn ，/w 主要/d 由/p 航空母舰/n 舰载/b 预警/vn 飞机/n 和/c 侦察/vn 卫星/n 等/u 组成/v ，/w 通常/d 以/p 电子/n 侦察/vn 设备/n 等/u 发现/v 敌/n 目标/n ，/w 迅速/a 将/p 情报/n 信息/n 传送/v 给/p 航空母舰/n 指挥/vn 控制/vn 中心/n ，/w 由/p 其/r 指挥/n 舰载/b 武器/n 实施/v 攻击/v 。/w 
 电子/n 侦察/vn 警戒/vn 网/n 的/u 主要/b 任务/n 是/v ：/w 争取/v 在/p 敌/n 作战/vn 平台/n （/w 飞机/n 、/w 水面/n 舰艇/n 和/c 潜艇/n ）/w 发射/v 导弹/n 之前/f 将/p 其/r 发现/v ，/w 并/c 引导/v 己方/n 兵力/n 进行/v 拦截/vn 和/c 干扰/vn ；/w 发现/v 来袭/vn 导弹/n 后/f 即/d 向/p 航空母舰/n 战斗群/n 发出/v 警报/n ，/w 进行/v 目标/n 指示/vn ，/w 保障/v 战斗群/n 的/u 各道/r 防线/n 实施/v 有效/a 干扰/v 或/c 将/p 导弹/n 击毁/v 。/w 
 舰载/b 预警机/n 通常/d 配置/v 在/p 以/p 航空母舰/n 为/v 中心/n 的/u 敌/n 来袭/vn 方向/n 上/f ，/w 前/f 出/vn 距离/n 为/v 200/m 海里/q ，/w 带/v 副油箱/n 时/n 续航/v 为/v 6/m 小时/n 。/w 
-每艘/r 航空母舰/n 搭载/v 预警机/n 4/m ～/w 5/m 架/q （/w 一个/m 中队/n ）/w 。/w 
+每艘/r 航空母舰/n 搭载/v 预警机/n 4/m ~/w 5/m 架/q （/w 一个/m 中队/n ）/w 。/w 
 作战/v 时/n 能/v 保证/v 有/v 一/m 架/q 在/p 空中/s 警戒/v 。/w 
 预警机/n 可/v 在/p 半径/n 数百/m 海里/q 、/w 高度/n 30000/m 米/q 以下/f 的/u 广阔/a 空域/n 同时/t 发现/v 、/w 识别/v 、/w 跟踪/v 、/w 监视/v 250/m 个/q 以上/f 速度/n 不同/a 的/u 各类/r 目标/n ，/w 并/c 控制/v 30/m 架/q 作战/v 飞机/n 进行/v 空战/vn 。/w 
 它/r 在/p 航空母舰/n 前方/s 370/m 公里/q 空中/s 警戒/v 时/n ，/w 通过/p 数据链/n 等/u 通信/vn 设备/n 为/p 航空母舰/n 战斗群/n 及时/a 提供/v 距/p 航空母舰/n 千余/m 公里/q 以内/f 的/u 来袭/vn 高空/s 轰炸机/n 、/w 低空/s 轰炸机/n 、/w 低空/s 战斗机/n 、/w 舰船/n 和/c 低空/s 巡航导弹/n 等/u 目标/n 的/u 坐标/n 、/w 批路/n 及/c 主要/b 参数/n 。/w 
@@ -1130,7 +1130,7 @@ TecSAR/nx 是/v 以色列/ns 国防部/nt 的/u 第1/m 颗/q 雷达/n 成像/vn 
 预警机/n 的/u 电子/n 侦察/vn 设备/n 和/c 机载/b 雷达/n 可/v 在/p 复杂/a 电磁/n 环境/n 中/f 工作/v ，/w 能/v 抗击/v 敌/n 电子/n 干扰/v 。/w 
 如/v E-2T/nx 预警机/n 作战/v 使用/v 时/n ，/w 可/v 全面/a 监控/v 其/r 防区/n 范围/n 至/c 对方/n 纵深/n 内/f 的/u 广阔/a 空域/n ，/w 增加/v 预警/vn 时间/n ，/w 加大/v 防御/vn 纵深/n ，/w 进而/c 对/p 对方/n 达成/v 战役/n 的/u 隐蔽性/n 、/w 突然性/n 构成/v 严重/a 威胁/v ；/w 
 可/v 对/p 己方/n 作战/v 飞机/n 实施/v 及时/a 的/u 指挥/vn 、/w 引导/vn ，/w 增加/v 主战/vn 飞机/n 的/u 作战/vn 范围/n ，/w 先/f 对/p 对方/n 发现/v 和/c 攻击/v ；/w 
-可/v 前/f 出/v 指挥/v 引导/v ，/w 当/p 情况/n 需要/v 时/n ，/w E-2T/nx 也/d 可/v 在/p F-16/nx 的/u 掩护/vn 下/f ，/w 前/f 出/v 150/m ～/w 2/m 千米/q 进行/v 区外/s 活动/vn ，/w 实施/v 警戒/v 、/w 指挥/n 、/w 引导/v 等/u 综合/v 保障/v ，/w 进而/c 对/p 对方/n 纵深/n 部署/v 构成/v 经常性/n 的/u 威胁/vn 。/w 
+可/v 前/f 出/v 指挥/v 引导/v ，/w 当/p 情况/n 需要/v 时/n ，/w E-2T/nx 也/d 可/v 在/p F-16/nx 的/u 掩护/vn 下/f ，/w 前/f 出/v 150/m ~/w 2/m 千米/q 进行/v 区外/s 活动/vn ，/w 实施/v 警戒/v 、/w 指挥/n 、/w 引导/v 等/u 综合/v 保障/v ，/w 进而/c 对/p 对方/n 纵深/n 部署/v 构成/v 经常性/n 的/u 威胁/vn 。/w 
 当/p 飞行/vn 高度/n 为/v 9100/m 米/q 时/n ，/w 其/r 对/p 高空/s 轰炸机/n 发现/vn 距离/n 为/v 650/m 千米/q ，/w 对/p 低空/s 轰炸机/n 的/u 发现/vn 距离/n 为/v 480/m 千米/q ，/w 对/p 低空/s 战斗机/n 的/u 发现/vn 距离/n 为/v 408/m 千米/q ，/w 对/p 舰船/n 的/u 发现/vn 距离/n 为/v 360/m 千米/q ，/w 对/p 低空/s 巡航导弹/n 的/u 发现/vn 距离/n 为/v 250/m 千米/q 。/w 
 E-2T/nx 升空/v 后/f ，/w 可/v 有效/a 弥补/v 地面/n 雷达/n 存在/v 的/u 对/p 低空/s 目标/n 的/u 探测/vn 死角/n 。/w 
 1/m 架/q 飞行/v 在/p 约/d 10000/m 米/q 高度/n 的/u E-2T/nx ，/w 可/v 侦测/v 时速/n 0.9/m 马赫/q 的/u 低空/s 飞行/vn 目标/n ，/w 可/v 较/p 地面/n 雷达/n 提前/v 20/m 分钟/q 发现/v 目标/n ，/w 因而/c 可/v 使/v 防空/vn 预警/vn 时间/n 由/p 原来/b 的/u 5/m 分钟/q 增加/v 到/p 25/m 分钟/q 。/w 
@@ -1150,7 +1150,7 @@ E-2T/nx 装备/v 有/v ALR-73/nx 被动/a 探测/vn 系统/n ，/w 可/v 侦测/
 众所周知/v ，/w 舰载/b 预警机/n 为了/p 最/d 大/a 限度/n 地/u 发挥/v 其/r 功能/n ，/w 都/d 在/p 距/p 航母/n 数百/m 公里/q 的/u 地方/n 巡逻/v ，/w 从而/c 为/p 我们/r 率先/d 打击/v 敌/n 预警机/n 提供/v 了/u 可乘之机/n 。/w 
 当/p 掌握/v 敌/n 预警机/n 活动/vn 区域/n 位置/n 信息/n 时/n ，/w 我/r 机/n 应/v 先期/d 起飞/v ，/w 隐蔽/a 出航/v ，/w 尽可能/d 与/p 敌/n 预警机/n 同时/t 到达/v 其/r 预定/v 活动/vn 区域/n ，/w 对/p 其/r 实施/v 突然/a 打击/v ；/w 当/p 敌/n 预警机/n 换班/v 或/c 空中/s 加油/v 时/n ，/w 应/v 抓住/v 其/r 机动/b 能力/n 受限/v ，/w 疏于/v 戒备/v 的/u 有利/a 时机/n ，/w 适时/a 组织/v 力量/n 进行/v 打击/vn ；/w 要/v 根据/p 战场/n 情况/n 和/c 敌/n 预警机/n 可能/v 活动/v 的/u 空域/n 范围/n ，/w 划定/v 电子/n 干扰机/n 和/c 歼击/v 掩护机/n 活动/vn 区域/n ，/w 以/c 保证/v 一旦/d 发现/v 预警机/n ，/w 能够/v 立即/d 升空/v ，/w 按照/p 所/u 划定/v 的/u 区域/n 对敌/n 干扰/v ；/w 要/v 采取/v 多/a 向/n 进入/v ，/w 多/a 机/n 突防/v 围歼/v 战法/n ，/w 低空/s 进入/v ，/w 低空/s 接/v 敌/n ，/w 低空/s 占据/v 待机点/n ，/w 然后/c 以/p 快速/b 机动/b 的/u 性能/n 优势/n ，/w 迅速/a 爬高/v 抢占/v 有利/a 空域/n ，/w 突然/a 发起/v 导弹/n 攻击/v 。/w 
 机动/b 设伏/v 远程/b 打击/v 
-敌/n 预警机/n 通常/d 在/p 空中/s 进攻/v 编队/n 后侧/f ，/w 距/p 攻击/vn 目标/n 一定/b 距离/n （/w 300/m ～/w 400/m 千米/q 左右/m ）/w 的/u 中/b 高/a 空/n 空域/n 活动/v ，/w 有/v 相当/v 的/u 掩护/v 兵力/n 和/c 一定/b 的/u 干扰/vn 自卫/vn 能力/n ，/w 能/v 及时/a 发现/v 来自/v 空中/s 和/c 地面/n 的/u 威胁/vn ，/w 并/c 采取/v 相应/v 的/u 防护/vn 措施/n 。/w 
+敌/n 预警机/n 通常/d 在/p 空中/s 进攻/v 编队/n 后侧/f ，/w 距/p 攻击/vn 目标/n 一定/b 距离/n （/w 300/m ~/w 400/m 千米/q 左右/m ）/w 的/u 中/b 高/a 空/n 空域/n 活动/v ，/w 有/v 相当/v 的/u 掩护/v 兵力/n 和/c 一定/b 的/u 干扰/vn 自卫/vn 能力/n ，/w 能/v 及时/a 发现/v 来自/v 空中/s 和/c 地面/n 的/u 威胁/vn ，/w 并/c 采取/v 相应/v 的/u 防护/vn 措施/n 。/w 
 因此/c ，/w 打/v 敌/n 预警机/n ，/w 要/v 全面/a 掌握/v 敌/n 预警机/n 活动/vn 规律/n 和/c 特点/n ，/w 搞清/v 其/r 优长/n 和/c 弱点/n ，/w 切实/a 做到/v "/w 知/v 彼/r "/w 。/w 
 要/v 选择/v 作战/vn 空域/n 大/a 、/w 反应/vn 速度/n 快/a 的/u 地空导弹/n 部队/n ，/w 担负/v 打/v 预警机/n 任务/n ，/w 部署/v 在/p 防空区/n 内/f ，/w 在/p 掌握/v 敌/n 行动/v 征候/n 后/f ，/w 携带/v 精干/a 主战/vn 装备/n 以/p 摩托化/v 行军/vn 方式/n ，/w 在/p 数/m 小时/n 内/f 快速/b 机动/b 前/f 出/v 至/p 预定/vn 作战/vn 地域/n ，/w 选择/v 敌/n 预警机/n 探测/v 盲区/n 范围/n ，/w 占领/v 发射/vn 阵地/n ，/w 做好/v 战斗/v 准备/v 。/w 
 作战/v 中/f ，/w 应/v 放过/v 敌/n 其他/r 飞机/n ，/w 专门/d 伏击/v 在/p 作战/vn 地域/n 上空/s 活动/v 的/u 敌/n 预警机/n ；/w 采取/v 打/v 了/u 就/d 跑/v 的/u 战术/n ，/w 射击/v 一/m 次/q （/w 打/v 一/m 仗/q ）/w 就/d 立即/d 转移/v 阵地/n 或/c 撤回/v 原/b 防区/n ；/w 要/v 充分/a 发挥/v 远/a 战/v 武器/n 的/u 威力/n ，/w 待/v 敌/n 预警机/n 准备/v 升高/v 和/c 着陆/v 时/n ，/w 迅速/a 突然/a 袭击/v ，/w 打击/v 敌/n 飞行/vn 平台/n 。/w 
@@ -1263,7 +1263,7 @@ HAVEQUICK/nx Ⅱ/m 是/v 该/r 计划/n 的/u 一部分/n 。/w
 公用/vn 宽/a 频带/n 数据链/n 是/v 一/m 条/q 图像/n 数据/n 通信/vn 数据链/n ，/w 用于/v 从/p 空中/s 平台/n 到/v 舰艇/n 的/u 图像/n 数据/n 传输/v ，/w 如/v 从/p 侦察机/n 到/v 舰艇/n 的/u 图像/n 数据/n 传输/v 。/w 
 它/r 提供/v 了/u 由/p 空中/s 侦察机/n 获取/v 传感器/n 信号/n 的/u 航空母舰/n 和/c 装备/v 有/v 其它/r 数据链/n 的/u 飞机/n 之间/f 的/u 自动化/vn 通信/vn 。/w 
 公用/v 宽/a 频带/n 数据链/n 的/u 工作/vn 频段/n 是/v X/nx 频段/n 和/c Ku/nx 频段/n 。/w 
-公用/vn 宽/a 频带/n 数据链/n 的/u 对/p 舰船/n 链路/n 传输/vn 速率/n 为/v 10.71兆/m 比特／秒/q ～/w 274兆/m 比特／秒/q ，/w 而/c 舰船/n 到/c 飞机/n 链路/n 传送/vn 速率/n 为/v 200千/m 比特／秒/q 。/w 
+公用/vn 宽/a 频带/n 数据链/n 的/u 对/p 舰船/n 链路/n 传输/vn 速率/n 为/v 10.71兆/m 比特／秒/q ~/w 274兆/m 比特／秒/q ，/w 而/c 舰船/n 到/c 飞机/n 链路/n 传送/vn 速率/n 为/v 200千/m 比特／秒/q 。/w 
 该/r 链路/n 的/u 舰用/n 终端/n 是/v AN／USQ-123/nx ，/w 它/r 支持/v 由/p 飞机/n 到/v 舰船/n 的/u 图像/n 数据/n 通信/v 。/w 
 该/r 系统/n 在/p 飞机/n 和/c 舰船/n 之间/f 有/v 两/m 条/q 通信/vn 线路/n ，/w 分别/d 使用/v X/nx 波段/n 和/c Ku/nx 波段/n 的/u 频率/n 。/w 
 该/r 系统/n 早期/f 称之为/v 模块化/v 内部/f 联络/v 数据链/n ，/w 以/p 航空母舰/n 为/v 节点/n ，/w 接收/v 来自/v 侦察机/n 和/c 其他/r 飞机/n 的/u 传感器/n 信息/n ，/w 其中/r 包括/v 光电/n 、/w 红外/n 、/w 合成/vn 孔径/n 雷达/n 和/c 信号/n 情报/n 。/w 
@@ -1330,7 +1330,7 @@ C型/b 和/c D型/b “/w 战斧/nz ”/w 巡航导弹/n 的/u 不同/a 之/u �
 BGM－109A/nx 对/p 陆/n 核攻击型/b 战斧/nz 
 该/r 导弹/n 属/v 舰/n （/w 潜/v ）/w 对/p 陆/n 型/n ，/w 1984年/t 6月/t 部署/v ，/w 计划/vn 产量/n 1000/m 枚/q ，/w 其中/r 190/m 枚/q 部署/v 于/p 水面/n 舰艇/n ，/w 194/m 枚/q 部署/v 于/p 攻击/vn 潜艇/n ，/w 用以/d 执行/v 全球/n 战区/n 对/p 地面/n 目标/n 的/u 核/n 攻击/vn 任务/n ，/w 并/c 作为/p 战略/n 后备/b 力量/n 执行/v 核/n 大战/n 后期/f 打击/vn 任务/n 。/w 
 该/r 弹/n 制导/vn 系统/n 采用/v 麦道公司/nt 研制/v 的/u 以/p 地形/n 匹配/v 修正/v 的/u 惯性/n 导航/vn 系统/n （/w TAINS/nx ）/w ，/w 控制/vn 系统/n 采用/v 全/a 数字化/v 自动/b 驾仪/n 和/c AN—194型/b 雷达/n 高度表/n ，/w 发射/vn 指挥/vn 系统/n 为/v MK117/nx 火控/b 系统/n ，/w 动力/n 装置/n 采用/v 固体/n 火箭/n 助推器/n 和/c 涡轮/n 风扇/n 发动机/n 。/w 
-导弹/n 射程/n 2500/m 千米/q ，/w 巡航/vn 高度/n 15/m ～/w 152/m 米/q ，/w 巡航/vn 速度/n 0.72/m 马赫/q ，/w 战斗部/n 重/a 122.5/m 公斤/q ，/w 内/f 装/v 当量/n 可/v 调/v 的/u 20万/m 吨/q 级/n 的/u W—80－1型/b 核弹头/n 。/w 
+导弹/n 射程/n 2500/m 千米/q ，/w 巡航/vn 高度/n 15/m ~/w 152/m 米/q ，/w 巡航/vn 速度/n 0.72/m 马赫/q ，/w 战斗部/n 重/a 122.5/m 公斤/q ，/w 内/f 装/v 当量/n 可/v 调/v 的/u 20万/m 吨/q 级/n 的/u W—80-1型/b 核弹头/n 。/w 
 BGM－109B/nx 反舰/n 巡航导弹/n 
 该/r 导弹/n 属/v 舰/n （/w 潜/v ）/w 对/p 舰/n 型/n 。/w 
 1981年/t 开始/v 作战/v 试验/v 和/c 鉴定/v ，/w 1983年/t 11月/t 潜射型/b 初/d 具/v 作战/vn 能力/n ，/w 1984年/t 3月/t 舰射型/b 初/d 具/v 作战/vn 能力/n 。/w 
@@ -1343,9 +1343,9 @@ BGM－109B/nx 反舰/n 巡航导弹/n
 BGM－109C/nx 常规/n 对/p 陆/n 攻击/vn 导弹/n 
 该/r 导弹/n 属/v 舰/n （/w 潜/v ）/w 对/p 地/n 型/n ，/w 1981年/t 初/f 开始/v 研制/v ，/w 1982年/t 初/f 装备/v 潜艇/n ，/w 1983年/t 6月/t 装备/v 水面/n 舰船/n ，/w 主要/d 用/v 来/v 装备/v 攻击型/b 核潜艇/n 和/c 护卫舰级/n 以上/f 的/u 水面/n 战舰/n ，/w 以/p 攻击/v 敌方/n 海军/n 航空兵/n 基地/n 指挥/vn 中心/n 、/w 桥梁/n 、/w 油库/n 等/u 陆上/s 重要/a 目标/n 。/w 
 导弹/n 计划/vn 总产量/n 为/v 2643/m 枚/q ，/w 制导/vn 系统/n 为/v 惯性/n 导航/v 加/v 地形/n 匹配/v 加/v 数字式/b 景象/n 匹配/v 区域/n 相关器/n （/w DSMAC/nx ）/w 末/f 制导/v 。/w 
-导弹/n 配备/v 高能/b 弹头/n ，/w 射程/n 1300/m 千米/q ，/w 巡航/vn 高度/n 15/m ～/w 150/m 米/q 巡航/vn 速度/n 0.72/m 马赫/q ，/w 命中/vn 精度/n 小于/v 10/m 米/q 。/w 
+导弹/n 配备/v 高能/b 弹头/n ，/w 射程/n 1300/m 千米/q ，/w 巡航/vn 高度/n 15/m ~/w 150/m 米/q 巡航/vn 速度/n 0.72/m 马赫/q ，/w 命中/vn 精度/n 小于/v 10/m 米/q 。/w 
 BGM－109D/nx 布撒型/b 对/p 陆/n 攻击/vn 导弹/n 
-该/r 导弹/n 属/v 海/n 对/p 地/n 型/n ，/w 于/p 1988年/t 装备/v 部队/n ，/w 射程/n 875/m 千米/q ，/w 巡航/vn 高度/n 15/m ～/w 150/m 米/q ，/w 巡航/vn 速度/n 0.72/m 马赫/q ，/w 配备/v 子母弹/n 头/n ，/w 装有/v 近/a 166/m 枚/q BLU－97B/nx 小口径/b 炸弹/n 。/w 
+该/r 导弹/n 属/v 海/n 对/p 地/n 型/n ，/w 于/p 1988年/t 装备/v 部队/n ，/w 射程/n 875/m 千米/q ，/w 巡航/vn 高度/n 15/m ~/w 150/m 米/q ，/w 巡航/vn 速度/n 0.72/m 马赫/q ，/w 配备/v 子母弹/n 头/n ，/w 装有/v 近/a 166/m 枚/q BLU－97B/nx 小口径/b 炸弹/n 。/w 
 其/r 改进型/b 为/v BGM-109F/nx 。/w 
 战斧/nz BlockIV型/b 战术/n 巡航导弹/n 
 该/r 导弹/n 属/v 舰/n （/w 潜/v ）/w 对/p 陆/n 型/n ，/w 以/p BGM－109C／D/nx 为/v 基础/n 加以/v 改进/vn ，/w 1993/m 装备/v 部队/n 。/w 
@@ -1421,7 +1421,7 @@ BGM－109D/nx 布撒型/b 对/p 陆/n 攻击/vn 导弹/n
 地面/n 监视/vn 系统/n 中/f 的/u “/w 窗口/s ”/w 光电/n 系统/n 能/v 捕捉/v 到/v 在/p 4万/m 米/q 高空/s 轨道/n 飞行/v 的/u 目标/n ，/w 在/p 最/d 短/a 时间/n 内/f 准确/a 地/u 预测/v 到/v 其/r 飞行/vn 轨迹/n 和/c 目的地/n 。/w 
 该/r 集团军/n 所属/n 的/u 导弹/n 防御师/n 专门/d 负责/v 莫斯科/ns 地区/n 的/u 反导/vn 作战/vn 。/w 
 该/r 集团军/n 的/u 另/r 一个/m 师/n -/w 太空/s 监视/vn 与/c 防御师/n 拥有/v 雷达/n 、/w 光电/n 器材/n 、/w 光学/n 器材/n 和/c 无线电/n 技术/n 器材/n ，/w 可/v 观察/v 近/a 地/n 轨道/n 和/c 高空/s 轨道/n 的/u 航天/n 目标/n ，/w 及时/a 发现/v 近/a 地/n 轨道/n 太空/s 情况/n 的/u 变化/vn 。/w 
-其中/r 最为/d 重要/a 的/u 是/v 部署/v 在/p 莫斯科/ns 附近/f 普希金诺/ns 的/u 庞大/a 的/u “/w 顿河/nz ”/w -/w 2/m 型/b 多功能/b 相控阵/n 雷达/n ，/w 代号/n Don-2NP/nx ，/w 外观/n 呈/v 塔尖状/n ，/w 个/q 侧面/f 将近/d 152.4/m 米/q 长/a 、/w 36.6/m 米/q 高/a ，/w 工作/v 在/p 厘米/q 波段/n ，/w 覆盖/vn 范围/n 为/v 360/m 度/q ，/w 其/r 距离/n 精度/n 约/d 为/v 200/m 米/q ，/w 角度/n 和/c 方位/n 精度/n 为/v 0.02/m ～/w 0.04/m 度/q ，/w 可/v 对/p 大气层/n 外/f 和/c 大气层/n 的/u 目标/n 进行/v 探测/vn 和/c 跟踪/vn ，/w 它/r 能/v 搜寻/v 并/c 锁定/v 1500/m 公里/q 范围/n 内/f 的/u 敌方/n 目标/n ，/w 为/p 反导/vn 系统/n 指示/v 目标/n ，/w 引导/v 反导/vn 导弹/n 攻击/v 来袭/v 之/u 敌/n ，/w 还/d 能/v 发出/v 错误/a 的/u 信号/n 干扰/v 敌方/n 飞机/n 或/c 导弹/n 的/u 飞行/vn 。/w 
+其中/r 最为/d 重要/a 的/u 是/v 部署/v 在/p 莫斯科/ns 附近/f 普希金诺/ns 的/u 庞大/a 的/u “/w 顿河/nz ”/w -/w 2/m 型/b 多功能/b 相控阵/n 雷达/n ，/w 代号/n Don-2NP/nx ，/w 外观/n 呈/v 塔尖状/n ，/w 个/q 侧面/f 将近/d 152.4/m 米/q 长/a 、/w 36.6/m 米/q 高/a ，/w 工作/v 在/p 厘米/q 波段/n ，/w 覆盖/vn 范围/n 为/v 360/m 度/q ，/w 其/r 距离/n 精度/n 约/d 为/v 200/m 米/q ，/w 角度/n 和/c 方位/n 精度/n 为/v 0.02/m ~/w 0.04/m 度/q ，/w 可/v 对/p 大气层/n 外/f 和/c 大气层/n 的/u 目标/n 进行/v 探测/vn 和/c 跟踪/vn ，/w 它/r 能/v 搜寻/v 并/c 锁定/v 1500/m 公里/q 范围/n 内/f 的/u 敌方/n 目标/n ，/w 为/p 反导/vn 系统/n 指示/v 目标/n ，/w 引导/v 反导/vn 导弹/n 攻击/v 来袭/v 之/u 敌/n ，/w 还/d 能/v 发出/v 错误/a 的/u 信号/n 干扰/v 敌方/n 飞机/n 或/c 导弹/n 的/u 飞行/vn 。/w 
 分类/v 
 陆基/n 洲际/b 弹道导弹/n 
 美国/ns 空军/n （/w UnitedStatesAirForce/nx ）/w 部署/v 500/m 枚/q 洲际/b 弹道导弹/n ，/w 分布/v 在/p Malmstrom/nx 、/w Minot/nx 及/c F.E.Warren/nx 空军/n 基地/n 四周/f 。/w 
@@ -1857,7 +1857,7 @@ GPS/nx 接收机/n 采用/v 2/m 个/q 天线/n ，/w 分别/d 装/v 在/p 炸弹
 惯性/n 测量/vn 部件/n (/w IMU/nx )/w 由/p 2/m 个/q 速率/n 陀螺/n 和/c 3/m 个/q 加速度计/n 以及/c 相应/vn 电子/n 线路/n 构成/v ，/w 是/v 一/m 种/q 低/a 成本/n 的/u 捷联式/b 惯性/n 测量/vn 装置/n 。/w 
 在/p 结构/n 上/f ，/w IMU/nx 与/p GPS/nx 接收机/n 采用/v 紧/a 藕合/v 的/u 结合/vn 方式/n ，/w 适用于/v 具有/v 较/d 大/a 机动/b 过载/v 和/c 立体/b 弹道/n 的/u 高/a 动态/n 使用/v 环境/n ，/w 以/c 保证/v 获得/v 更/d 高/a 的/u 制导/vn 命中/vn 精度/n ，/w 从而/c 使/v 飞机/n 具有/v 多/a 目标/n 精确/a 攻击/v 能力/n 。/w 
 任务/n 计算机/n 根据/p 来自/v GPS/nx 接收机/n 和/c 惯性/n 测量/vn 部件/n (/w IMU/nx )/w 的/u 炸弹/n 位置/n 、/w 姿态/n 和/c 速度/n 信息/n ，/w 完成/v 全部/d 制导/v 和/c 控制/v 功能/n 的/u 解算/v ，/w 并/c 输出/v 相应/v 的/u 控制/v 舵面/n 偏转/vn 信息/n ，/w 控制/v 炸弹/n 飞/v 向/p 预定/v 攻击/v 的/u 目标/n 。/w 
-JDAM/nx 制导/vn 炸弹/n 现有/v 型号/n 高空/s 投弹/v 时/n 的/u 最/d 大/a 射程/n 约/d 28/m 千米/q ，/w 改进型/b 最/d 大/a 射程/n 将/d 增加/v 到/v 75/m ～/w 110/m 千米/q 。/w 
+JDAM/nx 制导/vn 炸弹/n 现有/v 型号/n 高空/s 投弹/v 时/n 的/u 最/d 大/a 射程/n 约/d 28/m 千米/q ，/w 改进型/b 最/d 大/a 射程/n 将/d 增加/v 到/v 75/m ~/w 110/m 千米/q 。/w 
 虽然/c JDAM/nx 制导/vn 炸弹/n 的/u 命中/vn 精度/n 设计/v 值/n 仅/d 为/v 13/m 米/q ，/w 但/c 仍/d 比/p 相同/a 弹重/a 航空/n 炸弹/n 的/u 命中/vn 精度/n 高/a 得/u 多/a ，/w 例如/v ，/w 在/p 8000/m 米/q 以上/f 高空/s 投弹/v 时/n ，/w 908/m 千克/q 重/a 的/u MK-84/nx 炸弹/n 的/u 命中/vn 精度/n 为/v 60/m 米/q 。/w 
 二/m 、/w JDAM/nx 的/u 基本/a 战术/n 技术/n 性能/n 
 从/p 报道/v 可以/v 推测/v 这/r 次/q 美军/n 使用/v 的/u 是/v GBU-29型/b 通用/v 爆破型/b 炸弹/n 。/w 
@@ -2374,7 +2374,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 政变/v 多发/a 导致/v 政局/n 动荡/a ，/w 给/p 土耳其/ns 的/u 国家/n 形象/n 造成/v 严重/a 负面/b 影响/vn 。/w 
 （/w 记者/n 邵杰/nr ，/w 编辑/n 蒋骢骁/nr ，/w 新华/nz 国际/n 客户端/n 报道/v ）/w 
 国际/n 社会/n 呼吁/v 土耳其/ns 各方/r 保持/v 冷静/a 克制/v 
-新华社/nt 北京/ns ７月/t １６日/t 电/n １５日/t 晚/t 至/c １６日/t 凌晨/t ，/w 土耳其/ns 发生/v 军事/n 政变/v ，/w 土/ns 境内/s 安全/a 局势/n 严峻/a 复杂/a 。/w 
+新华社/nt 北京/ns 7月/t 16日/t 电/n 15日/t 晚/t 至/c 16日/t 凌晨/t ，/w 土耳其/ns 发生/v 军事/n 政变/v ，/w 土/ns 境内/s 安全/a 局势/n 严峻/a 复杂/a 。/w 
 事发/v 后/f ，/w 联合国/nt 、/w 欧盟/nt 、/w 北约/nt 等/u 国际/n 组织/n 以及/c 美国/ns 、/w 俄罗斯/ns 等/u 一些/m 国家/n 表示/v 密切/a 关注/v 土/ns 局势/n 发展/v ，/w 呼吁/v 各方/r 保持/v 冷静/a 克制/v ，/w 避免/v 暴力/n 冲突/v 。/w 
 联合国/nt 秘书长/n 潘基文/nr 通过/p 发言人/n 发表/v 声明/n ，/w 称/v 目前/t 土耳其/ns 局势/n 充满/v 不确定性/n ，/w 各方/r 应/v 保持/v 冷静/a 与/c 克制/v 。/w 
 潘基文/nr 强调/v ，/w 军事/n 干涉/v 国家/n 事务/n 不可/v 接受/v ，/w 根据/p 民主/a 原则/n 、/w 通过/p 和平/n 方式/n ，/w 认可/v 文官/n 治理/v 和/c 宪法/n 秩序/n 至关重要/b 。/w 
@@ -2458,10 +2458,10 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 李伟建/nr 表示/v ，/w 军人/n 是/v 土耳其/ns 比较/d 世俗化/v 的/u 一/m 派/q ，/w 土耳其/ns 开始/v 走/v 世俗化/vn 道路/n 以来/f ，/w 军方/n 有时/d 会/v 对/p 国家/n 的/u 一些/m 宗教化/vn 说法/n 不满/a ，/w 从而/c 发动/v 类似/a 政变/v 等/u 行动/v 。/w 
 目前/t ，/w 埃尔多安/nr 被/p 认为/v 有/v 穆斯林/n 兄弟会/n 背景/n ，/w 所以/c 也/d 被/p 土耳其/ns 国内/s 的/u 世俗/n 力量/n 所/u 警惕/v 。/w 
 埃尔多安/nr 称/v 将/d “/w 肃清/v ”/w 政变发动者/n 
-新华社/nt 伊斯坦布尔/ns ７月/t １６日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr １６日/t 晨/t 在/p 伊斯坦布尔/ns 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 军事/n 政变/v 。/w 
+新华社/nt 伊斯坦布尔/ns 7月/t 16日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 16日/t 晨/t 在/p 伊斯坦布尔/ns 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 军事/n 政变/v 。/w 
 首都/n 安卡拉/ns 、/w 最/d 大/a 城市/n 伊斯坦布尔/ns 均/d 发生/v 爆炸/v 和/c 激烈/a 交火/v 。/w 
-土耳其/ns 检方/n 称/v ，/w 在/p 安卡拉/ns ，/w 已/d 有/v 至少/d ４２/m 人/n 在/p 此次/r 政变/v 中/f 死亡/v 。/w 
+土耳其/ns 检方/n 称/v ，/w 在/p 安卡拉/ns ，/w 已/d 有/v 至少/d 42/m 人/n 在/p 此次/r 政变/v 中/f 死亡/v 。/w 
 政变/v 发生/v 数/m 小时/n 后/f ，/w 此前/t 在/p 土/ns 西南部/f 海滨/s 度假/v 的/u 埃尔多安/nr 乘/v 专机/n 抵达/v 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 。/w 
 在/p 随后/d 举行/v 的/u 新闻/n 发布会/n 上/f ，/w 他/r 以/p “/w 暴动/v ”/w “/w 背叛/vn 行为/n ”/w 来/v 指认/v 此次/r 政变/v ，/w 称/v 将/d 严惩/v 政变发动者/n 。/w 
 他/r 说/v ：/w “/w 我们/r 的/u 军队/n 不容/v 任何/r 人/n 加以/v 伤害/vn 。/w ”/w 
@@ -2469,7 +2469,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其政府/nt 一直/d 指责/v “/w 居伦运动/n ”/w 企图/v 推翻/v 土耳其/ns 现/t 政权/n 。/w 
 埃尔多安/nr 呼吁/v 民众/n 走/v 上/v 街头/s 支持/v 政府/n ，/w 要求/v 所有/b 军人/n 不得/v 把/p 枪口/n 对准/v “/w 自己/r 的/u 母亲/n ”/w 和/c 这个/r 国家/n 。/w 
 尽管/c 土耳其政府/nt 宣布/v 已经/d “/w 基本/a 控制/v 局势/n ”/w ，/w 但/c 各地/r 交火/v 仍/d 在/d 继续/v 。/w 
-1６日/t 凌晨/t ，/w 伊斯坦布尔/ns 市区/s 仍/d 不断/d 响起/v 激烈/a 枪声/n 和/c 爆炸声/n 。/w 
+16日/t 凌晨/t ，/w 伊斯坦布尔/ns 市区/s 仍/d 不断/d 响起/v 激烈/a 枪声/n 和/c 爆炸声/n 。/w 
 新华社/nt 记者/n 在/p 市中心/s 塔克西姆/ns 地区/n 看到/v 数/m 架/q 军机/n 在/p 低空/s 盘旋/v ，/w 耳畔/s 不时/d 传来/v 剧烈/a 的/u 爆炸声/n 。/w 
 截至/v 记者/n 发稿/v 时/n ，/w 此前/t 封锁/v 伊斯坦布尔/ns 博斯普鲁斯海峡/ns 一/m 座/q 大/a 桥/n 的/u 政变/vn 士兵/n 已经/d 投降/v 。/w 
 外交部/n 发言人/n ：/w 希望/v 土耳其/ns 尽快/d 恢复/v 秩序/n 与/c 稳定/a 
@@ -2478,13 +2478,13 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土/ns 总理/n 称/v ，/w 土军/n 内部/f 有/v 人/n 试图/v 发动/v 政变/v 。/w 
 陆慷/nr 说/v ，/w 外交部/n 和/c 中国驻土耳其使领馆/nt 迄未/d 接到/v 中国/ns 公民/n 受到/v 伤害/v 的/u 报告/n ，/w 并/c 已/d 启动/v 应急/vn 机制/n 。/w 
 据/p 英国卫报/nz 网站/n 报道/v ，/w 土耳其/ns 博斯普鲁斯大/a 桥/ns 上/f 的/u 叛军/n 已经/d 投降/v ，/w 为/p 阻止/v 民众/n 接近/v 叛军/n ，/w 警察/n 向/p 空中/s 鸣枪/v 。/w 
-土/ns 军事/n 政变/v 已/d 致/v 至少/d ６０/m 人/n 死亡/v 埃尔多安/nr 称/v 将/d 肃清/v 政变者/n 
-新华社/nt 安卡拉/ns ７月/t １６日/t 电/n 土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n １５日/t 晚/t 发动/v 军事/n 政变/v 。/w 
-至/p １６日/t 晨/t ，/w 政变/v 已/d 造成/v 至少/d ６０/m 人/n 死亡/v ，/w 另/d 有/v ７５０/m 多/m 名/q 参与政变者/n 被/p 逮捕/v 。/w 
+土/ns 军事/n 政变/v 已/d 致/v 至少/d 60/m 人/n 死亡/v 埃尔多安/nr 称/v 将/d 肃清/v 政变者/n 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n 土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n 15日/t 晚/t 发动/v 军事/n 政变/v 。/w 
+至/p 16日/t 晨/t ，/w 政变/v 已/d 造成/v 至少/d 60/m 人/n 死亡/v ，/w 另/d 有/v 750/m 多/m 名/q 参与政变者/n 被/p 逮捕/v 。/w 
 尽管/c 政府/n 宣布/v 已经/d “/w 基本/a 控制/v 局势/n ”/w ，/w 但/c 交火/v 仍/d 在/d 继续/v 。/w 
-总统/n 埃尔多安/nr １６日/t 凌晨/t 在/p 伊斯坦布尔/ns 说/v ，/w 将/d 对/p 军队政变者/n 进行/v “/w 肃清/vn ”/w 。/w 
-当地/s 媒体/n １６日/t 援引/v 土耳其/ns 高层/n 官员/n 的/u 话/n 说/v ，/w 截至/v 目前/t ，/w 军事/n 政变/v 已/d 造成/v 至少/d ６０/m 人/n 死亡/v ，/w 其中/r 大部分/m 为/v 平民/n 。/w 
-另/r 有/v ７５０/m 多/m 名/q 涉嫌参与政变者/n 被捕/v 。/w 
+总统/n 埃尔多安/nr 16日/t 凌晨/t 在/p 伊斯坦布尔/ns 说/v ，/w 将/d 对/p 军队政变者/n 进行/v “/w 肃清/vn ”/w 。/w 
+当地/s 媒体/n 16日/t 援引/v 土耳其/ns 高层/n 官员/n 的/u 话/n 说/v ，/w 截至/v 目前/t ，/w 军事/n 政变/v 已/d 造成/v 至少/d 60/m 人/n 死亡/v ，/w 其中/r 大部分/m 为/v 平民/n 。/w 
+另/r 有/v 750/m 多/m 名/q 涉嫌参与政变者/n 被捕/v 。/w 
 在/p 军事/n 政变/v 发生/v 数/m 小时/n 后/f ，/w 原本/d 在/p 西南部/s 海滨/s 城市/n 马尔马里斯/ns 度假/v 的/u 埃尔多安/nr 乘/v 飞机/n 抵达/v 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 。/w 
 在/p 机场/n 外/f ，/w 埃尔多安/nr 受到/v 了/u 人群/n 的/u 欢迎/vn 。/w 
 在/p 随后/d 举行/v 的/u 新闻/n 发布会/n 上/f ，/w 埃尔多安/nr 指责/v 土耳其/ns 发生/v 的/u 事态/n 是/v “/w 暴动/vn ”/w 和/c “/w 背叛/vn 行为/n ”/w ，/w 表示/v 将/d “/w 肃清/v ”/w 军队/n 内部/f 的/u 政变者/n ，/w 发誓/v 要/v 让/v 政变策划者/n 付出/v “/w 巨大/a 代价/n ”/w 。/w 
@@ -2493,64 +2493,64 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 另/r 据/p 媒体/n 报道/v ，/w 伊斯坦布尔/ns 博斯普鲁斯海峡/ns 一/m 座/q 大/a 桥/n 上/f 的/u 叛变/vn 士兵/n 向/p 警方/n 投降/v 。/w 
 一度/d 关闭/v 的/u 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 在/p 埃尔多安/nr 抵达/v 后/f 不久/m 便/d 由/p 亲/v 政府/n 的/u 士兵/n 控制/v ，/w 目前/t 已/d 恢复/v 航班/n 起降/v 。/w 
 在/p 首都/n 安卡拉/ns ，/w 一些/m 地方/n 的/u 抵达/vn 仍/d 在/d 继续/v 。/w 
-当地/s 媒体/n 援引/v 总统府/n 官员/n 的/u 话/n 说/v ，/w 土耳其/ns 军方/n 的/u Ｆ－１６/nx 战机/n 对/p 总统府/n 外/f 的/u 叛军/n 坦克/n 发起/v 了/u 空中/s 打击/v 。/w 
+当地/s 媒体/n 援引/v 总统府/n 官员/n 的/u 话/n 说/v ，/w 土耳其/ns 军方/n 的/u F－16/nx 战机/n 对/p 总统府/n 外/f 的/u 叛军/n 坦克/n 发起/v 了/u 空中/s 打击/v 。/w 
 另/r 一/m 名/q 土耳其/ns 官员/n 说/v ，/w 政变者/n 对/p 议会/n 大楼/n 的/u 炸弹/n 攻击/v 仍/d 在/d 继续/v 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 晨/t 在/p 安卡拉/ns 表示/v ，/w 仍/d 有/v 一部分/m 政变/vn 军人/n 控制/v 的/u 战机/n 在/p 安卡拉/ns 和/c 伊斯坦布尔/ns 上空/s 开火/v ，/w 他/r 已/d 下令/v 军方/n 战机/n 起飞/v 应对/v 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 晨/t 在/p 安卡拉/ns 表示/v ，/w 仍/d 有/v 一部分/m 政变/vn 军人/n 控制/v 的/u 战机/n 在/p 安卡拉/ns 和/c 伊斯坦布尔/ns 上空/s 开火/v ，/w 他/r 已/d 下令/v 军方/n 战机/n 起飞/v 应对/v 。/w 
 耶尔德勒姆/nr 说/v ，/w 第一/m 军/n 司令/n 于米特·丁达尔/nr 被/p 任命/v 为/v 武装部队/n 代理/v 总参谋长/n 。/w 
 官方/n 的/u 阿纳多卢通讯社/nt 早/a 些/q 时候/n 报道/v 说/v ，/w 总参谋长/n 胡卢西·阿卡尔/nr 将军/n 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 。/w 
-埃尔多安/nr １６日/t 晨/t 表示/v ，/w 目前/t 仍/d 不/d 清楚/v 阿卡尔/nr 的/u 下落/n 。/w 
-另/r 据/p 报道/v ，/w 耶尔德勒姆/nr 已/d 促请/v 议会/n 议员/n １６日/t 举行/v 紧急/a 会议/n 应对/v 乱/a 局/n 。/w 
-当地/s 时间/n １５日/t 晚/t ，/w 位于/v 安卡拉/ns 的/u 土耳其/ns 武装部队/n 总参谋部/n 传出/v 枪声/n 。/w 
+埃尔多安/nr 16日/t 晨/t 表示/v ，/w 目前/t 仍/d 不/d 清楚/v 阿卡尔/nr 的/u 下落/n 。/w 
+另/r 据/p 报道/v ，/w 耶尔德勒姆/nr 已/d 促请/v 议会/n 议员/n 16日/t 举行/v 紧急/a 会议/n 应对/v 乱/a 局/n 。/w 
+当地/s 时间/n 15日/t 晚/t ，/w 位于/v 安卡拉/ns 的/u 土耳其/ns 武装部队/n 总参谋部/n 传出/v 枪声/n 。/w 
 土耳其/ns 总理/n 耶尔德勒姆/nr 随后/d 证实/v 说/v ，/w 土/ns 武装部队/n 总参谋部/n 部分/m 军官/n 发动/v 军事/n 政变/v 。/w 
 政变/vn 军人/n 一度/d 声称/v 已/d 夺取/v 政权/n ，/w 但/c 土耳其政府/nt 不久/m 后/f 表示/v 已经/d “/w 基本/a 控制/v 局势/n ”/w 。/w 
-鉴于/p 土耳其/ns 政局/n 骤变/v ，/w 联合国教科文组织世界遗产委员会/nt １６日/t 凌晨/t 紧急/a 宣布/v 暂停/v 在/p 伊斯坦布尔/ns 举行/v 的/u 第４０/m 届/q 世界/n 遗产/n 大会/n 。/w 
-中国驻土耳其使领馆/nt １６日/t 凌晨/t 在/p 官方/n 网站/n 发布/v 消息/n ，/w 指出/v 土耳其/ns 安全/a 形势/n 十分/d 严峻/a 复杂/a ，/w 敦促/v 在/p 土耳其/ns 中国/ns 公民/n 及/c 华侨/n 华人/n 停止/v 外出/v ，/w 保持/v 镇定/a 。/w 
+鉴于/p 土耳其/ns 政局/n 骤变/v ，/w 联合国教科文组织世界遗产委员会/nt 16日/t 凌晨/t 紧急/a 宣布/v 暂停/v 在/p 伊斯坦布尔/ns 举行/v 的/u 第40/m 届/q 世界/n 遗产/n 大会/n 。/w 
+中国驻土耳其使领馆/nt 16日/t 凌晨/t 在/p 官方/n 网站/n 发布/v 消息/n ，/w 指出/v 土耳其/ns 安全/a 形势/n 十分/d 严峻/a 复杂/a ，/w 敦促/v 在/p 土耳其/ns 中国/ns 公民/n 及/c 华侨/n 华人/n 停止/v 外出/v ，/w 保持/v 镇定/a 。/w 
 中国驻土耳其大使馆/nt 证实/v ，/w 目前/t 尚未/d 收到/v 中国/ns 公民/n 受/v 土/ns 局势/n 波及/v 的/u 消息/n 。/w 
 （/w 参与/vn 记者/n ：/w 施春/nr 、/w 邹乐/nr 、/w 易爱军/nr ）/w 
-新华社/nt 快讯/n ：/w 据/p 土耳其/ns 媒体/n １６日/t 报道/v ，/w 土耳其/ns １５日/t 晚/t 发生/v 的/u 军事/n 政变/v 已/d 导致/v ９０/m 人/n 死亡/v 、/w １１５４/m 人/n 受伤/v ，/w 另/d 有/v １５６３/m 名/q 参与政变者/n 被捕/v 。/w 
-背景/n 资料/n ：/w 土耳其/ns 上世纪/t ６０年代/t 以来/f 主要/b 军人/n 干政/v 事件/n 
-新华社/nt 北京/ns ７月/t １６日/t 电/n 背景/n 资料/n ：/w 土耳其/ns 上世纪/t ６０年代/t 以来/f 主要/b 军人/n 干政/v 事件/n 
-１５日/t 晚/t 至/c １６日/t 晨/t ，/w 部分/n 土耳其/ns 军人/n 在/p 土/ns 首都/n 安卡拉/ns 和/c 最/d 大/a 城市/n 伊斯坦布尔/ns 发动/v 军事/n 政变/v ，/w 试图/v 推翻/v 总统/n 雷杰普·塔伊普·埃尔多安/nr 领导/v 的/u 政权/n 。/w 
+新华社/nt 快讯/n ：/w 据/p 土耳其/ns 媒体/n 16日/t 报道/v ，/w 土耳其/ns 15日/t 晚/t 发生/v 的/u 军事/n 政变/v 已/d 导致/v 90/m 人/n 死亡/v 、/w 1154/m 人/n 受伤/v ，/w 另/d 有/v 1563/m 名/q 参与政变者/n 被捕/v 。/w 
+背景/n 资料/n ：/w 土耳其/ns 上世纪/t 60年代/t 以来/f 主要/b 军人/n 干政/v 事件/n 
+新华社/nt 北京/ns 7月/t 16日/t 电/n 背景/n 资料/n ：/w 土耳其/ns 上世纪/t 60年代/t 以来/f 主要/b 军人/n 干政/v 事件/n 
+15日/t 晚/t 至/c 16日/t 晨/t ，/w 部分/n 土耳其/ns 军人/n 在/p 土/ns 首都/n 安卡拉/ns 和/c 最/d 大/a 城市/n 伊斯坦布尔/ns 发动/v 军事/n 政变/v ，/w 试图/v 推翻/v 总统/n 雷杰普·塔伊普·埃尔多安/nr 领导/v 的/u 政权/n 。/w 
 截至/v 发稿/v 时/n ，/w 土耳其政府/nt 宣称/v 已经/d 基本/a 控制/v 局势/n ，/w 埃尔多安/nr 则/c 表示/v 将/d “/w 肃清/v ”/w 政变发动者/n 。/w 
 土耳其/ns 军队/n ，/w 自/r 视为/v 土耳其/ns 世俗/n 政权/n 和/c 宪法/n 秩序/n 保卫者/n ，/w 在/p 土耳其/ns 国家/n 政治/n 生活/n 中/f 长期/d 扮演/v 重要/a 角色/n 。/w 
-上世纪/t ６０年代/t 以来/f ，/w 土耳其/ns 军队/n 通过/p 发动/v 军事/n 政变/v 、/w 发布/v 所谓/v “/w 备忘录/n ”/w 等/u 方式/n 干预/v 国家/n 政治/n 生活/n 。/w 
+上世纪/t 60年代/t 以来/f ，/w 土耳其/ns 军队/n 通过/p 发动/v 军事/n 政变/v 、/w 发布/v 所谓/v “/w 备忘录/n ”/w 等/u 方式/n 干预/v 国家/n 政治/n 生活/n 。/w 
 以下/f 是/v 几/m 次/q 主要/b 军人/n 干政/v 事件/n ：/w 
-１９６０年/t ５月/t ２７日/t ，/w 土耳其/ns 陆军/n 司令/n 杰马尔·居尔塞尔/nr 领导/v 军队/n ，/w 推翻/v 实施/v 独裁/a 统治/v 、/w 反/b 世俗主义/n 的/u 民主党/n 政权/n ，/w 逮捕/v 总统/n 、/w 总理/n 、/w 多/a 名/q 内阁/n 部长/n 及/c 大部分/m 民主党/n 议员/n ，/w 并/c 解散/v 议会/n 。/w 
+1960年/t 5月/t 27日/t ，/w 土耳其/ns 陆军/n 司令/n 杰马尔·居尔塞尔/nr 领导/v 军队/n ，/w 推翻/v 实施/v 独裁/a 统治/v 、/w 反/b 世俗主义/n 的/u 民主党/n 政权/n ，/w 逮捕/v 总统/n 、/w 总理/n 、/w 多/a 名/q 内阁/n 部长/n 及/c 大部分/m 民主党/n 议员/n ，/w 并/c 解散/v 议会/n 。/w 
 居尔塞尔/nr 任/v 主席/n 的/u “/w 全国团结委员会/nt ”/w 接管/v 政府/n ，/w 其/r 本人/r 任/v 临时/b 总统/n 、/w 总理/n 和/c 国防部长/n 。/w 
-１９６１年/t １０月/t 大选/v 后/f ，/w 居尔塞尔/nr 军政权/n 还/v 政/n 于/p 民/n 。/w 
-１９７１年/t ３月/t １２日/t ，/w 土耳其/ns 武装部队/n 总参谋长/n 梅姆杜赫·塔马奇/nr 联合/v 陆海空/n 三军/n 司令/n 向/p 总统/n 和/c 议会/n 提交/v 备忘录/n ，/w 要求/v 建立/v 一个/m 强大/a 且/c 受/p 人民/n 信赖/v 的/u 政府/n ，/w 以/c 应对/v 国家/n 所/u 面临/v 严重/a 的/u 政治/n 、/w 经济/n 和/c 社会/n 危机/n 。/w 
+1961年/t 10月/t 大选/v 后/f ，/w 居尔塞尔/nr 军政权/n 还/v 政/n 于/p 民/n 。/w 
+1971年/t 3月/t 12日/t ，/w 土耳其/ns 武装部队/n 总参谋长/n 梅姆杜赫·塔马奇/nr 联合/v 陆海空/n 三军/n 司令/n 向/p 总统/n 和/c 议会/n 提交/v 备忘录/n ，/w 要求/v 建立/v 一个/m 强大/a 且/c 受/p 人民/n 信赖/v 的/u 政府/n ，/w 以/c 应对/v 国家/n 所/u 面临/v 严重/a 的/u 政治/n 、/w 经济/n 和/c 社会/n 危机/n 。/w 
 当天/t ，/w 苏莱曼·德米雷尔/nr 政府/n 被迫/d 辞职/v 。/w 
 政变/v 之后/f ，/w 在/p 军方/n 监督/v 下/f ，/w 土耳其/ns 组建/v 起/v 一个/m 由/p 保守派/n 政治家/n 和/c 专家/n 组成/v 的/u 政府/n 。/w 
-１９８０年/t ９月/t １２日/t ，/w 时值/v 土耳其/ns 陷入/v 严重/a 的/u 政治/n 危机/n ，/w 土耳其/ns 武装部队/n 总参谋长/n 凯南·埃夫伦/nr 等/u 人/n 发动/v 政变/v ，/w 解散/v 议会/n 和/c 民选/b 政府/n 。/w 
+1980年/t 9月/t 12日/t ，/w 时值/v 土耳其/ns 陷入/v 严重/a 的/u 政治/n 危机/n ，/w 土耳其/ns 武装部队/n 总参谋长/n 凯南·埃夫伦/nr 等/u 人/n 发动/v 政变/v ，/w 解散/v 议会/n 和/c 民选/b 政府/n 。/w 
 其/r 本人/r 出任/v 国家/n 元首/n ，/w 兼任/v 军政权/n “/w 国家安全委员会/nt ”/w 主席/n 。/w 
-１９８２年/t ，/w 军政权/n 修改/v 宪法/n ，/w 埃夫伦/nr 正式/a 出任/v 国家/n 总统/n 兼/v 武装部队/n 总司令/n 。/w 
+1982年/t ，/w 军政权/n 修改/v 宪法/n ，/w 埃夫伦/nr 正式/a 出任/v 国家/n 总统/n 兼/v 武装部队/n 总司令/n 。/w 
 该/r 宪法/n 也/d 赋予/v 军队/n 以/c 保卫/v 世俗/n 政府/n 和/c 领土/ns 完整/a 的/u 权力/n 。/w 
-１９９７年/t ６月/t １８日/t ，/w 在/p 土耳其/ns 军方/n 主要/b 将领/n 就/p 政局/n 联名/v 提出/v 一/m 份/q 所谓/v “/w 备忘录/n ”/w ３/m 个/q 半/m 月/n 后/f ，/w 总理/n 内吉梅丁·埃尔巴坎/nr 领导/v 带有/v 明显/a 宗教/n 倾向/n 的/u 政府/n 最终/d 迫于/v 军方/n 强大/a 压力/n 辞职/v 。/w 
+1997年/t 6月/t 18日/t ，/w 在/p 土耳其/ns 军方/n 主要/b 将领/n 就/p 政局/n 联名/v 提出/v 一/m 份/q 所谓/v “/w 备忘录/n ”/w 3/m 个/q 半/m 月/n 后/f ，/w 总理/n 内吉梅丁·埃尔巴坎/nr 领导/v 带有/v 明显/a 宗教/n 倾向/n 的/u 政府/n 最终/d 迫于/v 军方/n 强大/a 压力/n 辞职/v 。/w 
 值得/v 注意/v 的/u 是/v ，/w 埃尔巴坎/nr 是/v 现任/v 土耳其/ns 总统/n 埃尔多安/nr 的/u 导师/n 。/w 
-埃尔多安/nr 领导/v 的/u 正义与发展党/nt 自/p ２００３年/t 主政/v 土耳其/ns 以来/f ，/w 逐渐/d 削弱/v 军队/n 的/u 影响力/n 。/w 
+埃尔多安/nr 领导/v 的/u 正义与发展党/nt 自/p 2003年/t 主政/v 土耳其/ns 以来/f ，/w 逐渐/d 削弱/v 军队/n 的/u 影响力/n 。/w 
 土耳其/ns 政变/v 死亡/vn 人数/n 已/d 上升/v 至/p 90/m 人/n 
-新华社/nt 安卡拉/ns ７月/t １６日/t 电/n 据/p 土耳其/ns 媒体/n １６日/t 报道/v ，/w 土耳其/ns １５日/t 晚/t 发生/v 的/u 军事/n 政变/v 已/d 造成/v 至少/d ９０/m 人/n 死亡/v ，/w 另/d 有/v １１５３/m 人/n 受伤/v 。/w 
-土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 大约/d ２００/m 名/q 解除/v 武装/n 的/u 政变/vn 军人/n 当天/t 走/v 出/v 土耳其/ns 武装部队/n 总参谋部/n 大楼/n 投降/v ，/w 这/r 场/q 政变/v 已/d 造成/v 至少/d ９０/m 人/n 死亡/v ，/w 其中/r 大部分/m 为/v 平民/n ，/w 另/d 有/v １１５３/m 人/n 受伤/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n 据/p 土耳其/ns 媒体/n 16日/t 报道/v ，/w 土耳其/ns 15日/t 晚/t 发生/v 的/u 军事/n 政变/v 已/d 造成/v 至少/d 90/m 人/n 死亡/v ，/w 另/d 有/v 1153/m 人/n 受伤/v 。/w 
+土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 大约/d 200/m 名/q 解除/v 武装/n 的/u 政变/vn 军人/n 当天/t 走/v 出/v 土耳其/ns 武装部队/n 总参谋部/n 大楼/n 投降/v ，/w 这/r 场/q 政变/v 已/d 造成/v 至少/d 90/m 人/n 死亡/v ，/w 其中/r 大部分/m 为/v 平民/n ，/w 另/d 有/v 1153/m 人/n 受伤/v 。/w 
 此外/c ，/w 先前/t 被/p 政变/vn 军人/n 控制/v 的/u 武装部队/n 总参谋长/n 胡卢西·阿卡尔/nr 在/p 一/m 次/q 行动/v 中/f 被/p 营救/v 出来/v ，/w 随后/d 送/v 往/v 一/m 处/q 安全/a 地点/n 。/w 
-土耳其/ns 一/m 名/q 政府/n 高级/a 官员/n 说/v ，/w 政变/v 发生/v 后/f ，/w 土/ns 全/a 境/n 已/d 有/v １５６３/m 名/q 涉嫌/v 参与/v 政变/v 的/u 人员/n 遭到/v 拘捕/v 。/w 
-当地/s 时间/n １５日/t 晚/t ，/w 位于/v 安卡拉/ns 的/u 土耳其/ns 武装部队/n 总参谋部/n 传出/v 枪声/n 。/w 
+土耳其/ns 一/m 名/q 政府/n 高级/a 官员/n 说/v ，/w 政变/v 发生/v 后/f ，/w 土/ns 全/a 境/n 已/d 有/v 1563/m 名/q 涉嫌/v 参与/v 政变/v 的/u 人员/n 遭到/v 拘捕/v 。/w 
+当地/s 时间/n 15日/t 晚/t ，/w 位于/v 安卡拉/ns 的/u 土耳其/ns 武装部队/n 总参谋部/n 传出/v 枪声/n 。/w 
 土耳其/ns 总理/n 耶尔德勒姆/nr 随后/d 证实/v 说/v ，/w 土/ns 武装部队/n 总参谋部/n 部分/m 军官/n 发动/v 军事/n 政变/v 。/w 
 政变/vn 军人/n 一度/d 声称/v 已/d 夺取/v 政权/n ，/w 但/c 土耳其政府/nt 不久/m 后/f 表示/v 已经/d “/w 基本/a 控制/v 局势/n ”/w 。/w 
-新华社/nt 快讯/n ：/w 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr １６日/t 说/v ，/w 土耳其/ns １５日/t 晚/t 军事/n 政变/v 已/d 致/v １９４/m 人/n 丧生/v ，/w 包括/v ４１/m 名/q 警察/n ，/w ４９/m 名/q 平民/n ，/w 政变参与者/n １０４/m 人/n 。/w 
+新华社/nt 快讯/n ：/w 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 16日/t 说/v ，/w 土耳其/ns 15日/t 晚/t 军事/n 政变/v 已/d 致/v 194/m 人/n 丧生/v ，/w 包括/v 41/m 名/q 警察/n ，/w 49/m 名/q 平民/n ，/w 政变参与者/n 104/m 人/n 。/w 
 土耳其/ns ：/w “/w 短命/a ”/w 政变/v 冲击/v 不/d 小/a 
-中东/ns 地区/n 大国/n 土耳其/ns １５日/t 晚/t 突发/v 军事/n 政变/v ，/w 目前/t 已/d 造成/v １９０/m 多/m 人/n 死亡/v 。/w 
-但/c 政变者/n 很/d 快/a 就/d 遭遇/v 有力/a 反击/v ，/w 土/ns 政府/n 方面/n 宣布/v 已/d “/w 基本/a 控制/v 局势/n ”/w ，/w 并/c 逮捕/v 了/u １５００/m 多/m 名/q 涉嫌/v 参与/v 政变/v 人员/n 。/w 
+中东/ns 地区/n 大国/n 土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 目前/t 已/d 造成/v 190/m 多/m 人/n 死亡/v 。/w 
+但/c 政变者/n 很/d 快/a 就/d 遭遇/v 有力/a 反击/v ，/w 土/ns 政府/n 方面/n 宣布/v 已/d “/w 基本/a 控制/v 局势/n ”/w ，/w 并/c 逮捕/v 了/u 1500/m 多/m 名/q 涉嫌/v 参与/v 政变/v 人员/n 。/w 
 分析/vn 人士/n 指出/v ，/w 这/r 次/q 未遂/v 政变/v 是/v 土耳其/ns 国内/s 世俗/n 势力/n 与/p 宗教/n 势力/n 之间/f 斗争/v 的/u 结果/n 。/w 
 此次/r 事件/n 过后/t ，/w 土/ns 总统/n 埃尔多安/nr 的/u 地位/n 可能/v 进一步/d 巩固/v ，/w 该国/r 宗教/n 势力/n 或/c 将/d 进一步/d 增强/v ，/w 而/c 土耳其/ns 与/p 美国/ns 之间/f 的/u 关系/n 短期/t 可能/n 会/v 受到/v 冲击/v 。/w 
 政府/n 很/d 快/a 掌控/v 局势/n 
-１５日/t 晚/t ，/w 土耳其/ns 两/m 个/q 主要/b 城市/n 突然/a 出现/v 异常/a 情况/n ：/w 多/a 架/q 战机/n 从/p 首都/n 安卡拉/ns 市中心/s 低空/s 飞过/v ，/w 坦克/n 开/v 上/v 街头/s ；/w 宪兵/n 关闭/v 了/u 最/d 大/a 城市/n 伊斯坦布尔/ns 的/u 两/m 座/q 大/a 桥/n ，/w 桥上/s 出现/v 坦克/n 。/w 
+15日/t 晚/t ，/w 土耳其/ns 两/m 个/q 主要/b 城市/n 突然/a 出现/v 异常/a 情况/n ：/w 多/a 架/q 战机/n 从/p 首都/n 安卡拉/ns 市中心/s 低空/s 飞过/v ，/w 坦克/n 开/v 上/v 街头/s ；/w 宪兵/n 关闭/v 了/u 最/d 大/a 城市/n 伊斯坦布尔/ns 的/u 两/m 座/q 大/a 桥/n ，/w 桥上/s 出现/v 坦克/n 。/w 
 土耳其/ns 总理/n 耶尔德勒姆/nr 随即/d 发表/v 讲话/n 说/v ，/w 土/ns 武装部队/n 总参谋部/n 部分/m 军官/n 发动/v 了/u 军事/n 政变/v 。/w 
 政变/vn 军人/n 一度/d 控制/v 土耳其国家电视台/nt 并/c 发表/v 声明/n 。/w 
 一个/m 自称/v “/w 国家和平委员会/nt ”/w 的/u 组织/n 在/p 声明/n 中/f 宣称/v ，/w 政变/vn 军人/n 已经/d 控制/v 土耳其政府/nt ，/w 接管/v 国家/n 政权/n 。/w 
 但/c 一些/m 军方/n 将领/n 随后/d 表示/v ，/w 参与/v 政变/v 的/u 只/d 是/v 一小撮/m 军人/n 。/w 
-忠于/v 政府/n 的/u 部队/n 很/d 快/a 展开/v 反击/v ，/w ７５０/m 多/m 名/q 涉嫌/v 参与/v 政变/v 的/u 军人/n 被/p 逮捕/v 。/w 
+忠于/v 政府/n 的/u 部队/n 很/d 快/a 展开/v 反击/v ，/w 750/m 多/m 名/q 涉嫌/v 参与/v 政变/v 的/u 军人/n 被/p 逮捕/v 。/w 
 一度/d 关闭/v 的/u 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 目前/t 已/d 恢复/v 航班/n 起降/v 。/w 
-事发/v 后/f ，/w 土耳其/ns 总统/n 埃尔多安/nr 中断/v 了/u 在/p 该国/r 西南部/f 的/u 度假/vn ，/w 于/p １６日/t 凌晨/t 乘/v 专机/n 抵达/v 伊斯坦布尔/ns 。/w 
+事发/v 后/f ，/w 土耳其/ns 总统/n 埃尔多安/nr 中断/v 了/u 在/p 该国/r 西南部/f 的/u 度假/vn ，/w 于/p 16日/t 凌晨/t 乘/v 专机/n 抵达/v 伊斯坦布尔/ns 。/w 
 他/r 表示/v ，/w 政府/n 仍/d 在/d 掌控/v 局势/n ，/w 他/r 仍/d 在/d 执掌/v 权力/n ，/w 军队/n 没有/d 也/d 不/d 能/v 统治/v 土耳其/ns 。/w 
 埃尔多安/nr 发誓/v 将/d “/w 肃清/v ”/w 军队/n 内部/f 的/u 政变者/n ，/w 让/p 政变策划者/n 付出/v “/w 巨大/a 代价/n ”/w 。/w 
 目前/t ，/w 安卡拉/ns 市内/s 已/d 听/v 不/d 到/v 战机/n 轰鸣/v ，/w 军事/n 政变/v 趋于/v 平息/v ，/w 支持/v 土耳其政府/nt 的/u 军队/n 已/d 基本/a 控制/v 局面/n 。/w 
@@ -2559,29 +2559,29 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 民众/n 在/p 主要/b 城市/n 抗议/v 军事/n 政变/v 
 7月/t 16日/t ，/w 在/p 土耳其/ns 安卡拉/ns ，/w 民众/n 在/p 议会/n 大楼/n 外/f 聚集/v 抗议/v 军事/n 政变/v ，/w 呼吁/v 土耳其/ns 尽快/d 回归/v 和平/n 。/w 
 新华社/nt 记者/n 邹乐/nr 摄/v 
-新华社/nt 安卡拉/ns ７月/t １６日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 民众/n １６日/t 晚/t 在/p 首都/n 安卡拉/ns 等/u 主要/b 城市/n 聚集/v ，/w 抗议/v １５日/t 晚/t 突发/v 的/u 军事/n 政变/vn ，/w 呼吁/v 和平/n 与/c 安宁/a 。/w 
-据/p 土耳其/ns 《/w 每日新闻/nz 》/w 报道/v ，/w 数千/m 人/n １６日/t 晚/t 聚集/v 在/p 土耳其/ns 最/d 大/a 城市/n 伊斯坦布尔/ns 市中心/s 的/u 塔克西姆广场/ns 。/w 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 民众/n 16日/t 晚/t 在/p 首都/n 安卡拉/ns 等/u 主要/b 城市/n 聚集/v ，/w 抗议/v 15日/t 晚/t 突发/v 的/u 军事/n 政变/vn ，/w 呼吁/v 和平/n 与/c 安宁/a 。/w 
+据/p 土耳其/ns 《/w 每日新闻/nz 》/w 报道/v ，/w 数千/m 人/n 16日/t 晚/t 聚集/v 在/p 土耳其/ns 最/d 大/a 城市/n 伊斯坦布尔/ns 市中心/s 的/u 塔克西姆广场/ns 。/w 
 他们/r 高唱/v 土耳其/ns 国歌/n ，/w 高呼/v 反对/v 军事/n 政变/v 的/u 口号/n ，/w 斥责/v 政变/v 给/p 土耳其/ns 带来/v 动荡/a 。/w 
 在/p 安卡拉/ns 市中心/s 的/u 红新月广场/ns ，/w 数千/m 民众/n 用/p 土耳其/ns 国旗/n 将/p 广场/n 变成/v 了/u 红色/n 的/u 海洋/n 。/w 
 他们/r 呼喊/v 反对/v 军事/n 政变/v 的/u 口号/n ，/w 呼吁/v 土耳其/ns 恢复/v 和平/n 与/c 安宁/a 。/w 
 当天/t 早/a 些/q 时候/n ，/w 记者/n 在/p 安卡拉/ns 的/u 土耳其/ns 议会/n 和/c 武装部队/n 总参谋部/n 附近/f ，/w 看到/v 数百/m 名/q 抗议/v 军事/n 政变/v 的/u 土耳其/ns 民众/n 。/w 
 在/p 土耳其/ns 第三/m 大/a 城市/n 伊兹密尔/ns 的/u 钟楼广场/ns ，/w 数千/m 名/q 当地/s 民众/n 聚集/v 到/p 一起/s ，/w 抗议/v 军事/n 政变/v ，/w 呼吁/v 和平/n 。/w 
-土耳其/ns 国防部长/n 菲克里·厄舍克/nr １６日/t 说/v ，/w 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 的/u ３/m 名/q 土耳其/ns 高级/a 将领/n 当天/t 获释/v ，/w 包括/v 空军/n 司令/n 、/w 海军/n 司令/n 和/c 副/b 总参谋长/n 在内/u 的/u ３/m 人/n 从/p 被/p 关押/v 的/u 基地/n 获救/v ，/w 状况/n 良好/a 。/w 
+土耳其/ns 国防部长/n 菲克里·厄舍克/nr 16日/t 说/v ，/w 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 的/u 3/m 名/q 土耳其/ns 高级/a 将领/n 当天/t 获释/v ，/w 包括/v 空军/n 司令/n 、/w 海军/n 司令/n 和/c 副/b 总参谋长/n 在内/u 的/u 3/m 人/n 从/p 被/p 关押/v 的/u 基地/n 获救/v ，/w 状况/n 良好/a 。/w 
 此外/c ，/w 宪兵/n 司令/n 门迪/nr 也/d 已经/d 获救/v 。/w 
 厄舍克/nr 表示/v ，/w 现在/t 说/v 政变/v 的/u 危险/an 已经/d 完全/a 过去/v 还/d 言之过早/v 。/w 
 他/r 呼吁/v 政府/n 和/c 民众/n 提高/v 警惕/a 。/w 
-土耳其/ns １５日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v 。/w 
+土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
 土耳其/ns 政变/v 已/d 造成/v 161/m 人/n 死亡/v 近/v 3000/m 人/n 被捕/v 
-新华社/nt 安卡拉/ns ７月/t １６日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 在/p 记者会/n 上/f 说/v ，/w １５日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v ２８３９/m 名/q 政变参与者/n 。/w 
-他/r 说/v ，/w 目前/t 土耳其政府/nt 已/d 完全/a 掌控/v 局势/n ，/w 共有/v ２８３９/m 名/q 参与/v 此次/r 军事/n 政变者/n 被/p 逮捕/v ，/w 包括/v 一些/m 高级/a 军官/n ，/w 有/v ２０/m 名/q 叛乱/vn 军人/n 被/p 打/v 死/v 。/w 
-此前/t ，/w 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 说/v ，/w 军事/n 政变/v 致/v １９４/m 人/n 丧生/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 在/p 记者会/n 上/f 说/v ，/w 15日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v 2839/m 名/q 政变参与者/n 。/w 
+他/r 说/v ，/w 目前/t 土耳其政府/nt 已/d 完全/a 掌控/v 局势/n ，/w 共有/v 2839/m 名/q 参与/v 此次/r 军事/n 政变者/n 被/p 逮捕/v ，/w 包括/v 一些/m 高级/a 军官/n ，/w 有/v 20/m 名/q 叛乱/vn 军人/n 被/p 打/v 死/v 。/w 
+此前/t ，/w 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 说/v ，/w 军事/n 政变/v 致/v 194/m 人/n 丧生/v 。/w 
 耶尔德勒姆/nr 警告/v 说/v ，/w 任何/r 国家/n 都/d 不/d 要/v 支持/v 流亡/v 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 领导/v 的/u “/w 居伦运动/n ”/w 。/w 
 他/r 说/v ，/w 这/r 次/q 军事/n 政变/v 主要/d 由/p 军队/n 内部/f 的/u “/w 居伦运动/n ”/w 支持者/n 策划/v 组织/v 。/w 
 “/w 任何/r 国家/n 支持/v ‘/w 居伦运动/n ’/w ，/w 都/d 不/d 被/p 认为/v 是/v 土耳其/ns 的/u 朋友/n ，/w 被/p 视为/v 是/v 向/p 土耳其/ns 开战/v 。/w ”/w 
 耶尔德勒姆/nr 还/d 促请/v 议会/n 举行/v 紧急/a 会议/n 以/c 应对/v 乱/a 局/n 。/w 
-综述/n ：/w 土/ns 总理/n 说/v 政变/v 已/d 致/v １６１/m 人/n 死亡/v 国际/n 社会/n 关注/v 土耳其/ns 政变/v 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 表示/v ，/w １５日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v １６１/m 人/n 死亡/v ；/w 俄罗斯/ns 、/w 巴基斯坦/ns 、/w 希腊/ns 、/w 索马里/ns 、/w 约旦/ns 以及/c 欧盟/nt 、/w 北约/nt 等/u 国家/n 和/c 国际/n 组织/n 对/p 土耳其/ns 政变/v 表示/v 关注/v ；/w 土耳其/ns 外长/n 恰武什奥卢/nr 说/v ，/w ８/m 名/q 参与/vn 政变/vn 军人/n 已/d 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 在/p 记者会/n 上/f 表示/v ，/w 前一晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v １６１/m 人/n 死亡/v ，/w １４４０/m 人/n 受伤/v 。/w 
+综述/n ：/w 土/ns 总理/n 说/v 政变/v 已/d 致/v 161/m 人/n 死亡/v 国际/n 社会/n 关注/v 土耳其/ns 政变/v 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 表示/v ，/w 15日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v ；/w 俄罗斯/ns 、/w 巴基斯坦/ns 、/w 希腊/ns 、/w 索马里/ns 、/w 约旦/ns 以及/c 欧盟/nt 、/w 北约/nt 等/u 国家/n 和/c 国际/n 组织/n 对/p 土耳其/ns 政变/v 表示/v 关注/v ；/w 土耳其/ns 外长/n 恰武什奥卢/nr 说/v ，/w 8/m 名/q 参与/vn 政变/vn 军人/n 已/d 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 在/p 记者会/n 上/f 表示/v ，/w 前一晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v ，/w 1440/m 人/n 受伤/v 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
 欧盟委员会/nt 主席/n 容克/nr 、/w 欧洲理事会/nt 主席/n 图斯克/nr 、/w 欧盟/nt 外交/n 与/c 安全/a 政策/n 高级/a 代表/n 莫盖里尼/nr 发表/v 共同/b 声明/n 称/v ，/w 土耳其/ns 是/v 欧盟/nt 的/u 重要/a 伙伴/n ，/w 欧盟/nt 完全/a 支持/v 土耳其/ns 民主/a 选举/v 出/v 的/u 政府/n 和/c 机构/n 。/w 
 欧盟/nt 还/d 呼吁/v 土耳其/ns 迅速/a 恢复/v 宪法/n 秩序/n ，/w 并/c 将/d 和/p 其/r 成员国/n 一道/d ，/w 继续/v 关注/v 土耳其/ns 局势/n 发展/v 。/w 
@@ -2595,21 +2595,21 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 希腊/ns 总理/n 齐普拉斯/nr 也/d 在/p 推特/nz 上/f 表示/v ，/w 希腊政府/nt 和/c 人民/n 关注/v 土耳其/ns 局势/n 发展/v ，/w 支持/v 民主/a 和/c 宪法/n 秩序/n 。/w 
 索马里/ns 总统/n 马哈茂德/nr 发表/v 声明/n 指出/v ，/w 逆转/v 民主/a 进程/n 的/u 行径/n 不可/v 容忍/v ，/w 索马里/ns 会/v 全力/d 支持/v 埃尔多安/nr 总统/n 。/w 
 约旦/ns 新闻/n 大臣/n 兼/v 政府/n 发言人/n 穆马尼/nr 说/v ，/w 土耳其/ns 稳定/a 是/v 本/r 地区/n 稳定/a 与/c 安全/a 的/u 重要/a 因素/n ，/w 希望/v 土耳其/ns 战胜/v 这/r 场/q 严酷/a 考验/v ，/w 维护/v 国家/n 统一/a 。/w 
-土耳其/ns 外长/n 恰武什奥卢/nr １６日/t 说/v ，/w ８/m 名/q 参与/v 发动/v 军事/n 政变/v 的/u 叛乱/vn 分子/n 当天/t 乘坐/v 直升机/n 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
+土耳其/ns 外长/n 恰武什奥卢/nr 16日/t 说/v ，/w 8/m 名/q 参与/v 发动/v 军事/n 政变/v 的/u 叛乱/vn 分子/n 当天/t 乘坐/v 直升机/n 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
 土耳其政府/nt 已/d 请求/v 希腊政府/nt 引渡/v 这些/r 叛乱/vn 分子/n 。/w 
-希腊/ns 军方/n 证实/v ，/w ８/m 名/q 乘坐/v 直升机/n 未经/d 许可/v 进入/v 希腊/ns 领空/n 的/u 土耳其/ns 军人/n 已/d 申请/v 政治/n 避难/v 。/w 
+希腊/ns 军方/n 证实/v ，/w 8/m 名/q 乘坐/v 直升机/n 未经/d 许可/v 进入/v 希腊/ns 领空/n 的/u 土耳其/ns 军人/n 已/d 申请/v 政治/n 避难/v 。/w 
 希腊政府/nt 尚未/d 证实/v 这些/r 土耳其/ns 军人/n 是否/v 参与/v 军事/n 政变/v 。/w 
 记者/n 手记/n ：/w 土耳其/ns 伊斯坦布尔/ns 惊魂/n 夜/n 
 土耳其/ns 最/d 大/a 城市/n 伊斯坦布尔/ns 市中心/s 的/u 塔克西姆广场/ns 和/c 邻近/v 的/u 独立大街/ns 可谓/v 这/r 座/q 历史/n 名城/n 的/u 名片/n ，/w 年/q 都/d 吸引/v 众多/m 国内外/s 游客/n 前往/v 。/w 
-然而/c ，/w １５日/t 晚/a 这里/r 却/d 见证/v 了/u 一/m 场/q 突如其来/v 的/u 军事/n 政变/vn 。/w 
+然而/c ，/w 15日/t 晚/a 这里/r 却/d 见证/v 了/u 一/m 场/q 突如其来/v 的/u 军事/n 政变/vn 。/w 
 腥风血雨/n 中/f ，/w 市民/n 在/p 惊魂/n 中/f 度过/v 了/u 一个/m 不眠之夜/n 。/w 
 一/m 伙/q 军人/n 当夜/t 宣布/v “/w 接管/v 国家/n 政权/n 以/c 恢复/v 法治/n ”/w 后/f 不久/m ，/w 一/m 群/q 官兵/n 就/d 现身/v 塔克西姆广场/ns ，/w 从/p 警察/n 手中/s 夺取/v 了/u 广场/n 控制权/n 。/w 
 数百/m 名/q 市民/n 则/c 响应/v 总统/n 埃尔多安/nr 的/u 号召/vn ，/w 纷纷/d 涌/v 上/v 街头/s 抗议/v 少数/m 军人/n 的/u 乱政/vn 行径/n 。/w 
 “/w 滚/v 回/v 你们/r 的/u 军营/n 去/v ！/w ”/w 人群/n 高喊/v 道/v 。/w 
 军用/b 飞机/n 随后/d 出现/v 在/p 城市/n 上空/s ，/w 低空/s 飞行/v ，/w 轰鸣声/n 不绝于耳/v 。/w 
 接下来/v ，/w 飞机/n 轰鸣声/n 、/w 爆炸声/n 、/w 激烈/a 交火声/n 此起彼伏/v 、/w 连续不断/v ，/w 时而/d 交织/v 在/p 一起/s ，/w 成为/v 当晚/t 这/r 座/q 城市/n 的/u “/w 主旋律/n ”/w 。/w 
-１６日/t ，/w 独立大街/ns 上/f 一/m 家/q 餐馆/n 的/u 老板/n 梅廷·哈哲扎德/nr 告诉/v 新华社/nt 记者/n ：/w “/w 昨夜/t 的/u 噪声/n 和/c 恐惧/an 让/p 塔克西姆/ns 地区/n 无/v 人/n 能够/v 合眼/v 。/w ”/w 
-一/m 名/q 目击者/n 说/v ，/w 从/p １５日/t 夜/t 到/c １６日/t 凌晨/t ，/w 支持/v 政变/v 的/u 狙击手/n 部署/v 在/p 每/r 一/m 处/q 可能/v 的/u 建筑物/n 上/f ，/w 向/p 对立/v 的/u 警察/n 和/c 平民/n 开枪/v 射击/v 。/w 
+16日/t ，/w 独立大街/ns 上/f 一/m 家/q 餐馆/n 的/u 老板/n 梅廷·哈哲扎德/nr 告诉/v 新华社/nt 记者/n ：/w “/w 昨夜/t 的/u 噪声/n 和/c 恐惧/an 让/p 塔克西姆/ns 地区/n 无/v 人/n 能够/v 合眼/v 。/w ”/w 
+一/m 名/q 目击者/n 说/v ，/w 从/p 15日/t 夜/t 到/c 16日/t 凌晨/t ，/w 支持/v 政变/v 的/u 狙击手/n 部署/v 在/p 每/r 一/m 处/q 可能/v 的/u 建筑物/n 上/f ，/w 向/p 对立/v 的/u 警察/n 和/c 平民/n 开枪/v 射击/v 。/w 
 哈哲扎德/nr 和/c 朋友们/n 当晚/t 走/v 上/v 街头/s 声援/v 支持/v 政府/n 的/u 警察/n ，/w 此时/r 支持/v 政变/v 的/u 士兵/n 已/d 进入/v 塔克西姆/ns 地区/n 。/w 
 不久/m ，/w 士兵/n 和/c 警察/n 之间/f 激烈/a 交火/v 。/w 
 哈哲扎德/nr 说/v ，/w 平民/n 遭到/v 枪击/v ，/w 数/m 人/n 丧命/v 。/w 
@@ -2619,26 +2619,26 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 一/m 名/q 不/d 愿/v 透露/v 姓名/n 的/u 男子/n 叹道/v ：/w “/w 我们/r 的/u 国家/n 已经/d 崩溃/v 。/w ”/w 
 他/r 坦言/v 对/p 国家/n 的/u 未来/t 不/d 抱/v 希望/n ，/w 认为/v 目前/t 的/u 经济/n 困境/n 尤其/d 会/v 深深/z 地/u 伤害/v 到/v 每/r 一/m 个/q 人/n 。/w 
 他/r 说/v ，/w “/w 我们/r 的/u 商业/n 早就/d 因/p 恐怖/a 袭击/v 而/c 受到/v 严重/a 干扰/v ”/w ，/w 从/p 现在/t 开始/v 商业/n 形势/n 会/v 持续/v 低落/a 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 说/v ，/w １５日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v ２８３９/m 名/q 政变参与者/n 。/w 
-总统/n 埃尔多安/nr １６日/t 晨/t 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 说/v ，/w 15日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v 2839/m 名/q 政变参与者/n 。/w 
+总统/n 埃尔多安/nr 16日/t 晨/t 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
 记者/n 手记/n ：/w 土耳其/ns 政变/v 不/d 眠/vn 夜/t 和平/n 因/p 流血/v 更/d 显/v 可贵/a 
-１６日/t 清晨/t ，/w 阳光/n 从/p 记者/n 半/m 地下/s 办公室/n 的/u 窗户/n 洒/v 入/v ，/w 忙碌/v 了/u 一/m 整/m 夜/q 的/u 记者/n 终于/d 可以/v 长/a 舒/v 一口气/n 了/y 。/w 
+16日/t 清晨/t ，/w 阳光/n 从/p 记者/n 半/m 地下/s 办公室/n 的/u 窗户/n 洒/v 入/v ，/w 忙碌/v 了/u 一/m 整/m 夜/q 的/u 记者/n 终于/d 可以/v 长/a 舒/v 一口气/n 了/y 。/w 
 此时/r ，/w 战机/n 依旧/z 在/p 城市/n 低空/s 飞掠/v ，/w 窗户/n 不/d 停/v 颤响/v 。/w 
 此时/r 此刻/r ，/w 我们/r 才/d 感觉/v 到/v 半/m 地下/s 的/u 办公室/n 是/v 多么/d 安全/a 。/w 
 住/v 在/p 土耳其总统府/ns 附近/f 路口/n 一/m 栋/q 公寓/n 内/f 的/u 居民/n ，/w 就/d 没有/v 这样/r 的/u 安全感/n 。/w 
-这/r 栋/q 邻近/v 新/a 总统府/ns 和/c 宪兵大楼/ns 的/u 公寓/n 在/p １５日/t 晚/t 经历/v 了/u 什么/r ？/w 大楼/n 面向/v 道路/n 一侧/f 的/u 玻璃/n 几乎/d 完全/a 损毁/v ，/w 墙上/s 有/v 十几/m 处/q 大/a 洞/n 。/w 
-它/r 前面/f 的/u 路口/n ，/w 包括/v 警车/n 在内/u 的/u ６/m 辆/q 汽车/n 留下/v 的/u 残骸/n 还/d 来不及/v 清理/v ，/w 其中/r ４/m 辆/q 已/d 被/p 烧/v 成/v 废铁/n 。/w 
+这/r 栋/q 邻近/v 新/a 总统府/ns 和/c 宪兵大楼/ns 的/u 公寓/n 在/p 15日/t 晚/t 经历/v 了/u 什么/r ？/w 大楼/n 面向/v 道路/n 一侧/f 的/u 玻璃/n 几乎/d 完全/a 损毁/v ，/w 墙上/s 有/v 十几/m 处/q 大/a 洞/n 。/w 
+它/r 前面/f 的/u 路口/n ，/w 包括/v 警车/n 在内/u 的/u 6/m 辆/q 汽车/n 留下/v 的/u 残骸/n 还/d 来不及/v 清理/v ，/w 其中/r 4/m 辆/q 已/d 被/p 烧/v 成/v 废铁/n 。/w 
 一/m 位/q 在/p 现场/s 执勤/v 的/u 警察/n 在/p 盘查/v 了/u 新华社/nt 记者/n 的/u 证件/n 后/f 回答/v 了/u 记者/n 的/u 提问/vn 。/w 
-他/r 说/v ，/w 这些/r 汽车/n 残骸/n 是/v Ｆ－１６/nx 战机/n 空袭/v 的/u 结果/n 。/w 
-离/p 路口/n 不/d 远/a ，/w 新/a 总统府/ns 前/f 的/u 道路/n 依然/d 封闭/v ，/w ６/m 辆/q 坦克/n 虎视眈眈/v 地/u 在/p 不远处/s 待命/v 。/w 
-１５日/t 晚/t 政变/v 发生/v 时/n ，/w 土耳其/ns 总统/n 埃尔多安/nr 正/d 在/p 土耳其/ns 西南部/s 爱琴海/ns 旅游/vn 城市/n 马尔马里斯/ns 度假/v 。/w 
+他/r 说/v ，/w 这些/r 汽车/n 残骸/n 是/v F－16/nx 战机/n 空袭/v 的/u 结果/n 。/w 
+离/p 路口/n 不/d 远/a ，/w 新/a 总统府/ns 前/f 的/u 道路/n 依然/d 封闭/v ，/w 6/m 辆/q 坦克/n 虎视眈眈/v 地/u 在/p 不远处/s 待命/v 。/w 
+15日/t 晚/t 政变/v 发生/v 时/n ，/w 土耳其/ns 总统/n 埃尔多安/nr 正/d 在/p 土耳其/ns 西南部/s 爱琴海/ns 旅游/vn 城市/n 马尔马里斯/ns 度假/v 。/w 
 他/r 在/p 当地/s 度假/v 的/u 酒店/n 遭到/v 了/u 叛军/n 战机/n 的/u 轰炸/vn ，/w 幸而/d 埃尔多安/nr 安然无恙/v 。/w 
-１６日/t ，/w 埃尔多安/nr 表示/v ，/w 要/v 让/p 参与/v 此次/r 政变/v 的/u 人/n 付出/v 惨重/a 代价/n 。/w 
-在/p 这/r 次/q 政变/v 中/f ，/w 作为/p 土耳其/ns 共和/n 制度/n 象征/n 的/u 土耳其大国民议会大楼/ns １５日/t 晚/t 也/d 见证/v 了/u 武装/n 冲突/v 。/w 
+16日/t ，/w 埃尔多安/nr 表示/v ，/w 要/v 让/p 参与/v 此次/r 政变/v 的/u 人/n 付出/v 惨重/a 代价/n 。/w 
+在/p 这/r 次/q 政变/v 中/f ，/w 作为/p 土耳其/ns 共和/n 制度/n 象征/n 的/u 土耳其大国民议会大楼/ns 15日/t 晚/t 也/d 见证/v 了/u 武装/n 冲突/v 。/w 
 议会/n 大楼/n 前/f 的/u 广场/n 上/f ，/w 留下/v 数量/n 众多/m 的/u 弹壳/n 。/w 
-在/p 议会/n 门口/s 执勤/v 的/u 一/m 位/q 警察/n １６日/t 对/p 记者/n 表示/v ，/w 这些/r 弹壳/n 是/v 自己/r 和/c 队友/n 与/p 政变/v 士兵/n 作战/v 时/n 留下/v 的/u 。/w 
-当时/t ，/w 叛军/n 控制/v 的/u 一/m 架/q 武装/v 直升机/n 在/p 议会/n 门口/s 扫射/v ，/w 打/v 死/v 打伤/v 不少/m 警察/n 和/c 平民/n ，/w 自己/r 能/v 看到/v １６日/t 早上/t 的/u 太阳/n ，/w 着实/d 幸运/a 。/w 
-绕/v 过/u 两/m 辆/q 封锁/v 议会/n 主要/b 路口/n 的/u 大巴车/n ，/w 记者/n 获准/v 进入/v 被/p 至少/d ７/m 枚/q 炮弹/n 击中/v 的/u 土耳其大国民议会大楼/ns 。/w 
+在/p 议会/n 门口/s 执勤/v 的/u 一/m 位/q 警察/n 16日/t 对/p 记者/n 表示/v ，/w 这些/r 弹壳/n 是/v 自己/r 和/c 队友/n 与/p 政变/v 士兵/n 作战/v 时/n 留下/v 的/u 。/w 
+当时/t ，/w 叛军/n 控制/v 的/u 一/m 架/q 武装/v 直升机/n 在/p 议会/n 门口/s 扫射/v ，/w 打/v 死/v 打伤/v 不少/m 警察/n 和/c 平民/n ，/w 自己/r 能/v 看到/v 16日/t 早上/t 的/u 太阳/n ，/w 着实/d 幸运/a 。/w 
+绕/v 过/u 两/m 辆/q 封锁/v 议会/n 主要/b 路口/n 的/u 大巴车/n ，/w 记者/n 获准/v 进入/v 被/p 至少/d 7/m 枚/q 炮弹/n 击中/v 的/u 土耳其大国民议会大楼/ns 。/w 
 受损/v 最/d 严重/a 的/u 议会/n 北侧/f 大楼/n 的/u 墙体/n 被/p 战机/n 发射/v 的/u 导弹/n 打/v 穿/v 。/w 
 土耳其/ns 总理/n 和/c 武装部队/n 指挥官/n 的/u 办公室/n 被/p 炸/v 。/w 
 工作/n 人员/n 正在/d 清理/v 碎/a 玻璃/n ，/w 以/c 尽快/d 恢复/v 议会/n 的/u 正常/a 活动/vn 。/w 
@@ -2646,82 +2646,82 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 他/r 说/v ，/w 坚持/v 民主/a 和/c 世俗/n 的/u 共和人民党/nt 不/d 支持/v 军事/n 政变/v ，/w 从来/d 不/d 会/v 支持/v 武装/v 推翻/v 民选/b 政府/n ，/w 因为/c 这/r 不/d 符合/v 民主/a 和/c 法治/n 精神/n 。/w 
 “/w 经历/v 了/u 此次/r 政变/v 洗礼/n 的/u 土耳其/ns ，/w 将/d 会/v 在/p 追寻/v 民主/a 、/w 法治/n 和/c 共和/n 的/u 道路/n 上/f 更加/d 坚定/a ，/w ”/w 格克/nr 说/v 。/w 
 一/m 位/q 挥/v 着/u 国旗/n 的/u 土耳其/ns 大叔/n 与/p 记者/n 攀谈/v ，/w 重复/v 最/d 多/a 的/u 词/n 就/d 是/v “/w 和平/n ”/w 。/w 
-１６日/t 上午/t ，/w 数百/m 名/q 安卡拉/ns 市民/n 来到/v 土耳其/ns 议会/n 大楼/n 附近/f 聚集/v ，/w 挥舞/v 着/u 国旗/n ，/w 抗议/v 军事/n 政变/v ，/w 对/p 从/p 议会/n 大楼/n 里/f 走/v 出/v 的/u 议员们/n 鼓掌/v 喝彩/v ，/w 希望/v 他们/r 能/v 为/p 土耳其/ns 人民/n 带来/v 和平/n 和/c 安稳/a 的/u 生活/n 。/w 
+16日/t 上午/t ，/w 数百/m 名/q 安卡拉/ns 市民/n 来到/v 土耳其/ns 议会/n 大楼/n 附近/f 聚集/v ，/w 挥舞/v 着/u 国旗/n ，/w 抗议/v 军事/n 政变/v ，/w 对/p 从/p 议会/n 大楼/n 里/f 走/v 出/v 的/u 议员们/n 鼓掌/v 喝彩/v ，/w 希望/v 他们/r 能/v 为/p 土耳其/ns 人民/n 带来/v 和平/n 和/c 安稳/a 的/u 生活/n 。/w 
 在/p 结束/v 采访/v 回/v 分社/n 的/u 路上/s ，/w 阳光/n 依然/d 灿烂/a 。/w 
 一/m 辆/q 停/v 在/p 路边/s 的/u 加长/vn 林肯/nz 车门/n 打开/v ，/w 穿着/v 婚纱/n 的/u 新娘/n 款款/z 而/c 下/v ，/w 美丽/a 动人/a ，/w 像/v 极了/u 一个/m 普通/a 的/u 周末/t 午后/t 。/w 
 “/w 虽然/c 经历/v 了/u 不眠之夜/n ，/w 但/c 我们/r 的/u 生活/n 还是/d 要/v 继续/v ，/w ”/w 分社/n 摄影/vn 雇员/n 乌木特/nr 说/v 。/w 
-此次/r 政变/v 已/d 造成/v １６０/m 多/m 人/n 死亡/v 、/w １４００/m 多/m 人/n 受伤/v 。/w 
+此次/r 政变/v 已/d 造成/v 160/m 多/m 人/n 死亡/v 、/w 1400/m 多/m 人/n 受伤/v 。/w 
 毫无疑问/d ，/w 本来/d 就/d 因/p 频发/v 的/u 恐怖/a 袭击/vn 而/c 失去/v 安全感/n 的/u 土耳其/ns 人/n ，/w 又/d 一/m 次/q 经历/v 血/n 的/u 洗礼/vn ，/w 会/v 更加/d 感到/v 和平/n 的/u 可贵/an 。/w 
 联大/nt 主席/n 谴责/v 土耳其/ns 未遂/v 政变/v 
-新华社/nt 联合国/nt ７月/t １６日/t 电/n （/w 记者/n 史霄萌/nr 顾震球/nr ）/w 第７０/m 届/q 联合国/nt 大会/n 主席/n 吕克托夫特/nr １６日/t 发表/v 声明/n ，/w 强烈/a 谴责/v 土耳其/ns 部分/m 军方/n 人员/n 企图/v 发动/v 政变/v 。/w 
+新华社/nt 联合国/nt 7月/t 16日/t 电/n （/w 记者/n 史霄萌/nr 顾震球/nr ）/w 第70/m 届/q 联合国/nt 大会/n 主席/n 吕克托夫特/nr 16日/t 发表/v 声明/n ，/w 强烈/a 谴责/v 土耳其/ns 部分/m 军方/n 人员/n 企图/v 发动/v 政变/v 。/w 
 声明/n 说/v ，/w 国际/n 社会/n 必须/d 全力/d 支持/v 土耳其/ns 的/u 民选/b 政府/n 和/c 法治/n 。/w 
 吕克托夫特/nr 向/p 政变/v 中/f 的/u 死难者/n 表示/v 哀悼/v 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 军事/n 政变/v 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 表示/v ，/w 未遂/vn 军事/n 政变/v 已/d 造成/v １６１/m 人/n 死亡/v 。/w 
-土耳其/ns 外长/n 恰武什奥卢/nr 说/v ，/w ８/m 名/q 参与/v 政变/vn 军人/n 已/d 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 军事/n 政变/v 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 表示/v ，/w 未遂/vn 军事/n 政变/v 已/d 造成/v 161/m 人/n 死亡/v 。/w 
+土耳其/ns 外长/n 恰武什奥卢/nr 说/v ，/w 8/m 名/q 参与/v 政变/vn 军人/n 已/d 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
 奥巴马/nr 重申/v 美/ns 坚定/v 支持/v 土耳其/ns 民选/b 政府/n 
-新华社/nt 华盛顿/ns ７月/t １６日/t 电/n （/w 记者/n 支林飞/nr ）/w 美国/ns 总统/n 奥巴马/nr １６日/t 重申/v ，/w 美国/ns “/w 坚定不移/v 地/u ”/w 支持/v 土耳其/ns 的/u 民选/b 政府/n ，/w 希望/v 美/ns 土/ns 双方/n 在/p 应对/v 共同/b 挑战/vn 方面/n 继续/v 合作/v 。/w 
-白宫/ns 当天/t 发表/v 声明/n 说/v ，/w 奥巴马/nr １６日/t 在/p 白宫/ns 召集/v 其/r 国家/n 安全/a 顾问/n 班子/n 开会/v ，/w 专门/d 听取/v 有关/p 土耳其/ns 最/d 新/a 局势/n 的/u 汇报/vn 。/w 
+新华社/nt 华盛顿/ns 7月/t 16日/t 电/n （/w 记者/n 支林飞/nr ）/w 美国/ns 总统/n 奥巴马/nr 16日/t 重申/v ，/w 美国/ns “/w 坚定不移/v 地/u ”/w 支持/v 土耳其/ns 的/u 民选/b 政府/n ，/w 希望/v 美/ns 土/ns 双方/n 在/p 应对/v 共同/b 挑战/vn 方面/n 继续/v 合作/v 。/w 
+白宫/ns 当天/t 发表/v 声明/n 说/v ，/w 奥巴马/nr 16日/t 在/p 白宫/ns 召集/v 其/r 国家/n 安全/a 顾问/n 班子/n 开会/v ，/w 专门/d 听取/v 有关/p 土耳其/ns 最/d 新/a 局势/n 的/u 汇报/vn 。/w 
 尽管/c 迄今/d 美方/n 没有/d 收到/v 有关/p 美国/ns 人/n 在/p 这/r 次/q 政变/v 中/f 死伤/v 的/u 报告/n ，/w 但/c 奥巴马/nr 指示/n 其/r 国安/n 班子/n 继续/v 与/p 土耳其/ns 相关/vn 部门/n 合作/v ，/w 确保/v 美/ns 在/p 土/ns 外交/n 人员/n 、/w 军人/n 及/c 家属/n 的/u 安全/an 。/w 
 声明/n 说/v ，/w 美国/ns 同时/t 呼吁/v 土耳其/ns 各方/r 在/p 法治/n 框架/n 内/f 行事/v ，/w 避免/v 采取/v 会/v 导致/v 进一步/b 暴力/n 和/c 局势/n 动荡/a 的/u 行动/vn 。/w 
 奥巴马/nr 还/d 强调/v ，/w 在/p 联合/v 打击/v 恐怖主义/n 等/u 应对/v 共同/b 挑战/vn 方面/n ，/w 美/ns 土/ns 双方/n 需要/v 继续/v 合作/v 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v ，/w 导致/v 至少/d １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
 土耳其/ns 政变/v 使/v 土/ns 美/ns 关系/n 出现/v 紧张/a 迹象/n 。/w 
 这/r 次/q 白宫/ns 会议/n 是/v 在/p 有/v 报道/n 说/v 土/ns 政府/n 封锁/v 了/u 美军/n 驻扎/v 的/u 因吉尔利克空军基地/ns 后/f 举行/v 的/u 。/w 
 美军/n 利用/v 该/r 基地/n 对/p 叙利亚/ns 境内/s 的/u 极端/n 组织/n “/w 伊斯兰国/nt ”/w 武装/n 发动/v 空袭/v 。/w 
 土/ns 政府/n 指责/v 流亡/v 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 在/p 幕后/s 策划/v 这/r 次/q 政变/v ，/w 要求/v 美政府/nt 将/p 他/r 引渡/v 回/v 土耳其/ns 。/w 
-美/ns 国务卿/n 克里/nr １６日/t 在/p 卢森堡/ns 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 证据/n 。/w 
+美/ns 国务卿/n 克里/nr 16日/t 在/p 卢森堡/ns 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 证据/n 。/w 
 土/ns 总统/n 要求/v 奥巴马/nr 引渡/v 对立/vn 派别/n 领导人/n 
-新华社/nt 伊斯坦布尔/ns ７月/t １６日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr １６日/t 再次/d 敦促/v 美国/ns 总统/n 奥巴马/nr 把/p 流亡/v 美国/ns 的/u 对立/vn 派别/n 领导人/n 、/w 宗教/n 人士/n 费特胡拉·居伦/nr 移交/v 给/p 土方/n 。/w 
+新华社/nt 伊斯坦布尔/ns 7月/t 16日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 16日/t 再次/d 敦促/v 美国/ns 总统/n 奥巴马/nr 把/p 流亡/v 美国/ns 的/u 对立/vn 派别/n 领导人/n 、/w 宗教/n 人士/n 费特胡拉·居伦/nr 移交/v 给/p 土方/n 。/w 
 埃尔多安/nr 当天/t 在/p 伊斯坦布尔/ns 发表/v 讲话/n 说/v ，/w 他/r 曾/d 要求/v 奥巴马/nr 驱逐/v 居伦/nr 或者/c 把/p 他/r 移交/v 给/p 土耳其/ns ，/w 并/c 告诉/v 奥巴马/nr 居伦/nr 考虑/v 在/p 土耳其/ns 发动/v 政变/v ，/w 但/c 奥巴马/nr 不予/v 理睬/v 。/w 
 埃尔多安/nr 说/v ：/w “/w 如果/c 我们/r 是/v 战略/n 伙伴/n ，/w 请/v 满足/v 我们/r 的/u 请求/n 。/w ”/w 
-土耳其/ns １５日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v 。/w 
+土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
 埃尔多安/nr 指责/v 居伦/nr 领导/v 的/u “/w 居伦运动/n ”/w 主导/v 了/u 此次/r 政变/v 。/w 
 土耳其政府/nt 过去/t 一直/d 指责/v “/w 居伦运动/n ”/w 企图/v 推翻/v 土耳其/ns 现/t 政权/n 。/w 
-埃尔多安/nr １６日/t 晨/t 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
+埃尔多安/nr 16日/t 晨/t 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
 虽然/c 土耳其/ns 和/c 美国/ns 同/d 为/v 北约/nt 成员国/n ，/w 但/c 两/m 国/n 在/p 叙利亚/ns 内战/n 以及/c 如何/r 对待/v 叙利亚/ns 库尔德人/n 组织/n 等/u 问题/n 上/f 存在/v 尖锐/a 分歧/n 。/w 
 土耳其/ns 要求/n 引渡/v 居伦/nr 可能/n 会/v 加剧/v 两/m 国/n 紧张/a 关系/n 。/w 
 土耳其/ns 政变/v 之/u 众生相/n ：/w 军人/n 进驻/v 遭/v “/w 直播/v ”/w 
-土耳其/ns 部分/n 军人/n １５日/t 深夜/t 企图/v 发动/v 军事/n 政变/v ，/w 其/r 规模/n 、/w 手段/n 乃至/c 僵持/vn 时间/n 均/d 令/v 外界/n 大/a 呼/v 意外/a 。/w 
+土耳其/ns 部分/n 军人/n 15日/t 深夜/t 企图/v 发动/v 军事/n 政变/v ，/w 其/r 规模/n 、/w 手段/n 乃至/c 僵持/vn 时间/n 均/d 令/v 外界/n 大/a 呼/v 意外/a 。/w 
 意外/a 事件/n 也/d 让/p 不少/m 人/n 作出/v 意外/a 反应/vn ，/w 被/p 媒体/n 所/u 记录/v 、/w 定格/v 。/w 
 【/w 军人/n 进驻/v 遭/v “/w 直播/v ”/w 】/w 
-当地/s 时间/n １６日/t 零时/t 许/m ，/w 位于/v 首都/n 安卡拉/ns 的/u 土耳其广播电视协会/nt （/w ＴＲＴ/nx ）/w 电视台/n 被/p 政变/vn 军人/n 控制/v ，/w 女/b 主播/n 蒂珍·卡拉斯/nr 向/p 电视/n 观众/n 口/n 播/v 了/u 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
+当地/s 时间/n 16日/t 零时/t 许/m ，/w 位于/v 首都/n 安卡拉/ns 的/u 土耳其广播电视协会/nt （/w TRT/nx ）/w 电视台/n 被/p 政变/vn 军人/n 控制/v ，/w 女/b 主播/n 蒂珍·卡拉斯/nr 向/p 电视/n 观众/n 口/n 播/v 了/u 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
 一个/m 自称/v “/w 祖国和平委员会/nt ”/w 的/u 军人/n 团体/n 在/p 声明/n 中/f 宣称/v ，/w 军队/n 已经/d 接管/v 政权/n ，/w 全国/n 范围/n 实行/v 宵禁/v 并/c 实施/v 军事管制法/n 。/w 
-大约/d ２/m 小时/n 后/f ，/w 政府/n 重新/d 控制/v 电视台/n 。/w 
+大约/d 2/m 小时/n 后/f ，/w 政府/n 重新/d 控制/v 电视台/n 。/w 
 重/d 获/v 安全/a 的/u 卡拉斯/nr 告诉/v 身边/s 的/u 人群/n ，/w 自己/r 当晚/t 被/p 几/m 名/q 手/n 持/v 武器/n 的/u 军人/n 强迫/v 宣读/v 声明/n ，/w “/w 我们/r 被/p 控制/v 了/y …/w …/w 他们/r 说/v 如果/c 按/p 他们/r 说/v 的/u 做/v 就/d 不/d 会/v 伤害/v 我们/r ”/w 。/w 
 政变/vn 军人/n 还/d 闯入/v 土耳其/ns 一/m 家/q 私营/b 媒体/n ——/w 道安媒体集团/nt 的/u 媒体/n 中心/n 。/w 
-道安通讯社/nt 、/w 美国有线电视新闻网/nz 土耳其语频道/nz （/w ＣＮＮＴｕｒｋ/nx ）/w 、/w Ｄ频道/nz （/w ＫａｎａｌＤ/nx ）/w 以及/c 一/m 家/q 报社/n 都/d 位于/v 媒体/n 中心/n 。/w 
+道安通讯社/nt 、/w 美国有线电视新闻网/nz 土耳其语频道/nz （/w CNNTurk/nx ）/w 、/w D频道/nz （/w KanalD/nx ）/w 以及/c 一/m 家/q 报社/n 都/d 位于/v 媒体/n 中心/n 。/w 
 军人/n 进驻/v 后/f ，/w 美国有线电视新闻网/nz 土耳其语频道/nz 中断/v 新闻/n 直播/v 。/w 
 直播/v 间/f 内/f 主持人/n 先是/d 向/p 观众/n 通报/v 称/v ，/w 一些/m 军人/n 进入/v 电视台/n 所在/n 大楼/n ，/w “/w 我们/r 不知/v 还/d 能/v 继续/v 播出/v 多久/r ”/w ，/w 接着/c 主持人/n 报告/n 说/v 有/v 士兵/n 进入/v 中控室/n ，/w “/w 就/d 这样/r 了/y ，/w 我们/r 现在/t 必须/d 要/v 撤/v 了/y ”/w 。/w 
 此后/t 画面/n 中/f ，/w 电视台/n 仍/d 在/d 直播/v ，/w 但/c 直播/vn 台上/s 已/d 空无一人/v 。/w 
 【/w 总统/n “/w 求援/v ”/w 社交/n 媒体/n 】/w 
 土耳其/ns 总统/n 埃尔多安/nr 对/p 社交/n 媒体/n 一直/d 持/v 反感/a 态度/n ，/w 认为/v 这/r 一/m 平台/n 经常/d 被/p 利用/v 发出/v 反/b 政府/n 声音/n ，/w 此前/t 还/d 多次/m 公开/a 批评/v “/w 推特/nz ”/w 和/c “/w 脸书/nz ”/w 。/w 
 此次/r 政变/v 发生/v 后/f ，/w 正在/d 外地/s 度假/v 的/u 埃尔多安/nr 一反常态/v ，/w 不得不/d 借助/v 社交/n 媒体/n 及时/a 发声/v ，/w 争取/v 支持/v 。/w 
-当地/s 时间/n １６日/t 零时/t ２４分/t ，/w 埃尔多安/nr 通过/p 苹果/nz 手机/n 上/f 的/u 视频/n 聊天/vn 软件/n ＦａｃｅＴｉｍｅ/nx 接受/v 美国有线电视新闻网/nz 土耳其语频道/nz 采访/v 。/w 
+当地/s 时间/n 16日/t 零时/t 24分/t ，/w 埃尔多安/nr 通过/p 苹果/nz 手机/n 上/f 的/u 视频/n 聊天/vn 软件/n FaceTime/nx 接受/v 美国有线电视新闻网/nz 土耳其语频道/nz 采访/v 。/w 
 他/r 对/v 着/u 手机/n 摄像头/n 发表/v 讲话/n ，/w 号召/v 民众/n 走/v 上/v 街头/s ，/w 抗议/v 政变/v ，/w “/w 给予/v 他们/r （/w 叛变/v 军人/n ）/w 答案/n ”/w 。/w 
 在/p 演播室/n 里/f ，/w 主持人/n 举起/v 手机/n ，/w 面对/v 摄像机/n 镜头/n ，/w 直播/v 了/u 与/p 埃尔多安/nr “/w 视频/n 聊天/v ”/w 全/a 过程/n 。/w 
 埃尔多安/nr 同时/t 还/d 在/p “/w 推特/nz ”/w 上/f 发言/v ，/w 呼吁/v 民众/n 到/v 机场/n 和/c 公共/b 广场/n 上/f 去/v ，/w “/w 夺回/v 民主/a 的/u 所有权/n 和/c 国家/n 主权/n ”/w 。/w 
-不过/c ，/w 互联网监测机构/nt 表示/v ，/w 土耳其/ns 当地/s 的/u 网络/n 社交/n 媒体/n “/w 推特/nz ”/w 、/w “/w 脸书/nz ”/w 和/c “/w Ｙｏｕｔｕｂｅ/nx ”/w 等/u 一度/d 不/d 能/v 连接/v 至/p 互联网/n ，/w 用户/n 无法/d 实时/n 分享/v 文字/n 、/w 图片/n 和/c 视频/n 等/u 信息/n 。/w 
+不过/c ，/w 互联网监测机构/nt 表示/v ，/w 土耳其/ns 当地/s 的/u 网络/n 社交/n 媒体/n “/w 推特/nz ”/w 、/w “/w 脸书/nz ”/w 和/c “/w Youtube/nx ”/w 等/u 一度/d 不/d 能/v 连接/v 至/p 互联网/n ，/w 用户/n 无法/d 实时/n 分享/v 文字/n 、/w 图片/n 和/c 视频/n 等/u 信息/n 。/w 
 【/w 航班/n 交通/n 骤然/d 变更/v 】/w 
 政变/v 发生/v 后/f ，/w 当晚/t 进出/v 伊斯坦布尔/ns 的/u 航班/n 受到/v 影响/v 。/w 
-一/m 家/q 监测/v 航班/n 飞行/v 状态/n 的/u 网站/n 显示/v ，/w 从/p １５日/t 至/c １６日/t ，/w 有/v １３８/m 架次/q 从/p 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 出发/v 的/u 航班/n 被/p 取消/v 。/w 
-欧洲航空安全组织/nt （/w Ｅｕｒｏｃｏｎｔｒｏｌ/nx ）/w 说/v ，/w 所有/b 以/p 该/r 机场/n 为/v 目的地/n 的/u 航班/n 均/d 更改/v 航线/n 。/w 
+一/m 家/q 监测/v 航班/n 飞行/v 状态/n 的/u 网站/n 显示/v ，/w 从/p 15日/t 至/c 16日/t ，/w 有/v 138/m 架次/q 从/p 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 出发/v 的/u 航班/n 被/p 取消/v 。/w 
+欧洲航空安全组织/nt （/wEurocontrol/nx ）/w 说/v ，/w 所有/b 以/p 该/r 机场/n 为/v 目的地/n 的/u 航班/n 均/d 更改/v 航线/n 。/w 
 英国/ns 航空公司/n 一/m 架/q 飞往/v 伊斯坦布尔/ns 的/u 夜航/n 班机/n 备降/v 保加利亚/ns 首都/n 索菲亚/ns ，/w 一/m 架/q 汉莎/ns 航空/n 班机/n 则/c 返回/v 德国/ns 法兰克福/ns 。/w 
 “/w 我/r 的/u 家人/n 被/p 困/v 在/p （/w 阿塔图尔克/ns ）/w 国际/n 机场/n 了/y ，/w 不/d 知道/v 发生/v 了/u 什么/r ，/w ”/w 一/m 名/q “/w 推特/nz ”/w 用户/n 当时/t 发表/v 留言/n 称/v ，/w “/w 这个/r 世界/n 到底/d 怎么/r 了/y ？/w ”/w （/w 郭倩/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 埃尔多安/nr 指责/v 昔日/t 盟友/n 在/p 美国/ns “/w 遥控/v ”/w 政变/v 
-土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr １６日/t 指责/v 流亡/v 美国/ns 宾夕法尼亚州/ns 的/u 宗教/n 人士/n 费图拉·居伦/nr 是/v 此次/r 政变/v 的/u 幕后/s 策划者/n ，/w 理由/n 是/v 其/r 领导/v 的/u “/w 居伦运动/n ”/w 成员/n 也/d 参与/v 到/p 此次/r 政变/v 中/f 。/w 
+土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 16日/t 指责/v 流亡/v 美国/ns 宾夕法尼亚州/ns 的/u 宗教/n 人士/n 费图拉·居伦/nr 是/v 此次/r 政变/v 的/u 幕后/s 策划者/n ，/w 理由/n 是/v 其/r 领导/v 的/u “/w 居伦运动/n ”/w 成员/n 也/d 参与/v 到/p 此次/r 政变/v 中/f 。/w 
 按照/p 埃尔多安/nr 的/u 说法/n ，/w 土耳其/ns 军队/n 中/f 的/u “/w 一些/m 人/n ”/w 一直/d 在/p “/w 听从/v 来自/v （/w 美国/ns ）/w 宾夕法尼亚/ns 的/u 指令/n ”/w 。/w 
 同一天/t ，/w 土耳其/ns 司法/n 部长/n 贝基尔·博兹达/nr 接受/v 电视/n 采访/v 时/n 说/v ，/w “/w 居伦运动/n ”/w 成员/n 被/p 发现/v 参与/v 这/r 一/m 政变/v 。/w 
 对/p 此/r ，/w 居伦/nr 在/p 一/m 份/q 简短/a 声明/n 中/f 坚决/a 予以/v 否认/v ，/w 并/c 以/p “/w 最/d 强烈/a 方式/n 谴责/v ”/w 这/r 次/q 政变/v 。/w 
-“/w 对/p 一个/m 在/p 过去/t ５０/m 年/q 的/u 多次/m 政变/vn 中/f 受到/v 伤害/v 的/u 人/n 来说/u ，/w 被/p 指控/v 与/p 这/r 种/q （/w 政变/v ）/w 企图/v 有/v 牵连/vn 尤其/d 让/v 人/n 感觉/n 受/v 侮辱/v ，/w ”/w 居伦/nr 说/v ，/w “/w 我/r 以/p 最/d 强烈/a 方式/n 谴责/v 土耳其/ns 发生/v 的/u 政变/vn 企图/vn …/w …/w 政府/n 应该/v 通过/p 自由/a 和/c 公正/a 的/u 选举/vn 、/w 而/c 非/v 武力/n 来/v 取得/v 胜利/v 。/w ”/w 
+“/w 对/p 一个/m 在/p 过去/t 50/m 年/q 的/u 多次/m 政变/vn 中/f 受到/v 伤害/v 的/u 人/n 来说/u ，/w 被/p 指控/v 与/p 这/r 种/q （/w 政变/v ）/w 企图/v 有/v 牵连/vn 尤其/d 让/v 人/n 感觉/n 受/v 侮辱/v ，/w ”/w 居伦/nr 说/v ，/w “/w 我/r 以/p 最/d 强烈/a 方式/n 谴责/v 土耳其/ns 发生/v 的/u 政变/vn 企图/vn …/w …/w 政府/n 应该/v 通过/p 自由/a 和/c 公正/a 的/u 选举/vn 、/w 而/c 非/v 武力/n 来/v 取得/v 胜利/v 。/w ”/w 
 与/p 居伦/nr 关系/n 密切/a 的/u 组织/n “/w 共同价值联盟/nt ”/w 也/d 发表/v 声明/n ，/w 谴责/v 政变/v 企图/v ，/w 同时/t 指责/v 土耳其政府/nt 将/p 政变/v 与/p 居伦/nr “/w 挂钩/v ”/w 的/u 言论/n “/w 非常/d 不负/v 责任/n ”/w 。/w 
 【/w 昔日/t 盟友/n 分道扬镳/v 】/w 
-居伦/nr 现年/n ７５/m 岁/q ，/w １９９９年/t 移居/v 美国/ns “/w 自我/r 流放/v ”/w 。/w 
+居伦/nr 现年/n 75/m 岁/q ，/w 1999年/t 移居/v 美国/ns “/w 自我/r 流放/v ”/w 。/w 
 迄今/d ，/w 这/r 名/q 宗教/n 人士/n 的/u 组织/n 在/p 土耳其/ns 警察/n 、/w 安全/a 机关/n 、/w 司法/n 系统/n 等/u 国家/n 机构/n 有/v 相当/d 大/a 影响力/n 。/w 
 法新社/nt 报道/v ，/w 居伦/nr 早年/t 一直/d 是/v 埃尔多安/nr 的/u 亲密/a 盟友/n ，/w 但/c 其/r 在/p 土耳其/ns 媒体/n 、/w 警察/n 和/c 司法/n 系统/n 的/u 广泛/a 影响力/n 让/v 埃尔多安/nr 越来越/d 生疑/v ，/w 两/m 人/n 此后/t 分道扬镳/v ，/w 居伦/nr 移居/v 美国/ns 后/f 深居简出/v ，/w 很/d 少/a 出现/v 在/p 公众/n 视野/n 。/w 
 尽管如此/d ，/w 埃尔多安/nr 与/p 居伦/nr 间/f 的/u 嫌隙/n 未/d 见/v 消退/v ，/w 土耳其政府/nt 先前/t 多次/m 指责/v “/w 居伦运动/n ”/w 企图/v 推翻/v 土耳其/ns 现/t 政权/n ，/w 但/c 遭到/v 后者/r 否认/v 。/w 
-外界/n 认为/v ，/w 土耳其/ns 司法/n 系统/n ２０１３年/t 年底/t 发起/v 的/u 一/m 场/q 反腐/vn 风暴/n 让/v 埃尔多安/nr 与/c 居伦/nr 成为/v 政治/n 死敌/n 。/w 
-当时/t ，/w 被/p 认为/v 受/v 居伦/nr 影响/v 的/u 司法/n 系统/a 开展/v 大规模/d 反/v 贪腐/v 搜捕/v ，/w 逮捕/v 数十/m 人/n ，/w 包括/v ３/m 名/q 内阁/n 部长/n 的/u 儿子/n 和/c 一/m 家/q 国有/v 商业/n 银行/n 的/u 行长/n ，/w 矛头/n 直/d 指/v 埃尔多安/nr 政府/n 的/u 核心/n 圈子/n 。/w 
+外界/n 认为/v ，/w 土耳其/ns 司法/n 系统/n 2013年/t 年底/t 发起/v 的/u 一/m 场/q 反腐/vn 风暴/n 让/v 埃尔多安/nr 与/c 居伦/nr 成为/v 政治/n 死敌/n 。/w 
+当时/t ，/w 被/p 认为/v 受/v 居伦/nr 影响/v 的/u 司法/n 系统/a 开展/v 大规模/d 反/v 贪腐/v 搜捕/v ，/w 逮捕/v 数十/m 人/n ，/w 包括/v 3/m 名/q 内阁/n 部长/n 的/u 儿子/n 和/c 一/m 家/q 国有/v 商业/n 银行/n 的/u 行长/n ，/w 矛头/n 直/d 指/v 埃尔多安/nr 政府/n 的/u 核心/n 圈子/n 。/w 
 时任/v 总理/n 的/u 埃尔多安/nr 认定/v 这/r 是/v “/w 阴谋/n ”/w ，/w 背后/f 有/v “/w 国外/s 势力/n ”/w ，/w 自己/r 正/d 与/p “/w 国/n 中/f 之/u 国/n ”/w 斗争/v 。/w 
 此后/t ，/w 埃尔多安/nr 政府/n 展开/v 政治/n “/w 反击/v ”/w ，/w 贬黜/v 数以百计/v 据/p 信/n 与/p 居伦/nr 有关/v 的/u 军官/n 和/c 警官/n ，/w 整肃/v 被/p 认为/v 支持/v 居伦/nr 的/u 报纸/n 媒体/n 。/w 
 （/w 徐超/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
@@ -2731,13 +2731,13 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 目前/t 土耳其/ns 国内/s 局势/n 尚/d 不/d 明朗/a 。/w 
 中国驻土耳其大使馆/nt 16日/t 表示/v ，/w 尚未/d 收到/v 中国/ns 公民/n 受到/v 波及/v 的/u 消息/n 。/w 
 新华社/nt 发/v （/w 穆斯塔法·卡亚/nr 摄/v ）/w 
-土耳其/ns １５日/t 夜/t 发生/v 政变/v ，/w 局势/n 仍/d 在/d 发展/v 。/w 
+土耳其/ns 15日/t 夜/t 发生/v 政变/v ，/w 局势/n 仍/d 在/d 发展/v 。/w 
 新华社/nt 驻/v 安卡拉/ns 记者/n 施春/nr 、/w 邹乐/nr 从/p 现场/s 发回/v 直/d 击/vn 报道/n 。/w 
 邹乐/nr 在/p 事件/n 发生/v 后/f 首先/d 前往/v 位于/v 安卡拉/ns 市中心/s 的/u 土耳其/ns 武装部队/n 总参谋部/n 附近/f 采访/v 。/w 
-他/r 说/v ，/w 当时/t Ｆ１６/nx 等/u 战机/n 和/c 土耳其/ns 军方/n 直升机/n 不时/d 从/p 头顶/n 飞过/v ，/w 从/p 不远处/s 传来/v 的/u 枪击声/n 和/c 疑似战机轰炸声/n 清晰/a 可/v 闻/v 。/w 
+他/r 说/v ，/w 当时/t F16/nx 等/u 战机/n 和/c 土耳其/ns 军方/n 直升机/n 不时/d 从/p 头顶/n 飞过/v ，/w 从/p 不远处/s 传来/v 的/u 枪击声/n 和/c 疑似战机轰炸声/n 清晰/a 可/v 闻/v 。/w 
 “/w 每当/p 枪炮声/n 响起/v ，/w 记者/n 和/c 民众/n 都/d 向/p 路边/s 的/u 灌木从/n 中/f 躲避/v ，/w 现场/s 情况/n 十分/d 紧张/a 。/w 
 可以/v 看到/v 市民/n 通过/p 电话/n 向/p 亲属/n 报/v 平安/a 。/w ”/w 
-邹乐/nr 说/v ，/w １６日/t 凌晨/t １时/t 许/m ，/w 部分/n 土耳其/ns 军方/n 坦克/n 经过/v 土耳其/ns 议会/n 和/c 土耳其/ns 武装部队/n 总参谋部/n 附近/f 的/u 路口/n ，/w 情绪/n 激动/a 的/u 市民们/n 向/p 坦克/n 投掷/v 石块/n ，/w 试图/v 阻止/v 坦克/n 。/w 
+邹乐/nr 说/v ，/w 16日/t 凌晨/t 1时/t 许/m ，/w 部分/n 土耳其/ns 军方/n 坦克/n 经过/v 土耳其/ns 议会/n 和/c 土耳其/ns 武装部队/n 总参谋部/n 附近/f 的/u 路口/n ，/w 情绪/n 激动/a 的/u 市民们/n 向/p 坦克/n 投掷/v 石块/n ，/w 试图/v 阻止/v 坦克/n 。/w 
 “/w 受到/v 土耳其/ns 民众/n 阻碍/v ，/w 多/a 辆/q 军方/n 坦克/n 不得不/d 改变/v 线路/n ，/w 通过/p 撞毁/v 路边/s 车辆/n 和/c 电线杆/n 的/u 方式/n 继续/v 推进/v 。/w ”/w 
 施春/nr 说/v ，/w 到/p 凌晨/t 三点/t 时/n ，/w 时分社/nt 办公室/n 还/d 能/v 听到/v 时断时续/v 的/u 枪声/n 。/w 
 周围/f 街道/n 上/f 没有/v 太/d 多/a 人/n 。/w 
@@ -2747,20 +2747,20 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 截至/v 发稿/v ，/w 局势/n 还/d 在/d 发展/v ，/w 土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 通过/p 土耳其/ns 官方/n 媒体/n 说/v ，/w 支持/v 政府/n 的/u 军队/n 已经/d “/w 控制/v 了/u 局面/n ”/w 。/w 
 （/w 夏文辉/nr ）/w （/w 新华社/nt 专特稿/n 
 政坛/n 老手/n 埃尔多安/nr 被/p 批/v 试图/v 建立/v “/w 一/m 人/n 统治/v ”/w 
-土耳其/ns 当地/s 时间/n １５日/t 午夜/t 发生/v 军人/n 政变/v ，/w 局势/n 还/d 在/d 发展/v 中/f 。/w 
+土耳其/ns 当地/s 时间/n 15日/t 午夜/t 发生/v 军人/n 政变/v ，/w 局势/n 还/d 在/d 发展/v 中/f 。/w 
 军人/n 行动/v 的/u 目标/n 直/d 指/v 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 。/w 
 截至/v 发稿/v ，/w 埃尔多安/nr 在/p 一/m 处/q 隐匿/v 的/u 地点/n 通过/p 手机/n 对外/v 发表/v 观点/n 。/w 
 他/r 说/v 自己/r 仍然/d 安全/a ，/w 军人/n 政变/v 非法/d ，/w 并/c 号召/v 支持者/n 走/v 上/v 街头/s 。/w 
-埃尔多安/nr 是/v 土耳其/ns 政坛/n 的/u 一个/m 老手/n ，/w 他/r ２００１年/t 创建/v 正义与发展党/nt （/w 正发党/nt ）/w 并/c 任/v 主席/n ，/w 开始/v 在/p 政坛/n 核心/n 打拼/v 。/w 
-２００３年/t ３月/t 他/r 出任/v 土耳其政府/nt 总理/n ，/w 此后/t 执政/v 的/u 正发党/nt 赢得/v ２００７年/t 和/c ２０１１年/t 大选/v ，/w 埃尔多安/nr 连任/v 总理/n 。/w 
-２０１４年/t ８月/t ，/w 埃尔多安/nr 在/p 土耳其/ns 具有/v 历史/n 意义/n 的/u 首次/m 总统/n 直/d 选/v 中/f 获胜/v ，/w 进一步/d 巩固/v 其/r 强势/n 领导/vn 地位/n 。/w 
+埃尔多安/nr 是/v 土耳其/ns 政坛/n 的/u 一个/m 老手/n ，/w 他/r 2001年/t 创建/v 正义与发展党/nt （/w 正发党/nt ）/w 并/c 任/v 主席/n ，/w 开始/v 在/p 政坛/n 核心/n 打拼/v 。/w 
+2003年/t 3月/t 他/r 出任/v 土耳其政府/nt 总理/n ，/w 此后/t 执政/v 的/u 正发党/nt 赢得/v 2007年/t 和/c 2011年/t 大选/v ，/w 埃尔多安/nr 连任/v 总理/n 。/w 
+2014年/t 8月/t ，/w 埃尔多安/nr 在/p 土耳其/ns 具有/v 历史/n 意义/n 的/u 首次/m 总统/n 直/d 选/v 中/f 获胜/v ，/w 进一步/d 巩固/v 其/r 强势/n 领导/vn 地位/n 。/w 
 埃尔多安/nr 出身/v 卑微/a ，/w 却/d 成为/v 自/p 土耳其共和国/ns 国父/n 穆斯塔法·凯末尔·阿塔图尔克/nr 以来/f 最/d 有/v 权势/n 的/u 政治/n 人物/n 。/w 
 在/p 执政/v 十多/m 年/q 之后/f ，/w 他/r 取得/v 施政/v 重大/a 进展/v ，/w 引发/v 多/a 方/q 争议/v 。/w 
 支持者/n 认为/v 他/r 是/v 一个/m 有/v 改革/v 能力/n 的/u 人/n ，/w 他/r 对/p 土耳其/ns 进行/v 了/u 现代化/vn 。/w 
 他/r 的/u 批评者/n 却/d 认为/v ，/w 他/r 试图/v 建立/v “/w 一/m 人/n 统治/v ”/w 。/w 
 西方/s 社会/n 则/c 担心/v ，/w 他/r 会/v 破坏/v 土耳其/ns 世俗/n 的/u 制度/n ，/w 将/p 他/r 保守/a 的/u 伊斯兰/nz 价值观/n 强加/v 给/p 社会/n ，/w 同时/t 阻止/v 他/r 的/u 对手/n 和/c 批评/v 他/r 的/u 媒体/n 发表/v 言论/n 。/w 
 埃尔多安/nr 从未/d 隐藏/v 自己/r 将/p 议会制/n 彻底/a 改为/v 总统制/n 的/u 政治/n 方向/n 。/w 
-在/p ２０１５年/t 的/u 议会/n 选举/v 之后/f ，/w 他/r 对/p 总统/n 职务/n 赋予/v 更/d 多/a 权力/n 。/w 
+在/p 2015年/t 的/u 议会/n 选举/v 之后/f ，/w 他/r 对/p 总统/n 职务/n 赋予/v 更/d 多/a 权力/n 。/w 
 不过/c 埃尔多安/nr 反复/d 强调/v ，/w 他/r 不/d 会/v 保守/a 处事/v ，/w 而/c 将/d 使用/v 手中/s 的/u 所有/b 宪法/n 权力/n 为/p 土耳其/ns 服务/v 。/w 
 （/w 夏文辉/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 安卡拉/ns :/w 深夜/t ，/w 强烈/a 的/u 枪声/n 、/w 爆炸声/n 当局/n 猝不及防/v 
@@ -2769,46 +2769,46 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 宪兵/n 15日/t 夜/t 关闭/v 最/d 大/a 城市/n 伊斯坦布尔/ns 的/u 两/m 座/q 大/a 桥/n 。/w 
 电视/n 画面/n 显示/v 军机/n 在/p 低空/s 飞行/v ，/w 桥上/s 出现/v 坦克/n 。/w 
 新华社/nt 发/v （/w 萨尔塔娜特/nr 摄/v ）/w 
-土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n １５日/t 午夜/t （/w 北京/ns 时间/n 凌晨/t ）/w 宣布/v 接管/v 政权/n 。/w 
+土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n 15日/t 午夜/t （/w 北京/ns 时间/n 凌晨/t ）/w 宣布/v 接管/v 政权/n 。/w 
 不过/c ，/w 土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 称/v ，/w 政府/n 不/d 会/v 让/v “/w 这/r 一小撮/m 势力/n ”/w 得逞/v ，/w 将/d “/w 继续/v 维护/v 土耳其/ns 的/u 民主/a 体制/n ”/w 。/w 
 总统/n 雷杰普·塔伊普·埃尔多安/nr 称/v ，/w 这/r 次/q 政变/v 图谋/n 终将/d 被/p 挫败/v 。/w 
-当地/s 时间/n １６日/t 凌晨/t ，/w 土耳其政府/nt 宣布/v 局势/n “/w 基本上/d 得到/v 控制/v ”/w 。/w 
+当地/s 时间/n 16日/t 凌晨/t ，/w 土耳其政府/nt 宣布/v 局势/n “/w 基本上/d 得到/v 控制/v ”/w 。/w 
 【/w 军方/n 高官/n 被/p 扣/v 】/w 
-当地/s 媒体/n 报道/v ，/w 当地/s 时间/n １５日/t 深夜/t ，/w 首都/n 安卡拉/ns 出现/v 异常/a 军事/n 活动/n ，/w 军方/n 总部/n 前/f 出现/v 多/a 辆/q 急救车/n ，/w 军用/b 飞机/n 在/p 空中/s 盘旋/v 。/w 
-当晚/t １１时/t １０分/t （/w 北京/ns 时间/n １６日/t ４时/t １０分/t ）/w ，/w 总理/n 耶尔德勒姆/nr 通过/p ＮＴＶ电视台/nt 证实/v 有/v 政变/vn 阴谋/n ，/w 但/c 没有/d 透露/v 更/d 多/a 细节/n ，/w 强调/v “/w 任何/r 企图/v 不/d 会/v 中断/v （/w 土耳其/ns ）/w 民主/a ”/w 。/w 
+当地/s 媒体/n 报道/v ，/w 当地/s 时间/n 15日/t 深夜/t ，/w 首都/n 安卡拉/ns 出现/v 异常/a 军事/n 活动/n ，/w 军方/n 总部/n 前/f 出现/v 多/a 辆/q 急救车/n ，/w 军用/b 飞机/n 在/p 空中/s 盘旋/v 。/w 
+当晚/t 11时/t 10分/t （/w 北京/ns 时间/n 16日/t 4时/t 10分/t ）/w ，/w 总理/n 耶尔德勒姆/nr 通过/p NTV电视台/nt 证实/v 有/v 政变/vn 阴谋/n ，/w 但/c 没有/d 透露/v 更/d 多/a 细节/n ，/w 强调/v “/w 任何/r 企图/v 不/d 会/v 中断/v （/w 土耳其/ns ）/w 民主/a ”/w 。/w 
 官方/n 的/u 阿纳多卢通讯社/nt 报道/v ，/w 武装部队/n 总参谋长/n 胡卢西·阿卡尔/nr 将军/n 在/p 军方/n 总部/n 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 。/w 
-据/p 信/n 已/d 被/p 控制/v 的/u 土耳其广播电视协会/nt （/w ＴＲＴ/nx ）/w 电视台/n 晚/t 些/q 时候/n 发表/v 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
+据/p 信/n 已/d 被/p 控制/v 的/u 土耳其广播电视协会/nt （/w TRT/nx ）/w 电视台/n 晚/t 些/q 时候/n 发表/v 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
 一个/m 自称/v “/w 祖国和平委员会/nt ”/w 的/u 军人/n 团体/n 在/p 声明/n 中/f 宣称/v ，/w 全国/n 范围/n 实行/v 宵禁/v 并/c 实施/v 军事管制法/n 。/w 
 当地/s 媒体/n 及/c 目击者/n 称/v ，/w 夜里/t ，/w 军用/b 飞机/n 和/c 直升机/n 在/p 安卡拉/ns 低空/s 飞行/v ，/w 能/v 听到/v 强烈/a 的/u 枪声/n 和/c 爆炸声/n 。/w 
 当晚/t ，/w 安卡拉/ns 机场/n 已经/d 完全/a 关闭/v ，/w 接入/v 社交/n 媒体/n 的/u 网络/n 已经/d 切断/v 。/w 
 电视/n 画面/n 显示/v ，/w 在/p 最/d 大/a 城市/n 伊斯坦布尔/ns ，/w 两/m 座/q 主要/b 大/a 桥/n 被/p 关闭/v ，/w 机场/n 外/f 已/d 部署/v 坦克/n ，/w 所有/b 原/b 计划/n 飞抵/v 这里/r 的/u 飞机/n 不得/d 降落/v 。/w 
 土耳其/ns 政变/v 时间轴/n 
-土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n １５日/t 午夜/t （/w 北京/ns 时间/n １６日/t 凌晨/t ）/w 企图/v 发动/v 军事/n 政变/v 。/w 
+土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n 15日/t 午夜/t （/w 北京/ns 时间/n 16日/t 凌晨/t ）/w 企图/v 发动/v 军事/n 政变/v 。/w 
 以下/f 为/v 事件/n 演进/v 的/u 时间轴/n （/w 以/p 媒体/n 报道/v 的/u 北京/ns 时间/n 为/v 参考/v ）/w ：/w 
-——/w １６日/t ３时/t ５０分/t ：/w 最/d 大/a 城市/n 伊斯坦布尔/ns 两/m 座/q 大/a 桥/n 被/p 关闭/v ，/w 首都/n 安卡拉/ns 响起/v 枪声/n ，/w 军用/b 飞机/n 和/c 直升机/n 在/p 空中/s 盘旋/v 。/w 
-——/w ４时/t ０２分/t ：/w 总理/n 比纳利·耶尔德勒姆/nr 向/p 土耳其/ns ＮＴＶ电视台/nt 证实/v 有/v 政变/vn 阴谋/n ，/w 安全/a 部队/n 将/d 采取/v 必要/a 行动/v ，/w 捍卫/v 土耳其/ns 民主/a 体制/n 。/w 
-——/w ４时/t ４７分/t ：/w 官方/n 的/u 阿纳多卢通讯社/nt 报道/v ，/w 武装部队/n 总参谋长/n 胡卢西·阿卡尔/nr 将军/n 在/p 总参谋部/n 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 。/w 
-——/w ５时/t ０５分/t ：/w 被/p 控制/v 的/u 土耳其广播电视协会/nt （/w ＴＲＴ/nx ）/w 电视台/n 发表/v 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
+——/w 16日/t 3时/t 50分/t ：/w 最/d 大/a 城市/n 伊斯坦布尔/ns 两/m 座/q 大/a 桥/n 被/p 关闭/v ，/w 首都/n 安卡拉/ns 响起/v 枪声/n ，/w 军用/b 飞机/n 和/c 直升机/n 在/p 空中/s 盘旋/v 。/w 
+——/w 4时/t 02分/t ：/w 总理/n 比纳利·耶尔德勒姆/nr 向/p 土耳其/ns NTV电视台/nt 证实/v 有/v 政变/vn 阴谋/n ，/w 安全/a 部队/n 将/d 采取/v 必要/a 行动/v ，/w 捍卫/v 土耳其/ns 民主/a 体制/n 。/w 
+——/w 4时/t 47分/t ：/w 官方/n 的/u 阿纳多卢通讯社/nt 报道/v ，/w 武装部队/n 总参谋长/n 胡卢西·阿卡尔/nr 将军/n 在/p 总参谋部/n 被/p 政变/vn 军人/n 扣/v 为/v 人质/n 。/w 
+——/w 5时/t 05分/t ：/w 被/p 控制/v 的/u 土耳其广播电视协会/nt （/w TRT/nx ）/w 电视台/n 发表/v 一/m 份/q 政变/vn 军人/n 起草/v 的/u 声明/n 。/w 
 一个/m 自称/v “/w 祖国和平委员会/nt ”/w 的/u 军人/n 团体/n 在/p 声明/n 中/f 宣称/v 已/d 接管/v 政权/n ，/w 全国/n 范围/n 实行/v 宵禁/v 并/c 实施/v 军事管制法/n 。/w 
-——/w ５时/t ２６分/t ：/w 正在/d 休假/v 的/u 总统/n 埃尔多安/nr 通过/p 手机/n 视频/n 通话/v 软件/n 接受/v 美国有线电视新闻网/nz 土耳其语频道/nz 采访/v ，/w 呼吁/v 民众/n 走/v 上/v 街头/s ，/w 到/p 公共/b 广场/n 和/c 机场/n 集会/v ，/w 以/c 示/v 对/p 政府/n 的/u 支持/vn 。/w 
-——/w ６时/t ３５分/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w 土耳其/ns 第一/m 集团军/n 司令/n 于米特·丁达尔/nr 说/v ，/w 参与/v 发动/v 政变/v 的/u 军人/n 是/v 很/d 小/a 的/u 一个/m 团体/n ，/w “/w 不/d 需要/v 担心/v ”/w 。/w 
-——/w ７时/t ５２分/t ：/w 总理/n 耶尔德勒姆/nr 说/v 局势/n 目前/t “/w 基本上/d 得到/v 控制/v ”/w ，/w 首都/n 安卡拉/ns 上空/s 已/d 宣布/v 设立/v “/w 禁飞区/n ”/w 。/w 
+——/w 5时/t 26分/t ：/w 正在/d 休假/v 的/u 总统/n 埃尔多安/nr 通过/p 手机/n 视频/n 通话/v 软件/n 接受/v 美国有线电视新闻网/nz 土耳其语频道/nz 采访/v ，/w 呼吁/v 民众/n 走/v 上/v 街头/s ，/w 到/p 公共/b 广场/n 和/c 机场/n 集会/v ，/w 以/c 示/v 对/p 政府/n 的/u 支持/vn 。/w 
+——/w 6时/t 35分/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w 土耳其/ns 第一/m 集团军/n 司令/n 于米特·丁达尔/nr 说/v ，/w 参与/v 发动/v 政变/v 的/u 军人/n 是/v 很/d 小/a 的/u 一个/m 团体/n ，/w “/w 不/d 需要/v 担心/v ”/w 。/w 
+——/w 7时/t 52分/t ：/w 总理/n 耶尔德勒姆/nr 说/v 局势/n 目前/t “/w 基本上/d 得到/v 控制/v ”/w ，/w 首都/n 安卡拉/ns 上空/s 已/d 宣布/v 设立/v “/w 禁飞区/n ”/w 。/w 
 他/r 同时/t 谴责/v 流亡/v 美国/ns 的/u 宗教/n 人士/n 费图拉·居伦/nr 是/v 政变/v 的/u 幕后/s 策划者/n 。/w 
-——/w ９时/t 整/m ：/w 总统/n 埃尔多安/nr 飞抵/v 伊斯坦布尔/ns 机场/n 。/w 
+——/w 9时/t 整/m ：/w 总统/n 埃尔多安/nr 飞抵/v 伊斯坦布尔/ns 机场/n 。/w 
 在/p 机场/n 发表/v 的/u 讲话/n 上/f ，/w 他/r 表示/v 叛乱/vn 行为/n 危害/v 土耳其/ns 团结/a 和/c 统一/v ，/w 政变/vn 军人/n 将/d 付出/v 巨大/a 代价/n 。/w 
-——/w ９时/t ２０分/t ：/w 位于/v 安卡拉/ns 的/u 土耳其/ns 议会/n 大楼/n 已/d 发生/v 数/m 次/q 爆炸/v ，/w 议长/n 伊斯梅尔·卡赫拉曼/nr 表示/v ，/w 最/d 新/a 一/m 次/q 爆炸/v 致使/v 几/m 名/q 警察/n 受伤/v ，/w 但/c 所有/b 议员/n 都/d 在/p 议会/n 大楼/n 的/u 避难区/n 内/f ，/w 暂时/d 安全/a 。/w 
-——/w １０时/t ５０分/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w 总理/n 耶尔德勒姆/nr 召集/v 所有/b 议员/n 当天/t 参加/v 一个/m 紧急/a 会议/n 。/w 
-约/d 有/v １３０/m 名/q 参与政变者/n 被/p 逮捕/v 。/w 
-至少/d ４２/m 人/n 在/p 安卡拉/ns 发生/v 的/u 多/a 起/q 袭击/v 中/f 丧生/v 。/w 
-——/w １２时/t １５分/t ：/w 美国有线电视新闻网/nz 土耳其语频道/nz 报道/v ，/w 第一/m 集团军/n 司令/n 于米特·丁达尔/nr 被/p 任命/v 为/v 代理/v 总参谋长/n 。/w 
-总统府/n 办公室/n 一/m 名/q 官员/n 透露/v ，/w 至少/d ６０/m 人/n 死亡/v ，/w 其中/r 多数/m 为/v 平民/n ；/w 土耳其/ns 全国/n 约/d ３３６/m 人/n 被捕/v ，/w 其中/r 多数/m 为/v 军人/n 。/w 
-——/w １３时/t ３５分/t ：/w 土耳其/ns 媒体/n 报道/v ，/w 武装部队/n 总参谋长/n 阿卡尔/nr 将军/n 在/p 安卡拉/ns 附近/f 一个/m 空军/n 基地/n 内/f 被/p 成功/a 营救/v ；/w 已/d 有/v ７５４/m 名/q 军人/n 被/p 逮捕/v 。/w 
-土耳其/ns 警察/n 部门/n 说/v ，/w 有/v １６/m 名/q 军事/n 政变/v 的/u 谋划者/n 遭/v 击毙/v 。/w 
-——/w １４时/t ４５分/t ：/w 土耳其/ns 官方/n 通讯社/n 报道/v ，/w 安卡拉/ns 的/u 大约/d ２００/m 名/q 士兵/n 向/p 警方/n 投降/v 。/w 
-土耳其/ns 全国/n 已/d 有/v １５６３/m 名/q 涉嫌/v 参与/v 政变/v 的/u 军人/n 被/p 逮捕/v 。/w 
-——/w １５时/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w ４１/m 名/q 警察/n ，/w ２/m 名/q 军人/n 和/c ４７/m 名/q 平民/n 在/p 袭击/v 中/f 丧生/v ，/w 另/d 有/v １１５４/m 人/n 受伤/v 。/w 
-——/w １６时/t ４０分/t ：/w 总统/n 埃尔多安/nr 在/p “/w 推特/nz ”/w 上/f 号召/v 民众/n 留/v 在/p 街上/s ，/w “/w 我们/r 今晚/t 应该/v 继续/v 占领/v 街道/n ”/w ，/w 提醒/v 事态/n 可能/v 重新/d 升级/v 。/w 
-代理/v 总参谋长/n 丁达尔/nr 说/v ，/w １０４/m 名/q 参与政变者/n 被/p 击毙/v 。/w 
+——/w 9时/t 20分/t ：/w 位于/v 安卡拉/ns 的/u 土耳其/ns 议会/n 大楼/n 已/d 发生/v 数/m 次/q 爆炸/v ，/w 议长/n 伊斯梅尔·卡赫拉曼/nr 表示/v ，/w 最/d 新/a 一/m 次/q 爆炸/v 致使/v 几/m 名/q 警察/n 受伤/v ，/w 但/c 所有/b 议员/n 都/d 在/p 议会/n 大楼/n 的/u 避难区/n 内/f ，/w 暂时/d 安全/a 。/w 
+——/w 10时/t 50分/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w 总理/n 耶尔德勒姆/nr 召集/v 所有/b 议员/n 当天/t 参加/v 一个/m 紧急/a 会议/n 。/w 
+约/d 有/v 130/m 名/q 参与政变者/n 被/p 逮捕/v 。/w 
+至少/d 42/m 人/n 在/p 安卡拉/ns 发生/v 的/u 多/a 起/q 袭击/v 中/f 丧生/v 。/w 
+——/w 12时/t 15分/t ：/w 美国有线电视新闻网/nz 土耳其语频道/nz 报道/v ，/w 第一/m 集团军/n 司令/n 于米特·丁达尔/nr 被/p 任命/v 为/v 代理/v 总参谋长/n 。/w 
+总统府/n 办公室/n 一/m 名/q 官员/n 透露/v ，/w 至少/d 60/m 人/n 死亡/v ，/w 其中/r 多数/m 为/v 平民/n ；/w 土耳其/ns 全国/n 约/d 336/m 人/n 被捕/v ，/w 其中/r 多数/m 为/v 军人/n 。/w 
+——/w 13时/t 35分/t ：/w 土耳其/ns 媒体/n 报道/v ，/w 武装部队/n 总参谋长/n 阿卡尔/nr 将军/n 在/p 安卡拉/ns 附近/f 一个/m 空军/n 基地/n 内/f 被/p 成功/a 营救/v ；/w 已/d 有/v 754/m 名/q 军人/n 被/p 逮捕/v 。/w 
+土耳其/ns 警察/n 部门/n 说/v ，/w 有/v 16/m 名/q 军事/n 政变/v 的/u 谋划者/n 遭/v 击毙/v 。/w 
+——/w 14时/t 45分/t ：/w 土耳其/ns 官方/n 通讯社/n 报道/v ，/w 安卡拉/ns 的/u 大约/d 200/m 名/q 士兵/n 向/p 警方/n 投降/v 。/w 
+土耳其/ns 全国/n 已/d 有/v 1563/m 名/q 涉嫌/v 参与/v 政变/v 的/u 军人/n 被/p 逮捕/v 。/w 
+——/w 15时/t ：/w 阿纳多卢通讯社/nt 报道/v ，/w 41/m 名/q 警察/n ，/w 2/m 名/q 军人/n 和/c 47/m 名/q 平民/n 在/p 袭击/v 中/f 丧生/v ，/w 另/d 有/v 1154/m 人/n 受伤/v 。/w 
+——/w 16时/t 40分/t ：/w 总统/n 埃尔多安/nr 在/p “/w 推特/nz ”/w 上/f 号召/v 民众/n 留/v 在/p 街上/s ，/w “/w 我们/r 今晚/t 应该/v 继续/v 占领/v 街道/n ”/w ，/w 提醒/v 事态/n 可能/v 重新/d 升级/v 。/w 
+代理/v 总参谋长/n 丁达尔/nr 说/v ，/w 104/m 名/q 参与政变者/n 被/p 击毙/v 。/w 
 （/w 郭倩/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 这/r 是/v 7月/t 16日/t 在/p 希腊/ns 边境/s 城市/n 亚历山德鲁波利斯/ns 机场/n 拍摄/v 的/u 土耳其/ns 直升机/n 。/w 
 土耳其/ns 外长/n 恰武什奥卢/nr 16日/t 说/v ，/w 8/m 名/q 参与/v 发动/v 军事/n 政变/v 的/u 叛乱/vn 分子/n 当天/t 乘坐/v 直升机/n 逃/v 至/p 希腊/ns 寻求/v 政治/n 避难/v 。/w 
@@ -2817,37 +2817,37 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 希腊政府/nt 尚未/d 证实/v 这些/r 土耳其/ns 军人/n 是否/v 参与/v 军事/n 政变/v 。/w 
 新华社/nt 发/v 
 美国防部/nt 说/v 土耳其/ns 关闭/v 打击/v “/w 伊斯兰国/nt ”/w 的/u 空军/n 基地/n 
-新华社/nt 华盛顿/ns ７月/t １６日/t 电/n （/w 记者/n 陆佳飞/nr 徐剑梅/nr ）/w 美国国防部/nt １６日/t 说/v ，/w 土耳其/ns 关闭/v 了/u 该国/r 南部/f 因吉尔利克空军基地/ns 的/u 领空/n ，/w 以/p 美国/ns 为首/v 的/u 多/a 国/n 联盟/n 对/p 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 因此/c 受/v 影响/v 。/w 
-美国防部/nt 发言人/n 彼得·库克/nr 当天/t 在/p 一/m 份/q 声明/n 中/f 说/v ，/w 受/v 土耳其/ns １５日/t 晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 影响/v ，/w 土/ns 目前/t 对/p 因吉尔利克空军基地/ns 的/u 领空/n 实施/v 禁飞/v 。/w 
+新华社/nt 华盛顿/ns 7月/t 16日/t 电/n （/w 记者/n 陆佳飞/nr 徐剑梅/nr ）/w 美国国防部/nt 16日/t 说/v ，/w 土耳其/ns 关闭/v 了/u 该国/r 南部/f 因吉尔利克空军基地/ns 的/u 领空/n ，/w 以/p 美国/ns 为首/v 的/u 多/a 国/n 联盟/n 对/p 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 因此/c 受/v 影响/v 。/w 
+美国防部/nt 发言人/n 彼得·库克/nr 当天/t 在/p 一/m 份/q 声明/n 中/f 说/v ，/w 受/v 土耳其/ns 15日/t 晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 影响/v ，/w 土/ns 目前/t 对/p 因吉尔利克空军基地/ns 的/u 领空/n 实施/v 禁飞/v 。/w 
 美军/n 和/c 联盟军/n 主要/d 利用/v 该/r 基地/n 对/p 伊拉克/ns 和/c 叙利亚/ns 境内/s 的/u “/w 伊斯兰国/nt ”/w 目标/n 实施/v 空中/s 打击/v 。/w 
 库克/nr 表示/v ，/w 美方/n 正在/d 与/p 土方/n 沟通/v ，/w 以期/v 尽快/d 恢复/v 因吉尔利克空军基地/ns 的/u 使用/vn 。/w 
 他/r 还/d 说/v ，/w 由于/c 因吉尔利克空军基地/ns 使用/v 内部/f 电源/n ，/w 土/ns 国内/s 目前/t 商业/n 用电/n 受阻/v 没有/d 影响/v 该/r 空军/n 基地/n 的/u 日常/a 运行/vn 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １６日/t 说/v ，/w 政变/v 导致/v 至少/d １６１/m 人/n 死亡/v 和/c １４４０/m 人/n 受伤/v 。/w 
-美国/ns 总统/n 奥巴马/nr １６日/t 重申/v ，/w 美国/ns “/w 坚定不移/v 地/u ”/w 支持/v 土/ns 民选/b 政府/n ，/w 希望/v 美/ns 土/ns 双方/n 在/p 应对/v 共同/b 挑战/vn 方面/n 继续/v 合作/v 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 说/v ，/w 政变/v 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
+美国/ns 总统/n 奥巴马/nr 16日/t 重申/v ，/w 美国/ns “/w 坚定不移/v 地/u ”/w 支持/v 土/ns 民选/b 政府/n ，/w 希望/v 美/ns 土/ns 双方/n 在/p 应对/v 共同/b 挑战/vn 方面/n 继续/v 合作/v 。/w 
 土/ns 政府/n 指责/v 流亡/v 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 在/p 幕后/s 策划/v 这/r 次/q 政变/v ，/w 要求/v 美政府/nt 将/p 他/r 引渡/v 回/v 土耳其/ns 。/w 
-美/ns 国务卿/n 克里/nr １６日/t 在/p 卢森堡/n 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 证据/n 。/w 
+美/ns 国务卿/n 克里/nr 16日/t 在/p 卢森堡/n 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 证据/n 。/w 
 普京/nr 希望/v 土耳其/ns 尽快/d 恢复/v 稳定/a 
-新华社/nt 莫斯科/ns ７月/t １７日/t 电/n （/w 记者/n 温馨/nr ）/w 俄罗斯/ns 总统/n 普京/nr １７日/t 与/p 土耳其/ns 总统/n 埃尔多安/nr 通电话/v ，/w 希望/v 经历/n 未遂/v 政变/v 的/u 土耳其/ns 能/v 尽快/d 恢复/v 稳定/a 。/w 
+新华社/nt 莫斯科/ns 7月/t 17日/t 电/n （/w 记者/n 温馨/nr ）/w 俄罗斯/ns 总统/n 普京/nr 17日/t 与/p 土耳其/ns 总统/n 埃尔多安/nr 通电话/v ，/w 希望/v 经历/n 未遂/v 政变/v 的/u 土耳其/ns 能/v 尽快/d 恢复/v 稳定/a 。/w 
 俄罗斯总统新闻局/nt 说/v ，/w 普京/nr 在/p 电话/n 中/f 对/p 事件/n 中/f 的/u 遇难者/n 表示/v 哀悼/v 。/w 
 普京/nr 表示/v ，/w “/w 希望/v 尽快/d 看到/v 土耳其/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ”/w ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
-两/m 国/n 总统/n 在/p 通话/v 中/f 还/d 讨论/v 了/u ８月/t 会晤/v 的/u 可能性/n 。/w 
-俄/ns 土/ns 两/m 国/n 关系/n 因/p 去年/t １１月/t 土耳其/ns 在/p 与/p 叙利亚/ns 交界/vn 地区/n 上空/s 击落/v 俄罗斯/ns 战机/n 而/c 降/v 至/p 冰点/n 。/w 
+两/m 国/n 总统/n 在/p 通话/v 中/f 还/d 讨论/v 了/u 8月/t 会晤/v 的/u 可能性/n 。/w 
+俄/ns 土/ns 两/m 国/n 关系/n 因/p 去年/t 11月/t 土耳其/ns 在/p 与/p 叙利亚/ns 交界/vn 地区/n 上空/s 击落/v 俄罗斯/ns 战机/n 而/c 降/v 至/p 冰点/n 。/w 
 两/m 国/n 总统/n 上月底/t 曾/d 通/v 电话/n ，/w 同意/v 采取/v 必要/a 措施/n 使/v 两/m 国/n 关系/n 正常化/v ，/w 同时/t 承诺/v 共同/d 打击/v 恐怖主义/n 。/w 
-土耳其/ns 本月/r １５日/t 晚/t 发生/v 未遂/v 军事/n 政变/v ，/w 导致/v 至少/d １６１/m 人/n 死亡/v 、/w １４４０/m 人/n 受伤/v 
+土耳其/ns 本月/r 15日/t 晚/t 发生/v 未遂/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 、/w 1440/m 人/n 受伤/v 
 美/ns 称/v 指责/v 美/ns 卷入/v 土耳其/ns 政变/v 不/d 实/a 
-新华社/nt 华盛顿/ns ７月/t １６日/t 电/n （/w 记者/n 支林飞/nr ）/w 美国/ns 国务卿/n 克里/nr １６日/t 表示/v ，/w 美/ns 愿意/v 为/p 土耳其/ns 调查/v １５日/t 未遂/v 军事/n 政变/v 提供/v 协助/v ，/w 但/c 有关/v 对/p 美/ns 在/p 这/r 次/q 政变/v 中/f 扮演/v 任何/r 角色/n 的/u 暗示/vn 或/c 指责/vn 都/d 完全/a 不/d 实/a ，/w 会/v 损害/v 美/ns 土/ns 双边/n 关系/n 。/w 
+新华社/nt 华盛顿/ns 7月/t 16日/t 电/n （/w 记者/n 支林飞/nr ）/w 美国/ns 国务卿/n 克里/nr 16日/t 表示/v ，/w 美/ns 愿意/v 为/p 土耳其/ns 调查/v 15日/t 未遂/v 军事/n 政变/v 提供/v 协助/v ，/w 但/c 有关/v 对/p 美/ns 在/p 这/r 次/q 政变/v 中/f 扮演/v 任何/r 角色/n 的/u 暗示/vn 或/c 指责/vn 都/d 完全/a 不/d 实/a ，/w 会/v 损害/v 美/ns 土/ns 双边/n 关系/n 。/w 
 美国务院/nt 发表/v 声明/n 说/v ，/w 克里/nr 当天/t 与/p 土耳其/ns 外长/n 恰武什奥卢/nr 通/v 了/u 电话/n 。/w 
 恰武什奥卢/nr 向/p 克里/nr 通报/v 了/u 土耳其/ns 最/d 新/a 局势/n ，/w 强调/v 土/ns 政府/n 依然/d 控制/v 着/u 所有/b 政府/n 机构/n 。/w 
 克里/nr 重申/v 美/ns 支持/v 土耳其/ns 民选/b 政府/n ，/w 但/c 他/r 同时/t 敦促/v 土/ns 政府/n 在/p 调查/v 这/r 次/q 未遂/v 政变/v 主谋/n 的/u 过程/n 中/f “/w 保持/v 克制/v ，/w 并/c 尊重/v 适当/a 程序/n 和/c 国际/n 义务/n ”/w 。/w 
 双方/n 还/d 讨论/v 了/u 土耳其/ns 作为/p 北约/nt 盟友/n 和/c 打击/v 极端/d 组织/n “/w 伊斯兰国/nt ”/w 联盟/n 关键/a 成员/n 的/u 重要性/n ，/w 强调/v 需要/v 重点/d 确保/v 土耳其/ns 继续/v 为/p 反恐/v 行动/v 提供/v 支援/v 。/w 
-土耳其/ns １５日/t 晚/t 突发/v 军事/n 政变/v 。/w 
-总理/n 耶尔德勒姆/nr １６日/t 说/v ，/w 不/d 包括/v 政变/vn 军人/n 在内/u ，/w 这/r 次/q 政变/v 已/d 导致/v 至少/d １６１/m 人/n 死亡/v 、/w １４４０/m 人/n 受伤/v 。/w 
+土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v 。/w 
+总理/n 耶尔德勒姆/nr 16日/t 说/v ，/w 不/d 包括/v 政变/vn 军人/n 在内/u ，/w 这/r 次/q 政变/v 已/d 导致/v 至少/d 161/m 人/n 死亡/v 、/w 1440/m 人/n 受伤/v 。/w 
 土/ns 政府/n 随后/d 指责/v 流亡/v 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 是/v 政变/v 的/u 幕后/s 主使/vn ，/w 并/c 要求/v 美政府/nt 将/p 他/r 引渡/v 回/v 土耳其/ns 。/w 
 土耳其/ns 当天/t 关闭/v 了/u 该国/r 南部/f 因吉尔利克空军基地/ns 的/u 领空/n ，/w 以/p 美国/ns 为首/v 的/u 多/a 国/n 联盟/n 从/p 该/r 基地/n 对/p “/w 伊斯兰国/nt ”/w 发动/v 的/u 空中/s 打击/vn 行动/vn 被迫/d 中止/v 。/w 
 虽然/c 土耳其/ns 和/c 美国/ns 同/d 为/v 北约/nt 成员国/n ，/w 但/c 两/m 国/n 在/p 叙利亚/ns 内战/n 以及/c 如何/r 对待/v 叙利亚/ns 库尔德人/n 组织/n 等/u 问题/n 上/f 一直/d 存在/v 尖锐/a 分歧/n 。/w 
 土耳其/ns 政变/v 难/a 撼/v 埃尔多安/nr 地位/n 
-当地/s 时间/n １５日/t 晚/t ，/w 土耳其/ns 突发/v 军事/n 政变/v ，/w 首都/n 安卡拉/ns 、/w 最/d 大/a 城市/n 伊斯坦布尔/ns 均/d 发生/v 爆炸/v 和/c 激烈/a 交火/v 。/w 
+当地/s 时间/n 15日/t 晚/t ，/w 土耳其/ns 突发/v 军事/n 政变/v ，/w 首都/n 安卡拉/ns 、/w 最/d 大/a 城市/n 伊斯坦布尔/ns 均/d 发生/v 爆炸/v 和/c 激烈/a 交火/v 。/w 
 总统/n 埃尔多安/nr 不得不/d 中断/v 假期/t ，/w 紧急/a 从/p 西南部/f 度假/v 地/u 飞往/v 伊斯坦布尔/ns 。/w 
 局势/n 在/p 不/d 到/v 一/m 天/q 时间/n 里/f 得到/v 控制/v 。/w 
 分析/vn 人士/n 指出/v ，/w 埃尔多安/nr 并/c 没有/d 因/p 此次/r 政变/v 动摇/v 地位/n ，/w 反而/d 可能/v 获得/v 了/u 巩固/v 其/r 统治/v 的/u 良机/n 。/w 
@@ -2870,48 +2870,48 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 分析/vn 人士/n 认为/v ，/w 此次/r 政变/v 失败/v 后/f ，/w 军方/n 在/p 土耳其/ns 国内/s 政治/n 领域/n 的/u 影响力/n 可能/v 被/p 终结/v ，/w 埃尔多安/nr 政权/n 将/d 获得/v 更/d 多/a 民意/n 支持/v 。/w 
 近年来/d ，/w 埃尔多安/nr 一直/d 在/d 寻求/v 扩大/v 总统/n 权力/n ，/w 此次/r 事件/n 后/f ，/w 在/p 从/p 内阁制/n 转向/v 总统制/n 、/w 修改/v 宪法/n 、/w 进一步/d 限制/v 军方/n 权力/n 等/u 方面/n ，/w 他/r 都/d 将/d 占据/v 更/d 大/a 优势/n 。/w 
 土耳其/ns 警察/n 和/c 宪兵/n 在/p 伊斯坦布尔/ns 一/m 机场/n 发生/v 冲突/v 
-新华社/nt 伊斯坦布尔/ns ７月/t １７日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 警方/n １７日/t 试图/v 在/p 伊斯坦布尔/ns 萨比哈·格克琴/ns 机场/n 逮捕/v 一/m 名/q 涉嫌/v 参与/v 未遂/v 政变/v 的/u 宪兵/n 指挥官/n ，/w 此后/t 警察/n 与/c 宪兵/n 发生/v 冲突/v 。/w 
+新华社/nt 伊斯坦布尔/ns 7月/t 17日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 警方/n 17日/t 试图/v 在/p 伊斯坦布尔/ns 萨比哈·格克琴/ns 机场/n 逮捕/v 一/m 名/q 涉嫌/v 参与/v 未遂/v 政变/v 的/u 宪兵/n 指挥官/n ，/w 此后/t 警察/n 与/c 宪兵/n 发生/v 冲突/v 。/w 
 土耳其/ns 《/w 国民报/nz 》/w 报道/v 说/v ，/w 冲突/v 发生/v 后/f 当局/n 下令/v 拘捕/v 机场/n 所有/b 宪兵/n 。/w 
 有/v 媒体/n 报道/v 说/v ，/w 宪兵/n 指挥官/n 被捕/v 后/f 冲突/v 停止/v 。/w 
-萨比哈·格克琴/ns 机场/n 位于/v 伊斯坦布尔/ns 亚洲/ns 部分/n ，/w 机场/n 宪兵队/n 约/d 有/v ６０/m 人/n ，/w 负责/v 机场/n 国际/n 航站楼/n 安全/a 保卫/v 。/w 
-土耳其/ns １５日/t 夜/t 突发/v 军事/n 政变/v ，/w 据/p 报道/v 有/v 宪兵/n 参与/v 其中/r 。/w 
-此次/r 未遂/v 政变/v 造成/v 至少/d １６１/m 人/n 死亡/v ，/w 目前/t 当局/n 已经/d 逮捕/v 将近/d ３０００/m 名/q 军队/n 官兵/n 和/c 政府/n 官员/n 。/w 
+萨比哈·格克琴/ns 机场/n 位于/v 伊斯坦布尔/ns 亚洲/ns 部分/n ，/w 机场/n 宪兵队/n 约/d 有/v 60/m 人/n ，/w 负责/v 机场/n 国际/n 航站楼/n 安全/a 保卫/v 。/w 
+土耳其/ns 15日/t 夜/t 突发/v 军事/n 政变/v ，/w 据/p 报道/v 有/v 宪兵/n 参与/v 其中/r 。/w 
+此次/r 未遂/v 政变/v 造成/v 至少/d 161/m 人/n 死亡/v ，/w 目前/t 当局/n 已经/d 逮捕/v 将近/d 3000/m 名/q 军队/n 官兵/n 和/c 政府/n 官员/n 。/w 
 土耳其/ns 军事/n 政变/v 或/c 将/d 冲击/v 美国/ns 中东/ns 政策/n 目标/n 
-土耳其/ns 部分/n 军人/n １５日/t 晚/t 发动/v 军事/n 政变/v 。/w 
+土耳其/ns 部分/n 军人/n 15日/t 晚/t 发动/v 军事/n 政变/v 。/w 
 尽管/c 土耳其政府/nt 数/m 小时/n 后/f 宣布/v “/w 基本/a 控制/v ”/w 局势/n ，/w 但/c 这/r 一/m 事件/n 还是/c 让/v 包括/v 美国/ns 在内/u 的/u 北约/nt 盟友/n 大/a 感/v 意外/a 和/c 担忧/v 。/w 
 一些/m 政治/n 分析师/n 认为/v ，/w 土耳其/ns 局势/n 可能/v 因此/c 陷入/v 长期/d 不/d 稳定/a ，/w 给/p 美国/ns 在/p 中东/ns 地区/n 打击/v 极端/n 组织/n “/w 伊斯兰国/nt ”/w 等/u 目标/n 带来/v 冲击/v 。/w 
-土耳其/ns １９５２年/t 加入/v 北约/nt ，/w 其/r 军队/n 被/p 认为/v 是/v 北约/nt 内/f 仅次于/v 美国/ns 的/u 第二/m 大/a 常规/n 部队/n 。/w 
+土耳其/ns 1952年/t 加入/v 北约/nt ，/w 其/r 军队/n 被/p 认为/v 是/v 北约/nt 内/f 仅次于/v 美国/ns 的/u 第二/m 大/a 常规/n 部队/n 。/w 
 此外/c ，/w 土耳其/ns 连接/v 欧洲/ns 与/p 中东/ns ，/w 是/v 这/r 一/m 地区/n 最/d 大/a 经济体/n 之一/r ，/w 被/p 认为/v 对/p 东南欧/ns 及/c 中东/ns 地区/n 的/u 稳定/an 有着/v 重要/a 影响/vn 。/w 
 外界/n 认为/v ，/w 虽然/c 美国/ns 和/c 土耳其/ns 的/u 关系/n 近年来/d 受/v 一系列/b 因素/n 影响/v ，/w 但/c 两/m 国/n 在/p 打击/v “/w 伊斯兰国/nt ”/w 问题/n 上/f 合作/v 广泛/a 。/w 
-“/w 美国/ns 对/p 土耳其/ns 发生/v 的/u 事件/n 抱以/v 最/d 严重/a 关切/v ，/w ”/w 美国/ns 国务卿/n 约翰·克里/nr １５日/t 晚/t 评论/v 土耳其/ns 局势/n 时/n 说/v 。/w 
+“/w 美国/ns 对/p 土耳其/ns 发生/v 的/u 事件/n 抱以/v 最/d 严重/a 关切/v ，/w ”/w 美国/ns 国务卿/n 约翰·克里/nr 15日/t 晚/t 评论/v 土耳其/ns 局势/n 时/n 说/v 。/w 
 【/w 担心/v “/w 最/d 糟糕/a 局面/n ”/w 】/w 
 美国两党政策研究中心/nt 研究/v 国家/n 安全/a 事务/n 的/u 主管/n 布莱兹·米兹塔尔/nr 认为/v ，/w 不管/c 政变/v 以/p 什么/r 方式/n 结束/v ，/w 这个/r 美国/ns 在/p 中东/ns 地区/n 的/u 关键/n 盟友/n 正/d 面临/v 政治/n 、/w 经济/n 不/d 稳定/v 等/u 一系列/b 影响/v ，/w 这/r 一/m 局面/n 势必/d 分散/v 土耳其/ns 当局/n 的/u 精力/n ，/w 转移/v 原本/d 用于/v 打击/v “/w 伊斯兰国/nt ”/w 、/w 遏制/v 叙利亚/ns 难民/n 涌入/v 欧洲/ns 的/u 安全/a 力量/n 。/w 
 “/w 从/p 美国/ns 角度/n 来看/u ，/w 一/m 次/q 没有/d 奏效/v 、/w 但/c 将/p 土耳其/ns 拖入/v 长期/b 权力/n 争斗/v 的/u 政变/vn 可能/n 是/v 最/d 糟糕/a 局面/n ，/w ”/w 米兹塔尔/nr 说/v ，/w “/w 一/m 次/q 迅速/a 但/c 没有/d 抵抗/v 的/u 成功/a 政变/vn 即使/c 说/v 带来/v 了/u 不/d 稳定/a ，/w 不如/v 一/m 次/q 不/d 成功/a 的/u 政变/vn 带来/v 的/u 不/d 稳定/a 更/d 严重/a 。/w ”/w 
 美国布鲁金斯学会/nt 成员/n 、/w 中央情报局/nt 前/f 安全/a 分析师/n 布鲁斯·里德尔/nr 认为/v ，/w 土耳其/ns 此次/r 政变/v 企图/v “/w 可能/v 是/v 奥巴马/nr 政府/n 面临/v 的/u 最/d 严峻/a 挑战/v 之一/r ”/w ，/w 因为/c “/w 一个/m 稳定/a 的/u 土耳其/ns 对/p 美国/ns 在/p 中东/ns 、/w 巴尔干/ns 和/c 高加索/ns 地区/n 的/u 利益/n 至关重要/a ”/w 。/w 
 而/c 从/p 媒体/n 报道/v 的/u 事态/n 发展/v 来看/u ，/w 此次/r 政变/v 图谋/n 的/u 周密/a 程度/n 超出/v 外界/n 预料/v 。/w 
 用/p 一/m 名/q 欧洲/ns 外交官/n 的/u 话/n 说/v ，/w 这/r 次/q 政变/v 决不/d 像/v 是/v 只/d 有/v 几/m 名/q 军方/n 中层/f 人士/n 发动/v 的/u “/w 手工/n 作坊式/b ”/w 政变/vn 。/w 
-首先/c ，/w 政变/vn 军人/n 同一/b 时间/n 在/p 首都/n 安卡拉/ns 和/c 最/d 大/a 城市/n 伊斯坦布尔/ns 发起/v 行动/v ，/w 机场/n 、/w 总统府/n 、/w 议会/n 大楼/n 和/c 电视台/n 等/u 标志性/n 地点/n 都/d 是/v 企图/v 控制/v 的/u 目标/n ；/w 其次/c ，/w 政变/vn 军人/n 掌握/v 了/u 不/d 小/a 规模/n 的/u 军事/n 资源/n ，/w 除/p 不在少数/v 的/u 军人/n 和/c 坦克/n 参与/v 外/f ，/w 这/r 一/m 团体/n 还/d 控制/v 多/a 架/q 直升机/n 对/p 政府部门/n 发起/v 空中/s 攻击/v ，/w 造成/v 不/d 小/a 伤亡/v ，/w 当局/n 在/p 对抗/v 中/f 多次/m 出动/v Ｆ－１６/nx 战机/n 予以/v 击落/vn 。/w 
+首先/c ，/w 政变/vn 军人/n 同一/b 时间/n 在/p 首都/n 安卡拉/ns 和/c 最/d 大/a 城市/n 伊斯坦布尔/ns 发起/v 行动/v ，/w 机场/n 、/w 总统府/n 、/w 议会/n 大楼/n 和/c 电视台/n 等/u 标志性/n 地点/n 都/d 是/v 企图/v 控制/v 的/u 目标/n ；/w 其次/c ，/w 政变/vn 军人/n 掌握/v 了/u 不/d 小/a 规模/n 的/u 军事/n 资源/n ，/w 除/p 不在少数/v 的/u 军人/n 和/c 坦克/n 参与/v 外/f ，/w 这/r 一/m 团体/n 还/d 控制/v 多/a 架/q 直升机/n 对/p 政府部门/n 发起/v 空中/s 攻击/v ，/w 造成/v 不/d 小/a 伤亡/v ，/w 当局/n 在/p 对抗/v 中/f 多次/m 出动/v F－16/nx 战机/n 予以/v 击落/vn 。/w 
 “/w 看/v 起来/v ，/w 这/r 像/v 是/v 一/m 场/q 相对/d 精心/a 策划/v 的/u 政变/vn ，/w ”/w 一/m 名/q 欧盟/nt 消息/n 人士/n 说/v ，/w “/w 他们/r （/w 政变/vn 军人/n ）/w 控制/v 机场/n …/w …/w 电视台/n …/w …/w 伊斯坦布尔/ns 的/u 多/a 个/q 战略/n 地点/n 。/w ”/w （/w 徐超/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 美国/ns 发布/v 赴/v 土/ns 旅游/v 警告/v 称/v 恐怖/a 袭击/v 威胁/v 加大/v 
-美国政府/nt １６日/t 发布/v 针对/p 土耳其/ns 的/u 旅游/vn 警告/vn ，/w 提醒/v 公民/n 慎重/a 考虑/v 赴/v 土耳其/ns 。/w 
-美国国务院/nt 发布/v 的/u 声明/n 说/v ，/w 土耳其/ns 遭受/v 恐怖/a 袭击/v 的/u 威胁/vn 已经/d 加大/v ，/w １５日/t 发生/v 未遂/v 政变/v 后/f ，/w 当局/n “/w 建议/v 美国/ns 公民/n 重新/d 考虑/v 前往/v 土耳其/ns 的/u 计划/n ”/w 。/w 
+美国政府/nt 16日/t 发布/v 针对/p 土耳其/ns 的/u 旅游/vn 警告/vn ，/w 提醒/v 公民/n 慎重/a 考虑/v 赴/v 土耳其/ns 。/w 
+美国国务院/nt 发布/v 的/u 声明/n 说/v ，/w 土耳其/ns 遭受/v 恐怖/a 袭击/v 的/u 威胁/vn 已经/d 加大/v ，/w 15日/t 发生/v 未遂/v 政变/v 后/f ，/w 当局/n “/w 建议/v 美国/ns 公民/n 重新/d 考虑/v 前往/v 土耳其/ns 的/u 计划/n ”/w 。/w 
 声明/n 说/v ，/w 联邦政府/nt 已经/d 限制/v 美国政府/nt 人员/n 在/p 土耳其/ns 东南部/f 地区/n 的/u 出行/vn ，/w 提醒/v 公民/n 避免/v 前往/v 土耳其/ns 东南部/f 地区/n ，/w 并/c “/w 时刻/n 保持/v 警惕/v ”/w 。/w 
-另/r 据/p 美国/ns 联邦/n 航空局/n １６日/t 证实/v ，/w 考虑/v 到/v 土耳其/ns 未遂/v 政变/v 后/f 的/u 不确定性/n ，/w 美国政府/nt 已/d 暂停/v 所有/b 航班/n 前往/v 土耳其/ns ，/w 同时/t 禁止/v 所有/b 从/p 土耳其/ns 出发/v 的/u 航班/n 进入/v 美国/ns 。/w 
+另/r 据/p 美国/ns 联邦/n 航空局/n 16日/t 证实/v ，/w 考虑/v 到/v 土耳其/ns 未遂/v 政变/v 后/f 的/u 不确定性/n ，/w 美国政府/nt 已/d 暂停/v 所有/b 航班/n 前往/v 土耳其/ns ，/w 同时/t 禁止/v 所有/b 从/p 土耳其/ns 出发/v 的/u 航班/n 进入/v 美国/ns 。/w 
 土耳其/ns 当局/n 宣布/v 挫败/v 政变/v 及/c 重新/d 开放/v 几/m 处/q 机场/n 后/f ，/w 美国/ns 方面/n 的/u 这/r 一/m 禁令/n 仍/d 没有/d 解除/v 。/w 
 美国驻土耳其使馆/nt 说/v ，/w 土/ns 最/d 大/a 城市/n 伊斯坦布尔/ns 阿塔图尔克/ns 国际/n 机场/n 的/u 安保/n 水平/n 已经/d 受/v 严重/a 影响/v ，/w 美国政府/nt 人员/n 已经/d 被/p 建议/v 不/d 要/v 通过/p 这/r 一/m 机场/n 起降/v 。/w 
 （/w 徐超/nr ）/w 新华社/nt 微特稿/n 
 土耳其政府/nt 挫败/v 政变/v 埃尔多安/nr 展开/v 清理/v 行动/v 
-土耳其政府/nt 和/c 军方/n １６日/t 挫败/v 一/m 起/q 政变/v ，/w 随即/d 在/p 军队/n 和/c 司法/n 系统/n 逮捕/v 数千/m 人/n 。/w 
+土耳其政府/nt 和/c 军方/n 16日/t 挫败/v 一/m 起/q 政变/v ，/w 随即/d 在/p 军队/n 和/c 司法/n 系统/n 逮捕/v 数千/m 人/n 。/w 
 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 指认/v 土耳其/ns 知名/a 宗教/n 人物/n 费图拉·居伦/nr 在/p 土耳其/ns 建立/v “/w 平行/vn 组织/n ”/w 并且/c 策划/v 这/r 场/q 政变/v 。/w 
 以/p 强硬/a 著称/v 的/u 埃尔多安/nr 说/v ，/w 参与/v 政变/v 的/u 人/n “/w 将/d 为/p 叛国/v 付出/v 沉重/a 代价/n ”/w 。/w 
 他/r 认定/v 政变/vn 军人/n “/w 听从/v 来自/v 宾夕法尼亚州/ns 的/u 指令/n ”/w ，/w 意/n 指/v 出走/v 美国/ns 的/u 土耳其/ns 知名/a 宗教/n 人物/n 居伦/nr 。/w 
 埃尔多安/nr 与/c 居伦/nr 一度/d 是/v 盟友/n ，/w 却/d 反目成仇/v ，/w 居伦/nr “/w 自我/r 流放/v ”/w 到/p 美国/ns ，/w 常/d 住/v 宾夕法尼亚/ns 。/w 
 埃尔多安/nr 先前/f 一直/d 指认/v 居伦/nr 的/u 支持者/n 在/p 土耳其/ns 军队/n 、/w 警察/n 、/w 司法/n 部门/n 和/c 媒体/n 形成/v 与/p 政府/n 相对/v 的/u “/w 平行/vn 组织/n ”/w 。/w 
-政变/v 被/p 挫败/v 后/f ，/w 超过/v ２８００/m 名/q 军人/n 被/p 逮捕/v ，/w 包括/v 多/a 名/q 高级/a 军官/n ；/w ２７００/m 多/m 名/q 法官/n 被/p 解除/v 职务/n ，/w 大约/d ２００/m 名/q 法官/n 面临/v 被/p 逮捕/v 。/w 
+政变/v 被/p 挫败/v 后/f ，/w 超过/v 2800/m 名/q 军人/n 被/p 逮捕/v ，/w 包括/v 多/a 名/q 高级/a 军官/n ；/w 2700/m 多/m 名/q 法官/n 被/p 解除/v 职务/n ，/w 大约/d 200/m 名/q 法官/n 面临/v 被/p 逮捕/v 。/w 
 土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 说/v ，/w 土耳其宪法委员会/nt 以及/c 议会/n 各/r 政党/n 将/d 讨论/v 恢复/v 死刑/n ，/w “/w 以防/v 今天/t 发生/v 的/u 事件/n 重演/v ”/w 。/w 
 居伦/nr 发表/v 声明/n ，/w 坚决/a 否认/v 自己/r 与/p 政变/v 有/v 关联/vn 。/w 
 “/w 我/r 以/p 最/d 强烈/a 的/u 措词/n 谴责/v 土耳其/ns 发生/v 的/u 政变/vn 。/w 
-作为/p 过去/t ５０年/t 多/m 次/q 政变/v 的/u 受害者/n ，/w 被/p 指责/v 为/v 与/p 这/r 起/q 政变/v 有/v 关联/vn ，/w 尤其/d 是/v 一/m 种/q 侮辱/v 。/w 
+作为/p 过去/t 50年/t 多/m 次/q 政变/v 的/u 受害者/n ，/w 被/p 指责/v 为/v 与/p 这/r 起/q 政变/v 有/v 关联/vn ，/w 尤其/d 是/v 一/m 种/q 侮辱/v 。/w 
 我/r 坚决/a 否认/v 这/r 种/q 指责/v ，/w ”/w 居伦/nr 说/v 。/w 
 【/w 敲打/v 美国/ns ？/w 】/w 
 耶尔德勒姆/nr 警告/v ，/w 任何/r 国家/n 如果/c 支持/v 居伦/nr ，/w “/w 将/d 不再/d 是/v 土耳其/ns 的/u 朋友/n ，/w 是/v 在/p 与/p 土耳其/ns 开战/v ”/w 。/w 
@@ -2926,14 +2926,14 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 这/r 是/v 7月/t 16日/t 在/p 土耳其/ns 首都/n 安卡拉/ns 的/u 总统府/n 和/c 宪兵/n 总部/n 大楼/n 路口/n 拍摄/v 的/u 在/p 政变/v 中/f 被/p 损毁/v 的/u 车辆/n 。/w 
 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 16日/t 说/v ，/w 土耳其/ns 15日/t 晚/t 军事/n 政变/v 已/d 致/v 194/m 人/n 丧生/v ，/w 包括/v 41/m 名/q 警察/n ，/w 49/m 名/q 平民/n ，/w 政变参与者/n 104/m 人/n 。/w 
 新华社/nt 记者/n 邹乐/nr 摄/v 
-新华社/nt 安卡拉/ns ７月/t １７日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 司法/n 部长/n 博兹达/nr １７日/t 说/v ，/w 约/d ６０００/m 名/q 军人/n 和/c 法官/n 因/p 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 这/r 将/d 成为/v “/w 土耳其/ns 历史/n 上/f 最/d 大/a 规模/n 的/u 案件/n ”/w 。/w 
-博兹达/nr 说/v ，/w 大约/d ３０００/m 名/q 军人/n 因/p 涉嫌/v “/w 推翻/v 政府/n ”/w 被/p 逮捕/v 。/w 
-１６日/t ，/w 土耳其/ns 检方/n 下令/v 逮捕/v 了/u ２７５０/m 名/q 涉嫌/v 参与/v “/w 居伦运动/n ”/w 的/u 法官/n 。/w 
-据/p 土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 截至/v 当地/s 时间/n １７日/t ２２时/t ，/w 至少/d ７０/m 名/q 军队/n 将领/n 因/c 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 包括/v 这/r 场/q 政变/v 的/u 主谋/n 、/w 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 以及/c 第二/m 军/n 军长/n 、/w 第三/m 军/n 军长/n 、/w 宪兵/n 司令/n 。/w 
+新华社/nt 安卡拉/ns 7月/t 17日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 司法/n 部长/n 博兹达/nr 17日/t 说/v ，/w 约/d 6000/m 名/q 军人/n 和/c 法官/n 因/p 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 这/r 将/d 成为/v “/w 土耳其/ns 历史/n 上/f 最/d 大/a 规模/n 的/u 案件/n ”/w 。/w 
+博兹达/nr 说/v ，/w 大约/d 3000/m 名/q 军人/n 因/p 涉嫌/v “/w 推翻/v 政府/n ”/w 被/p 逮捕/v 。/w 
+16日/t ，/w 土耳其/ns 检方/n 下令/v 逮捕/v 了/u 2750/m 名/q 涉嫌/v 参与/v “/w 居伦运动/n ”/w 的/u 法官/n 。/w 
+据/p 土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 截至/v 当地/s 时间/n 17日/t 22时/t ，/w 至少/d 70/m 名/q 军队/n 将领/n 因/c 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 包括/v 这/r 场/q 政变/v 的/u 主谋/n 、/w 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 以及/c 第二/m 军/n 军长/n 、/w 第三/m 军/n 军长/n 、/w 宪兵/n 司令/n 。/w 
 另外/c ，/w 土耳其/ns 总统/n 埃尔多安/nr 的/u 首席/n 军事/n 顾问/n 阿里·亚泽哲/nr 也/d 被/p 逮捕/v 。/w 
-土耳其/ns 西部/f 省份/n 代尼兹利/ns １７日/t 早晨/t 逮捕/v 了/u 卷入/v 政变/v 的/u ５２/m 名/q 高级/a 将领/n ，/w 包括/v 代尼兹利省/ns 的/u 军队/n 总司令/n 厄兹汗·厄兹巴克尔/nr 。/w 
+土耳其/ns 西部/f 省份/n 代尼兹利/ns 17日/t 早晨/t 逮捕/v 了/u 卷入/v 政变/v 的/u 52/m 名/q 高级/a 将领/n ，/w 包括/v 代尼兹利省/ns 的/u 军队/n 总司令/n 厄兹汗·厄兹巴克尔/nr 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 指责/v 在/p 美国/ns 流亡/v 的/u 宗教/n 人士/n 费特胡拉·居伦/nr 领导/v 的/u “/w 居伦运动/n ”/w 主导/v 了/u 此次/r 政变/v ，/w 呼吁/v 美国/ns 尽快/d 将/p 其/r 引渡/v 。/w 
-埃尔多安/nr １７日/t 在/p 伊斯坦布尔/ns 说/v ，/w 将/d 继续/v 清除/v “/w 居伦运动/n ”/w 的/u 支持者/n ，/w “/w 清除/v 这个/r 国家/n 体制/n 中/f 的/u 所有/b 病毒/n ”/w ，/w 未来/t 一/m 周/q 将/d 十分/d 关键/a 。/w 
+埃尔多安/nr 17日/t 在/p 伊斯坦布尔/ns 说/v ，/w 将/d 继续/v 清除/v “/w 居伦运动/n ”/w 的/u 支持者/n ，/w “/w 清除/v 这个/r 国家/n 体制/n 中/f 的/u 所有/b 病毒/n ”/w ，/w 未来/t 一/m 周/q 将/d 十分/d 关键/a 。/w 
 他/r 说/v ，/w 那些/r 发动政变者/n “/w 必须/d 付出/v 代价/n ”/w 。/w 
 目前/t ，/w 伊斯坦布尔/ns 检方/n 已/d 对/p 这/r 场/q 未遂/v 军事/n 政变/v 展开/v 调查/v ，/w 居伦/nr 成为/v 调查/v 的/u 头号/b 嫌犯/n 
 政变/v 未遂/v ，/w 土/ns 美/ns 关系/n 蒙/v 阴影/n 
@@ -2954,60 +2954,60 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 有/v 分析/vn 认为/v ，/w 虽然/c 土耳其/ns 和/c 美国/ns 同/d 为/v 北约/nt 成员国/n ，/w 但/c 两/m 国/n 在/p 叙利亚/ns 内战/n 以及/c 如何/r 对待/v 叙利亚/ns 库尔德人/n 组织/n 等/u 问题/n 上/f 存在/v 尖锐/a 分歧/n 。/w 
 此次/r 土耳其/ns 要求/n 引渡/v 居伦/nr ，/w 以及/c 指责/v 美国/ns 卷入/v 政变/v ，/w 可能/v 会/v 加剧/v 两/m 国/n 紧张/a 关系/n 。/w 
 美/ns 称/v 土耳其/ns 已/d 重开/v 打击/v “/w 伊斯兰国/nt ”/w 的/u 空军/n 基地/n 
-新华社/nt 华盛顿/ns ７月/t １７日/t 电/n （/w 记者/n 支林飞/nr ）/w 美军/n 参谋长/n 联席会议/n 主席/n 邓福德/nr １７日/t 表示/v ，/w 土耳其/ns 已/d 重新/d 开放/v １５日/t 未遂/v 军事/n 政变/v 后/f 被/p 关闭/v 的/u 因吉尔利克空军基地/n 的/u 领空/n ，/w 美国/ns 恢复/v 了/u 利用/v 该/r 基地/n 对/p 伊拉克/ns 和/c 叙利亚/ns 境内/s 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 行动/vn 。/w 
+新华社/nt 华盛顿/ns 7月/t 17日/t 电/n （/w 记者/n 支林飞/nr ）/w 美军/n 参谋长/n 联席会议/n 主席/n 邓福德/nr 17日/t 表示/v ，/w 土耳其/ns 已/d 重新/d 开放/v 15日/t 未遂/v 军事/n 政变/v 后/f 被/p 关闭/v 的/u 因吉尔利克空军基地/n 的/u 领空/n ，/w 美国/ns 恢复/v 了/u 利用/v 该/r 基地/n 对/p 伊拉克/ns 和/c 叙利亚/ns 境内/s 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 行动/vn 。/w 
 邓福德/nr 是/v 在/p 结束/v 对/p 阿富汗/ns 访问/v 后/f 在/p 返/v 美/ns 专机/n 上/f 对/p 媒体/n 作/v 上述/b 表示/v 的/u 。/w 
 他/r 说/v ，/w 目前/t 美/ns 没有/v 任何/r 调整/v 其/r 在/p 土耳其/ns 军事/n 部署/v 的/u 计划/n 。/w 
-邓福德/nr 说/v ，/w 他/r 对/p 土耳其/ns 在/p 政变/v 后/f ２４/m 小时/n 内/f 迅速/a 恢复/v 该/r 基地/n 运行/v 表示/v 高兴/a 。/w 
+邓福德/nr 说/v ，/w 他/r 对/p 土耳其/ns 在/p 政变/v 后/f 24/m 小时/n 内/f 迅速/a 恢复/v 该/r 基地/n 运行/v 表示/v 高兴/a 。/w 
 美/ns 与/c 作为/p 北约/nt 盟友/n 的/u 土耳其/ns 在/p 政治/n 、/w 经济/n 和/c 安全/a 方面/n 拥有/v 广泛/a 关系/n 。/w 
 美/ns 当前/t 最/d 关心/v 的/u 是/v 打击/v “/w 伊斯兰国/nt ”/w 行动/v 和/c 美/ns 土/ns 在/p 这/r 方面/n 结成/v 的/u 伙伴/n 关系/n 。/w 
 他/r 称/v ，/w 美方/n 事先/d 没有/d 看到/v 任何/r 土耳其/ns 将/d 发生/v 军事/n 政变/v 的/u 迹象/n ，/w 政变/v 令/v 其/r 感到/v “/w 意外/a ”/w 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v ，/w 政变/v 导致/v 美/ns 土/ns 关系/n 紧张/a 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 一/m 起/q 未遂/v 军事/n 政变/v ，/w 政变/v 导致/v 美/ns 土/ns 关系/n 紧张/a 。/w 
 土/ns 政府/n 不仅/c 封闭/v 因吉尔利克空军基地/ns ，/w 还/d 指责/v 流亡/v 美国/ns 的/u 土耳其/ns 宗教/n 人士/n 费特胡拉·居伦/nr 在/p 幕后/s 策划/v 这/r 次/q 政变/v ，/w 并/c 要求/v 美/ns 将/p 他/r 引渡/v 回/v 土耳其/ns 。/w 
 美国/ns 国务卿/n 克里/nr 已经/d 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 确凿/a 证据/n 。/w 
 沙特/ns 逮捕/v 一/m 名/q 涉嫌/v 参与/v 政变/v 的/u 土耳其/ns 武官/n 
-新华社/nt 利雅得/ns ７月/t １８日/t 电/n （/w 记者/n 王波/nr ）/w 沙特阿拉伯/ns 的/u 阿拉比亚电视台/nt １８日/t 报道/v 说/v ，/w 沙特/ns 警方/n 应/v 土耳其政府/nt 要求/v 逮捕/v 了/u 一/m 名/q 涉嫌/v 参与/v 政变/v 的/u 土耳其/ns 驻/v 科威特/n 武官/n 。/w 
+新华社/nt 利雅得/ns 7月/t 18日/t 电/n （/w 记者/n 王波/nr ）/w 沙特阿拉伯/ns 的/u 阿拉比亚电视台/nt 18日/t 报道/v 说/v ，/w 沙特/ns 警方/n 应/v 土耳其政府/nt 要求/v 逮捕/v 了/u 一/m 名/q 涉嫌/v 参与/v 政变/v 的/u 土耳其/ns 驻/v 科威特/n 武官/n 。/w 
 阿拉比亚电视台/nt 的/u 简短/a 滚动/vn 字幕/n 说/v ，/w 该/r 武官/n 当天/t 在/p 沙特/ns 东部/f 城市/n 达曼/ns 的/u 法赫德国王/ns 国际/n 机场/n 被/p 逮捕/v 。/w 
 被捕/v 时/n ，/w 该/r 武官/n 正/d 准备/v 过境/v 前往/v 欧洲/ns 某国/r 。/w 
 沙特/ns 与/p 土耳其/ns 保持/v 着/u 战略/n 同盟/n 关系/n ，/w 在/p 中东/ns 一系列/b 问题/n 特别/d 是/v 在/p 叙利亚/ns 问题/n 上/f 相互/d 支持/v 。/w 
 去年底/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 访问/v 沙特/ns ，/w 两/m 国/n 宣布/v 成立/v 战略/n 合作/v 委员会/n 。/w 
-土耳其/ns １５日/t 晚/t 发生/v 未遂/v 政变/v 。/w 
+土耳其/ns 15日/t 晚/t 发生/v 未遂/v 政变/v 。/w 
 在/p 政变/v 被/p 挫败/v 后/f ，/w 沙特/ns 国王/n 萨勒曼/nr 在/p 第一/m 时间/n 向/p 埃尔多安/nr 发/v 去/v 贺电/n ，/w 祝贺/v 土耳其/ns 恢复/v 安全/a 和/c 秩序/n 。/w 
 土耳其/ns 总统/n 命令/n 战机/n 全国/n 范围/n 内/f 巡逻/v 
-新华社/nt 安卡拉/ns ７月/t １８日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 据/p 土耳其/ns 阿纳多卢通讯社/nt １８日/t 报道/v ，/w 土/ns 总统/n 埃尔多安/nr １７日/t 下令/v 土/ns 军方/n Ｆ－１６/nx 战机/n 在/p 全国/n 范围/n 内/f 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 控制/vn 和/c 警戒/vn ，/w 以/c 进一步/d 推动/v 针对/p 土/ns 境内/s 的/u 反/b 政府/n 军人/n 、/w 警察/n 及/c 司法/n 人士/n 的/u “/w 肃清/vn ”/w 行动/vn 。/w 
+新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 据/p 土耳其/ns 阿纳多卢通讯社/nt 18日/t 报道/v ，/w 土/ns 总统/n 埃尔多安/nr 17日/t 下令/v 土/ns 军方/n F－16/nx 战机/n 在/p 全国/n 范围/n 内/f 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 控制/vn 和/c 警戒/vn ，/w 以/c 进一步/d 推动/v 针对/p 土/ns 境内/s 的/u 反/b 政府/n 军人/n 、/w 警察/n 及/c 司法/n 人士/n 的/u “/w 肃清/vn ”/w 行动/vn 。/w 
 另/r 据/p 报道/v ，/w 伊斯坦布尔安全总局/nt 局长/n 恰勒什坎/nr 也/d 下令/v 支持/v 政府/n 的/u 部队/n 可/v 在/p 伊斯坦布尔/ns 空域/n 随时/d 击落/v 任何/r 可疑/a 的/u 武装/vn 直升机/n 。/w 
-土耳其/ns １５日/t 夜/t 发生/v 未遂/v 军事/n 政变/v ，/w 事发/v 时/n 部分/m 战机/n 被/p 政变/vn 军人/n 掌控/v 。/w 
+土耳其/ns 15日/t 夜/t 发生/v 未遂/v 军事/n 政变/v ，/w 事发/v 时/n 部分/m 战机/n 被/p 政变/vn 军人/n 掌控/v 。/w 
 政府/n 在/p 不/d 到/v 一/m 天/q 时间/n 里/f 控制/v 局势/n 。/w 
 埃尔多安/nr 随后/d 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变发动者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
-土耳其外交部/nt １７日/t 发布/v 声明/n 说/v ，/w 土/ns 政府/n 主导/v 的/u “/w 肃清/vn ”/w 行动/vn 已/d 在/p 军队/n 和/c 司法界/n 展开/v ，/w 目前/t 已/d 逮捕/v ６０００/m 多/a 名/q 涉嫌/vn 人员/n ，/w “/w 肃清/v ”/w 行动/v 还/d 将/d 在/p 土/ns 全国/n 范围/n 内/f 继续/v 。/w 
-声明/n 说/v ，/w 这/r 场/q 未遂/v 政变/v 已/d 造成/v ２９０/m 多/m 人/n 死亡/v ，/w 其中/r 包括/v １９０/m 多/m 名/q 平民/n 、/w 警察/n 和/c １００/m 多/m 名/q 政变/vn 分子/n 。/w 
-据/p 土耳其/ns 《/w 自由报/nz 》/w １８日/t 报道/v ，/w 目前/t “/w 肃清/v ”/w 行动/v 已/d 扩大/v 到/p 警察/n 队伍/n ，/w 并/c 已/d 有/v ７８５０/m 多/m 名/q 警察/n 被/p 停职/v 审查/v ，/w 其中/r 包括/v 多/a 名/q 高官/n 。/w 
+土耳其外交部/nt 17日/t 发布/v 声明/n 说/v ，/w 土/ns 政府/n 主导/v 的/u “/w 肃清/vn ”/w 行动/vn 已/d 在/p 军队/n 和/c 司法界/n 展开/v ，/w 目前/t 已/d 逮捕/v 6000/m 多/a 名/q 涉嫌/vn 人员/n ，/w “/w 肃清/v ”/w 行动/v 还/d 将/d 在/p 土/ns 全国/n 范围/n 内/f 继续/v 。/w 
+声明/n 说/v ，/w 这/r 场/q 未遂/v 政变/v 已/d 造成/v 290/m 多/m 人/n 死亡/v ，/w 其中/r 包括/v 190/m 多/m 名/q 平民/n 、/w 警察/n 和/c 100/m 多/m 名/q 政变/vn 分子/n 。/w 
+据/p 土耳其/ns 《/w 自由报/nz 》/w 18日/t 报道/v ，/w 目前/t “/w 肃清/v ”/w 行动/v 已/d 扩大/v 到/p 警察/n 队伍/n ，/w 并/c 已/d 有/v 7850/m 多/m 名/q 警察/n 被/p 停职/v 审查/v ，/w 其中/r 包括/v 多/a 名/q 高官/n 。/w 
 土耳其/ns 加强/v 伊斯坦布尔/ns 安全/a 警戒/v 
-新华社/nt 伊斯坦布尔/ns ７月/t １８日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 未遂/v 军事/n 政变/v 发生/v 后/f ，/w 土/ns 政府/n １８日/t 起/v 在/p 该国/r 最/d 大/a 城市/n 伊斯坦布尔/ns 加强/v 安全/a 警戒/v ，/w 派遣/v 特种部队/n 在/p 伊斯坦布尔/ns 街头/s 巡逻/v 。/w 
-据/p 土耳其/ns 媒体/n １８日/t 报道/v ，/w 目前/t 在/p 伊斯坦布尔/ns 市区/s 巡逻/v 的/u 特种部队/n 有/v １８００/m 人/n ，/w 他们/r 在/p 警方/n 配合/v 下/f 在/p 伊斯坦布尔/ns 市内/s 数十/m 条/q 街巷/n 巡逻/v ，/w 该市/r 重要/a 设施/n 的/u 安保/n 力量/n 也/d 得到/v 加强/v 。/w 
-据/p 报道/v ，/w 土耳其/ns 总统/n 埃尔多安/nr １７日/t 还/d 下令/v 空军/n 战机/n 在/p 全国/n 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 管控/v 和/c 警戒/v 。/w 
+新华社/nt 伊斯坦布尔/ns 7月/t 18日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 未遂/v 军事/n 政变/v 发生/v 后/f ，/w 土/ns 政府/n 18日/t 起/v 在/p 该国/r 最/d 大/a 城市/n 伊斯坦布尔/ns 加强/v 安全/a 警戒/v ，/w 派遣/v 特种部队/n 在/p 伊斯坦布尔/ns 街头/s 巡逻/v 。/w 
+据/p 土耳其/ns 媒体/n 18日/t 报道/v ，/w 目前/t 在/p 伊斯坦布尔/ns 市区/s 巡逻/v 的/u 特种部队/n 有/v 1800/m 人/n ，/w 他们/r 在/p 警方/n 配合/v 下/f 在/p 伊斯坦布尔/ns 市内/s 数十/m 条/q 街巷/n 巡逻/v ，/w 该市/r 重要/a 设施/n 的/u 安保/n 力量/n 也/d 得到/v 加强/v 。/w 
+据/p 报道/v ，/w 土耳其/ns 总统/n 埃尔多安/nr 17日/t 还/d 下令/v 空军/n 战机/n 在/p 全国/n 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 管控/v 和/c 警戒/v 。/w 
 伊斯坦布尔/ns 警方/n 已/d 接管/v 该市/r 全部/m 直升机/n 停机坪/n ，/w 并/c 对/p 城市/n 上空/s 飞行/v 实施/v 限制/v 。/w 
-土耳其/ns １５日/t 晚/t 突发/v 军事/n 政变/v ，/w １６日/t 凌晨/t 政变/v 遭/v 挫败/v 。/w 
-埃尔多安/nr 自/p １６日/t 凌晨/t 起/v 一直/d 在/p 伊斯坦布尔/ns 坐镇/v 应对/v 此次/r 政变/v 。/w 
+土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 16日/t 凌晨/t 政变/v 遭/v 挫败/v 。/w 
+埃尔多安/nr 自/p 16日/t 凌晨/t 起/v 一直/d 在/p 伊斯坦布尔/ns 坐镇/v 应对/v 此次/r 政变/v 。/w 
 目前/t ，/w 土耳其/ns 军队/n 、/w 警察/n 和/c 司法/n 机构/n 中/f 大量/m 人员/n 因/p 涉嫌/v 参与/v 政变/v 而/c 被捕/v 。/w 
 土耳其/ns 总理/n 说/v 能否/v 引渡/v 居伦/nr 考验/v 土/ns 美/ns 关系/n 
-新华社/nt 安卡拉/ns ７月/t １８日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr １８日/t 在/p 安卡拉/ns 表示/v ，/w 能否/v 成功/a 从/p 美国/ns 引渡/v “/w 居伦运动/n ”/w 领导人/n 费特胡拉·居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
-耶尔德勒姆/nr 当天/t 在/p 内阁/n 会议/n 的/u 新闻/n 发布会/n 上/f 说/v ，/w １５日/t 晚/t 土耳其/ns 发生/v 未遂/v 军事/n 政变/v ，/w 这/r 就是/v 土耳其/ns 需要/v 从/p 美国/ns 引渡/v 居伦/nr 的/u 最佳/z 证据/n 。/w 
-耶尔德勒姆/nr 说/v ，/w 此次/r 未遂/v 军事/n 政变/v 导致/v ２０８/m 人/n 死亡/v ，/w 其中/r 包括/v ６０/m 名/q 警察/n 、/w ３/m 名/q 士兵/n 和/c １４５/m 名/q 平民/n ，/w 另/d 有/v １４９１/m 人/n 受伤/v 。/w 
-政变参与者/n 方面/n 则/c 有/v ２４/m 人/n 被/p 打/v 死/v ，/w ５０/m 人/n 受伤/v 。/w 
-土耳其外交部/nt １７日/t 曾/d 发布/v 声明/n 说/v ，/w 未遂/v 政变/v 造成/v ２９０/m 多/m 人/n 死亡/v ，/w 其中/r 包括/v 平民/n 、/w 警察/n 和/c 政变/vn 分子/n 。/w 
-耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v ７０００/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
-此外/c ，/w 有/v ２７００/m 余/m 名/q 司法界/n 人员/n 、/w １０２００/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
-土耳其/ns 总统/n 埃尔多安/nr １７日/t 指责/v 居伦/nr 是/v 此次/r 土耳其/ns 未遂/v 政变/v 的/u 主谋/n ，/w 他/r 要求/v 美国/ns 向/p 土耳其/ns 引渡/v 居伦/nr 。/w 
+新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 18日/t 在/p 安卡拉/ns 表示/v ，/w 能否/v 成功/a 从/p 美国/ns 引渡/v “/w 居伦运动/n ”/w 领导人/n 费特胡拉·居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
+耶尔德勒姆/nr 当天/t 在/p 内阁/n 会议/n 的/u 新闻/n 发布会/n 上/f 说/v ，/w 15日/t 晚/t 土耳其/ns 发生/v 未遂/v 军事/n 政变/v ，/w 这/r 就是/v 土耳其/ns 需要/v 从/p 美国/ns 引渡/v 居伦/nr 的/u 最佳/z 证据/n 。/w 
+耶尔德勒姆/nr 说/v ，/w 此次/r 未遂/v 军事/n 政变/v 导致/v 208/m 人/n 死亡/v ，/w 其中/r 包括/v 60/m 名/q 警察/n 、/w 3/m 名/q 士兵/n 和/c 145/m 名/q 平民/n ，/w 另/d 有/v 1491/m 人/n 受伤/v 。/w 
+政变参与者/n 方面/n 则/c 有/v 24/m 人/n 被/p 打/v 死/v ，/w 50/m 人/n 受伤/v 。/w 
+土耳其外交部/nt 17日/t 曾/d 发布/v 声明/n 说/v ，/w 未遂/v 政变/v 造成/v 290/m 多/m 人/n 死亡/v ，/w 其中/r 包括/v 平民/n 、/w 警察/n 和/c 政变/vn 分子/n 。/w 
+耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v 7000/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
+此外/c ，/w 有/v 2700/m 余/m 名/q 司法界/n 人员/n 、/w 10200/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
+土耳其/ns 总统/n 埃尔多安/nr 17日/t 指责/v 居伦/nr 是/v 此次/r 土耳其/ns 未遂/v 政变/v 的/u 主谋/n ，/w 他/r 要求/v 美国/ns 向/p 土耳其/ns 引渡/v 居伦/nr 。/w 
 美国/ns 国务卿/n 克里/nr 则/c 表示/v ，/w 美方/n 将/d 考虑/v 土方/n 引渡/vn 请求/n ，/w 但/c 土方/n 需/v 提供/v 证明/v 居伦/nr （/w 参与/v 未遂/v 政变/v ）/w 的/u 确凿/a 证据/n 。/w 
-居伦/nr 已/d 否认/v 与/p 土耳其/ns １５日/t 发生/v 的/u 未遂/vn 政变/vn 有/v 任何/r 关联/v 。/w 
+居伦/nr 已/d 否认/v 与/p 土耳其/ns 15日/t 发生/v 的/u 未遂/vn 政变/vn 有/v 任何/r 关联/v 。/w 
 土耳其/ns 持续/v “/w 清理/v ”/w 引/v 疑虑/n 部分/m 高级/a 军官/n “/w 逃/v 国外/s ”/w 
-土耳其安全部队/nt １８日/t 针对/p 涉嫌/v 参与/v 未遂/v 军事/n 政变/v 的/u 人员/n 展开/v 新/a 一/m 轮/q 搜捕/v 。/w 
+土耳其安全部队/nt 18日/t 针对/p 涉嫌/v 参与/v 未遂/v 军事/n 政变/v 的/u 人员/n 展开/v 新/a 一/m 轮/q 搜捕/v 。/w 
 官方/n 阿纳多卢通讯社/nt 报道/v ，/w 伊斯坦布尔/ns 反恐/vn 特警/n 部队/n 当天/t 上午/t 对/p 当地/s 一/m 所/q 空军学院/n 展开/v 行动/v ，/w 搜捕/v 政变/vn 嫌疑人/n 。/w 
 同时/t ，/w 政变/v 期间/f 指挥/v 扣押/v 武装部队/n 总参谋长/n 胡卢西·阿卡尔/nr 的/u 将军/n 穆罕默德·迪什利/nr 被/p 拘捕/v 。/w 
-按照/p 土耳其/ns 当局/n 和/c 官方/n 媒体/n 的/u 说法/n ，/w 已/d 有/v 大约/d ６０００/m 人/n 因/p １５日/t 的/u 未遂/vn 政变/vn 被捕/v ，/w 其中/r 包括/v ３６/m 名/q 将军/n 。/w 
-路透社/nz 援引/v 土耳其安全部门/nt 一/m 名/q 高级/a 官员/n １８日/t 的/u 话/n 报道/v ，/w 安全/a 部队/n 仍/d 在/p 多/a 地/u 搜寻/v 政变/vn 嫌疑人/n 及其/c 武器/n ，/w 一些/m 高/a 级别/n 军官/n “/w 已经/d 逃往/v 国外/s ”/w ，/w 土耳其/ns 军队/n 指挥层/n 组织/n 架构/n 因/p 这/r 次/q 政变/v 受到/v “/w 重击/v ”/w ，/w 但/c 仍/d 能/v 与/p 情报/n 机构/n 、/w 警方/n 和/c 政府/n 协作/v ，/w 目前/t 没有/v “/w 再次/d 夺权/v ”/w 的/u 危险/an 。/w 
+按照/p 土耳其/ns 当局/n 和/c 官方/n 媒体/n 的/u 说法/n ，/w 已/d 有/v 大约/d 6000/m 人/n 因/p 15日/t 的/u 未遂/vn 政变/vn 被捕/v ，/w 其中/r 包括/v 36/m 名/q 将军/n 。/w 
+路透社/nz 援引/v 土耳其安全部门/nt 一/m 名/q 高级/a 官员/n 18日/t 的/u 话/n 报道/v ，/w 安全/a 部队/n 仍/d 在/p 多/a 地/u 搜寻/v 政变/vn 嫌疑人/n 及其/c 武器/n ，/w 一些/m 高/a 级别/n 军官/n “/w 已经/d 逃往/v 国外/s ”/w ，/w 土耳其/ns 军队/n 指挥层/n 组织/n 架构/n 因/p 这/r 次/q 政变/v 受到/v “/w 重击/v ”/w ，/w 但/c 仍/d 能/v 与/p 情报/n 机构/n 、/w 警方/n 和/c 政府/n 协作/v ，/w 目前/t 没有/v “/w 再次/d 夺权/v ”/w 的/u 危险/an 。/w 
 土耳其政府/nt 对/p 这/r 次/q 未遂/v 政变/v 的/u 处置/vn 方式/n 引发/v 欧盟/nt 等/u 方面/n 疑虑/n 。/w 
-欧盟/nt 外交/n 和/c 安全/a 政策/n 高级/a 代表/n 费代丽卡·莫盖里尼/nr １８日/t 说/v ，/w 土耳其政府/nt 必须/d 保护/v 法治/n 。/w 
+欧盟/nt 外交/n 和/c 安全/a 政策/n 高级/a 代表/n 费代丽卡·莫盖里尼/nr 18日/t 说/v ，/w 土耳其政府/nt 必须/d 保护/v 法治/n 。/w 
 （/w 新华社/nt 微特稿/n ）/w （/w 郜婕/nr ）/w 
 “/w 短命/a ”/w 政变/v 会/v 给/p 土耳其/ns 带来/v 多/d 大/a 冲击/v ？/w 
 中东/ns 地区/n 大国/n 土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 持续/v 数/v 小时/n 即/d 被/p “/w 绞杀/v ”/w 。/w 
@@ -3029,49 +3029,49 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 中国国际问题研究院/nt 副/b 院长/n 董漫远/nr 认为/v ，/w 经过/p 此次/r 事件/n ，/w 在/p 从/p 内阁制/n 转向/v 总统制/n 、/w 修改/v 宪法/n 、/w 进一步/d 限制/v 军方/n 权力/n 等/u 方面/n ，/w 埃尔多安/nr 都/d 将/d 占据/v 更/d 大/a 优势/n 。/w 
 土/ns 总统/n 座机/n 曾/d 遭/v 叛军/n 战机/n 雷达/n 锁定/v 离/v 死亡/v 就/d 差/v 几/m 分钟/q 
 知情/vn 人士/n 说/v ，/w 土耳其/ns 未遂/v 政变/v 发生/v 后/f ，/w 总统/n 雷杰普·塔伊普·埃尔多安/nr 乘坐/v 的/u 飞机/n 在/p 空中/s 遭/v 叛军/n 战斗机/n 侵扰/v ，/w 并/c 被/p 叛军/n 战斗机/n 雷达/n 锁定/v 。/w 
-土耳其/ns 当地/s 时间/n １５日/t 晚/t 政变/v 发生/v 后/f ，/w 埃尔多安/nr 中断/v 在/p 土耳其/ns 海滨/s 城市/n 马尔马里斯/ns 的/u 休假/vn ，/w 于/p １６日/t 凌晨/t 乘/v 专机/n 抵达/v 伊斯坦布尔/ns 机场/n 。/w 
-一/m 名/q 了解/v 情况/n 的/u 土耳其/ns 前/f 军方/n 官员/n 告诉/v 路透社/nz 记者/n ，/w 埃尔多安/nr 当时/t 从/p 马尔马里斯/ns 附近/f 坐/v 飞机/n 返回/v 伊斯坦布尔/ns ，/w 飞机/n 在/p 空中/s 飞行/v 时/n ，/w “/w 至少/d 两/m 架/q Ｆ－１６/nx 战斗机/n 对/p 它/r 进行/v 侵扰/vn 。/w 
-它们/r 用/p 雷达/n 锁定/v 了/u 埃尔多安/nr 的/u 飞机/n 和/c 另外/r 两/m 架/q 保护/v 埃尔多安/nr 的/u Ｆ－１６/nx 战斗机/n ”/w 。/w 
+土耳其/ns 当地/s 时间/n 15日/t 晚/t 政变/v 发生/v 后/f ，/w 埃尔多安/nr 中断/v 在/p 土耳其/ns 海滨/s 城市/n 马尔马里斯/ns 的/u 休假/vn ，/w 于/p 16日/t 凌晨/t 乘/v 专机/n 抵达/v 伊斯坦布尔/ns 机场/n 。/w 
+一/m 名/q 了解/v 情况/n 的/u 土耳其/ns 前/f 军方/n 官员/n 告诉/v 路透社/nz 记者/n ，/w 埃尔多安/nr 当时/t 从/p 马尔马里斯/ns 附近/f 坐/v 飞机/n 返回/v 伊斯坦布尔/ns ，/w 飞机/n 在/p 空中/s 飞行/v 时/n ，/w “/w 至少/d 两/m 架/q F－16/nx 战斗机/n 对/p 它/r 进行/v 侵扰/vn 。/w 
+它们/r 用/p 雷达/n 锁定/v 了/u 埃尔多安/nr 的/u 飞机/n 和/c 另外/r 两/m 架/q 保护/v 埃尔多安/nr 的/u F－16/nx 战斗机/n ”/w 。/w 
 这/r 名/q 前/f 军方/n 官员/n 说/v ，/w 不/d 清楚/v 这/r 两/m 架/q 战斗机/n 为何/r 没有/d 向/p 埃尔多安/nr 的/u 座机/n 开火/v 。/w 
-一/m 名/q 土耳其/ns 高级/a 官员/n 确认/v ，/w 埃尔多安/nr 乘坐/v 的/u 飞机/n 在/p 前往/v 伊斯坦布尔/ns 途中/s 遭/v 两/m 架/q 被/p 政变者/n 夺取/v 的/u Ｆ－１６/nx 战斗机/n 侵扰/v 。/w 
+一/m 名/q 土耳其/ns 高级/a 官员/n 确认/v ，/w 埃尔多安/nr 乘坐/v 的/u 飞机/n 在/p 前往/v 伊斯坦布尔/ns 途中/s 遭/v 两/m 架/q 被/p 政变者/n 夺取/v 的/u F－16/nx 战斗机/n 侵扰/v 。/w 
 另/r 一/m 名/q 土耳其/ns 高级/a 官员/n 也/d 表示/v ，/w 埃尔多安/nr 的/u 飞机/n 在/p “/w 空中/s 遇到/v 麻烦/a ”/w 。/w 
 他/r 还/d 说/v ，/w 埃尔多安/nr 在/p 马尔马里斯/ns “/w 离/v 死亡/v 就/d 差/v 几/m 分钟/q ”/w 。/w 
 埃尔多安/nr 先前/f 称/v ，/w 他/r 离开/v 在/p 马尔马里斯/ns 下榻/v 的/u 度假/vn 酒店/n 不久/m ，/w 酒店/n 就/d 遭到/v 政变/vn 军人/n 攻击/v 。/w 
 这/r 名/q 官员/n 还/d 透露/v ，/w 总理/n 比纳利·耶尔德勒姆/nr 在/p 伊斯坦布尔/ns 也/d 差点/d 遭遇/v 袭击/v 。/w 
-多/a 家/q 航班/n 追踪/v 网站/n 的/u 数据/n 显示/v ，/w 与/p 土耳其政府/nt 公务/n 飞机/n 型号/n 一致/a 的/u 一/m 架/q 飞机/n 于/p 格林尼治/ns 时间/n １５日/t 晚/t １０时/t ４０分/t 左右/m 从/p 距/p 马尔马里斯/ns 大约/d １/m 小时/n 的/u 达拉曼机场/ns 起飞/v ，/w 最后/f 降落/v 在/p 伊斯坦布尔/ns 。/w 
-一/m 名/q 土耳其/ns 前/f 军方/n 官员/n 说/v ，/w 空中/s 方面/n 的/u 政变/vn 图谋/n 集中/a 在/p 距/p 安卡拉/ns 约/d ５０/m 公里/q 的/u 阿肯哲空军基地/ns ，/w 至少/d １５/m 名/q 飞行员/n 在/p 一/m 名/q 政变/vn 指挥官/n 命令/n 下/f 参与/v 政变/vn 图谋/n 。/w 
-路透社/nz 报道/v ，/w １５日/t 晚/t ，/w 来自/v 阿肯哲基地/ns 的/u 叛军/n 飞机/n 在/p 伊斯坦布尔/ns 和/c 安卡拉/ns 上空/s 反复/d 低空/s 飞行/v 。/w 
+多/a 家/q 航班/n 追踪/v 网站/n 的/u 数据/n 显示/v ，/w 与/p 土耳其政府/nt 公务/n 飞机/n 型号/n 一致/a 的/u 一/m 架/q 飞机/n 于/p 格林尼治/ns 时间/n 15日/t 晚/t 10时/t 40分/t 左右/m 从/p 距/p 马尔马里斯/ns 大约/d 1/m 小时/n 的/u 达拉曼机场/ns 起飞/v ，/w 最后/f 降落/v 在/p 伊斯坦布尔/ns 。/w 
+一/m 名/q 土耳其/ns 前/f 军方/n 官员/n 说/v ，/w 空中/s 方面/n 的/u 政变/vn 图谋/n 集中/a 在/p 距/p 安卡拉/ns 约/d 50/m 公里/q 的/u 阿肯哲空军基地/ns ，/w 至少/d 15/m 名/q 飞行员/n 在/p 一/m 名/q 政变/vn 指挥官/n 命令/n 下/f 参与/v 政变/vn 图谋/n 。/w 
+路透社/nz 报道/v ，/w 15日/t 晚/t ，/w 来自/v 阿肯哲基地/ns 的/u 叛军/n 飞机/n 在/p 伊斯坦布尔/ns 和/c 安卡拉/ns 上空/s 反复/d 低空/s 飞行/v 。/w 
 埃尔多安/nr 在/p 控制/v 局势/n 后/f 表示/v ，/w 他/r 将/d “/w 肃清/v ”/w 政变者/n ，/w 以/c 保持/v 土耳其/ns 军队/n 的/u “/w 干净/an ”/w 。/w 
-土耳其外交部/nt １７日/t 说/v ，/w 政府/n 主导/v 的/u “/w 肃清/vn ”/w 行动/vn 已/d 在/p 军队/n 和/c 司法/n 部门/n 展开/v ，/w 目前/t 已/d 逮捕/v ６０００/m 多/m 名/q 涉嫌/vn 人员/n ，/w “/w 肃清/v ”/w 行动/v 还/d 将/d 在/p 全国/n 范围/n 继续/v 。/w 
-声明/n 说/v ，/w 这/r 场/q 政变/v 已/d 造成/v ２９０/m 多/m 人/n 死亡/v ，/w 包括/v １９０/m 多/m 名/q 平民/n 、/w 警察/n 和/c １００/m 多/m 名/q 政变/vn 人员/n 。/w 
-土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 截至/v １７日/t 晚上/t ，/w 至少/d ７０/m 名/q 军队/n 将领/n 因/p 这/r 次/q 未遂/v 政变/v 被/p 逮捕/v ，/w 包括/v 被/p 认为/v 是/v 主谋/n 的/u 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 以及/c 土耳其/ns 军队/n 第二/m 军/n 军长/n 、/w 第三/m 军/n 军长/n 、/w 宪兵/n 司令/n 。/w 
+土耳其外交部/nt 17日/t 说/v ，/w 政府/n 主导/v 的/u “/w 肃清/vn ”/w 行动/vn 已/d 在/p 军队/n 和/c 司法/n 部门/n 展开/v ，/w 目前/t 已/d 逮捕/v 6000/m 多/m 名/q 涉嫌/vn 人员/n ，/w “/w 肃清/v ”/w 行动/v 还/d 将/d 在/p 全国/n 范围/n 继续/v 。/w 
+声明/n 说/v ，/w 这/r 场/q 政变/v 已/d 造成/v 290/m 多/m 人/n 死亡/v ，/w 包括/v 190/m 多/m 名/q 平民/n 、/w 警察/n 和/c 100/m 多/m 名/q 政变/vn 人员/n 。/w 
+土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 截至/v 17日/t 晚上/t ，/w 至少/d 70/m 名/q 军队/n 将领/n 因/p 这/r 次/q 未遂/v 政变/v 被/p 逮捕/v ，/w 包括/v 被/p 认为/v 是/v 主谋/n 的/u 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 以及/c 土耳其/ns 军队/n 第二/m 军/n 军长/n 、/w 第三/m 军/n 军长/n 、/w 宪兵/n 司令/n 。/w 
 另外/c ，/w 埃尔多安/nr 的/u 首席/n 军事/n 顾问/n 阿里·亚泽哲/nr 也/d 被/p 逮捕/v 。/w 
 （/w 吕天然/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 穆迪/nr 或将/d 下调/v 土耳其/ns 主权/n 信用/n 评级/v 
-新华社/nt 纽约/ns ７月/t １８日/t 专电/n 国际评级机构/nt 穆迪/nr １８日/t 宣布/v ，/w 受/v 土耳其/ns 发生/v 未遂/v 军事/n 政变/v 等/u 因素/n 影响/v ，/w 穆迪/nr 决定/v 将/p 土耳其/ns 主权/n 信用/n 评级/v 纳入/v 评级/v 下调/v 观察/vn 名单/n 。/w 
-目前/t 穆迪/nr 对/p 土耳其/ns 的/u 主权/n 信用/n 评级/v 为/v Ｂａａ３/nx 。/w 
+新华社/nt 纽约/ns 7月/t 18日/t 专电/n 国际评级机构/nt 穆迪/nr 18日/t 宣布/v ，/w 受/v 土耳其/ns 发生/v 未遂/v 军事/n 政变/v 等/u 因素/n 影响/v ，/w 穆迪/nr 决定/v 将/p 土耳其/ns 主权/n 信用/n 评级/v 纳入/v 评级/v 下调/v 观察/vn 名单/n 。/w 
+目前/t 穆迪/nr 对/p 土耳其/ns 的/u 主权/n 信用/n 评级/v 为/v Bace3/nx 。/w 
 这/r 意味着/v 一旦/c 评级/v 被/p 下调/v ，/w 土耳其/ns 将/d 丧失/v “/w 投资级/n ”/w 评级/v ，/w 被/p 降/v 至/p “/w 投机级/n ”/w 甚至/d “/w 垃圾级/n ”/w 。/w 
-穆迪/nr 当天/t 在/p 一/m 份/q 声明/n 中/f 说/v ，/w 考虑/v 到/p １５日/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 对/p 土耳其/ns 经济/n 增长/v 、/w 政策/n 制定/v 及/c 外部/f 融资/vn 环境/n 等/u 可能/n 产生/v 的/u 中期/f 影响/vn ，/w 穆迪/nr 决定/v 将/p 土耳其/ns 主权/n 信用/n 评级/v 纳入/v 评级/v 下调/v 观察/vn 名单/n 。/w 
+穆迪/nr 当天/t 在/p 一/m 份/q 声明/n 中/f 说/v ，/w 考虑/v 到/p 15日/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 对/p 土耳其/ns 经济/n 增长/v 、/w 政策/n 制定/v 及/c 外部/f 融资/vn 环境/n 等/u 可能/n 产生/v 的/u 中期/f 影响/vn ，/w 穆迪/nr 决定/v 将/p 土耳其/ns 主权/n 信用/n 评级/v 纳入/v 评级/v 下调/v 观察/vn 名单/n 。/w 
 声明/n 说/v ，/w 军事/n 政变/v 虽/c 被/p 挫败/v ，/w 但/c 事件/n 的/u 发生/vn 反映/v 出/v 土耳其/ns 面临/v 的/u 广泛/a 政治/n 挑战/vn 。/w 
 国内/s 政治/n 不确定性/n 的/u 增加/vn 可能/n 会/v 对/p 土耳其/ns 经济/n 增长/v 带来/v 较/d 大/a 负面/b 影响/vn 。/w 
 穆迪/nr 还/d 指出/v ，/w 除/p 政治/n 挑战/v 外/f ，/w 土耳其/ns 推进/v 经济/n 改革/v 的/u 步伐/n 也/d 慢于/v 预期/v ，/w 再/d 加上/v 其/r 经济/n 严重/a 依赖/v 外部/f 融资/v ，/w 投资者/n 信心/n 的/u 突然/a 转向/vn 将/d 对/p 土耳其/ns 经济/n 产生/v 较/d 大/a 冲击/v 。/w 
-穆迪/nr 预计/v ，/w ２０１６年/t 土耳其/ns 经济/n 将/d 增长/v ３．０％/m ，/w 低于/v ２０１５年/t 的/u ３．５％/m 。/w 
+穆迪/nr 预计/v ，/w 2016年/t 土耳其/ns 经济/n 将/d 增长/v 3.0％/m ，/w 低于/v 2015年/t 的/u 3.5％/m 。/w 
 土耳其/ns 内政/n 外交/n 呈现/v 变局/n 
-土耳其/ns 总统/n 埃尔多安/nr １８日/t 表示/v 不/d 排除/v 恢复/v 死刑/n 的/u 可能/n ，/w 并/c 再次/d 敦促/v 美国/ns 把/p 涉嫌/v 主导/v 土/ns 未遂/v 军事/n 政变/v 、/w 现/t 居/v 美国/ns 的/u 土/ns 宗教/n 人士/n 费特胡拉·居伦/nr 引渡/v 给/p 土方/n 。/w 
+土耳其/ns 总统/n 埃尔多安/nr 18日/t 表示/v 不/d 排除/v 恢复/v 死刑/n 的/u 可能/n ，/w 并/c 再次/d 敦促/v 美国/ns 把/p 涉嫌/v 主导/v 土/ns 未遂/v 军事/n 政变/v 、/w 现/t 居/v 美国/ns 的/u 土/ns 宗教/n 人士/n 费特胡拉·居伦/nr 引渡/v 给/p 土方/n 。/w 
 连日来/d ，/w 土/ns 政府/n 在/p 全国/n 范围/n 展开/v “/w 肃清/v ”/w 反/b 政府/n 势力/n 的/u 行动/vn ，/w 多/a 地/n 出现/v 小规模/b 冲突/vn 。/w 
 分析/vn 人士/n 认为/v ，/w 此次/r 未遂/v 政变/v 后/f ，/w 土/ns 安全/a 形势/n 有/v 可能/n 进一步/d 恶化/v ，/w 土/ns 美/ns 关系/n 也/d 将/d 经受/v 考验/v 。/w 
 安全/a 形势/n 不容乐观/v 
-１５日/t 晚/t 发生/v 的/u 政变/vn 初步/d 平息/v 后/f ，/w 埃尔多安/nr 就/d 表示/v 要/v 让/v 政变/v 的/u 策划者/n 和/c 参与者/n 付出/v “/w 惨重/a 代价/n ”/w 。/w 
+15日/t 晚/t 发生/v 的/u 政变/vn 初步/d 平息/v 后/f ，/w 埃尔多安/nr 就/d 表示/v 要/v 让/v 政变/v 的/u 策划者/n 和/c 参与者/n 付出/v “/w 惨重/a 代价/n ”/w 。/w 
 随后/d 几/m 天/q ，/w 土/ns 政府/n 在/p 全国/n 展开/v 针对/p 参与/v 政变/v 的/u 军人/n 、/w 警察/n 及/c 司法/n 人员/n 的/u “/w 肃清/vn ”/w 行动/vn 。/w 
-土/ns 总理/n 耶尔德勒姆/nr １８日/t 告诉/v 媒体/n ，/w 目前/t 已/d 有/v ７０００/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
-此外/c ，/w ２７００/m 余/m 名/q 司法/n 人员/n 、/w １万/m 余/m 名/q 财政部/n 及/c 内政部/n 人员/n 停职/v 等待/v 审查/v 。/w 
-据/p 土耳其/ns 《/w 自由报/nz 》/w 报道/v ，/w 目前/t “/w 肃清/v ”/w 行动/v 已/d 扩大/v 到/p 警察/n 队伍/n ，/w 已/d 有/v ７８５０/m 多/m 名/q 警察/n 被/p 停职/v 审查/v ，/w 其中/r 包括/v 多/a 名/q 警方/n 高官/n 。/w 
+土/ns 总理/n 耶尔德勒姆/nr 18日/t 告诉/v 媒体/n ，/w 目前/t 已/d 有/v 7000/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
+此外/c ，/w 2700/m 余/m 名/q 司法/n 人员/n 、/w 1万/m 余/m 名/q 财政部/n 及/c 内政部/n 人员/n 停职/v 等待/v 审查/v 。/w 
+据/p 土耳其/ns 《/w 自由报/nz 》/w 报道/v ，/w 目前/t “/w 肃清/v ”/w 行动/v 已/d 扩大/v 到/p 警察/n 队伍/n ，/w 已/d 有/v 7850/m 多/m 名/q 警察/n 被/p 停职/v 审查/v ，/w 其中/r 包括/v 多/a 名/q 警方/n 高官/n 。/w 
 土耳其/ns 政治/n 分析/vn 人士/n 穆拉特·叶特金/nr 认为/v ，/w 未遂/v 军事/n 政变/v 导致/v 军队/n 作为/v “/w 世俗/n 宪法/n 捍卫者/n ”/w 的/u 形象/n 受损/v ，/w 大量/m 军事/n 人员/n 被/p “/w 肃清/v ”/w 也/d 将/d 削弱/v 军方/n 实力/n 。/w 
 叶特金/nr 认为/v ，/w 未来/t 土耳其/ns 安全/a 形势/n 将/d 进一步/d 恶化/v ，/w 除/p “/w 肃清/v ”/w 行动/v 本身/r 引发/v 新/a 一/m 轮/q 小规模/b 冲突/vn 以外/f ，/w 反恐/v 行动/v 也/d 会/v 受/v 影响/v 。/w 
 有/v 消息/n 显示/v ，/w 一些/m 重要/a 反恐/vn 作战/vn 专家/n 在/p 政变/v 中/f 被/p 杀害/v ，/w 负责/v 土耳其/ns 与/p 叙利亚/ns 、/w 伊拉克/ns 边境/s 安全/a 的/u 指挥官/n 以及/c 因吉尔利克空军基地/ns 指挥官/n 在/p 政变/v 后/f 被捕/v ，/w 这些/r 因素/n 都/d 将/d 削弱/v 土耳其/ns 的/u 反恐/vn 能力/n 。/w 
 还有/v 分析/vn 人士/n 认为/v ，/w 埃尔多安/nr 可能/v 借/p “/w 肃清/v ”/w 行动/v 推进/v 总统制/n 改革/v ，/w 扩大/v 实权/n 。/w 
 外交/n 遭受/v 考验/v 
-埃尔多安/nr １８日/t 表示/v ，/w 土耳其/ns 将/d 尽快/d 向/p 美国/ns 正式/a 发出/v 引渡/v 居伦/nr 的/u 书面/b 请求/n 。/w 
+埃尔多安/nr 18日/t 表示/v ，/w 土耳其/ns 将/d 尽快/d 向/p 美国/ns 正式/a 发出/v 引渡/v 居伦/nr 的/u 书面/b 请求/n 。/w 
 土/ns 总理/n 耶尔德勒姆/nr 表示/v ，/w 能否/v 成功/a 从/p 美国/ns 引渡/v 居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
 美国/ns 国务卿/n 克里/nr 则/c 表示/v ，/w 美方/n 将/d 考虑/v 土方/n 引渡/vn 请求/n ，/w 但/c 土方/n 需/v 提供/v 证明/v 居伦/nr 参与/v 未遂/v 政变/v 的/u 确凿/a 证据/n 。/w 
 居伦/nr 近日/t 也/d 罕见/a 地/u 接受/v 媒体/n 采访/v ，/w 否认/v 与/p 未遂/v 政变/v 有/v 任何/r 关联/vn 。/w 
@@ -3079,10 +3079,10 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 两/m 国/n 此前/t 在/p 库尔德/nr 人/n 问题/n 上/f 龃龉/n 不/d 断/v ，/w 土耳其/ns 多次/m 要求/n 美国/ns 承认/v 库尔德/ns 武装/n 为/v 恐怖/a 组织/n ，/w 并/c 要求/v 其/r 停止/v 支持/v 叙利亚/ns 境内/s 的/u 库尔德/nr 武装/n 。/w 
 分析/vn 人士/n 认为/v ，/w 引渡/v 居伦/nr 问题/n 将/d 在/p 短期/n 内/f 影响/v 土/ns 美/ns 关系/n ，/w 但/c 从/p 中长期/n 来看/u 土/ns 美/ns 还/d 是/v 彼此/r 重要/a 盟友/n ，/w 彻底/a 翻脸/vn 可能性/n 不/d 大/a 。/w 
 位于/v 土耳其/ns 首都/n 安卡拉/ns 的/u 国际战略研究所/nt 美国/ns 问题/n 研究/vn 中心/n 主任/n 耶金/nr 告诉/v 记者/n ，/w 尽管/c 有/v 土/ns 官员/n 指控/v 美国/ns 是/v 此次/r 未遂/v 政变/v 的/u 幕后/s 推手/n ，/w 但/c 此类/r 声音/n 并不/d 强/a ，/w 土/ns 美/ns 的/u 盟友/n 关系/n 此前/t 也/d 经历/v 过/u 起起伏伏/z ，/w 相信/v 两/m 国/n 可以/v 妥善/a 解决/v 引渡/v 居伦/nr 问题/n 。/w 
-值得/v 注意/v 的/u 是/v ，/w 俄罗斯/ns 总统/n 普京/nr １７日/t 致电/v 埃尔多安/nr ，/w 表示/v 希望/v 尽快/d 看到/v 土耳其/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
+值得/v 注意/v 的/u 是/v ，/w 俄罗斯/ns 总统/n 普京/nr 17日/t 致电/v 埃尔多安/nr ，/w 表示/v 希望/v 尽快/d 看到/v 土耳其/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
 两/m 国/n 总统/n 还/d 计划/v 于/p 近期/t 举行/v 会晤/v 。/w 
 普京/nr 这/r 一/m 举动/n 反映/v 出/v 土/ns 俄/ns 关系/n 向/p 好/a 态势/n 。/w 
-埃尔多安/nr ６月/t 就/p 土/ns 军方/n 击落/v 俄/ns 战机/n 事件/n 向/p 俄方/n 道歉/v 之后/f ，/w 土/ns 俄/ns 两/m 国/n 就/p 尽快/d 恢复/v 双边/n 关系/n 采取/v 了/u 一系列/b 积极/a 举措/n 。/w 
+埃尔多安/nr 6月/t 就/p 土/ns 军方/n 击落/v 俄/ns 战机/n 事件/n 向/p 俄方/n 道歉/v 之后/f ，/w 土/ns 俄/ns 两/m 国/n 就/p 尽快/d 恢复/v 双边/n 关系/n 采取/v 了/u 一系列/b 积极/a 举措/n 。/w 
 分析/vn 人士/n 认为/v ，/w 土/ns 俄/ns 关系/n 升温/v 是/v 两/m 国/n 互相/d 需要/v 的/u 结果/n 。/w 
 从/p 土方/n 来看/u ，/w 与/p 俄罗斯/ns 交恶/v 给/p 土/ns 旅游业/n 、/w 农业/n 和/c 商业/n 带来/v 巨大/a 损失/n ，/w 而/c 受/v 西方/s 制裁/v 的/u 俄罗斯/ns 也/d 需要/v 土耳其/ns 这/r 一/m 重要/a 的/u 天然气/n 买家/n 和/c 经济/n 合作/vn 伙伴/n 。/w 
 土/ns 总统/n 称/v 自己/r 若/c 在/p 度假/vn 酒店/n 耽搁/v 10/m 分钟/q 或/c 已/d 被害/v 
@@ -3100,12 +3100,12 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 据/p 土耳其外交部/nt 消息/n ，/w 试图/v 发动/v 政变/v 导致/v 290/m 人/n 死亡/v 。/w 
 土耳其政府/nt 指控/v 生活/v 在/p 美国/ns 的/u 反对派/n 伊斯兰/nz 传教士/n 法图拉葛兰/nr 组织/v 了/u 叛乱/v 。/w 
 埃尔多安/nr 亲述/v 政变/vn 惊魂/n ：/w 差点/d 就/d 没命/v 了/y ！/w 
-土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr １８日/t 接受/v 美国/ns 媒体/n 独家/d 采访/v ，/w 讲述/v 自己/r 在/p 未遂/v 政变/v 当晚/t 的/u 遭遇/n 。/w 
+土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 18日/t 接受/v 美国/ns 媒体/n 独家/d 采访/v ，/w 讲述/v 自己/r 在/p 未遂/v 政变/v 当晚/t 的/u 遭遇/n 。/w 
 他/r 说/v ，/w 如果/c 稍/d 晚/a 离开/v 度假/vn 酒店/n ，/w 他/r 就/d 可能/v 没命/v ，/w 而且/c 乘机/d 即将/d 抵达/v 伊斯坦布尔/ns 时/n ，/w 阿塔图尔克/ns 国际/n 机场/n 的/u 地面/n 控制塔/n 仍/d 在/v 政变/vn 军人/n 控制/v 下/f 。/w 
-在/p 未遂/v 政变/v 结束/v 后/f 接受/v 的/u 首次/m 采访/vn 中/f ，/w 埃尔多安/nr 告诉/v 美国有线电视新闻网/nz ，/w 他/r １５日/t 正/d 和/c 妻子/n 、/w 女婿/n 和/c 外孙/n 在/p 海滨/s 城市/n 马尔马里斯/ns 度假/v ，/w 当天/t 深夜/t 接到/v 报告/n ，/w 称/v 伊斯坦布尔/ns 、/w 首都/n 安卡拉/ns 和/c 其他/r 城市/n 出现/v “/w 异动/n ”/w 。/w 
+在/p 未遂/v 政变/v 结束/v 后/f 接受/v 的/u 首次/m 采访/vn 中/f ，/w 埃尔多安/nr 告诉/v 美国有线电视新闻网/nz ，/w 他/r 15日/t 正/d 和/c 妻子/n 、/w 女婿/n 和/c 外孙/n 在/p 海滨/s 城市/n 马尔马里斯/ns 度假/v ，/w 当天/t 深夜/t 接到/v 报告/n ，/w 称/v 伊斯坦布尔/ns 、/w 首都/n 安卡拉/ns 和/c 其他/r 城市/n 出现/v “/w 异动/n ”/w 。/w 
 埃尔多安/nr 听从/v 下属/n 建议/n ，/w 和/c 家人/n 及/c 几/m 名/q “/w 非常/d 亲近/a ”/w 的/u 助手/n 乘/v 飞机/n 转移/v 到/p 一/m 处/q 安全/a 地点/n 。/w 
 他们/r 离开/v 仅/d 几/m 分钟/q ，/w 支持/v 政变/v 的/u 军人/n 就/d 冲/v 进/v 了/u 他/r 下榻/v 的/u 酒店/n ，/w 打/v 死/v 了/u 留/v 在/p 那里/r 的/u 两/m 名/q 埃尔多安/nr 保镖/n 。/w 
-“/w 我/r 如果/c 多/a 留/v １０/m 分钟/q 或/c １５/m 分钟/q ，/w 可能/v 就/d 没命/v 了/y ，/w 或者/c 被/p 扣押/v ，/w ”/w 埃尔多安/nr 说/v 。/w 
+“/w 我/r 如果/c 多/a 留/v 10/m 分钟/q 或/c 15/m 分钟/q ，/w 可能/v 就/d 没命/v 了/y ，/w 或者/c 被/p 扣押/v ，/w ”/w 埃尔多安/nr 说/v 。/w 
 【/w 惊险/a 降落/v 机场/n 】/w 
 随着/p 政变/v 演进/v ，/w 埃尔多安/nr 使用/v 手机/n 接受/v 美国有线电视新闻网/nz 土耳其语频道/nz 的/u 视频/n 采访/v ，/w 呼吁/v 支持者/n “/w 走/v 上/v 街头/s ”/w ，/w 回击/v 政变者/n 。/w 
 乘机/v 返回/v 伊斯坦布尔/ns 过程/n 中/f ，/w 埃尔多安/nr 还/d 遭遇/v 惊险/a 一/m 幕/q 。/w 
@@ -3113,26 +3113,26 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 飞行员/n 准备/v 着陆/v 前/f 发现/v 机场/n 跑道/n 的/u 信号灯/n 全部/m 关闭/v ，/w 他们/r 当时/t 考虑/v 过/u 使用/v 飞机/n 上/f 的/u 照明/n 紧急/a 着陆/v 。/w 
 所/u 幸/v 的/u 是/v ，/w 支持/v 埃尔多安/nr 的/u 军队/n 不久/m 重新/d 夺回/v 地面/n 控制塔/n ，/w 让/v 飞机/n 得以/v 安全/a 降落/v 。/w 
 不过/c ，/w 埃尔多安/nr 说/v ，/w 飞机/n 一/d 着陆/v ，/w 他们/r 就/d 听到/v 巨大/a 声响/n 。/w 
-“/w 从/p 我们/r 着陆/v 的/u 那/r 一刻/m 开始/v ，/w 就/d 有/v Ｆ－１６/nx 战机/n 从/p 我们/r 头顶/n 飞过/v ，/w 非常/d 贴近/v 地面/n ，/w ”/w 埃尔多安/nr 说/v ，/w 从/p 政变/v 发起/v 到/p 平息/v 的/u 整个/b 过程/n 中/f ，/w 他/r “/w 从未/d 想/v 过/u ”/w 自己/r 可能/v 不再/d 是/v 总统/n 的/u 结局/n ，/w 大约/d １２/m 小时/n 后/f ，/w 政变/v 以/p “/w 我们/r 期望/v 的/u 结果/n ”/w 结束/v 。/w 
+“/w 从/p 我们/r 着陆/v 的/u 那/r 一刻/m 开始/v ，/w 就/d 有/v F－16/nx 战机/n 从/p 我们/r 头顶/n 飞过/v ，/w 非常/d 贴近/v 地面/n ，/w ”/w 埃尔多安/nr 说/v ，/w 从/p 政变/v 发起/v 到/p 平息/v 的/u 整个/b 过程/n 中/f ，/w 他/r “/w 从未/d 想/v 过/u ”/w 自己/r 可能/v 不再/d 是/v 总统/n 的/u 结局/n ，/w 大约/d 12/m 小时/n 后/f ，/w 政变/v 以/p “/w 我们/r 期望/v 的/u 结果/n ”/w 结束/v 。/w 
 【/w 拒绝/v 排除/v 死刑/n 】/w 
 针对/p 外界/n 有关/v 土耳其/ns 可能/v 考虑/v 恢复/v 死刑/n 惩治/v 政变者/n 的/u 猜测/vn ，/w 埃尔多安/nr 在/p 采访/v 中/f 拒绝/v 排除/v 恢复/v 死刑/n 的/u 可能/n 。/w 
 “/w 在/p 发生/v 这么/r 多/a 事件/n 后/f ，/w （/w 土耳其/ns ）/w 民众/n 现在/t 有/v 这个/r 想法/n ，/w 这些/r 人/n 应该/v 被/p 杀死/v ，/w 那/r 才/d 是/v 他们/r 的/u 归宿/n ，/w 他们/r 没有/v 其他/r 出路/n ，/w ”/w 埃尔多安/nr 说/v ，/w “/w 我/r 为什么/r 要/v 在/p 监狱/n 里/f 赡养/v 他们/r ？/w 还/d 那么/r 多/a 年/q 。/w 
 民众/n 就是/d 这么/r 说/v 的/u …/w …/w 他们/r 希望/v 事件/n 有/v 快速/d 了结/v 的/u 办法/n 。/w ”/w 
-土耳其/ns ２００４年/t 全面/a 废除/v 死刑/n 。/w 
+土耳其/ns 2004年/t 全面/a 废除/v 死刑/n 。/w 
 次年/t ，/w 土耳其/ns 与/c 欧盟/nt 启动/v 进行/v 入盟/vn 谈判/vn ，/w 但/c 谈判/vn 过程/n 阻碍/v 重重/z 。/w 
 欧盟/nt 官员/n 警告/v ，/w 土耳其/ns 如果/c 恢复/v 死刑/n ，/w 将/d 无法/v 成为/v 欧盟/nt 成员国/n 。/w 
 埃尔多安/nr 说/v ，/w 恢复/v 死刑/n 需要/v 议会/n 根据/p 宪法/n 程序/n 作出/v 决定/n ，/w “/w 如果/c 他们/r （/w 议会/n 领导人/n ）/w 同意/v 就此/d 讨论/v ，/w 我/r 作为/p 总统/n 会/v 批准/v 议会/n 作出/v 的/u 任何/r 决定/n ”/w 。/w 
 采访/v 中/f ，/w 埃尔多安/nr 还/d 驳斥/v 了/u 外界/n 有关/v 他/r 利用/v 这/r 次/q 未遂/v 政变/v 大规模/d “/w 清算/v ”/w 反对派/n 和/c 异己/n 人士/n 的/u 指责/vn ，/w 称/v 当局/n 必须/d 做/v “/w 正确/a 的/u 事/n ”/w 。/w 
 （/w 徐超/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 埃尔多安/nr 不/d 听/v 西方/s “/w 紧箍咒/n ”/w 继续/v “/w 清理/v 门户/n ”/w 
-土耳其政府/nt １８日/t 说/v ，/w 更/d 多/a 涉嫌/v 参与/v 未遂/v 政变/v 的/u 人/n 已经/d 被/p 拘留/v ，/w 已经/d 超过/v ７５００/m 人/n ，/w 包括/v 大批/m 军队/n 和/c 地方/n 高级/a 官员/n ，/w “/w 清理/v ”/w 行动/v 将/d 持续/v 。/w 
+土耳其政府/nt 18日/t 说/v ，/w 更/d 多/a 涉嫌/v 参与/v 未遂/v 政变/v 的/u 人/n 已经/d 被/p 拘留/v ，/w 已经/d 超过/v 7500/m 人/n ，/w 包括/v 大批/m 军队/n 和/c 地方/n 高级/a 官员/n ，/w “/w 清理/v ”/w 行动/v 将/d 持续/v 。/w 
 美国/ns 和/c 欧洲联盟/nt 官员/n 则/c 警告/v 总统/n 雷杰普·塔伊普·埃尔多安/nr 领导/v 的/u 政府/n ，/w 要/v “/w 依法/d 行事/v ”/w ，/w 不/d 要/v “/w 过火/a ”/w ，/w 否则/c 会/v 被/p 欧盟/nt 拒之门外/v 。/w 
-土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 当天/t 说/v ，/w ７５４３/m 人/n 已经/d 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v １００/m 名/q 警察/n 、/w ６０３８/m 名/q 军人/n 、/w ７５５/m 名/q 法官/n 和/c 检察官/n 以及/c ６５０/m 名/q 平民/n 。/w 
-他/r 还/d 更新/v 了/u 这/r 一/m 事件/n 中/f 的/u 伤亡/vn 数字/n ，/w ６０/m 名/q 警察/n 、/w ３/m 名/q 政府军/n 士兵/n 和/c １４５/m 名/q 平民/n 死亡/v ；/w １４９１/m 人/n 受伤/v 。/w 
-２４/m 名/q 政变策划者/n 被/p 打/v 死/v ，/w ５０/m 名/q 政变策划者/n 受伤/v 。/w 
-另/r 据/p 土耳其内政部/nt 的/u 数字/n ，/w ８７７７/m 名/q 公务/n 人员/n 已经/d 被/p 停职/v ，/w 包括/v 近/d ８０００/m 名/q 警察/n 、/w 一/m 名/q 省长/n 和/c 数十/m 名/q 更/d 低/a 行政区/n 的/u 一把手/n 。/w 
-土耳其国家通讯社/nt 报道/v ，/w １０３/m 名/q 将军级/n 军官/n 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v 被/p 认定/v 为/v 这/r 次/q 未遂/v 政变/v 的/u 主谋/n 、/w 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 。/w 
-一/m 批/q 被捕/vn 军队/n 高官/n １８日/t 出庭/v 。/w 
+土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 当天/t 说/v ，/w 7543/m 人/n 已经/d 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v 100/m 名/q 警察/n 、/w 6038/m 名/q 军人/n 、/w 755/m 名/q 法官/n 和/c 检察官/n 以及/c 650/m 名/q 平民/n 。/w 
+他/r 还/d 更新/v 了/u 这/r 一/m 事件/n 中/f 的/u 伤亡/vn 数字/n ，/w 60/m 名/q 警察/n 、/w 3/m 名/q 政府军/n 士兵/n 和/c 145/m 名/q 平民/n 死亡/v ；/w 1491/m 人/n 受伤/v 。/w 
+24/m 名/q 政变策划者/n 被/p 打/v 死/v ，/w 50/m 名/q 政变策划者/n 受伤/v 。/w 
+另/r 据/p 土耳其内政部/nt 的/u 数字/n ，/w 8777/m 名/q 公务/n 人员/n 已经/d 被/p 停职/v ，/w 包括/v 近/d 8000/m 名/q 警察/n 、/w 一/m 名/q 省长/n 和/c 数十/m 名/q 更/d 低/a 行政区/n 的/u 一把手/n 。/w 
+土耳其国家通讯社/nt 报道/v ，/w 103/m 名/q 将军级/n 军官/n 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v 被/p 认定/v 为/v 这/r 次/q 未遂/v 政变/v 的/u 主谋/n 、/w 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 。/w 
+一/m 批/q 被捕/vn 军队/n 高官/n 18日/t 出庭/v 。/w 
 就/d 在/p 庭审/v 时/n ，/w 法庭/n 外/f 发生/v 枪击/vn 事件/n ，/w 一/m 名/q 枪手/n 被/p 击毙/v 。/w 
 现阶段/t 枪击/vn 动机/n 不明/v 。/w 
 土耳其/ns 媒体/n 报道/v ，/w 这/r 名/q 枪手/n 是/v 军人/n 。/w 
@@ -3141,7 +3141,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 埃尔多安/nr 已经/d 誓言/n ，/w 要/v 让/v 政变者/n 付出/v “/w 沉重/a 代价/n ”/w ；/w 司法/n 部长/n 贝基尔·博兹达/nr 说/v ，/w 这/r 将/d 是/v “/w 土耳其/ns 史上/s 最/d 大/a 案件/n ”/w 。/w 
 政变/v 被/p 挫败/v 后/f ，/w 西方/s 媒体/n 已经/d 用/p “/w 报复/v ”/w “/w 镇压/v ”/w “/w 清洗/v ”/w 等/u 字眼/n 描述/v 土耳其政府/nt 的/u 处置/vn 方式/n ，/w 突出/v 参与/v 政变/v 的/u 军人/n 遭/v 殴打/v 、/w 赤裸/a 捆绑/v 等/u 画面/n 。/w 
 西方/s 国家/n 领导人/n 表示/v 支持/v 土耳其/ns 民选/b 政府/n 、/w 反对/v 政变/v ，/w 同时/t 告诫/v 埃尔多安/nr 政府/n 必须/d 依法/d 处理/v 这/r 起/q 事件/n 。/w 
-美国/ns 和/c 欧盟/nt １８日/t 继续/v “/w 敲打/v ”/w 土耳其/ns 。/w 
+美国/ns 和/c 欧盟/nt 18日/t 继续/v “/w 敲打/v ”/w 土耳其/ns 。/w 
 美国/ns 国务卿/n 约翰·克里/nr 当天/t 在/p 比利时/ns 布鲁塞尔/ns 与/c 欧盟/nt 国家/n 外长/n 会晤/v 并/c 举行/v 记者会/n ，/w 表示/v 支持/v 把/p 政变者/n 绳之以法/v ，/w 但是/c “/w 我们/r 告诫/v （/w 土耳其政府/nt ）/w ，/w 不/d 要/v 走/v 得/u 太/d 远/a ”/w 。/w 
 “/w 我们/r 敦促/v 土耳其政府/nt 以/p 最/d 高/a 标准/n 尊重/v 民主/a 制度/n 和/c 法治/n ，/w ”/w 克里/nr 说/v 。/w 
 欧盟/nt 外交/n 和/c 安全/a 政策/n 高级/a 代表/n 费代丽卡·莫盖里尼/nr 在/p 同一/b 记者会/n 上/f 也/d 警告/v 土耳其/ns “/w 维护/v 法治/n ，/w 没有/v 理由/n 采取/v 任何/r 行动/v 使/v 这个/r 国家/n 远离/v 它/r （/w 法治/n ）/w ”/w 。/w 
@@ -3158,28 +3158,28 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 外长/n 梅夫吕特·恰武什奥卢/nr 在/p 社交/n 网站/n 写/v 道/v ，/w 这/r 类/q 说法/n “/w 不可/v 接受/v ”/w ，/w 哈恩/nr “/w 似乎/d 远/a 未/d 了解/v 土耳其/ns 发生/v 的/u 事/n ”/w 。/w 
 “/w 我们/r 对/p 欧盟/nt 和/c 盟友/n 的/u 最/d 大/a 期望/vn 就/d 是/v 支持/v 土耳其/ns 民主/a 进程/n 、/w 强烈/a 谴责/v 这/r 起/q 未遂/v 政变/v 。/w ”/w （/w 惠晓霜/n ）/w （/w 新华社/nt 专特稿/n ）/w 
 综合/vn 消息/n ：/w 土/ns 总统/n 称/v 不/d 排除/v 恢复/v 死刑/n 美/ns 将/d 评估/v 土/ns 引渡/v 居伦/nr 请求/n 
-新华社/nt 伊斯坦布尔/ns ７月/t １８日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr １８日/t 表示/v 不/d 排除/v 恢复/v 死刑/n 可能/n ，/w 并/c 再次/d 敦促/v 美国/ns 把/p 涉嫌/v 主导/v 土/ns 未遂/v 军事/n 政变/v 的/u 土耳其/ns 人/n 居伦/nr 引渡/v 给/p 土方/n 。/w 
+新华社/nt 伊斯坦布尔/ns 7月/t 18日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 18日/t 表示/v 不/d 排除/v 恢复/v 死刑/n 可能/n ，/w 并/c 再次/d 敦促/v 美国/ns 把/p 涉嫌/v 主导/v 土/ns 未遂/v 军事/n 政变/v 的/u 土耳其/ns 人/n 居伦/nr 引渡/v 给/p 土方/n 。/w 
 美国/ns 白宫/ns 发言人/n 表示/v ，/w 美方/n 将/d 在/p 评估/v 土方/n 的/u 引渡/vn 请求/n 后/f 再/d 作/v 决定/vn 。/w 
 埃尔多安/nr 在/p 美国有线电视新闻网/nz 当天/t 播出/v 的/u 访谈/vn 节目/n 中/f 说/v ，/w 恢复/v 死刑/n 问题/n 需要/v 土耳其/ns 议会/n 讨论/v 并/c 作出/v 决定/n ，/w 一旦/c 议会/n 作出/v 决定/n ，/w 他/r 将/d 予以/v 签署/vn 。/w 
-土耳其/ns 为/p 加入/v 欧盟/nt 而/c 于/p ２００２年/t 废除/v 死刑/n ，/w 欧盟/nt 已/d 告诫/v 土方/n 不/d 要/v 恢复/v 死刑/n 。/w 
+土耳其/ns 为/p 加入/v 欧盟/nt 而/c 于/p 2002年/t 废除/v 死刑/n ，/w 欧盟/nt 已/d 告诫/v 土方/n 不/d 要/v 恢复/v 死刑/n 。/w 
 但/c 埃尔多安/nr 在/p 访谈/vn 节目/n 中/f 说/v ，/w 发动/v 军事/n 政变/v “/w 显然/a 是/v 叛国罪/n ”/w ，/w 一些/m 土耳其/ns 民众/n 呼吁/v 处死/v 参与政变者/n ，/w 并/c 告诫/v 他/r 不/d 要/v 把/p 这些/r 人/n 关/v 在/p 监狱/n 吃/v 白食/n 。/w 
 埃尔多安/nr 说/v ，/w 此次/r 未遂/v 政变/v 导致/v 不少/m 民众/n 痛失/v 亲人/n 和/c 邻居/n ，/w 他们/r 希望/v “/w 快速/d 了断/v ”/w 。/w 
 民众/n 在/d 遭受/v 痛苦/a ，/w “/w 我们/r 行事/v 必须/d 非常/d 审慎/a 和/c 敏锐/a ”/w 。/w 
 埃尔多安/nr 同时/t 要求/v 美方/n “/w 对等/v 地/u ”/w 向/p “/w 战略/n 伙伴/n ”/w 土耳其/ns 引渡/v 流亡/v 美国/ns 的/u “/w 居伦运动/n ”/w 领导人/n 、/w 土耳其/ns 人/n 费特胡拉·居伦/nr 。/w 
 他/r 说/v ，/w 土/ns 美/ns 之间/f 签署/v 了/u 互相/d 引渡/v 罪犯/n 协议/n ，/w 土方/n 将/d 在/p 几/m 日/q 内/f 正式/a 向/p 美方/n 提交/v 书面/b 引渡/vn 请求/n 。/w 
-埃尔多安/nr 已/d 多次/m 指责/v “/w 居伦运动/n ”/w 主导/v 了/u 本月/r １５日/t 晚/t 至/c １６日/t 凌晨/t 发生/v 的/u 未遂/vn 政变/vn ，/w 并/c 公开/a 向/p 美国/ns 总统/n 奥巴马/nr 提出/v 引渡/vn 要求/n 。/w 
-土耳其/ns 总理/n 耶尔德勒姆/nr １８日/t 表示/v ，/w 能否/v 成功/a 引渡/v 居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
-美国/ns 白宫/ns 发言人/n 欧内斯特/nr １８日/t 表示/v ，/w 美政府/nt 尚未/d 收到/v 土方/n 有关/v 引渡/v 居伦/nr 的/u 请求/n 。/w 
-如果/c 收到/v 请求/v ，/w 美方/n 将/d 根据/p 拥有/v ３０/m 年/q 历史/n 的/u 美/ns 土/ns 引渡/vn 条约/n 作出/v 评估/v 。/w 
+埃尔多安/nr 已/d 多次/m 指责/v “/w 居伦运动/n ”/w 主导/v 了/u 本月/r 15日/t 晚/t 至/c 16日/t 凌晨/t 发生/v 的/u 未遂/vn 政变/vn ，/w 并/c 公开/a 向/p 美国/ns 总统/n 奥巴马/nr 提出/v 引渡/vn 要求/n 。/w 
+土耳其/ns 总理/n 耶尔德勒姆/nr 18日/t 表示/v ，/w 能否/v 成功/a 引渡/v 居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
+美国/ns 白宫/ns 发言人/n 欧内斯特/nr 18日/t 表示/v ，/w 美政府/nt 尚未/d 收到/v 土方/n 有关/v 引渡/v 居伦/nr 的/u 请求/n 。/w 
+如果/c 收到/v 请求/v ，/w 美方/n 将/d 根据/p 拥有/v 30/m 年/q 历史/n 的/u 美/ns 土/ns 引渡/vn 条约/n 作出/v 评估/v 。/w 
 首先/c ，/w 美方/n 要/v 评估/v 土方/n 指控/v 居伦/nr 的/u 罪行/n 是否/v 符合/v 引渡/vn 条约/n 的/u 涵盖/vn 范围/n ；/w 其次/c ，/w 美国务院/nt 和/c 司法部/nt 将/d 联合/v 评估/v 土方/n 提出/v 的/u 证据/n 是否/v 符合/v 引渡/vn 条约/n 规定/v 的/u 标准/n 。/w 
 欧内斯特/nr 还/d 透露/v ，/w 奥巴马/nr 将/d 尽快/d 与/p 埃尔多安/nr 通/v 电话/n ，/w 讨论/v 土/ns 未遂/v 政变/v 后/f 的/u 美/ns 土/ns 关系/n 、/w 反恐/v 合作/v 等/u 问题/n 。/w 
 奥巴马/nr 将/d 敦促/v 土/ns 政府/n 在/p 调查/v 政变/v 的/u 过程/n 中/f 保持/v 克制/v ，/w 呼吁/v 土耳其/ns 各方/r 尊重/v 该国/r 的/u 民主/a 机构/n 。/w 
-此外/c ，/w 美军/n 参谋长/n 联席会议/n 主席/n 邓福德/nr １７日/t 表示/v ，/w 因/c 政变/v 后/f 土/ns 政府/n 关闭/v 因吉尔利克空军基地/ns 、/w 并/d 切断/v 对/p 基地/n 的/u 电力/n 供应/vn ，/w 美军/n 曾/d 被迫/d 中止/v 了/u 空袭/v “/w 伊斯兰国/nt ”/w 武装/n 的/u 行动/vn ，/w 现在/t 这些/r 行动/v 已经/d 恢复/v 。/w 
-但/c 五角大楼/ns 发言人/n 库克/nr １８日/t 透露/v ，/w 土方/n 对/p 该/r 基地/n 的/u 正常/a 电力/n 供应/vn 尚未/d 恢复/v 。/w 
-土/ns 总理/n 耶尔德勒姆/nr １８日/t 宣布/v ，/w 未遂/v 政变/v 导致/v ２０８/m 人/n 死亡/v ，/w 其中/r 包括/v ６０/m 名/q 警察/n 、/w ３/m 名/q 士兵/n 和/c １４５/m 名/q 平民/n ，/w 另/d 有/v １４９１/m 人/n 受伤/v 。/w 
-政变参与者/n 方面/n 则/c 有/v ２４/m 人/n 被/p 打/v 死/v ，/w ５０/m 人/n 受伤/v 。/w 
-耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v ７０００/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
-此外/c ，/w ２７００/m 余/m 名/q 司法界/n 人员/n 、/w １０２００/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
+此外/c ，/w 美军/n 参谋长/n 联席会议/n 主席/n 邓福德/nr 17日/t 表示/v ，/w 因/c 政变/v 后/f 土/ns 政府/n 关闭/v 因吉尔利克空军基地/ns 、/w 并/d 切断/v 对/p 基地/n 的/u 电力/n 供应/vn ，/w 美军/n 曾/d 被迫/d 中止/v 了/u 空袭/v “/w 伊斯兰国/nt ”/w 武装/n 的/u 行动/vn ，/w 现在/t 这些/r 行动/v 已经/d 恢复/v 。/w 
+但/c 五角大楼/ns 发言人/n 库克/nr 18日/t 透露/v ，/w 土方/n 对/p 该/r 基地/n 的/u 正常/a 电力/n 供应/vn 尚未/d 恢复/v 。/w 
+土/ns 总理/n 耶尔德勒姆/nr 18日/t 宣布/v ，/w 未遂/v 政变/v 导致/v 208/m 人/n 死亡/v ，/w 其中/r 包括/v 60/m 名/q 警察/n 、/w 3/m 名/q 士兵/n 和/c 145/m 名/q 平民/n ，/w 另/d 有/v 1491/m 人/n 受伤/v 。/w 
+政变参与者/n 方面/n 则/c 有/v 24/m 人/n 被/p 打/v 死/v ，/w 50/m 人/n 受伤/v 。/w 
+耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v 7000/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
+此外/c ，/w 2700/m 余/m 名/q 司法界/n 人员/n 、/w 10200/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
 土耳其/ns 政变/v 后续/v ：/w 政府/n “/w 清理/v 门户/n ”/w 欧美/ns 隔/v 岸/n “/w 敲打/v ”/w 
 新华网/nz 北京/ns 7月/t 19日/t 电/n 土耳其政府/nt 18日/t 说/v ，/w 更/d 多/a 涉嫌/v 参与/v 未遂/v 政变/v 的/u 人/n 已经/d 被/p 拘留/v ，/w 已经/d 超过/v 7500/m 人/n ，/w 包括/v 大批/m 军队/n 和/c 地方/n 高级/a 官员/n ，/w “/w 清理/v ”/w 行动/v 将/d 持续/v 。/w 
 美国/ns 和/c 欧洲联盟/nt 官员/n 则/c 警告/v 总统/n 雷杰普·塔伊普·埃尔多安/nr 领导/v 的/u 政府/n ，/w 要/v “/w 依法/d 行事/v ”/w ，/w 不/d 要/v “/w 过火/a ”/w ，/w 否则/c 会/v 被/p 欧盟/nt 拒之门外/v 。/w 
@@ -3220,11 +3220,11 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 美国/ns 官员/n 称/v ，/w 美国/ns 与/p 土耳其/ns 的/u 未来/t 关系/n 取决于/v 土耳其政府/nt 的/u 这/r 一/m “/w 清理/vn ”/w 行动/vn 会/v “/w 走/v 多/d 远/a ”/w 。/w 
 不过/c ，/w 一些/m 政治/n 分析师/n 认为/v ，/w 美国/ns 虽然/c 感到/v 不满/a 和/c 忧虑/v ，/w 但/c 却/d 几乎/d 没有/v “/w 筹码/n ”/w 可以/v 约束/v 土耳其/ns 当局/n 的/u “/w 善后/n ”/w 行为/n 。/w 
 【/w 基地/n 重开/v 免/v 尴尬/a 】/w 
-美国/ns 一/m 名/q 不/d 愿/v 公开/a 姓名/n 的/u 官员/n １８日/t 说/v ，/w 土耳其/ns 挫败/v 政变/v 后/f 拘捕/v 数以千计/v 军方/n 、/w 警方/n 高官/n 和/c 司法/n 机构/n 人员/n ，/w 遭/v 停职/v 或/c 免职/v 的/u 公务/n 人员/n 近/d 万/m 人/n ，/w 其中/r 不乏/v 高官/n ，/w 这/r 一/m 做法/n 让/v 美国/ns 感到/v 困惑/a ，/w “/w 我们/r 认为/v 土耳其/ns 所/u 做/v 的/u 已经/d 超过/v 我们/r 希望/v 看到/v 的/u （/w 程度/n ）/w ”/w 。/w 
+美国/ns 一/m 名/q 不/d 愿/v 公开/a 姓名/n 的/u 官员/n 18日/t 说/v ，/w 土耳其/ns 挫败/v 政变/v 后/f 拘捕/v 数以千计/v 军方/n 、/w 警方/n 高官/n 和/c 司法/n 机构/n 人员/n ，/w 遭/v 停职/v 或/c 免职/v 的/u 公务/n 人员/n 近/d 万/m 人/n ，/w 其中/r 不乏/v 高官/n ，/w 这/r 一/m 做法/n 让/v 美国/ns 感到/v 困惑/a ，/w “/w 我们/r 认为/v 土耳其/ns 所/u 做/v 的/u 已经/d 超过/v 我们/r 希望/v 看到/v 的/u （/w 程度/n ）/w ”/w 。/w 
 另/r 一/m 名/q 美方/n 官员/n 称/v ，/w 美/ns 土/ns 关系/n 未来/t 走向/v “/w 很/d 大/a 程度/n 上/f 取决于/v 土耳其/ns 的/u （/w 善后/n ）/w 调查/v 如何/r 展开/v ，/w 取决于/v 他们/r 的/u 相关/vn 决定/n ”/w 。/w 
 路透社/nz 报道/v ，/w 尽管/c 土耳其/ns 的/u 合作/vn 对于/p 美国/ns 打击/v 极端/n 组织/n “/w 伊斯兰国/nt ”/w 至关重要/a ，/w 但/c 未遂/v 政变/v 后/f 的/u 一系列/b 进展/v 正/d 迫使/v 美国/ns 在/p 土耳其/ns 问题/n 上/f 努力/a 寻找/v 维护/v 安全/a 利益/n 和/c 维护/v 人权/n 等/u 价值观/n 之间/f 的/u 平衡/an 。/w 
 土耳其/ns 当局/n 在/p 未遂/v 政变/v 后/f 一度/d 关闭/v 了/u 南部/f 的/u 因吉尔利克空军基地/ns ，/w 对/p 利用/v 这/r 一/m 基地/n 打击/v 叙利亚/ns 境内/s “/w 伊斯兰国/nt ”/w 目标/n 的/u 美军/n 运作/vn 造成/v 严重/a 影响/v 。/w 
-外界/n 认为/v ，/w 土耳其政府/nt １８日/t 决定/v 恢复/v 开放/v 因吉尔利克空军基地/ns 的/u 空域/n ，/w 避免/v 了/u 美/ns 土/ns 关系/n 在/p 政变/v 后/f 立即/d 出现/v 恶化/v 。/w 
+外界/n 认为/v ，/w 土耳其政府/nt 18日/t 决定/v 恢复/v 开放/v 因吉尔利克空军基地/ns 的/u 空域/n ，/w 避免/v 了/u 美/ns 土/ns 关系/n 在/p 政变/v 后/f 立即/d 出现/v 恶化/v 。/w 
 只是/c ，/w 美国国防部/nt 官员/n 透露/v ，/w 土耳其/ns 方面/n 还/d 没有/d 恢复/v 对/p 这/r 一/m 基地/n 的/u 电力/n 供应/vn ，/w 相关/vn 任务/n 只能/v 依赖/v 于/p 基地/n 内/f 的/u 发电机/n 。/w 
 【/w 无力/v 施压/v 缺/v 筹码/n 】/w 
 一些/m 政治/n 分析师/n 认为/v ，/w 从/p 务实/vn 角度/n 考虑/v ，/w 美国/ns 和/c 欧盟/nt 虽然/c 近期/t 对/p 土耳其/ns 的/u 做法/n 颇/d 有/v 微词/n ，/w 但/c 都/d 没有/v 太/d 多/a 筹码/n 可以/v 制约/v 土耳其/ns 在/p 国内/s 展开/v 的/u 行动/vn 。/w 
@@ -3233,17 +3233,17 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 德国/ns 马歇尔/nr 基金会/n 土耳其/ns 问题/n 专家/n 乔舒亚·沃克/nr 认为/v ，/w 相比之下/v ，/w 土耳其/ns 在/p 推进/v 政变/v “/w 善后/n ”/w 工作/n 上/f 意志/n 坚定/a ，/w 而且/c 对/p 美国/ns 也/d 有/v 包括/v 因吉尔利克空军基地/ns 在内/u 的/u 筹码/n 。/w 
 “/w 总统/n 埃尔多安/nr 已经/d 说/v 得/u 非常/d 清楚/a ，/w 他们/r 会/v 做/v 任何/r 事/n 来/v 实现/v 他们/r 所谓/v 的/u ‘/w 保卫/v 土耳其/ns ’/w ，/w 如果/c 这/r 意味着/v 要/v 以/p 因吉尔利克/ns 和/c 其他/r 军事基地/n 作为/v 要挟/v ，/w 我/r 确信/v 他们/r 也/d 会/v 这么/r 做/v ，/w ”/w 沃克/nr 说/v ，/w “/w 显然/a ，/w 他们/r 可以/v 以/p 关闭/v 因吉尔利克基地/ns 为/v 筹码/n ，/w 短期/t 看/v ，/w 这/r （/w 政变/vn ‘/w 善后/n ’/w ）/w 是/v 他们/r 的/u 安全/a 要务/n ，/w 不/d 是/v ‘/w 伊斯兰国/nt ’/w ，/w 而是/c （/w 寻求/v 引渡/v 流亡/v 美国/ns 的/u 宗教/n 人士/n ）/w 居伦/nr 。/w ”/w （/w 徐超/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 牵涉/v 未遂/v 政变/v 击落/v 俄/ns 战机/n 土军/n 飞行员/n 被捕/v 
-土耳其/ns 官员/n １８日/t 晚/t 说/v ，/w 去年/t １１月/t 击落/v 俄罗斯/ns 战机/n 的/u 两/m 名/q 土耳其/ns 空军/n 飞行员/n 因/p 牵涉/v 上/f 周末/t 的/u 未遂/vn 政变/vn 而/c 被捕/v 。/w 
-一/m 名/q 不/d 愿/v 公开/a 姓名/n 的/u 官员/n 告诉/v 媒体/n 记者/n ，/w “/w 两/m 名/q 参与/v ２０１５年/t １１月/t 击落/v 俄军/n 苏—２４/nx 战机/n 行动/v 的/u 飞行员/n 已经/d 被/p 关押/v ”/w ，/w 他们/r 关联/v 这/r 场/q 未遂/v 政变/v 。/w 
-去年/t １１月/t ２４日/t ，/w 土耳其/ns 击落/v 一/m 架/q 在/p 叙利亚/ns 执行/v 反恐/vn 任务/n 的/u 俄军/n 苏—２４/nx 战斗/vn 轰炸机/n ，/w 理由/n 是/v 战机/n 侵入/v 土耳其/ns 境内/s ，/w 战机/n 坠毁/v 在/p 叙利亚/ns 边境/s 。/w 
+土耳其/ns 官员/n 18日/t 晚/t 说/v ，/w 去年/t 11月/t 击落/v 俄罗斯/ns 战机/n 的/u 两/m 名/q 土耳其/ns 空军/n 飞行员/n 因/p 牵涉/v 上/f 周末/t 的/u 未遂/vn 政变/vn 而/c 被捕/v 。/w 
+一/m 名/q 不/d 愿/v 公开/a 姓名/n 的/u 官员/n 告诉/v 媒体/n 记者/n ，/w “/w 两/m 名/q 参与/v 2015年/t 11月/t 击落/v 俄军/n 苏—24/nx 战机/n 行动/v 的/u 飞行员/n 已经/d 被/p 关押/v ”/w ，/w 他们/r 关联/v 这/r 场/q 未遂/v 政变/v 。/w 
+去年/t 11月/t 24日/t ，/w 土耳其/ns 击落/v 一/m 架/q 在/p 叙利亚/ns 执行/v 反恐/vn 任务/n 的/u 俄军/n 苏—24/nx 战斗/vn 轰炸机/n ，/w 理由/n 是/v 战机/n 侵入/v 土耳其/ns 境内/s ，/w 战机/n 坠毁/v 在/p 叙利亚/ns 边境/s 。/w 
 俄罗斯/ns 否认/v 土方/n 说法/n ，/w 总统/n 弗拉基米尔·普京/nr 指责/v 土耳其/ns “/w 暗箭伤人/v ”/w 。/w 
 土/ns 俄/ns 关系/n 迅速/a 恶化/v ，/w 俄罗斯/ns 对/p 土耳其/ns 实施/v 经济/n 制裁/v 。/w 
-上月/t ２７日/t ，/w 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 致信/v 普京/nr 表示/v 道歉/v ，/w 称/v 愿/v 与/p 俄方/n 协调/a 处理/v 战机/n 被/p 击落/v 事件/n 。/w 
+上月/t 27日/t ，/w 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 致信/v 普京/nr 表示/v 道歉/v ，/w 称/v 愿/v 与/p 俄方/n 协调/a 处理/v 战机/n 被/p 击落/v 事件/n 。/w 
 土/ns 俄/ns 关系/n 显现/v 改善/v 。/w 
-本月/r １６日/t 、/w 即/v 土耳其/ns 发生/v 未遂/v 政变/v 当天/t ，/w 普京/nr 与/p 埃尔多安/nr 通/v 电话/n ，/w 表示/v 希望/v 土耳其/ns 迅速/a 恢复/v 稳定/a 。/w 
-两/m 国/n 领导人/n 定于/v ８月/t 初/f 进行/v 面对面/d 会谈/vn 。/w 
-塞尔维亚外交部/nt 代理/v 部长/n 伊维察·贾契奇/nr １７日/t 说/v ，/w 他/r 相信/v 这/r 场/q 政变/v 受到/v 外部/f 势力/n 很/d 大/a 影响/v ，/w 寻求/v 阻止/v 土/ns 俄/ns 关系/n 改善/v ，/w “/w 显然/a ，/w 击落/v 俄军/n 战机/n 的/u 飞行员/n 跟/p 政变/v 背后/f 的/u 家伙/n 是/v 一/m 伙/q 的/u ”/w 。/w 
-土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr １８日/t 说/v ，/w 超过/v ７５００/m 人/n 因/p 牵涉/v 未遂/v 政变/v 被捕/v ，/w 包括/v １０３/m 名/q 将官/n 。/w 
+本月/r 16日/t 、/w 即/v 土耳其/ns 发生/v 未遂/v 政变/v 当天/t ，/w 普京/nr 与/p 埃尔多安/nr 通/v 电话/n ，/w 表示/v 希望/v 土耳其/ns 迅速/a 恢复/v 稳定/a 。/w 
+两/m 国/n 领导人/n 定于/v 8月/t 初/f 进行/v 面对面/d 会谈/vn 。/w 
+塞尔维亚外交部/nt 代理/v 部长/n 伊维察·贾契奇/nr 17日/t 说/v ，/w 他/r 相信/v 这/r 场/q 政变/v 受到/v 外部/f 势力/n 很/d 大/a 影响/v ，/w 寻求/v 阻止/v 土/ns 俄/ns 关系/n 改善/v ，/w “/w 显然/a ，/w 击落/v 俄军/n 战机/n 的/u 飞行员/n 跟/p 政变/v 背后/f 的/u 家伙/n 是/v 一/m 伙/q 的/u ”/w 。/w 
+土耳其/ns 总理/n 比纳利·耶尔德勒姆/nr 18日/t 说/v ，/w 超过/v 7500/m 人/n 因/p 牵涉/v 未遂/v 政变/v 被捕/v ，/w 包括/v 103/m 名/q 将官/n 。/w 
 （/w 胡若愚/nr ）/w 【/w 新华社/nt 微特稿/n 】/w 
 土/ns 美/ns 关系/n 出现/v 信任/vn 危机/n 
 7月/t 18日/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 再次/d 敦促/v 美国/ns 将/d 涉嫌/v 策划/v 未遂/v 军事/n 政变/v 、/w 现/t 居/v 美国/ns 的/u 土耳其/ns 宗教/n 人士/n 费特胡拉·居伦/nr 引渡/v 给/p 土方/n 。/w 
@@ -3278,16 +3278,16 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 是/v 北约/nt 成员国/n ，/w 又/d 是/v 伊斯兰合作组织/nt 的/u 成员/n 。/w 
 美国/ns 出于/v 对/p 打击/v “/w 伊斯兰国/nt ”/w 需要/v ，/w 依然/d 会/v 支持/v 一个/m 稳定/a 的/u 土耳其政府/nt 。/w 
 奥巴马/nr “/w 强烈/a 谴责/v ”/w 土耳其/ns 未遂/v 军事/n 政变/v 
-新华社/nt 华盛顿/ns ７月/t １９日/t 电/n （/w 记者/n 周而捷/nr ）/w 美国/ns 总统/n 奥巴马/nr １９日/t 与/p 土耳其/ns 总统/n 埃尔多安/nr 通/v 电话/n 时/n ，/w “/w 强烈/a 谴责/v ”/w 在/p 土/ns 发生/v 的/u 未遂/vn 军事/n 政变/vn ，/w 并/c 表示/v 愿意/v 为/p 土方/n 调查/v 工作/v 提供/v “/w 适当/a 协助/v ”/w 。/w 
+新华社/nt 华盛顿/ns 7月/t 19日/t 电/n （/w 记者/n 周而捷/nr ）/w 美国/ns 总统/n 奥巴马/nr 19日/t 与/p 土耳其/ns 总统/n 埃尔多安/nr 通/v 电话/n 时/n ，/w “/w 强烈/a 谴责/v ”/w 在/p 土/ns 发生/v 的/u 未遂/vn 军事/n 政变/vn ，/w 并/c 表示/v 愿意/v 为/p 土方/n 调查/v 工作/v 提供/v “/w 适当/a 协助/v ”/w 。/w 
 白宫/ns 当天/t 发表/v 声明/n 说/v ，/w 奥巴马/nr 在/p 通话/v 中/f 表达/v 了/u 对/p 土耳其/ns 民主/a 的/u 支持/vn ，/w 并/c 赞扬/v 土耳其/ns 民众/n 在/p 抵抗/v 暴力/n 干涉/v 和/c 捍卫/v 民主/a 中/f 展现/v 出/v 的/u 意志/n 。/w 
 奥巴马/nr 同时/t 敦促/v 土方/n 在/p 事件/n 后/f 的/u 调查/vn 和/c 惩治/vn 行动/vn 中/f 尊重/v 法制/n ，/w 以/c 增强/v 民众/n 对/p 民主/a 机构/n 的/u 信心/n 。/w 
 他/r 还/d 表示/v ，/w 美方/n 愿意/v 为/p 土方/n 调查/vn 工作/n 提供/v “/w 适当/a 协助/v ”/w 。/w 
 土方/n 多次/m 指责/v 居住/v 在/p 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 主导/v 了/u 此次/r 未遂/v 政变/v ，/w 并/c 公开/a 向/p 美国/ns 总统/n 奥巴马/nr 提出/v 引渡/vn 要求/n 。/w 
 白宫/ns 发言人/n 欧内斯特/nr 当天/t 在/p 例行/vn 记者会/n 上/f 表示/v ，/w 土方/n 已/d 通过/p 电子/n 文件/n 方式/n 向/p 美方/n 提供/v 了/u 有关/v 居伦/nr 的/u 材料/n ，/w 但/c 美方/n 目前/t 尚/d 不/d 能/v 确定/v 该/r 材料/n 是否/v 属于/v 正式/a 的/u 引渡/vn 请求/n 。/w 
-土/ns 总理/n 耶尔德勒姆/nr １８日/t 宣布/v ，/w １５日/t 晚/t 至/c １６日/t 凌晨/t 发生/v 的/u 未遂/vn 政变/vn 导致/v ２０８/m 人/n 死亡/v ，/w 其中/r 包括/v ６０/m 名/q 警察/n 、/w ３/m 名/q 士兵/n 和/c １４５/m 名/q 平民/n ，/w 另/d 有/v １４９１/m 人/n 受伤/v 。/w 
-政变参与者/n 方面/n 则/c 有/v ２４/m 人/n 被/p 打/v 死/v ，/w ５０/m 人/n 受伤/v 。/w 
-耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v ７０００/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
-此外/c ，/w ２７００/m 余/m 名/q 司法界/n 人员/n 、/w １０２００/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
+土/ns 总理/n 耶尔德勒姆/nr 18日/t 宣布/v ，/w 15日/t 晚/t 至/c 16日/t 凌晨/t 发生/v 的/u 未遂/vn 政变/vn 导致/v 208/m 人/n 死亡/v ，/w 其中/r 包括/v 60/m 名/q 警察/n 、/w 3/m 名/q 士兵/n 和/c 145/m 名/q 平民/n ，/w 另/d 有/v 1491/m 人/n 受伤/v 。/w 
+政变参与者/n 方面/n 则/c 有/v 24/m 人/n 被/p 打/v 死/v ，/w 50/m 人/n 受伤/v 。/w 
+耶尔德勒姆/nr 还/d 说/v ，/w 目前/t 已/d 有/v 7000/m 余/m 人/n 因/p 涉嫌/v 参与/v 政变/v 被捕/v 。/w 
+此外/c ，/w 2700/m 余/m 名/q 司法界/n 人员/n 、/w 10200/m 余/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
 仍/d 安全/a 可控/v ！/w 美/ns 在/p 土/ns 核武/n 引/v 担忧/v 
 新华网/nz 北京/ns 7月/t 20日/t 电/n 土耳其/ns 发生/v 未遂/v 政变/v 后/f ，/w 本/d 已/d 面临/v 极端/n 主义/n 和/c 恐怖主义/n 威胁/v 的/u 土耳其/ns 安全/a 局势/n 面临/v 更/d 大/a 不确定性/n ，/w 促使/v 外界/n 将/d 一部分/m 担忧/v 的/u 目光/n 集中/a 到/p 美国/ns 在/p 土耳其/ns 部署/v 的/u 核武器/n 上/f 。/w 
 一些/m 安全/a 专家/n 说/v ，/w 美国/ns 在/p 土耳其/ns 部署/v 了/u 大约/d 50/m 件/q 核武器/n ，/w 全部/m 存放/v 在/p 土耳其/ns 南部/f 的/u 因吉尔利克空军基地/ns 。/w 
@@ -3313,26 +3313,26 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 不过/c ，/w 美方/n 专家/n 沃克/nr 说/v ，/w 外界/n 有关/p 美国/ns 在/p 土/ns 核武器/n 安全/a 的/u 担忧/vn 有些/r “/w 过度/v ”/w ，/w 因为/c 这些/r 武器/n 需要/v 来自/v 华盛顿/ns 的/u 指令/n 才/d 会/v 被/p 激活/v 使用/v 。/w 
 （/w 记者/n 徐超/nr ，/w 编辑/n 李宏/nr ，/w 新华/nz 国际/n 客户端/n 报道/v ）/w 
 土耳其/ns 战机/n 轰炸/v 伊拉克/ns 北部/f 库尔德工人党/nt 
-新华社/nt 安卡拉/ns ７月/t ２０日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 武装部队/n 总参谋部/n ２０日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军方/n 战机/n 于/p １９日/t 晚/t 轰炸/v 了/u 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 的/u 库尔德工人党/nt （/w 库工党/nt ）/w 目标/n ，/w 打/v 死/v 约/d ２０/m 名/q 库工党/nt 分子/n 。/w 
-这/r 是/v １５日/t 晚/t 未遂/v 军事/n 政变/v 后/f 土耳其/ns 军方/n 首次/m 采取/v 对外/v 打击/v 行动/v 。/w 
-参与/v １９日/t 行动/v 的/u 土耳其/ns 武装部队/n Ｆ－１６/nx 战机/n 曾/d 在/p 未遂/v 政变/v 中/f 被/p 政变/vn 军人/n 控制/v 。/w 
-此外/c ，/w 土耳其/ns 总统/n 埃尔多安/nr ２０日/t 从/p 伊斯坦布尔/ns 回到/v 首都/n 安卡拉/ns ，/w 召开/v 未遂/v 政变/v 后/f 首次/m 国家安全委员会/nt 会议/n 。/w 
-自/p １９日/t 起/v ，/w 土耳其政府/nt 主导/v 的/u 肃清/v 未遂政变参与者/n 和/c 打击/v “/w 居伦运动/n ”/w 支持者/n 的/u 行动/vn 在/p 教育/vn 领域/n 展开/v 。/w 
-其中/r ，/w 土耳其教育部/nt 宣布/v 该部/r １.５２万/m 名/q 公务员/n 停职/v 接受/v 检查/v ；/w 土高等教育委员会/nt 要求/v １５７７/m 名/q 大学/n 院长/n 辞职/v ，/w 并/c 禁止/v 所有/b 学者/n 出国/v 。/w 
-普京/nr 与/c 埃尔多安/nr 将/d 于/p ８月/t 上旬/t 在/p 俄/ns 会面/v 
-新华社/nt 莫斯科/ns ７月/t ２０日/t 电/n （/w 记者/n 胡晓光/nr ）/w 俄罗斯/ns 总统/n 新闻/n 秘书/n 佩斯科夫/nr ２０日/t 说/v ，/w 俄/ns 总统/n 普京/nr 与/c 土耳其/ns 总统/n 埃尔多安/nr 将/d 于/p ８月/t 上旬/t 在/p 俄罗斯/ns 会面/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 20日/t 电/n （/w 记者/n 邹乐/nr 施春/nr ）/w 土耳其/ns 武装部队/n 总参谋部/n 20日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军方/n 战机/n 于/p 19日/t 晚/t 轰炸/v 了/u 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 的/u 库尔德工人党/nt （/w 库工党/nt ）/w 目标/n ，/w 打/v 死/v 约/d 20/m 名/q 库工党/nt 分子/n 。/w 
+这/r 是/v 15日/t 晚/t 未遂/v 军事/n 政变/v 后/f 土耳其/ns 军方/n 首次/m 采取/v 对外/v 打击/v 行动/v 。/w 
+参与/v 19日/t 行动/v 的/u 土耳其/ns 武装部队/n F－16/nx 战机/n 曾/d 在/p 未遂/v 政变/v 中/f 被/p 政变/vn 军人/n 控制/v 。/w 
+此外/c ，/w 土耳其/ns 总统/n 埃尔多安/nr 20日/t 从/p 伊斯坦布尔/ns 回到/v 首都/n 安卡拉/ns ，/w 召开/v 未遂/v 政变/v 后/f 首次/m 国家安全委员会/nt 会议/n 。/w 
+自/p 19日/t 起/v ，/w 土耳其政府/nt 主导/v 的/u 肃清/v 未遂政变参与者/n 和/c 打击/v “/w 居伦运动/n ”/w 支持者/n 的/u 行动/vn 在/p 教育/vn 领域/n 展开/v 。/w 
+其中/r ，/w 土耳其教育部/nt 宣布/v 该部/r 1.52万/m 名/q 公务员/n 停职/v 接受/v 检查/v ；/w 土高等教育委员会/nt 要求/v 1577/m 名/q 大学/n 院长/n 辞职/v ，/w 并/c 禁止/v 所有/b 学者/n 出国/v 。/w 
+普京/nr 与/c 埃尔多安/nr 将/d 于/p 8月/t 上旬/t 在/p 俄/ns 会面/v 
+新华社/nt 莫斯科/ns 7月/t 20日/t 电/n （/w 记者/n 胡晓光/nr ）/w 俄罗斯/ns 总统/n 新闻/n 秘书/n 佩斯科夫/nr 20日/t 说/v ，/w 俄/ns 总统/n 普京/nr 与/c 土耳其/ns 总统/n 埃尔多安/nr 将/d 于/p 8月/t 上旬/t 在/p 俄罗斯/ns 会面/v 。/w 
 佩斯科夫/nr 当天/t 在/p 莫斯科/ns 对/p 国际文传电讯社/nt 表示/v ，/w 现在/t 两/m 国/n 正/d 通过/p 外交/n 渠道/n 为/p 普京/nr 与/c 埃尔多安/nr 的/u 会面/vn 做/v 准备/v ，/w 会面/v 的/u 城市/n 和/c 具体/a 日期/n 正在/d 确定/v 中/f 。/w 
-佩斯科夫/nr 同时/t 否认/v 了/u 普京/nr 与/p 埃尔多安/nr 可能/v 于/p ８月/t ９日/t 在/p 阿塞拜疆/ns 首都/n 巴库/ns 会面/v 的/u 传闻/n 。/w 
-克里姆林宫/ns １７日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军事/n 政变/v １６日/t 被/p 挫败/v 当天/t ，/w 普京/nr 与/p 埃尔多安/nr 通/v 了/u 电话/n 。/w 
+佩斯科夫/nr 同时/t 否认/v 了/u 普京/nr 与/p 埃尔多安/nr 可能/v 于/p 8月/t 9日/t 在/p 阿塞拜疆/ns 首都/n 巴库/ns 会面/v 的/u 传闻/n 。/w 
+克里姆林宫/ns 17日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军事/n 政变/v 16日/t 被/p 挫败/v 当天/t ，/w 普京/nr 与/p 埃尔多安/nr 通/v 了/u 电话/n 。/w 
 根据/p 声明/n ，/w 普京/nr 在/p 通话/v 时/n 强调/v 俄方/n 的/u 原则/n 立场/n ，/w 即/v 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 和/c 诉诸/v 暴力/n 的/u 行为/n 。/w 
 普京/nr 说/v ，/w 上月底/t 俄/ns 开始/v 逐步/d 取消/v 对/p 土/ns 制裁/v 后/f ，/w 前往/v 土耳其/ns 的/u 俄/ns 游客/n 数量/n 大幅/d 增加/v ，/w 土方/n 必须/d 在/p 当前/t “/w 困难/a 情况/n ”/w 下/f 确保/v 俄/ns 游客/n 的/u 安全/an 。/w 
 埃尔多安/nr 承诺/v ，/w 土方/n 将/d “/w 采取/v 所有/b 必要/a 措施/n ”/w 保障/v 俄/ns 游客/n 安全/a 。/w 
-土耳其/ns ２０１５年/t １１月/t 击落/v 一/m 架/q 在/p 叙利亚/ns 执行/v 任务/n 的/u 俄/ns 战机/n ，/w 导致/v 两/m 国/n 关系/n 骤然/d 恶化/v ，/w 俄方/n 对/p 土方/n 采取/v 一系列/b 制裁/vn 措施/n 。/w 
-今年/t ６月底/t ，/w 埃尔多安/nr 致信/v 普京/nr ，/w 就/p 击落/v 战机/n 事件/n 道歉/v ，/w 两/m 国/n 关系/n 开始/v 解冻/v ，/w 俄方/n 逐步/d 取消/v 制裁/v 。/w 
+土耳其/ns 2015年/t 11月/t 击落/v 一/m 架/q 在/p 叙利亚/ns 执行/v 任务/n 的/u 俄/ns 战机/n ，/w 导致/v 两/m 国/n 关系/n 骤然/d 恶化/v ，/w 俄方/n 对/p 土方/n 采取/v 一系列/b 制裁/vn 措施/n 。/w 
+今年/t 6月底/t ，/w 埃尔多安/nr 致信/v 普京/nr ，/w 就/p 击落/v 战机/n 事件/n 道歉/v ，/w 两/m 国/n 关系/n 开始/v 解冻/v ，/w 俄方/n 逐步/d 取消/v 制裁/v 。/w 
 7月/t 20日/t ，/w 在/p 土耳其/ns 首都/n 安卡拉/ns ，/w 土耳其/ns 总统/n 埃尔多安/nr 在/p 新闻/n 发布会/n 上/f 讲话/v 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 20日/t 晚/t 宣布/v 土耳其/ns 进入/v 为期/v 3/m 个/q 月/n 的/u “/w 紧急状态/n ”/w 。/w 
 土耳其/ns 总理/n 发誓/v 要/v 将/p “/w 居伦运动/n ”/w 斩草除根/v 
-土耳其政府/nt １９日/t 说/v ，/w 土方/n 已经/d 向/p 美国政府/nt 递交/v 材料/n ，/w 以/c 证明/v 流亡/v 美国/ns 的/u 土耳其/ns 宗教/n 人物/n 费特胡拉·居伦/nr 策划/v 了/u １５日/t 的/u 未遂/vn 政变/vn ，/w 从而/c 应该/v 被/p 引渡/v 回国/v 。/w 
+土耳其政府/nt 19日/t 说/v ，/w 土方/n 已经/d 向/p 美国政府/nt 递交/v 材料/n ，/w 以/c 证明/v 流亡/v 美国/ns 的/u 土耳其/ns 宗教/n 人物/n 费特胡拉·居伦/nr 策划/v 了/u 15日/t 的/u 未遂/vn 政变/vn ，/w 从而/c 应该/v 被/p 引渡/v 回国/v 。/w 
 土/ns 总理/n 比纳利·耶尔德勒姆/nr 把/p “/w 居伦运动/n ”/w 称为/v “/w 恐怖/a 组织/n ”/w ，/w 誓言/n 土耳其/ns 将/d 把/p 它/r “/w 斩草除根/v ”/w 。/w 
 【/w “/w 连根拔起/v ”/w 】/w 
 居伦/nr 一度/d 是/v 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 的/u 盟友/n ，/w 不过/c 两/m 人/n 最终/d 反目成仇/v 。/w 
@@ -3345,25 +3345,25 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土方/n 坚决/a 要求/v 美国/ns 把/p 居伦/nr 引渡/v 给/p 土耳其/ns 。/w 
 耶尔德勒姆/nr 说/v ，/w 能否/v 引渡/v 居伦/nr 将/d 考验/v 土耳其/ns 与/p 美国/ns 的/u 关系/n 。/w 
 美国/ns 国务卿/n 约翰·克里/nr 先前/t 表示/v ，/w 美方/n 愿意/v 提供/v 配合/v ，/w 但是/c 土方/n 必须/d 就/p 引渡/v 居伦/nr 拿/v 出/v 确凿/a 证据/n 。/w 
-土方/n １９日/t 说/v ，/w 已经/d 向/p 美方/n 递送/v “/w 证据/n ”/w ，/w 正在/d 准备/v 正式/a 提出/v 引渡/vn 要求/n 。/w 
+土方/n 19日/t 说/v ，/w 已经/d 向/p 美方/n 递送/v “/w 证据/n ”/w ，/w 正在/d 准备/v 正式/a 提出/v 引渡/vn 要求/n 。/w 
 土方/n 对/p 美方/n 坚持/v 要求/v 证据/n 感到/v 不满/a 。/w 
 土耳其/ns 司法/n 部长/n 贝基尔·博兹达/nr 说/v ：/w “/w 关于/p 居伦/nr ，/w 我们/r 有/v 的/u 是/v 证据/n ，/w 比/p 你们/r 要求/v 的/u 还要/d 多/a 。/w 
 所有/b 证据/n 都/d 显示/v ，/w 这/r 场/q 未遂/v 政变/v 按照/p 他/r 的/u 意思/n 和/c 命令/n 发动/v 。/w ”/w 
 耶尔德勒姆/nr 暗示/v 美国/ns 搞/v “/w 双重/b 标准/n ”/w ，/w 说道/v ：/w “/w 事情/n 已经/d 非常/d 清楚/a ，/w 你们/r 为什么/r 坚持/v 要/v 证据/n ？/w 你们/r 却/d 没有/d 就/p 本·拉丹/nr 要/v 过/u 证据/n 。/w ”/w 
 埃尔多安/nr 的/u 发言人/n 说/v ：/w “/w 如果/c 美国/ns 坚持/v 不/d 交出/v 他/r ，/w 人们/n 会/v 认为/v ，/w 美国/ns 是/v 在/d 保护/v 他/r 。/w ”/w 
 【/w “/w 清理/v ”/w 扩大/v 】/w 
-根据/p 耶尔德勒姆/nr １８日/t 发布/v 的/u 数字/n ，/w ７５４３/m 人/n 已经/d 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v １００/m 名/q 警察/n 、/w ６０３８/m 名/q 军人/n 、/w ７５５/m 名/q 法官/n 和/c 检察官/n 以及/c ６５０/m 名/q 平民/n 。/w 
-另外/c ，/w ２７００/m 余/m 名/q 司法界/n 人员/n 、/w 超过/v 一万/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
-库尔图尔穆什/nr １９日/t 说/v ，/w 被/p 拘留/v 和/c 逮捕/v 的/u 人数/n 达到/v 约/d ９０００/m 人/n 。/w 
-土耳其教育部/nt 当天/t 宣布/v ，/w 大约/d １.５万/m 名/q 教育部/n 所属/n 人员/n 已经/d 被/p 停职/v ，/w 私立/b 教育/n 机构/n 中/f ２.１万/m 名/q 教师/n 的/u 职业/n 许可证/n 已经/d 被/p 吊销/v ；/w 土耳其高等教育委员会/nt 则/c 要求/v 全国/n 公立/b 和/c 私立/b 大学/n 的/u 全部/m 系主任/n 辞职/v ，/w 人数/n 超过/v １５００/m 人/n 。/w 
-另外/c ，/w 土耳其/ns 总理/n 办公室/n 的/u ２５７/m 名/q 雇员/n 和/c 情报/n 部门/n １００/m 名/q 雇员/n 被/p 停职/v 。/w 
+根据/p 耶尔德勒姆/nr 18日/t 发布/v 的/u 数字/n ，/w 7543/m 人/n 已经/d 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 包括/v 100/m 名/q 警察/n 、/w 6038/m 名/q 军人/n 、/w 755/m 名/q 法官/n 和/c 检察官/n 以及/c 650/m 名/q 平民/n 。/w 
+另外/c ，/w 2700/m 余/m 名/q 司法界/n 人员/n 、/w 超过/v 一万/m 名/q 财政部/n 、/w 内政部/n 人员/n 被/p 停职/v 等待/v 审查/v 。/w 
+库尔图尔穆什/nr 19日/t 说/v ，/w 被/p 拘留/v 和/c 逮捕/v 的/u 人数/n 达到/v 约/d 9000/m 人/n 。/w 
+土耳其教育部/nt 当天/t 宣布/v ，/w 大约/d 1.5万/m 名/q 教育部/n 所属/n 人员/n 已经/d 被/p 停职/v ，/w 私立/b 教育/n 机构/n 中/f 2.1万/m 名/q 教师/n 的/u 职业/n 许可证/n 已经/d 被/p 吊销/v ；/w 土耳其高等教育委员会/nt 则/c 要求/v 全国/n 公立/b 和/c 私立/b 大学/n 的/u 全部/m 系主任/n 辞职/v ，/w 人数/n 超过/v 1500/m 人/n 。/w 
+另外/c ，/w 土耳其/ns 总理/n 办公室/n 的/u 257/m 名/q 雇员/n 和/c 情报/n 部门/n 100/m 名/q 雇员/n 被/p 停职/v 。/w 
 土耳其/ns 官方/n 通讯社/n 当天/t 报道/v ，/w 土耳其/ns 媒体/n 管理/vn 部门/n 做出/v 决定/v ，/w 将/d 吊销/v 关联/v 或/c 支持/v “/w 居伦运动/n ”/w 的/u 广播/v 电视/n 媒体/n 的/u 营业/vn 执照/n 。/w 
 （/w 惠晓霜/nr 新华社/nt 专特稿/n ）/w 
 清理/v ”/w 行动/v 扩大/v 土耳其/ns 暂停/v 公派/v 学者/n 
-土耳其政府/nt 在/p 挫败/v 政变/v 后/f 展开/v 的/u “/w 清理/vn ”/w 行动/vn ２０日/t 持续/v 发酵/v 。/w 
+土耳其政府/nt 在/p 挫败/v 政变/v 后/f 展开/v 的/u “/w 清理/vn ”/w 行动/vn 20日/t 持续/v 发酵/v 。/w 
 土耳其/ns 教育/vn 部门/n 当天/t 颁布/v 行政/n 命令/n ，/w 暂停/v 派遣/v 学者/n 出国/v 访问/v ，/w 并/c 要求/n 眼下/t 身/n 在/v 海外/s 的/u 学者/n 尽快/d 回国/v 。/w 
 【/w 喊/v 学者/n 回国/v 】/w 
-土耳其/ns 官方/n 阿纳多卢通讯社/nt 报道/v ，/w 土耳其高等教育委员会/nt ２０日/t 宣布/v 这/r 一/m 命令/n 。/w 
+土耳其/ns 官方/n 阿纳多卢通讯社/nt 报道/v ，/w 土耳其高等教育委员会/nt 20日/t 宣布/v 这/r 一/m 命令/n 。/w 
 该/r 委员会/n 要求/v 各地/r 大学/n “/w 紧急/a 检查/v 校内/s 所有/b 学术/n 人员/n 和/c 行政/n 人员/n 与/p 流亡/v 美国/ns 的/u 土耳其/ns 宗教/n 人士/n 费图拉·居伦/nr 是否/v 存在/v 关联/v ”/w ，/w 禁止/v 学者/n 公派/v 出国/v ，/w 已经/d 出国/v 的/u 学者/n “/w 必须/d 在/p 尽可能/d 短/a 的/u 时间/n 内/f 回国/v ”/w 。/w 
 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 指责/v 居伦/nr 在/p 土耳其/ns 建立/v “/w 平行/vn 组织/n ”/w 并且/c 策划/v 这/r 场/q 政变/v 。/w 
 埃尔多安/nr 与/c 居伦/nr 一度/d 是/v 盟友/n ，/w 后来/t 反目成仇/v 。/w 
@@ -3372,36 +3372,36 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 居伦/nr 已经/d 坚决/a 否认/v 与/p 这/r 次/q 未遂/v 政变/v 有/v 关联/vn ，/w 反/v 指/v 埃尔多安/nr 自导自演/v 。/w 
 按照/p 路透社/nz 说法/n ，/w 土耳其政府/nt “/w 清理/v 门户/n ”/w 的/u 行动/vn 已经/d 从/p 军方/n 扩展/v 到/p 教育/v 部门/n ，/w 这/r 条/q 最/d 新/a 命令/n 是/v 为/p 阻止/v 涉嫌/v 参与/v 政变/v 的/u 学者/n 外逃/v 。/w 
 一/m 名/q 不/d 愿/v 公开/a 姓名/n 的/u 土耳其/ns 官员/n 称/v ，/w 一些/m 学者/n 与/p 军方/n 有着/v 千丝万缕/b 的/u 关系/n ，/w 他们/r 恐怕/d 与/p 未遂/v 政变/v 难/a 逃/v 干系/n 。/w 
-目前/t ，/w 超过/v １.５万/m 名/q 土耳其教育部/nt 所属/n 人员/n 已经/d 被/p 停职/v ，/w 私立/b 教育/n 机构/n 中/f ２.１万/m 名/q 教师/n 的/u 职业/n 许可证/n 已经/d 被/p 吊销/v ；/w 土耳其高等教育委员会/n 还/d 要求/v 全国/n 公立/b 和/c 私立/b 大学/n 的/u １５００/m 多/m 名/q 系主任/n 辞职/v ，/w 因为/c 他们/r 涉嫌/v 支持/v 居伦/nr 。/w 
-土耳其/ns 《/w 自由报/nz 》/w 和/c 美国有线电视新闻网/nz （/w ＣＮＮ/nx ）/w 报道/v ，/w 截至/v ２０日/t ，/w 已/d 有/v 大约/d ９３００/m 人/n 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 其中/r 包括/v １１８/m 名/q 将军级/n 军官/n 。/w 
-大约/d ４.９万/m 名/q 公务/n 人员/n 已经/d 被/p 停职/v 或/c 被/p 逮捕/v ，/w 包括/v 大约/d ８０００/m 名/q 警察/n 、/w 一/m 名/q 省长/n 和/c 数十/m 名/q 低/a 级别/n 行政区/n 的/u 一把手/n 。/w 
-另外/c ，/w 土耳其/ns 总理/n 办公室/n 的/u ２５７/m 名/q 雇员/n 和/c 情报/n 部门/n １００/m 名/q 雇员/n 已/d 被/p 停职/v 。/w 
+目前/t ，/w 超过/v 1.5万/m 名/q 土耳其教育部/nt 所属/n 人员/n 已经/d 被/p 停职/v ，/w 私立/b 教育/n 机构/n 中/f 2.1万/m 名/q 教师/n 的/u 职业/n 许可证/n 已经/d 被/p 吊销/v ；/w 土耳其高等教育委员会/n 还/d 要求/v 全国/n 公立/b 和/c 私立/b 大学/n 的/u 1500/m 多/m 名/q 系主任/n 辞职/v ，/w 因为/c 他们/r 涉嫌/v 支持/v 居伦/nr 。/w 
+土耳其/ns 《/w 自由报/nz 》/w 和/c 美国有线电视新闻网/nz （/w CNN/nx ）/w 报道/v ，/w 截至/v 20日/t ，/w 已/d 有/v 大约/d 9300/m 人/n 因/p 涉嫌/v 参与/v 未遂/v 政变/v 被/p 拘留/v 或/c 逮捕/v ，/w 其中/r 包括/v 118/m 名/q 将军级/n 军官/n 。/w 
+大约/d 4.9万/m 名/q 公务/n 人员/n 已经/d 被/p 停职/v 或/c 被/p 逮捕/v ，/w 包括/v 大约/d 8000/m 名/q 警察/n 、/w 一/m 名/q 省长/n 和/c 数十/m 名/q 低/a 级别/n 行政区/n 的/u 一把手/n 。/w 
+另外/c ，/w 土耳其/ns 总理/n 办公室/n 的/u 257/m 名/q 雇员/n 和/c 情报/n 部门/n 100/m 名/q 雇员/n 已/d 被/p 停职/v 。/w 
 【/w 开/v 安全/a 会议/n 】/w 
-埃尔多安/nr ２０日/t 晚/a 些/q 时候/n 在/p 总统府/n 召开/v 未遂/v 政变/v 后/f 首次/m 国家安全委员会/nt 会议/n 和/c 内阁/n 会议/n ，/w 预计/v 将/d 在/p 会后/t 宣布/v 新/a 措施/n 。/w 
+埃尔多安/nr 20日/t 晚/a 些/q 时候/n 在/p 总统府/n 召开/v 未遂/v 政变/v 后/f 首次/m 国家安全委员会/nt 会议/n 和/c 内阁/n 会议/n ，/w 预计/v 将/d 在/p 会后/t 宣布/v 新/a 措施/n 。/w 
 他/r 先前/f 接受/v 媒体/n 采访/v 时/n 称/v ，/w 会后/t 会/v 宣布/v “/w 一/m 项/q 重要/a 决定/n ”/w 。/w 
-同一天/t ，/w 土耳其/ns 官方/n 媒体/n 报道/v ，/w 土耳其/ns 空军/n 越境/v 在/p 伊拉克/ns 北部/f 对/p 库尔德工人党/nt （/w ＰＫＫ/nt ）/w 进行/v 空袭/vn ，/w 炸/v 死/v 大约/d ２０/m 名/q 武装/n 分子/n 。/w 
-报道/v 称/v ，/w 土耳其/ns 空军/n 出动/v 数/m 架/q Ｆ－１６/nx 战机/n 在/p 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 发动/v 空袭/v 。/w 
-土耳其/ns 经常/d 越境/v 对/p 伊拉克/ns 境内/s 的/u 库尔德工人党/nt 目标/n 发动/v 空袭/v ，/w 但/c 这/r 是/v １５日/t 晚/t 发生/v 未遂/v 政变/v 后/f 土/ns 空军/n 首次/m 开展/v 类似/a 军事/n 行动/v 。/w 
+同一天/t ，/w 土耳其/ns 官方/n 媒体/n 报道/v ，/w 土耳其/ns 空军/n 越境/v 在/p 伊拉克/ns 北部/f 对/p 库尔德工人党/nt （/w PKK/nt ）/w 进行/v 空袭/vn ，/w 炸/v 死/v 大约/d 20/m 名/q 武装/n 分子/n 。/w 
+报道/v 称/v ，/w 土耳其/ns 空军/n 出动/v 数/m 架/q F－16/nx 战机/n 在/p 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 发动/v 空袭/v 。/w 
+土耳其/ns 经常/d 越境/v 对/p 伊拉克/ns 境内/s 的/u 库尔德工人党/nt 目标/n 发动/v 空袭/v ，/w 但/c 这/r 是/v 15日/t 晚/t 发生/v 未遂/v 政变/v 后/f 土/ns 空军/n 首次/m 开展/v 类似/a 军事/n 行动/v 。/w 
 美联社/nt 评论/v ，/w 这/r 是/v 埃尔多安/nr 向/p 外界/n 质疑/v 声音/n 发出/v 的/u 一个/m 信号/n ，/w 表明/v 他/r 已经/d 重新/d 控制/v 局面/n 。/w 
 （/w 王宏彬/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 新闻/n 分析/v ：/w 未遂/v 政变/v 后/f 土/ns 加速/v 向/p 俄/ns 靠拢/v 
-新华社/nt 安卡拉/ns ７月/t ２２日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 当地/s 时间/n ２１日/t 晚/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 在/p 接受/v 媒体/n 采访/v 时/n 表示/v ，/w 土/ns 政府/n 已/d 将/d 涉嫌/v 杀害/v 俄罗斯/ns 苏－２４/nx 战机/n 飞行员/n 的/u 两/m 名/q 土耳其/ns 飞行员/n 逮捕/v ，/w 并/c 称/v 这/r 两/m 名/q 嫌犯/n 与/p “/w 居伦运动/n ”/w 有关/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 22日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 当地/s 时间/n 21日/t 晚/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 在/p 接受/v 媒体/n 采访/v 时/n 表示/v ，/w 土/ns 政府/n 已/d 将/d 涉嫌/v 杀害/v 俄罗斯/ns 苏－24/nx 战机/n 飞行员/n 的/u 两/m 名/q 土耳其/ns 飞行员/n 逮捕/v ，/w 并/c 称/v 这/r 两/m 名/q 嫌犯/n 与/p “/w 居伦运动/n ”/w 有关/v 。/w 
 埃尔多安/nr 此举/r 可/v 视作/v 对/p 俄/ns 总统/n 普京/nr 投桃报李/v 的/u 举动/n 。/w 
-在/p 本月/r １５日/t 土耳其/ns 未遂/v 政变/v 总体/n 平息/v 后/f ，/w 普京/nr １６日/t 致电/v 埃尔多安/nr ，/w 向/p 政变/v 中/f 的/u 遇难者/n 表示/v 哀悼/v ，/w 表示/v 希望/v 尽快/d 看到/v 土/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
-土/ns 俄/ns 两/m 国/n 总统/n 还/d 计划/v 于/p ８月/t 上旬/t 在/p 俄罗斯/ns 举行/v 会晤/v 。/w 
-这/r 将/d 是/v 自/p 去年/t １１月/t 俄/ns 战机/n 事件/n 导致/v 土/ns 俄/ns 交恶/v 以来/f 两/m 国/n 元首/n 的/u 首次/m 会晤/vn 。/w 
+在/p 本月/r 15日/t 土耳其/ns 未遂/v 政变/v 总体/n 平息/v 后/f ，/w 普京/nr 16日/t 致电/v 埃尔多安/nr ，/w 向/p 政变/v 中/f 的/u 遇难者/n 表示/v 哀悼/v ，/w 表示/v 希望/v 尽快/d 看到/v 土/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
+土/ns 俄/ns 两/m 国/n 总统/n 还/d 计划/v 于/p 8月/t 上旬/t 在/p 俄罗斯/ns 举行/v 会晤/v 。/w 
+这/r 将/d 是/v 自/p 去年/t 11月/t 俄/ns 战机/n 事件/n 导致/v 土/ns 俄/ns 交恶/v 以来/f 两/m 国/n 元首/n 的/u 首次/m 会晤/vn 。/w 
 埃尔多安/nr 与/c 普京/nr 之间/f 的/u 良好/a 互动/vn 反映/v 出/v 土/ns 俄/ns 关系/n 近期/t 向/p 好/a 的/u 态势/n 。/w 
-埃尔多安/nr ６月/t 就/p 土/ns 军方/n 击落/v 俄/ns 战机/n 事件/n 向/p 俄方/n 道歉/v 后/f ，/w 土/ns 俄/ns 两/m 国/n 就/d 尽快/d 恢复/v 双边/n 关系/n 采取/v 了/u 一系列/b 积极/a 举措/n 。/w 
-普京/nr ６月底/t 签署/v 命令/n ，/w 责成/v 政府/n 逐步/d 取消/v 对/p 土耳其/ns 的/u 制裁/vn 措施/n 。/w 
+埃尔多安/nr 6月/t 就/p 土/ns 军方/n 击落/v 俄/ns 战机/n 事件/n 向/p 俄方/n 道歉/v 后/f ，/w 土/ns 俄/ns 两/m 国/n 就/d 尽快/d 恢复/v 双边/n 关系/n 采取/v 了/u 一系列/b 积极/a 举措/n 。/w 
+普京/nr 6月底/t 签署/v 命令/n ，/w 责成/v 政府/n 逐步/d 取消/v 对/p 土耳其/ns 的/u 制裁/vn 措施/n 。/w 
 据此/d ，/w 俄/ns 将/d 取消/v 针对/p 土耳其/ns 的/u 旅游/vn 禁令/n ，/w 俄/ns 土/ns 之间/f 的/u 包机/n 运输/vn 将/d 恢复/v ，/w 双方/n 还/d 将/d 商讨/v 取消/v 针对/p 土耳其/ns 的/u 其他/r 经济/n 制裁/vn 。/w 
 土耳其中东技术大学国际关系学院/nt 院长/n 侯赛因·巴哲/nr 对/p 新华社/nt 记者/n 说/v ，/w 普京/nr 是/v 在/p 土耳其/ns 未遂/v 军事/n 政变/v 后/f 第一/m 个/q 与/p 埃尔多安/nr 通/v 电话/n 的/u 外国/n 领导人/n 。/w 
 种种/q 迹象/n 显示/v ，/w 两/m 国/n 因/p 俄/ns 战机/n 事件/n 受到/v 严重/a 损害/v 的/u 战略/n 互信/v 正在/d 恢复/v 。/w 
 分析/vn 人士/n 认为/v ，/w 土/ns 俄/ns 关系/n 升温/v 除了/p 两/m 国/n 互/d 有/v 需要/n 外/f ，/w 当前/t 土耳其/ns 面临/v 的/u 不利/a 外交/n 环境/n 也/d 给/p 两/m 国/n 关系/n 回暖/v 创造/v 了/u 机遇/n 。/w 
-土/ns 未遂/v 军事/n 政变/v 发生/v 后/f ，/w 埃尔多安/nr 在/p 全国/n 范围/n 内/f 采取/v 了/u 大规模/d “/w 肃清/v ”/w 行动/v ，/w ９０００/m 多/m 人/n 被/p 逮捕/v ，/w 包括/v 土/ns 多/a 个/q 部门/n 的/u 国家/n 公务员/n 、/w 警察/n 、/w 法官/n 和/c 教育/v 人士/n 在内/u 的/u 近/d ５万/m 人/n 被/p 停职/v ，/w 令/v 土/ns 与/p 西方/s 国家/n 关系/n 降温/v ，/w 埃尔多安/nr 面临/v 来自/v 盟友/n 的/u 外交/n 和/c 舆论/n 压力/n 。/w 
+土/ns 未遂/v 军事/n 政变/v 发生/v 后/f ，/w 埃尔多安/nr 在/p 全国/n 范围/n 内/f 采取/v 了/u 大规模/d “/w 肃清/v ”/w 行动/v ，/w 9000/m 多/m 人/n 被/p 逮捕/v ，/w 包括/v 土/ns 多/a 个/q 部门/n 的/u 国家/n 公务员/n 、/w 警察/n 、/w 法官/n 和/c 教育/v 人士/n 在内/u 的/u 近/d 5万/m 人/n 被/p 停职/v ，/w 令/v 土/ns 与/p 西方/s 国家/n 关系/n 降温/v ，/w 埃尔多安/nr 面临/v 来自/v 盟友/n 的/u 外交/n 和/c 舆论/n 压力/n 。/w 
 未遂/v 军事/n 政变/v 发生/v 后/f ，/w 埃尔多安/nr 公开/a 要求/v 引渡/v 其/r 认为/v 的/u 政变/vn 主谋/n 、/w 在/p 美/ns 流亡/v 宗教/n 人士/n 居伦/nr 。/w 
 美方/n 否认/v 美国政府/nt 与/p 未遂/v 政变/v 有/v 任何/r 关联/vn ，/w 土/ns 美/ns 关系/n 再生/v 嫌隙/n 。/w 
 另一方面/c ，/w 欧盟/nt 则/c 持续/v 敲打/v 土耳其/ns ，/w 呼吁/v 土/ns 政府/n 在/p 处理/v 未遂/v 军事/n 政变/v 的/u 后续/vn 问题/n 时/n ，/w “/w 尊重/v 基本/a 原则/n 和/c 法律/n ”/w 。/w 
-对/p 此/r ，/w 土耳其/ns 以/p 暂时/d 中止/v 履行/v 《/w 欧洲人权公约/nz 》/w 作为/v 回应/v ，/w 并/c 在/p 官方/n 媒体/n 点名/v 批评/v ＢＢＣ/nx 、/w 《/w 纽约时报/nz 》/w 、/w 《/w 卫报/nz 》/w 、/w 《/w 经济学人/nz 》/w 、/w 福克斯新闻电视台/nt 等/u 西方/s 媒体/n ，/w 指责/v 其/r 对/p 土/ns 未遂/v 军事/n 政变/v 报道/v 不/d 实/a ，/w 有/v 刻意/d 抹黑/v 埃尔多安/nr 、/w 干涉/v 土/ns 内政/n 之/u 嫌/n 。/w 
+对/p 此/r ，/w 土耳其/ns 以/p 暂时/d 中止/v 履行/v 《/w 欧洲人权公约/nz 》/w 作为/v 回应/v ，/w 并/c 在/p 官方/n 媒体/n 点名/v 批评/v BBC/nx 、/w 《/w 纽约时报/nz 》/w 、/w 《/w 卫报/nz 》/w 、/w 《/w 经济学人/nz 》/w 、/w 福克斯新闻电视台/nt 等/u 西方/s 媒体/n ，/w 指责/v 其/r 对/p 土/ns 未遂/v 军事/n 政变/v 报道/v 不/d 实/a ，/w 有/v 刻意/d 抹黑/v 埃尔多安/nr 、/w 干涉/v 土/ns 内政/n 之/u 嫌/n 。/w 
 巴哲/nr 说/v ，/w 向/p 俄罗斯/ns 靠拢/v 并不/d 意味着/v 土/ns 外交/n 政策/n 轴心/n 发生/v 变化/v 。/w 
 目前/t 土耳其/ns 与/p 欧美/ns 关系/n 发展/v 不/d 顺畅/a ，/w 矛盾重重/v ，/w 这/r 或许/d 是/v 一/m 种/q 特殊/a 环境/n 下/f 的/u 暂时性/n 调整/vn 。/w 
 土耳其智库经济和外交政策中心/nt 主席/n 、/w 卡内基学会/nt 访问/vn 学者/n 希南·乌尔根/nr 认为/v ，/w 引渡/v 居伦/nr 问题/n 使/v 土/ns 美/ns 关系/n 面临/v 不/d 小/a 考验/v 。/w 
@@ -3440,22 +3440,22 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 寻求/v 加入/v 欧盟/nt 已经/d 多年/m 。/w 
 （/w 记者/n 陈立希/nr ，/w 编辑/n 李宏/nr ，/w 新华/nz 国际/n 客户端/n 报道/v ）/w 
 土耳其政府/nt 宣布/v 成立/v 紧急状态协调委员会/nt 
-新华社/nt 安卡拉/ns ７月/t ２４日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其总理府/nt ２３日/t 发表/v 公报/n ，/w 宣布/v 成立/v 以/p 总理/n 比纳利·耶尔德勒姆/nr 为/v 主席/n 的/u 紧急状态协调委员会/nt 。/w 
+新华社/nt 安卡拉/ns 7月/t 24日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其总理府/nt 23日/t 发表/v 公报/n ，/w 宣布/v 成立/v 以/p 总理/n 比纳利·耶尔德勒姆/nr 为/v 主席/n 的/u 紧急状态协调委员会/nt 。/w 
 紧急状态协调委员会/nt 成员/n 由/p 来自/v 土耳其政府/nt 主要/b 部门/n 的/u 代表/n 组成/v ，/w 包括/v 内政部/n 、/w 司法部/n 、/w 外交部/n 、/w 国防部/n 、/w 教育部/n 以及/c 劳动和社会保障部/n 等/u 。/w 
 该/r 委员会/n 的/u 决定/n 一/m 经/p 作/v 出/v ，/w 须/d 由/p 所有/b 相关/vn 政府/n 部门/n 和/c 机构/n 立即/d 执行/v 。/w 
 未来/t 涉及/v 紧急状态/n 的/u 主要/b 协调/vn 工作/n 将/d 由/p 各省/r 省长/n 实施/v 完成/v 。/w 
-土耳其/ns １５日/t 晚/t 至/c １６日/t 凌晨/t 发生/v 未遂/v 军事/n 政变/v 后/f ，/w 已/d 有/v ９０００/m 多/m 人/n 被/p 逮捕/v ，/w 包括/v 土/ns 多/a 个/q 部门/n 的/u 国家/n 公务员/n 、/w 警察/n 、/w 法官/n 、/w 宗教/n 和/c 教育/v 人士/n 在内/u 的/u 近/d ５万/m 人/n 被/p 停职/v 。/w 
-２１日/t ，/w 土耳其大国民议会/nt 以/p ３４６/m 票/q 赞成/v 、/w １１５/m 票/q 反对/v 的/u 结果/n ，/w 通过/v 了/u 政府/n 提出/v 的/u 实施/v 为期/v ３/m 个/q 月/n 紧急状态/n 的/u 议案/n ，/w 紧急状态/n 决定/n 正式/a 生效/v 。/w 
+土耳其/ns 15日/t 晚/t 至/c 16日/t 凌晨/t 发生/v 未遂/v 军事/n 政变/v 后/f ，/w 已/d 有/v 9000/m 多/m 人/n 被/p 逮捕/v ，/w 包括/v 土/ns 多/a 个/q 部门/n 的/u 国家/n 公务员/n 、/w 警察/n 、/w 法官/n 、/w 宗教/n 和/c 教育/v 人士/n 在内/u 的/u 近/d 5万/m 人/n 被/p 停职/v 。/w 
+21日/t ，/w 土耳其大国民议会/nt 以/p 346/m 票/q 赞成/v 、/w 115/m 票/q 反对/v 的/u 结果/n ，/w 通过/v 了/u 政府/n 提出/v 的/u 实施/v 为期/v 3/m 个/q 月/n 紧急状态/n 的/u 议案/n ，/w 紧急状态/n 决定/n 正式/a 生效/v 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 宣布/v 将/d 对/p 军队/n 系统/a 实行/v 改革/v 
-新华社/nt 安卡拉/ns ７月/t ３０日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr ３０日/t 宣布/v 将/d 对/p 军队/n 系统/n 实行/v 改革/v ，/w 土耳其/ns 武装部队/n 总参谋部/n 和/c 国家情报局/nt 计划/n 划归/v 总统府/n 直接/a 管辖/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 30日/t 电/n （/w 记者/n 施春/nr 邹乐/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 30日/t 宣布/v 将/d 对/p 军队/n 系统/n 实行/v 改革/v ，/w 土耳其/ns 武装部队/n 总参谋部/n 和/c 国家情报局/nt 计划/n 划归/v 总统府/n 直接/a 管辖/v 。/w 
 埃尔多安/nr 当晚/t 在/p 接受/v 电视台/n 采访/v 时/n 说/v ，/w 主要/b 改革/vn 措施/n 包括/v ：/w 在/p 经/p 议会/n 同意/v 后/f ，/w 土耳其/ns 武装部队/n 总参谋长/n 和/c 国家情报局/nt 局长/n 将/d 从/p 以往/t 向/p 总理/n 报告/v 改/v 由/p 直接/a 向/p 总统/n 报告/v ，/w 陆海空/n 三军/n 司令/n 将/d 直接/a 向/p 国防部长/n 报告/v ；/w 现有/vn 军事/n 院校/n 解散/v ，/w 成立/v 包括/v 陆海空/n 军事/n 学院/n 在内/u 的/u 国防/n 大学/n ，/w 同时/t 成立/v 一/m 所/q 宪兵/n 学院/n ；/w 军队/n 医院/n 从/p 以往/t 隶属/v 于/p 武装部队/n 改为/v 由/p 卫生部/n 直接/a 管辖/v 。/w 
 埃尔多安/nr 说/v ，/w 土耳其/ns 对/p 美国/ns 提出/v 的/u 引渡/vn 要求/n 一向/d 有求必应/v ，/w 但/c 美国/ns 却/d 拒绝/v 引渡/v 在/v 美/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 。/w 
 他/r 还/d 表示/v ，/w 土耳其/ns 将/d 继续/v 甄别/v 军队/n 、/w 警察/n 和/c 司法/n 系统/n 中/f 的/u “/w 居伦运动/n ”/w 支持者/n ，/w 并/c 以/p 坚定/a 的/u 决心/n 继续/v 反恐/v 行动/v 。/w 
-此前/t ，/w 土耳其/ns 总理/n 耶尔德勒姆/nr ２５日/t 宣布/v ，/w 以往/t 隶属/v 于/p 武装部队/n 的/u 宪兵/n 和/c 海岸/n 警卫队/n 将/d 改/v 为/v 由/p 内政部/n 领导/v 。/w 
+此前/t ，/w 土耳其/ns 总理/n 耶尔德勒姆/nr 25日/t 宣布/v ，/w 以往/t 隶属/v 于/p 武装部队/n 的/u 宪兵/n 和/c 海岸/n 警卫队/n 将/d 改/v 为/v 由/p 内政部/n 领导/v 。/w 
 目前/t 土耳其政府/nt 在/p 全国/n 范围/n 内/f 肃清/v 未遂政变参与者/n 和/c “/w 居伦运动/n ”/w 支持者/n 的/u 行动/vn 仍/d 在/d 进行/v 。/w 
-土耳其/ns 武装部队/n 总参谋部/n ２７日/t 发表/v 声明/n 说/v ，/w 有/v ８６５１/m 名/q 士兵/n 参与/v 了/u １５日/t 晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn ，/w 占/v 土耳其/ns 全军/n 人数/n 的/u １．５％/m 。/w 
-１４９/m 名/q 将军/n 已/d 因/p 支持/v “/w 居伦运动/n ”/w 被/p 从/p 军队/n 开除/v ，/w 另/d 有/v １６８４/m 名/q 士兵/n 被/p 从/p 军队/n 开除/v 。/w 
-７月/t １５日/t 夜/t 土耳其/ns 发生/v 未遂/v 政变/v ，/w 造成/v 至少/d ２３７/m 人/n 死亡/v 、/w ２１９１/m 人/n 受伤/v 。/w 
+土耳其/ns 武装部队/n 总参谋部/n 27日/t 发表/v 声明/n 说/v ，/w 有/v 8651/m 名/q 士兵/n 参与/v 了/u 15日/t 晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn ，/w 占/v 土耳其/ns 全军/n 人数/n 的/u 1.5％/m 。/w 
+149/m 名/q 将军/n 已/d 因/p 支持/v “/w 居伦运动/n ”/w 被/p 从/p 军队/n 开除/v ，/w 另/d 有/v 1684/m 名/q 士兵/n 被/p 从/p 军队/n 开除/v 。/w 
+7月/t 15日/t 夜/t 土耳其/ns 发生/v 未遂/v 政变/v ，/w 造成/v 至少/d 237/m 人/n 死亡/v 、/w 2191/m 人/n 受伤/v 。/w 
 土耳其政府/nt 指责/v 居住/v 在/p 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 主导/v 了/u 此次/r 未遂/v 政变/v ，/w 并/c 向/p 美方/n 提出/v 引渡/v 要求/n 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 斥/v 美/ns 高官/n “/w 支持/v 政变者/n ”/w 
 土耳其/ns 总统/n 雷杰普·塔伊普·埃尔多安/nr 29日/t 指责/v 美军中央司令部/nt 司令/n 约瑟夫·沃特尔/nr “/w 站/v 在/p 政变者/n 一边/n ”/w ，/w 原因/n 是/v 后者/r 发表/v 言论/n 称/v ，/w 美国/ns 失去/v 了/u 在/p 土耳其/ns 的/u 重要/a 军事/n 对话者/n ，/w 他们/r 或/c 遭/v “/w 清理/v ”/w 或/c 被/p “/w 监禁/v ”/w ，/w 土耳其/ns 未遂/v 政变/v 的/u 发生/vn 及其/c 后续/vn “/w 清理/vn ”/w 行动/vn 将/d 影响/v 美/ns 土/ns 的/u 军事/n 合作/vn 。/w 
@@ -4899,7 +4899,7 @@ P-3C/nx 侦察机/n 由/p 美国/ns 洛克希德马汀公司/nt 研发/v 制造/
 三人制/n 驾驶舱/n ，/w 机身/n 中部/f 为/v 作战舱/n ，/w 乘员/n 10/m -/w 12/m 人/n ，/w 装备/n 4/m 台/q AИ-20N/nx 涡轮/n 螺桨/n 发动机/n 。/w 
 该型/b 机/n 机翼/n 前后/f 的/u 机身/n 下部/f 为/v 前后/f 两/m 个/q 武器舱/n ，/w 可/v 携带/v RGB-1/nx 、/w RGB-2/nx 、/w RGB-3/nx 声纳/n 浮标/n ，/w AT-2/nx 鱼雷/n 和/c 深水炸弹/n ，/w 其/r 雷达/n 对/p 大型/b 舰艇/n 的/u 探测/vn 距离/n 达到/v 250/m 千米/q 。/w 
 俄罗斯/ns 反潜机/n 
-上世纪/t 50～60年代/t ，/w 冷战/nz 使/v 美国/ns 和/c 苏联/ns 都/d 不遗余力/v 地/u 发展/v 军事/n 力量/n 。/w 
+上世纪/t 50~60年代/t ，/w 冷战/nz 使/v 美国/ns 和/c 苏联/ns 都/d 不遗余力/v 地/u 发展/v 军事/n 力量/n 。/w 
 1954年/t ，/w 世界/n 上/f 第一/m 艘/q 核动力/n 潜艇/n “/w 鹦鹉螺/nz ”/w 号/n 加入/v 美国/ns 海军/n 潜艇/n 部队/n 。/w 
 它/r 以及/c 随后/d 列装/v 的/u “/w 北极星/nz ”/w 弹道导弹/n 核潜艇/n 的/u 出现/vn ，/w 使/v 苏联/ns 感到/v 了/u 巨大/a 的/u 威胁/vn 。/w 
 苏联/ns 一方面/c 加快/v 发展/v 自己/r 的/u 核潜艇/n 部队/n 及/c 海基/n 弹道导弹/n ，/w 同时/t 要求/v 反潜/vn 力量/n 将/p 美国/ns 的/u 核潜艇/n 消灭/v 在/p 其/r 潜射/vn 弹道导弹/n 的/u 射程/n 以外/f 。/w 
@@ -4968,7 +4968,7 @@ P－3C/nx 于/p 1969年/t 8月/t 进入/v 美/ns 海军/n 服役/v 。/w
 虽然/c 服役/v 30/m 多/m 年/q ，/w 但/c P－3C/nx 反潜机/n 至今/d 仍/d 是/v 反潜/vn 能力/n 很/d 强/a 的/u 固定翼/n 反潜机/n 。/w 
 它/r 的/u 飞行/vn 控制/vn 系统/n 是/v 集成/v 的/u 通用/vn 数字/n 计算机/n ，/w 执行/v 战术/n 显示/v 、/w 监控/v 等/u 任务/n ，/w 并且/c 为/p 飞行员/n 提供/v 飞行/vn 数据/n 。/w 
 它/r 采用/v 4/m 台/q 阿里森公司/nt 的/u T－65－A－14/nx 涡轮/n 螺旋桨/n 发动机/n ，/w 台/n 3.6/m 兆瓦/q 。/w 
-这/r 使/v 它/r 的/u 续航/vn 时间/n 为/v 10/m ～/w 12/m 小时/n ，/w 最/d 大/a 任务/n 航程/n 为/v 4410/m 公里/q ，/w 作战/vn 半径/n 为/v 2490/m 公里/q 。/w 
+这/r 使/v 它/r 的/u 续航/vn 时间/n 为/v 10/m ~/w 12/m 小时/n ，/w 最/d 大/a 任务/n 航程/n 为/v 4410/m 公里/q ，/w 作战/vn 半径/n 为/v 2490/m 公里/q 。/w 
 P－3C/nx 机/n 长/a 35.57/m 米/q ，/w 翼展/n 30.36/m 米/q ，/w 机/n 高/a 10.27/m 米/q ，/w 最/d 大/a 起飞/vn 重量/n 63/m 吨/q ；/w 最/d 大/a 航速/n 745/m 公里／小时/q ，/w 巡航/vn 速度/n 644/m 公里／小时/q ，/w 升限/n 8625.84/m 米/q 。/w 
 先进/a 的/u 反潜/vn 作战/vn 系统/n 是/v P－3C/nx 的/u 核心/n 。/w 
 机上/s 先进/a 的/u 探测/vn 装备/n 包括/v AN／ARR－78/nx (/w V/nx )/w 声呐/n 浮标/n 接收/vn 系统/n 、/w AN／ARR－72/nx 声呐/n 浮标/n 接收仪/n 和/c 磁/n 探测/vn 浮标/n 、/w AQA－7/nx 定向/b 声学/n 频率/n 分析仪/n 和/c 声学/n 纪录/n 指示仪/n 等/u ，/w 主要/b 探测/vn 目标/n 是/v 对方/n 潜艇/n 的/u 雷达/n 。/w 

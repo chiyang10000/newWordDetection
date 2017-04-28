@@ -16,10 +16,17 @@ public class SingleCharacterCRF extends crfppWrapper {
 
 	{
 		template = "data/crf-template/SingleCharacterCRF.template";
-		model ="data/model/SingleCharacterCRF.model";
-		trainData = "tmp/crfModel.crf";
+		model = "data/model/SingleCharacterCRF.model";
+		trainData = "tmp/SingleCharacterCRF.crf";
 	}
 
+	public static void main(String... args) {
+		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
+		corpus = new String[]{"data/raw/train.txt"};
+		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
+		//singleCharacterCRF.convert2TrainInput(corpus);
+		singleCharacterCRF.train(corpus);
+	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile) {
 		logger.debug("convert {} to {}", inputFiles, outputFile);
@@ -131,11 +138,5 @@ public class SingleCharacterCRF extends crfppWrapper {
 			logger.error("err!");
 			e.printStackTrace();
 		}
-	}
-	public static void main(String... args) {
-		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
-		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
-		singleCharacterCRF.convert2TrainInput(corpus);
-		singleCharacterCRF.train();
 	}
 }

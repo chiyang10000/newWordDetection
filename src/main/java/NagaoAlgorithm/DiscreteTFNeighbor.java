@@ -17,7 +17,7 @@ public class DiscreteTFNeighbor {
 		tf = new double[levelNum + 1];
 		le = new double[levelNum + 1];
 		re = new double[levelNum + 1];
-		for (int i =0; i < levelNum; i++){
+		for (int i = 0; i < levelNum; i++) {
 			mi[i] = tmp_mi[i * tmp_mi.length / levelNum];
 			tf[i] = tmp_mi[i * tmp_tf.length / levelNum];
 			le[i] = tmp_mi[i * tmp_le.length / levelNum];
@@ -29,24 +29,28 @@ public class DiscreteTFNeighbor {
 		re[levelNum] = Double.MAX_VALUE;
 
 	}
-	public int getMI(double value){
+
+	public int getMI(double value) {
 		int i = 0;
-		while (mi[++i] < value);
+		while (mi[++i] < value) ;
 		return i - 1;
 	}
-	public int getTF(double value){
+
+	public int getTF(double value) {
 		int i = 0;
-		while (tf[++i] < value);
+		while (tf[++i] < value) ;
 		return i - 1;
 	}
-	public int getLE(double value){
+
+	public int getLE(double value) {
 		int i = 0;
-		while (le[++i] < value);
+		while (le[++i] < value) ;
 		return i - 1;
 	}
-	public int getRE(double value){
+
+	public int getRE(double value) {
 		int i = 0;
-		while (re[++i] < value);
+		while (re[++i] < value) ;
 		return i - 1;
 	}
 }

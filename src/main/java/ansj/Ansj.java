@@ -3,11 +3,9 @@ package ansj;
 import evaluate.Corpus;
 import evaluate.NewWordDetector;
 import org.ansj.domain.Term;
-import org.ansj.splitWord.analysis.BaseAnalysis;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.slf4j.Logger;
 
-import javax.jnlp.JNLPRandomAccessFile;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -36,7 +34,7 @@ public class Ansj implements NewWordDetector {
 				List<Term> list = NlpAnalysis.parse(line).getTerms();
 				for (Term term : list)
 					if (Corpus.isNewWord(term.getRealName()) && !newWordList.contains(term.getRealName())) {
-					newWordList.add(term.getRealName());
+						newWordList.add(term.getRealName());
 						writer.append(term.getRealName());
 						writer.newLine();
 					}

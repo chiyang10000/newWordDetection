@@ -1,5 +1,6 @@
 package crfModel;
 
+import evaluate.NewWordDetector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,12 +12,11 @@ import java.io.InputStreamReader;
 /**
  * Created by wan on 4/24/2017.
  */
-abstract public class crfppWrapper {
-	private static Logger logger = LoggerFactory.getLogger(crfppWrapper.class);
+abstract public class crfppWrapper implements NewWordDetector {
 	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	static String shell = "";
-	String model, template, trainData;
+	private static Logger logger = LoggerFactory.getLogger(crfppWrapper.class);
 
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
@@ -29,9 +29,11 @@ abstract public class crfppWrapper {
 			logger.error("{} not exits!", crf_test);
 	}
 
+	String model, template, trainData;
+
 	private static void runCommand(String cmd) {
 		try {
-			logger.debug("Run command: [{}]", cmd);
+			logger.debug("Running command: [{}]", cmd);
 			Process pro = Runtime.getRuntime().exec(cmd);
 			InputStream in = pro.getInputStream();
 			BufferedReader read = new BufferedReader(new InputStreamReader(in));
@@ -57,7 +59,8 @@ abstract public class crfppWrapper {
 		runCommand(cmd);
 	}
 
-	public void train() {
+	public void train(String[] inputFiles) {
+		convert2TrainInput(inputFiles);
 		String cmd = String.join(" ", shell, crf_learn, template, trainData, model, "-t");
 		runCommand(cmd);
 	}
@@ -70,8 +73,10 @@ abstract public class crfppWrapper {
 		convertTestOuput2Res(crfppOutput, outputFile);
 	}
 
-	abstract public void convert2TrainInput(String[] inputFiles);
-	abstract public void convertSrc2TestInput(String[] inputFiles, String crfppInput);
-	abstract public void convertTestOuput2Res(String crfppOutput, String resFile);
+	abstract void convert2TrainInput(String[] inputFiles);
+
+	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput);
+
+	abstract void convertTestOuput2Res(String crfppOutput, String resFile);
 
 }

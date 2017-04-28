@@ -19,14 +19,12 @@ public class TFNeighbor {
 
 	//add word to leftNeighbor
 	public void addToLeftNeighbor(char word) {
-		//leftNeighbor.put(word, 1 + leftNeighbor.getOrDefault(word, 0));
 		Integer number = leftNeighbor.get(word);
 		leftNeighbor.put(word, number == null ? 1 : 1 + number);
 	}
 
 	//add word to rightNeighbor
 	public void addToRightNeighbor(char word) {
-		//rightNeighbor.put(word, 1 + rightNeighbor.getOrDefault(word, 0));
 		Integer number = rightNeighbor.get(word);
 		rightNeighbor.put(word, number == null ? 1 : 1 + number);
 	}
