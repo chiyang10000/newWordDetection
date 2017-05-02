@@ -36,7 +36,31 @@ public class NagaoAlgorithm implements Serializable {
 		return 1;
 	}
 
-	public static load
+	public void saveIntoFile() {
+		try{
+			logger.info("saving into nagao object ...");
+			FileOutputStream fs = new FileOutputStream("data/model/nagao.corpus");
+			ObjectOutputStream os =  new ObjectOutputStream(fs);
+			os.writeObject(this);
+			os.close();
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+	}
+	public static NagaoAlgorithm loadFromFile() {
+		NagaoAlgorithm nagao = null;
+		try{
+			logger.info("loading into nagao object ...");
+			FileInputStream fs = new FileInputStream("data/model/nagao.corpus");
+			ObjectInputStream os =  new ObjectInputStream(fs);
+			nagao = (NagaoAlgorithm) os.readObject();
+			os.close();
+		}catch(Exception ex){
+			ex.printStackTrace();
+			logger.error("load nagao err");
+		}
+		return nagao;
+	}
 
 	public void calcDiscreteTFNeighbor(Set<String> wordList, int levelNum) {
 		logger.debug("Running ...");

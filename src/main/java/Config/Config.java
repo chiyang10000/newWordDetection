@@ -2,13 +2,21 @@ package Config;
 
 import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.BaseAnalysis;
+import org.ansj.splitWord.analysis.NlpAnalysis;
+import org.ansj.splitWord.analysis.ToAnalysis;
+import org.ansj.util.MyStaticValue;
+
+import java.io.File;
 
 /**
  * Created by wan on 4/25/2017.
  */
 public class Config {
+	static {
+		MyStaticValue.isRealName = true;// ansj不进行大小写转换
+	}
 	final public static String sepSentenceRegex = "([【】°~～\\pP&&[^-－.%．·@／]]+)";
-	final public static String sepWordRegex = " ";
+	final public static String sepWordRegex = " +";
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
@@ -25,11 +33,12 @@ public class Config {
 	final public static double thresholdRightEntropy = 1;
 	final public static double thresholdLeftNumber = 1;
 	final public static double thresholdLeftRightNumber = 1;
-	final public static Analysis parser = new BaseAnalysis();
-	final public static int testSize = 5;
+	final public static Analysis parser = new NlpAnalysis();
+	final public static int testSize = 6;
 	public static int levelNum = 10;
 	public static int maxNagaoLength = 11;
-	public static boolean isLoadNagaoFromFile = true;
+	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
+	public static boolean isNagaoSavedIntoFile = false;
 
 	public static void main(String... args) {
 		if ("·".matches(sepSentenceRegex))

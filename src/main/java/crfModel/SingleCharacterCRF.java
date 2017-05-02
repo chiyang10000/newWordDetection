@@ -24,7 +24,6 @@ public class SingleCharacterCRF extends crfppWrapper {
 		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
 		corpus = new String[]{"data/raw/train.txt"};
 		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
-		//singleCharacterCRF.convert2TrainInput(corpus);
 		singleCharacterCRF.train(corpus);
 	}
 

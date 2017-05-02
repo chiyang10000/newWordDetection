@@ -5,7 +5,6 @@ import NagaoAlgorithm.NagaoAlgorithm;
 import NagaoAlgorithm.TFNeighbor;
 import evaluate.Corpus;
 import org.ansj.domain.Term;
-import org.ansj.util.MyStaticValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,36 +19,22 @@ public class SegementationCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(SingleCharacterCRF.class);
 	public NagaoAlgorithm nagao;
 	public double mostRecallInTraindata;
-	HashSet<String> wordList;
 
 	/**
 	 * @param corpusFiles 没有分词信息的原始文件, 作为统计词频和信息熵的语料库
 	 */
 	public SegementationCRF(String... corpusFiles) {
-		nagao = new NagaoAlgorithm(Config.maxNagaoLength);
-		nagao.scan(corpusFiles);
 
-		wordList = new HashSet<>();
-		MyStaticValue.isRealName = true;
-		try {
-			for (String corpusFile : corpusFiles) {
-				BufferedReader reader = new BufferedReader(new FileReader(corpusFile));
-				String line;
-				while ((line = reader.readLine()) != null) {
-					List<Term> list = Config.parser.parseStr(line).getTerms();
-					for (Term term : list) {
-						if (!term.getRealName().matches(Config.sepSentenceRegex))
-							wordList.add(term.getRealName());
-					}
-				}
-			}
-		} catch (java.io.IOException e) {
-			logger.error("count word using ansj error");
-			e.printStackTrace();
+		if (Config.isNagaoLoadedFromFile) {
+			nagao = NagaoAlgorithm.loadFromFile();
+		} else {
+			nagao = new NagaoAlgorithm(Config.maxNagaoLength);
+			nagao.scan(corpusFiles);
+			nagao.countTFNeighbor(null);
+			nagao.calcDiscreteTFNeighbor(nagao.wordTFNeighbor.keySet(), Config.levelNum);
+			if (Config.isNagaoSavedIntoFile)
+				nagao.saveIntoFile();
 		}
-
-		nagao.countTFNeighbor(null);
-		nagao.calcDiscreteTFNeighbor(nagao.wordTFNeighbor.keySet(), Config.levelNum);
 
 		template = "data/crf-template/SegmentCRF.template";
 		model = "data/model/SegmentCRF.model";
@@ -65,6 +50,10 @@ public class SegementationCRF extends crfppWrapper implements Serializable {
 	}
 
 	/**
+	 * 正确的单个词是2
+	 * 新词是0 3 1
+	 * 标注分词后的文件，有可能某些新词不能由已分割的词合并出来
+	 *
 	 * @param inputFiles 同时设置mostHitInTrainData
 	 */
 	@Override
@@ -81,37 +70,47 @@ public class SegementationCRF extends crfppWrapper implements Serializable {
 				newWordList.addAll(Corpus.extractNewWordNotInCorpus(inputFile));
 				reader = new BufferedReader(new FileReader(inputFile));
 				while ((srcline = reader.readLine()) != null) {
-					srcline = srcline.replaceAll("/([^ ]*|$)", "");
-					for (String line : srcline.split(Config.sepSentenceRegex))
-						if (line.trim().length() > 0) {
-							String[] golden = line.split(" ");
+					srcline = srcline.replaceAll("/([^ ]*|$)", "");// 去掉词性
+					for (String line : srcline.split(Config.sepSentenceRegex)) {
+						line = line.trim();
+						if (line.length() > 0) {
+							String[] golden = line.split(Config.sepWordRegex);
 							List<Term> ansj = Config.parser.parseStr(line.replace(" ", "")).getTerms();
 
 							int k = 0;
 							String gs = golden[0], as = "";
 							int label = 1;
-							for (int i = 0; i < ansj.size(); i++) {
+							for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含as, 且gs仅包含一个词，
+								//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
 								Term term = ansj.get(i);
 								as += term.getRealName();
 								if (gs.equals(as)) {
 									if (newWordList.contains(gs))
 										validNewWordList.add(gs);
-									label = 1;
+									if (gs.length() == term.getRealName().length()) // 正确的单个词
+										label = 1; // 正确的单个词2
+									else
+										label = 1; // 新词结尾1
 									as = "";
 									if (k + 1 < golden.length) {
 										gs = golden[++k];
 									}
 								} else {
-									label = 0;
-									//logger.debug("xxx {} {} ！！！", as, gs);
-									while (!gs.contains(as)) {
-										gs += golden[++k];
+									if (as.length() == term.getRealName().length())
+										label = 0; // 新词开头0
+									else
+										label = 0; // 新词中部3
+									if (!gs.contains(as)) {
 										//logger.debug("--- {} {} ！！！", as, gs);
+										while (!gs.contains(as)) {
+											gs += golden[++k];
+											//	logger.debug("--- {} {} ！！！", as, gs);
+										}
 									}
 									if (gs.equals(as)) {
 										if (newWordList.contains(gs))
 											validNewWordList.add(gs);
-										label = 1;
+										label = 1;// 这个序列包含了多个词, 但是这个序列并不是新词
 										as = "";
 										if (k + 1 < golden.length) {
 											gs = golden[++k];
@@ -133,6 +132,7 @@ public class SegementationCRF extends crfppWrapper implements Serializable {
 							}
 							writer.newLine();
 						}
+					}
 				}
 			}
 			writer.close();

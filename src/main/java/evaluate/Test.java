@@ -21,7 +21,6 @@ public class Test {
 
 	public static void testOnSeg() {
 		// todo
-
 	}
 
 	public static void test(String golden, String ans) {
@@ -57,7 +56,7 @@ public class Test {
 		SegementationCRF segementationCRF = new SegementationCRF("data/test/train.txt.src", "data/test/test.txt.src");
 		segementationCRF.train(new String[]{"data/raw/train.txt"});
 		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
-		//singleCharacterCRF.train(new String[]{"data/raw/train.txt"});
+		singleCharacterCRF.train(new String[]{"data/raw/train.txt"});
 		Ansj ansj = new Ansj();
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<NewWordDetector>();
 		newWordDetectors.add(singleCharacterCRF);
@@ -84,6 +83,7 @@ public class Test {
 				for (NewWordDetector newWordDetector : newWordDetectors) {
 					//if (newWordDetector != segementationCRF) continue;
 					outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), file.getName());
+					logger.info("Test on {}", newWordDetector.getClass().getCanonicalName());
 					newWordDetector.detect(inputFile, outputFile);
 					segementationCRF.nagao.addWordInfo(outputFile, outputFile + ".txt");
 					Test.test(answerFile, outputFile);

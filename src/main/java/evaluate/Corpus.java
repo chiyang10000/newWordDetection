@@ -152,7 +152,9 @@ public class Corpus {
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含字母和数字的不算
-		if (word.matches(Config.newWordExcludeRegex))
+		if (word.matches(Config.newWordExcludeRegex)
+			|| word.matches("第?[几两数一二三四五六七八九十].*")
+				)
 			return false;
 		if (!basicWordList.contains(word))
 			return true;
@@ -205,7 +207,7 @@ public class Corpus {
 	 * @param args
 	 */
 	public static void main(String... args) {
-		//shuffleAndSplit(Config.newWordFiles, "data/raw/train.txt", "data/raw/test.txt");
+		shuffleAndSplit(Config.newWordFiles, "data/raw/train.txt", "data/raw/test.txt");
 		extractNewWordNotInCorpus("data/raw/train.txt");
 		extractNewWordNotInCorpus("data/raw/test.txt");
 		extractNewWordNotInSegmentation("data/raw/train.txt");

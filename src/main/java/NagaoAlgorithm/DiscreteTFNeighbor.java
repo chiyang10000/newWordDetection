@@ -1,11 +1,12 @@
 package NagaoAlgorithm;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
  * Created by wan on 4/27/2017.
  */
-public class DiscreteTFNeighbor {
+public class DiscreteTFNeighbor implements Serializable{
 	double mi[], tf[], le[], re[];
 
 	public DiscreteTFNeighbor(int levelNum, double[] tmp_mi, double[] tmp_tf, double[] tmp_le, double[] tmp_re) {
