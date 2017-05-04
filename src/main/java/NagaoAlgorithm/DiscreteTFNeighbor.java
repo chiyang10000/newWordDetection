@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Created by wan on 4/27/2017.
  */
-public class DiscreteTFNeighbor implements Serializable{
+public class DiscreteTFNeighbor implements Serializable {
 	double mi[], tf[], le[], re[];
 
 	public DiscreteTFNeighbor(int levelNum, double[] tmp_mi, double[] tmp_tf, double[] tmp_le, double[] tmp_re) {
@@ -43,13 +43,18 @@ public class DiscreteTFNeighbor implements Serializable{
 		return i - 1;
 	}
 
+	//左右熵为0的算作一类
 	public int getLE(double value) {
+		if (Math.abs(value) == 0.0)
+			return -1;
 		int i = 0;
 		while (le[++i] < value) ;
 		return i - 1;
 	}
 
 	public int getRE(double value) {
+		if (Math.abs(value) == 0.0)
+			return -1;
 		int i = 0;
 		while (re[++i] < value) ;
 		return i - 1;

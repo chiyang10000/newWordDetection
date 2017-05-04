@@ -8,11 +8,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Set;
 
 /**
  * Created by wan on 4/24/2017.
  */
 abstract public class crfppWrapper implements NewWordDetector {
+	static protected final char label_begin = 'B', label_meddle = 'M', label_end = 'E', label_single = 'S',
+			label_true = 'T', label_false = 'F', label_inside = 'I', label_other = 'O';
 	static String crf_test = new File("lib/crfpp/crf_test").getAbsolutePath();
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	static String shell = "";
@@ -30,6 +33,12 @@ abstract public class crfppWrapper implements NewWordDetector {
 	}
 
 	String model, template, trainData;
+
+	{
+		model = "data/model/" + this.getClass().getSimpleName() + ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + ".template";
+		trainData = "tmp//" + this.getClass().getSimpleName() + ".crf";
+	}
 
 	private static void runCommand(String cmd) {
 		try {
@@ -50,6 +59,7 @@ abstract public class crfppWrapper implements NewWordDetector {
 			}
 			in.close();
 		} catch (Exception e) {
+			logger.debug("Run command err! : [{}] ", cmd);
 			e.printStackTrace();
 		}
 	}
@@ -59,24 +69,29 @@ abstract public class crfppWrapper implements NewWordDetector {
 		runCommand(cmd);
 	}
 
-	public void train(String[] inputFiles) {
-		convert2TrainInput(inputFiles);
+	public void train(String[] inputFiles, String pattern) {
+		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
+		trainData = "tmp//" + this.getClass().getSimpleName() + "." + pattern + ".crf";
+		convert2TrainInput(inputFiles, pattern);
 		String cmd = String.join(" ", shell, crf_learn, template, trainData, model, "-t");
 		runCommand(cmd);
 	}
 
-	public void detect(String inputFile, String outputFile) {
-		String crfppInput = inputFile + ".crfin";
-		String crfppOutput = inputFile + ".crfout";
-		convertSrc2TestInput(new String[]{inputFile}, crfppInput);
-		decode(model, crfppInput, crfppOutput);
-		convertTestOuput2Res(crfppOutput, outputFile);
+	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+		String crfppInput = String.join("", "tmp/", inputFile.replaceAll(".*/", ""),
+				this.getClass().getSimpleName(), ".", pattern, ".crfin");
+		String crfppOutput = String.join("", "tmp/", inputFile.replaceAll(".*/", ""),
+				this.getClass().getSimpleName(), ".", pattern, ".crfout");
+		convertSrc2TestInput(new String[]{inputFile}, crfppInput, pattern);
+		decode("data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model", crfppInput, crfppOutput);
+		return convertTestOuput2Res(crfppOutput, outputFile, pattern);
 	}
 
-	abstract void convert2TrainInput(String[] inputFiles);
+	abstract void convert2TrainInput(String[] inputFiles, String pattern);
 
-	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput);
+	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern);
 
-	abstract void convertTestOuput2Res(String crfppOutput, String resFile);
+	abstract Set<String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern);
 
 }

@@ -1,14 +1,15 @@
 package NagaoAlgorithm;
 
-import Config.Config;
+import evaluate.config;
 import evaluate.Corpus;
+import evaluate.NewWordDetector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.*;
 
-public class NagaoAlgorithm implements Serializable {
+public class NagaoAlgorithm implements Serializable, NewWordDetector{
 	// todo 应该把String换成一种基于指针的比较
 
 	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
@@ -30,6 +31,21 @@ public class NagaoAlgorithm implements Serializable {
 		wordTFNeighbor = new HashMap<String, TFNeighbor>();
 	}
 
+	public static NagaoAlgorithm loadFromFile() {
+		NagaoAlgorithm nagao = null;
+		try {
+			logger.info("loading into nagao object ...");
+			FileInputStream fs = new FileInputStream("data/model/nagao.corpus");
+			ObjectInputStream os = new ObjectInputStream(fs);
+			nagao = (NagaoAlgorithm) os.readObject();
+			os.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			logger.error("load nagao err");
+		}
+		return nagao;
+	}
+
 	public int getTF(String word) {
 		if (wordTFNeighbor.containsKey(word))
 			return wordTFNeighbor.get(word).getTF();
@@ -37,29 +53,15 @@ public class NagaoAlgorithm implements Serializable {
 	}
 
 	public void saveIntoFile() {
-		try{
+		try {
 			logger.info("saving into nagao object ...");
 			FileOutputStream fs = new FileOutputStream("data/model/nagao.corpus");
-			ObjectOutputStream os =  new ObjectOutputStream(fs);
+			ObjectOutputStream os = new ObjectOutputStream(fs);
 			os.writeObject(this);
 			os.close();
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-	}
-	public static NagaoAlgorithm loadFromFile() {
-		NagaoAlgorithm nagao = null;
-		try{
-			logger.info("loading into nagao object ...");
-			FileInputStream fs = new FileInputStream("data/model/nagao.corpus");
-			ObjectInputStream os =  new ObjectInputStream(fs);
-			nagao = (NagaoAlgorithm) os.readObject();
-			os.close();
-		}catch(Exception ex){
-			ex.printStackTrace();
-			logger.error("load nagao err");
-		}
-		return nagao;
 	}
 
 	public void calcDiscreteTFNeighbor(Set<String> wordList, int levelNum) {
@@ -97,13 +99,22 @@ public class NagaoAlgorithm implements Serializable {
 	public void addWordInfo(String wordFile, String outputFile) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(wordFile + ".nagao"));
 			String tmp;
 			while ((tmp = reader.readLine()) != null) {
-				int tf = 0;
-				if (wordTFNeighbor.containsKey(tmp))
-					tf = wordTFNeighbor.get(tmp).getTF();
-				writer.append(String.format("%s\t%d", tmp, tf));
+				int tf = 1, ln = 0, rn = 0;
+				double mi = 10000, entropy = 10000, le = 10000, re = 10000;
+				if (wordTFNeighbor.containsKey(tmp)) {
+					TFNeighbor tfNeighbor = wordTFNeighbor.get(tmp);
+					tf = tfNeighbor.getTF();
+					entropy = tfNeighbor.getNeighborEntropy();
+					le = tfNeighbor.getLeftNeighborEntropy();
+					re = tfNeighbor.getRightNeighborEntropy();
+					ln = tfNeighbor.getLeftNeighborNumber();
+					rn = tfNeighbor.getRightNeighborNumber();
+					mi = countMI(tmp);
+				}
+				writer.append(String.format("%s\t%d\t%f\t%d\t%f\t%d\t%f\t%f", tmp, tf, mi, ln, le, rn, re, entropy));
 				writer.newLine();
 			}
 			writer.close();
@@ -130,7 +141,7 @@ public class NagaoAlgorithm implements Serializable {
 	//add substring of line to pTable
 	private void addToPTable(String line) {
 		//split line according to consecutive none Chinese character
-		String[] phrases = line.split(Config.sepSentenceRegex);// + "|[" + stopwords + "]");
+		String[] phrases = line.split(config.sepSentenceRegex);// + "|[" + stopwords + "]");
 		//String[] phrases = {line};//line.split("[^\u4E00-\u9FA5]+|[" + stopwords + "]");
 		for (String phrase : phrases) {
 			for (int i = 0; i < phrase.length(); i++)
@@ -162,18 +173,15 @@ public class NagaoAlgorithm implements Serializable {
 
 	/**
 	 * nagao算法计算串频和左右信息熵
-	 *
-	 * @param wordlist 非null的话统计这个词表里面的词, 但是这样可能没法算MI
 	 */
-	public void countTFNeighbor(HashSet<String> wordlist) {
+	public void countTFNeighbor() {
 		//get TF and right neighbor
+		logger.debug("Running...");
 		for (int pIndex = 0; pIndex < rightPTable.size(); pIndex++) {
 			String phrase = rightPTable.get(pIndex);
 			for (int length = 1 + rightLTable[pIndex]; length <= maxWordLength && length <= phrase.length();
 				 length++) {
 				String word = phrase.substring(0, length);
-				if (wordlist != null && !wordlist.contains(word))
-					continue;
 				TFNeighbor tfNeighbor = new TFNeighbor();
 				tfNeighbor.incrementTF();
 				if (phrase.length() > length)
@@ -194,8 +202,6 @@ public class NagaoAlgorithm implements Serializable {
 			String phrase = leftPTable.get(pIndex);
 			for (int length = 1 + leftLTable[pIndex]; length <= maxWordLength && length <= phrase.length(); length++) {
 				String word = reverse(phrase.substring(0, length));// 翻转了两次得到原来的词
-				if (wordlist != null && !wordlist.contains(word))
-					continue;
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 				if (phrase.length() > length)
 					tfNeighbor.addToLeftNeighbor(phrase.charAt(length));
@@ -226,6 +232,11 @@ public class NagaoAlgorithm implements Serializable {
 		return Collections.min(mi);
 	}
 
+	/**
+	 * 生成所有长度不超过的p串
+	 *
+	 * @param inputFiles
+	 */
 	public void scan(String[] inputFiles) {
 		String line;
 		logger.debug("Running...");
@@ -247,7 +258,7 @@ public class NagaoAlgorithm implements Serializable {
 	public void detect(String[] inputs, String out, int thresholdTF, double thresholdMI,
 					   double thresholdNeighborEntropy) {
 		scan(inputs);
-		countTFNeighbor(null);
+		countTFNeighbor();
 
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(out));
@@ -275,5 +286,40 @@ public class NagaoAlgorithm implements Serializable {
 
 	private void setMaxWordLength(int maxWordLength) {
 		this.maxWordLength = maxWordLength;
+	}
+
+	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+		if (!pattern.equals("nw"))
+			logger.error("detect {} not supported", pattern);
+		scan(new String[]{inputFile});
+		countTFNeighbor();
+		HashSet<String> newWordList = new HashSet<>();
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
+			for (String word : wordTFNeighbor.keySet()) {
+				if (word.length() <= 1 || !Corpus.isNewWord(word))
+					continue;
+				//logger.debug("{}", word);
+				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
+
+				int tf;
+				double mi;
+				tf = tfNeighbor.getTF();
+				mi = countMI(word);
+
+				if (tf > config.thresholdTF &&
+						tfNeighbor.getNeighborEntropy() > config.thresholdNeighborEntropy &&
+						mi > config.thresholdMI
+						&& !newWordList.contains(word)) {
+					newWordList.add(word);
+					bw.append(word);
+					bw.newLine();
+				}
+			}
+			bw.close();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		return newWordList;
 	}
 }

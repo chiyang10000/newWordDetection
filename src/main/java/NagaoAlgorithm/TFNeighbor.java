@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 统计左右字频, 自己的频率
  */
-public class TFNeighbor implements Serializable{
+public class TFNeighbor implements Serializable {
 
 	private int tf;
 	private Map<Character, Integer> leftNeighbor;
