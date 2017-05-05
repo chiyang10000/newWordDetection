@@ -23,8 +23,8 @@ public class CharacterCRF extends crfppWrapper {
 		corpus = new String[]{"data/raw/train.txt"};
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
 
-		//singleCharacterCRF.train(corpus, config.nw);
-		//Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,"tmp/tmp.nw", config.nw));
+		singleCharacterCRF.train(corpus, config.nw);
+		Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,"tmp/tmp.nw", config.nw));
 
 		singleCharacterCRF.train(corpus, config.nr);
 		Test.test(Test.readWordList(config.testDataNRAns), singleCharacterCRF.detectNewWord(config.testDataSrc,

@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -209,16 +210,19 @@ public class Corpus {
 			int totalSize = 0;
 			int currentSize = 0;
 			List<String> lines = new ArrayList<>();
+			BufferedWriter writer = new BufferedWriter(new FileWriter("tmp/total.txt"));
 			for (String inputfile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputfile));
 				String line;
 				while ((line = reader.readLine()) != null) {
 					lines.add(line);
+					writer.append(line);
+					writer.newLine();
 					totalSize += line.length();
 				}
 			}
-			//Collections.shuffle(lines); // todo no shuffle
-			BufferedWriter writer;
+			writer.close();
+			Collections.shuffle(lines); // todo no shuffle
 			writer = new BufferedWriter(new FileWriter(testFile));
 			int i;
 			for (i = 0; currentSize < totalSize / config.testSize; i++) {
@@ -269,6 +273,7 @@ public class Corpus {
 		//extractNewWordNotInSegmentation("data/raw/test.txt");
 		convertToSrc(config.testData);
 		convertToSrc(config.trainData);
+		convertToSrc(config.totalData);
 		extractWord(tagNW("data/raw/train.txt"), "nw");
 		extractWord(tagNW("data/raw/test.txt"), "nw");
 		extractWord("data/raw/train.txt", "ns");

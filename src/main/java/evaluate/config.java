@@ -38,6 +38,8 @@ public class config {
 	public static boolean isNagaoSavedIntoFile = false;
 	public static String testData = "data/raw/test.txt";
 	public static String trainData = "data/raw/train.txt";
+	public static String totalData = "tmp/total.txt";
+
 	public static String testDataSrc = "data/test/test.txt.src";
 	public static String testDataNWAns = "data/test/test.txt.nw.ans";
 	public static String testDataNRAns = "data/test/test.txt.nr.ans";
@@ -57,7 +59,7 @@ public class config {
 	}
 
 	public static String removePos(String in) {
-		return in.replaceAll("/[^/]$", "");
+		return in.replaceAll("/[^/]*$", "");
 	}
 
 	public static String getPos(String in) {
@@ -65,7 +67,7 @@ public class config {
 	}
 
 	public static void main(String... args) {
-		System.out.println(removePos("a/b//c"));
+		System.out.println(removePos("a/b//l"));
 
 	}
 }
