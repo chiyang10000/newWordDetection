@@ -89,8 +89,7 @@ public class Corpus {
 					String word = (seg.split(config.sepPosRegex)[0]);
 					if (isNewWord(word)) {
 						writer.append(word + "/nw ");
-					}
-					else {
+					} else {
 						writer.append(seg + " ");
 					}
 				}
@@ -111,7 +110,8 @@ public class Corpus {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
 			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter("data/test/" + inputFile + "."+pattern +".ans"));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("data/test/" + inputFile + "." + pattern + "" +
+					".ans"));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.length() == 0) continue;
@@ -243,11 +243,12 @@ public class Corpus {
 		BufferedReader reader = null;
 		try {
 			reader = new BufferedReader(new FileReader(inputFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter("data/test/" + inputFile.replaceAll(".*/", "") + ".src"));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("data/test/" + inputFile.replaceAll(".*/", "") +
+					".src"));
 			String line;
 			while ((line = reader.readLine()) != null) {
 				if (line.length() == 0) continue;
-				line = line.replaceAll("/[^ ]+" ,"");
+				line = line.replaceAll("/[^ ]+", "");
 				line = line.replaceAll(" +", "");
 				writer.append(line);
 				writer.newLine();

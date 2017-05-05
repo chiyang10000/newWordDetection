@@ -2,8 +2,8 @@ package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.Ansj;
-import crfModel.SegmentationCRF;
-import crfModel.SingleCharacterCRF;
+import crfModel.WordCRF;
+import crfModel.CharacterCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -60,14 +60,18 @@ public class Test {
 	}
 
 	public static void main(String... args) {
-		logger.info("compare test and train");
+		logger.info("compare test and train in nw");
 		test(readWordList(config.trainDataNWAns), readWordList(config.testDataNWAns));
+		logger.info("compare test and train in nr");
+		test(readWordList(config.trainDataNRAns), readWordList(config.testDataNRAns));
+		logger.info("compare test and train in ns");
+		test(readWordList(config.trainDataNSAns), readWordList(config.testDataNSAns));
 		//Corpus.
 		File[] files = new File("data/test").listFiles();
 
-		SegmentationCRF segementationCRF = new SegmentationCRF("data/test/train.txt.src", "data/test/test.txt.src");
+		WordCRF segementationCRF = new WordCRF("data/test/train.txt.src", "data/test/test.txt.src");
 		//segementationCRF.train(new String[]{"data/raw/train.txt"});
-		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
+		CharacterCRF singleCharacterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxNagaoLength);
 		//singleCharacterCRF.train(new String[]{"data/raw/train.txt"});
 		Ansj ansj = new Ansj();
@@ -103,7 +107,8 @@ public class Test {
 					//if (newWordDetector != segementationCRF) continue;
 					outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), file.getName());
 					logger.info("Test on new word {}", newWordDetector.getClass().getCanonicalName());
-					Test.test(readWordList(answerNewWordFile), newWordDetector.detectNewWord(inputFile, outputFile, "nw"));
+					Test.test(readWordList(answerNewWordFile), newWordDetector.detectNewWord(inputFile, outputFile,
+							"nw"));
 					segementationCRF.nagao.addWordInfo(outputFile, outputFile + ".txt");
 
 					/*

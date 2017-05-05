@@ -1,10 +1,10 @@
 package crfModel;
 
-import evaluate.config;
 import NagaoAlgorithm.NagaoAlgorithm;
 import NagaoAlgorithm.TFNeighbor;
 import evaluate.Corpus;
 import evaluate.Test;
+import evaluate.config;
 import org.ansj.domain.Term;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,14 +17,14 @@ import java.util.Set;
 /**
  * Created by don on 27/04/2017.
  */
-public class SegmentationCRF extends crfppWrapper implements Serializable {
-	private static final Logger logger = LoggerFactory.getLogger(SingleCharacterCRF.class);
+public class WordCRF extends crfppWrapper implements Serializable {
+	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	public NagaoAlgorithm nagao;
 
 	/**
 	 * @param corpusFiles 没有分词信息的原始文件, 作为统计词频和信息熵的语料库
 	 */
-	public SegmentationCRF(String... corpusFiles) {
+	public WordCRF(String... corpusFiles) {
 
 		if (config.isNagaoLoadedFromFile) {// 从文件里面load进去不知道为什么更慢
 			nagao = NagaoAlgorithm.loadFromFile();
@@ -40,7 +40,7 @@ public class SegmentationCRF extends crfppWrapper implements Serializable {
 
 	public static void main(String... args) {
 		String[] inputFiles = {"data/raw/train.txt"};
-		SegmentationCRF segementCRF = new SegmentationCRF("data/test/train.txt.src", "data/test/test.txt.src");
+		WordCRF segementCRF = new WordCRF("data/test/train.txt.src", "data/test/test.txt.src");
 		segementCRF.train(inputFiles, "nw");
 		Test.test(Test.readWordList(config.testDataNWAns), segementCRF.detectNewWord(config.testDataSrc,
 				"tmp/tmp", "nw"));

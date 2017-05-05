@@ -1,8 +1,8 @@
 package crfModel;
 
-import evaluate.config;
 import evaluate.Corpus;
 import evaluate.Test;
+import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,34 +12,23 @@ import java.util.Set;
 
 /**
  * 新词发现当成分词问题做
+ * 命名实体识别当成
  * Created by wan on 4/24/2017.
  */
-public class SingleCharacterCRF extends crfppWrapper {
-	private class Feature{
-		char character;
-		int tf;
-		int nameHead;
-		int pingyin;
-		int nameEnd;
-		@Override
-		public String toString() {
-			return String.join("\t", Character.toString(character));
-		}
-	}
-	private static final Logger logger = LoggerFactory.getLogger(SingleCharacterCRF.class);
+public class CharacterCRF extends crfppWrapper {
+	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 
 	public static void main(String... args) {
 		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
 		corpus = new String[]{"data/raw/train.txt"};
-		SingleCharacterCRF singleCharacterCRF = new SingleCharacterCRF();
+		CharacterCRF singleCharacterCRF = new CharacterCRF();
 
-		singleCharacterCRF.train(corpus, config.nw);
-		Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp", config.nw));
+		//singleCharacterCRF.train(corpus, config.nw);
+		//Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,"tmp/tmp.nw", config.nw));
 
 		singleCharacterCRF.train(corpus, config.nr);
 		Test.test(Test.readWordList(config.testDataNRAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp", config.nr));
+				"tmp/tmp.nr", config.nr));
 	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
@@ -55,7 +44,6 @@ public class SingleCharacterCRF extends crfppWrapper {
 
 				if (pattern == config.nw) {
 					while ((tmp = reader.readLine()) != null) {
-						//
 						String[] tmps = tmp.split(config.sepSentenceRegex);
 						int offset = 0;
 						for (String sentence : tmps) {
@@ -76,8 +64,25 @@ public class SingleCharacterCRF extends crfppWrapper {
 				} // nw
 
 				if (pattern == config.nr) {
-
-				}
+						while ((tmp = reader.readLine()) != null) {
+						String[] tmps = tmp.split(config.sepSentenceRegex);
+						int offset = 0;
+						for (String sentence : tmps) {
+							offset += sentence.length() + 1; // offset这里是把去掉的标点符号补上
+							// todo 考虑没有逗号和句号的行
+							for (int i = 0; i < sentence.length(); i++) {
+								writer.append(sentence.charAt(i));
+								writer.newLine();
+							}
+							if (offset - 1 < tmp.length()) {
+								writer.newLine();
+								writer.append(tmp.charAt(offset - 1));
+								writer.newLine();
+							}
+							writer.newLine();
+						}
+					}
+				} //nr
 			}
 			writer.close();
 		} catch (IOException e) {
@@ -115,8 +120,7 @@ public class SingleCharacterCRF extends crfppWrapper {
 										writer.println(String.format("%s\t%s", word.charAt(i), label_meddle));
 									}
 									writer.println(String.format("%s\t%s", word.charAt(word.length() - 1), label_end));
-								}
-								else {
+								} else {
 									for (int i = 0; i < word.length(); i++)
 										writer.println(String.format("%s\t%s", word.charAt(i), label_other));
 								}
@@ -196,13 +200,12 @@ public class SingleCharacterCRF extends crfppWrapper {
 
 					String word = wordBuffer.toString();
 					if (label_head == label_begin || label_head == label_single) //单字名称 和 多字名称
-					if (!newWordList.contains(word)) {
-						newWordList.add(word);
-						writer.println(word);
-					}
+						if (!newWordList.contains(word)) {
+							newWordList.add(word);
+							writer.println(word);
+						}
 				}
 			} // nr
-
 
 			writer.close();
 		} catch (IOException e) {
@@ -210,5 +213,18 @@ public class SingleCharacterCRF extends crfppWrapper {
 			e.printStackTrace();
 		}
 		return newWordList;
+	}
+
+	private class Feature {
+		char character;
+		int tf;
+		int nameHead;
+		int pingyin;
+		int nameEnd;
+
+		@Override
+		public String toString() {
+			return String.join("\t", Character.toString(character));
+		}
 	}
 }

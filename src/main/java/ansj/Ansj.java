@@ -1,9 +1,9 @@
 package ansj;
 
-import evaluate.config;
 import evaluate.Corpus;
 import evaluate.NewWordDetector;
 import evaluate.Test;
+import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.slf4j.Logger;
@@ -40,8 +40,9 @@ public class Ansj implements NewWordDetector {
 				}
 				List<Term> list = NlpAnalysis.parse(line).getTerms();
 				for (Term term : list)
-					if ((pattern.equals("nw") && Corpus.isNewWord(term.getRealName()) && !newWordList.contains(term.getRealName()))
-							|| (term.getNatureStr().equals(pattern) && !newWordList.contains(term.getRealName()) )
+					if ((pattern.equals("nw") && Corpus.isNewWord(term.getRealName()) && !newWordList.contains(term
+							.getRealName()))
+							|| (term.getNatureStr().equals(pattern) && !newWordList.contains(term.getRealName()))
 							) {
 						newWordList.add(term.getRealName());
 						writer.append(term.getRealName());

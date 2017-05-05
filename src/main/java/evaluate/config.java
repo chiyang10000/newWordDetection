@@ -43,6 +43,8 @@ public class config {
 	public static String testDataNRAns = "data/test/test.txt.nr.ans";
 	public static String testDataNSAns = "data/test/test.txt.ns.ans";
 	public static String trainDataNWAns = "data/test/train.txt.nw.ans";
+	public static String trainDataNRAns = "data/test/train.txt.nr.ans";
+	public static String trainDataNSAns = "data/test/train.txt.ns.ans";
 	public static String nw = "nw", nr = "nr", ns = "ns";
 
 	static {
@@ -57,9 +59,11 @@ public class config {
 	public static String removePos(String in) {
 		return in.replaceAll("/[^/]$", "");
 	}
+
 	public static String getPos(String in) {
 		return in.replaceAll("^.*/", "");
 	}
+
 	public static void main(String... args) {
 		System.out.println(removePos("a/b//c"));
 

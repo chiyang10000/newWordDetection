@@ -1,15 +1,15 @@
 package NagaoAlgorithm;
 
-import evaluate.config;
 import evaluate.Corpus;
 import evaluate.NewWordDetector;
+import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.*;
 
-public class NagaoAlgorithm implements Serializable, NewWordDetector{
+public class NagaoAlgorithm implements Serializable, NewWordDetector {
 	// todo 应该把String换成一种基于指针的比较
 
 	//private final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
