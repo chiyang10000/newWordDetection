@@ -19,21 +19,24 @@ public class CharacterCRF extends crfppWrapper {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 
 	public static void main(String... args) {
-		String[] corpus = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt", "data/raw/2000-03-粗标.txt"};
-		corpus = new String[]{"data/raw/train.txt"};
+		String[] corpus = new String[]{config.trainData};
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
 
 		singleCharacterCRF.train(corpus, config.nw);
 		Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,"tmp/tmp.nw", config.nw));
 
+		/*
 		singleCharacterCRF.train(corpus, config.nr);
 		Test.test(Test.readWordList(config.testDataNRAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
 				"tmp/tmp.nr", config.nr));
+
+		singleCharacterCRF.train(corpus, config.ns);
+		Test.test(Test.readWordList(config.testDataNSAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
+				"tmp/tmp.ns", config.ns));
+		*/
 	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
-		if (pattern.equals("nr") || pattern.equals("ns"))
-			logger.info("not supported");
 		logger.debug("convert {} to {} for {}", inputFiles, outputFile, pattern);
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));

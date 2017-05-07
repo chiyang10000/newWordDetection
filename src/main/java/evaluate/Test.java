@@ -60,6 +60,7 @@ public class Test {
 	}
 
 	public static void main(String... args) {
+		logger.info("shuffle is {}", config.isShuffle);
 		logger.info("compare test and train in nw");
 		test(readWordList(config.trainDataNWAns), readWordList(config.testDataNWAns));
 		logger.info("compare test and train in nr");
@@ -69,11 +70,9 @@ public class Test {
 		//Corpus.
 		File[] files = new File("data/test").listFiles();
 
-		WordCRF segementationCRF = new WordCRF("data/test/train.txt.src", "data/test/test.txt.src");
-		//segementationCRF.train(new String[]{"data/raw/train.txt"});
+		WordCRF segementationCRF = new WordCRF();
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxNagaoLength);
-		//singleCharacterCRF.train(new String[]{"data/raw/train.txt"});
 		Ansj ansj = new Ansj();
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<NewWordDetector>();
 		newWordDetectors.add(singleCharacterCRF);
@@ -89,7 +88,7 @@ public class Test {
 				String answerNsFile = inputFile.replace(".src", ".ns.ans");
 				String outputFile;
 				logger.info("Test on {}", file.getName());
-				segementationCRF.nagao.addWordInfo(answerNewWordFile, "tmp/" + file.getName() + ".nw.ans");
+				Corpus.addWordInfo(answerNewWordFile, "tmp/" + file.getName() + ".nw.ans");
 /*
 				logger.info("test name ansj");
 				ansj.detectName(inputFile, "tmp0.ans");
@@ -109,17 +108,11 @@ public class Test {
 					logger.info("Test on new word {}", newWordDetector.getClass().getCanonicalName());
 					Test.test(readWordList(answerNewWordFile), newWordDetector.detectNewWord(inputFile, outputFile,
 							"nw"));
-					segementationCRF.nagao.addWordInfo(outputFile, outputFile + ".txt");
+					Corpus.addWordInfo(outputFile, outputFile + ".txt");
 
-					/*
-					logger.info("Test on name {}", newWordDetector.getClass().getCanonicalName());
-					newWordDetector.detectNewWord(inputFile, outputFile);
-					segementationCRF.nagao.addWordInfo(outputFile, outputFile + ".txt");
-					Test.test(answerNewWordFile, outputFile);
-					*/
 				}
 
-				logger.info("-----------------------------------");
+				logger.info("---------****----------");
 
 			}
 	}

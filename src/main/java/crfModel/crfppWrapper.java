@@ -37,7 +37,7 @@ abstract public class crfppWrapper implements NewWordDetector {
 	{
 		model = "data/model/" + this.getClass().getSimpleName() + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + ".template";
-		trainData = "tmp//" + this.getClass().getSimpleName() + ".crf";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + ".crf";
 	}
 
 	private static void runCommand(String cmd) {
@@ -72,17 +72,17 @@ abstract public class crfppWrapper implements NewWordDetector {
 	public void train(String[] inputFiles, String pattern) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
-		trainData = "tmp//" + this.getClass().getSimpleName() + "." + pattern + ".crf";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
 		convert2TrainInput(inputFiles, pattern);
-		String cmd = String.join(" ", shell, crf_learn, template, trainData, model, "-t");
+		String cmd = String.join(" ", shell, crf_learn, template, trainData, model);
 		runCommand(cmd);
 	}
 
 	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
-		String crfppInput = String.join("", "tmp/", inputFile.replaceAll(".*/", ""),
-				this.getClass().getSimpleName(), ".", pattern, ".crfin");
-		String crfppOutput = String.join("", "tmp/", inputFile.replaceAll(".*/", ""),
-				this.getClass().getSimpleName(), ".", pattern, ".crfout");
+		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
+				".", this.getClass().getSimpleName(), ".", pattern, ".crfin");
+		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
+				".", this.getClass().getSimpleName(), ".", pattern, ".crfout");
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput, pattern);
 		decode("data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model", crfppInput, crfppOutput);
 		return convertTestOuput2Res(crfppOutput, outputFile, pattern);

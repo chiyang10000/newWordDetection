@@ -6,6 +6,7 @@ import java.util.Arrays;
 /**
  * Created by wan on 4/27/2017.
  */
+@Deprecated
 public class DiscreteTFNeighbor implements Serializable {
 	double mi[], tf[], le[], re[];
 
@@ -24,6 +25,7 @@ public class DiscreteTFNeighbor implements Serializable {
 			le[i] = tmp_mi[i * tmp_le.length / levelNum];
 			re[i] = tmp_mi[i * tmp_re.length / levelNum];
 		}
+		//边界处理
 		mi[levelNum] = Double.MAX_VALUE;
 		tf[levelNum] = Double.MAX_VALUE;
 		le[levelNum] = Double.MAX_VALUE;

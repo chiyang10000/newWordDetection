@@ -1,6 +1,5 @@
 package crfModel;
 
-import NagaoAlgorithm.NagaoAlgorithm;
 import NagaoAlgorithm.TFNeighbor;
 import evaluate.Corpus;
 import evaluate.Test;
@@ -19,13 +18,10 @@ import java.util.Set;
  */
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
-	public NagaoAlgorithm nagao;
+	//public NagaoAlgorithm nagao;
 
-	/**
-	 * @param corpusFiles 没有分词信息的原始文件, 作为统计词频和信息熵的语料库
-	 */
-	public WordCRF(String... corpusFiles) {
-
+	public WordCRF() {
+	/*
 		if (config.isNagaoLoadedFromFile) {// 从文件里面load进去不知道为什么更慢
 			nagao = NagaoAlgorithm.loadFromFile();
 		} else {
@@ -36,14 +32,15 @@ public class WordCRF extends crfppWrapper implements Serializable {
 			if (config.isNagaoSavedIntoFile)
 				nagao.saveIntoFile();
 		}
+		*/
 	}
 
 	public static void main(String... args) {
-		String[] inputFiles = {"data/raw/train.txt"};
-		WordCRF segementCRF = new WordCRF("data/test/train.txt.src", "data/test/test.txt.src");
-		segementCRF.train(inputFiles, "nw");
+		String[] inputFiles = {config.trainData};
+		WordCRF segementCRF = new WordCRF();
+		//segementCRF.train(inputFiles, config.nw);
 		Test.test(Test.readWordList(config.testDataNWAns), segementCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp", "nw"));
+				"tmp/tmp.nw", config.nw));
 	}
 
 	/**
@@ -172,14 +169,14 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(crfppOutput));
 			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(resFile));
-			String tmp, pos, wordPiece;
+			String tmp, posOfFirstWord, wordPiece;
 			while ((tmp = reader.readLine()) != null) {
 				StringBuilder wordBuffer = new StringBuilder();
 				if (tmp.length() == 0)
 					continue;
 				wordPiece = tmp.split("\t", 2)[0]; //第一个词
 				wordBuffer.append(wordPiece);
-				pos = tmp.split("\t", 4)[2];
+				posOfFirstWord = tmp.split("\t", 4)[2];
 				if (tmp.charAt(tmp.length() - 1) == label_begin) {
 					do {
 						//pos = "0";
@@ -192,7 +189,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				// todo 去掉末尾的
 				//if (!wordPiece.matches(invalidSuffixRegex))
 				if (Corpus.isNewWord(word) && !newWordList.contains(word)
-					///			&& !pos.equals("m") // todo 不能以数量词开头
+								&& !posOfFirstWord.equals("m") && !posOfFirstWord.equals("t") // todo 不能以数量词开头
 						) {
 					//忽略量词
 					newWordList.add(word);
@@ -215,7 +212,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		int leftEntropy;
 		int rightEntropy;
 		int tf;
-		int mi;
+		int pmi;
 		int tfWithPreWord;
 
 		Feature(String preWord, String word, String pos) {
@@ -225,19 +222,18 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				length = config.maxNagaoLength + 1;
 			this.pos = pos;
 			try {
-				TFNeighbor tfNeighbor = nagao.wordTFNeighbor.get(word);
-				leftEntropy = nagao.discreteTFNeighbor.getLE(tfNeighbor.getLeftNeighborEntropy());
-				rightEntropy = nagao.discreteTFNeighbor.getRE(tfNeighbor.getRightNeighborEntropy());
-				tf = nagao.discreteTFNeighbor.getTF(tfNeighbor.getTF());
-				mi = nagao.discreteTFNeighbor.getMI(nagao.countMI(word));
+				tf = Corpus.discreteWordInfo.getTF(word);
+				pmi = Corpus.discreteWordInfo.getPMI(word);
+				leftEntropy = Corpus.discreteWordInfo.getLE(word);
+				rightEntropy = Corpus.discreteWordInfo.getRE(word);
 			} catch (NullPointerException e) {
 				//length = 0;
 				tf = 0;
-				mi = 0;
+				pmi = 0;
 				leftEntropy = config.levelNum;
 				rightEntropy = config.levelNum;
 			}
-			tfWithPreWord = nagao.discreteTFNeighbor.getTF(nagao.getTF(preWord + word));
+			tfWithPreWord = Corpus.discreteWordInfo.getTF(preWord + word);
 		}
 
 		@Override
@@ -249,7 +245,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 					Integer.toString(leftEntropy),
 					Integer.toString(rightEntropy),
 					Integer.toString(tf),
-					Integer.toString(mi),
+					Integer.toString(pmi),
 					Integer.toString(tfWithPreWord)
 			);
 		}

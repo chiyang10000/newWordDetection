@@ -1,11 +1,9 @@
 package ansj;
 
-import evaluate.Corpus;
-import evaluate.NewWordDetector;
-import evaluate.Test;
-import evaluate.config;
+import evaluate.*;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
+import org.ansj.splitWord.analysis.ToAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,11 +18,12 @@ import java.util.Set;
 public class Ansj implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(Ansj.class);
 
-	public static void main(String... args) {
+	public static void main(String... args) throws IOException {
+		segFile(config.totalDataSrc, "tmp/tmp.txt");
 		Ansj ansj = new Ansj();
-		ansj.calcMostRecallInNW("data/test/test.txt.tagNW");
-		Test.test(Test.readWordList(config.testDataNWAns), ansj.detectNewWord(config.testDataSrc,
-				"tmp/tmp", "nw"));
+		ansj.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
+		ansj.calcMostRecallInAnsj(config.testData, config.nr);
+		ansj.calcMostRecallInAnsj(config.testData, config.ns);
 	}
 
 	@Override
@@ -57,14 +56,14 @@ public class Ansj implements NewWordDetector {
 		return newWordList;
 	}
 
-	void calcMostRecallInNW(String inputFile) {
+	void calcMostRecallInAnsj(String inputFile, String pattern) {
 		BufferedReader reader;
 		String srcline;
 		double mostRecallInTraindata = 0;
 		HashSet<String> newWordList = new HashSet<>();
 		HashSet<String> validNewWordList = new HashSet<>();
 		try {
-			newWordList.addAll(Corpus.extractWord(inputFile, "nw"));
+			newWordList.addAll(Corpus.extractWord(inputFile, pattern));
 			reader = new BufferedReader(new FileReader(inputFile));
 			while ((srcline = reader.readLine()) != null) {
 				srcline = srcline.replaceAll("/([^ ]*|$)", "");// 去掉词性
@@ -111,4 +110,17 @@ public class Ansj implements NewWordDetector {
 			e.printStackTrace();
 		}
 	}
+	static void segFile(String input, String output) throws IOException {
+		try (BufferedReader reader = new BufferedReader(new FileReader(input));
+			 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
+		) {
+			String line, tmp;
+			while ((line = reader.readLine()) != null) {
+				tmp = ToAnalysis.parse(line).toString(" ");
+				writer.append(tmp);
+				writer.newLine();
+			}
+		}
+	}
+
 }
