@@ -1,6 +1,8 @@
 package ansj;
 
-import evaluate.*;
+import evaluate.Corpus;
+import evaluate.NewWordDetector;
+import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
@@ -19,11 +21,24 @@ public class Ansj implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(Ansj.class);
 
 	public static void main(String... args) throws IOException {
-		segFile(config.totalDataSrc, "tmp/tmp.txt");
+		segFile(config.totalDataInput, "tmp/tmp.txt");
 		Ansj ansj = new Ansj();
 		ansj.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
 		ansj.calcMostRecallInAnsj(config.testData, config.nr);
 		ansj.calcMostRecallInAnsj(config.testData, config.ns);
+	}
+
+	static void segFile(String input, String output) throws IOException {
+		try (BufferedReader reader = new BufferedReader(new FileReader(input));
+			 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
+		) {
+			String line, tmp;
+			while ((line = reader.readLine()) != null) {
+				tmp = ToAnalysis.parse(line).toString(" ");
+				writer.append(tmp);
+				writer.newLine();
+			}
+		}
 	}
 
 	@Override
@@ -71,7 +86,7 @@ public class Ansj implements NewWordDetector {
 					line = line.trim();
 					if (line.length() > 0) {
 						String[] golden = line.split(config.sepWordRegex);
-						List<Term> ansj = config.parser.parseStr(line.replace(" ", "")).getTerms();
+						List<Term> ansj = ToAnalysis.parse(line.replace(" ", "")).getTerms();
 						int k = 0;
 						String gs = golden[0], as = "";
 						for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含as, 且gs仅包含一个词，
@@ -108,18 +123,6 @@ public class Ansj implements NewWordDetector {
 					mostRecallInTraindata);
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-	}
-	static void segFile(String input, String output) throws IOException {
-		try (BufferedReader reader = new BufferedReader(new FileReader(input));
-			 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
-		) {
-			String line, tmp;
-			while ((line = reader.readLine()) != null) {
-				tmp = ToAnalysis.parse(line).toString(" ");
-				writer.append(tmp);
-				writer.newLine();
-			}
 		}
 	}
 

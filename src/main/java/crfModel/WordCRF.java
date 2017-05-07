@@ -1,10 +1,12 @@
 package crfModel;
 
-import NagaoAlgorithm.TFNeighbor;
 import evaluate.Corpus;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
+import org.ansj.splitWord.Analysis;
+import org.ansj.splitWord.analysis.ToAnalysis;
+import org.ansj.util.MyStaticValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,29 +20,23 @@ import java.util.Set;
  */
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
-	//public NagaoAlgorithm nagao;
+	public static Analysis parser;
 
-	public WordCRF() {
-	/*
-		if (config.isNagaoLoadedFromFile) {// 从文件里面load进去不知道为什么更慢
-			nagao = NagaoAlgorithm.loadFromFile();
-		} else {
-			nagao = new NagaoAlgorithm(config.maxNagaoLength);
-			nagao.scan(corpusFiles);
-			nagao.countTFNeighbor();
-			nagao.calcDiscreteTFNeighbor(nagao.wordTFNeighbor.keySet(), config.levelNum);
-			if (config.isNagaoSavedIntoFile)
-				nagao.saveIntoFile();
-		}
-		*/
+	static {
+		//config.isLoadCorpus = true;
+		Corpus.loadWordInfo();
+		MyStaticValue.isRealName = true;// ansj不进行大小写转换
+		MyStaticValue.isNumRecognition = true;
+		MyStaticValue.isQuantifierRecognition = false;
+		parser = new ToAnalysis();
 	}
 
 	public static void main(String... args) {
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
 		segementCRF.train(inputFiles, config.nw);
-		Test.test(Test.readWordList(config.testDataNWAns), segementCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp.nw", config.nw));
+		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, config.nw)), segementCRF.detectNewWord(config.testDataInput,
+				"tmp/tmp.nw", config.nw), segementCRF.getClass().getSimpleName());
 	}
 
 	/**
@@ -65,7 +61,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 						line = line.trim();
 						if (line.length() > 0) {
 							String[] golden = line.split(config.sepWordRegex);
-							List<Term> ansj = config.parser.parseStr(line.replace(" ", "")).getTerms();
+							List<Term> ansj = parser.parseStr(line.replace(" ", "")).getTerms();
 
 							int k = 0;
 							String gs = golden[0], as = "";
@@ -140,7 +136,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 							writer.newLine();
 							continue;
 						}
-						List<Term> list = config.parser.parseStr(line).getTerms();
+						List<Term> list = parser.parseStr(line).getTerms();
 						for (int i = 0; i < list.size(); i++) {
 							Term term = list.get(i);
 							if (i > 0)
@@ -189,7 +185,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				// todo 去掉末尾的
 				//if (!wordPiece.matches(invalidSuffixRegex))
 				if (Corpus.isNewWord(word) && !newWordList.contains(word)
-								&& !posOfFirstWord.equals("m") && !posOfFirstWord.equals("t") // todo 不能以数量词开头
+						&& !posOfFirstWord.equals("m") && !posOfFirstWord.equals("t") // todo 不能以数量词开头
 						) {
 					//忽略量词
 					newWordList.add(word);

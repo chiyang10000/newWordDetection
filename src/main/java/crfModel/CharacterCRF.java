@@ -20,20 +20,11 @@ public class CharacterCRF extends crfppWrapper {
 
 	public static void main(String... args) {
 		String[] corpus = new String[]{config.trainData};
-		CharacterCRF singleCharacterCRF = new CharacterCRF();
+		CharacterCRF characterCRF = new CharacterCRF();
 
-		singleCharacterCRF.train(corpus, config.nw);
-		Test.test(Test.readWordList(config.testDataNWAns), singleCharacterCRF.detectNewWord(config.testDataSrc,"tmp/tmp.nw", config.nw));
+		characterCRF.train(corpus, config.nw);
+		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, config.nw)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp.nw", config.nw), characterCRF.getClass().getSimpleName());
 
-		/*
-		singleCharacterCRF.train(corpus, config.nr);
-		Test.test(Test.readWordList(config.testDataNRAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp.nr", config.nr));
-
-		singleCharacterCRF.train(corpus, config.ns);
-		Test.test(Test.readWordList(config.testDataNSAns), singleCharacterCRF.detectNewWord(config.testDataSrc,
-				"tmp/tmp.ns", config.ns));
-		*/
 	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
@@ -67,7 +58,7 @@ public class CharacterCRF extends crfppWrapper {
 				} // nw
 
 				if (pattern == config.nr) {
-						while ((tmp = reader.readLine()) != null) {
+					while ((tmp = reader.readLine()) != null) {
 						String[] tmps = tmp.split(config.sepSentenceRegex);
 						int offset = 0;
 						for (String sentence : tmps) {

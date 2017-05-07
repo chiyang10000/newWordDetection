@@ -2,15 +2,15 @@ package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.Ansj;
-import crfModel.WordCRF;
 import crfModel.CharacterCRF;
+import crfModel.WordCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -20,7 +20,8 @@ import java.util.Set;
  * Created by wan on 4/7/2017.
  */
 public class Test {
-	static final Logger logger = LoggerFactory.getLogger("report");
+	static final DecimalFormat df = new DecimalFormat("##.000");
+	static private final Logger logger = LoggerFactory.getLogger("report");
 
 	/**
 	 * 传入一个已分词好的文件。
@@ -29,17 +30,17 @@ public class Test {
 		// todo
 	}
 
-	public static void test(Set<String> golden, Set<String> ans) {
+	public static void test(Set<String> golden, Set<String> ans, String prefix) {
 		int sum = golden.size(),
 				select = ans.size();
 		int hit = 0;
 		for (String word : ans)
 			if (golden.contains(word))
 				hit++;
-		float p = (float) hit / select;
-		float r = (float) hit / sum;
+		float p = (float) hit / select * 100;
+		float r = (float) hit / sum * 100;
 		float f1 = (float) 2.0 * p * r / (p + r);
-		logger.info("p   {}   r   {}   f   {}    select {} hit {} in total {}", p, r, f1, select, hit, sum);
+		logger.info("p  {}\tr  {}\tf  {}  {} select {} hit {} in total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
 	}
 
 	public static Set<String> readWordList(String inputFile) {
@@ -60,60 +61,43 @@ public class Test {
 	}
 
 	public static void main(String... args) {
+		logger.info("---------****----------");
+
 		logger.info("shuffle is {}", config.isShuffle);
-		logger.info("compare test and train in nw");
-		test(readWordList(config.trainDataNWAns), readWordList(config.testDataNWAns));
-		logger.info("compare test and train in nr");
-		test(readWordList(config.trainDataNRAns), readWordList(config.testDataNRAns));
-		logger.info("compare test and train in ns");
-		test(readWordList(config.trainDataNSAns), readWordList(config.testDataNSAns));
-		//Corpus.
-		File[] files = new File("data/test").listFiles();
+		for (String type : config.supportedType) {
+			logger.info("compare test and train in {}", type);
+			test(
+					readWordList(config.getAnswerFile(config.trainDataInput, type)),
+					readWordList(config.getAnswerFile(config.testDataInput, type)),
+					"compare");
+		}
 
 		WordCRF segementationCRF = new WordCRF();
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxNagaoLength);
 		Ansj ansj = new Ansj();
-		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<NewWordDetector>();
+
+		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<>();
 		newWordDetectors.add(singleCharacterCRF);
 		newWordDetectors.add(ansj);
 		newWordDetectors.add(segementationCRF);
 		newWordDetectors.add(nagao);
 
-		for (File file : files)
-			if (file.getName().matches(".*\\.src") && !file.getName().matches(".*train.*")) {
-				String inputFile = file.getAbsolutePath();
-				String answerNewWordFile = inputFile.replace(".src", ".nw.ans");
-				String answerNrFile = inputFile.replace(".src", ".nr.ans");
-				String answerNsFile = inputFile.replace(".src", ".ns.ans");
-				String outputFile;
-				logger.info("Test on {}", file.getName());
-				Corpus.addWordInfo(answerNewWordFile, "tmp/" + file.getName() + ".nw.ans");
-/*
-				logger.info("test name ansj");
-				ansj.detectName(inputFile, "tmp0.ans");
-				test(answerNrFile, "tmp0.ans");
+		String inputFile = config.testDataInput;
+		String outputFile;
 
-				logger.info("test place ansj");
-				ansj.detectPlace(inputFile, "tmp1.ans");
-				test(answerNsFile, "tmp1.ans");
-				*/
 
-				//segementationCRF.convert2TrainInput(new String[]{"data/raw/" + file.getName().replace(".ans", "")});
-				//logger.info("Most recall of ansj is {}", segementationCRF.mostRecallInTraindata);
-
-				for (NewWordDetector newWordDetector : newWordDetectors) {
-					//if (newWordDetector != segementationCRF) continue;
-					outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), file.getName());
-					logger.info("Test on new word {}", newWordDetector.getClass().getCanonicalName());
-					Test.test(readWordList(answerNewWordFile), newWordDetector.detectNewWord(inputFile, outputFile,
-							"nw"));
-					Corpus.addWordInfo(outputFile, outputFile + ".txt");
-
-				}
-
-				logger.info("---------****----------");
-
+		for (String type : new String[]{config.nw}) {
+			String answerFile = config.getAnswerFile(inputFile, type);
+			//Corpus.addWordInfo(answerFile, "tmp/" + ".info");
+			logger.info("+++++++   {}   ++++++++", answerFile);
+			for (NewWordDetector newWordDetector : newWordDetectors) {
+				//if (newWordDetector != segementationCRF) continue;
+				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), answerFile.replaceAll(".*/", ""));
+				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, config.nw), newWordDetector.getClass().getName());
+				Corpus.addWordInfo(outputFile, outputFile + ".info");
 			}
+		}
+		logger.info("---------****----------");
 	}
 }

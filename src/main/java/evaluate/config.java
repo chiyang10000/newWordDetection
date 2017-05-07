@@ -1,16 +1,9 @@
 package evaluate;
 
-import org.ansj.splitWord.Analysis;
-import org.ansj.splitWord.analysis.BaseAnalysis;
-import org.ansj.splitWord.analysis.NlpAnalysis;
-import org.ansj.splitWord.analysis.ToAnalysis;
-import org.ansj.util.MyStaticValue;
-import org.ansj.library.DicLibrary;
-
 /**
  * Created by wan on 4/25/2017.
  */
-public class config {
+public interface config {
 	//final public static String sepSentenceRegex = "([【】°~～\\pP&&[^-－.%．·@／]]+)";
 	final public static String sepSentenceRegex = "，。？！：";
 	final public static String sepWordRegex = " +";
@@ -31,7 +24,6 @@ public class config {
 	final public static double thresholdRightEntropy = 1;
 	final public static double thresholdLeftNumber = 1;
 	final public static double thresholdLeftRightNumber = 1;
-	final public static Analysis parser;
 	final public static int testSize = 5;
 	public static int levelNum = 10;
 	public static int maxNagaoLength = 11;
@@ -41,44 +33,23 @@ public class config {
 	public static boolean isLoadCorpus = false;
 	public static boolean isShuffle = false;
 
-	public static String  renmingribao = "data/raw/renminribao.txt";
-	public static String  news = "data/raw/news.txt";
-
+	public static String renmingribao = "data/raw/renminribao.txt";
+	//final public static String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
+	//		"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
+	final public static String[] basicWordFiles = {renmingribao};
+	public static String news = "data/raw/news.txt";
 	public static String newWordFile = "tmp/input.txt";
-
+	final public static String[] newWordFiles = {newWordFile};
 	public static String testData = "data/test/test.txt";
 	public static String trainData = "data/test/train.txt";
 	public static String totalData = "data/test/total.txt";
-
-	public static String testDataSrc = "data/test/input/test.txt.src";
-	public static String trainDataSrc = "data/test/input/train.txt.src";
-	public static String totalDataSrc = "data/test/input/total.txt.src";
-
-	public static String testDataNWAns = "data/test/ans/test.txt.nw.ans";
-	public static String testDataNRAns = "data/test/ans/test.txt.nr.ans";
-	public static String testDataNSAns = "data/test/ans/test.txt.ns.ans";
-
-	public static String trainDataNWAns = "data/test/ans/train.txt.nw.ans";
-	public static String trainDataNRAns = "data/test/ans/train.txt.nr.ans";
-	public static String trainDataNSAns = "data/test/ans/train.txt.ns.ans";
-
+	public static String testDataInput = "data/test/input/test.txt.src";
+	public static String trainDataInput = "data/test/input/train.txt.src";
+	public static String totalDataInput = "data/test/input/total.txt.src";
 	public static String corpusFile = "data/corpus/train.txt.words";
 	public static String nw = "nw", nr = "nr", ns = "ns";
+	public static String[] supportedType = new String[]{nw};
 
-	final public static String[] newWordFiles = {newWordFile};
-	//final public static String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
-	//		"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
-	final public static String[] basicWordFiles = {"data/raw/2000-01-粗标.txt", "data/raw/2000-02-粗标.txt",
-			"data/raw/2000-03-粗标.txt"};
-
-	static {
-		MyStaticValue.isRealName = true;// ansj不进行大小写转换
-		MyStaticValue.isNumRecognition = true;
-		MyStaticValue.isQuantifierRecognition = false;
-		new BaseAnalysis();
-		new NlpAnalysis();
-		parser = new ToAnalysis();
-	}
 
 	public static String removePos(String in) {
 		return in.replaceAll("/[^/]*$", "");
@@ -86,6 +57,10 @@ public class config {
 
 	public static String getPos(String in) {
 		return in.replaceAll("^.*/", "");
+	}
+
+	public static String getAnswerFile(String inputFile, String pattern) {
+		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
 	}
 
 	public static void main(String... args) {
@@ -97,5 +72,6 @@ public class config {
 		System.out.println("Ｐ－７".matches(newWordExcludeRegex));
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
+		System.out.println(getAnswerFile(testDataInput, nw));
 	}
 }

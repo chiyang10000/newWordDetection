@@ -68,7 +68,7 @@ public class ConvertHalfWidthToFullWidth {
 				line = ToDBC(line).replace('—', '－');//.replace("");
 				String[] segs = line.split(" +");
 				StringBuffer stringBuffer = new StringBuffer();
-				for (String seg: segs) {
+				for (String seg : segs) {
 					m = posPattern.matcher(seg);
 					//System.out.println(seg);
 					if (m.find()) {
@@ -76,8 +76,7 @@ public class ConvertHalfWidthToFullWidth {
 						//System.out.print(pos);
 						//System.out.print(ToSBC(pos));
 						stringBuffer.append(seg.replace(pos, ToSBC(pos)));
-					}
-					else
+					} else
 						stringBuffer.append(seg);
 					stringBuffer.append(" ");
 				}
@@ -86,6 +85,7 @@ public class ConvertHalfWidthToFullWidth {
 			}
 		}
 	}
+
 	public static void main(String... args) throws IOException {
 		convertFileToFulll(config.news, "tmp/full.txt");
 	}
