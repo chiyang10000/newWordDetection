@@ -22,9 +22,10 @@ public class CharacterCRF extends crfppWrapper {
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
-		characterCRF.train(corpus, config.nw);
-		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, config.nw)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp.nw", config.nw), characterCRF.getClass().getSimpleName());
-
+		for (String type: config.supportedType) {
+			characterCRF.train(corpus, type);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp.nw", type), characterCRF.getClass().getSimpleName());
+		}
 	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
@@ -57,7 +58,7 @@ public class CharacterCRF extends crfppWrapper {
 					}
 				} // nw
 
-				if (pattern == config.nr) {
+				if (pattern == config.nr || pattern == config.ns) {
 					while ((tmp = reader.readLine()) != null) {
 						String[] tmps = tmp.split(config.sepSentenceRegex);
 						int offset = 0;
@@ -94,7 +95,7 @@ public class CharacterCRF extends crfppWrapper {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				String tmp;
 
-				if (pattern == config.nr) {
+				if (pattern == config.nr || pattern == config.ns) {
 					while ((tmp = reader.readLine()) != null) {
 						if (tmp.trim().length() == 0) continue;
 						String[] segs = tmp.split(config.sepWordRegex);
@@ -178,7 +179,7 @@ public class CharacterCRF extends crfppWrapper {
 				}
 			} // nw
 
-			if (pattern == config.nr) {
+			if (pattern == config.nr || pattern == config.ns) {
 				while ((tmp = reader.readLine()) != null) {
 					StringBuilder wordBuffer = new StringBuilder();
 					if (tmp.length() == 0)

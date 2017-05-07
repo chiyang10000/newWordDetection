@@ -299,6 +299,8 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 			for (String word : wordTFNeighbor.keySet()) {
 				if (word.length() <= 1 || !Corpus.isNewWord(word))
 					continue;
+				if (word.matches(".*[年月日时分秒].*"))
+					continue;
 				//logger.debug("{}", word);
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 

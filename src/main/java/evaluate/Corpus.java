@@ -151,7 +151,7 @@ public class Corpus {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
 			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile + ".src", pattern)));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Test.getAnswerFile(inputFile + ".src", pattern)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.length() == 0) continue;
@@ -318,7 +318,7 @@ public class Corpus {
 	public static void addWordInfo(String wordFile, String outputFile) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter(wordFile + ".nagao"));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 			String tmp;
 			while ((tmp = reader.readLine()) != null) {
 				int tf = 1;
@@ -342,18 +342,25 @@ public class Corpus {
 	 * @param args
 	 */
 	public static void main(String... args) throws IOException {
+		/* 提供词频统计文件
+		convertToSrc(new String[]{config.renmingribao}, "data/corpus/renmingribao");
+		convertToSrc(new String[]{config.news}, "data/corpus/news");
+		*/
+
 		ConvertHalfWidthToFullWidth.convertFileToFulll(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
-		//convertToSrc(config.basicWordFiles, "data/corpus/renminribao.txt");
-		convertToSrc(config.newWordFiles, "data/corpus/train.txt");
+
 		convertToSrc(new String[]{config.testData}, config.testDataInput);
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
+
 		extractWord(tagNW(config.trainData), config.nw);
 		extractWord(tagNW(config.testData), config.nw);
 		extractWord(tagNW(config.totalData), config.nw);
+
 		extractWord(config.trainData, config.ns);
 		extractWord(config.testData, config.ns);
+
 		extractWord(config.trainData, config.nr);
 		extractWord(config.testData, config.nr);
 	}

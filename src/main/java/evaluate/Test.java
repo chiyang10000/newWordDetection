@@ -30,6 +30,10 @@ public class Test {
 		// todo
 	}
 
+	public static String getAnswerFile(String inputFile, String pattern) {
+		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
+	}
+
 	public static void test(Set<String> golden, Set<String> ans, String prefix) {
 		int sum = golden.size(),
 				select = ans.size();
@@ -64,12 +68,13 @@ public class Test {
 		logger.info("---------****----------");
 
 		logger.info("shuffle is {}", config.isShuffle);
+		logger.info("corpus is {}", config.corpusFile);
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
 			test(
-					readWordList(config.getAnswerFile(config.trainDataInput, type)),
-					readWordList(config.getAnswerFile(config.testDataInput, type)),
-					"compare");
+					readWordList(getAnswerFile(config.trainDataInput, type)),
+					readWordList(getAnswerFile(config.testDataInput, type)),
+					type);
 		}
 
 		WordCRF segementationCRF = new WordCRF();
@@ -88,16 +93,17 @@ public class Test {
 
 
 		for (String type : new String[]{config.nw}) {
-			String answerFile = config.getAnswerFile(inputFile, type);
-			//Corpus.addWordInfo(answerFile, "tmp/" + ".info");
+			String answerFile = getAnswerFile(inputFile, type);
+			Corpus.addWordInfo(answerFile, "tmp/" + type + ".info");
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				//if (newWordDetector != segementationCRF) continue;
-				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getName(), answerFile.replaceAll(".*/", ""));
-				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, config.nw), newWordDetector.getClass().getName());
+				if (newWordDetector != nagao) continue;
+				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
+				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, config.nw), newWordDetector.getClass().getSimpleName());
 				Corpus.addWordInfo(outputFile, outputFile + ".info");
 			}
 		}
 		logger.info("---------****----------");
 	}
+
 }

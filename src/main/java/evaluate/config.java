@@ -1,5 +1,10 @@
 package evaluate;
 
+import com.github.stuxuhai.jpinyin.PinyinException;
+import com.github.stuxuhai.jpinyin.PinyinFormat;
+import com.github.stuxuhai.jpinyin.PinyinHelper;
+import org.nlpcn.commons.lang.pinyin.Pinyin;
+
 /**
  * Created by wan on 4/25/2017.
  */
@@ -10,16 +15,16 @@ public interface config {
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	final public static String newWordExcludeRegex = ".*[｜■±+\\pP&&[^·－／]]+.*" + "|" +
+	final public static String newWordExcludeRegex = ".*[° ～｜■±+\\pP&&[^·－／]]+.*" + "|" +
 			"[第型．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+";
 	//标点符号和纯数字
 	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词
 
 
 	final public static String invalidSuffixRegex = "^(的|是|在|等|与|了)$";
-	final public static double thresholdMI = 50;
-	final public static double thresholdTF = 1;
-	final public static double thresholdNeighborEntropy = 1;
+	final public static double thresholdMI = 10;
+	final public static double thresholdTF = 3;
+	final public static double thresholdNeighborEntropy = 1.5;
 	final public static double thresholdLeftEntropy = 1;
 	final public static double thresholdRightEntropy = 1;
 	final public static double thresholdLeftNumber = 1;
@@ -46,9 +51,9 @@ public interface config {
 	public static String testDataInput = "data/test/input/test.txt.src";
 	public static String trainDataInput = "data/test/input/train.txt.src";
 	public static String totalDataInput = "data/test/input/total.txt.src";
-	public static String corpusFile = "data/corpus/train.txt.words";
+	public static String corpusFile = "data/corpus/news.words";
 	public static String nw = "nw", nr = "nr", ns = "ns";
-	public static String[] supportedType = new String[]{nw};
+	public static String[] supportedType = new String[]{nw, nr, ns};
 
 
 	public static String removePos(String in) {
@@ -57,10 +62,6 @@ public interface config {
 
 	public static String getPos(String in) {
 		return in.replaceAll("^.*/", "");
-	}
-
-	public static String getAnswerFile(String inputFile, String pattern) {
-		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
 	}
 
 	public static void main(String... args) {
@@ -72,6 +73,12 @@ public interface config {
 		System.out.println("Ｐ－７".matches(newWordExcludeRegex));
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
-		System.out.println(getAnswerFile(testDataInput, nw));
+		System.out.println(Test.getAnswerFile(testDataInput, nw));
+		try {
+			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
+			System.out.println(tmp);
+		} catch (PinyinException e) {
+			e.printStackTrace();
+		}
 	}
 }
