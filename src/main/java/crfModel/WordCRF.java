@@ -34,9 +34,16 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	public static void main(String... args) {
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
-		segementCRF.train(inputFiles, config.nw);
-		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, config.nw)), segementCRF.detectNewWord(config.testDataInput,
-				"tmp/tmp.nw", config.nw), segementCRF.getClass().getSimpleName());
+		String type = config.nw;
+		segementCRF.train(inputFiles, type);
+		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
+				"tmp/tmp.nw", type), segementCRF.getClass().getSimpleName());
+		/*
+		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, config.nr)), segementCRF.detectNewWord(config.testDataInput,
+				"tmp/tmp.nw", type), segementCRF.getClass().getSimpleName());
+		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, config.ns)), segementCRF.detectNewWord(config.testDataInput,
+				"tmp/tmp.nw", type), segementCRF.getClass().getSimpleName());
+		*/
 	}
 
 	/**
@@ -50,72 +57,72 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	public void convert2TrainInput(String[] inputFiles, String pattern) {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
-		String srcline;
+		String line, goldenSegWithoutTag, srcline;
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(trainData));
+			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
 			for (String inputFile : inputFiles) {
 				reader = new BufferedReader(new FileReader(inputFile));
-				while ((srcline = reader.readLine()) != null) {
-					srcline = srcline.replaceAll("/([^ ]*|$)", "");// 去掉词性
-					for (String line : srcline.split(config.sepSentenceRegex)) {
-						line = line.trim();
-						if (line.length() > 0) {
-							String[] golden = line.split(config.sepWordRegex);
-							List<Term> ansj = parser.parseStr(line.replace(" ", "")).getTerms();
 
-							int k = 0;
-							String gs = golden[0], as = "";
-							char label = label_single;
-							for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含as, 且gs仅包含一个词，
-								//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
-								Term term = ansj.get(i);
-								as += term.getRealName();
-								if (gs.equals(as)) {
-									if (gs.length() == term.getRealName().length()) // 正确的单个词
-										label = label_single; // 正确的单个词3
-									else
-										label = label_end; // 新词结尾1
-									as = "";
-									if (k + 1 < golden.length) {
-										gs = golden[++k];
-									}
-								} else {
-									if (as.length() == term.getRealName().length())
-										label = label_begin; // 新词开头0
-									else
-										label = label_meddle; // 新词中部2
-									if (!gs.contains(as)) {
-										//logger.debug("--- {} {} ！！！", as, gs);
-										while (!gs.contains(as)) {
-											gs += golden[++k];
-											//	logger.debug("--- {} {} ！！！", as, gs);
-										}
+				if (pattern == config.nw) {
+					while ((line = reader.readLine()) != null) {
+						goldenSegWithoutTag = line.replaceAll("/([^ ]*|$)", "");// 去掉词性
+						srcline = goldenSegWithoutTag.replaceAll(" ", "");
+
+						if (srcline.length() == 0) continue;// 不是空行
+						String[] golden = goldenSegWithoutTag.split(config.sepWordRegex);
+						List<Term> ansj = parser.parseStr(srcline).getTerms();
+
+						int goldenIndex = 0;
+						String gs = golden[0], as = "";
+						char label = label_single;
+						for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含且不等于as，
+							//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
+							Term term = ansj.get(i);
+							String ansjWord = term.getRealName();
+							as += ansjWord;
+							if (gs.equals(as)) {
+								if (gs.length() == ansjWord.length()) // 正确的单个词
+									label = label_single; // 正确的单个词3
+								else
+									label = label_end; // 新词结尾1
+								as = "";
+								if (goldenIndex + 1 < golden.length) {
+									gs = golden[++goldenIndex];
+								}
+							} else {
+								if (as.length() == ansjWord.length())
+									label = label_begin; // 新词开头0
+								else
+									label = label_meddle; // 新词中部2
+								if (!gs.contains(as)) {
+									while (!gs.contains(as)) {
+										gs += golden[++goldenIndex];
 									}
 									if (gs.equals(as)) {
 										label = label_end;// 这个序列包含了多个词, 但是这个序列并不是新词
 										as = "";
-										if (k + 1 < golden.length) {
-											gs = golden[++k];
+										if (goldenIndex + 1 < golden.length) {
+											gs = golden[++goldenIndex];
 										}
 									}
 								}
-								if (i > 0)
-									writer.append(new Feature(ansj.get(i - 1).getRealName(), term.getRealName(), term
-											.getNatureStr()).toString
-											() +
-											'\t' + label);
-								else
-									writer.append(new Feature("", term.getRealName(), term
-											.getNatureStr()).toString
-											() +
-											'\t' + label);
 
-								writer.newLine();
 							}
-							writer.newLine();
+							if (i > 0)
+								writer.println(new Feature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr()).toString() + '\t' + label);
+							else
+								writer.println(new Feature("", ansjWord, term.getNatureStr()).toString() + '\t' + label);
+
+							if (ansjWord.matches(config.sepSentenceRegex))
+								writer.println();// 断句换行
 						}
+						writer.println();
 					}
-				}
+				}// nw
+
+				if (pattern == config.nr || pattern == config.ns) {
+					// todo
+				} // nr ns
 			}
 			writer.close();
 		} catch (IOException e) {
@@ -129,27 +136,32 @@ public class WordCRF extends crfppWrapper implements Serializable {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				String srcline;
-				while ((srcline = reader.readLine()) != null) {
-					for (String line : srcline.split(config.sepSentenceRegex)) {
-						if (line.length() == 0) {
-							writer.newLine();
-							continue;
-						}
-						List<Term> list = parser.parseStr(line).getTerms();
-						for (int i = 0; i < list.size(); i++) {
-							Term term = list.get(i);
-							if (i > 0)
-								writer.append(new Feature(list.get(i - 1).getRealName(), term.getRealName(), term
-										.getNatureStr()).toString
-										());
-							else
-								writer.append(new Feature("", term.getRealName(), term.getNatureStr()).toString
-										());
-							writer.newLine();
-						}
-						writer.newLine();// todo 分割句子
+				String line;
+				while ((line = reader.readLine()) != null) {
+
+					if (line.length() == 0) {
+						writer.newLine();
+						continue;
+						// 空行
 					}
+
+					List<Term> list = parser.parseStr(line).getTerms();
+
+					for (int i = 0; i < list.size(); i++) {
+						Term term = list.get(i);
+						String word = term.getRealName();
+						String pos = term.getNatureStr();
+
+						if (i > 0)
+							writer.append(new Feature(list.get(i - 1).getRealName(), word, pos).toString());
+						else
+							writer.append(new Feature("", word, pos).toString());
+						writer.newLine();
+
+						if (word.matches(config.sepSentenceRegex))
+							writer.newLine();// 句子断开
+					}
+					writer.newLine();// todo 分割句子
 				}
 			}
 			writer.close();
@@ -166,33 +178,63 @@ public class WordCRF extends crfppWrapper implements Serializable {
 			BufferedReader reader = new BufferedReader(new FileReader(crfppOutput));
 			BufferedWriter writerNewWord = new BufferedWriter(new FileWriter(resFile));
 			String tmp, posOfFirstWord, wordPiece;
-			while ((tmp = reader.readLine()) != null) {
-				StringBuilder wordBuffer = new StringBuilder();
-				if (tmp.length() == 0)
-					continue;
-				wordPiece = tmp.split("\t", 2)[0]; //第一个词
-				wordBuffer.append(wordPiece);
-				posOfFirstWord = tmp.split("\t", 4)[2];
-				if (tmp.charAt(tmp.length() - 1) == label_begin) {
-					do {
-						//pos = "0";
-						tmp = reader.readLine();
-						wordPiece = tmp.split("\t", 2)[0];
-						wordBuffer.append(wordPiece);
-					} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != label_end);
+			if (pattern == config.nw) {
+				while ((tmp = reader.readLine()) != null) {
+					StringBuilder wordBuffer = new StringBuilder();
+					if (tmp.length() == 0)// 跳过空行
+						continue;
+					wordPiece = tmp.split("\t", 2)[0]; //第一个词
+					wordBuffer.append(wordPiece);
+					posOfFirstWord = tmp.split("\t", 4)[2];
+					if (tmp.charAt(tmp.length() - 1) == label_begin) {
+						do {
+							//pos = "0";
+							tmp = reader.readLine();
+							wordPiece = getWord(tmp);
+							wordBuffer.append(wordPiece);
+						} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != label_end);
+					}
+					String word = wordBuffer.toString();
+					// todo 去掉末尾的
+					//if (!wordPiece.matches(invalidSuffixRegex))
+					if (Corpus.isNewWord(word) && !newWordList.contains(word)
+							&& !posOfFirstWord.equals("m") && !posOfFirstWord.equals("t") // todo 不能以数量词开头
+							) {
+						//忽略量词
+						newWordList.add(word);
+						writerNewWord.append(word);
+						writerNewWord.newLine();
+					}
 				}
-				String word = wordBuffer.toString();
-				// todo 去掉末尾的
-				//if (!wordPiece.matches(invalidSuffixRegex))
-				if (Corpus.isNewWord(word) && !newWordList.contains(word)
-						&& !posOfFirstWord.equals("m") && !posOfFirstWord.equals("t") // todo 不能以数量词开头
-						) {
-					//忽略量词
-					newWordList.add(word);
-					writerNewWord.append(word);
-					writerNewWord.newLine();
+			} // nw
+
+			if (pattern == config.nr || pattern == config.ns) {
+				while ((tmp = reader.readLine()) != null) {
+					StringBuilder wordBuffer = new StringBuilder();
+					if (tmp.length() == 0)
+						continue;
+					wordPiece = getWord(tmp); //第一个词
+					wordBuffer.append(wordPiece);
+					char label_head = getLabel(tmp);
+					if (tmp.charAt(tmp.length() - 1) == label_begin) {
+						do {
+							tmp = reader.readLine();
+							wordPiece = getWord(tmp);
+							wordBuffer.append(wordPiece);
+						} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != label_end);
+					}
+					String word = wordBuffer.toString();
+					// todo 去掉末尾的
+					//if (!wordPiece.matches(invalidSuffixRegex))
+					if (label_head == label_single || label_head == label_begin
+							) {
+						newWordList.add(word);
+						writerNewWord.append(word);
+						writerNewWord.newLine();
+					}
 				}
-			}
+			} // nr ns
+
 			writerNewWord.close();
 		} catch (IOException e) {
 			logger.error("err!");

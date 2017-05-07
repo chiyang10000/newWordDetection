@@ -10,7 +10,7 @@ import org.nlpcn.commons.lang.pinyin.Pinyin;
  */
 public interface config {
 	//final public static String sepSentenceRegex = "([【】°~～\\pP&&[^-－.%．·@／]]+)";
-	final public static String sepSentenceRegex = "，。？！：";
+	final public static String sepSentenceRegex = "[，。？！：]";// 这样搞了之后就断不开了
 	final public static String sepWordRegex = " +";
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +

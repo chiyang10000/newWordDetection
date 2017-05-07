@@ -41,6 +41,14 @@ abstract public class crfppWrapper implements NewWordDetector {
 		RunSystemCommand.run(cmd);
 	}
 
+	public static String getWord(String in) {
+		return in.split("\t", 2)[0];
+	}
+
+	public static char getLabel(String in) {
+		return in.charAt(in.length() - 1);
+	}
+
 	public void train(String[] inputFiles, String pattern) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";

@@ -21,6 +21,7 @@ public class Ansj implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(Ansj.class);
 
 	public static void main(String... args) throws IOException {
+		segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
 		segFile(config.totalDataInput, "tmp/tmp.txt");
 		Ansj ansj = new Ansj();
 		ansj.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
@@ -39,6 +40,25 @@ public class Ansj implements NewWordDetector {
 				writer.newLine();
 			}
 		}
+	}
+
+	static void segFileForWord2Vec(String input, String output1, String output2) throws IOException {
+		try (BufferedReader reader = new BufferedReader(new FileReader(input));
+			BufferedWriter writer1 = new BufferedWriter(new FileWriter(output1));
+			BufferedWriter writer2 = new BufferedWriter(new FileWriter(output2))
+		){
+			String line, tmp;
+			while ((line = reader.readLine()) != null) {
+				if (line.length() == 0) continue;
+				tmp = ToAnalysis.parse(line).toStringWithOutNature(" ");
+				for (int i = 0; i < line.length(); i++)
+					writer1.append(line.charAt(i) + " ");
+				writer1.newLine();
+				writer2.append(tmp);
+				writer2.newLine();
+			}
+		}
+
 	}
 
 	@Override

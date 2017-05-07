@@ -1,0 +1,10 @@
+# Unigram: word, length, pos, le, re, tf, pmi, mi with previous word
+
+
+Uword-2:%x[-2,0]
+Uword-1:%x[-1,0]
+Uword0:%x[0,0]
+Uword+1:%x[0,0]
+Uword+2:%x[0,0]
+
+B
