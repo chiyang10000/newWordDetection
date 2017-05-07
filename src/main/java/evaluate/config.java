@@ -17,7 +17,7 @@ public class config {
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	final public static String newWordExcludeRegex = "[｜■±+\\pP&&[^·]]+" + "|" +
+	final public static String newWordExcludeRegex = ".*[｜■±+\\pP&&[^·－／]]+.*" + "|" +
 			"[第型．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+";
 	//标点符号和纯数字
 	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词

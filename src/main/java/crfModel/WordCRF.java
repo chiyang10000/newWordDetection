@@ -38,7 +38,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	public static void main(String... args) {
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
-		//segementCRF.train(inputFiles, config.nw);
+		segementCRF.train(inputFiles, config.nw);
 		Test.test(Test.readWordList(config.testDataNWAns), segementCRF.detectNewWord(config.testDataSrc,
 				"tmp/tmp.nw", config.nw));
 	}

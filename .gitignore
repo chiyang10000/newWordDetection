@@ -6,7 +6,8 @@ lib/*
 /lib/crfpp/crf_learn
 /lib/crfpp/crf_test
 tmp/*
+!tmp/crf
 data/model/*
-data/test/*
+data/test/*/*
 data/basicWordList.txt
 *.log

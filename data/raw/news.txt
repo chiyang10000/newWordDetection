@@ -639,15 +639,15 @@ AH-64/nx 攻击/vn 直升机/n PNNS/nx 夜视/b 系统/n 在/p 夜间/t 对/p �
 4./m 空中/s 突击/v 作战/v ，/w 纵深/n 大/a ，/w 距离/n 远/a ，/w 过分/a 依赖/v 无线电/n 进行/v 指挥/v 控制/v ，/w 易/a 受/v 电子/n 干扰/v 。/w 
 5./m 直升机/n 行动/v 准备/n 程序/n 复杂/a ，/w 通常/d 需要/v 35/m -/w 50/m 分钟/q 为/p 系统/n 设定/v 任务/n 程序/n ，/w 给/p 系统/n 输入/v 导航/v 、/w 通信/v 、/w 机载/b 目标/n 交换/vn 系统/n 的/u 数据/n ，/w 直升机/n 再/d 出动/v 的/u 维修/vn 保养/vn 复杂/a ，/w 直接/a 影响/v 直升机/n 的/u 出动率/n 。/w 
 F-15/nx “/w 鹰/nz ”/w 战机/n (/w 组图/n )/w 
-F-15/nx 是/v 美国/ns 麦.道/nz 公司/n 研制/v 的/u 双发/b 重型/b 超音速/n 制空/vn 战斗机/n ，/w 主要/d 用于/v 夺取/v 战区/n 制空权/n ，/w 同时/t 兼具/v 对/p 地/n 攻击/vn 能力/n ，/w 是/v 美国/ns 空军/n 的/u 主力/n 战机/n 。/w 
-1965年/t 开始/v 考虑/v 研制/v ，/w 用于/v 取代/v F-4/nx “/w 鬼怪/nz ”/w 式/b 战机/n ，/w 1968年/t 开始/v 招标/v ，/w 1969年/t 12月/t 选定/v 麦.道/nz 公司/n 作为/v 主/n 承包商/n 。/w 
+F-15/nx 是/v 美国/ns 麦道/nz 公司/n 研制/v 的/u 双发/b 重型/b 超音速/n 制空/vn 战斗机/n ，/w 主要/d 用于/v 夺取/v 战区/n 制空权/n ，/w 同时/t 兼具/v 对/p 地/n 攻击/vn 能力/n ，/w 是/v 美国/ns 空军/n 的/u 主力/n 战机/n 。/w 
+1965年/t 开始/v 考虑/v 研制/v ，/w 用于/v 取代/v F-4/nx “/w 鬼怪/nz ”/w 式/b 战机/n ，/w 1968年/t 开始/v 招标/v ，/w 1969年/t 12月/t 选定/v 麦道/nz 公司/n 作为/v 主/n 承包商/n 。/w 
 首/m 架/q 原型机/n 于/p 1972年/t 7月/t 开始/v 试/v 飞/v ，/w 1974年/t 9月/t 首/m 架/q 生产型/b 首/m 飞/v ，/w 1974年/t 11月/t 开始/v 交付/v 。/w 
 该机/r 采用/v 正常/a 双垂尾式/b 布局/v ，/w 切尖/v 三/m 欠/v 上/f 单翼/n ，/w 全/a 金属/n 半硬壳/b 机身/n ，/w 翼根/n 下部/f 机身/n 两侧/f 为/v 二元/b 多/a 波/n 系/n 可/v 调进/v 气道/n ，/w 双/m 余/m 度/q 的/u 高/a 权限/n 的/u 增/v 稳/a 控制/vn 系统/n ，/w 外加/v 机械/n 备份/v 。/w 
 F-15/nx 主要/b 的/u 设计/vn 主要/d 是/v 突出/a 空战/vn 格斗/vn 能力/n ，/w 具有/v 推重比/n 大/a 、/w 翼/n 载/v 小/a 、/w 机动性/n 好/a 等/u 特点/n ，/w 为/v 典型/n 的/u 第三/m 代/q 战斗机/n ，/w 该机/r 装备/v 有/v 良好/a 的/u 机载/b 电子/n 设备/n ，/w 特别/d 适用于/v 近距/n 格斗/v 和/c 超视距/n 导弹/n 攻击/v 。/w 
 主要/b 机型/n 有/v ：/w A型/b ，/w 第一/m 种/q 生产型/b 单座/b 战斗机/n ；/w B型/b ，/w 由/p A型/b 改进/v 的/u 双座/b 教练机/n ；/w C型/b ，/w 增加/v 了/u 载油量/n 的/u A型/b 改进型/b ；/w D型/b ，/w 由/p C型/b 改进/v 的/u 双座/b 教练机/n ；/w E型/b ，/w 双重/b 任务/n 战斗机/n ；/w S／MTD型/b 短距/n 起落/v 先进/a 技术/n 验证机/n 等/u 。/w 
 除/p 美国/ns 外/f ，/w 日本/ns 、/w 以色列/ns 和/c 沙特阿拉伯/ns 等/u 国家/n 也/d 装备/v 了/u 这种/r 飞机/n 。/w 
 第493/m 中队/n 的/u F-15C/nx 和/c 494/m 中队/n 的/u F-15E/nx 参加/v 了/u 1999年/t 3月/t 24日/t 开始/v 的/u 对/p 南联盟/nz 实施/v 空袭/v 的/u 任务/n 。/w 
-动力/n 装置/n 早期/f 装/v 两/m 台/q 普.惠/nz 公司/n F100-PW-100/nx 涡扇/n 发动机/n ，/w 单/m 台/q 静推力/n 65.2/m 千牛/q ，/w 加力/n 推力/n 105.9/m 千牛/q ，/w 1991年/t 后/f 换装/vn 推力/n 为/v 129/m 千牛/q 一级/b 的/u F110-GE-129/nx 或/c F100-PW-229/nx 涡扇/n 发动机/n 。/w 
+动力/n 装置/n 早期/f 装/v 两/m 台/q 普惠/nz 公司/n F100-PW-100/nx 涡扇/n 发动机/n ，/w 单/m 台/q 静推力/n 65.2/m 千牛/q ，/w 加力/n 推力/n 105.9/m 千牛/q ，/w 1991年/t 后/f 换装/vn 推力/n 为/v 129/m 千牛/q 一级/b 的/u F110-GE-129/nx 或/c F100-PW-229/nx 涡扇/n 发动机/n 。/w 
 主要/b 机载/b 设备/n 是/v 休斯/nz 公司/n 的/u AN／APG-70/nx (/w C／D型/b )/w 或/c AN／APG-63/nx (/w A／B型/b )/w 火控/b 雷达/n ，/w AN／ASN-108/nx 姿态/n //w 方向/n 参考/vn 系统/n ，/w AN／ALQ-119/nx 电子/n 干扰/vn 吊舱/n ，/w AN／ARN-118/nx 塔康/nz 系统/n ，/w AN／ASN-109/nx 惯性/n 导航/vn 系统/n ，/w AN／AWG-20/nx 火控/b 系统/n ，/w AN／ASK-6/nx 大气/n 数据/n 计算机/n ，/w CP-1075／AYK/nx 中央/n 数据/n 计算机/n 等/u 。/w 
 武器/n ：/w 1/m 门/q M61-A120/nx 毫米/q 六/m 管/q 机炮/n ，/w 备弹/n 940/m 发/q ，/w 外部/f 可以/v 同时/t 挂/v 4/m 枚/q AIM-9L/nx “/w 响尾蛇/nz ”/w 近距/n 和/c AIM-7F/nx “/w 麻雀/nz ”/w 中距/n 空空导弹/n ，/w 或/c 8/m 枚/q AIM-120/nx 先进/a 中距/n 空空导弹/n ，/w 对/p 地/u 攻击/v 时/n 可/v 携带/v 各种/r 炸弹/n 、/w 火箭弹/n 等/u 。/w 
 尺寸/n 数据/n 机长/n 19.43/m 米/q ，/w 机高/n 5.63/m 米/q ，/w 翼展/n 13.05/m 米/q ，/w 机翼/n 面积/n 56.5/m 平方米/q ，/w 展弦比/n 3.01/m 。/w 
