@@ -69,6 +69,7 @@ public class Test {
 
 		logger.info("shuffle is {}", config.isShuffle);
 		logger.info("corpus is {}", config.corpusFile);
+		logger.info("word filter is {}", config.isNewWordFilter);
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
 			test(
@@ -97,7 +98,7 @@ public class Test {
 			Corpus.addWordInfo(answerFile, "tmp/" + type + ".info");
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				if (newWordDetector != nagao) continue;
+				//if (newWordDetector != nagao) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, config.nw), newWordDetector.getClass().getSimpleName());
 				Corpus.addWordInfo(outputFile, outputFile + ".info");

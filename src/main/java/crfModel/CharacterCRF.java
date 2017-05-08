@@ -22,7 +22,7 @@ public class CharacterCRF extends crfppWrapper {
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
-		for (String type: config.supportedType) {
+		for (String type : config.supportedType) {
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp.nw", type), characterCRF.getClass().getSimpleName());
 		}
@@ -172,6 +172,7 @@ public class CharacterCRF extends crfppWrapper {
 					}
 
 					String word = wordBuffer.toString();// 这是一个词
+					word = config.newWordFileter(word);
 					if (Corpus.isNewWord(word) && !newWordList.contains(word)) {
 						newWordList.add(word);
 						writer.println(word);

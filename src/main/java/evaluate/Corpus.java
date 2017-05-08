@@ -126,6 +126,7 @@ public class Corpus {
 				String[] segs = tmp.split(config.sepWordRegex);
 				for (String seg : segs) {
 					String word = config.removePos(seg);
+					word = config.newWordFileter(word);
 					String pos = config.getPos(seg);
 					if (!pos.equals("m") && !pos.equals("t"))
 						if (isNewWord(word)) {
@@ -229,8 +230,9 @@ public class Corpus {
 
 	public static boolean isNewWord(String word) {
 		//标点符号，含字母和数字的不算
+		word = config.newWordFileter(word);
 		if (word.matches(config.newWordExcludeRegex)
-				|| word.matches("第?[几两数一二三四五六七八九十].*")// 去掉某些数量词
+			//|| word.matches("第?[几两数一二三四五六七八九十].*")// 去掉某些数量词
 				)
 			return false;
 		if (!basicWordList.contains(word))

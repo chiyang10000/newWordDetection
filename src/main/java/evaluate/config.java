@@ -3,7 +3,8 @@ package evaluate;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
-import org.nlpcn.commons.lang.pinyin.Pinyin;
+import org.ansj.splitWord.analysis.ToAnalysis;
+import org.ansj.util.MyStaticValue;
 
 /**
  * Created by wan on 4/25/2017.
@@ -15,8 +16,8 @@ public interface config {
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	final public static String newWordExcludeRegex = ".*[° ～｜■±+\\pP&&[^·－／]]+.*" + "|" +
-			"[第型．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+";
+	final public static String newWordExcludeRegex = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)" + "|" +
+			"([．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+型?)";
 	//标点符号和纯数字
 	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词
 
@@ -37,6 +38,7 @@ public interface config {
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
 	public static boolean isShuffle = false;
+	public static boolean isNewWordFilter = true;
 
 	public static String renmingribao = "data/raw/renminribao.txt";
 	//final public static String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
@@ -64,6 +66,12 @@ public interface config {
 		return in.replaceAll("^.*/", "");
 	}
 
+	static String newWordFileter(String word) {
+		if (isNewWordFilter)
+			return word.replaceAll("(型$)|(公司$)", "");
+		return word;
+	}
+
 	public static void main(String... args) {
 		System.out.println(removePos("a/b//l"));
 		System.out.println(Double.parseDouble("-Infinity"));
@@ -74,11 +82,31 @@ public interface config {
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
 		System.out.println(Test.getAnswerFile(testDataInput, nw));
+		openAnsj();
+		System.out.println(ToAnalysis.parse("三沙、二炮、4时, 100升"));
 		try {
 			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
 			System.out.println(tmp);
 		} catch (PinyinException e) {
 			e.printStackTrace();
 		}
+	}
+
+	static void closeAnsj() {
+		MyStaticValue.isNameRecognition = false;
+		MyStaticValue.isNumRecognition = false;
+		MyStaticValue.isQuantifierRecognition = false;
+	}
+
+	static void openAnsj() {
+		MyStaticValue.isNameRecognition = true;
+		MyStaticValue.isNumRecognition = true;
+		MyStaticValue.isQuantifierRecognition = true;
+	}
+
+	static void setAnsj() {
+		MyStaticValue.isNameRecognition = false;
+		MyStaticValue.isNumRecognition = true;
+		MyStaticValue.isQuantifierRecognition = true;
 	}
 }
