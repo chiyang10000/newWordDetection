@@ -1,15 +1,18 @@
-package evaluate;
+package dataProcess;
 
-import com.googlecode.concurrenttrees.radix.ConcurrentRadixTree;
-import com.googlecode.concurrenttrees.radix.RadixTree;
-import com.googlecode.concurrenttrees.radix.node.concrete.DefaultCharArrayNodeFactory;
+import evaluate.RunSystemCommand;
+import evaluate.Test;
+import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * Created by wan on 4/7/2017.
@@ -18,15 +21,9 @@ public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
 	public static HashSet<String> basicWordList = new HashSet<>();
 	public static HashSet<Character> basicCharacterList = new HashSet<>();
-	public static RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
-	public static DiscreteWordInfo discreteWordInfo;
-	public static ExactWordInfo exactWordInfo = new ExactWordInfo();
 
-	static void clean(){
-		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
-	}
 	static {
-		if (!new File("data/basicWordList.txt").exists()) {
+		if (!new File(config.basicWordListFile).exists()) {
 			logger.info("Scanning word from file ...");
 			for (String basicWordFile : config.basicWordFiles) {
 				try {
@@ -51,7 +48,7 @@ public class Corpus {
 			logger.info("Basic character list size: {}", basicCharacterList.size());
 			BufferedWriter writer = null;
 			try {
-				writer = new BufferedWriter(new FileWriter("data/basicWordList.txt"));
+				writer = new BufferedWriter(new FileWriter(config.basicWordListFile));
 				for (String word : basicWordList) {
 					writer.append(word);
 					writer.newLine();
@@ -64,7 +61,7 @@ public class Corpus {
 		} else {
 			try {
 				logger.info("Reading word from file ...");
-				BufferedReader reader = new BufferedReader(new FileReader("data/basicWordList.txt"));
+				BufferedReader reader = new BufferedReader(new FileReader(config.basicWordListFile));
 				String tmp;
 				while ((tmp = reader.readLine()) != null) {
 					basicWordList.add(tmp);
@@ -73,44 +70,13 @@ public class Corpus {
 				logger.info("Basic character list size: {}", basicCharacterList.size());
 			} catch (java.io.IOException e) {
 				e.printStackTrace();
-				logger.error("Reading {} err!", "data/basicWordList.txt");
+				logger.error("Reading {} err!", config.basicWordListFile);
 			}
 		}
 	}
 
-	/**
-	 * 读入所有词的信息
-	 */
-	public static void loadWordInfo() {
-		if (new File(config.corpusFile).exists()) {
-			ArrayList<Integer> tfList = new ArrayList();
-			ArrayList<Double> leList = new ArrayList<>(), reList = new ArrayList<>(), pmiList = new ArrayList();
-			try {
-				logger.debug("Reading word info into corpus");
-				BufferedReader reader = new BufferedReader(new FileReader(config.corpusFile));
-				String line;
-				while ((line = reader.readLine()) != null) {
-					String seg[] = line.split("\t");
-					int tf = Integer.parseInt(seg[1]);
-					tfList.add(tf);
-					double pmi = Double.parseDouble(seg[2]);
-					if (!Double.isNaN(pmi))
-						pmiList.add(pmi);
-					double le = Double.parseDouble(seg[3]);
-					if (le > 0)
-						leList.add(le);
-					double re = Double.parseDouble(seg[4]);
-					if (re > 0)
-						reList.add(re);
-					WordInfo tmp = new WordInfo(tf, pmi, le, re);
-					wordInfo.put(seg[0], tmp);
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			logger.info("{} strings in the corpus", wordInfo.size());
-			discreteWordInfo = new DiscreteWordInfo(config.levelNum, tfList, pmiList, leList, reList);
-		}
+	static void clean() {
+		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
 	}
 
 	/**
@@ -320,27 +286,6 @@ public class Corpus {
 		}
 	}
 
-	public static void addWordInfo(String wordFile, String outputFile) {
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
-				int tf = 1;
-				double mi = 10000, entropy = 10000, le = 10000, re = 10000;
-				tf = exactWordInfo.getTF(tmp);
-				mi = exactWordInfo.getPMI(tmp);
-				le = exactWordInfo.getLE(tmp);
-				re = exactWordInfo.getRE(tmp);
-				writer.append(String.format("%s\t%d\t%f\t%f\t%f\t%f", tmp, tf, mi, le, re, entropy));
-				writer.newLine();
-			}
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
 	/**
 	 * 从数据集中提取新词，分割为训练集和测试集
 	 *
@@ -348,10 +293,6 @@ public class Corpus {
 	 */
 	public static void main(String... args) throws IOException {
 		clean();
-		/* 提供词频统计文件
-		convertToSrc(new String[]{config.renmingribao}, "data/corpus/renmingribao");
-		convertToSrc(new String[]{config.news}, "data/corpus/news");
-		*/
 
 		ConvertHalfWidthToFullWidth.convertFileToFulll(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
@@ -371,131 +312,4 @@ public class Corpus {
 		extractWord(config.testData, config.nr);
 	}
 
-	static class WordInfo {
-		int tf;
-		double le, re, pmi;
-
-		WordInfo(int tf, double pmi, double le, double re) {
-			this.tf = tf;
-			this.pmi = pmi;
-			this.le = le;
-			this.re = re;
-		}
-	}
-
-	static class ExactWordInfo {
-		int getTF(String word) {
-			WordInfo tmp = wordInfo.getValueForExactKey(word);
-			if (tmp == null)
-				return 0;
-			return tmp.tf;
-		}
-
-		double getPMI(String word) {
-			WordInfo tmp = wordInfo.getValueForExactKey(word);
-			// 假设没出现过的pmi一定很高
-			if (tmp == null)
-				return 100;
-			return tmp.pmi;
-		}
-
-		double getLE(String word) {
-			WordInfo tmp = wordInfo.getValueForExactKey(word);
-			if (tmp == null)
-				return 0;
-			return tmp.le;
-		}
-
-		double getRE(String word) {
-			WordInfo tmp = wordInfo.getValueForExactKey(word);
-			if (tmp == null)
-				return 0;
-			return tmp.re;
-		}
-	}
-
-	public static class DiscreteWordInfo {
-		double mi[], tf[], le[], re[];
-
-		/**
-		 * pmi不是NaN, entropy大于0
-		 * todo pmi不是NaN
-		 */
-		public DiscreteWordInfo(int levelNum, List<Integer> tf_array, List<Double> pmi_array, List<Double> le_array,
-								List<Double> re_array) {
-
-
-			Integer[] tmp_tf = new Integer[tf_array.size()];
-			tmp_tf = tf_array.toArray(tmp_tf);
-			Arrays.sort(tmp_tf);
-
-			Double[] tmp_pmi = new Double[pmi_array.size()];
-			tmp_pmi = pmi_array.toArray(tmp_pmi);
-			Arrays.sort(tmp_pmi);
-
-			Double[] tmp_le = new Double[le_array.size()];
-			tmp_le = le_array.toArray(tmp_le);
-			Arrays.sort(tmp_le);
-
-			Double[] tmp_re = new Double[re_array.size()];
-			tmp_re = re_array.toArray(tmp_re);
-			Arrays.sort(tmp_re);
-			logger.info("tf {} pmi {}  le {} re {}", tmp_tf.length, tmp_pmi.length, tmp_le.length, tmp_re.length);
-
-			mi = new double[levelNum + 1];
-			tf = new double[levelNum + 1];
-			le = new double[levelNum + 1];
-			re = new double[levelNum + 1];
-			for (int i = 0; i < levelNum; i++) {
-				mi[i] = tmp_pmi[i * tmp_pmi.length / levelNum];
-				tf[i] = tmp_pmi[i * tmp_tf.length / levelNum];
-				le[i] = tmp_pmi[i * tmp_le.length / levelNum];
-				re[i] = tmp_pmi[i * tmp_re.length / levelNum];
-			}
-			//边界处理
-			mi[levelNum] = Double.MAX_VALUE;
-			tf[levelNum] = Double.MAX_VALUE;
-			le[levelNum] = Double.MAX_VALUE;
-			re[levelNum] = Double.MAX_VALUE;
-		}
-
-		public int getPMI(String word) {
-			double value = exactWordInfo.getPMI(word);
-			//pmi为0算一类
-			if (Double.isNaN(value))
-				return -1;
-			int i = 0;
-			while (mi[++i] < value) ;
-			return i - 1;
-		}
-
-		public int getTF(String word) {
-			// tf为0算一类
-			int value = exactWordInfo.getTF(word);
-			if (value == 0)
-				return -1;
-			int i = 0;
-			while (tf[++i] < value) ;
-			return i - 1;
-		}
-
-		//左右熵为0的算作一类
-		public int getLE(String word) {
-			double value = exactWordInfo.getLE(word);
-			if (Math.abs(value) == 0.0)
-				return -1;
-			int i = 0;
-			while (le[++i] < value) ;
-			return i - 1;
-		}
-
-		public int getRE(String word) {
-			double value = exactWordInfo.getRE(word);
-			if (Math.abs(value) == 0.0)
-				return -1;
-			int i = 0;
-			while (re[++i] < value) ;
-			return i - 1;
-		}
-	}
 }

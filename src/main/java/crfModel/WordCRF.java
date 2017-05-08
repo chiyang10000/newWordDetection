@@ -1,6 +1,7 @@
 package crfModel;
 
-import evaluate.Corpus;
+import dataProcess.Corpus;
+import dataProcess.WordInfoInCorpus;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
@@ -19,12 +20,8 @@ import java.util.Set;
  */
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
-	public Analysis parser;
 	static private HashSet<String> wrong = new HashSet<>();
-
-	static {
-		Corpus.loadWordInfo();
-	}
+	public Analysis parser;
 
 	{
 		config.closeAnsj();
@@ -33,13 +30,14 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 	public static void main(String... args) {
 		Test.clean();
-		calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
-		calcMostRecallInAnsj(config.testData, config.nr);
-		calcMostRecallInAnsj(config.testData, config.ns);
+		WordCRF tmp = new WordCRF();
+		tmp.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
+		tmp.calcMostRecallInAnsj(config.testData, config.nr);
+		tmp.calcMostRecallInAnsj(config.testData, config.ns);
 
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
-		for (String type: config.supportedType) {//;= config.ns;
+		for (String type : config.supportedType) {//;= config.ns;
 			//segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
 					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
@@ -66,7 +64,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		System.err.println("  [golden");
 	}
 
-	public static void calcMostRecallInAnsj(String inputFile, String pattern) {
+	public void calcMostRecallInAnsj(String inputFile, String pattern) {
 		BufferedReader reader;
 		String srcline;
 		double mostRecallInTraindata = 0;
@@ -81,7 +79,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 					line = line.trim();
 					if (line.length() > 0) {
 						String[] golden = line.split(config.sepWordRegex);
-						List<Term> ansj = ToAnalysis.parse(line.replace(" ", "")).getTerms();
+						List<Term> ansj = parser.parseStr(line.replace(" ", "")).getTerms();
 						int k = 0;
 						String gs = golden[0], as = "";
 						for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含as, 且gs仅包含一个词，
@@ -297,8 +295,6 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 	@Override
 	public Set<String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern) {
-		//config.openAnsj();
-		//Analysis checker = new NlpAnalysis();
 		HashSet<String> newWordList = new HashSet<>();
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(crfppOutput));
@@ -351,11 +347,11 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 				if (pattern == config.nr || pattern == config.ns) {
 					if (labelOfFirstWord == label_single || labelOfFirstWord == label_begin)
-					if (!newWordList.contains(word)){
-						newWordList.add(word);
-						writerNewWord.println(word);
-						writerWordInfo.println(wordInfo);
-					}
+						if (!newWordList.contains(word)) {
+							newWordList.add(word);
+							writerNewWord.println(word);
+							writerWordInfo.println(wordInfo);
+						}
 				} // nr ns
 			}
 
@@ -416,10 +412,10 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				length = config.maxNagaoLength + 1;
 			this.pos = pos;
 			try {
-				tf = Corpus.discreteWordInfo.getTF(word);
-				pmi = Corpus.discreteWordInfo.getPMI(word);
-				leftEntropy = Corpus.discreteWordInfo.getLE(word);
-				rightEntropy = Corpus.discreteWordInfo.getRE(word);
+				tf = WordInfoInCorpus.discreteWordInfo.getTF(word);
+				pmi = WordInfoInCorpus.discreteWordInfo.getPMI(word);
+				leftEntropy = WordInfoInCorpus.discreteWordInfo.getLE(word);
+				rightEntropy = WordInfoInCorpus.discreteWordInfo.getRE(word);
 			} catch (NullPointerException e) {
 				//length = 0;
 				tf = 0;
@@ -427,7 +423,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				leftEntropy = config.levelNum;
 				rightEntropy = config.levelNum;
 			}
-			tfWithPreWord = Corpus.discreteWordInfo.getTF(preWord + word);
+			tfWithPreWord = WordInfoInCorpus.discreteWordInfo.getTF(preWord + word);
 		}
 
 		@Override

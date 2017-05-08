@@ -1,11 +1,11 @@
 package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
-import ansj.Ansj;
 import ansj.AnsjNlpAnalysis;
 import ansj.AnsjToAnalysis;
 import crfModel.CharacterCRF;
 import crfModel.WordCRF;
+import dataProcess.WordInfoInCorpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,6 +24,17 @@ import java.util.Set;
 public class Test {
 	static final DecimalFormat df = new DecimalFormat("##.000");
 	static private final Logger logger = LoggerFactory.getLogger("report");
+
+	static {
+		logger.info("---------****----------\n");
+		if (config.isAnsjFeatureOpen)
+			config.openAnsj();
+		logger.info("ansj feature open is {}", config.isAnsjFeatureOpen);
+		logger.info("shuffle is {}", config.isShuffle);
+		logger.info("corpus is {}", config.corpusInput);
+		logger.info("word filter is {} ", config.isNewWordFilter);
+		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
+	}
 
 	/**
 	 * 传入一个已分词好的文件。
@@ -65,19 +76,9 @@ public class Test {
 		logger.debug("word list size of {} is {}", inputFile, wordList.size());
 		return wordList;
 	}
+
 	public static void clean() {
 		RunSystemCommand.run("find tmp -type f | grep -v gitignore | xargs rm");
-	}
-
-	static {
-		logger.info("---------****----------\n");
-		if (config.isAnsjFeatureOpen)
-			config.openAnsj();
-		logger.info("ansj feature open is {}", config.isAnsjFeatureOpen);
-		logger.info("shuffle is {}", config.isShuffle);
-		logger.info("corpus is {}", config.corpusFile);
-		logger.info("word filter is {} ", config.isNewWordFilter);
-		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
 	}
 
 	public static void main(String... args) {
@@ -110,13 +111,13 @@ public class Test {
 
 		for (String type : new String[]{config.nw, config.nr, config.ns}) {
 			String answerFile = getAnswerFile(inputFile, type);
-			Corpus.addWordInfo(answerFile, "tmp/" + type + ".info");
+			WordInfoInCorpus.addWordInfo(answerFile, "tmp/" + type + ".info");
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				//if (newWordDetector != nagao) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type), newWordDetector.getClass().getSimpleName());
-				Corpus.addWordInfo(outputFile, outputFile + ".info");
+				WordInfoInCorpus.addWordInfo(outputFile, outputFile + ".info");
 			}
 		}
 		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

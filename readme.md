@@ -56,7 +56,7 @@ mvn package
 java -server -cp target/*with-dependencies.jar
 ```
 
-1. evaluate.Corpus
+1. dataProcess.Corpus
     > 生成数据
 2. evaluate.Test
     > 运行测试

@@ -1,6 +1,6 @@
 package NagaoAlgorithm;
 
-import evaluate.Corpus;
+import dataProcess.Corpus;
 import evaluate.NewWordDetector;
 import evaluate.config;
 import org.slf4j.Logger;

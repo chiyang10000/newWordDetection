@@ -1,4 +1,6 @@
-package evaluate;
+package dataProcess;
+
+import evaluate.config;
 
 import java.io.*;
 import java.util.regex.Matcher;

@@ -1,14 +1,11 @@
 package ansj;
 
-import evaluate.Corpus;
+import dataProcess.Corpus;
 import evaluate.NewWordDetector;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
-import org.ansj.splitWord.analysis.NlpAnalysis;
-import org.ansj.splitWord.analysis.ToAnalysis;
-import org.ansj.util.MyStaticValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

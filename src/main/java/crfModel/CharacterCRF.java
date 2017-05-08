@@ -1,6 +1,6 @@
 package crfModel;
 
-import evaluate.Corpus;
+import dataProcess.Corpus;
 import evaluate.Test;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ public class CharacterCRF extends crfppWrapper {
 
 		for (String type : config.supportedType) {
 			characterCRF.train(corpus, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp."+type, type), characterCRF.getClass().getSimpleName() + "." + type);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName() + "." + type);
 		}
 	}
 

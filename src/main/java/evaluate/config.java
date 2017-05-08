@@ -56,9 +56,10 @@ public interface config {
 	public static String testDataInput = "data/test/input/test.txt.src";
 	public static String trainDataInput = "data/test/input/train.txt.src";
 	public static String totalDataInput = "data/test/input/total.txt.src";
-	public static String corpusFile = "data/corpus/news.words";
 	public static String nw = "nw", nr = "nr", ns = "ns";
 	public static String[] supportedType = new String[]{nw, nr, ns};
+	String corpusInput = "data/raw/news.txt";
+	String basicWordListFile = "data/corpus/basicWordList.txt";
 
 
 	public static String removePos(String in) {
