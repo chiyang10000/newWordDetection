@@ -2,6 +2,8 @@ package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.Ansj;
+import ansj.AnsjNlpAnalysis;
+import ansj.AnsjToAnalysis;
 import crfModel.CharacterCRF;
 import crfModel.WordCRF;
 import org.slf4j.Logger;
@@ -63,17 +65,24 @@ public class Test {
 		logger.debug("word list size of {} is {}", inputFile, wordList.size());
 		return wordList;
 	}
-	static void clean() {
+	public static void clean() {
 		RunSystemCommand.run("find tmp -type f | grep -v gitignore | xargs rm");
+	}
+
+	static {
+		logger.info("---------****----------\n");
+		if (config.isAnsjFeatureOpen)
+			config.openAnsj();
+		logger.info("ansj feature open is {}", config.isAnsjFeatureOpen);
+		logger.info("shuffle is {}", config.isShuffle);
+		logger.info("corpus is {}", config.corpusFile);
+		logger.info("word filter is {} ", config.isNewWordFilter);
+		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
 	}
 
 	public static void main(String... args) {
 		clean();
-		logger.info("---------****----------");
 
-		logger.info("shuffle is {}", config.isShuffle);
-		logger.info("corpus is {}", config.corpusFile);
-		logger.info("word filter is {}", config.isNewWordFilter);
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
 			test(
@@ -85,30 +94,32 @@ public class Test {
 		WordCRF segementationCRF = new WordCRF();
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxNagaoLength);
-		Ansj ansj = new Ansj();
+		AnsjToAnalysis ansjToAnalysis = new AnsjToAnalysis();
+		AnsjNlpAnalysis ansjNlpAnalysis = new AnsjNlpAnalysis();
 
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<>();
-		newWordDetectors.add(singleCharacterCRF);
-		newWordDetectors.add(ansj);
-		newWordDetectors.add(segementationCRF);
 		newWordDetectors.add(nagao);
+		newWordDetectors.add(ansjToAnalysis);
+		newWordDetectors.add(ansjNlpAnalysis);
+		newWordDetectors.add(singleCharacterCRF);
+		newWordDetectors.add(segementationCRF);
 
 		String inputFile = config.testDataInput;
 		String outputFile;
 
 
-		for (String type : new String[]{config.nw}) {
+		for (String type : new String[]{config.nw, config.nr, config.ns}) {
 			String answerFile = getAnswerFile(inputFile, type);
 			Corpus.addWordInfo(answerFile, "tmp/" + type + ".info");
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				//if (newWordDetector != nagao) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
-				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, config.nw), newWordDetector.getClass().getSimpleName());
+				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type), newWordDetector.getClass().getSimpleName());
 				Corpus.addWordInfo(outputFile, outputFile + ".info");
 			}
 		}
-		logger.info("---------****----------");
+		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
 	}
 
 }

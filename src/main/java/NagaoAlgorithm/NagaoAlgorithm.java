@@ -291,7 +291,7 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 
 	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
 		if (!pattern.equals("nw"))
-			logger.error("detect {} not supported", pattern);
+			return new HashSet<>();
 		scan(new String[]{inputFile});
 		countTFNeighbor();
 		HashSet<String> newWordList = new HashSet<>();

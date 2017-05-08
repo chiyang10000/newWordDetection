@@ -16,8 +16,9 @@ public interface config {
 	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	final public static String newWordExcludeRegex = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)" + "|" +
-			"([．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+型?)";
+	String alphaNumExcludeRegx = "([．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+型?)";
+	String punctExcludeRegx = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)";
+	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
 	//标点符号和纯数字
 	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词
 
@@ -39,6 +40,8 @@ public interface config {
 	public static boolean isLoadCorpus = false;
 	public static boolean isShuffle = false;
 	public static boolean isNewWordFilter = true;
+	public static boolean isAnsjFeatureOpen = true;
+
 
 	public static String renmingribao = "data/raw/renminribao.txt";
 	//final public static String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",

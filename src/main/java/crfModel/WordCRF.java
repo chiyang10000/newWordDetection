@@ -6,7 +6,6 @@ import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
-import org.ansj.util.MyStaticValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,32 +19,31 @@ import java.util.Set;
  */
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
-	public static Analysis parser;
+	public Analysis parser;
 	static private HashSet<String> wrong = new HashSet<>();
 
 	static {
-		config.closeAnsj();
 		Corpus.loadWordInfo();
+	}
+
+	{
+		config.closeAnsj();
 		parser = new ToAnalysis();
 	}
 
 	public static void main(String... args) {
+		Test.clean();
 		calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
 		calcMostRecallInAnsj(config.testData, config.nr);
 		calcMostRecallInAnsj(config.testData, config.ns);
 
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
-		String type = config.nr;
-		segementCRF.train(inputFiles, type);
-		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-				"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName());
-		/*
-		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, config.nr)), segementCRF.detectNewWord(config.testDataInput,
-				"tmp/tmp.nw", type), segementCRF.getClass().getSimpleName());
-		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, config.ns)), segementCRF.detectNewWord(config.testDataInput,
-				"tmp/tmp.nw", type), segementCRF.getClass().getSimpleName());
-		*/
+		for (String type: config.supportedType) {//;= config.ns;
+			//segementCRF.train(inputFiles, type);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
+					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
+		}
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
@@ -310,57 +308,56 @@ public class WordCRF extends crfppWrapper implements Serializable {
 			String line, posOfFirstWord, wordPiece, posOfLastWord, posSeq, wordSeq;
 			char labelOfFirstWord = 0;
 
-			if (pattern == config.nw) {
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0)// 跳过空行
-						continue;
+			while ((line = reader.readLine()) != null) {
+				if (line.length() == 0)// 跳过空行
+					continue;
 
-					StringBuilder wordBuffer = new StringBuilder();
-					WordInfoAppender wordInfo = new WordInfoAppender(line);
+				StringBuilder wordBuffer = new StringBuilder();
+				WordInfoAppender wordInfo = new WordInfoAppender(line);
 
-					wordPiece = getWord(line); //第一个词
-					labelOfFirstWord = getLabel(line);
-					posSeq = line.split("\t", 4)[2];
-					wordSeq = wordPiece;
+				wordPiece = getWord(line); //第一个词
+				labelOfFirstWord = getLabel(line);
+				posSeq = line.split("\t", 4)[2];
+				wordSeq = wordPiece;
 
-					wordBuffer.append(wordPiece);
+				wordBuffer.append(wordPiece);
 
-					if (getLabel(line) == label_begin) {
-						do {
-							line = reader.readLine();
-							if (line.length() == 0) break;
-							wordPiece = getWord(line);
-							posSeq += "+" + line.split("\t", 4)[2];
-							wordSeq += " " + wordPiece;
-							wordBuffer.append(wordPiece);
-							wordInfo.append(line);
-						} while (getLabel(line) != label_end);
-					}
-					String word = wordBuffer.toString();
-
-
-					//List<Term> check = checker.parseStr(word).getTerms();
-					if (pattern == config.nw) {
-						word = config.newWordFileter(word);
-						if (Corpus.isNewWord(word) && !newWordList.contains(word)
-								&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
-								) {
-							//忽略量词
-							newWordList.add(word);
-							writerNewWord.println(word);
-							writerWordInfo.println(wordInfo);
-						}
-					} // nw
-
-					if (pattern == config.nr || pattern == config.ns) {
-						if (labelOfFirstWord == label_single || labelOfFirstWord == label_begin) {
-							newWordList.add(word);
-							writerNewWord.println(word);
-							writerWordInfo.println(wordInfo);
-						}
-					} // nr ns
+				if (getLabel(line) == label_begin) {
+					do {
+						line = reader.readLine();
+						if (line.length() == 0) break;
+						wordPiece = getWord(line);
+						posSeq += "+" + line.split("\t", 4)[2];
+						wordSeq += " " + wordPiece;
+						wordBuffer.append(wordPiece);
+						wordInfo.append(line);
+					} while (getLabel(line) != label_end);
 				}
-			} // nw
+				String word = wordBuffer.toString();
+
+
+				//List<Term> check = checker.parseStr(word).getTerms();
+				if (pattern == config.nw) {
+					word = config.newWordFileter(word);
+					if (Corpus.isNewWord(word) && !newWordList.contains(word)
+							&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
+							) {
+						//忽略量词
+						newWordList.add(word);
+						writerNewWord.println(word);
+						writerWordInfo.println(wordInfo);
+					}
+				} // nw
+
+				if (pattern == config.nr || pattern == config.ns) {
+					if (labelOfFirstWord == label_single || labelOfFirstWord == label_begin)
+					if (!newWordList.contains(word)){
+						newWordList.add(word);
+						writerNewWord.println(word);
+						writerWordInfo.println(wordInfo);
+					}
+				} // nr ns
+			}
 
 			writerNewWord.close();
 			writerWordInfo.close();

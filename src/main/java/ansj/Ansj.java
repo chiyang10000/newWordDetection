@@ -2,8 +2,10 @@ package ansj;
 
 import evaluate.Corpus;
 import evaluate.NewWordDetector;
+import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
+import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.ansj.util.MyStaticValue;
@@ -20,31 +22,32 @@ import java.util.Set;
  */
 public class Ansj implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(Ansj.class);
+	Analysis parser;
 
 	public static void main(String... args) throws IOException {
-		MyStaticValue.isNameRecognition = false;
-		MyStaticValue.isQuantifierRecognition = false;
-		MyStaticValue.isNumRecognition = false;
-
-		segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
-		segFile(config.totalDataInput, "tmp/testAnsjSeg.txt");
-		Ansj ansj = new Ansj();
+		//segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
+		//segFile(config.totalDataInput, "tmp/testAnsjSeg.txt");
+		//config.openAnsj();
+		Ansj ansj = new AnsjToAnalysis();
+		String type = config.nr;
+		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
+				"tmp/tmp." + type, type), ansj.getClass().getSimpleName() + " " + type);
 	}
 
-	static void segFile(String input, String output) throws IOException {
+	void segFile(String input, String output) throws IOException {
 		try (BufferedReader reader = new BufferedReader(new FileReader(input));
 			 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
 		) {
 			String line, tmp;
 			while ((line = reader.readLine()) != null) {
-				tmp = ToAnalysis.parse(line).toString(" ");
+				tmp = parser.parseStr(line).toString(" ");
 				writer.append(tmp);
 				writer.newLine();
 			}
 		}
 	}
 
-	static void segFileForWord2Vec(String input, String output1, String output2) throws IOException {
+	void segFileForWord2Vec(String input, String output1, String output2) throws IOException {
 		try (BufferedReader reader = new BufferedReader(new FileReader(input));
 			 BufferedWriter writer1 = new BufferedWriter(new FileWriter(output1));
 			 BufferedWriter writer2 = new BufferedWriter(new FileWriter(output2))
@@ -52,7 +55,7 @@ public class Ansj implements NewWordDetector {
 			String line, tmp;
 			while ((line = reader.readLine()) != null) {
 				if (line.length() == 0) continue;
-				tmp = ToAnalysis.parse(line).toStringWithOutNature(" ");
+				tmp = parser.parseStr(line).toStringWithOutNature(" ");
 				for (int i = 0; i < line.length(); i++)
 					writer1.append(line.charAt(i) + " ");
 				writer1.newLine();
@@ -65,6 +68,7 @@ public class Ansj implements NewWordDetector {
 
 	@Override
 	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+		config.openAnsj();
 		HashSet<String> newWordList = new HashSet<>();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -74,7 +78,7 @@ public class Ansj implements NewWordDetector {
 				if (line.length() == 0) {
 					continue;
 				}
-				List<Term> list = NlpAnalysis.parse(line).getTerms();
+				List<Term> list = parser.parseStr(line).getTerms();
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (pattern == config.nw) {

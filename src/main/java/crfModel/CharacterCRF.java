@@ -24,7 +24,7 @@ public class CharacterCRF extends crfppWrapper {
 
 		for (String type : config.supportedType) {
 			characterCRF.train(corpus, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp.nw", type), characterCRF.getClass().getSimpleName());
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp."+type, type), characterCRF.getClass().getSimpleName() + "." + type);
 		}
 	}
 
