@@ -6,6 +6,7 @@ import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
+import org.ansj.util.MyStaticValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,10 @@ public class Ansj implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(Ansj.class);
 
 	public static void main(String... args) throws IOException {
+		MyStaticValue.isNameRecognition = false;
+		MyStaticValue.isQuantifierRecognition = false;
+		MyStaticValue.isNumRecognition = false;
+
 		segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
 		segFile(config.totalDataInput, "tmp/tmp.txt");
 		Ansj ansj = new Ansj();
@@ -73,15 +78,25 @@ public class Ansj implements NewWordDetector {
 					continue;
 				}
 				List<Term> list = NlpAnalysis.parse(line).getTerms();
-				for (Term term : list)
-					if ((pattern.equals("nw") && Corpus.isNewWord(term.getRealName()) && !newWordList.contains(term
-							.getRealName()))
-							|| (term.getNatureStr().equals(pattern) && !newWordList.contains(term.getRealName()))
-							) {
-						newWordList.add(term.getRealName());
-						writer.append(term.getRealName());
-						writer.newLine();
-					}
+				for (Term term: list) {
+					String word = term.getRealName(), pos = term.getNatureStr();
+					if (pattern == config.nw) {
+						word = config.newWordFileter(word);
+						if ((Corpus.isNewWord(word)) && !newWordList.contains(word)
+								) {
+							newWordList.add(word);
+							writer.append(word);
+							writer.newLine();
+						}
+					}// nw
+					if (pattern == config.nr || pattern == config.ns) {
+						if (pos.equals(pattern) && !newWordList.contains(word)) {
+							newWordList.add(word);
+							writer.append(word);
+							writer.newLine();
+						}
+					} // nr ns
+				}
 			}
 			writer.close();
 		} catch (java.io.IOException e) {
@@ -139,8 +154,8 @@ public class Ansj implements NewWordDetector {
 				}
 			}
 			mostRecallInTraindata = (double) validNewWordList.size() / newWordList.size();
-			logger.info("valid{} total{} mostRecall is {}", validNewWordList.size(), newWordList.size(),
-					mostRecallInTraindata);
+			logger.info("valid{} total{} mostRecall is {} in {}", validNewWordList.size(), newWordList.size(),
+					mostRecallInTraindata, pattern);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
