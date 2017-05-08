@@ -22,6 +22,9 @@ public class Corpus {
 	public static DiscreteWordInfo discreteWordInfo;
 	public static ExactWordInfo exactWordInfo = new ExactWordInfo();
 
+	static void clean(){
+		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
+	}
 	static {
 		if (!new File("data/basicWordList.txt").exists()) {
 			logger.info("Scanning word from file ...");
@@ -344,6 +347,7 @@ public class Corpus {
 	 * @param args
 	 */
 	public static void main(String... args) throws IOException {
+		clean();
 		/* 提供词频统计文件
 		convertToSrc(new String[]{config.renmingribao}, "data/corpus/renmingribao");
 		convertToSrc(new String[]{config.news}, "data/corpus/news");

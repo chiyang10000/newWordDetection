@@ -24,22 +24,20 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	static private HashSet<String> wrong = new HashSet<>();
 
 	static {
-		//config.isLoadCorpus = true;
+		config.closeAnsj();
 		Corpus.loadWordInfo();
-		MyStaticValue.isRealName = true;// ansj不进行大小写转换
 		parser = new ToAnalysis();
 	}
 
 	public static void main(String... args) {
-		config.closeAnsj();
 		calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
 		calcMostRecallInAnsj(config.testData, config.nr);
 		calcMostRecallInAnsj(config.testData, config.ns);
 
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
-		String type = config.nw;
-		//segementCRF.train(inputFiles, type);
+		String type = config.nr;
+		segementCRF.train(inputFiles, type);
 		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
 				"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName());
 		/*
@@ -51,8 +49,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		if (true)
-			return;
+		//if (true) return;
 		if (gs.matches(config.newWordExcludeRegex) || gs.matches(".*\\p{IsDigit}.*"))
 			return;
 		if (wrong.contains(gs))
@@ -135,8 +132,6 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	 */
 	@Override
 	public void convert2TrainInput(String[] inputFiles, String pattern) {
-		config.closeAnsj();
-		config.openAnsj();
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
@@ -165,8 +160,9 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 
 						if (pattern == config.nw) {
+							//BEM S
 							if (gs.equals(as)) {
-								if (gs.length() == ansjWord.length()) // 正确的单个词
+								if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
 									label = label_single; // 正确的单个词3
 								else {
 									label = label_end; // 新词结尾1 或者 未识别序列 结尾
@@ -178,12 +174,12 @@ public class WordCRF extends crfppWrapper implements Serializable {
 									gs = golden[++goldenIndex];
 								}
 							} else {
-								if (as.length() == ansjWord.length())
-									label = label_begin; // 新词开头0
-								else
-									label = label_meddle; // 新词中部2
-
-								if (!gs.contains(as)) {
+								if (gs.contains(as)) {// gs还没被补全
+									if (as.length() == ansjWord.length())
+										label = label_begin; // 新词开头0
+									else
+										label = label_meddle; // 新词中部2
+								} else { // gs被as包含了
 									while (!gs.contains(as)) {
 										gs += golden[++goldenIndex];
 									}
@@ -201,6 +197,43 @@ public class WordCRF extends crfppWrapper implements Serializable {
 						} // nw
 
 						if (pattern == config.nr || pattern == config.ns) {
+							//BEM S O
+							if (gs.equals(as)) {
+								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(pattern)) {
+									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
+										label = label_single; // 正确的单个词3
+									else
+										label = label_end; // 新词结尾1 或者
+									if (!gs.equals(golden[goldenIndex]))
+										debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
+								} else
+									label = label_other;
+								as = "";
+								if (goldenIndex + 1 < golden.length) {
+									gs = golden[++goldenIndex];
+								}
+							} else {
+								if (gs.contains(as)) {// gs还没被补全
+									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(pattern)) {
+										if (as.length() == ansjWord.length())
+											label = label_begin; // 新词开头0
+										else
+											label = label_meddle; // 新词中部2
+									} else
+										label = label_other;
+								} else { // gs被as包含了
+									while (!gs.contains(as)) {
+										gs += golden[++goldenIndex];
+									}
+									if (gs.equals(as)) {
+										label = label_other;// 这个序列包含了多个词, 但是这个序列并不是新词
+										as = "";
+										if (goldenIndex + 1 < golden.length) {
+											gs = golden[++goldenIndex];
+										}
+									}
+								}
+							}
 						}// nr ns
 
 						if (i > 0)
@@ -225,8 +258,6 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 	@Override
 	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern) {
-		config.closeAnsj();
-		config.openAnsj();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
 			for (String inputFile : inputFiles) {

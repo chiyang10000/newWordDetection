@@ -63,8 +63,12 @@ public class Test {
 		logger.debug("word list size of {} is {}", inputFile, wordList.size());
 		return wordList;
 	}
+	static void clean() {
+		RunSystemCommand.run("find tmp -type f | grep -v gitignore | xargs rm");
+	}
 
 	public static void main(String... args) {
+		clean();
 		logger.info("---------****----------");
 
 		logger.info("shuffle is {}", config.isShuffle);
