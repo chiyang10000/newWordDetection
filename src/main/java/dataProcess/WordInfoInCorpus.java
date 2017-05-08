@@ -37,15 +37,17 @@ public class WordInfoInCorpus {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] tmp = line.split("\\s+");
+				String word = tmp[0];
 				int tf = 1;
-				double mi = 10000, entropy = 10000, le = 10000, re = 10000;
-				tf = exactWordInfo.getTF(tmp);
-				mi = exactWordInfo.getPMI(tmp);
-				le = exactWordInfo.getLE(tmp);
-				re = exactWordInfo.getRE(tmp);
-				writer.append(String.format("%s\t%d\t%f\t%f\t%f\t%f", tmp, tf, mi, le, re, entropy));
+				double mi = 10000, le = 10000, re = 10000;
+				tf = exactWordInfo.getTF(word);
+				mi = exactWordInfo.getPMI(word);
+				le = exactWordInfo.getLE(word);
+				re = exactWordInfo.getRE(word);
+				writer.append(String.format("%s\t%d\t%f\t%f\t%f", line, tf, mi, le, re));
 				writer.newLine();
 			}
 			writer.close();

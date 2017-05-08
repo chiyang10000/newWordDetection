@@ -335,7 +335,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				//List<Term> check = checker.parseStr(word).getTerms();
 				if (pattern == config.nw) {
 					word = config.newWordFileter(word);
-					if (Corpus.isNewWord(word) && !newWordList.contains(word)
+					if (Corpus.isNewWord(word, posSeq) && !newWordList.contains(word)
 							&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
 							) {
 						//忽略量词

@@ -85,6 +85,7 @@ public class Corpus {
 	 *
 	 * @param
 	 */
+	@Deprecated
 	public static String tagNW(String inputFile) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -97,8 +98,7 @@ public class Corpus {
 					String word = config.removePos(seg);
 					word = config.newWordFileter(word);
 					String pos = config.getPos(seg);
-					if (!pos.equals("m") && !pos.equals("t"))
-						if (isNewWord(word)) {
+						if (isNewWord(word, pos)) {
 							writer.append(word + "/nw ");
 						} else {
 							writer.append(seg + " ");
@@ -128,8 +128,8 @@ public class Corpus {
 				for (String w : line.split(config.sepWordRegex)) {
 					String[] tmp = w.split(config.sepPosRegex);
 					try {
-						if (tmp[1].equals(pattern) && !wordList.contains(tmp[0])) {
-							writer.append(tmp[0]);
+						if ((pattern != config.nw && tmp[1].equals(pattern) || pattern == config.nw && isNewWord(tmp[0], tmp[1])) && !wordList.contains(tmp[0])) {
+							writer.append(tmp[0] + "\t" + tmp[0].length() + "\t" + tmp[1]);
 							wordList.add(tmp[0]);
 							writer.newLine();
 						}
@@ -178,7 +178,7 @@ public class Corpus {
 			}
 			for (String word : goldenWordList)
 				if (!segWordList.contains(word))
-					if (isNewWord(word))
+					if (isNewWord(word, null))
 						newWordList.add(word);
 			logger.info("{} new words in {}, not in segmentation", newWordList.size(), inputFile);
 			for (String word : newWordList) {
@@ -197,9 +197,12 @@ public class Corpus {
 		return newWordList;
 	}
 
-	public static boolean isNewWord(String word) {
+	public static boolean isNewWord(String word, String pos) {
 		//标点符号，含字母和数字的不算
 		word = config.newWordFileter(word);
+		if (pos != null)
+		if (pos.matches("[tmq]")) // todo 去除数量词 和 时间词
+			return false;
 		if (word.matches(config.newWordExcludeRegex)
 			//|| word.matches("第?[几两数一二三四五六七八九十].*")// 去掉某些数量词
 				)
@@ -301,15 +304,11 @@ public class Corpus {
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
-		extractWord(tagNW(config.trainData), config.nw);
-		extractWord(tagNW(config.testData), config.nw);
-		extractWord(tagNW(config.totalData), config.nw);
-
-		extractWord(config.trainData, config.ns);
-		extractWord(config.testData, config.ns);
-
-		extractWord(config.trainData, config.nr);
-		extractWord(config.testData, config.nr);
+		for (String type: config.supportedType) {
+			extractWord(config.trainData, type);
+			extractWord(config.testData, type);
+			extractWord(config.totalData, type);
+		}
 	}
 
 }

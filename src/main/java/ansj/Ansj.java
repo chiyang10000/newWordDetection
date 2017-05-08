@@ -80,10 +80,10 @@ public class Ansj implements NewWordDetector {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (pattern == config.nw) {
 						word = config.newWordFileter(word);
-						if ((Corpus.isNewWord(word)) && !newWordList.contains(word)
+						if ((Corpus.isNewWord(word, pos)) && !newWordList.contains(word)
 								) {
 							newWordList.add(word);
-							writer.append(word);
+							writer.append(word + "\t" + pos);
 							writer.newLine();
 						}
 					}// nw
