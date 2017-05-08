@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/data/crf-template" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data/library" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/data" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
@@ -17,9 +18,9 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: org.ansj:ansj_seg:5.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nlpcn:nlp-lang:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.concurrent-trees:concurrent-trees:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.stuxuhai:jpinyin:1.1.8" level="project" />
+    <orderEntry type="module" module-name="ansj_seg" />
+    <orderEntry type="library" name="Maven: org.nlpcn:nlp-lang:1.7.2" level="project" />
   </component>
 </module>

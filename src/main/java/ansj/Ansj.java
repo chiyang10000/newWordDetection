@@ -27,7 +27,7 @@ public class Ansj implements NewWordDetector {
 		MyStaticValue.isNumRecognition = false;
 
 		segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
-		segFile(config.totalDataInput, "tmp/tmp.txt");
+		segFile(config.totalDataInput, "tmp/testAnsjSeg.txt");
 		Ansj ansj = new Ansj();
 	}
 
