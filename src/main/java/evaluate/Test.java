@@ -83,6 +83,7 @@ public class Test {
 
 	public static void main(String... args) {
 		clean();
+		WordInfoInCorpus.addWordInfo(getAnswerFile(config.totalDataInput, config.nw), "tmp/new.info");
 
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);

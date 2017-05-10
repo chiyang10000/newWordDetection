@@ -115,6 +115,19 @@ public class Corpus {
 		return "data/test/" + inputFile + ".tagNW";
 	}
 
+
+
+	static private String category(String word) {
+		if (word.matches("\\p{IsHan}+"))
+			return "AllHan";
+		if (word.matches("[\\p{IsHan}·－／]+"))
+			return "HanWithPunct";
+		if (word.matches(config.alphaNumExcludeRegx))
+			return "AlphaWithpuct";
+		return "miscellaneous";
+
+	}
+
 	public static HashSet<String> extractWord(String inputFile, String pattern) {
 		HashSet<String> wordList = new HashSet<>();
 		try {
@@ -129,7 +142,7 @@ public class Corpus {
 					String[] tmp = w.split(config.sepPosRegex);
 					try {
 						if ((pattern != config.nw && tmp[1].equals(pattern) || pattern == config.nw && isNewWord(tmp[0], tmp[1])) && !wordList.contains(tmp[0])) {
-							writer.append(tmp[0] + "\t" + tmp[0].length() + "\t" + tmp[1]);
+							writer.append(tmp[0] + "\t" +category(tmp[0]) + "\t" + tmp[0].length() + "\t" + tmp[1]);
 							wordList.add(tmp[0]);
 							writer.newLine();
 						}

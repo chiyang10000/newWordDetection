@@ -59,7 +59,7 @@ public class ConvertHalfWidthToFullWidth {
 		return new String(c);
 	}
 
-	public static void convertFileToFulll(String inputFile, String outputFile) throws IOException {
+	public static void convertFileToFulll(String inputFile, String outputFile) {
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
@@ -85,6 +85,8 @@ public class ConvertHalfWidthToFullWidth {
 				writer.append(stringBuffer.toString().trim());
 				writer.newLine();
 			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 

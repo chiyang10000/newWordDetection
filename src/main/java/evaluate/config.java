@@ -3,6 +3,7 @@ package evaluate;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
+import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.ansj.util.MyStaticValue;
 
@@ -18,7 +19,8 @@ public interface config {
 	// sepSentenceRegex + ".*";
 	String alphaNumExcludeRegx = "([．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+型?)";
 	String punctExcludeRegx = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)";
-	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
+	//final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
+	final public static String newWordExcludeRegex = punctExcludeRegx;
 	//标点符号和纯数字
 	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词
 
@@ -38,7 +40,8 @@ public interface config {
 	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
-	public static boolean isShuffle = false;
+	public static boolean isTrain = true;
+	public static boolean isShuffle = true;
 	public static boolean isNewWordFilter = true;
 	public static boolean isAnsjFeatureOpen = true;
 
@@ -87,7 +90,9 @@ public interface config {
 		System.out.println("你".matches("\\p{IsHan}"));
 		System.out.println(Test.getAnswerFile(testDataInput, nw));
 		openAnsj();
-		System.out.println(ToAnalysis.parse("三沙、二炮、4时, 100升"));
+		closeAnsj();
+		Analysis ansj = new ToAnalysis();
+		System.out.println(ansj.parseStr("三十三沙、二炮、4时, 100升"));
 		try {
 			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
 			System.out.println(tmp);

@@ -24,6 +24,12 @@ public class WordInfoInCorpus {
 	static String corpus = "data/corpus/" + config.corpusInput.replaceAll(".*/", "");
 	private static RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
 
+	public static void main(String... args) {
+		RunSystemCommand.run("rm " + corpus +".words");
+		loadWordInfo();
+		clean();
+	}
+
 	static {
 		loadWordInfo();
 	}
@@ -37,6 +43,7 @@ public class WordInfoInCorpus {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			BufferedWriter writerDis = new BufferedWriter(new FileWriter(outputFile + "Dis"));
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] tmp = line.split("\\s+");
@@ -48,9 +55,13 @@ public class WordInfoInCorpus {
 				le = exactWordInfo.getLE(word);
 				re = exactWordInfo.getRE(word);
 				writer.append(String.format("%s\t%d\t%f\t%f\t%f", line, tf, mi, le, re));
+				writerDis.append(String.format("%s\t%d\t%d\t%d\t%d", line,
+						discreteWordInfo.getTF(word), discreteWordInfo.getPMI(word), discreteWordInfo.getLE(word), discreteWordInfo.getRE(word)));
 				writer.newLine();
+				writerDis.newLine();
 			}
 			writer.close();
+			writerDis.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -70,7 +81,8 @@ public class WordInfoInCorpus {
 				while ((line = reader.readLine()) != null) {
 					String seg[] = line.split("\t");
 					int tf = Integer.parseInt(seg[1]);
-					tfList.add(tf);
+					if (tf > 1) //只离散出现频率大于1的
+						tfList.add(tf);
 					double pmi = Double.parseDouble(seg[2]);
 					if (!Double.isNaN(pmi))
 						pmiList.add(pmi);
@@ -91,13 +103,14 @@ public class WordInfoInCorpus {
 		} // file exist!
 		else {
 			logger.debug("Calc word info into corpus ...");
-			Corpus.convertToSrc(new String[]{config.corpusInput}, corpus);
+			Corpus.convertToSrc(new String[]{config.corpusInput}, "tmp/tmp");
+			ConvertHalfWidthToFullWidth.convertFileToFulll("tmp/tmp", corpus);
 			FastBuilder builder = new FastBuilder();
 			String left, right, entropyfile, rawpath = corpus;
 
-				right = builder.genFreqRight(rawpath, 10, 10 * 1024);
-				left = builder.genLeft(rawpath, 10, 10 * 1024);
-				entropyfile = builder.mergeEntropy(right, left);
+			right = builder.genFreqRight(rawpath, 10, 10 * 1024);
+			left = builder.genLeft(rawpath, 10, 10 * 1024);
+			entropyfile = builder.mergeEntropy(right, left);
 
 			builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
 			clean();
@@ -129,7 +142,7 @@ public class WordInfoInCorpus {
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			// 假设没出现过的pmi一定很高
 			if (tmp == null)
-				return 100;
+				return Double.NaN;
 			return tmp.pmi;
 		}
 
@@ -205,9 +218,12 @@ public class WordInfoInCorpus {
 
 		public int getTF(String word) {
 			// tf为0算一类
+			// tf为1的算一类
 			int value = exactWordInfo.getTF(word);
 			if (value == 0)
 				return -1;
+			if (value == 1)
+				return -2;
 			int i = 0;
 			while (tf[++i] < value) ;
 			return i - 1;
