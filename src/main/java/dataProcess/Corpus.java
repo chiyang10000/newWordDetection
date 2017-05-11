@@ -249,8 +249,10 @@ public class Corpus {
 				}
 			}
 			writer.close();
-			if (config.isShuffle)
+			if (config.isShuffle) {
 				Collections.shuffle(lines); // todo no shuffle
+				RunSystemCommand.run("rm data/model/*.model");
+			}
 			writer = new BufferedWriter(new FileWriter(testFile));
 			int i;
 			for (i = 0; currentSize < totalSize / config.testSize; i++) {

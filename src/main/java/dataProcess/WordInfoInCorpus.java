@@ -19,19 +19,23 @@ import java.util.List;
  */
 public class WordInfoInCorpus {
 	private static final Logger logger = LoggerFactory.getLogger(WordInfoInCorpus.class);
-	public static DiscreteWordInfo discreteWordInfo;
-	public static ExactWordInfo exactWordInfo = new ExactWordInfo();
-	static String corpus = "data/corpus/" + config.corpusInput.replaceAll(".*/", "");
-	private static RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
+	String corpus, corpusInput;
+	public DiscreteWordInfo discreteWordInfo;
+	public ExactWordInfo exactWordInfo = new ExactWordInfo();
+	private RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
 
 	public static void main(String... args) {
-		RunSystemCommand.run("rm " + corpus +".words");
-		loadWordInfo();
+		//RunSystemCommand.run("rm data/corpus/*.words*");
 		clean();
+		new WordInfoInCorpus(config.renmingribao);
 	}
 
-	static {
-		loadWordInfo();
+	public WordInfoInCorpus(String corpusInput) {
+		this.corpusInput = corpusInput;
+		corpus = "data/corpus/" + corpusInput.replaceAll(".*/", "");
+		while (!loadWordInfo()) {
+			calcWordInfo();
+		}
 	}
 
 	public static void clean() {
@@ -39,7 +43,7 @@ public class WordInfoInCorpus {
 		RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
 	}
 
-	public static void addWordInfo(String wordFile, String outputFile) {
+	public void addWordInfo(String wordFile, String outputFile) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -70,7 +74,7 @@ public class WordInfoInCorpus {
 	/**
 	 * 读入所有词的信息
 	 */
-	private static void loadWordInfo() {
+	private boolean loadWordInfo() {
 		if (new File(corpus + ".words").exists()) {
 			ArrayList<Integer> tfList = new ArrayList();
 			ArrayList<Double> leList = new ArrayList<>(), reList = new ArrayList<>(), pmiList = new ArrayList();
@@ -100,25 +104,28 @@ public class WordInfoInCorpus {
 			}
 			logger.info("{} strings in the corpus", wordInfo.size());
 			discreteWordInfo = new DiscreteWordInfo(config.levelNum, tfList, pmiList, leList, reList);
+			return true;
 		} // file exist!
-		else {
-			logger.debug("Calc word info into corpus ...");
-			Corpus.convertToSrc(new String[]{config.corpusInput}, "tmp/tmp");
-			ConvertHalfWidthToFullWidth.convertFileToFulll("tmp/tmp", corpus);
-			FastBuilder builder = new FastBuilder();
-			String left, right, entropyfile, rawpath = corpus;
-
-			right = builder.genFreqRight(rawpath, 10, 10 * 1024);
-			left = builder.genLeft(rawpath, 10, 10 * 1024);
-			entropyfile = builder.mergeEntropy(right, left);
-
-			builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
-			clean();
-			loadWordInfo();
-		}
+		else
+			return false;
 	}
 
-	static class WordInfo {
+	private void calcWordInfo() {
+		logger.debug("Calc word info into corpus ...");
+		Corpus.convertToSrc(new String[]{corpusInput}, "tmp/tmp");// 去掉词性
+		ConvertHalfWidthToFullWidth.convertFileToFulll("tmp/tmp", corpus); // 全角半角的转换
+		FastBuilder builder = new FastBuilder();
+		String left, right, entropyfile, rawpath = corpus;
+
+		right = builder.genFreqRight(rawpath, 10, 10 * 1024);
+		left = builder.genLeft(rawpath, 10, 10 * 1024);
+		entropyfile = builder.mergeEntropy(right, left);
+
+		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
+		clean();
+	}
+
+	class WordInfo {
 		int tf;
 		double le, re, pmi;
 
@@ -130,7 +137,7 @@ public class WordInfoInCorpus {
 		}
 	}
 
-	static class ExactWordInfo {
+	class ExactWordInfo {
 		int getTF(String word) {
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			if (tmp == null)
@@ -161,7 +168,7 @@ public class WordInfoInCorpus {
 		}
 	}
 
-	public static class DiscreteWordInfo {
+	public class DiscreteWordInfo {
 		double mi[], tf[], le[], re[];
 
 		/**

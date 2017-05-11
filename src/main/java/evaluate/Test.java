@@ -82,8 +82,9 @@ public class Test {
 	}
 
 	public static void main(String... args) {
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
 		clean();
-		WordInfoInCorpus.addWordInfo(getAnswerFile(config.totalDataInput, config.nw), "tmp/new.info");
+		wordInfoInCorpus.addWordInfo(getAnswerFile(config.totalDataInput, config.nw), "tmp/new.info");
 
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
@@ -112,13 +113,13 @@ public class Test {
 
 		for (String type : new String[]{config.nw, config.nr, config.ns}) {
 			String answerFile = getAnswerFile(inputFile, type);
-			WordInfoInCorpus.addWordInfo(answerFile, "tmp/" + type + ".info");
+			wordInfoInCorpus.addWordInfo(answerFile, "tmp/" + type + ".info");
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				//if (newWordDetector != nagao) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type), newWordDetector.getClass().getSimpleName());
-				WordInfoInCorpus.addWordInfo(outputFile, outputFile + ".info");
+				wordInfoInCorpus.addWordInfo(outputFile, outputFile + ".info");
 			}
 		}
 		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

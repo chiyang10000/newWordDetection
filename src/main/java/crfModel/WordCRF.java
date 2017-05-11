@@ -21,6 +21,7 @@ import java.util.Set;
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
+	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
 	public Analysis parser;
 
 	{
@@ -412,10 +413,10 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				length = config.maxNagaoLength + 1;
 			this.pos = pos;
 			try {
-				tf = WordInfoInCorpus.discreteWordInfo.getTF(word);
-				pmi = WordInfoInCorpus.discreteWordInfo.getPMI(word);
-				leftEntropy = WordInfoInCorpus.discreteWordInfo.getLE(word);
-				rightEntropy = WordInfoInCorpus.discreteWordInfo.getRE(word);
+				tf = wordInfoInCorpus.discreteWordInfo.getTF(word);
+				pmi = wordInfoInCorpus.discreteWordInfo.getPMI(word);
+				leftEntropy = wordInfoInCorpus.discreteWordInfo.getLE(word);
+				rightEntropy = wordInfoInCorpus.discreteWordInfo.getRE(word);
 			} catch (NullPointerException e) {
 				//length = 0;
 				tf = 0;
@@ -423,7 +424,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 				leftEntropy = config.levelNum;
 				rightEntropy = config.levelNum;
 			}
-			tfWithPreWord = WordInfoInCorpus.discreteWordInfo.getTF(preWord + word);
+			tfWithPreWord = wordInfoInCorpus.discreteWordInfo.getTF(preWord + word);
 		}
 
 		@Override
