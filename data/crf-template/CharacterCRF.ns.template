@@ -1,20 +1,16 @@
+# res.add(String.join("\t", Character.toString(word.charAt(0))0, word1, pos2, "S"3, preWord4, preWordPos5, postWord6, postWordPos7));
 # Unigram
-#U00:%x[-2,0]
 U01:%x[-1,0]
 U02:%x[0,0]
 U03:%x[1,0]
-#U04:%x[2,0]
 
-#U05:%x[-2,0]/%x[-1,0]/%x[0,0]
-#U06:%x[-1,0]/%x[0,0]/%x[1,0]
-#U07:%x[0,0]/%x[1,0]/%x[2,0]
+UcurrentWord:%x[0,1]
 
-U08:%x[-1,0]/%x[0,0]
-U09:%x[0,0]/%x[1,0]
-U06:%x[-1,0]/%x[1,0]
-
-#U010:%x[-2,0]/%x[-1,0]
-#011:%x[1,0]/%x[2,0]
+UprePos:%x[0,5]
+UpostPos:%x[0,7]
+UpreWord:%x[0,4]
+UpostWord:%x[0,6]
+Uprepostpostpos:%x[0,4]/%x[0,6]
 
 # Bigram
 B

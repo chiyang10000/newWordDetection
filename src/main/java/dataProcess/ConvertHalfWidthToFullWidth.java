@@ -78,9 +78,6 @@ public class ConvertHalfWidthToFullWidth {
 						//System.out.print(pos);
 						//System.out.print(ToSBC(pos));
 						stringBuffer.append(seg.replace(pos, ToSBC(pos)));
-					} else {
-						System.err.println(seg);
-						stringBuffer.append(seg);
 					}
 					stringBuffer.append(" ");
 				}
