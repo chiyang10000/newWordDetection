@@ -36,6 +36,7 @@ public class CharacterFeature {
 	}
 
 	public static List<String> getRes(String sentence) {
+		//System.err.println(sentence);
 		List<Term> src = ansj.parseStr(sentence).getTerms();
 		List<String> res = new ArrayList<>();
 		String preWordPos = "^", preWord = "^";
@@ -44,7 +45,7 @@ public class CharacterFeature {
 			String word = term.getRealName();
 			String pos = term.getNatureStr();
 			String postWord = i != src.size() - 1 ? src.get(i + 1).getRealName() : "$";
-			String postWordPos = i != src.size() - 1 ? src.get(i + 1).getRealName() : "$";
+			String postWordPos = i != src.size() - 1 ? src.get(i + 1).getNatureStr() : "$";
 
 			if (word.length() == 1) {
 				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "S", preWord, preWordPos, postWord, postWordPos));

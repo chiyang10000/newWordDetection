@@ -13,6 +13,12 @@ import java.io.InputStreamReader;
 public class RunSystemCommand {
 	static String shell = "bash", option = "-c";
 	static private Logger logger = LoggerFactory.getLogger(RunSystemCommand.class);
+	static {
+		if (System.getProperty("os.name").contains("Win")) {
+			shell = "cmd";
+			option = "/c";
+		}
+	}
 
 	public static void run(String cmd) {
 		try {

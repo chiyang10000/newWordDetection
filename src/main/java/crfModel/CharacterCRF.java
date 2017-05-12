@@ -1,5 +1,6 @@
 package crfModel;
 
+import Feature.CharacterFeature;
 import dataProcess.Corpus;
 import evaluate.Test;
 import evaluate.config;
@@ -8,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,60 +26,31 @@ public class CharacterCRF extends crfppWrapper {
 
 		for (String type : config.supportedType) {
 			characterCRF.train(corpus, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName() + "." + type);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
+					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName() + "." +
+					type);
 		}
 	}
 
 	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
 		logger.debug("convert {} to {} for {}", inputFiles, outputFile, pattern);
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			PrintWriter writer = new PrintWriter(new FileWriter(outputFile));
 			BufferedReader reader;
-			String tmp;
+			String line;
 			for (String inputFile : inputFiles) {
 				reader = new BufferedReader(new FileReader(inputFile));
 
-				if (pattern == config.nw) {
-					while ((tmp = reader.readLine()) != null) {
-						String[] tmps = tmp.split(config.sepSentenceRegex);
-						int offset = 0;
-						for (String sentence : tmps) {
-							offset += sentence.length() + 1; // offset这里是把去掉的标点符号补上
-							// todo 考虑没有逗号和句号的行
-							for (int i = 0; i < sentence.length(); i++) {
-								writer.append(sentence.charAt(i));
-								writer.newLine();
-							}
-							if (offset - 1 < tmp.length()) {
-								writer.newLine();
-								writer.append(tmp.charAt(offset - 1));
-								writer.newLine();
-							}
-							writer.newLine();
-						}
+				while ((line = reader.readLine()) != null) {
+					if (line.length() == 0) continue;
+					List<String> features = CharacterFeature.getRes(line);
+					for (String feature : features) {
+						writer.println(feature);
+						if (getWord(feature).matches(config.sepSentenceRegex))
+							writer.println();
 					}
-				} // nw
+				}
 
-				if (pattern == config.nr || pattern == config.ns) {
-					while ((tmp = reader.readLine()) != null) {
-						String[] tmps = tmp.split(config.sepSentenceRegex);
-						int offset = 0;
-						for (String sentence : tmps) {
-							offset += sentence.length() + 1; // offset这里是把去掉的标点符号补上
-							// todo 考虑没有逗号和句号的行
-							for (int i = 0; i < sentence.length(); i++) {
-								writer.append(sentence.charAt(i));
-								writer.newLine();
-							}
-							if (offset - 1 < tmp.length()) {
-								writer.newLine();
-								writer.append(tmp.charAt(offset - 1));
-								writer.newLine();
-							}
-							writer.newLine();
-						}
-					}
-				} //nr
 			}
 			writer.close();
 		} catch (IOException e) {
@@ -99,27 +72,33 @@ public class CharacterCRF extends crfppWrapper {
 					while ((tmp = reader.readLine()) != null) {
 						if (tmp.trim().length() == 0) continue;
 						String[] segs = tmp.split(config.sepWordRegex);
+						int index = 0;
+						List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ ]+", "").replaceAll(" ",
+								""));
 						for (String seg : segs) {
+
 							String word = config.removePos(seg);
 							String pos = config.getPos(seg);
 							if (word.length() == 1) {
 								if (pos.equals(pattern))
-									writer.println(String.format("%s\t%s", word.charAt(0), label_single));
+									writer.println(String.format("%s\t%s", features.get(index++), label_single));
 								else
-									writer.println(String.format("%s\t%s", word.charAt(0), label_other));
+									writer.println(String.format("%s\t%s", features.get(index++), label_other));
 
 							} else {
 								if (pos.equals(pattern)) {
-									writer.println(String.format("%s\t%s", word.charAt(0), label_begin));
+									writer.println(String.format("%s\t%s", features.get(index++), label_begin));
 									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", word.charAt(i), label_meddle));
+										writer.println(String.format("%s\t%s", features.get(index++), label_meddle));
 									}
-									writer.println(String.format("%s\t%s", word.charAt(word.length() - 1), label_end));
+									writer.println(String.format("%s\t%s", features.get(index++), label_end));
 								} else {
 									for (int i = 0; i < word.length(); i++)
-										writer.println(String.format("%s\t%s", word.charAt(i), label_other));
+										writer.println(String.format("%s\t%s", features.get(index++), label_other));
 								}
 							}
+							if (word.matches(config.sepSentenceRegex))
+								writer.println();
 						}
 						writer.println();
 					}
@@ -127,19 +106,34 @@ public class CharacterCRF extends crfppWrapper {
 
 				if (pattern == config.nw) {
 					while ((tmp = reader.readLine()) != null) {
-						if (tmp.trim().length() == 0) continue;
+						tmp = tmp.trim();
+						if (tmp.length() == 0) continue;
 						String[] segs = tmp.split(config.sepWordRegex);
+						int index = 0;
+						List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ /]+", "").replaceAll(" +",
+								""));
 						for (String seg : segs) {
 							String word = config.removePos(seg);
-							if (word.length() == 1) {
-								writer.println(String.format("%s\t%s", word.charAt(0), label_single));
-							} else {
-								writer.println(String.format("%s\t%s", word.charAt(0), label_begin));
-								for (int i = 1; i < word.length() - 1; i++)
-									writer.println(String.format("%s\t%s", word.charAt(i), label_meddle));
-								writer.println(String.format("%s\t%s", word.charAt(word.length() - 1), label_end));
+							try {
+								if (word.length() == 1) {
+									writer.println(String.format("%s\t%s", features.get(index++), label_single));
+								} else {
+									writer.println(String.format("%s\t%s", features.get(index++), label_begin));
+									for (int i = 1; i < word.length() - 1; i++)
+										writer.println(String.format("%s\t%s", features.get(index++), label_meddle));
+									writer.println(String.format("%s\t%s", features.get(index++), label_end));
+								}
+							} catch (IndexOutOfBoundsException e) {
+								System.err.println("---" + word);
+								System.err.println(index);
+								System.err.println(tmp.replaceAll("/[^ /]+", "").replaceAll(" +", "").length());
+								System.err.println(segs.length);
+								System.err.println(tmp);
 							}
+							if (word.matches(config.sepSentenceRegex))
+								writer.println();
 						}
+
 						writer.println();
 					}
 				}// nw
