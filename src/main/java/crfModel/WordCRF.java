@@ -39,6 +39,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;
+			if (type != config.nw) continue;
 			segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
 					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
@@ -437,7 +438,8 @@ public class WordCRF extends crfppWrapper implements Serializable {
 					Integer.toString(pmi),
 					Integer.toString(leftEntropy),
 					Integer.toString(rightEntropy),
-					Integer.toString(tfWithPreWord)
+					Integer.toString(tfWithPreWord),
+					word.matches("^型$") ? "T": "F"
 			);
 		}
 	}

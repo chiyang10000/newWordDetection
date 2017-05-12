@@ -7,6 +7,9 @@ import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.ansj.util.MyStaticValue;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by wan on 4/25/2017.
  */
@@ -63,6 +66,14 @@ public interface config {
 	public static String[] supportedType = new String[]{nw, nr, ns};
 	String corpusInput = "data/raw/news.txt";
 	String basicWordListFile = "data/corpus/basicWordList.txt";
+	HashMap<String, String> newWordType= new HashMap<String, String>(){
+		{
+			put("AllCh", "[\\p{IsHan}]+");
+			put("ChWithPunct", "[\\[p{IsHan}·－／]+");
+			put("LetterWithPuct", config.alphaNumExcludeRegx);
+			put("Misc", ".*");
+		}
+	};
 
 
 	public static String removePos(String in) {

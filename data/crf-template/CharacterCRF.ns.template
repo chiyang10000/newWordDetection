@@ -4,13 +4,22 @@ U01:%x[-1,0]
 U02:%x[0,0]
 U03:%x[1,0]
 
-UcurrentWord:%x[0,1]
+U001:%x[-1,0]%x[0,0]
+U002:%x[0,0]%x[1,0]
+
+UcurrentWord:%x[0,1]:
 
 UprePos:%x[0,5]
 UpostPos:%x[0,7]
+
 UpreWord:%x[0,4]
 UpostWord:%x[0,6]
-Uprepostpostpos:%x[0,4]/%x[0,6]
+#Uprepostpostpos:%x[0,4]/%x[0,6]
+
+#当前字和附近的词性
+U
+
+Upos:%x[0,2]/%x[0,3]
 
 # Bigram
 B

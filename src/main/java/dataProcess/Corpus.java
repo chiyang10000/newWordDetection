@@ -118,14 +118,10 @@ public class Corpus {
 
 
 	static private String category(String word) {
-		if (word.matches("\\p{IsHan}+"))
-			return "AllHan";
-		if (word.matches("[\\p{IsHan}·－／]+"))
-			return "HanWithPunct";
-		if (word.matches(config.alphaNumExcludeRegx))
-			return "AlphaWithpuct";
-		return "miscellaneous";
-
+		for (String type: config.newWordType.keySet())
+			if (word.matches(config.newWordType.get(type)))
+				return type;
+		return "none";
 	}
 
 	public static HashSet<String> extractWord(String inputFile, String pattern) {
@@ -141,12 +137,15 @@ public class Corpus {
 				for (String w : line.split(config.sepWordRegex)) {
 					String[] tmp = w.split(config.sepPosRegex);
 					try {
+						//System.err.println(line);
 						if ((pattern != config.nw && tmp[1].equals(pattern) || pattern == config.nw && isNewWord(tmp[0], tmp[1])) && !wordList.contains(tmp[0])) {
+
+							//System.err.println(line);
 							writer.append(tmp[0] + "\t" +category(tmp[0]) + "\t" + tmp[0].length() + "\t" + tmp[1]);
 							wordList.add(tmp[0]);
 							writer.newLine();
 						}
-					} catch (Exception e) {
+					} catch (IOException e) {
 						logger.debug("untagged {}", line);
 					}
 				}
@@ -214,8 +213,8 @@ public class Corpus {
 		//标点符号，含字母和数字的不算
 		word = config.newWordFileter(word);
 		if (pos != null)
-		if (pos.matches("[tmq]")) // todo 去除数量词 和 时间词
-			return false;
+		if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
+
 		if (word.matches(config.newWordExcludeRegex)
 			//|| word.matches("第?[几两数一二三四五六七八九十].*")// 去掉某些数量词
 				)

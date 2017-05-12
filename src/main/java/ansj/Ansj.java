@@ -23,9 +23,9 @@ public class Ansj implements NewWordDetector {
 
 	public static void main(String... args) throws IOException {
 		//segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
-		//segFile(config.totalDataInput, "tmp/testAnsjSeg.txt");
-		//config.openAnsj();
+		config.closeAnsj();
 		Ansj ansj = new AnsjToAnalysis();
+		ansj.segFile(config.totalDataInput, "ansj.txt");
 		String type = config.nr;
 		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
 				"tmp/tmp." + type, type), ansj.getClass().getSimpleName() + " " + type);

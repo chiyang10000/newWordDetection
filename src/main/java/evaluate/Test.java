@@ -14,6 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -48,6 +49,12 @@ public class Test {
 	}
 
 	public static void test(Set<String> golden, Set<String> ans, String prefix) {
+		HashMap<String, Integer> hitCounter = new HashMap<>(), selectCounter = new HashMap<>(), totalCounter = new HashMap<>();
+		for (String type: config.newWordType.keySet()) {
+			hitCounter.put(type, 0);
+			selectCounter.put(type, 0);
+			totalCounter.put(type, 0);
+		}
 		int sum = golden.size(),
 				select = ans.size();
 		int hit = 0;
@@ -84,7 +91,7 @@ public class Test {
 	public static void main(String... args) {
 		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
 		clean();
-		wordInfoInCorpus.addWordInfo(getAnswerFile(config.totalDataInput, config.nw), "tmp/new.info");
+		wordInfoInCorpus.addWordInfo(getAnswerFile(config.totalDataInput, config.nw), "new.info");
 
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
