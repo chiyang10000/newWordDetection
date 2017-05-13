@@ -90,6 +90,6 @@ public class ConvertHalfWidthToFullWidth {
 	}
 
 	public static void main(String... args) throws IOException {
-		convertFileToFulll(config.news, "tmp/full.txt");
+		convertFileToFulll("tmp/tmp", "tmp/full.txt");
 	}
 }

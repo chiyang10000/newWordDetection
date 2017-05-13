@@ -25,9 +25,9 @@ public class WordInfoInCorpus {
 	private RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
 
 	public static void main(String... args) {
-		//RunSystemCommand.run("rm data/corpus/*.words*");
+		RunSystemCommand.run("rm data/corpus/*.words*");
 		clean();
-		new WordInfoInCorpus(config.renmingribao);
+		new WordInfoInCorpus(config.news);
 	}
 
 	public WordInfoInCorpus(String corpusInput) {
@@ -112,8 +112,8 @@ public class WordInfoInCorpus {
 
 	private void calcWordInfo() {
 		logger.debug("Calc word info into corpus ...");
-		Corpus.convertToSrc(new String[]{corpusInput}, "tmp/tmp");// 去掉词性
-		ConvertHalfWidthToFullWidth.convertFileToFulll("tmp/tmp", corpus); // 全角半角的转换
+		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, "tmp/tmp"); // 全角半角的转换
+		Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpus);// 去掉词性
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
