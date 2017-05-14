@@ -317,8 +317,7 @@ public class Corpus {
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
 		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
-		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw),
-				"../../newWordAnalysis/new.info");
+		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "new.info");
 
 		for (String type : config.supportedType) {
 			extractWord(config.trainData, type);

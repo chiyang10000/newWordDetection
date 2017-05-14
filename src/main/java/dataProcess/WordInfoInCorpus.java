@@ -117,8 +117,8 @@ public class WordInfoInCorpus {
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
-		right = builder.genFreqRight(rawpath, 15, 10 * 1024);
-		left = builder.genLeft(rawpath, 15, 10 * 1024);
+		right = builder.genFreqRight(rawpath, 16, 10 * 1024);
+		left = builder.genLeft(rawpath, 16, 10 * 1024);
 		entropyfile = builder.mergeEntropy(right, left);
 
 		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
@@ -228,9 +228,9 @@ public class WordInfoInCorpus {
 			// tf为1的算一类
 			int value = exactWordInfo.getTF(word);
 			if (value == 0)
-				return -1;
-			if (value == 1)
 				return -2;
+			if (value == 1)
+				return -1;
 			int i = 0;
 			while (tf[++i] < value) ;
 			return i - 1;
