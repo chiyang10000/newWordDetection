@@ -117,8 +117,8 @@ public class WordInfoInCorpus {
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
-		right = builder.genFreqRight(rawpath, 10, 10 * 1024);
-		left = builder.genLeft(rawpath, 10, 10 * 1024);
+		right = builder.genFreqRight(rawpath, 15, 10 * 1024);
+		left = builder.genLeft(rawpath, 15, 10 * 1024);
 		entropyfile = builder.mergeEntropy(right, left);
 
 		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));

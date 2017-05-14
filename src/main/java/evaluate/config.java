@@ -17,15 +17,15 @@ public interface config {
 	//final public static String sepSentenceRegex = "([【】°~～\\pP&&[^-－.%．·@／]]+)";
 	final public static String sepSentenceRegex = "[，。？！：]";// 这样搞了之后就断不开了
 	final public static String sepWordRegex = " +";
-	final public static String sepPosRegex = "/";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	String alphaNumExcludeRegx = "([．％：／×—－·～\\p{IsDigit}\\p{IsLatin}\\p{IsCyrillic}]+型?)";
+	String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
+			"([年月日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
+			"[型]?)";
 	String punctExcludeRegx = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)";
-	//final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
-	final public static String newWordExcludeRegex = punctExcludeRegx;
+	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
+	//final public static String newWordExcludeRegex = punctExcludeRegx;
 	//标点符号和纯数字
-	//final public static String newWordExcludeRegex = ".*[^\\u4E00-\\u9FBF·].*";// 只留下汉字词
 
 
 	final public static String invalidSuffixRegex = "^(的|是|在|等|与|了)$";
@@ -66,15 +66,6 @@ public interface config {
 	public static String[] supportedType = new String[]{nw, nr, ns};
 	String corpusInput = "data/raw/news.txt";
 	String basicWordListFile = "data/corpus/basicWordList.txt";
-	HashMap<String, String> newWordType= new HashMap<String, String>(){
-		{
-			put("AllCh", "[\\p{IsHan}]+");
-			put("ChWithPunct", "[\\[p{IsHan}·－／]+");
-			put("LetterWithPuct", config.alphaNumExcludeRegx);
-			put("Misc", ".*");
-		}
-	};
-
 
 	public static String removePos(String in) {
 		return in.replaceAll("/[^/]*$", "");
@@ -96,14 +87,11 @@ public interface config {
 		System.out.println(Double.NEGATIVE_INFINITY);
 		System.out.println("７".matches(newWordExcludeRegex));
 		System.out.println("Ｐ".matches(newWordExcludeRegex));
-		System.out.println("Ｐ－７".matches(newWordExcludeRegex));
+		System.out.println("１∶１００".matches(".*∶.*") + "1:100");
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
+		if ("指令／秒".matches("[\\p{IsHan}·－／]+"))
 		System.out.println(Test.getAnswerFile(testDataInput, nw));
-		openAnsj();
-		closeAnsj();
-		Analysis ansj = new ToAnalysis();
-		System.out.println(ansj.parseStr("三十三沙、二炮、4时, 100升"));
 		try {
 			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
 			System.out.println(tmp);
@@ -124,9 +112,17 @@ public interface config {
 		MyStaticValue.isQuantifierRecognition = true;
 	}
 
-	static void setAnsj() {
-		MyStaticValue.isNameRecognition = false;
-		MyStaticValue.isNumRecognition = true;
-		MyStaticValue.isQuantifierRecognition = true;
+	static String category(String word) {
+		if (word.matches("[\\p{IsLatin}\\p{IsCyrillic}]+"))
+			return "纯字母";
+		if (word.matches("[\\p{IsDigit}．％：／×—－·～]+"))
+			return "纯数字";
+		if (word.matches("[\\p{IsDigit}\\p{IsLatin}．％：／×—－·～]+"))
+			return "字符和数字连字符组合";
+		if (word.matches("[\\p{IsHan}]+"))
+			return "纯汉字";
+		if (word.matches("[\\p{IsHan}·－／]+"))
+			return "汉字加连字符斜杠分隔符";
+		return "混合";
 	}
 }

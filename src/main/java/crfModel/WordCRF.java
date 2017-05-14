@@ -1,5 +1,6 @@
 package crfModel;
 
+import ansj.Ansj;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
 import evaluate.Test;
@@ -21,12 +22,17 @@ import java.util.Set;
 public class WordCRF extends crfppWrapper implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
-	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
+	private WordInfoInCorpus wordInfoInCorpus;
 	public Analysis parser;
 
 	{
 		config.closeAnsj();
 		parser = new ToAnalysis();
+		parser.setIsNameRecognition(false);
+		parser.setIsNumRecognition(true);
+		parser.setIsQuantifierRecognition(false);
+		Ansj.segFile(parser, config.totalDataInput, "ansj.txt");
+		wordInfoInCorpus =  new WordInfoInCorpus(config.corpusInput);
 	}
 
 	public static void main(String... args) {
@@ -35,7 +41,6 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		tmp.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
 		tmp.calcMostRecallInAnsj(config.testData, config.nr);
 		tmp.calcMostRecallInAnsj(config.testData, config.ns);
-
 		String[] inputFiles = {config.trainData};
 		WordCRF segementCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;

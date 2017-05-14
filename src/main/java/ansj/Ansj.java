@@ -25,22 +25,25 @@ public class Ansj implements NewWordDetector {
 		//segFileForWord2Vec(config.totalDataInput, "tmp/char.txt", "tmp/word.txt");
 		config.closeAnsj();
 		Ansj ansj = new AnsjToAnalysis();
-		ansj.segFile(config.totalDataInput, "ansj.txt");
-		String type = config.nr;
+		for (String type: config.supportedType)
 		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
 				"tmp/tmp." + type, type), ansj.getClass().getSimpleName() + " " + type);
 	}
 
-	void segFile(String input, String output) throws IOException {
-		try (BufferedReader reader = new BufferedReader(new FileReader(input));
-			 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
-		) {
-			String line, tmp;
-			while ((line = reader.readLine()) != null) {
-				tmp = parser.parseStr(line).toString(" ");
-				writer.append(tmp);
-				writer.newLine();
+	static public void segFile(Analysis parser, String input, String output) {
+		try {
+			try (BufferedReader reader = new BufferedReader(new FileReader(input));
+				 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
+			) {
+				String line, tmp;
+				while ((line = reader.readLine()) != null) {
+					tmp = parser.parseStr(line).toString(" ");
+					writer.append(tmp);
+					writer.newLine();
+				}
 			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 

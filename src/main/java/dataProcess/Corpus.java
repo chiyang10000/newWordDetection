@@ -32,7 +32,7 @@ public class Corpus {
 					while ((tmp = reader.readLine()) != null) {
 						String[] segs = tmp.split(config.sepWordRegex);
 						for (String word : segs)
-							basicWordList.add(word.split(config.sepPosRegex)[0]);
+							basicWordList.add(config.removePos(word));
 					}
 				} catch (java.io.IOException e) {
 					e.printStackTrace();
@@ -98,11 +98,11 @@ public class Corpus {
 					String word = config.removePos(seg);
 					word = config.newWordFileter(word);
 					String pos = config.getPos(seg);
-						if (isNewWord(word, pos)) {
-							writer.append(word + "/nw ");
-						} else {
-							writer.append(seg + " ");
-						}
+					if (isNewWord(word, pos)) {
+						writer.append(word + "/nw ");
+					} else {
+						writer.append(seg + " ");
+					}
 				}
 				writer.newLine();
 			}
@@ -116,33 +116,32 @@ public class Corpus {
 	}
 
 
-
-	static private String category(String word) {
-		for (String type: config.newWordType.keySet())
-			if (word.matches(config.newWordType.get(type)))
-				return type;
-		return "none";
-	}
-
 	public static HashSet<String> extractWord(String inputFile, String pattern) {
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
 			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(Test.getAnswerFile(inputFile + ".src", pattern)));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Test.getAnswerFile(inputFile + ".src",
+					pattern)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				if (line.length() == 0) continue;
+				if (line.trim().length() == 0) continue;
 				for (String w : line.split(config.sepWordRegex)) {
-					String[] tmp = w.split(config.sepPosRegex);
+					String word = config.removePos(w);
+					String pos = config.getPos(w);
 					try {
 						//System.err.println(line);
-						if ((pattern != config.nw && tmp[1].equals(pattern) || pattern == config.nw && isNewWord(tmp[0], tmp[1])) && !wordList.contains(tmp[0])) {
-
+						if (
+								(pattern != config.nw && pos.equals(pattern) && !word.matches(config.newWordExcludeRegex)
+										|| pattern == config.nw && isNewWord(word, pos)
+								)
+										&& !wordList.contains(word)) {
+							if (word.length() == 0)
+								System.err.println(w);
 							//System.err.println(line);
-							writer.append(tmp[0] + "\t" +category(tmp[0]) + "\t" + tmp[0].length() + "\t" + tmp[1]);
-							wordList.add(tmp[0]);
+							writer.append(word + "\t" + config.category(word) + "\t" + word.length() + "\t" + pos);
+							wordList.add(word);
 							writer.newLine();
 						}
 					} catch (IOException e) {
@@ -179,7 +178,7 @@ public class Corpus {
 			while ((tmp = reader.readLine()) != null) {
 				String[] segs = tmp.split(config.sepWordRegex);
 				for (String seg : segs) {
-					String word = (seg.split(config.sepPosRegex)[0]);
+					String word = (config.removePos(seg));
 					goldenWordList.add(word);
 					srcWriter.append(word);
 				}
@@ -212,11 +211,10 @@ public class Corpus {
 	public static boolean isNewWord(String word, String pos) {
 		//标点符号，含字母和数字的不算
 		word = config.newWordFileter(word);
-		if (pos != null)
-		if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
+		//if (pos != null)
+		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
 
 		if (word.matches(config.newWordExcludeRegex)
-			//|| word.matches("第?[几两数一二三四五六七八九十].*")// 去掉某些数量词
 				)
 			return false;
 		if (!basicWordList.contains(word))
@@ -318,7 +316,11 @@ public class Corpus {
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
-		for (String type: config.supportedType) {
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
+		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw),
+				"../../newWordAnalysis/new.info");
+
+		for (String type : config.supportedType) {
 			extractWord(config.trainData, type);
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
