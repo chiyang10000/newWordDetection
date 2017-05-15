@@ -10,5 +10,7 @@ public class AnsjToAnalysis extends Ansj {
 	public AnsjToAnalysis() {
 		config.openAnsj();
 		parser = new ToAnalysis();
+		parser.setIsNameRecognition(true);
+		parser.setIsNumRecognition(true);
 	}
 }
