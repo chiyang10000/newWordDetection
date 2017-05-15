@@ -90,12 +90,12 @@ public class WordInfoInCorpus {
 					double re = Double.parseDouble(seg[4]);
 					if (!Double.isNaN(pmi))
 					{
-						//if (tf >= 1) //只离散出现频率大于1的
+						if (tf > 1) //只离散出现频率大于1的
 						tfList.add(tf);
 							pmiList.add(pmi);
-						//if (le > 0)
+						if (le > 0)
 							leList.add(le);
-						//if (re > 0)
+						if (re > 0)
 							reList.add(re);
 						WordInfo tmp = new WordInfo(tf, pmi, le, re);
 						wordInfo.put(seg[0], tmp);
@@ -119,8 +119,8 @@ public class WordInfoInCorpus {
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
-		right = builder.genFreqRight(rawpath, config.maxStringLength, 10 * 1024);
-		left = builder.genLeft(rawpath, config.maxStringLength, 10 * 1024);
+		right = builder.genFreqRight(rawpath, config.maxStringLength + 1, 10 * 1024);
+		left = builder.genLeft(rawpath, config.maxStringLength + 1, 10 * 1024);
 		entropyfile = builder.mergeEntropy(right, left);
 
 		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
@@ -150,12 +150,17 @@ public class WordInfoInCorpus {
 		}
 
 		double getPMI(String word) {
-			if (word.length() > config.maxStringLength)
-				word = word.substring(0, config.maxStringLength);
+			if (word.length() == 1)
+				return 100000;
+			if (word.length() > config.maxStringLength) {
+				int off = (word.length() - config.maxStringLength) /2;
+				word = word.substring(off, off+ config.maxStringLength);
+			}
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
-			// 假设没出现过的pmi一定很高
-			if (tmp == null)
+			//
+			if (tmp == null) {
 				return Double.NaN;
+			}
 			return tmp.pmi;
 		}
 
@@ -170,7 +175,7 @@ public class WordInfoInCorpus {
 
 		double getRE(String word) {
 			if (word.length() > config.maxStringLength)
-				word = word.substring(0, config.maxStringLength);
+				word = word.substring(word.length() - config.maxStringLength, word.length());
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			if (tmp == null)
 				return 0;
@@ -179,7 +184,7 @@ public class WordInfoInCorpus {
 	}
 
 	public class DiscreteWordInfo {
-		double mi[], tf[], le[], re[];
+		double pmi[], tf[], le[], re[];
 
 		/**
 		 * pmi不是NaN, entropy大于0
@@ -206,18 +211,19 @@ public class WordInfoInCorpus {
 			Arrays.sort(tmp_re);
 			logger.info("tf {} pmi {}  le {} re {}", tmp_tf.length, tmp_pmi.length, tmp_le.length, tmp_re.length);
 
-			mi = new double[levelNum + 1];
+			pmi = new double[levelNum + 1];
 			tf = new double[levelNum + 1];
 			le = new double[levelNum + 1];
 			re = new double[levelNum + 1];
 			for (int i = 0; i < levelNum; i++) {
-				mi[i] = tmp_pmi[i * tmp_pmi.length / levelNum];
-				tf[i] = tmp_pmi[i * tmp_tf.length / levelNum];
-				le[i] = tmp_pmi[i * tmp_le.length / levelNum];
-				re[i] = tmp_pmi[i * tmp_re.length / levelNum];
+				pmi[i] = tmp_pmi[i * tmp_pmi.length / levelNum];
+				tf[i] = tmp_tf[i * tmp_tf.length / levelNum];
+				le[i] = tmp_le[i * tmp_le.length / levelNum];
+				re[i] = tmp_re[i * tmp_re.length / levelNum];
+				System.err.println(String.format("%f\t%f\t%f\t%f", tf[i], pmi[i], le[i], re[i]));
 			}
 			//边界处理
-			mi[levelNum] = Double.MAX_VALUE;
+			pmi[levelNum] = Double.MAX_VALUE;
 			tf[levelNum] = Double.MAX_VALUE;
 			le[levelNum] = Double.MAX_VALUE;
 			re[levelNum] = Double.MAX_VALUE;
@@ -229,7 +235,7 @@ public class WordInfoInCorpus {
 			if (Double.isNaN(value))
 				return -1;
 			int i = 0;
-			while (mi[++i] < value) ;
+			while (pmi[++i] < value) ;
 			return i - 1;
 		}
 

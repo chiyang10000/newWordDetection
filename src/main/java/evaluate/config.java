@@ -22,7 +22,7 @@ public interface config {
 	String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
 			"([年月日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
 			"[型]?)";
-	String punctExcludeRegx = "(.*[° ～｜■±+\\pP&&[^·－／]]+.*)";
+	String punctExcludeRegx = "(.*[°～｜■＋±\\pP&&[^·－／]]+.*)";
 	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
 	//final public static String newWordExcludeRegex = punctExcludeRegx;
 	//标点符号和纯数字
@@ -38,7 +38,7 @@ public interface config {
 	final public static double thresholdLeftRightNumber = 1;
 	final public static int testSize = 5;
 	public static int levelNum = 10;
-	public static int maxStringLength = 9;
+	public static int maxStringLength = 8;
 
 	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
 	public static boolean isNagaoSavedIntoFile = false;

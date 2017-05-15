@@ -209,6 +209,8 @@ public class Corpus {
 	}
 
 	public static boolean isNewWord(String word, String pos) {
+		if (word.length() <=1)
+			return false;
 		//标点符号，含字母和数字的不算
 		//if (pos != null)
 		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
