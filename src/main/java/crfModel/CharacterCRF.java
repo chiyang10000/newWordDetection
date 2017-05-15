@@ -167,7 +167,6 @@ public class CharacterCRF extends crfppWrapper {
 					}
 
 					String word = wordBuffer.toString();// 这是一个词
-					word = config.newWordFileter(word);
 					if (Corpus.isNewWord(word, null) && !newWordList.contains(word)) {
 						newWordList.add(word);
 						writer.println(word);

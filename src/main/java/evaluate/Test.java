@@ -28,9 +28,6 @@ public class Test {
 
 	static {
 		logger.info("---------****----------\n");
-		if (config.isAnsjFeatureOpen)
-			config.openAnsj();
-		logger.info("ansj feature open is {}", config.isAnsjFeatureOpen);
 		logger.info("shuffle is {}", config.isShuffle);
 		logger.info("corpus is {}", config.corpusInput);
 		logger.info("word filter is {} ", config.isNewWordFilter);
@@ -70,7 +67,7 @@ public class Test {
 			reader = new BufferedReader(new FileReader(inputFile));
 			String line;
 			while ((line = reader.readLine()) != null) {
-				wordList.add(line.split("\\s+")[0]);
+				wordList.add(config.newWordFileter(line.split("\\s+")[0]));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -97,7 +94,7 @@ public class Test {
 
 		WordCRF segementationCRF = new WordCRF();
 		CharacterCRF singleCharacterCRF = new CharacterCRF();
-		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxNagaoLength);
+		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxStringLength);
 		AnsjToAnalysis ansjToAnalysis = new AnsjToAnalysis();
 		AnsjNlpAnalysis ansjNlpAnalysis = new AnsjNlpAnalysis();
 

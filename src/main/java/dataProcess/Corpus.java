@@ -210,7 +210,6 @@ public class Corpus {
 
 	public static boolean isNewWord(String word, String pos) {
 		//标点符号，含字母和数字的不算
-		word = config.newWordFileter(word);
 		//if (pos != null)
 		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
 
@@ -316,14 +315,13 @@ public class Corpus {
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
-		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
-		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "new.info");
-
 		for (String type : config.supportedType) {
 			extractWord(config.trainData, type);
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
+		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "new.info");
 	}
 
 }

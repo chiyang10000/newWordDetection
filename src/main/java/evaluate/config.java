@@ -38,15 +38,14 @@ public interface config {
 	final public static double thresholdLeftRightNumber = 1;
 	final public static int testSize = 5;
 	public static int levelNum = 10;
-	public static int maxNagaoLength = 11;
+	public static int maxStringLength = 9;
 
 	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
 	public static boolean isTrain = true;
-	public static boolean isShuffle = false;
+	public static boolean isShuffle = true;
 	public static boolean isNewWordFilter = true;
-	public static boolean isAnsjFeatureOpen = true;
 
 
 	public static String renmingribao = "data/raw/renminribao.txt";
@@ -77,7 +76,7 @@ public interface config {
 
 	static String newWordFileter(String word) {
 		if (isNewWordFilter)
-			return word.replaceAll("(型$)|(公司$)", "");
+			return word.replaceAll("(公司$)", "");
 		return word;
 	}
 

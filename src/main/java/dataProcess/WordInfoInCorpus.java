@@ -85,19 +85,21 @@ public class WordInfoInCorpus {
 				while ((line = reader.readLine()) != null) {
 					String seg[] = line.split("\t");
 					int tf = Integer.parseInt(seg[1]);
-					if (tf > 1) //只离散出现频率大于1的
-						tfList.add(tf);
 					double pmi = Double.parseDouble(seg[2]);
-					if (!Double.isNaN(pmi))
-						pmiList.add(pmi);
 					double le = Double.parseDouble(seg[3]);
-					if (le > 0)
-						leList.add(le);
 					double re = Double.parseDouble(seg[4]);
-					if (re > 0)
-						reList.add(re);
-					WordInfo tmp = new WordInfo(tf, pmi, le, re);
-					wordInfo.put(seg[0], tmp);
+					if (!Double.isNaN(pmi))
+					{
+						//if (tf >= 1) //只离散出现频率大于1的
+						tfList.add(tf);
+							pmiList.add(pmi);
+						//if (le > 0)
+							leList.add(le);
+						//if (re > 0)
+							reList.add(re);
+						WordInfo tmp = new WordInfo(tf, pmi, le, re);
+						wordInfo.put(seg[0], tmp);
+					}
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -117,8 +119,8 @@ public class WordInfoInCorpus {
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
-		right = builder.genFreqRight(rawpath, 16, 10 * 1024);
-		left = builder.genLeft(rawpath, 16, 10 * 1024);
+		right = builder.genFreqRight(rawpath, config.maxStringLength, 10 * 1024);
+		left = builder.genLeft(rawpath, config.maxStringLength, 10 * 1024);
 		entropyfile = builder.mergeEntropy(right, left);
 
 		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
@@ -139,6 +141,8 @@ public class WordInfoInCorpus {
 
 	class ExactWordInfo {
 		int getTF(String word) {
+			if (word.length() > config.maxStringLength)
+				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			if (tmp == null)
 				return 0;
@@ -146,6 +150,8 @@ public class WordInfoInCorpus {
 		}
 
 		double getPMI(String word) {
+			if (word.length() > config.maxStringLength)
+				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			// 假设没出现过的pmi一定很高
 			if (tmp == null)
@@ -154,6 +160,8 @@ public class WordInfoInCorpus {
 		}
 
 		double getLE(String word) {
+			if (word.length() > config.maxStringLength)
+				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			if (tmp == null)
 				return 0;
@@ -161,6 +169,8 @@ public class WordInfoInCorpus {
 		}
 
 		double getRE(String word) {
+			if (word.length() > config.maxStringLength)
+				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			if (tmp == null)
 				return 0;

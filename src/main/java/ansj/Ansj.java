@@ -82,7 +82,6 @@ public class Ansj implements NewWordDetector {
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (pattern == config.nw) {
-						word = config.newWordFileter(word);
 						if ((Corpus.isNewWord(word, pos)) && !newWordList.contains(word)
 								) {
 							newWordList.add(word);

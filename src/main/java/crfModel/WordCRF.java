@@ -341,7 +341,6 @@ public class WordCRF extends crfppWrapper implements Serializable {
 
 				//List<Term> check = checker.parseStr(word).getTerms();
 				if (pattern == config.nw) {
-					word = config.newWordFileter(word);
 					if (Corpus.isNewWord(word, posSeq) && !newWordList.contains(word)
 							&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
 							) {
@@ -415,8 +414,8 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		Feature(String preWord, String word, String pos) {
 			this.word = word;
 			length = word.length();
-			if (length > config.maxNagaoLength) // 长度比较长的变短
-				length = config.maxNagaoLength + 1;
+			if (length > config.maxStringLength) // 长度比较长的变短
+				length = config.maxStringLength + 1;
 			this.pos = pos;
 			try {
 				tf = wordInfoInCorpus.discreteWordInfo.getTF(word);
