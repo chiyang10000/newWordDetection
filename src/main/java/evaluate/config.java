@@ -53,7 +53,7 @@ public interface config {
 	//		"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
 	final public static String[] basicWordFiles = {renmingribao};
 	public static String news = "data/raw/news.txt";
-	public static String newWordFile = "CRFPPWrapper/input.txt";
+	public static String newWordFile = "tmp/input.txt";
 	final public static String[] newWordFiles = {newWordFile};
 	public static String testData = "data/test/test.txt";
 	public static String trainData = "data/test/train.txt";
