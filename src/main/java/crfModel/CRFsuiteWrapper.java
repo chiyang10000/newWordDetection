@@ -32,7 +32,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 		RunSystemCommand.run(String.join(" ", templateConverter, crfModelWrapper.template,
 				"<", bemsInputFile, ">", bemsInputFile + ".crfsuite"));
 		String cmd = String.join(" ", crfsuite, "tag", "-m", modelFile,
-				bemsInputFile + ".crfsuite", ">", "tmp.crfsuite");
+				bemsInputFile + ".crfsuite", ">", "tmp/tmp.crfsuite");
 		RunSystemCommand.run(cmd);
 		try {
 			try (BufferedReader input = new BufferedReader(new FileReader(bemsInputFile));
