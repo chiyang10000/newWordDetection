@@ -271,7 +271,7 @@ public class Corpus {
 
 	}
 
-	static void convertToSrc(String[] inputFiles, String outputFile) {
+	public static String convertToSrc(String[] inputFiles, String outputFile) {
 		BufferedReader reader = null;
 		boolean last = false, curr;
 		int word = 0, article = 0;
@@ -300,6 +300,7 @@ public class Corpus {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return outputFile;
 	}
 
 	/**
@@ -310,7 +311,7 @@ public class Corpus {
 	public static void main(String... args) throws IOException {
 		clean();
 
-		ConvertHalfWidthToFullWidth.convertFileToFulll(config.news, config.newWordFile);
+		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
 
 		convertToSrc(new String[]{config.testData}, config.testDataInput);

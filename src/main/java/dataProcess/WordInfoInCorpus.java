@@ -3,7 +3,6 @@ package dataProcess;
 import com.googlecode.concurrenttrees.radix.ConcurrentRadixTree;
 import com.googlecode.concurrenttrees.radix.RadixTree;
 import com.googlecode.concurrenttrees.radix.node.concrete.DefaultCharArrayNodeFactory;
-import dict.build.FastBuilder;
 import evaluate.RunSystemCommand;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -39,8 +38,8 @@ public class WordInfoInCorpus {
 	}
 
 	public static void clean() {
-		RunSystemCommand.run("find data/corpus -name *.data | xargs rm");
-		RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
+		//RunSystemCommand.run("find data/corpus -name *.data | xargs rm");
+		//RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
 	}
 
 	public void addWordInfo(String wordFile, String outputFile) {
@@ -88,7 +87,6 @@ public class WordInfoInCorpus {
 					double pmi = Double.parseDouble(seg[2]);
 					double le = Double.parseDouble(seg[3]);
 					double re = Double.parseDouble(seg[4]);
-					if (!Double.isNaN(pmi))
 					{
 						if (tf > 1) //只离散出现频率大于1的
 						tfList.add(tf);
@@ -97,6 +95,8 @@ public class WordInfoInCorpus {
 							leList.add(le);
 						if (re > 0)
 							reList.add(re);
+						if (!Double.isNaN(pmi))
+							pmi = 100;
 						WordInfo tmp = new WordInfo(tf, pmi, le, re);
 						wordInfo.put(seg[0], tmp);
 					}
@@ -114,13 +114,13 @@ public class WordInfoInCorpus {
 
 	private void calcWordInfo() {
 		logger.debug("Calc word info into corpus ...");
-		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, "tmp/tmp"); // 全角半角的转换
-		Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpus);// 去掉词性
+		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, corpus); // 全角半角的转换
+		//Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpus);// 去掉词性
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 
-		right = builder.genFreqRight(rawpath, config.maxStringLength + 1, 10 * 1024);
-		left = builder.genLeft(rawpath, config.maxStringLength + 1, 10 * 1024);
+		right = builder.genFreqRight(rawpath, config.maxStringLength + 1);
+		left = builder.genLeft(rawpath, config.maxStringLength + 1);
 		entropyfile = builder.mergeEntropy(right, left);
 
 		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
@@ -141,6 +141,8 @@ public class WordInfoInCorpus {
 
 	class ExactWordInfo {
 		int getTF(String word) {
+			if (word.matches("\\pP"))
+				return 10000;
 			if (word.length() > config.maxStringLength)
 				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
@@ -150,8 +152,8 @@ public class WordInfoInCorpus {
 		}
 
 		double getPMI(String word) {
-			if (word.length() == 1)
-				return 100000;
+			if (word.matches("\\pP"))
+				return 10000;
 			if (word.length() > config.maxStringLength) {
 				int off = (word.length() - config.maxStringLength) /2;
 				word = word.substring(off, off+ config.maxStringLength);
@@ -159,12 +161,15 @@ public class WordInfoInCorpus {
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			//
 			if (tmp == null) {
+				System.err.println(word + " not in word corpus");
 				return Double.NaN;
 			}
 			return tmp.pmi;
 		}
 
 		double getLE(String word) {
+			if (word.matches("\\pP"))
+				return 10000;
 			if (word.length() > config.maxStringLength)
 				word = word.substring(0, config.maxStringLength);
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
@@ -174,6 +179,8 @@ public class WordInfoInCorpus {
 		}
 
 		double getRE(String word) {
+			if (word.matches("\\pP"))
+				return 10000;
 			if (word.length() > config.maxStringLength)
 				word = word.substring(word.length() - config.maxStringLength, word.length());
 			WordInfo tmp = wordInfo.getValueForExactKey(word);

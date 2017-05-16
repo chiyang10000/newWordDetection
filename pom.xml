@@ -59,9 +59,14 @@
             <version>5.1.2</version>
         </dependency>
         <dependency>
-            <groupId>build.dict</groupId>
-            <artifactId>dict_build</artifactId>
-            <version>0.0.1</version>
+            <groupId>com.google.code.externalsortinginjava</groupId>
+            <artifactId>externalsortinginjava</artifactId>
+            <version>0.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>17.0</version>
         </dependency>
     </dependencies>
 

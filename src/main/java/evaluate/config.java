@@ -20,9 +20,9 @@ public interface config {
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
 	String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
-			"((年[前初底]?)|(月[中初末]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
+			"((年[前初底]?)|(月[中初末底]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
 			"[型]?)";
-	String punctExcludeRegx = "(.*[°～｜■＋±\\pP&&[^·－／]]+.*)";
+	String punctExcludeRegx = "(.*[　°～｜■＋±\\pP&&[^·－／]]+.*)";
 	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
 	//final public static String newWordExcludeRegex = punctExcludeRegx;
 	//标点符号和纯数字

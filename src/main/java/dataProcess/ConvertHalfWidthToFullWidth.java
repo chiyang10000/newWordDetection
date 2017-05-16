@@ -1,7 +1,5 @@
 package dataProcess;
 
-import evaluate.config;
-
 import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -59,7 +57,7 @@ public class ConvertHalfWidthToFullWidth {
 		return new String(c);
 	}
 
-	public static void convertFileToFulll(String inputFile, String outputFile) {
+	public static void convertFileToFulllKeepPos(String inputFile, String outputFile) {
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
@@ -89,8 +87,23 @@ public class ConvertHalfWidthToFullWidth {
 			e.printStackTrace();
 		}
 	}
-
+	public static void convertFileToFulll(String inputFile, String outputFile) {
+		try (
+				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+			String line;
+			Pattern posPattern = Pattern.compile("／[^／]+$");
+			Matcher m;
+			while ((line = reader.readLine()) != null) {
+				line = ToDBC(line).replace('—', '－');//.破折号
+				writer.append(line.trim());
+				writer.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	public static void main(String... args) throws IOException {
-		convertFileToFulll("tmp/tmp", "tmp/full.txt");
+		convertFileToFulllKeepPos("tmp/tmp", "tmp/full.txt");
 	}
 }

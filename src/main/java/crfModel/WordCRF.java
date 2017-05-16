@@ -32,7 +32,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		parser.setIsNumRecognition(true);
 		parser.setIsQuantifierRecognition(false);
 		Ansj.segFile(parser, config.totalDataInput, "ansj.txt");
-		wordInfoInCorpus =  new WordInfoInCorpus(config.corpusInput);
+		//wordInfoInCorpus =  new WordInfoInCorpus(config.corpusInput);
 	}
 
 	public static void main(String... args) {
@@ -138,6 +138,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
+		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp"));// todo 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
 			for (String inputFile : inputFiles) {
@@ -262,7 +263,9 @@ public class WordCRF extends crfppWrapper implements Serializable {
 	@Override
 	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern) {
 		try {
+			wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
+
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				String line;
@@ -442,8 +445,8 @@ public class WordCRF extends crfppWrapper implements Serializable {
 					Integer.toString(pmi),
 					Integer.toString(leftEntropy),
 					Integer.toString(rightEntropy),
-					Integer.toString(tfWithPreWord),
-					word.matches("^型$") ? "T": "F"
+					Integer.toString(tfWithPreWord)
+					//word.matches("^型$") ? "T": "F"
 			);
 		}
 	}
