@@ -17,7 +17,7 @@ import java.util.Set;
  * 命名实体识别当成
  * Created by wan on 4/24/2017.
  */
-public class CharacterCRF extends crfppWrapper {
+public class CharacterCRF extends CRFModel {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 
 	public static void main(String... args) {
@@ -28,7 +28,7 @@ public class CharacterCRF extends crfppWrapper {
 			//if (type != config.nr) continue;
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
-					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName() + "." +
+					(config.testDataInput, "CRFPPWrapper/CRFPPWrapper." + type, type), characterCRF.getClass().getSimpleName() + "." +
 					type);
 		}
 	}

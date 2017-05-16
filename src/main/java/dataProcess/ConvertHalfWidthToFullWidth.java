@@ -95,6 +95,6 @@ public class ConvertHalfWidthToFullWidth {
 		}
 	}
 	public static void main(String... args) throws IOException {
-		convertFileToFulllKeepPos("tmp/tmp", "tmp/full.txt");
+		convertFileToFulllKeepPos("CRFPPWrapper/CRFPPWrapper", "CRFPPWrapper/full.txt");
 	}
 }

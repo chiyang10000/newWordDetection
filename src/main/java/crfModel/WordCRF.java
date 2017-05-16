@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * Created by don on 27/04/2017.
  */
-public class WordCRF extends crfppWrapper implements Serializable {
+public class WordCRF extends CRFModel implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
 	private WordInfoInCorpus wordInfoInCorpus;
@@ -47,7 +47,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 			if (type != config.nw) continue;
 			segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
+					"CRFPPWrapper/CRFPPWrapper." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
 		}
 	}
 
@@ -138,7 +138,7 @@ public class WordCRF extends crfppWrapper implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp"));// todo 这个为了方便，可能有bug
+		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "CRFPPWrapper/CRFPPWrapper"));// todo 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
 			for (String inputFile : inputFiles) {

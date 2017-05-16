@@ -115,7 +115,7 @@ public class WordInfoInCorpus {
 	private void calcWordInfo() {
 		logger.debug("Calc word info into corpus ...");
 		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, corpus); // 全角半角的转换
-		//Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpus);// 去掉词性
+		//Corpus.convertToSrc(new String[]{"CRFPPWrapper/CRFPPWrapper"}, corpus);// 去掉词性
 		FastBuilder builder = new FastBuilder();
 		String left, right, entropyfile, rawpath = corpus;
 

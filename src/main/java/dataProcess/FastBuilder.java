@@ -18,7 +18,7 @@ import java.util.TreeMap;
 /**
  *
  * @author Jennifer
- * modified by 万只羊
+ * modified by 万只羊 todo 这段代码比较丑
  */
 public class FastBuilder {
 
@@ -297,7 +297,7 @@ public class FastBuilder {
 
 		File frFile = new File(freqRight);
 		File lFile = new File(left);
-		File mergeTmp = new File(frFile.getParentFile(), "merge.tmp");
+		File mergeTmp = new File(frFile.getParentFile(), "merge.CRFPPWrapper");
 		File mergeTmp2 = new File(frFile.getParentFile(), "merge.tmp2");
 		File mergeFile = new File(frFile.getParentFile(), "merge_entropy.data");
 
