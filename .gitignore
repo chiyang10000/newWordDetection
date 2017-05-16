@@ -5,6 +5,7 @@ lib/*
 !/lib/crfpp
 /lib/crfpp/crf_learn
 /lib/crfpp/crf_test
+!/lib/crfsuite
 tmp/*
 !tmp/crf
 data/model/*
