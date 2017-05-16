@@ -13,7 +13,7 @@ abstract public class CRFModel implements NewWordDetector {
 	static protected final char label_begin = 'B', label_meddle = 'M', label_end = 'E', label_single = 'S',
 			label_true = 'T', label_false = 'F', label_inside = 'I', label_other = 'O';
 	private static Logger logger = LoggerFactory.getLogger(CRFModel.class);
-	private CrfToolInterface crfToolWrapper = new CRFsuiteWrapper(this);
+	private CrfToolInterface crfToolWrapper = new CRFPPWrapper(this);
 
 	String model, template, trainData;
 
