@@ -138,7 +138,8 @@ public class WordCRF extends CRFModel implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "CRFPPWrapper/CRFPPWrapper"));// todo 这个为了方便，可能有bug
+		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp"));// todo
+		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
 			for (String inputFile : inputFiles) {
