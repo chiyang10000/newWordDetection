@@ -12,7 +12,7 @@ import java.io.*;
 public class CRFsuiteWrapper extends CrfToolInterface {
 	static String crfsuite = new File("lib/crfsuite/bin/crfsuite").getAbsolutePath();
 	static String templateConverter = new File("lib/crfsuite/template.py").getAbsolutePath();
-	String algorithm = "ap";
+	String algorithm = "-a ap";
 	private static Logger logger = LoggerFactory.getLogger(CRFsuiteWrapper.class);
 
 	CRFsuiteWrapper(CRFModel tmp) {
@@ -33,6 +33,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 				"<", bemsInputFile, ">", bemsInputFile + ".crfsuite"));
 		String cmd = String.join(" ", crfsuite, "tag", "-m", modelFile,
 				bemsInputFile + ".crfsuite", ">", "tmp.crfsuite");
+		RunSystemCommand.run(cmd);
 		try {
 			try (BufferedReader input = new BufferedReader(new FileReader(bemsInputFile));
 			BufferedReader label = new BufferedReader(new FileReader("tmp/tmp.crfsuite"));
@@ -47,7 +48,6 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		RunSystemCommand.run(cmd);
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 
 		RunSystemCommand.run(String.join(" ", templateConverter, template, "<", trainData, ">", trainData + "" +
 				".crfsuite"));
-		String cmd = String.join(" ", crfsuite, "learn",  "-m", modelFile, trainData + ".crfsuite");
+		String cmd = String.join(" ", crfsuite, "learn", algorithm, "-m", modelFile, trainData + ".crfsuite");
 		RunSystemCommand.run(cmd);
 	}
 
