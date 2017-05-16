@@ -20,7 +20,7 @@ abstract public class CRFModel implements NewWordDetector {
 	{
 		model = "data/model/" + this.getClass().getSimpleName() + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + ".template";
-		trainData = "CRFPPWrapper/crf/" + this.getClass().getSimpleName() + ".crf";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + ".crf";
 	}
 
 	public static String getWord(String in) {
@@ -34,15 +34,15 @@ abstract public class CRFModel implements NewWordDetector {
 	public void train(String[] inputFiles, String pattern) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
-		trainData = "CRFPPWrapper/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
 		convert2TrainInput(inputFiles, pattern);
 		crfToolWrapper.train(template, model, trainData);
 	}
 
 	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
-		String crfppInput = String.join("", "CRFPPWrapper/crf/", inputFile.replaceAll(".*/", ""),
+		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
 				".", this.getClass().getSimpleName(), ".", pattern, ".crfin");
-		String crfppOutput = String.join("", "CRFPPWrapper/crf/", inputFile.replaceAll(".*/", ""),
+		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
 				".", this.getClass().getSimpleName(), ".", pattern, ".crfout");
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput, pattern);
 		crfToolWrapper.decode("data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model", crfppInput,

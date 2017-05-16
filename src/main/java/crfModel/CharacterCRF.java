@@ -28,7 +28,8 @@ public class CharacterCRF extends CRFModel {
 			//if (type != config.nr) continue;
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
-					(config.testDataInput, "CRFPPWrapper/CRFPPWrapper." + type, type), characterCRF.getClass().getSimpleName() + "." +
+					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
+					+ "." +
 					type);
 		}
 	}

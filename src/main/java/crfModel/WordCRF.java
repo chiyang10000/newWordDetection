@@ -47,7 +47,7 @@ public class WordCRF extends CRFModel implements Serializable {
 			if (type != config.nw) continue;
 			segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-					"CRFPPWrapper/CRFPPWrapper." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
+					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
 		}
 	}
 
