@@ -232,36 +232,51 @@ public class Corpus {
 	 */
 	public static void shuffleAndSplit(String[] inputFiles, String trainFile, String testFile, String totalFile) {
 		try {
+			boolean last = false, curr;
 			int totalSize = 0;
 			int currentSize = 0;
-			List<String> lines = new ArrayList<>();
+			List<String> article = new ArrayList<>();
 			BufferedWriter writer = new BufferedWriter(new FileWriter(totalFile));
 			for (String inputfile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputfile));
 				String line;
+				StringBuilder buffer = new StringBuilder();
 				while ((line = reader.readLine()) != null) {
-					lines.add(line);
-					writer.append(line);
+					if (line.length() == 0) continue;
+					curr = line.substring(line.length() - 3).replaceAll("/.*", "").matches(".*[稿\\pP&&[^】]]");
+					if (last && !curr) {
+						article.add(buffer.toString());
+						writer.append(buffer.toString());
+						totalSize += buffer.length();
+						writer.newLine();
+						buffer = new StringBuilder();
+					}
+					buffer.append(line);
+					buffer.append("\n");
+					last = curr;
 					writer.newLine();
-					totalSize += line.length();
 				}
+				//没清空的
+				article.add(buffer.toString());
+				writer.append(buffer.toString());
 			}
 			writer.close();
 			if (config.isShuffle) {
-				Collections.shuffle(lines); // todo no shuffle
+				logger.info("article size {}", article.size());
+				Collections.shuffle(article); // todo no shuffle
 				RunSystemCommand.run("rm data/model/*.model");
 			}
 			writer = new BufferedWriter(new FileWriter(testFile));
 			int i;
 			for (i = 0; currentSize < totalSize / config.testSize; i++) {
-				writer.append(lines.get(i));
-				currentSize += lines.get(i).length();
+				writer.append(article.get(i));
+				currentSize += article.get(i).length();
 				writer.newLine();
 			}
 			writer.close();
 			writer = new BufferedWriter(new FileWriter(trainFile));
-			for (; i < lines.size(); i++) {
-				writer.append(lines.get(i));
+			for (; i < article.size(); i++) {
+				writer.append(article.get(i));
 				writer.newLine();
 			}
 			writer.close();
@@ -273,7 +288,6 @@ public class Corpus {
 
 	public static String convertToSrc(String[] inputFiles, String outputFile) {
 		BufferedReader reader = null;
-		boolean last = false, curr;
 		int word = 0, article = 0;
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -281,15 +295,13 @@ public class Corpus {
 				reader = new BufferedReader(new FileReader(inputFile));
 				String line;
 				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0) continue;
+					if (line.length() == 0) {
+						article++;
+						writer.newLine();
+						continue;
+					}
 					line = line.replaceAll("/[^ ]+", "");
 					line = line.replaceAll(" +", "");
-					curr = line.substring(line.length() - 1).matches("[稿\\pP&&[^】]]");
-					if (last && !curr) {
-						writer.newLine();
-						article++;
-					}
-					last = curr;
 					writer.append(line);
 					writer.newLine();
 					word += line.length();

@@ -44,7 +44,7 @@ public interface config {
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
 	public static boolean isTrain = true;
-	public static boolean isShuffle = false;
+	public static boolean isShuffle = true;
 	public static boolean isNewWordFilter = true;
 
 
