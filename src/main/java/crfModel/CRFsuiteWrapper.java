@@ -4,7 +4,7 @@ import evaluate.RunSystemCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
+import java.io.*;
 
 /**
  * Created by wan on 4/24/2017.
@@ -32,7 +32,21 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 		RunSystemCommand.run(String.join(" ", templateConverter, crfModelWrapper.template,
 				"<", bemsInputFile, ">", bemsInputFile + ".crfsuite"));
 		String cmd = String.join(" ", crfsuite, "tag", "-m", modelFile,
-				bemsInputFile + ".crfsuite", ">", bemsOutputFile);
+				bemsInputFile + ".crfsuite", ">", "tmp.crfsuite");
+		try {
+			try (BufferedReader input = new BufferedReader(new FileReader(bemsInputFile));
+			BufferedReader label = new BufferedReader(new FileReader("tmp/tmp.crfsuite"));
+				 BufferedWriter output = new BufferedWriter(new FileWriter(bemsOutputFile))) {
+				String line,tag;
+				while ((line = input.readLine()) != null) {
+					tag = label.readLine();
+					output.append(line + "\t" + tag);
+					output.newLine();
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		RunSystemCommand.run(cmd);
 	}
 
