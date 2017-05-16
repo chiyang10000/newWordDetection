@@ -41,7 +41,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 
 		RunSystemCommand.run(String.join(" ", templateConverter, template, "<", trainData, ">", trainData + "" +
 				".crfsuite"));
-		String cmd = String.join(" ", crfsuite, "learn", trainData + ".crfsuite", "-m", modelFile);
+		String cmd = String.join(" ", crfsuite, "learn",  "-m", modelFile, trainData + ".crfsuite");
 		RunSystemCommand.run(cmd);
 	}
 
