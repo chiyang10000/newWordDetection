@@ -1833,7 +1833,7 @@ AIM-7/nx “/w 麻雀/nz ”/w 式/b 空对空/n 导弹/n
 AIM-7/nx “/w 麻雀/nz ”/w 式/b 空对空/n 导弹/n ，/w 美国/ns 于/p 1946年/t 开始/v 研制/v ，/w 53年/t 末/f 具备/v 作战/vn 能力/n ，/w 在/p 越南/ns 战争/n 中/f 对付/v 机动/b 性能/n 好/a 的/u 空中/s 目标/n 效果/n 不/d 理想/a ，/w 专门/d 研制/v 了/u 用于/v 近距/n 空战/v 的/u AIM-7E-2/nx ，/w 目前/t 使用/v 的/u 空射型/b 包括/v AIM-7MF1/nx 、/w AIM-7M/nx 、/w AIM-7P1/nx 型/b 、/w AIM-7P2/nx 型/b ,/w 导弹/n 弹长/a 3.64/m 米/q ，/w 弹径/n 0.20/m 米/q ，/w 翼展/n 1/m 米/q ，/w 发射/v 时/n 弹重/a 225/m 公斤/q ，/w 动力/n 装置/n 为/v 固体/n 火箭/n 发动机/n 一/m 台/q ，/w 射程/n 26/m 公里/q 。/w 
 发射/vn 高度/n 18000/m 米/q (/w 最/d 大/a )/w ，/w 速度/n 3.5/m 马赫/q ，/w 半主动/a 雷达波/n 制导/v ，/w 战斗部/n 为/v 重/n 约/d 29/m 公斤/q 的/u 高能/a 炸药/n ，/w 弹头/n 重/a 50/m 公斤/q ，/w 杀伤/vn 半径/n 12/m -/w 15/m 米/q 。/w 
 可/v 在/p 各种/r 气象/n 条件/n 下/f 使用/v ，/w 并/c 可/v 对/p 高度/n 差/n 在/p 数/m 百/m 米/q 内/f 的/u 低温位/n 目标/n 进行/v 全向/n 单/d 发/v 或/c 连/v 发/v 攻击/v 。/w 
-在/p 海湾/n 战争/n 中/f ，/w 该型/nr 导弹/n 在/p 空对空/n 作战/v 中/f 发挥/v 了/u 很/d 好/a 的/u 作用/n ，/w 共/d 击落/v 了/u 伊拉克/ns 固定翼/n 飞机/n 22/m 架/q 和/c 直升机/n 3/m 架/q 。/w 
+在/p 海湾/n 战争/n 中/f ，/w 该型/r 导弹/n 在/p 空对空/n 作战/v 中/f 发挥/v 了/u 很/d 好/a 的/u 作用/n ，/w 共/d 击落/v 了/u 伊拉克/ns 固定翼/n 飞机/n 22/m 架/q 和/c 直升机/n 3/m 架/q 。/w 
 单价/n 12万5千/m 美元/q 。/w 
 装备/n F-15/nx 、/w F-16/nx 战机/n 。/w 
 美军/n “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 联合/v 制导/v 攻击/v 武器/n 

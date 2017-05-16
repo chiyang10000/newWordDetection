@@ -19,11 +19,7 @@ public class ConvertHalfWidthToFullWidth {
 		char[] c = input.toCharArray();
 		for (int i = 0; i < c.length; i++) {
 			if (c[i] == 32) {
-				// c[i] = (char) 12288; //不转空格
-				continue;
-			}
-			if (c[i] == 12288) {
-				c[i] = (char) 32;
+				//c[i] = (char) 12288; //不转空格
 				continue;
 			}
 			if (c[i] < 127)
@@ -44,14 +40,12 @@ public class ConvertHalfWidthToFullWidth {
 		char[] c = input.toCharArray();
 		for (int i = 0; i < c.length; i++) {
 			if (c[i] == 12288) {
+				System.err.println("full width space");
 				c[i] = (char) 32;
 				continue;
 			}
 			if (c[i] > 65280 && c[i] < 65375) {
 				c[i] = (char) (c[i] - 65248);
-				//if (!('0' <= c[i] && c[i] <= '9' || 'a' <= c[i] && c[i] <= 'z' || 'A' <= c[i] && c[i] <= 'Z'))
-				// 只转数字字母
-				//	c[i] = (char) (c[i] + 65248);
 			}
 		}
 		return new String(c);
@@ -66,7 +60,6 @@ public class ConvertHalfWidthToFullWidth {
 			Matcher m;
 			while ((line = reader.readLine()) != null) {
 				line = ToDBC(line).replace('—', '－');//.破折号
-				//line = ToDBC(line).replace('　', ' ');//.破折号
 				String[] segs = line.split(" +");
 				StringBuffer stringBuffer = new StringBuffer();
 				for (String seg : segs) {
@@ -92,8 +85,6 @@ public class ConvertHalfWidthToFullWidth {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
 			String line;
-			Pattern posPattern = Pattern.compile("／[^／]+$");
-			Matcher m;
 			while ((line = reader.readLine()) != null) {
 				line = ToDBC(line).replace('—', '－');//.破折号
 				writer.append(line.trim());
