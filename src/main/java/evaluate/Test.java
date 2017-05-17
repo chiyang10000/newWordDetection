@@ -56,7 +56,7 @@ public class Test {
 		float p = (float) hit / select * 100;
 		float r = (float) hit / sum * 100;
 		float f1 = (float) 2.0 * p * r / (p + r);
-		logger.info("p  {}\tr  {}\tf  {}  {} select {} hit {} in total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
+		logger.info("p {}\tr {}\tf {}  {} select {} hit {} total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
 	}
 
 	public static Set<String> readWordList(String inputFile) {

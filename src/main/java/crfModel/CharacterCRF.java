@@ -21,6 +21,9 @@ public class CharacterCRF extends CRFModel {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 
 	public static void main(String... args) {
+		if (args.length >0 ) {
+			config.algorithm = args[0];
+		}
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 

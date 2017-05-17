@@ -32,10 +32,12 @@ public class WordCRF extends CRFModel implements Serializable {
 		parser.setIsNumRecognition(true);
 		parser.setIsQuantifierRecognition(false);
 		Ansj.segFile(parser, config.totalDataInput, "ansj.txt");
-		//wordInfoInCorpus =  new WordInfoInCorpus(config.corpusInput);
 	}
 
 	public static void main(String... args) {
+		if (args.length >0 ) {
+			config.algorithm = args[0];
+		}
 		Test.clean();
 		WordCRF tmp = new WordCRF();
 		tmp.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
@@ -58,17 +60,19 @@ public class WordCRF extends CRFModel implements Serializable {
 		if (wrong.contains(gs))
 			return;
 		wrong.add(gs);
-		System.err.println(gs);
+		logger.warn(gs);
 		int j = i;
+		StringBuffer buffer = new StringBuffer();
 		while (!gs.startsWith(ansj.get(j).getRealName())) j--;
 		for (int k = j; k <= i; k++)
-			System.err.print(ansj.get(k).toString() + " ");
-		System.err.println("  [ansj");
+			buffer.append(ansj.get(k).toString() + " ");
+		logger.warn("{}  [ansj", buffer);
+		buffer = new StringBuffer();
 		j = goldenIndex;
 		while (!gs.startsWith(golden[j])) j--;
 		for (int k = j; k <= goldenIndex; k++)
-			System.err.print(golden[k] + "/" + goldenTag[k] + " ");
-		System.err.println("  [golden");
+			buffer.append(golden[k] + "/" + goldenTag[k] + " ");
+		logger.warn("{}  [golden", buffer);
 	}
 
 	public void calcMostRecallInAnsj(String inputFile, String pattern) {
