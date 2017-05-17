@@ -48,7 +48,7 @@ public class Corpus {
 			basicWordListCounter.output(config.basicWordListFile);
 		} else {
 				logger.info("Reading word from file ...");
-				basicWordList = Test.readWordList(config.basicWordListFile);
+				basicWordList = Test.readWordList(config.basicWordListFile).keySet();
 		}
 	}
 

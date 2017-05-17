@@ -1,6 +1,6 @@
 package crfModel;
 
-import Feature.CharacterFeature;
+import Feature.*;
 import dataProcess.Corpus;
 import evaluate.Test;
 import evaluate.config;
@@ -8,9 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 新词发现当成分词问题做
@@ -150,52 +148,56 @@ public class CharacterCRF extends CRFModel {
 		}
 	}
 
-	public Set<String> convertTestOuput2Res(String inputFile, String newWordFile, String pattern) {
-		HashSet<String> newWordList = new HashSet<>();
+	public Map<String, String> convertTestOuput2Res(String inputFile, String newWordFile, String pattern) {
+		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			PrintWriter writer = new PrintWriter(new FileWriter(newWordFile));
-			String tmp;
+			String line;
 
 			if (pattern == config.nw) {
-				while ((tmp = reader.readLine()) != null) {
-					StringBuilder wordBuffer = new StringBuilder();
-					if (tmp.length() == 0)
+				while ((line = reader.readLine()) != null) {
+					if (line.length() == 0)
 						continue;
-					wordBuffer.append(tmp.split("\t", 2)[0]);
-					if (tmp.charAt(tmp.length() - 1) == label_begin) {
+					StringBuilder wordBuffer = new StringBuilder();
+					FieldAppender fieldAppender = new FieldAppender(line);
+					wordBuffer.append(line.split("\t", 2)[0]);
+					if (line.charAt(line.length() - 1) == label_begin) {
 						do {
-							tmp = reader.readLine();
-							wordBuffer.append(tmp.split("\t", 2)[0]);
-						} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != label_end);
+							line = reader.readLine();
+							fieldAppender = new FieldAppender(line);
+							wordBuffer.append(line.split("\t", 2)[0]);
+						} while (line.length() > 0 && line.charAt(line.length() - 1) != label_end);
 					}
 
 					String word = wordBuffer.toString();// 这是一个词
-					if (Corpus.isNewWord(word, null) && !newWordList.contains(word)) {
-						newWordList.add(word);
+					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
+						newWordList.put(word, fieldAppender.toString());
 						writer.println(word);
 					}
 				}
 			} // nw
 
 			if (pattern == config.nr || pattern == config.ns) {
-				while ((tmp = reader.readLine()) != null) {
-					StringBuilder wordBuffer = new StringBuilder();
-					if (tmp.length() == 0)
+				while ((line = reader.readLine()) != null) {
+					if (line.length() == 0)
 						continue;
-					wordBuffer.append(tmp.split("\t", 2)[0]);
-					char label_head = tmp.charAt(tmp.length() - 1);
-					if (tmp.charAt(tmp.length() - 1) == label_begin) {
+					StringBuilder wordBuffer = new StringBuilder();
+					FieldAppender fieldAppender = new FieldAppender(line);
+					wordBuffer.append(line.split("\t", 2)[0]);
+					char label_head = line.charAt(line.length() - 1);
+					if (line.charAt(line.length() - 1) == label_begin) {
 						do {
-							tmp = reader.readLine();
-							wordBuffer.append(tmp.split("\t", 2)[0]);
-						} while (tmp.length() > 0 && tmp.charAt(tmp.length() - 1) != label_end);
+							line = reader.readLine();
+							fieldAppender = new FieldAppender(line);
+							wordBuffer.append(line.split("\t", 2)[0]);
+						} while (line.length() > 0 && line.charAt(line.length() - 1) != label_end);
 					}
 
 					String word = wordBuffer.toString();
 					if (label_head == label_begin || label_head == label_single) //单字名称 和 多字名称
-						if (!newWordList.contains(word)) {
-							newWordList.add(word);
+						if (!newWordList.keySet().contains(word)) {
+							newWordList.put(word, fieldAppender.toString());
 							writer.println(word);
 						}
 				}

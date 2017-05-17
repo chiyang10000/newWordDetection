@@ -5,6 +5,7 @@ import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -45,7 +46,7 @@ abstract public class CRFModel implements NewWordDetector {
 		crfToolWrapper.train(template, model, trainData);
 	}
 
-	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
 		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
 				".", this.getClass().getSimpleName(), ".", pattern, ".crfin");
 		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
@@ -60,6 +61,6 @@ abstract public class CRFModel implements NewWordDetector {
 
 	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern);
 
-	abstract Set<String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern);
+	abstract Map<String, String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern);
 
 }

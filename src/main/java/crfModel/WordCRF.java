@@ -1,5 +1,6 @@
 package crfModel;
 
+import Feature.*;
 import ansj.Ansj;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
@@ -12,9 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by don on 27/04/2017.
@@ -312,12 +313,11 @@ public class WordCRF extends CRFModel implements Serializable {
 	}
 
 	@Override
-	public Set<String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern) {
-		HashSet<String> newWordList = new HashSet<>();
+	public HashMap<String, String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern) {
+		HashMap<String, String> newWordList = new HashMap<>();
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(crfppOutput));
 				PrintWriter writerNewWord = new PrintWriter(new FileWriter(resFile));
-				PrintWriter writerWordInfo = new PrintWriter(new FileWriter(resFile + ".seginfo"));
 		) {
 			String line, posOfFirstWord, wordPiece, posOfLastWord, posSeq, wordSeq;
 			char labelOfFirstWord = 0;
@@ -327,7 +327,7 @@ public class WordCRF extends CRFModel implements Serializable {
 					continue;
 
 				StringBuilder wordBuffer = new StringBuilder();
-				WordInfoAppender wordInfo = new WordInfoAppender(line);
+				FieldAppender wordInfo = new FieldAppender(line);
 
 				wordPiece = getWord(line); //第一个词
 				labelOfFirstWord = getLabel(line);
@@ -352,64 +352,30 @@ public class WordCRF extends CRFModel implements Serializable {
 
 				//List<Term> check = checker.parseStr(word).getTerms();
 				if (pattern == config.nw) {
-					if (Corpus.isNewWord(word, posSeq) && !newWordList.contains(word)
+					if (Corpus.isNewWord(word, posSeq) && !newWordList.keySet().contains(word)
 							&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
 							) {
 						//忽略量词
-						newWordList.add(word);
-						writerNewWord.println(word);
-						writerWordInfo.println(wordInfo);
+						newWordList.put(word, wordInfo.toString());
+						writerNewWord.println(word + "\t" + wordInfo);
 					}
 				} // nw
 
 				if (pattern == config.nr || pattern == config.ns) {
 					if (labelOfFirstWord == label_single || labelOfFirstWord == label_begin)
-						if (!newWordList.contains(word)) {
-							newWordList.add(word);
-							writerNewWord.println(word);
-							writerWordInfo.println(wordInfo);
+						if (!newWordList.keySet().contains(word)) {
+							newWordList.put(word,wordInfo.toString());
+							writerNewWord.println(word + "\t" + wordInfo);
 						}
 				} // nr ns
 			}
 
 			writerNewWord.close();
-			writerWordInfo.close();
 		} catch (IOException e) {
 			logger.error("err!");
 			e.printStackTrace();
 		}
 		return newWordList;
-	}
-
-	class WordInfoAppender {
-		StringBuilder[] stringBuilders;
-
-		WordInfoAppender(String line) {
-			String[] tmp = line.split("\t");
-			stringBuilders = new StringBuilder[tmp.length];
-			for (int i = 0; i < tmp.length; i++) {
-				stringBuilders[i] = new StringBuilder();
-				stringBuilders[i].append(tmp[i]);
-			}
-		}
-
-		void append(String line) {
-			String[] tmp = line.split("\t");
-			for (int i = 0; i < tmp.length; i++) {
-				stringBuilders[i].append("/");
-				stringBuilders[i].append(tmp[i]);
-			}
-		}
-
-		@Override
-		public String toString() {
-			StringBuilder tmp = new StringBuilder();
-			for (int i = 0; i < stringBuilders.length; i++) {
-				tmp.append(stringBuilders[i]);
-				tmp.append("  ");
-			}
-			return tmp.toString();
-		}
 	}
 
 	class Feature {

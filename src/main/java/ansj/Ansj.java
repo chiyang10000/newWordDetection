@@ -10,9 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by wan on 4/28/2017.
@@ -67,9 +65,9 @@ public class Ansj implements NewWordDetector {
 	}
 
 	@Override
-	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
 		config.openAnsj();
-		HashSet<String> newWordList = new HashSet<>();
+		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -82,16 +80,16 @@ public class Ansj implements NewWordDetector {
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (pattern == config.nw) {
-						if ((Corpus.isNewWord(word, pos)) && !newWordList.contains(word)
+						if ((Corpus.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
 								) {
-							newWordList.add(word);
+							newWordList.put(word, pos);
 							writer.append(word + "\t" + pos);
 							writer.newLine();
 						}
 					}// nw
 					if (pattern == config.nr || pattern == config.ns) {
-						if (pos.equals(pattern) && !newWordList.contains(word)) {
-							newWordList.add(word);
+						if (pos.equals(pattern) && !newWordList.keySet().contains(word)) {
+							newWordList.put(word, "nothing");
 							writer.append(word);
 							writer.newLine();
 						}

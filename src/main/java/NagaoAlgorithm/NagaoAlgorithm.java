@@ -288,12 +288,12 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 		this.maxWordLength = maxWordLength;
 	}
 
-	public Set<String> detectNewWord(String inputFile, String outputFile, String pattern) {
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
 		if (!pattern.equals("nw"))
-			return new HashSet<>();
+			return new HashMap<>();
 		scan(new String[]{inputFile});
 		countTFNeighbor();
-		HashSet<String> newWordList = new HashSet<>();
+		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
 			for (String word : wordTFNeighbor.keySet()) {
@@ -305,15 +305,15 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 
 				int tf;
-				double mi;
+				double mi, entropy;
 				tf = tfNeighbor.getTF();
 				mi = countMI(word);
-
+				entropy =tfNeighbor.getNeighborEntropy();
 				if (tf > config.thresholdTF &&
-						tfNeighbor.getNeighborEntropy() > config.thresholdNeighborEntropy &&
+						 entropy > config.thresholdNeighborEntropy &&
 						mi > config.thresholdMI
-						&& !newWordList.contains(word)) {
-					newWordList.add(word);
+						&& !newWordList.keySet().contains(word)) {
+					newWordList.put(word, tf + "\t" + mi +" \t" + entropy);
 					bw.append(word);
 					bw.newLine();
 				}

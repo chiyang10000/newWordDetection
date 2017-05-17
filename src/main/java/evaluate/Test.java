@@ -13,10 +13,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 
 /**
@@ -45,13 +42,13 @@ public class Test {
 		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
 	}
 
-	public static void test(Set<String> golden, Set<String> ans, String prefix) {
+	public static void test(Map<String, String> golden, Map<String, String> ans, String prefix) {
 		HashMap<String, Integer> hitCounter = new HashMap<>(), selectCounter = new HashMap<>(), totalCounter = new HashMap<>();
 		int sum = golden.size(),
 				select = ans.size();
 		int hit = 0;
-		for (String word : ans)
-			if (golden.contains(word))
+		for (String word : ans.keySet())
+			if (golden.keySet().contains(word))
 				hit++;
 		float p = (float) hit / select * 100;
 		float r = (float) hit / sum * 100;
@@ -59,15 +56,16 @@ public class Test {
 		logger.info("p {}\tr {}\tf {}  {} select {} hit {} total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
 	}
 
-	public static Set<String> readWordList(String inputFile) {
-		HashSet<String> wordList = new HashSet<>();
+	public static Map<String, String> readWordList(String inputFile) {
+		HashMap<String, String> wordList = new HashMap<>();
 
 		BufferedReader reader = null;
 		try {
 			reader = new BufferedReader(new FileReader(inputFile));
 			String line;
 			while ((line = reader.readLine()) != null) {
-				wordList.add(config.newWordFileter(line.split("\\s+")[0]));
+				String[] tmp = line.split("\\t", 2);
+				wordList.put(tmp[0], tmp[1]);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
