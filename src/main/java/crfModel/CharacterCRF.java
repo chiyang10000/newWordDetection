@@ -22,6 +22,7 @@ public class CharacterCRF extends CRFModel {
 
 	public static void main(String... args) {
 		if (args.length >0 ) {
+			config.isCRFsuite = true;
 			config.algorithm = args[0];
 		}
 		String[] corpus = new String[]{config.trainData};

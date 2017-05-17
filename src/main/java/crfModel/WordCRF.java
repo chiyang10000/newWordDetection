@@ -36,6 +36,7 @@ public class WordCRF extends CRFModel implements Serializable {
 
 	public static void main(String... args) {
 		if (args.length >0 ) {
+			config.isCRFsuite = true;
 			config.algorithm = args[0];
 		}
 		Test.clean();
