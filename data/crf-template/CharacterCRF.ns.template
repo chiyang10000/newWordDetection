@@ -1,11 +1,11 @@
 # res.add(String.join("\t", Character.toString(word.charAt(0))0, word1, pos2, "S"3, preWord4, preWordPos5, postWord6, postWordPos7));
 # Unigram
-U01:%x[-1,0]
-U02:%x[0,0]
-U03:%x[1,0]
+UpreChar:%x[-1,0]
+UcurrentChar:%x[0,0]
+UpostChar:%x[1,0]
 
-U001:%x[-1,0]%x[0,0]
-U002:%x[0,0]%x[1,0]
+UpreChar_currentChar:%x[-1,0]%x[0,0]
+UcurrentChar_postChar:%x[0,0]%x[1,0]
 
 UcurrentWord:%x[0,1]
 
@@ -17,8 +17,7 @@ UpreWord:%x[0,4]
 UpostWord:%x[0,6]
 #Uprepostpostpos:%x[0,4]/%x[0,6]
 
-
-Upos:%x[0,2]/%x[0,3]
+UcurrPos_label:%x[0,2]/%x[0,3]
 
 # Bigram
 B
