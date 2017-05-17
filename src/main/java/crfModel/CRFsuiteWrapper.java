@@ -39,12 +39,10 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 			BufferedReader label = new BufferedReader(new FileReader("tmp/tmp.crfsuite"));
 				 BufferedWriter output = new BufferedWriter(new FileWriter(bemsOutputFile))) {
 				String line,tag;
-				while ((line = input.readLine()) != null) {
-					tag = label.readLine();
+				while ((tag = label.readLine()) != null) {
+					line = input.readLine();
 					while (tag.length() > 0 && line.length() == 0) {
 						line = input.readLine();
-						if (line == null)
-							break;
 					}
 					output.append(line + "\t" + tag);
 					output.newLine();
