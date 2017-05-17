@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  */
 public class RunSystemCommand {
 	static String shell = "bash", option = "-c";
-	static private Logger logger = LoggerFactory.getLogger(RunSystemCommand.class);
+	static private Logger logger = LoggerFactory.getLogger("debug");
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
 			shell = "cmd";
@@ -40,6 +40,8 @@ public class RunSystemCommand {
 				System.err.println(line);
 			}
 			in.close();
+			logger.warn("---------------------------------------------------------------------");
+			logger.warn("---------------------------------------------------------------------");
 		} catch (Exception e) {
 			logger.error("Run command err! : [{}] ", cmd);
 			e.printStackTrace();

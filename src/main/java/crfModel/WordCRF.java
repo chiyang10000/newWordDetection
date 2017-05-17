@@ -35,9 +35,11 @@ public class WordCRF extends CRFModel implements Serializable {
 	}
 
 	public static void main(String... args) {
+		String al = "";
 		if (args.length >0 ) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
+			al = args[0];
 		}
 		Test.clean();
 		WordCRF tmp = new WordCRF();
@@ -50,12 +52,12 @@ public class WordCRF extends CRFModel implements Serializable {
 			if (type != config.nw) continue;
 			segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type);
+					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type + " " + al);
 		}
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		//if (true) return;
+		if (true) return;
 		if (gs.matches(config.newWordExcludeRegex) || gs.matches(".*\\p{IsDigit}.*"))
 			return;
 		if (wrong.contains(gs))
