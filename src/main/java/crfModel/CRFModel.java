@@ -1,12 +1,14 @@
 package crfModel;
 
+import crfModel.Tool.CRFPPWrapper;
+import crfModel.Tool.CRFsuiteWrapper;
+import crfModel.Tool.CrfToolInterface;
 import evaluate.NewWordDetector;
 import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by wan on 4/24/2017.
@@ -17,7 +19,7 @@ abstract public class CRFModel implements NewWordDetector {
 	private static Logger logger = LoggerFactory.getLogger(CRFModel.class);
 	private CrfToolInterface crfToolWrapper;
 
-	String model, template, trainData;
+	public String model, template, trainData;
 
 	{
 		model = "data/model/" + this.getClass().getSimpleName() + ".model";

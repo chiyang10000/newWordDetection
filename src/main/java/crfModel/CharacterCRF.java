@@ -173,7 +173,7 @@ public class CharacterCRF extends CRFModel {
 					String word = wordBuffer.toString();// 这是一个词
 					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
 						newWordList.put(word, fieldAppender.toString());
-						writer.println(word);
+						writer.println(word +"\t" + fieldAppender);
 					}
 				}
 			} // nw
@@ -198,7 +198,7 @@ public class CharacterCRF extends CRFModel {
 					if (label_head == label_begin || label_head == label_single) //单字名称 和 多字名称
 						if (!newWordList.keySet().contains(word)) {
 							newWordList.put(word, fieldAppender.toString());
-							writer.println(word);
+							writer.println(word +"\t" + fieldAppender);
 						}
 				}
 			} // nr

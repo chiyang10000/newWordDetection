@@ -32,7 +32,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		parser.setIsNameRecognition(false);
 		parser.setIsNumRecognition(true);
 		parser.setIsQuantifierRecognition(false);
-		Ansj.segFile(parser, config.totalDataInput, "ansj.txt");
+		Ansj.segFile(parser, config.totalDataInput, "tmp/wordCRF.ansj.txt");
 	}
 
 	public static void main(String... args) {
@@ -44,7 +44,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		}
 		Test.clean();
 		WordCRF tmp = new WordCRF();
-		tmp.calcMostRecallInAnsj("data/test/test.txt.tagNW", config.nw);
+		tmp.calcMostRecallInAnsj(config.testData, config.nw);
 		tmp.calcMostRecallInAnsj(config.testData, config.nr);
 		tmp.calcMostRecallInAnsj(config.testData, config.ns);
 		String[] inputFiles = {config.trainData};
@@ -250,9 +250,9 @@ public class WordCRF extends CRFModel implements Serializable {
 						}// nr ns
 
 						if (i > 0)
-							writer.println(new Feature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr()).toString() + '\t' + label);
+							writer.println(new WordFeature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr()).toString() + '\t' + label);
 						else
-							writer.println(new Feature("", ansjWord, term.getNatureStr()).toString() + '\t' + label);
+							writer.println(new WordFeature("", ansjWord, term.getNatureStr()).toString() + '\t' + label);
 
 						if (ansjWord.matches(config.sepSentenceRegex))
 							writer.println();// 断句换行
@@ -294,9 +294,9 @@ public class WordCRF extends CRFModel implements Serializable {
 						String pos = term.getNatureStr();
 
 						if (i > 0)
-							writer.append(new Feature(list.get(i - 1).getRealName(), word, pos).toString() + "\tN");
+							writer.append(new WordFeature(list.get(i - 1).getRealName(), word, pos).toString() + "\tN");
 						else
-							writer.append(new Feature("", word, pos).toString() +"\tN");
+							writer.append(new WordFeature("", word, pos).toString() +"\tN");
 						writer.newLine();
 
 						if (word.matches(config.sepSentenceRegex))
@@ -378,7 +378,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		return newWordList;
 	}
 
-	class Feature {
+	class WordFeature {
 		String word;
 		int length;
 		String pos;
@@ -388,7 +388,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		int pmi;
 		int tfWithPreWord;
 
-		Feature(String preWord, String word, String pos) {
+		WordFeature(String preWord, String word, String pos) {
 			this.word = word;
 			length = word.length();
 			if (length > config.maxStringLength) // 长度比较长的变短

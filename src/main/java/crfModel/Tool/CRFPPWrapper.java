@@ -1,5 +1,6 @@
-package crfModel;
+package crfModel.Tool;
 
+import crfModel.CRFModel;
 import evaluate.RunSystemCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +15,7 @@ public class CRFPPWrapper extends CrfToolInterface {
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	private static Logger logger = LoggerFactory.getLogger(CRFPPWrapper.class);
 
-	CRFPPWrapper(CRFModel tmp) {
+	public CRFPPWrapper(CRFModel tmp) {
 		super(tmp);
 	}
 	static {
@@ -34,8 +35,7 @@ public class CRFPPWrapper extends CrfToolInterface {
 	}
 
 	@Override
-	void train(String template, String modelFile, String trainData) {
-
+	public void train(String template, String modelFile, String trainData) {
 		String cmd = String.join(" ", crf_learn, template, trainData, modelFile);
 		RunSystemCommand.run(cmd);
 	}

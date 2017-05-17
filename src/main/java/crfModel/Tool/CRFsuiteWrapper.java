@@ -1,5 +1,6 @@
-package crfModel;
+package crfModel.Tool;
 
+import crfModel.CRFModel;
 import evaluate.RunSystemCommand;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -16,7 +17,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 	String algorithm = "-a " + config.algorithm;
 	private static Logger logger = LoggerFactory.getLogger(CRFsuiteWrapper.class);
 
-	CRFsuiteWrapper(CRFModel tmp) {
+	public CRFsuiteWrapper(CRFModel tmp) {
 		super(tmp);
 	}
 
@@ -57,7 +58,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 	}
 
 	@Override
-	void train(String template, String modelFile, String trainData) {
+	public void train(String template, String modelFile, String trainData) {
 
 		RunSystemCommand.run(String.join(" ", "python", templateConverter, template, "<", trainData, ">", trainData +
 				"" +

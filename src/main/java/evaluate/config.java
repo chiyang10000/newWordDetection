@@ -83,6 +83,11 @@ public class config {
 		} catch ( Exception e) {
 			System.err.println(e);
 		}
+		RunSystemCommand.run("mkdir -p tmp/crf");
+		RunSystemCommand.run("mkdir -p data/corpus");
+		RunSystemCommand.run("mkdir -p data/model");
+		RunSystemCommand.run("mkdir -p data/test/input");
+		RunSystemCommand.run("mkdir -p data/test/ans");
 	}
 
 	static public String corpusInput = "data/raw/news.txt";
