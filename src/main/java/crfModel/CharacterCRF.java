@@ -47,8 +47,8 @@ public class CharacterCRF extends CRFModel {
 					if (line.length() == 0) continue;
 					List<String> features = CharacterFeature.getRes(line);
 					for (String feature : features) {
-						writer.println(feature);
-						if (getWord(feature).matches(config.sepSentenceRegex))
+						writer.println(feature + "\tN");
+						if (getWord(feature).matches(config.sepSentenceRegex))// 断句
 							writer.println();
 					}
 				}

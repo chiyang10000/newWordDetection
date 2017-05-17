@@ -286,9 +286,9 @@ public class WordCRF extends CRFModel implements Serializable {
 						String pos = term.getNatureStr();
 
 						if (i > 0)
-							writer.append(new Feature(list.get(i - 1).getRealName(), word, pos).toString());
+							writer.append(new Feature(list.get(i - 1).getRealName(), word, pos).toString() + "\tN");
 						else
-							writer.append(new Feature("", word, pos).toString());
+							writer.append(new Feature("", word, pos).toString() +"\tN");
 						writer.newLine();
 
 						if (word.matches(config.sepSentenceRegex))
