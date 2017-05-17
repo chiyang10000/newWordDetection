@@ -1,6 +1,9 @@
 package dataProcess;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.Serializable;
+import java.util.Comparator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -9,6 +12,20 @@ public class CounterMap implements Serializable {
 	private static final long serialVersionUID = -3903452740943758085L;
 
 	private Map<String, MutableInteger> count = new ConcurrentHashMap<>();
+
+	public void output(String outputFile){
+		try {
+			Map<String, MutableInteger> map = SortByValue.sortByValue(count);
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			for (Map.Entry<String, MutableInteger> entry: map.entrySet()){
+				writer.append(entry.getKey() + "\t" +entry.getValue().get());
+				writer.newLine();
+			}
+			writer.close();
+		}catch (Exception e){
+
+		}
+	}
 
 	public CounterMap() {
 	}
@@ -47,7 +64,7 @@ public class CounterMap implements Serializable {
 		return count;
 	}
 
-	private static final class MutableInteger {
+	private static final class MutableInteger implements Comparable{
 		private int val;
 
 		public MutableInteger(int val) {
@@ -64,6 +81,11 @@ public class CounterMap implements Serializable {
 		// 为了方便打印
 		public String toString() {
 			return Integer.toString(val);
+		}
+
+		@Override
+		public int compareTo(Object o) {
+			return ((MutableInteger)o).get() - this.get();
 		}
 	}
 }

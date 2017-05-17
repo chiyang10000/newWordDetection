@@ -1,6 +1,7 @@
 package crfModel;
 
 import evaluate.RunSystemCommand;
+import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ import java.io.*;
 public class CRFsuiteWrapper extends CrfToolInterface {
 	static String crfsuite = new File("lib/crfsuite/bin/crfsuite").getAbsolutePath();
 	static String templateConverter = new File("lib/crfsuite/template.py").getAbsolutePath();
-	String algorithm = "-a ap";
+	String algorithm = "-a " + config.algorithm;
 	private static Logger logger = LoggerFactory.getLogger(CRFsuiteWrapper.class);
 
 	CRFsuiteWrapper(CRFModel tmp) {

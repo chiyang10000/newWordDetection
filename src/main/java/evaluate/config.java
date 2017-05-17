@@ -3,26 +3,28 @@ package evaluate;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
-import org.ansj.splitWord.Analysis;
-import org.ansj.splitWord.analysis.ToAnalysis;
 import org.ansj.util.MyStaticValue;
+import org.nlpcn.commons.lang.util.ObjConver;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.lang.reflect.Field;
+import java.util.Iterator;
+import java.util.Properties;
 
 /**
  * Created by wan on 4/25/2017.
  */
-public interface config {
-	//final public static String sepSentenceRegex = "([【】°~～\\pP&&[^-－.%．·@／]]+)";
+public class config {
 	final public static String sepSentenceRegex = "[，。？！：]";// 这样搞了之后就断不开了
 	final public static String sepWordRegex = " +";
 	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
 	// sepSentenceRegex + ".*";
-	String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
+	final public static String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
 			"((年[前初底]?)|(月[中初末底]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
 			"[型]?)";
-	String punctExcludeRegx = "(.*[　°～｜■＋±\\pP&&[^·－／]]+.*)";
+	final public static String punctExcludeRegx = "(.*[　°～｜■＋±\\pP&&[^·－／]]+.*)";
 	final public static String newWordExcludeRegex = punctExcludeRegx + "|" + alphaNumExcludeRegx;
 	//final public static String newWordExcludeRegex = punctExcludeRegx;
 	//标点符号和纯数字
@@ -36,21 +38,21 @@ public interface config {
 	final public static double thresholdRightEntropy = 1;
 	final public static double thresholdLeftNumber = 1;
 	final public static double thresholdLeftRightNumber = 1;
-	final public static int testSize = 5;
-	public static int levelNum = 10;
-	public static int maxStringLength = 8;
+	final public static Integer testSize = 5;
+	public static Integer levelNum = 10;
+	public static Integer maxStringLength = 8;
 
 	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
-	public static boolean isTrain = true;
-	public static boolean isShuffle = true;
-	public static boolean isNewWordFilter = true;
+	public static Boolean isTrain = true;
+	public static Boolean isShuffle = true;
+	public static Boolean isNewWordFilter = true;
+	public static Boolean isCRFsuite = true;
+	public static String algorithm = "ap";
 
 
 	public static String renmingribao = "data/raw/renminribao.txt";
-	//final public static String[] newWordFiles = {"data/raw/1_5000_1.segged.txt", "data/raw/1_5000_2.segged.txt",
-	//		"data/raw/1_5000_3.segged.txt", "data/raw/1_5000_4.segged.txt", "data/raw/1_5000_5.segged.txt"};
 	final public static String[] basicWordFiles = {renmingribao};
 	public static String news = "data/raw/news.txt";
 	public static String newWordFile = "tmp/input.txt";
@@ -63,8 +65,28 @@ public interface config {
 	public static String totalDataInput = "data/test/input/total.txt.src";
 	public static String nw = "nw", nr = "nr", ns = "ns";
 	public static String[] supportedType = new String[]{nw, nr, ns};
-	String corpusInput = "data/raw/news.txt";
-	String basicWordListFile = "data/corpus/basicWordList.txt";
+
+	static {
+		Properties prop = new Properties();
+		try {
+			//读取属性文件a.properties
+			InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
+			prop.load(in);     ///加载属性列表
+			Iterator<String> it = prop.stringPropertyNames().iterator();
+			while (it.hasNext()) {
+				String key = it.next();
+				Field field = config.class.getField(key);
+				field.set(null, ObjConver.conversion(prop.getProperty(key), field.getType()));
+				System.out.println(key + "=" + prop.getProperty(key));
+			}
+			in.close();
+		} catch ( Exception e) {
+			System.err.println(e);
+		}
+	}
+
+	static public String corpusInput = "data/raw/news.txt";
+	static public String basicWordListFile = "data/corpus/basicWordList.txt";
 
 	public static String removePos(String in) {
 		return in.replaceAll("/[^/]*$", "");
@@ -74,7 +96,7 @@ public interface config {
 		return in.replaceAll("^.*/", "");
 	}
 
-	static String newWordFileter(String word) {
+	static public String newWordFileter(String word) {
 		if (isNewWordFilter)
 			return word.replaceAll("(公司$)", "");
 		return word;
@@ -90,7 +112,7 @@ public interface config {
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
 		if ("指令／秒".matches("[\\p{IsHan}·－／]+"))
-		System.out.println(Test.getAnswerFile(testDataInput, nw));
+			System.out.println(Test.getAnswerFile(testDataInput, nw));
 		try {
 			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
 			System.out.println(tmp);
@@ -99,19 +121,19 @@ public interface config {
 		}
 	}
 
-	static void closeAnsj() {
+	static public void closeAnsj() {
 		MyStaticValue.isNameRecognition = false;
 		MyStaticValue.isNumRecognition = false;
 		MyStaticValue.isQuantifierRecognition = false;
 	}
 
-	static void openAnsj() {
+	static public void openAnsj() {
 		MyStaticValue.isNameRecognition = true;
 		MyStaticValue.isNumRecognition = true;
 		MyStaticValue.isQuantifierRecognition = true;
 	}
 
-	static String category(String word) {
+	static public String category(String word) {
 		if (word.matches("[\\p{IsLatin}\\p{IsCyrillic}]+"))
 			return "纯字母";
 		if (word.matches("[\\p{IsDigit}．％：／×—－·～]+"))

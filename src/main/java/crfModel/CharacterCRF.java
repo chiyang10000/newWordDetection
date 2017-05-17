@@ -25,7 +25,7 @@ public class CharacterCRF extends CRFModel {
 		CharacterCRF characterCRF = new CharacterCRF();
 
 		for (String type : config.supportedType) {
-			if (type != config.ns) continue;
+			//if (type != config.ns) continue;
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
 					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
@@ -61,8 +61,6 @@ public class CharacterCRF extends CRFModel {
 	}
 
 	public void convert2TrainInput(String[] inputFiles, String pattern) {
-		if (pattern.equals("nr") || pattern.equals("ns"))
-			logger.info("not supported");
 		logger.debug("convert {} to {} for {}", inputFiles, trainData, pattern);
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));

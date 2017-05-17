@@ -91,8 +91,8 @@ public class Test {
 					type);
 		}
 
-		WordCRF segementationCRF = new WordCRF();
-		CharacterCRF singleCharacterCRF = new CharacterCRF();
+		WordCRF wordCRF = new WordCRF();
+		CharacterCRF characterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxStringLength);
 		AnsjToAnalysis ansjToAnalysis = new AnsjToAnalysis();
 		AnsjNlpAnalysis ansjNlpAnalysis = new AnsjNlpAnalysis();
@@ -101,8 +101,12 @@ public class Test {
 		newWordDetectors.add(nagao);
 		newWordDetectors.add(ansjToAnalysis);
 		newWordDetectors.add(ansjNlpAnalysis);
-		newWordDetectors.add(singleCharacterCRF);
-		newWordDetectors.add(segementationCRF);
+		newWordDetectors.add(characterCRF);
+		newWordDetectors.add(wordCRF);
+		if (config.isTrain) {
+			characterCRF.main();
+			wordCRF.main();
+		}
 
 		String inputFile = config.testDataInput;
 		String outputFile;

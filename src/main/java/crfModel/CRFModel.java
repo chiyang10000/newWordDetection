@@ -1,6 +1,7 @@
 package crfModel;
 
 import evaluate.NewWordDetector;
+import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ abstract public class CRFModel implements NewWordDetector {
 	static protected final char label_begin = 'B', label_meddle = 'M', label_end = 'E', label_single = 'S',
 			label_true = 'T', label_false = 'F', label_inside = 'I', label_other = 'O';
 	private static Logger logger = LoggerFactory.getLogger(CRFModel.class);
-	private CrfToolInterface crfToolWrapper = new CRFsuiteWrapper(this);
+	private CrfToolInterface crfToolWrapper;
 
 	String model, template, trainData;
 
@@ -21,6 +22,11 @@ abstract public class CRFModel implements NewWordDetector {
 		model = "data/model/" + this.getClass().getSimpleName() + ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + ".template";
 		trainData = "tmp/crf/" + this.getClass().getSimpleName() + ".crf";
+		if (config.isCRFsuite) {
+			crfToolWrapper = new CRFsuiteWrapper(this);
+		}
+		else
+			crfToolWrapper = new CRFPPWrapper(this);
 	}
 
 	public static String getWord(String in) {

@@ -9,17 +9,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by wan on 4/7/2017.
  */
 public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
-	public static HashSet<String> basicWordList = new HashSet<>();
+	public static Set<String> basicWordList = new HashSet<>();
+	public static CounterMap basicWordListCounter = new CounterMap();
 	public static HashSet<Character> basicCharacterList = new HashSet<>();
 
 	static {
@@ -32,13 +30,14 @@ public class Corpus {
 					while ((tmp = reader.readLine()) != null) {
 						String[] segs = tmp.split(config.sepWordRegex);
 						for (String word : segs)
-							basicWordList.add(config.removePos(word));
+							basicWordListCounter.incr(config.removePos(word));
 					}
 				} catch (java.io.IOException e) {
 					e.printStackTrace();
 					logger.error("Reading {} err!", basicWordFile);
 				}
 			}
+			basicWordList = basicWordListCounter.countAll().keySet();
 			for (String word : basicWordList) {
 				for (int i = 0; i < word.length(); i++) {
 					basicCharacterList.add(word.charAt(i));
@@ -46,36 +45,15 @@ public class Corpus {
 			}
 			logger.info("Basic word list size: {}", basicWordList.size());
 			logger.info("Basic character list size: {}", basicCharacterList.size());
-			BufferedWriter writer = null;
-			try {
-				writer = new BufferedWriter(new FileWriter(config.basicWordListFile));
-				for (String word : basicWordList) {
-					writer.append(word);
-					writer.newLine();
-				}
-				writer.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-				logger.error("IO err");
-			}
+			basicWordListCounter.output(config.basicWordListFile);
 		} else {
-			try {
 				logger.info("Reading word from file ...");
-				BufferedReader reader = new BufferedReader(new FileReader(config.basicWordListFile));
-				String tmp;
-				while ((tmp = reader.readLine()) != null) {
-					basicWordList.add(tmp);
-				}
-				logger.info("Basic word list size: {}", basicWordList.size());
-				logger.info("Basic character list size: {}", basicCharacterList.size());
-			} catch (java.io.IOException e) {
-				e.printStackTrace();
-				logger.error("Reading {} err!", config.basicWordListFile);
-			}
+				basicWordList = Test.readWordList(config.basicWordListFile);
 		}
 	}
 
 	static void clean() {
+		RunSystemCommand.run("rm data/corpus/*.words*");
 		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
 	}
 
@@ -335,7 +313,7 @@ public class Corpus {
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
-		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusInput);
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "new.info");
 	}
 

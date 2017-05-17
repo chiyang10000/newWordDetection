@@ -38,8 +38,8 @@ public class WordInfoInCorpus {
 	}
 
 	public static void clean() {
-		//RunSystemCommand.run("find data/corpus -name *.data | xargs rm");
-		//RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
+		RunSystemCommand.run("find data/corpus -name *.data | xargs rm");
+		RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
 	}
 
 	public void addWordInfo(String wordFile, String outputFile) {
@@ -78,7 +78,7 @@ public class WordInfoInCorpus {
 			ArrayList<Integer> tfList = new ArrayList();
 			ArrayList<Double> leList = new ArrayList<>(), reList = new ArrayList<>(), pmiList = new ArrayList();
 			try {
-				logger.debug("Reading word info into corpus");
+				logger.debug("Reading [{}] word info into corpus", corpus);
 				BufferedReader reader = new BufferedReader(new FileReader(corpus + ".words"));
 				String line;
 				while ((line = reader.readLine()) != null) {
@@ -113,7 +113,7 @@ public class WordInfoInCorpus {
 	}
 
 	private void calcWordInfo() {
-		logger.debug("Calc word info into corpus ...");
+		logger.debug("Calc [{}] word info into corpus ...", corpus);
 		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, corpus); // 全角半角的转换
 		//Corpus.convertToSrc(new String[]{"CRFPPWrapper/CRFPPWrapper"}, corpus);// 去掉词性
 		FastBuilder builder = new FastBuilder();
