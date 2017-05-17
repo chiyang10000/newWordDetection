@@ -314,7 +314,7 @@ public class Corpus {
 			extractWord(config.totalData, type);
 		}
 		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
-		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "new.info");
+		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "info/new.info");
 	}
 
 }

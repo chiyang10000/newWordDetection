@@ -398,9 +398,6 @@ public class FastBuilder {
 				if (seg.length < 3) continue;
 				tree.put(seg[0], Integer.parseInt(seg[1]));
 				total += 1;
-				if (total % 100000 == 0) {
-					LOG.info("load freq to radix tree done: " + total);
-				}
 			}
 			LOG.info("build freq TST done!");
 			line = null;

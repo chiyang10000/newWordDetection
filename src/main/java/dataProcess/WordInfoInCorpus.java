@@ -95,7 +95,7 @@ public class WordInfoInCorpus {
 							leList.add(le);
 						if (re > 0)
 							reList.add(re);
-						if (!Double.isNaN(pmi))
+						if (Double.isNaN(pmi))
 							pmi = 100;
 						WordInfo tmp = new WordInfo(tf, pmi, le, re);
 						wordInfo.put(seg[0], tmp);
