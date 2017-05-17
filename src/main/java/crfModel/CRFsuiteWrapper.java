@@ -18,6 +18,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 	CRFsuiteWrapper(CRFModel tmp) {
 		super(tmp);
 	}
+
 	static {
 		if (!System.getProperty("os.name").contains("Linux")) {
 			System.err.println("crfsuite only avail in linux");
@@ -36,15 +37,16 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 		RunSystemCommand.run(cmd);
 		try {
 			try (BufferedReader input = new BufferedReader(new FileReader(bemsInputFile));
-			BufferedReader label = new BufferedReader(new FileReader("tmp/tmp.crfsuite"));
+				 BufferedReader label = new BufferedReader(new FileReader("tmp/tmp.crfsuite"));
 				 BufferedWriter output = new BufferedWriter(new FileWriter(bemsOutputFile))) {
-				String line,tag;
+				String line, tag;
 				while ((tag = label.readLine()) != null) {
 					line = input.readLine();
 					while (tag.length() > 0 && line.length() == 0) {
 						line = input.readLine();
 					}
-					output.append(line + "\t" + tag);
+					if (tag.length() > 0)
+						output.append(line + "\t" + tag);
 					output.newLine();
 				}
 			}
