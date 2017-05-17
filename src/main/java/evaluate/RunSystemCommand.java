@@ -30,7 +30,7 @@ public class RunSystemCommand {
 			BufferedReader read = new BufferedReader(new InputStreamReader(in));
 			String line = null;
 			while ((line = read.readLine()) != null) {
-				logger.warn(line);
+				logger.trace(line);
 			}
 			in.close();
 			pro.waitFor();
@@ -40,8 +40,8 @@ public class RunSystemCommand {
 				System.err.println(line);
 			}
 			in.close();
-			logger.warn("---------------------------------------------------------------------");
-			logger.warn("---------------------------------------------------------------------");
+			logger.trace("---------------------------------------------------------------------");
+			logger.trace("---------------------------------------------------------------------");
 		} catch (Exception e) {
 			logger.error("Run command err! : [{}] ", cmd);
 			e.printStackTrace();
