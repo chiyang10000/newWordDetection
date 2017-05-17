@@ -41,6 +41,8 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 				String line,tag;
 				while ((line = input.readLine()) != null) {
 					tag = label.readLine();
+					while (tag.length() > 0 && line.length() == 0)
+						line = input.readLine();
 					output.append(line + "\t" + tag);
 					output.newLine();
 				}
