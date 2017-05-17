@@ -30,7 +30,7 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 
 
 	public void decode(String modelFile, String bemsInputFile, String bemsOutputFile) {
-		RunSystemCommand.run(String.join(" ", templateConverter, crfModelWrapper.template,
+		RunSystemCommand.run(String.join(" ", "python", templateConverter, crfModelWrapper.template,
 				"<", bemsInputFile, ">", bemsInputFile + ".crfsuite"));
 		String cmd = String.join(" ", crfsuite, "tag", "-m", modelFile,
 				bemsInputFile + ".crfsuite", ">", "tmp/tmp.crfsuite");
@@ -58,7 +58,8 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 	@Override
 	void train(String template, String modelFile, String trainData) {
 
-		RunSystemCommand.run(String.join(" ", templateConverter, template, "<", trainData, ">", trainData + "" +
+		RunSystemCommand.run(String.join(" ", "python", templateConverter, template, "<", trainData, ">", trainData +
+				"" +
 				".crfsuite"));
 		String cmd = String.join(" ", crfsuite, "learn", algorithm, "-m", modelFile, trainData + ".crfsuite");
 		RunSystemCommand.run(cmd);

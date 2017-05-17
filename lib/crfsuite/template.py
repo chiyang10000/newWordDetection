@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import re
 import sys
@@ -34,8 +35,8 @@ class FeatureExtractor:
             return ''
 
     def apply(self, inst, t):
-	self.inst = inst
-	self.t = t
+        self.inst = inst
+        self.t = t
         for template in self.templates:
             f = re.sub(self.macro, self.replace, template)
             self.inst[t]['F'].append(f)
@@ -76,7 +77,7 @@ consist of field values separated by SEPARATOR characters (customizable with
     (options, args) = parser.parse_args()
 
     F = FeatureExtractor()
-    F.read(open(args[0]))
+    F.read(open(args[0],encoding='utf-8'))
 
     for inst in readiter(fi, options.separator):
         for t in range(len(inst)):

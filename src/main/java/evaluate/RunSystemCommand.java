@@ -26,15 +26,16 @@ public class RunSystemCommand {
 			String[] cmds = new String[]{shell, option, cmd};
 			Process pro = Runtime.getRuntime().exec(cmds);
 			InputStream in = pro.getInputStream();
+			InputStream err = pro.getErrorStream();
 			BufferedReader read = new BufferedReader(new InputStreamReader(in));
 			String line = null;
 			while ((line = read.readLine()) != null) {
-				System.err.println(line);
+				//System.err.println(line);
 			}
 			in.close();
 			pro.waitFor();
 			in = pro.getErrorStream();
-			read = new BufferedReader(new InputStreamReader(in));
+			read = new BufferedReader(new InputStreamReader(err));
 			while ((line = read.readLine()) != null) {
 				System.err.println(line);
 			}
