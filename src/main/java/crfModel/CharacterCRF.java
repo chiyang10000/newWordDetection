@@ -32,7 +32,7 @@ public class CharacterCRF extends CRFModel {
 		CharacterCRF characterCRF = new CharacterCRF();
 
 		for (String type : config.supportedType) {
-			if (type != config.ns) continue;
+			if (type != config.nw) continue;
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
 					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
