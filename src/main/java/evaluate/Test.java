@@ -122,7 +122,7 @@ public class Test {
 			wordCRF.main();
 		}
 
-		String inputFile = config.totalDataInput;
+		String inputFile = config.testDataInput;
 		String outputFile;
 
 
