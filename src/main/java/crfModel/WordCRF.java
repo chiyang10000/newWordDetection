@@ -9,6 +9,7 @@ import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
+import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +30,7 @@ public class WordCRF extends CRFModel implements Serializable {
 
 	{
 		parser = new ToAnalysis();
-		parser.setIsNameRecognition(false);
+		parser.setIsNameRecognition(true);
 		parser.setIsNumRecognition(false);
 		parser.setIsQuantifierRecognition(false);
 		Ansj.segFile(parser, config.totalDataInput, "tmp/wordCRF.ansj.txt");
@@ -45,11 +46,10 @@ public class WordCRF extends CRFModel implements Serializable {
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;
+			//wordCRF.calcMostRecallInAnsj(config.testData, type);
 			//if (type != config.nr) continue;
 			wordCRF.train(new String[]{config.trainData}, type);
-			wordCRF.calcMostRecallInAnsj(config.testData, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config.testDataInput,
-					"tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
 		}
 	}
 
