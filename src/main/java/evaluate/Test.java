@@ -130,7 +130,6 @@ public class Test {
 			String answerFile = getAnswerFile(inputFile, type);
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				if (newWordDetector != wordCRF) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type),
 						newWordDetector.getClass().getSimpleName() + "." + type);

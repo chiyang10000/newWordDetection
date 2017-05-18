@@ -43,12 +43,11 @@ public class WordCRF extends CRFModel implements Serializable {
 			al = args[0];
 		}
 		Test.clean();
-		WordCRF tmp = new WordCRF();
 		WordCRF wordCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;
-			if (type != config.nw) continue;
+			//if (type != config.nr) continue;
 			wordCRF.train(new String[]{config.trainData}, type);
-			tmp.calcMostRecallInAnsj(config.testData, type);
+			wordCRF.calcMostRecallInAnsj(config.testData, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config.testDataInput,
 					"tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
 		}
