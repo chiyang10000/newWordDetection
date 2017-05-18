@@ -21,11 +21,10 @@ public class Ansj implements NewWordDetector {
 
 	public static void main(String... args) throws IOException {
 		//segFileForWord2Vec(config.totalDataInput, "CRFPPWrapper/char.txt", "CRFPPWrapper/word.txt");
-		config.closeAnsj();
 		Ansj ansj = new AnsjToAnalysis();
 		for (String type: config.supportedType)
 		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
-				"CRFPPWrapper/CRFPPWrapper." + type, type), ansj.getClass().getSimpleName() + " " + type);
+				"CRFPPWrapper/CRFPPWrapper." + type, type), ansj.getClass().getSimpleName() + "." + type);
 	}
 
 	static public void segFile(Analysis parser, String input, String output) {
@@ -66,7 +65,6 @@ public class Ansj implements NewWordDetector {
 
 	@Override
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
-		config.openAnsj();
 		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));

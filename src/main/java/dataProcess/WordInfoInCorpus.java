@@ -42,6 +42,14 @@ public class WordInfoInCorpus {
 		RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
 	}
 
+	public String addWordInfo(String line) {
+		String[] tmp = line.split("\\s+");
+		String word = tmp[0];
+		return (String.format("%s\t%d\t%d\t%d\t%d", line,
+				discreteWordInfo.getTF(word), discreteWordInfo.getPMI(word), discreteWordInfo.getLE(word),
+				discreteWordInfo.getRE(word)));
+	}
+
 	public void addWordInfo(String wordFile, String outputFile) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(wordFile));
@@ -59,7 +67,8 @@ public class WordInfoInCorpus {
 				re = exactWordInfo.getRE(word);
 				writer.append(String.format("%s\t%d\t%f\t%f\t%f", line, tf, mi, le, re));
 				writerDis.append(String.format("%s\t%d\t%d\t%d\t%d", line,
-						discreteWordInfo.getTF(word), discreteWordInfo.getPMI(word), discreteWordInfo.getLE(word), discreteWordInfo.getRE(word)));
+						discreteWordInfo.getTF(word), discreteWordInfo.getPMI(word), discreteWordInfo.getLE(word),
+						discreteWordInfo.getRE(word)));
 				writer.newLine();
 				writerDis.newLine();
 			}
@@ -89,8 +98,8 @@ public class WordInfoInCorpus {
 					double re = Double.parseDouble(seg[4]);
 					{
 						if (tf > 1) //只离散出现频率大于1的
-						tfList.add(tf);
-							pmiList.add(pmi);
+							tfList.add(tf);
+						pmiList.add(pmi);
 						if (le > 0)
 							leList.add(le);
 						if (re > 0)
@@ -152,11 +161,11 @@ public class WordInfoInCorpus {
 		}
 
 		double getPMI(String word) {
-			if (word.matches("\\pP"))
+			if (word.matches(FastBuilder.stopwords))
 				return 10000;
 			if (word.length() > config.maxStringLength) {
-				int off = (word.length() - config.maxStringLength) /2;
-				word = word.substring(off, off+ config.maxStringLength);
+				int off = (word.length() - config.maxStringLength) / 2;
+				word = word.substring(off, off + config.maxStringLength);
 			}
 			WordInfo tmp = wordInfo.getValueForExactKey(word);
 			//

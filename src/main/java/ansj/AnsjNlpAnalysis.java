@@ -8,9 +8,9 @@ import org.ansj.splitWord.analysis.NlpAnalysis;
  */
 public class AnsjNlpAnalysis extends Ansj {
 	public AnsjNlpAnalysis() {
-		config.openAnsj();
 		parser = new NlpAnalysis();
 		parser.setIsNameRecognition(true);
 		parser.setIsNumRecognition(true);
+		parser.setIsQuantifierRecognition(false);
 	}
 }

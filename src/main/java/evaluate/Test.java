@@ -9,9 +9,7 @@ import dataProcess.WordInfoInCorpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -44,16 +42,34 @@ public class Test {
 
 	public static void test(Map<String, String> golden, Map<String, String> ans, String prefix) {
 		HashMap<String, Integer> hitCounter = new HashMap<>(), selectCounter = new HashMap<>(), totalCounter = new HashMap<>();
-		int sum = golden.size(),
-				select = ans.size();
-		int hit = 0;
-		for (String word : ans.keySet())
-			if (golden.keySet().contains(word))
-				hit++;
-		float p = (float) hit / select * 100;
-		float r = (float) hit / sum * 100;
-		float f1 = (float) 2.0 * p * r / (p + r);
-		logger.info("p {}\tr {}\tf {}  {} select {} hit {} total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
+		try {
+			PrintWriter pWriter = new PrintWriter(new FileWriter("data/info/" + prefix + ".p"));
+			PrintWriter rWriter = new PrintWriter(new FileWriter("data/info/" + prefix + ".r"));
+			int sum = golden.size(),
+					select = ans.size();
+			int hit = 0;
+			for (String word : ans.keySet())
+				if (golden.keySet().contains(word) || golden.keySet().contains(config.newWordFileter(word))) {
+					hit++;
+					pWriter.println(word + "\t" + ans.get(word) + "\tyes");
+				}
+				else
+					pWriter.println(word + "\t" + ans.get(word) + "\tno");
+			for (String word : golden.keySet())
+				if (ans.keySet().contains(word)) {
+					rWriter.println(word + "\t" + golden.get(word) + "\tyes");
+				}
+				else
+					rWriter.println(word + "\t" + golden.get(word) + "\tno");
+			float p = (float) hit / select * 100;
+			float r = (float) hit / sum * 100;
+			float f1 = (float) 2.0 * p * r / (p + r);
+			logger.info("p {}\tr {}\tf {}  {} select {} hit {} total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
+			pWriter.close();
+			rWriter.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static Map<String, String> readWordList(String inputFile) {
@@ -65,6 +81,7 @@ public class Test {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] tmp = line.split("\\t", 2);
+				//tmp[0] = config.newWordFileter(tmp[0]);
 				wordList.put(tmp[0], tmp[1]);
 			}
 		} catch (IOException e) {
@@ -106,7 +123,7 @@ public class Test {
 			wordCRF.main();
 		}
 
-		String inputFile = config.testDataInput;
+		String inputFile = config.totalDataInput;
 		String outputFile;
 
 
@@ -114,9 +131,10 @@ public class Test {
 			String answerFile = getAnswerFile(inputFile, type);
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				//if (newWordDetector != nagao) continue;
+				if (newWordDetector != wordCRF) continue;
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
-				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type), newWordDetector.getClass().getSimpleName());
+				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type),
+						newWordDetector.getClass().getSimpleName() + "." + type);
 			}
 		}
 		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

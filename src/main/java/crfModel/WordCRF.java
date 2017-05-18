@@ -27,10 +27,9 @@ public class WordCRF extends CRFModel implements Serializable {
 	public Analysis parser;
 
 	{
-		config.closeAnsj();
 		parser = new ToAnalysis();
 		parser.setIsNameRecognition(false);
-		parser.setIsNumRecognition(true);
+		parser.setIsNumRecognition(false);
 		parser.setIsQuantifierRecognition(false);
 		Ansj.segFile(parser, config.totalDataInput, "tmp/wordCRF.ansj.txt");
 	}
@@ -53,7 +52,7 @@ public class WordCRF extends CRFModel implements Serializable {
 			if (type != config.nw) continue;
 			segementCRF.train(inputFiles, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + " " + type + " " + al);
+					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + "." + type + "." + al);
 		}
 	}
 
@@ -146,7 +145,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp"));// todo
+		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));

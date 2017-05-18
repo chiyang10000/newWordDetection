@@ -57,44 +57,8 @@ public class Corpus {
 		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
 	}
 
-	/**
-	 * 将已分词文档转化为原始未分词语料和对应的新词文件
-	 * 放在data/test文件夹底下
-	 *
-	 * @param
-	 */
-	@Deprecated
-	public static String tagNW(String inputFile) {
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
-			BufferedWriter writer = new BufferedWriter(new FileWriter("data/test/" + inputFile + ".tagNW"));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
-				String[] segs = tmp.split(config.sepWordRegex);
-				for (String seg : segs) {
-					String word = config.removePos(seg);
-					word = config.newWordFileter(word);
-					String pos = config.getPos(seg);
-					if (isNewWord(word, pos)) {
-						writer.append(word + "/nw ");
-					} else {
-						writer.append(seg + " ");
-					}
-				}
-				writer.newLine();
-			}
-			writer.close();
-			//}
-		} catch (java.io.IOException e) {
-			logger.error("IO err!");
-			e.printStackTrace();
-		}
-		return "data/test/" + inputFile + ".tagNW";
-	}
-
-
 	public static HashSet<String> extractWord(String inputFile, String pattern) {
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -115,10 +79,8 @@ public class Corpus {
 										|| pattern == config.nw && isNewWord(word, pos)
 								)
 										&& !wordList.contains(word)) {
-							if (word.length() == 0)
-								System.err.println(w);
-							//System.err.println(line);
-							writer.append(word + "\t" + config.category(word) + "\t" + word.length() + "\t" + pos);
+							writer.append(
+									wordInfoInCorpus.addWordInfo(word + "\t" + config.category(word) + "\t" + word.length () + "\t" + pos));
 							wordList.add(word);
 							writer.newLine();
 						}
@@ -193,6 +155,7 @@ public class Corpus {
 		//if (pos != null)
 		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
 
+		word = config.newWordFileter(word);
 		if (word.matches(config.newWordExcludeRegex)
 				)
 			return false;
@@ -232,7 +195,6 @@ public class Corpus {
 					buffer.append(line);
 					buffer.append("\n");
 					last = curr;
-					writer.newLine();
 				}
 				//没清空的
 				article.add(buffer.toString());
@@ -299,10 +261,11 @@ public class Corpus {
 	 * @param args
 	 */
 	public static void main(String... args) throws IOException {
-		clean();
 
+
+		//clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
-		shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
+		//shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
 
 		convertToSrc(new String[]{config.testData}, config.testDataInput);
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
@@ -313,8 +276,6 @@ public class Corpus {
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
-		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
-		wordInfoInCorpus.addWordInfo(Test.getAnswerFile(config.totalDataInput, config.nw), "data/info/new.info");
 	}
 
 }

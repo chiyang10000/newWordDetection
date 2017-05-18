@@ -22,9 +22,6 @@ abstract public class CRFModel implements NewWordDetector {
 	public String model, template, trainData;
 
 	{
-		model = "data/model/" + this.getClass().getSimpleName() + ".model";
-		template = "data/crf-template/" + this.getClass().getSimpleName() + ".template";
-		trainData = "tmp/crf/" + this.getClass().getSimpleName() + ".crf";
 		if (config.isCRFsuite) {
 			crfToolWrapper = new CRFsuiteWrapper(this);
 		}
@@ -49,6 +46,9 @@ abstract public class CRFModel implements NewWordDetector {
 	}
 
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
+		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
 		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
 				".", this.getClass().getSimpleName(), ".", pattern, ".crfin");
 		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),

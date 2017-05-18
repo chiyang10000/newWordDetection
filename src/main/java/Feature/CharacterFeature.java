@@ -15,8 +15,10 @@ public class CharacterFeature {
 	static Analysis ansj;
 
 	static {
-		config.closeAnsj();
 		ansj = new ToAnalysis();
+		ansj.setIsNumRecognition(true);
+		ansj.setIsNameRecognition(false);
+		ansj.setIsQuantifierRecognition(false);
 	}
 
 	char c;
