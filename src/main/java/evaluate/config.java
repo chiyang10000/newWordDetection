@@ -53,10 +53,10 @@ public class config {
 
 
 	public static String renmingribao = "data/raw/renminribao.txt";
-	final public static String[] basicWordFiles = {renmingribao};
+	final public static String basicWordFile = renmingribao;
 	public static String news = "data/raw/news.txt";
-	public static String newWordFile = "tmp/input.txt";
-	final public static String[] newWordFiles = {newWordFile};
+	public static String newWordFile = "tmp/newword.DBC";
+	public static String corpusFile = "tmp/corpus.DBC";
 	public static String testData = "data/test/test.txt";
 	public static String trainData = "data/test/train.txt";
 	public static String totalData = "data/test/total.txt";
@@ -83,15 +83,17 @@ public class config {
 		} catch ( Exception e) {
 			System.err.println(e);
 		}
-		RunSystemCommand.run("mkdir -p tmp/crf");
-		RunSystemCommand.run("mkdir -p data/corpus");
-		RunSystemCommand.run("mkdir -p data/model");
-		RunSystemCommand.run("mkdir -p data/test/input");
-		RunSystemCommand.run("mkdir -p data/test/ans");
+		RunSystemCommand.run("mkdir tmp");
+		RunSystemCommand.run("mkdir tmp/crf");
+		RunSystemCommand.run("mkdir data");
+		RunSystemCommand.run("mkdir data/corpus");
+		RunSystemCommand.run("mkdir data/model");
+		RunSystemCommand.run("mkdir data/test");
+		RunSystemCommand.run("mkdir data/test/input");
+		RunSystemCommand.run("mkdir data/test/ans");
 	}
 
-	static public String corpusInput = "data/raw/news.txt";
-	static public String basicWordListFile = "data/corpus/basicWordList.txt";
+	static public final String basicWordListFile = "data/corpus/basicWordList.txt";
 
 	public static String removePos(String in) {
 		return in.replaceAll("/[^/]*$", "");

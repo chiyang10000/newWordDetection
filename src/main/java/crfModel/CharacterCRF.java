@@ -1,6 +1,7 @@
 package crfModel;
 
-import Feature.*;
+import Feature.CharacterFeature;
+import Feature.FieldAppender;
 import dataProcess.Corpus;
 import evaluate.Test;
 import evaluate.config;
@@ -8,7 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 新词发现当成分词问题做
@@ -20,7 +23,7 @@ public class CharacterCRF extends CRFModel {
 
 	public static void main(String... args) {
 		String al = "";
-		if (args.length >0 ) {
+		if (args.length > 0) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
 			al = args[0];
@@ -29,7 +32,7 @@ public class CharacterCRF extends CRFModel {
 		CharacterCRF characterCRF = new CharacterCRF();
 
 		for (String type : config.supportedType) {
-			//if (type != config.ns) continue;
+			if (type != config.ns) continue;
 			characterCRF.train(corpus, type);
 			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
 					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
@@ -146,69 +149,6 @@ public class CharacterCRF extends CRFModel {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public Map<String, String> convertTestOuput2Res(String inputFile, String newWordFile, String pattern) {
-		HashMap<String, String> newWordList = new HashMap<>();
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			PrintWriter writer = new PrintWriter(new FileWriter(newWordFile));
-			String line;
-
-			if (pattern == config.nw) {
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0)
-						continue;
-					StringBuilder wordBuffer = new StringBuilder();
-					FieldAppender fieldAppender = new FieldAppender(line);
-					wordBuffer.append(line.split("\t", 2)[0]);
-					if (line.charAt(line.length() - 1) == label_begin) {
-						do {
-							line = reader.readLine();
-							fieldAppender = new FieldAppender(line);
-							wordBuffer.append(line.split("\t", 2)[0]);
-						} while (line.length() > 0 && line.charAt(line.length() - 1) != label_end);
-					}
-
-					String word = wordBuffer.toString();// 这是一个词
-					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
-						newWordList.put(word, fieldAppender.toString());
-						writer.println(word +"\t" + fieldAppender);
-					}
-				}
-			} // nw
-
-			if (pattern == config.nr || pattern == config.ns) {
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0)
-						continue;
-					StringBuilder wordBuffer = new StringBuilder();
-					FieldAppender fieldAppender = new FieldAppender(line);
-					wordBuffer.append(line.split("\t", 2)[0]);
-					char label_head = line.charAt(line.length() - 1);
-					if (line.charAt(line.length() - 1) == label_begin) {
-						do {
-							line = reader.readLine();
-							fieldAppender = new FieldAppender(line);
-							wordBuffer.append(line.split("\t", 2)[0]);
-						} while (line.length() > 0 && line.charAt(line.length() - 1) != label_end);
-					}
-
-					String word = wordBuffer.toString();
-					if (label_head == label_begin || label_head == label_single) //单字名称 和 多字名称
-						if (!newWordList.keySet().contains(word)) {
-							newWordList.put(word, fieldAppender.toString());
-							writer.println(word +"\t" + fieldAppender);
-						}
-				}
-			} // nr
-
-			writer.close();
-		} catch (IOException e) {
-			logger.error("err!");
-			e.printStackTrace();
-		}
-		return newWordList;
 	}
 
 	private class Feature {

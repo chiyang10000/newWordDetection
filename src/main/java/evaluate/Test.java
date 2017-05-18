@@ -24,7 +24,6 @@ public class Test {
 	static {
 		logger.info("---------****----------\n");
 		logger.info("shuffle is {}", config.isShuffle);
-		logger.info("corpus is {}", config.corpusInput);
 		logger.info("word filter is {} ", config.isNewWordFilter);
 		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
 	}

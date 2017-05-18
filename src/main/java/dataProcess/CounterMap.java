@@ -1,5 +1,8 @@
 package dataProcess;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.Serializable;
@@ -8,12 +11,13 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CounterMap implements Serializable {
-
+	static private final Logger logger = LoggerFactory.getLogger(CounterMap.class);
 	private static final long serialVersionUID = -3903452740943758085L;
 
 	private Map<String, MutableInteger> count = new ConcurrentHashMap<>();
 
 	public void output(String outputFile){
+		logger.debug("outputing CouterMap to {}", outputFile);
 		try {
 			Map<String, MutableInteger> map = SortByValue.sortByValue(count);
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -23,7 +27,7 @@ public class CounterMap implements Serializable {
 			}
 			writer.close();
 		}catch (Exception e){
-
+			e.printStackTrace();
 		}
 	}
 

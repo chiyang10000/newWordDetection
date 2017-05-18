@@ -22,21 +22,22 @@ public class Corpus {
 
 	static {
 		if (!new File(config.basicWordListFile).exists()) {
-			logger.info("Scanning word from file ...");
-			for (String basicWordFile : config.basicWordFiles) {
+			logger.info("Scanning word list from {}...", config.basicWordFile);
 				try {
-					BufferedReader reader = new BufferedReader(new FileReader(basicWordFile));
+					BufferedReader reader = new BufferedReader(new FileReader(config.basicWordFile));
 					String tmp;
 					while ((tmp = reader.readLine()) != null) {
 						String[] segs = tmp.split(config.sepWordRegex);
-						for (String word : segs)
-							basicWordListCounter.incr(config.removePos(word));
+						for (String word : segs) {
+							word = config.removePos(word);
+							if (!word.matches(config.newWordExcludeRegex))
+							basicWordListCounter.incr(word);
+						}
 					}
 				} catch (java.io.IOException e) {
 					e.printStackTrace();
-					logger.error("Reading {} err!", basicWordFile);
+					logger.error("Reading word list from {} err!", config.basicWordFile);
 				}
-			}
 			basicWordList = basicWordListCounter.countAll().keySet();
 			for (String word : basicWordList) {
 				for (int i = 0; i < word.length(); i++) {
@@ -47,14 +48,15 @@ public class Corpus {
 			logger.info("Basic character list size: {}", basicCharacterList.size());
 			basicWordListCounter.output(config.basicWordListFile);
 		} else {
-				logger.info("Reading word from file ...");
-				basicWordList = Test.readWordList(config.basicWordListFile).keySet();
+			logger.info("Reading word lits from {} ...", config.basicWordListFile);
+			basicWordList = Test.readWordList(config.basicWordListFile).keySet();
+			logger.info("Basic word list size: {}", basicWordList.size());
 		}
 	}
 
 	static void clean() {
-		RunSystemCommand.run("rm data/corpus/*.words*");
-		RunSystemCommand.run("find data/test -type f | grep -v gitignore | xargs rm");
+		RunSystemCommand.run("rm data/corpus/*.words");
+		RunSystemCommand.run("find data/test -type f | xargs rm");
 	}
 
 	public static HashSet<String> extractWord(String inputFile, String pattern) {
@@ -75,12 +77,14 @@ public class Corpus {
 					try {
 						//System.err.println(line);
 						if (
-								(pattern != config.nw && pos.equals(pattern) && !word.matches(config.newWordExcludeRegex)
+								(pattern != config.nw && pos.equals(pattern) && !word.matches(config
+										.newWordExcludeRegex)
 										|| pattern == config.nw && isNewWord(word, pos)
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
-									wordInfoInCorpus.addWordInfo(word + "\t" + config.category(word) + "\t" + word.length () + "\t" + pos));
+									wordInfoInCorpus.addWordInfo(word + "\t" + config.category(word) + "\t" + word
+											.length() + "\t" + pos));
 							wordList.add(word);
 							writer.newLine();
 						}
@@ -149,7 +153,7 @@ public class Corpus {
 	}
 
 	public static boolean isNewWord(String word, String pos) {
-		if (word.length() <=1)
+		if (word.length() <= 1)
 			return false;
 		//标点符号，含字母和数字的不算
 		//if (pos != null)
@@ -167,19 +171,19 @@ public class Corpus {
 	/**
 	 * 以行为单位打乱
 	 *
-	 * @param inputFiles
+	 * @param inputFile
 	 * @param trainFile
 	 * @param testFile
 	 */
-	public static void shuffleAndSplit(String[] inputFiles, String trainFile, String testFile, String totalFile) {
+	public static void shuffleAndSplit(String inputFile, String trainFile, String testFile, String totalFile) {
 		try {
 			boolean last = false, curr;
 			int totalSize = 0;
 			int currentSize = 0;
 			List<String> article = new ArrayList<>();
 			BufferedWriter writer = new BufferedWriter(new FileWriter(totalFile));
-			for (String inputfile : inputFiles) {
-				BufferedReader reader = new BufferedReader(new FileReader(inputfile));
+
+				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				String line;
 				StringBuilder buffer = new StringBuilder();
 				while ((line = reader.readLine()) != null) {
@@ -199,7 +203,6 @@ public class Corpus {
 				//没清空的
 				article.add(buffer.toString());
 				writer.append(buffer.toString());
-			}
 			writer.close();
 			if (config.isShuffle) {
 				logger.info("article size {}", article.size());
@@ -263,9 +266,9 @@ public class Corpus {
 	public static void main(String... args) throws IOException {
 
 
-		//clean();
+		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
-		//shuffleAndSplit(config.newWordFiles, config.trainData, config.testData, config.totalData);
+		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 
 		convertToSrc(new String[]{config.testData}, config.testDataInput);
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);

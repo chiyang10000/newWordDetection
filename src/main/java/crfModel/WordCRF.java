@@ -16,6 +16,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by don on 27/04/2017.
@@ -43,16 +44,13 @@ public class WordCRF extends CRFModel implements Serializable {
 		}
 		Test.clean();
 		WordCRF tmp = new WordCRF();
-		tmp.calcMostRecallInAnsj(config.testData, config.nw);
-		tmp.calcMostRecallInAnsj(config.testData, config.nr);
-		tmp.calcMostRecallInAnsj(config.testData, config.ns);
-		String[] inputFiles = {config.trainData};
-		WordCRF segementCRF = new WordCRF();
+		WordCRF wordCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;
 			if (type != config.nw) continue;
-			segementCRF.train(inputFiles, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), segementCRF.detectNewWord(config.testDataInput,
-					"tmp/tmp." + type, type), segementCRF.getClass().getSimpleName() + "." + type + "." + al);
+			//wordCRF.train(new String[]{config.trainData}, type);
+			tmp.calcMostRecallInAnsj(config.testData, type);
+			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config.testDataInput,
+					"tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
 		}
 	}
 
@@ -309,72 +307,6 @@ public class WordCRF extends CRFModel implements Serializable {
 			logger.error("count word using ansj error");
 			e.printStackTrace();
 		}
-	}
-
-	@Override
-	public HashMap<String, String> convertTestOuput2Res(String crfppOutput, String resFile, String pattern) {
-		HashMap<String, String> newWordList = new HashMap<>();
-		try (
-				BufferedReader reader = new BufferedReader(new FileReader(crfppOutput));
-				PrintWriter writerNewWord = new PrintWriter(new FileWriter(resFile));
-		) {
-			String line, posOfFirstWord, wordPiece, posOfLastWord, posSeq, wordSeq;
-			char labelOfFirstWord = 0;
-
-			while ((line = reader.readLine()) != null) {
-				if (line.length() == 0)// 跳过空行
-					continue;
-
-				StringBuilder wordBuffer = new StringBuilder();
-				FieldAppender wordInfo = new FieldAppender(line);
-
-				wordPiece = getWord(line); //第一个词
-				labelOfFirstWord = getLabel(line);
-				posSeq = line.split("\t", 4)[2];
-				wordSeq = wordPiece;
-
-				wordBuffer.append(wordPiece);
-
-				if (getLabel(line) == label_begin) {
-					do {
-						line = reader.readLine();
-						if (line.length() == 0) break;
-						wordPiece = getWord(line);
-						posSeq += "+" + line.split("\t", 4)[2];
-						wordSeq += " " + wordPiece;
-						wordBuffer.append(wordPiece);
-						wordInfo.append(line);
-					} while (getLabel(line) != label_end);
-				}
-				String word = wordBuffer.toString();
-
-
-				//List<Term> check = checker.parseStr(word).getTerms();
-				if (pattern == config.nw) {
-					if (Corpus.isNewWord(word, posSeq) && !newWordList.keySet().contains(word)
-							&& !(posSeq.matches("(m\\+q)|(m)")) // todo 不能以数量词开头
-							) {
-						//忽略量词
-						newWordList.put(word, wordInfo.toString());
-						writerNewWord.println(word + "\t" + wordInfo);
-					}
-				} // nw
-
-				if (pattern == config.nr || pattern == config.ns) {
-					if (labelOfFirstWord == label_single || labelOfFirstWord == label_begin)
-						if (!newWordList.keySet().contains(word)) {
-							newWordList.put(word,wordInfo.toString());
-							writerNewWord.println(word + "\t" + wordInfo);
-						}
-				} // nr ns
-			}
-
-			writerNewWord.close();
-		} catch (IOException e) {
-			logger.error("err!");
-			e.printStackTrace();
-		}
-		return newWordList;
 	}
 
 	class WordFeature {

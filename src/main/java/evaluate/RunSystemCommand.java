@@ -37,7 +37,7 @@ public class RunSystemCommand {
 			in = pro.getErrorStream();
 			read = new BufferedReader(new InputStreamReader(err));
 			while ((line = read.readLine()) != null) {
-				System.err.println(line);
+				logger.trace(line);
 			}
 			in.close();
 			logger.trace("---------------------------------------------------------------------");
