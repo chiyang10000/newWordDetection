@@ -26,12 +26,14 @@ public class Test {
 		logger.info("word filter is {} ", config.isNewWordFilter);
 		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
 		logger.info("compare test and train");
+		/*
 		for (Ner type : Ner.supported) {
 			test(
 					readWordList(config.getAnswerFile(config.trainDataInput, type)),
 					readWordList(config.getAnswerFile(config.testDataInput, type)),
 					type.pattern);
 		}
+		*/
 	}
 
 	/**

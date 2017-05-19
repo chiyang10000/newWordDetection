@@ -17,6 +17,7 @@ public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
 	public Set<String> wordList;
 	public HashSet<Character> characterList = new HashSet<>();
+	public int charCount = 0;
 
 	public Corpus(String inputFile){
 		wordList = countSeg(inputFile);
@@ -46,15 +47,17 @@ public class Corpus {
 			for (String word : wordList) {
 				for (int i = 0; i < word.length(); i++) {
 					characterList.add(word.charAt(i));
+					charCount++;
 				}
 			}
-			logger.info("Basic word list size: {}", wordList.size());
+			logger.info("[{}] word list size: {}", inputFile, wordList.size());
 			logger.info("Basic character list size: {}", characterList.size());
+			logger.info("character count : {}", charCount);
 			wordCounter.output(config.getWordListFile(inputFile));
 		} else {
 			logger.info("Reading word lits from {} ...", config.getWordListFile(inputFile));
 			wordList = Test.readWordList(config.getWordListFile(inputFile)).keySet();
-			logger.info("Basic word list size: {}", wordList.size());
+			logger.info("[{}] word list size: {}", inputFile, wordList.size());
 		}
 		return wordList;
 	}
