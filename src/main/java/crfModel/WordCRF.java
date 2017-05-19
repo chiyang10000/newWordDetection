@@ -1,6 +1,5 @@
 package crfModel;
 
-import Feature.*;
 import ansj.Ansj;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
@@ -9,15 +8,12 @@ import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
-import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by don on 27/04/2017.
@@ -30,7 +26,7 @@ public class WordCRF extends CRFModel implements Serializable {
 
 	{
 		parser = new ToAnalysis();
-		parser.setIsNameRecognition(true);
+		parser.setIsNameRecognition(false);
 		parser.setIsNumRecognition(false);
 		parser.setIsQuantifierRecognition(false);
 		Ansj.segFile(parser, config.totalDataInput, "tmp/wordCRF.ansj.txt");
@@ -47,14 +43,15 @@ public class WordCRF extends CRFModel implements Serializable {
 		WordCRF wordCRF = new WordCRF();
 		for (String type : config.supportedType) {//;= config.ns;
 			//wordCRF.calcMostRecallInAnsj(config.testData, type);
-			//if (type != config.nr) continue;
-			wordCRF.train(new String[]{config.trainData}, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
+			if (type != config.nw) continue;
+			//wordCRF.train(new String[]{config.totalData}, type);
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config
+					.testDataInput, "tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
 		}
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		if (true) return;
+		//if (true) return;
 		if (gs.matches(config.newWordExcludeRegex) || gs.matches(".*\\p{IsDigit}.*"))
 			return;
 		if (wrong.contains(gs))

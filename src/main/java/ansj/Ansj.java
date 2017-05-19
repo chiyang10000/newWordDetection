@@ -23,7 +23,7 @@ public class Ansj implements NewWordDetector {
 		//segFileForWord2Vec(config.totalDataInput, "CRFPPWrapper/char.txt", "CRFPPWrapper/word.txt");
 		Ansj ansj = new AnsjToAnalysis();
 		for (String type: config.supportedType)
-		Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
+		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
 				"CRFPPWrapper/CRFPPWrapper." + type, type), ansj.getClass().getSimpleName() + "." + type);
 	}
 
@@ -78,7 +78,7 @@ public class Ansj implements NewWordDetector {
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (pattern == config.nw) {
-						if ((Corpus.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
+						if ((config.renmingribaoWord.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
 								) {
 							newWordList.put(word, pos);
 							writer.append(word + "\t" + pos);
@@ -86,7 +86,7 @@ public class Ansj implements NewWordDetector {
 						}
 					}// nw
 					if (pattern == config.nr || pattern == config.ns) {
-						if (pos.equals(pattern) && !newWordList.keySet().contains(word)) {
+						if (pos.contains(pattern) && !newWordList.keySet().contains(word)) {
 							newWordList.put(word, "nothing");
 							writer.append(word);
 							writer.newLine();

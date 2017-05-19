@@ -1,17 +1,13 @@
 package crfModel;
 
 import Feature.CharacterFeature;
-import Feature.FieldAppender;
-import dataProcess.Corpus;
 import evaluate.Test;
 import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 新词发现当成分词问题做
@@ -24,7 +20,7 @@ public class CharacterCRF extends CRFModel {
 	public static void main(String... args) {
 		String al = "";
 		if (args.length > 0) {
-			config.isCRFsuite = true;
+			config.isCRFsuite = false;
 			config.algorithm = args[0];
 			al = args[0];
 		}
@@ -32,9 +28,9 @@ public class CharacterCRF extends CRFModel {
 		CharacterCRF characterCRF = new CharacterCRF();
 
 		for (String type : config.supportedType) {
-			//if (type != config.nr) continue;
+			if (type != config.nr) continue;
 			characterCRF.train(corpus, type);
-			Test.test(Test.readWordList(Test.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
 					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
 					+ "." + type + " " + al);
 		}
@@ -95,7 +91,7 @@ public class CharacterCRF extends CRFModel {
 								if (pos.equals(pattern)) {
 									writer.println(String.format("%s\t%s", features.get(index++), label_begin));
 									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", features.get(index++), label_meddle));
+										writer.println(String.format("%s\t%s", features.get(index++), label_end));
 									}
 									writer.println(String.format("%s\t%s", features.get(index++), label_end));
 								} else {

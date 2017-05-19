@@ -4,7 +4,6 @@ import Feature.FieldAppender;
 import crfModel.Tool.CRFPPWrapper;
 import crfModel.Tool.CRFsuiteWrapper;
 import crfModel.Tool.CrfToolInterface;
-import dataProcess.Corpus;
 import evaluate.NewWordDetector;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -28,8 +27,7 @@ abstract public class CRFModel implements NewWordDetector {
 	{
 		if (config.isCRFsuite) {
 			crfToolWrapper = new CRFsuiteWrapper(this);
-		}
-		else
+		} else
 			crfToolWrapper = new CRFPPWrapper(this);
 	}
 
@@ -42,30 +40,43 @@ abstract public class CRFModel implements NewWordDetector {
 	}
 
 	public static Map<String, String> convertTestOuput2Res(String inputFile, String newWordFile, String pattern) {
+		logger.debug("converting label to ans file {}", newWordFile);
 		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			PrintWriter writer = new PrintWriter(new FileWriter(newWordFile));
-			String line;
+			String line = reader.readLine();
 
-			while ((line = reader.readLine()) != null) {
-				if (line.length() == 0)
+			while (true) {
+				if (line == null) break;
+				if (line.length() == 0) {
+					line = reader.readLine();
 					continue;
+				}
 				StringBuilder wordBuffer = new StringBuilder();
-				FieldAppender fieldAppender = new FieldAppender(line);
-				wordBuffer.append(line.split("\t", 2)[0]);
-				char label_head = line.charAt(line.length() - 1);
-				if (line.charAt(line.length() - 1) == label_begin) {
-					do {
+				FieldAppender fieldAppender = null;
+				char label_head = getLabel(line);
+				if (getLabel(line) == label_begin) {
+					while (getLabel(line) != label_other && getLabel(line) != label_single) {
+						if (fieldAppender == null)
+							fieldAppender = new FieldAppender(line);
+						else
+							fieldAppender.append(line);
+						wordBuffer.append(getWord(line));
 						line = reader.readLine();
-						fieldAppender.append(line);
-						wordBuffer.append(line.split("\t", 2)[0]);
-					} while (line.length() > 0 && line.charAt(line.length() - 1) != label_end);
+						if (line.length() <= 0) break;
+						if (getLabel(line) == label_begin) break;
+					}
+				}
+				else {
+					fieldAppender = new FieldAppender(line);
+					wordBuffer.append(getWord(line));
+					line = reader.readLine();
 				}
 
 				String word = wordBuffer.toString();// 这是一个词
 				if (pattern == config.nw) {
-					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
+					if (config.renmingribaoWord.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
 						newWordList.put(word, fieldAppender.toString());
 						writer.println(word + "\t" + fieldAppender);
 					}

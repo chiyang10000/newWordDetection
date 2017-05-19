@@ -5,7 +5,6 @@ import ansj.AnsjNlpAnalysis;
 import ansj.AnsjToAnalysis;
 import crfModel.CharacterCRF;
 import crfModel.WordCRF;
-import dataProcess.WordInfoInCorpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,10 +32,6 @@ public class Test {
 	 */
 	public static void testOnSeg(String inputFile) {
 		// todo
-	}
-
-	public static String getAnswerFile(String inputFile, String pattern) {
-		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
 	}
 
 	public static void test(Map<String, String> golden, Map<String, String> ans, String prefix) {
@@ -100,8 +95,8 @@ public class Test {
 		for (String type : config.supportedType) {
 			logger.info("compare test and train in {}", type);
 			test(
-					readWordList(getAnswerFile(config.trainDataInput, type)),
-					readWordList(getAnswerFile(config.testDataInput, type)),
+					readWordList(config.getAnswerFile(config.trainDataInput, type)),
+					readWordList(config.getAnswerFile(config.testDataInput, type)),
 					type);
 		}
 
@@ -127,7 +122,7 @@ public class Test {
 
 
 		for (String type : new String[]{config.nw, config.nr, config.ns}) {
-			String answerFile = getAnswerFile(inputFile, type);
+			String answerFile = config.getAnswerFile(inputFile, type);
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));

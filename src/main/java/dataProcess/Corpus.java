@@ -3,8 +3,6 @@ package dataProcess;
 import evaluate.RunSystemCommand;
 import evaluate.Test;
 import evaluate.config;
-import org.ansj.domain.Term;
-import org.ansj.splitWord.analysis.ToAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,42 +14,48 @@ import java.util.*;
  */
 public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
-	public static Set<String> basicWordList = new HashSet<>();
-	public static CounterMap basicWordListCounter = new CounterMap();
-	public static HashSet<Character> basicCharacterList = new HashSet<>();
+	public Set<String> wordList;
+	public HashSet<Character> characterList = new HashSet<>();
 
-	static {
-		if (!new File(config.basicWordListFile).exists()) {
-			logger.info("Scanning word list from {}...", config.basicWordFile);
+	public Corpus(String inputFile){
+		wordList = countSeg(inputFile);
+	}
+
+	Set<String> countSeg(String inputFile) {
+		Set<String> wordList;
+		CounterMap wordCounter = new CounterMap();
+				if (!new File(config.getWordListFile(inputFile)).exists()) {
+			logger.info("Scanning word list from {}...", inputFile);
 				try {
-					BufferedReader reader = new BufferedReader(new FileReader(config.basicWordFile));
+					BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 					String tmp;
 					while ((tmp = reader.readLine()) != null) {
 						String[] segs = tmp.split(config.sepWordRegex);
 						for (String word : segs) {
-							word = config.removePos(word);
+							word = config.removePos(word).replaceAll("\\[", "");
 							if (!word.matches(config.newWordExcludeRegex))
-							basicWordListCounter.incr(word);
+							wordCounter.incr(word);
 						}
 					}
 				} catch (java.io.IOException e) {
 					e.printStackTrace();
-					logger.error("Reading word list from {} err!", config.basicWordFile);
+					logger.error("Reading word list from {} err!", inputFile);
 				}
-			basicWordList = basicWordListCounter.countAll().keySet();
-			for (String word : basicWordList) {
+			wordList = wordCounter.countAll().keySet();
+			for (String word : wordList) {
 				for (int i = 0; i < word.length(); i++) {
-					basicCharacterList.add(word.charAt(i));
+					characterList.add(word.charAt(i));
 				}
 			}
-			logger.info("Basic word list size: {}", basicWordList.size());
-			logger.info("Basic character list size: {}", basicCharacterList.size());
-			basicWordListCounter.output(config.basicWordListFile);
+			logger.info("Basic word list size: {}", wordList.size());
+			logger.info("Basic character list size: {}", characterList.size());
+			wordCounter.output(config.getWordListFile(inputFile));
 		} else {
-			logger.info("Reading word lits from {} ...", config.basicWordListFile);
-			basicWordList = Test.readWordList(config.basicWordListFile).keySet();
-			logger.info("Basic word list size: {}", basicWordList.size());
+			logger.info("Reading word lits from {} ...", config.getWordListFile(inputFile));
+			wordList = Test.readWordList(config.getWordListFile(inputFile)).keySet();
+			logger.info("Basic word list size: {}", wordList.size());
 		}
+		return wordList;
 	}
 
 	static void clean() {
@@ -66,7 +70,7 @@ public class Corpus {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
 			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(Test.getAnswerFile(inputFile + ".src",
+			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile + ".src",
 					pattern)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
@@ -79,7 +83,7 @@ public class Corpus {
 						if (
 								(pattern != config.nw && pos.equals(pattern) && !word.matches(config
 										.newWordExcludeRegex)
-										|| pattern == config.nw && isNewWord(word, pos)
+										|| pattern == config.nw && config.renmingribaoWord.isNewWord(word, pos)
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
@@ -101,58 +105,7 @@ public class Corpus {
 		return wordList;
 	}
 
-	/**
-	 * 找出分词器没用正确分出来的词的数量
-	 *
-	 * @param inputFile
-	 * @return
-	 */
-	@Deprecated
-	public static HashSet<String> extractNewWordNotInSegmentation(String inputFile) {
-		HashSet<String> newWordList = new HashSet<>();
-		HashSet<String> goldenWordList = new HashSet<>();
-		HashSet<String> segWordList = new HashSet<>();
-
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
-			BufferedWriter srcWriter = new BufferedWriter(new FileWriter("data/test/" + inputFile + ".src")),
-					ansWriter = new BufferedWriter(new FileWriter("data/test/" + inputFile + ".seg.ans"));
-			String tmp;
-			while ((tmp = reader.readLine()) != null) {
-				String[] segs = tmp.split(config.sepWordRegex);
-				for (String seg : segs) {
-					String word = (config.removePos(seg));
-					goldenWordList.add(word);
-					srcWriter.append(word);
-				}
-				for (Term term : new ToAnalysis().parseStr(tmp.replaceAll("/([^ ]*|$)", "").replaceAll(" ", ""))) {
-					segWordList.add(term.getRealName());
-				}
-				srcWriter.newLine();
-			}
-			for (String word : goldenWordList)
-				if (!segWordList.contains(word))
-					if (isNewWord(word, null))
-						newWordList.add(word);
-			logger.info("{} new words in {}, not in segmentation", newWordList.size(), inputFile);
-			for (String word : newWordList) {
-				if (word.matches(config.newWordExcludeRegex))
-					continue;
-				ansWriter.append(word);
-				ansWriter.newLine();
-			}
-			ansWriter.close();
-			srcWriter.close();
-		} catch (java.io.IOException e) {
-			logger.error("IO err!");
-			e.printStackTrace();
-		}
-
-		return newWordList;
-	}
-
-	public static boolean isNewWord(String word, String pos) {
+	public boolean isNewWord(String word, String pos) {
 		if (word.length() <= 1)
 			return false;
 		//标点符号，含字母和数字的不算
@@ -163,7 +116,7 @@ public class Corpus {
 		if (word.matches(config.newWordExcludeRegex)
 				)
 			return false;
-		if (!basicWordList.contains(word))
+		if (!wordList.contains(word))
 			return true;
 		return false;
 	}
