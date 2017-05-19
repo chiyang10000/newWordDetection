@@ -5,7 +5,7 @@ package evaluate;
  */
 public class Ner {
 	public static Ner[] supported;
-	final public static Ner nw = new Ner("W", "nw", "nw");
+	final public static Ner nw = new Ner("", "nw", "nw");
 	final public static Ner nr = new Ner("P", "nr", "ner");
 	final public static Ner ns = new Ner("L", "ns", "ner");
 	final public static Ner nt = new Ner("O", "nt", "ner");

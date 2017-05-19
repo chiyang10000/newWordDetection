@@ -131,9 +131,8 @@ public class Corpus {
 		try {
 			boolean last = false, curr;
 			int totalSize = 0;
-			int currentSize = 0;
 			List<String> article = new ArrayList<>();
-			BufferedWriter writer = new BufferedWriter(new FileWriter(totalFile));
+			BufferedWriter writerTotal = new BufferedWriter(new FileWriter(totalFile));
 
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				String line;
@@ -143,9 +142,9 @@ public class Corpus {
 					curr = line.substring(line.length() - 3).replaceAll("/.*", "").matches(".*[稿\\pP&&[^】]]");
 					if (last && !curr) {
 						article.add(buffer.toString());
-						writer.append(buffer.toString());
+						writerTotal.append(buffer.toString());
 						totalSize += buffer.length();
-						writer.newLine();
+						writerTotal.newLine();
 						buffer = new StringBuilder();
 					}
 					buffer.append(line);
@@ -154,27 +153,39 @@ public class Corpus {
 				}
 				//没清空的
 				article.add(buffer.toString());
-				writer.append(buffer.toString());
-			writer.close();
+				writerTotal.append(buffer.toString());
+			writerTotal.close();
+
 			if (config.isShuffle) {
 				logger.info("article size {}", article.size());
 				Collections.shuffle(article); // todo no shuffle
 				RunSystemCommand.run("rm data/model/*.model");
 			}
-			writer = new BufferedWriter(new FileWriter(testFile));
-			int i;
-			for (i = 0; currentSize < totalSize / config.testSize; i++) {
-				writer.append(article.get(i));
+			Random random = new Random();
+			int s = random.nextInt(totalSize - totalSize / config.testSize);//截取的起始位置
+			int i = 0;
+			int currentSize = 0;
+			BufferedWriter writerTrain = new BufferedWriter(new FileWriter(trainFile));
+			for (; currentSize < s; i++) {
 				currentSize += article.get(i).length();
-				writer.newLine();
+				writerTrain.append(article.get(i));
+				writerTrain.newLine();
 			}
-			writer.close();
-			writer = new BufferedWriter(new FileWriter(trainFile));
+
+			BufferedWriter writerTest = new BufferedWriter(new FileWriter(testFile));
+			currentSize = 0;
+			for (; currentSize < totalSize / config.testSize; i++) {
+				writerTest.append(article.get(i));
+				currentSize += article.get(i).length();
+				writerTest.newLine();
+			}
+			writerTest.close();//测试文件
+
 			for (; i < article.size(); i++) {
-				writer.append(article.get(i));
-				writer.newLine();
+				writerTrain.append(article.get(i));
+				writerTrain.newLine();
 			}
-			writer.close();
+			writerTrain.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

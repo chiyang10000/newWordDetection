@@ -86,7 +86,6 @@ abstract public class CRFModel implements NewWordDetector {
 				if (ner != Ner.nw) {
 					if (label_head.equals(ner.label + label_begin) || label_head.equals(ner.label + label_single)) //单字名称 和 多字名称
 						if (!newWordList.keySet().contains(word)) {
-						System.err.println(word + "\t" + fieldAppender);
 							newWordList.put(word, fieldAppender.toString());
 							writer.println(word + "\t" + fieldAppender);
 						}

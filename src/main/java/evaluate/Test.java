@@ -25,6 +25,13 @@ public class Test {
 		logger.info("shuffle is {}", config.isShuffle);
 		logger.info("word filter is {} ", config.isNewWordFilter);
 		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
+		logger.info("compare test and train");
+		for (Ner type : Ner.supported) {
+			test(
+					readWordList(config.getAnswerFile(config.trainDataInput, type)),
+					readWordList(config.getAnswerFile(config.testDataInput, type)),
+					type.pattern);
+		}
 	}
 
 	/**
@@ -92,13 +99,6 @@ public class Test {
 	public static void main(String... args) {
 		clean();
 
-		for (Ner type : Ner.supported) {
-			logger.info("compare test and train in {}", type);
-			test(
-					readWordList(config.getAnswerFile(config.trainDataInput, type)),
-					readWordList(config.getAnswerFile(config.testDataInput, type)),
-					type.pattern);
-		}
 
 		WordCRF wordCRF = new WordCRF();
 		CharacterCRF characterCRF = new CharacterCRF();

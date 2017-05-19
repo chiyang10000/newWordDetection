@@ -29,7 +29,7 @@ public class CharacterCRF extends CRFModel {
 		CharacterCRF characterCRF = new CharacterCRF();
 
 		for (Ner ner : Ner.supported) {
-			if (ner == Ner.nw) continue;
+			if (ner != Ner.nw) continue;
 			characterCRF.train(corpus, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner, ner),

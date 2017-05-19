@@ -22,10 +22,14 @@ public class Ansj implements NewWordDetector {
 
 	public static void main(String... args) throws IOException {
 		//segFileForWord2Vec(config.totalDataInput, "CRFPPWrapper/char.txt", "CRFPPWrapper/word.txt");
-		Ansj ansj = new AnsjToAnalysis();
-		for (Ner type: Ner.supported)
-		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
-				"CRFPPWrapper/CRFPPWrapper." + type, type), ansj.getClass().getSimpleName() + "." + type);
+		Ansj ansj1 = new AnsjToAnalysis();
+		Ansj ansj2 = new AnsjNlpAnalysis();
+		for (Ner type: Ner.supported) {
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), ansj1.detectNewWord(config.testDataInput,
+					"tmp/ansjTo." + type.pattern, type), ansj1.getClass().getSimpleName() + "." + type.pattern);
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), ansj2.detectNewWord(config.testDataInput,
+					"tmp/ansjNlp." + type.pattern, type), ansj2.getClass().getSimpleName() + "." + type.pattern);
+		}
 	}
 
 	static public void segFile(Analysis parser, String input, String output) {

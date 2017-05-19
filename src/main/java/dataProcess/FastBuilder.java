@@ -8,6 +8,7 @@ import com.google.common.io.Files;
 import com.googlecode.concurrenttrees.radix.ConcurrentRadixTree;
 import com.googlecode.concurrenttrees.radix.RadixTree;
 import com.googlecode.concurrenttrees.radix.node.concrete.DefaultCharArrayNodeFactory;
+import evaluate.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,8 +25,8 @@ public class FastBuilder {
 
 	private static final Logger LOG = LoggerFactory.getLogger(FastBuilder.class);
 
-	//public final static String stopwords = "的很了么呢是嘛个都也比还这于不与才上用就好在和对挺去后没说";
 	public final static String stopwords = "[【】［］“”（）《》，、｜。？！：；]";
+	//public final static String stopwords = config.punctExcludeRegx;
 
 	
 	/**

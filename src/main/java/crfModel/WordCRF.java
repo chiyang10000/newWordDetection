@@ -45,15 +45,15 @@ public class WordCRF extends CRFModel implements Serializable {
 		for (Ner type : Ner.supported) {//;= config.ns;
 			//wordCRF.calcMostRecallInAnsj(config.testData, type);
 			if (type != Ner.nw) continue;
-			//wordCRF.train(new String[]{config.totalData}, type);
+			wordCRF.train(new String[]{config.trainData}, type);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config
-					.testDataInput, "tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
+					.testDataInput, "tmp/tmp." + type.pattern, type), wordCRF.getClass().getSimpleName() + "." + type.pattern + "." + al);
 		}
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		//if (true) return;
-		if (gs.matches(config.newWordExcludeRegex) || gs.matches(".*\\p{IsDigit}.*"))
+		if (true) return;
+		if (gs.matches(config.newWordExcludeRegex))
 			return;
 		if (wrong.contains(gs))
 			return;

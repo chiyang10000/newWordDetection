@@ -20,16 +20,6 @@ import java.util.Properties;
 public class config {
 	final public static String sepSentenceRegex = "[，。？！：]";// 这样搞了之后就断不开了
 	final public static String sepWordRegex = " +";
-	//final public static String newWordExcludeRegex = "(.*[\\p{IsDigit}\\p{Lower}\\p{Upper}-[?]]+.*)" + "|" + ".*" +
-	// sepSentenceRegex + ".*";
-	final public static String alphaNumExcludeRegx = "(第?[．％∶＋／×－·～\\p{IsDigit}亿万千百兆\\p{IsLatin}\\p{IsCyrillic}]+" +
-			"((年[前初底末]?)|(月[中初末底]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?" +
-			"[型]?)";
-	final public static String punctExcludeRegx = "(.*[　°～｜■＋±\\pP&&[^·－／]]+.*)";
-	final public static String newWordExcludeRegex = String.join("|", punctExcludeRegx, alphaNumExcludeRegx);
-	//final public static String newWordExcludeRegex = punctExcludeRegx;
-	//标点符号和纯数字
-
 
 	final public static double thresholdMI = 10;
 	final public static double thresholdTF = 3;
@@ -39,6 +29,17 @@ public class config {
 	final public static double thresholdLeftNumber = 1;
 	final public static double thresholdLeftRightNumber = 1;
 	final public static Integer testSize = 5;
+
+	public static final String timeRegx = "([\\p{IsDigit}：兆亿万千百]+((年[前初底末]?)|(月[中初末底]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?)";
+	public static final String pureLetterStringRegex = "([\\p{IsLatin}\\p{IsCyrillic}]+)";
+	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％：∶／×－＋·～]+)";
+	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+型?)";
+	final public static String punctExcludeRegx = "([　°～｜■＋±\\pP&&[^·－／]]+)";
+	final public static String newWordExcludeRegex = String.join("|", pureNumStringRegex, pureLetterStringRegex, letterWithNumStringRegex, timeRegx, punctExcludeRegx);
+
+	public static final String pureChineseStringRegex = "([\\p{IsHan}]+)";
+	public static final String chineseJoinedStringRegex = "([\\p{IsHan}·－／]+)";
+
 	public static Integer levelNum = 10;
 	public static Integer maxStringLength = 8;
 
@@ -46,7 +47,7 @@ public class config {
 	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
 	public static Boolean isTrain = true;
-	public static Boolean isShuffle = true;
+	public static Boolean isShuffle = false;
 	public static Boolean isNewWordFilter = true;
 	public static Boolean isCRFsuite = true;
 	public static String algorithm = "ap";
@@ -110,7 +111,7 @@ public class config {
 	}
 
 	public static void main(String... args) {
-		System.err.println('a' + 'b');
+		System.err.println("15小时".matches(timeRegx));
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(renmingribao, "tmp/tmp");
 		Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpusFile);
 		System.out.println(removePos("a/b//l"));
@@ -131,15 +132,15 @@ public class config {
 	}
 
 	static public String category(String word) {
-		if (word.matches("[\\p{IsLatin}\\p{IsCyrillic}]+"))
+		if (word.matches(pureLetterStringRegex))
 			return "纯字母";
-		if (word.matches("[\\p{IsDigit}．％：／×—－·～]+"))
+		if (word.matches(pureNumStringRegex))
 			return "纯数字";
-		if (word.matches("[\\p{IsDigit}\\p{IsLatin}．％：／×—－·～]+"))
-			return "字符和数字连字符组合";
-		if (word.matches("[\\p{IsHan}]+"))
+		if (word.matches(letterWithNumStringRegex))
+			return "字母和数字连字符组合";
+		if (word.matches(pureChineseStringRegex))
 			return "纯汉字";
-		if (word.matches("[\\p{IsHan}·－／]+"))
+		if (word.matches(chineseJoinedStringRegex))
 			return "汉字加连字符斜杠分隔符";
 		return "混合";
 	}
