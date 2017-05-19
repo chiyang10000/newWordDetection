@@ -298,7 +298,7 @@ public class FastBuilder {
 
 		File frFile = new File(freqRight);
 		File lFile = new File(left);
-		File mergeTmp = new File(frFile.getParentFile(), "merge.CRFPPWrapper");
+		File mergeTmp = new File(frFile.getParentFile(), "merge.tmp");
 		File mergeTmp2 = new File(frFile.getParentFile(), "merge.tmp2");
 		File mergeFile = new File(frFile.getParentFile(), "merge_entropy.data");
 
@@ -412,6 +412,8 @@ public class FastBuilder {
 				//if (3 != seg.length)
 					//continue;
 				String w = seg[0];
+				if (w.matches(config.newWordExcludeRegex))
+					continue;
 				int f = Integer.parseInt(seg[1]);
 				double le = Double.parseDouble(seg[2]);
 				double re = Double.parseDouble(seg[3]);

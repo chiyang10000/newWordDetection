@@ -112,8 +112,6 @@ public class config {
 
 	public static void main(String... args) {
 		System.err.println("15小时".matches(timeRegx));
-		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(renmingribao, "tmp/tmp");
-		Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpusFile);
 		System.out.println(removePos("a/b//l"));
 		System.out.println(Double.parseDouble("-Infinity"));
 		System.out.println(Double.NEGATIVE_INFINITY);
