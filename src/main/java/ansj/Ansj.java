@@ -1,6 +1,7 @@
 package ansj;
 
 import dataProcess.Corpus;
+import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.Test;
 import evaluate.config;
@@ -22,7 +23,7 @@ public class Ansj implements NewWordDetector {
 	public static void main(String... args) throws IOException {
 		//segFileForWord2Vec(config.totalDataInput, "CRFPPWrapper/char.txt", "CRFPPWrapper/word.txt");
 		Ansj ansj = new AnsjToAnalysis();
-		for (String type: config.supportedType)
+		for (Ner type: Ner.supported)
 		Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), ansj.detectNewWord(config.testDataInput,
 				"CRFPPWrapper/CRFPPWrapper." + type, type), ansj.getClass().getSimpleName() + "." + type);
 	}
@@ -64,7 +65,7 @@ public class Ansj implements NewWordDetector {
 	}
 
 	@Override
-	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
 		HashMap<String, String> newWordList = new HashMap<>();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
@@ -77,7 +78,7 @@ public class Ansj implements NewWordDetector {
 				List<Term> list = parser.parseStr(line).getTerms();
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
-					if (pattern == config.nw) {
+					if (ner == ner.nw) {
 						if ((config.renmingribaoWord.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
 								) {
 							newWordList.put(word, pos);
@@ -85,8 +86,8 @@ public class Ansj implements NewWordDetector {
 							writer.newLine();
 						}
 					}// nw
-					if (pattern == config.nr || pattern == config.ns) {
-						if (pos.contains(pattern) && !newWordList.keySet().contains(word)) {
+					if (ner != ner.nw) {
+						if (pos.contains(ner.pattern) && !newWordList.keySet().contains(word)) {
 							newWordList.put(word, "nothing");
 							writer.append(word);
 							writer.newLine();

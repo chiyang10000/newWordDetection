@@ -92,12 +92,12 @@ public class Test {
 	public static void main(String... args) {
 		clean();
 
-		for (String type : config.supportedType) {
+		for (Ner type : Ner.supported) {
 			logger.info("compare test and train in {}", type);
 			test(
 					readWordList(config.getAnswerFile(config.trainDataInput, type)),
 					readWordList(config.getAnswerFile(config.testDataInput, type)),
-					type);
+					type.pattern);
 		}
 
 		WordCRF wordCRF = new WordCRF();
@@ -107,7 +107,7 @@ public class Test {
 		AnsjNlpAnalysis ansjNlpAnalysis = new AnsjNlpAnalysis();
 
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<>();
-		newWordDetectors.add(nagao);
+		//newWordDetectors.add(nagao);
 		newWordDetectors.add(ansjToAnalysis);
 		newWordDetectors.add(ansjNlpAnalysis);
 		newWordDetectors.add(characterCRF);
@@ -121,13 +121,13 @@ public class Test {
 		String outputFile;
 
 
-		for (String type : new String[]{config.nw, config.nr, config.ns}) {
-			String answerFile = config.getAnswerFile(inputFile, type);
+		for (Ner nerType : Ner.supported) {
+			String answerFile = config.getAnswerFile(inputFile, nerType);
 			logger.info("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
-				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, type),
-						newWordDetector.getClass().getSimpleName() + "." + type);
+				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, nerType),
+						newWordDetector.getClass().getSimpleName() + "." + nerType);
 			}
 		}
 		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

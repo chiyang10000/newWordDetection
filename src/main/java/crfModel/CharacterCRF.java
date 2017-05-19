@@ -1,6 +1,7 @@
 package crfModel;
 
 import Feature.CharacterFeature;
+import evaluate.Ner;
 import evaluate.Test;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -20,24 +21,25 @@ public class CharacterCRF extends CRFModel {
 	public static void main(String... args) {
 		String al = "";
 		if (args.length > 0) {
-			config.isCRFsuite = false;
+			config.isCRFsuite = true;
 			config.algorithm = args[0];
 			al = args[0];
 		}
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
-		for (String type : config.supportedType) {
-			if (type != config.nr) continue;
-			characterCRF.train(corpus, type);
-			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), characterCRF.detectNewWord
-					(config.testDataInput, "tmp/tmp." + type, type), characterCRF.getClass().getSimpleName()
-					+ "." + type + " " + al);
+		for (Ner ner : Ner.supported) {
+			if (ner == Ner.nw) continue;
+			characterCRF.train(corpus, ner);
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
+					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner, ner),
+					characterCRF.getClass().getSimpleName() + "." + ner.pattern + " " + al);
 		}
 	}
 
-	public void convertSrc2TestInput(String[] inputFiles, String outputFile, String pattern) {
-		logger.debug("convert {} to {} for {}", inputFiles, outputFile, pattern);
+	@Override
+	public void convertSrc2TestInput(String[] inputFiles, String outputFile, Ner ner) {
+		logger.debug("convert {} to {} for {}", inputFiles, outputFile, ner.pattern);
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(outputFile));
 			BufferedReader reader;
@@ -62,15 +64,16 @@ public class CharacterCRF extends CRFModel {
 		}
 	}
 
-	public void convert2TrainInput(String[] inputFiles, String pattern) {
-		logger.debug("convert {} to {} for {}", inputFiles, trainData, pattern);
+	@Override
+	public void convert2TrainInput(String[] inputFiles, Ner ner) {
+		logger.debug("convert {} to {} for {}", inputFiles, trainData, ner.pattern);
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				String tmp;
 
-				if (pattern == config.nr || pattern == config.ns) {
+				if (ner != ner.nw) {
 					while ((tmp = reader.readLine()) != null) {
 						if (tmp.trim().length() == 0) continue;
 						String[] segs = tmp.split(config.sepWordRegex);
@@ -82,18 +85,18 @@ public class CharacterCRF extends CRFModel {
 							String word = config.removePos(seg);
 							String pos = config.getPos(seg);
 							if (word.length() == 1) {
-								if (pos.equals(pattern))
-									writer.println(String.format("%s\t%s", features.get(index++), label_single));
+								if (pos.contains(ner.pattern))
+									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_single));//bio 还是bemsio
 								else
 									writer.println(String.format("%s\t%s", features.get(index++), label_other));
 
 							} else {
-								if (pos.equals(pattern)) {
-									writer.println(String.format("%s\t%s", features.get(index++), label_begin));
+								if (pos.contains(ner.pattern)) {
+									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_begin));
 									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", features.get(index++), label_end));
+										writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_meddle));// bio 还是bemsio
 									}
-									writer.println(String.format("%s\t%s", features.get(index++), label_end));
+									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_end));
 								} else {
 									for (int i = 0; i < word.length(); i++)
 										writer.println(String.format("%s\t%s", features.get(index++), label_other));
@@ -106,7 +109,7 @@ public class CharacterCRF extends CRFModel {
 					}
 				}// nr
 
-				if (pattern == config.nw) {
+				if (ner == ner.nw) {
 					while ((tmp = reader.readLine()) != null) {
 						tmp = tmp.trim();
 						if (tmp.length() == 0) continue;

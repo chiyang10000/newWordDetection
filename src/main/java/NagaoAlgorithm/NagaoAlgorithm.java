@@ -1,6 +1,7 @@
 package NagaoAlgorithm;
 
 import dataProcess.Corpus;
+import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -288,8 +289,8 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 		this.maxWordLength = maxWordLength;
 	}
 
-	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
-		if (!pattern.equals("nw"))
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
+		if (!ner.pattern.equals("nw"))
 			return new HashMap<>();
 		scan(new String[]{inputFile});
 		countTFNeighbor();

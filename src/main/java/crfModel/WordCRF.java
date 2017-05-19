@@ -3,6 +3,7 @@ package crfModel;
 import ansj.Ansj;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
+import evaluate.Ner;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
@@ -41,9 +42,9 @@ public class WordCRF extends CRFModel implements Serializable {
 		}
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
-		for (String type : config.supportedType) {//;= config.ns;
+		for (Ner type : Ner.supported) {//;= config.ns;
 			//wordCRF.calcMostRecallInAnsj(config.testData, type);
-			if (type != config.nw) continue;
+			if (type != Ner.nw) continue;
 			//wordCRF.train(new String[]{config.totalData}, type);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config
 					.testDataInput, "tmp/tmp." + type, type), wordCRF.getClass().getSimpleName() + "." + type + "." + al);
@@ -72,14 +73,14 @@ public class WordCRF extends CRFModel implements Serializable {
 		logger.warn("{}  [golden", buffer);
 	}
 
-	public void calcMostRecallInAnsj(String inputFile, String pattern) {
+	public void calcMostRecallInAnsj(String inputFile, Ner ner) {
 		BufferedReader reader;
 		String srcline;
 		double mostRecallInTraindata = 0;
 		HashSet<String> newWordList = new HashSet<>();
 		HashSet<String> validNewWordList = new HashSet<>();
 		try {
-			newWordList.addAll(Corpus.extractWord(inputFile, pattern));
+			newWordList.addAll(Corpus.extractWord(inputFile, ner));
 			reader = new BufferedReader(new FileReader(inputFile));
 			while ((srcline = reader.readLine()) != null) {
 				srcline = srcline.replaceAll("/([^ ]*|$)", "");// 去掉词性
@@ -121,7 +122,7 @@ public class WordCRF extends CRFModel implements Serializable {
 			}
 			mostRecallInTraindata = (double) validNewWordList.size() / newWordList.size();
 			logger.info("valid{} total{} mostRecall is {} in {}", validNewWordList.size(), newWordList.size(),
-					mostRecallInTraindata, pattern);
+					mostRecallInTraindata, ner.pattern);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -135,7 +136,7 @@ public class WordCRF extends CRFModel implements Serializable {
 	 * @param inputFiles 同时设置mostHitInTrainData
 	 */
 	@Override
-	public void convert2TrainInput(String[] inputFiles, String pattern) {
+	public void convert2TrainInput(String[] inputFiles, Ner ner) {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
@@ -165,7 +166,7 @@ public class WordCRF extends CRFModel implements Serializable {
 						as += ansjWord;
 
 
-						if (pattern == config.nw) {
+						if (ner == ner.nw) {
 							//BEM S
 							if (gs.equals(as)) {
 								if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
@@ -202,10 +203,10 @@ public class WordCRF extends CRFModel implements Serializable {
 							}
 						} // nw
 
-						if (pattern == config.nr || pattern == config.ns) {
+						if (ner != ner.nw) {
 							//BEM S O
 							if (gs.equals(as)) {
-								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(pattern)) {
+								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner.pattern)) {
 									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
 										label = label_single; // 正确的单个词3
 									else
@@ -220,7 +221,7 @@ public class WordCRF extends CRFModel implements Serializable {
 								}
 							} else {
 								if (gs.contains(as)) {// gs还没被补全
-									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(pattern)) {
+									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner.pattern)) {
 										if (as.length() == ansjWord.length())
 											label = label_begin; // 新词开头0
 										else
@@ -263,7 +264,7 @@ public class WordCRF extends CRFModel implements Serializable {
 	}
 
 	@Override
-	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern) {
+	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner) {
 		try {
 			wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));

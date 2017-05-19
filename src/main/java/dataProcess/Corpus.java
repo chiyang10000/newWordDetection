@@ -1,5 +1,6 @@
 package dataProcess;
 
+import evaluate.Ner;
 import evaluate.RunSystemCommand;
 import evaluate.Test;
 import evaluate.config;
@@ -63,15 +64,14 @@ public class Corpus {
 		RunSystemCommand.run("find data/test -type f | xargs rm");
 	}
 
-	public static HashSet<String> extractWord(String inputFile, String pattern) {
+	public static HashSet<String> extractWord(String inputFile, Ner nerType) {
 		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
 			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile + ".src",
-					pattern)));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile + ".src", nerType)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.trim().length() == 0) continue;
@@ -81,9 +81,8 @@ public class Corpus {
 					try {
 						//System.err.println(line);
 						if (
-								(pattern != config.nw && pos.equals(pattern) && !word.matches(config
-										.newWordExcludeRegex)
-										|| pattern == config.nw && config.renmingribaoWord.isNewWord(word, pos)
+								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config .newWordExcludeRegex)
+										|| nerType == Ner.nw && config.renmingribaoWord.isNewWord(word, pos)
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
@@ -97,7 +96,7 @@ public class Corpus {
 					}
 				}
 			}
-			logger.info("{} {} in {}", wordList.size(), pattern, inputFile);
+			logger.info("{} {} in {}", wordList.size(), nerType.pattern, inputFile);
 			writer.close();
 		} catch (IOException e) {
 			logger.error("err");
@@ -227,7 +226,7 @@ public class Corpus {
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
-		for (String type : config.supportedType) {
+		for (Ner type : Ner.supported) {
 			extractWord(config.trainData, type);
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);

@@ -63,8 +63,7 @@ public class config {
 	public static String testDataInput = "data/test/input/test.txt.src";
 	public static String trainDataInput = "data/test/input/train.txt.src";
 	public static String totalDataInput = "data/test/input/total.txt.src";
-	final public static String nw = "nw", nr = "nr", ns = "ns";
-	public static String[] supportedType = new String[]{nw, nr, ns};
+
 
 	static {
 		Properties prop = new Properties();
@@ -111,6 +110,7 @@ public class config {
 	}
 
 	public static void main(String... args) {
+		System.err.println('a' + 'b');
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(renmingribao, "tmp/tmp");
 		Corpus.convertToSrc(new String[]{"tmp/tmp"}, corpusFile);
 		System.out.println(removePos("a/b//l"));
@@ -122,7 +122,6 @@ public class config {
 		System.out.println("Семёрка".matches(newWordExcludeRegex));
 		System.out.println("你".matches("\\p{IsHan}"));
 		if ("指令／秒".matches("[\\p{IsHan}·－／]+"))
-			System.out.println(getAnswerFile(testDataInput, nw));
 		try {
 			String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
 			System.out.println(tmp);
@@ -145,8 +144,8 @@ public class config {
 		return "混合";
 	}
 
-	public static String getAnswerFile(String inputFile, String pattern) {
-		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + pattern;
+	public static String getAnswerFile(String inputFile, Ner ner) {
+		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + ner.pattern;
 	}
 	public static String getWordListFile(String inputFile) {
 		return "data/corpus/wordlist/" + inputFile.replaceAll(".*/", "")+ ".wordlist" ;

@@ -4,6 +4,7 @@ import Feature.FieldAppender;
 import crfModel.Tool.CRFPPWrapper;
 import crfModel.Tool.CRFsuiteWrapper;
 import crfModel.Tool.CrfToolInterface;
+import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.config;
 import org.slf4j.Logger;
@@ -35,11 +36,12 @@ abstract public class CRFModel implements NewWordDetector {
 		return in.split("\t", 2)[0];
 	}
 
-	public static char getLabel(String in) {
-		return in.charAt(in.length() - 1);
+	public static String getLabel(String in) {
+		String[] tmp = in.split("\t");
+		return tmp[tmp.length - 1];
 	}
 
-	public static Map<String, String> convertTestOuput2Res(String inputFile, String newWordFile, String pattern) {
+	public static Map<String, String> convertTestOuput2Res(String inputFile, String newWordFile, Ner ner) {
 		logger.debug("converting label to ans file {}", newWordFile);
 		HashMap<String, String> newWordList = new HashMap<>();
 		try {
@@ -55,9 +57,9 @@ abstract public class CRFModel implements NewWordDetector {
 				}
 				StringBuilder wordBuffer = new StringBuilder();
 				FieldAppender fieldAppender = null;
-				char label_head = getLabel(line);
-				if (getLabel(line) == label_begin) {
-					while (getLabel(line) != label_other && getLabel(line) != label_single) {
+				String label_head = getLabel(line);
+				if (getLabel(line).equals(ner.label + label_begin)) {
+					while (!getLabel(line).equals(label_other+"") && !getLabel(line).equals(ner.label + label_single)) {
 						if (fieldAppender == null)
 							fieldAppender = new FieldAppender(line);
 						else
@@ -65,7 +67,7 @@ abstract public class CRFModel implements NewWordDetector {
 						wordBuffer.append(getWord(line));
 						line = reader.readLine();
 						if (line.length() <= 0) break;
-						if (getLabel(line) == label_begin) break;
+						if (getLabel(line).equals(ner.label + label_begin)) break;
 					}
 				}
 				else {
@@ -75,15 +77,16 @@ abstract public class CRFModel implements NewWordDetector {
 				}
 
 				String word = wordBuffer.toString();// 这是一个词
-				if (pattern == config.nw) {
+				if (ner == Ner.nw) {
 					if (config.renmingribaoWord.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
 						newWordList.put(word, fieldAppender.toString());
 						writer.println(word + "\t" + fieldAppender);
 					}
 				} // nw
-				if (pattern == config.nr || pattern == config.ns) {
-					if (label_head == label_begin || label_head == label_single) //单字名称 和 多字名称
+				if (ner != Ner.nw) {
+					if (label_head.equals(ner.label + label_begin) || label_head.equals(ner.label + label_single)) //单字名称 和 多字名称
 						if (!newWordList.keySet().contains(word)) {
+						System.err.println(word + "\t" + fieldAppender);
 							newWordList.put(word, fieldAppender.toString());
 							writer.println(word + "\t" + fieldAppender);
 						}
@@ -98,31 +101,31 @@ abstract public class CRFModel implements NewWordDetector {
 		return newWordList;
 	}
 
-	public void train(String[] inputFiles, String pattern) {
-		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
-		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
-		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
-		convert2TrainInput(inputFiles, pattern);
+	public void train(String[] inputFiles, Ner ner) {
+		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.model+ ".template";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model+ ".crf";
+		convert2TrainInput(inputFiles, ner);
 		crfToolWrapper.train(template, model, trainData);
 	}
 
-	public Map<String, String> detectNewWord(String inputFile, String outputFile, String pattern) {
-		model = "data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model";
-		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + pattern + ".template";
-		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + pattern + ".crf";
+	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
+		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.model + ".template";
+		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model + ".crf";
 		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", pattern, ".crfin");
+				".", this.getClass().getSimpleName(), ".", ner.pattern, ".crfin");
 		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", pattern, ".crfout");
-		convertSrc2TestInput(new String[]{inputFile}, crfppInput, pattern);
-		crfToolWrapper.decode("data/model/" + this.getClass().getSimpleName() + "." + pattern + ".model", crfppInput,
+				".", this.getClass().getSimpleName(), ".", ner.pattern, ".crfout");
+		convertSrc2TestInput(new String[]{inputFile}, crfppInput, ner);
+		crfToolWrapper.decode("data/model/" + this.getClass().getSimpleName() + "." + ner.model + ".model", crfppInput,
 				crfppOutput);
-		return convertTestOuput2Res(crfppOutput, outputFile, pattern);
+		return convertTestOuput2Res(crfppOutput, outputFile, ner);
 	}
 
-	abstract void convert2TrainInput(String[] inputFiles, String pattern);
+	abstract void convert2TrainInput(String[] inputFiles, Ner ner);
 
-	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput, String pattern);
+	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner);
 
 
 }

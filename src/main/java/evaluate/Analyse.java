@@ -8,7 +8,6 @@ import dataProcess.WordInfoInCorpus;
  */
 public class Analyse {
 	static public void main(String... args) {
-		Corpus.extractWord(config.totalData, config.nw);
 		//WordInfoInCorpus.addWordInfo();
 	}
 }
