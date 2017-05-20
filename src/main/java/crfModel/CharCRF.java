@@ -29,12 +29,12 @@ public class CharCRF extends CRFModel {
 		CharCRF characterCRF = new CharCRF();
 
 		characterCRF.train(corpus, Ner.ner);
-		//characterCRF.train(corpus, Ner.nw);
 		for (Ner ner : Ner.supported) {
-			if (ner == Ner.nw) continue;
+			if (config.trainModel.contains(ner.name))
+				characterCRF.train(corpus, Ner.nw);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
-					ner, characterCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap": "crf")
+					characterCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.label, ner),
+					ner, characterCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
 	}
@@ -88,7 +88,8 @@ public class CharCRF extends CRFModel {
 							String pos = config.getPos(seg);
 							if (word.length() == 1) {
 								if (pos.matches(ner.pattern))
-									writer.println(String.format("%s\t%s", features.get(index++), pos + label_single));//bio 还是bemsio
+									writer.println(String.format("%s\t%s", features.get(index++), pos + label_single))
+											;//bio 还是bemsio
 								else
 									writer.println(String.format("%s\t%s", features.get(index++), label_other));
 
@@ -96,7 +97,8 @@ public class CharCRF extends CRFModel {
 								if (pos.matches(ner.pattern)) {
 									writer.println(String.format("%s\t%s", features.get(index++), pos + label_begin));
 									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", features.get(index++), pos + label_meddle));// bio 还是bemsio
+										writer.println(String.format("%s\t%s", features.get(index++), pos +
+												label_meddle));// bio 还是bemsio
 									}
 									writer.println(String.format("%s\t%s", features.get(index++), pos + label_end));
 								} else {

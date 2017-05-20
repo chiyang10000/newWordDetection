@@ -16,8 +16,6 @@ import java.io.*;
 import java.util.HashSet;
 import java.util.List;
 
-import static evaluate.config.testDataInput;
-
 /**
  * Created by don on 27/04/2017.
  */
@@ -37,20 +35,21 @@ public class WordCRF extends CRFModel implements Serializable {
 
 	public static void main(String... args) {
 		Ner.calcOOV();
-		if (args.length >0 ) {
+		if (args.length > 0) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
 		}
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
+		config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			if (ner != Ner.nw) continue;
-			config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
-			wordCRF.calcMostRecallInAnsj(config.totalData, ner);
-			wordCRF.train(new String[]{config.trainData}, ner);
+			wordCRF.calcMostRecallInAnsj(config.testData, ner);
+			if (config.trainModel.contains(ner.name))
+				wordCRF.train(new String[]{config.trainData}, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					wordCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
-					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap": "crf")
+					wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.label, ner),
+					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
 	}
@@ -210,7 +209,8 @@ public class WordCRF extends CRFModel implements Serializable {
 						if (ner != ner.nw) {
 							//BEM S O
 							if (gs.equals(as)) {
-								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner.pattern)) {
+								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner
+										.pattern)) {
 									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
 										label = label_single; // 正确的单个词3
 									else
@@ -225,7 +225,8 @@ public class WordCRF extends CRFModel implements Serializable {
 								}
 							} else {
 								if (gs.contains(as)) {// gs还没被补全
-									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner.pattern)) {
+									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches
+											(ner.pattern)) {
 										if (as.length() == ansjWord.length())
 											label = label_begin; // 新词开头0
 										else
@@ -248,9 +249,11 @@ public class WordCRF extends CRFModel implements Serializable {
 						}// nr ns
 
 						if (i > 0)
-							writer.println(new WordFeature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr()).toString() + '\t' + label);
+							writer.println(new WordFeature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr
+									()).toString() + '\t' + label);
 						else
-							writer.println(new WordFeature("", ansjWord, term.getNatureStr()).toString() + '\t' + label);
+							writer.println(new WordFeature("", ansjWord, term.getNatureStr()).toString() + '\t' +
+									label);
 
 						if (ansjWord.matches(config.sepSentenceRegex))
 							writer.println();// 断句换行
@@ -292,9 +295,10 @@ public class WordCRF extends CRFModel implements Serializable {
 						String pos = term.getNatureStr();
 
 						if (i > 0)
-							writer.append(new WordFeature(list.get(i - 1).getRealName(), word, pos).toString() + "\tN");
+							writer.append(new WordFeature(list.get(i - 1).getRealName(), word, pos).toString() +
+									"\tN");
 						else
-							writer.append(new WordFeature("", word, pos).toString() +"\tN");
+							writer.append(new WordFeature("", word, pos).toString() + "\tN");
 						writer.newLine();
 
 						if (word.matches(config.sepSentenceRegex))

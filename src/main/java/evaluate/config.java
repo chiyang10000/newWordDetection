@@ -11,8 +11,10 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.lang.reflect.Field;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Properties;
+import java.util.Set;
 
 import static evaluate.Test.readWordList;
 import static evaluate.Test.test;
@@ -67,6 +69,7 @@ public class config {
 	public static String trainDataInput = "data/test/input/train.txt.src";
 	public static String totalDataInput = "data/test/input/total.txt.src";
 
+	public static Set<String> trainModel = new HashSet<>();
 	static {
 		Properties prop = new Properties();
 		try {
@@ -76,6 +79,12 @@ public class config {
 			Iterator<String> it = prop.stringPropertyNames().iterator();
 			while (it.hasNext()) {
 				String key = it.next();
+				if (key.equals("train")) {
+					String[] tmp = prop.getProperty(key).split(",");
+					for (String tmp0: tmp)
+						trainModel.add(tmp0);
+					continue;
+				}
 				Field field = config.class.getField(key);
 				field.set(null, ObjConver.conversion(prop.getProperty(key), field.getType()));
 				System.out.println(key + "=" + prop.getProperty(key));
