@@ -64,9 +64,11 @@ public class Test {
 		p = (float) hit / select * 100;
 		r = (float) hit / sum * 100;
 		f1 = (float) 2.0 * p * r / (p + r);
+		if (hit == 0)
+			return 100;
 		if (!tool.equals("count"))
 		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t",
-				df.format(p), df.format(r), df.format(f1),
+				df.format(f1), df.format(p), df.format(r),
 				df.format(type.oov),
 				hit, select, sum,
 				type.name, method, tool
