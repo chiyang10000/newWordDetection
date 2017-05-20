@@ -26,14 +26,14 @@ public class CharCRF extends CRFModel {
 			config.algorithm = args[0];
 		}
 		String[] corpus = new String[]{config.trainData};
-		CharCRF characterCRF = new CharCRF();
+		CharCRF charCRF = new CharCRF();
 
 		for (Ner ner : Ner.supported) {
 			if (config.trainModel.contains(ner.name))
-				characterCRF.train(corpus, ner);
+				charCRF.train(corpus, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					characterCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.label, ner),
-					ner, characterCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
+					charCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.name, ner),
+					ner, charCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
 	}

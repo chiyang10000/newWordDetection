@@ -47,7 +47,7 @@ public class WordCRF extends CRFModel implements Serializable {
 			if (config.trainModel.contains(ner.name))
 				wordCRF.train(new String[]{config.trainData}, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.label, ner),
+					wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.name, ner),
 					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
