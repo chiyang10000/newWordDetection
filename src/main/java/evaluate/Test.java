@@ -1,8 +1,8 @@
 package evaluate;
 
 import NagaoAlgorithm.NagaoAlgorithm;
-import ansj.AnsjNlpAnalysis;
-import ansj.AnsjToAnalysis;
+import ansj.AnsjNlp;
+import ansj.AnsjTo;
 import crfModel.CharacterCRF;
 import crfModel.WordCRF;
 import org.slf4j.Logger;
@@ -114,8 +114,8 @@ public class Test {
 		WordCRF wordCRF = new WordCRF();
 		CharacterCRF characterCRF = new CharacterCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxStringLength);
-		AnsjToAnalysis ansjToAnalysis = new AnsjToAnalysis();
-		AnsjNlpAnalysis ansjNlpAnalysis = new AnsjNlpAnalysis();
+		AnsjTo ansjToAnalysis = new AnsjTo();
+		AnsjNlp ansjNlpAnalysis = new AnsjNlp();
 
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<>();
 		//newWordDetectors.add(nagao);

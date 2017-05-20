@@ -1,6 +1,5 @@
 package ansj;
 
-import dataProcess.Corpus;
 import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.Test;
@@ -23,8 +22,8 @@ public class Ansj implements NewWordDetector {
 	public static void main(String... args) throws IOException {
 		//segFileForWord2Vec(config.totalDataInput, "CRFPPWrapper/char.txt", "CRFPPWrapper/word.txt");
 		Ner.calcOOV();
-		Ansj ansj1 = new AnsjToAnalysis();
-		Ansj ansj2 = new AnsjNlpAnalysis();
+		Ansj ansj1 = new AnsjTo();
+		Ansj ansj2 = new AnsjNlp();
 		for (Ner type: Ner.supported) {
 			Test.test(
 					Test.readWordList(config.getAnswerFile(config.testDataInput, type)),
