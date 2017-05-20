@@ -16,6 +16,8 @@ import java.io.*;
 import java.util.HashSet;
 import java.util.List;
 
+import static evaluate.config.testDataInput;
+
 /**
  * Created by don on 27/04/2017.
  */
@@ -34,18 +36,21 @@ public class WordCRF extends CRFModel implements Serializable {
 	}
 
 	public static void main(String... args) {
+		Ner.calcOOV();
 		if (args.length >0 ) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
 		}
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
-		for (Ner type : Ner.supported) {//;= config.ns;
-			//wordCRF.calcMostRecallInAnsj(config.testData, type);
-			if (type != Ner.nw) continue;
-			wordCRF.train(new String[]{config.trainData}, type);
-			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config
-					.testDataInput, "tmp/tmp." + type.pattern, type), wordCRF.getClass().getSimpleName() + "." + type.pattern);
+		for (Ner ner : Ner.supported) {//;= config.ns;
+			if (ner != Ner.nw) continue;
+			wordCRF.calcMostRecallInAnsj(config.testData, ner);
+			wordCRF.train(new String[]{config.trainData}, ner);
+			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
+					wordCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
+					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap": "crf")
+			);
 		}
 	}
 

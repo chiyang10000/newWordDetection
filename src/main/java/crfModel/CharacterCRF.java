@@ -20,6 +20,7 @@ public class CharacterCRF extends CRFModel {
 
 	public static void main(String... args) {
 		//String al = "";
+		Ner.calcOOV();
 		if (args.length > 0) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
@@ -33,7 +34,8 @@ public class CharacterCRF extends CRFModel {
 			if (ner == Ner.nw) continue;
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
-					characterCRF.getClass().getSimpleName() + "." + ner.label);
+					ner, characterCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap": "crf")
+			);
 		}
 	}
 

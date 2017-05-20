@@ -121,7 +121,8 @@ public class config {
 			test(
 					readWordList(config.getAnswerFile(config.trainDataInput, type)),
 					readWordList(config.getAnswerFile(config.testDataInput, type)),
-					type.pattern + " data info");
+					type, "count", "count"
+			);
 		}
 	}
 
@@ -140,7 +141,7 @@ public class config {
 	}
 
 	public static String getAnswerFile(String inputFile, Ner ner) {
-		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + ner.pattern;
+		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + ner.name;
 	}
 
 	public static String getWordListFile(String inputFile) {

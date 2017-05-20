@@ -51,7 +51,7 @@ public class ConvertHalfWidthToFullWidth {
 		return new String(c);
 	}
 
-	public static void convertFileToFulllKeepPos(String inputFile, String outputFile) {
+	public static String convertFileToFulllKeepPos(String inputFile, String outputFile) {
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
@@ -79,8 +79,9 @@ public class ConvertHalfWidthToFullWidth {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return outputFile;
 	}
-	public static void convertFileToFulll(String inputFile, String outputFile) {
+	public static String convertFileToFulll(String inputFile, String outputFile) {
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 				BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
@@ -94,6 +95,7 @@ public class ConvertHalfWidthToFullWidth {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return outputFile;
 	}
 	public static void main(String... args) throws IOException {
 		convertFileToFulllKeepPos("CRFPPWrapper/CRFPPWrapper", "CRFPPWrapper/full.txt");

@@ -29,7 +29,8 @@ public class Corpus {
 				if (!new File(config.getWordListFile(inputFile)).exists()) {
 			logger.info("Scanning word list from {}...", inputFile);
 				try {
-					BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+					BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
+							.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
 					String tmp;
 					while ((tmp = reader.readLine()) != null) {
 						String[] segs = tmp.split(config.sepWordRegex);
@@ -64,7 +65,9 @@ public class Corpus {
 
 	static void clean() {
 		//RunSystemCommand.run("rm data/corpus/*.words");
-		RunSystemCommand.run("find data/test -type f | xargs rm");
+		RunSystemCommand.run("rm data/test/input/*");
+		RunSystemCommand.run("rm data/test/ans/*");
+		RunSystemCommand.run("rm data/test/*");
 	}
 
 	public static HashSet<String> extractWord(String inputFile, Ner nerType) {

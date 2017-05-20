@@ -10,7 +10,9 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -18,13 +20,13 @@ import java.util.*;
  */
 public class Test {
 	static final DecimalFormat df = new DecimalFormat("##.000");
-	static private final Logger logger = LoggerFactory.getLogger("report");
+	static final Logger logger = LoggerFactory.getLogger("report");
 
 	static {
-		logger.info("---------****----------\n");
-		logger.info("shuffle is {}", config.isShuffle);
-		logger.info("word filter is {} ", config.isNewWordFilter);
-		logger.info("exclude new word pattern {}", config.newWordExcludeRegex);
+		logger.debug("---------****----------\n");
+		logger.debug("shuffle is {}", config.isShuffle);
+		logger.debug("word filter is {} ", config.isNewWordFilter);
+		logger.debug("exclude new word pattern {}", config.newWordExcludeRegex);
 
 	}
 
@@ -35,37 +37,45 @@ public class Test {
 		// todo
 	}
 
-	public static void test(Map<String, String> golden, Map<String, String> ans, String prefix) {
-		HashMap<String, Integer> hitCounter = new HashMap<>(), selectCounter = new HashMap<>(), totalCounter = new HashMap<>();
+	public static double test(Map<String, String> golden, Map<String, String> ans,
+							  Ner type, String method, String tool) {
+		sum = golden.size();
+		select = ans.size();
+		hit = 0;
 		try {
-			PrintWriter pWriter = new PrintWriter(new FileWriter("data/info/" + prefix + ".p"));
-			PrintWriter rWriter = new PrintWriter(new FileWriter("data/info/" + prefix + ".r"));
-			int sum = golden.size(),
-					select = ans.size();
-			int hit = 0;
+			PrintWriter pWriter = new PrintWriter(new FileWriter(String.join(".","data/info/", type.name, method, tool, "p")));
+			PrintWriter rWriter = new PrintWriter(new FileWriter(String.join(".","data/info/", type.name, method, tool, "r")));
 			for (String word : ans.keySet())
 				if (golden.keySet().contains(word) || golden.keySet().contains(config.newWordFileter(word))) {
 					hit++;
 					pWriter.println(word + "\t" + ans.get(word) + "\tTrue");
-				}
-				else
+				} else
 					pWriter.println(word + "\t" + ans.get(word) + "\tFalse");
 			for (String word : golden.keySet())
 				if (ans.keySet().contains(word)) {
 					rWriter.println(word + "\t" + golden.get(word) + "\tTrue");
-				}
-				else
+				} else
 					rWriter.println(word + "\t" + golden.get(word) + "\tFalse");
-			float p = (float) hit / select * 100;
-			float r = (float) hit / sum * 100;
-			float f1 = (float) 2.0 * p * r / (p + r);
-			logger.info("p {}\tr {}\tf {}  {} select {} hit {} total {}", df.format(p), df.format(r), df.format(f1), prefix, select, hit, sum);
 			pWriter.close();
 			rWriter.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		p = (float) hit / select * 100;
+		r = (float) hit / sum * 100;
+		f1 = (float) 2.0 * p * r / (p + r);
+		if (!tool.equals("count"))
+		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t",
+				df.format(p), df.format(r), df.format(f1),
+				df.format(type.oov),
+				hit, select, sum,
+				type.name, method, tool
+		);
+		return 100 - p;
 	}
+
+	public static double p, r, f1;
+	public static int hit, select, sum;
 
 	public static Map<String, String> readWordList(String inputFile) {
 		HashMap<String, String> wordList = new HashMap<>();
@@ -93,7 +103,7 @@ public class Test {
 
 	public static void main(String... args) {
 		clean();
-
+		Ner.calcOOV();
 
 		WordCRF wordCRF = new WordCRF();
 		CharacterCRF characterCRF = new CharacterCRF();
@@ -118,14 +128,17 @@ public class Test {
 
 		for (Ner nerType : Ner.supported) {
 			String answerFile = config.getAnswerFile(inputFile, nerType);
-			logger.info("+++++++   {}   ++++++++", answerFile);
+			logger.debug("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
-				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, nerType),
-						newWordDetector.getClass().getSimpleName() + "." + nerType.label);
+				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile
+						.replaceAll(".*/", ""));
+				Test.test(readWordList(answerFile),
+						newWordDetector.detectNewWord(inputFile, outputFile, nerType),
+						nerType, newWordDetector.getClass().getSimpleName(),
+						newWordDetector.getClass().getName().contains("CRF") ? (config.isCRFsuite ? "ap": "crf") : "ansj");
 			}
 		}
-		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
+		logger.debug("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
 	}
 
 }
