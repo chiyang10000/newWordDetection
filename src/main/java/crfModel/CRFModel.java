@@ -125,7 +125,11 @@ abstract public class CRFModel implements NewWordDetector {
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
 		model = "data/model/"  + crfToolWrapper.getClass().getSimpleName() + "." +  this.getClass().getSimpleName() + "." + ner.model+ ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template"; //crfsuite 要用到
-		String prefix = String.join(".", "tmp/crf/" + inputFile.replaceAll(".*/", "") , this.getClass() .getSimpleName(), ner.label);
+		String prefix = String.join(".",
+				"tmp/crf/" + inputFile.replaceAll(".*/", ""),
+				this.getClass()
+				.getSimpleName(), ner.name
+		);
 		String crfppInput = String.join(".", prefix, "crfin");
 		String crfppOutput = String.join(".", prefix, "crfout");
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput, ner);

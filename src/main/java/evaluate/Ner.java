@@ -36,7 +36,7 @@ public class Ner {
 		ner.oov = Test.test(
 				readWordList(config.getAnswerFile(config.trainDataInput, ner)),
 				readWordList(config.getAnswerFile(config.testDataInput, ner)),
-				ner, "count", "count"
+				ner, "count", "counter"
 		);
 	}
 }

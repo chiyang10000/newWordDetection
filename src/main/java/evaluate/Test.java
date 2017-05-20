@@ -66,7 +66,7 @@ public class Test {
 		f1 = (float) 2.0 * p * r / (p + r);
 		if (hit == 0)
 			return 100;
-		if (!tool.equals("count"))
+		if (!tool.equals("counter"))
 		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t",
 				df.format(f1), df.format(p), df.format(r),
 				df.format(type.oov),
