@@ -18,8 +18,8 @@ import java.util.Map;
  * Created by wan on 4/24/2017.
  */
 abstract public class CRFModel implements NewWordDetector {
-	static protected final char label_begin = 'B', label_meddle = 'M', label_end = 'E', label_single = 'S',
-			label_true = 'T', label_false = 'F', label_inside = 'I', label_other = 'O';
+	static protected final String label_begin = "B", label_meddle = "M", label_end = "E", label_single = "S",
+			label_true = "T", label_false = "F", label_inside = "I", label_other = "O";
 	private static Logger logger = LoggerFactory.getLogger(CRFModel.class);
 	private CrfToolInterface crfToolWrapper;
 
@@ -58,8 +58,8 @@ abstract public class CRFModel implements NewWordDetector {
 				StringBuilder wordBuffer = new StringBuilder();
 				FieldAppender fieldAppender = null;
 				String label_head = getLabel(line);
-				if (getLabel(line).equals(ner.label + label_begin)) {
-					while (!getLabel(line).equals(label_other+"") && !getLabel(line).equals(ner.label + label_single)) {
+				if (getLabel(line).contains(label_begin)) {
+					while (!getLabel(line).contains(label_other) && !getLabel(line).contains(label_single)) {
 						if (fieldAppender == null)
 							fieldAppender = new FieldAppender(line);
 						else
@@ -67,7 +67,7 @@ abstract public class CRFModel implements NewWordDetector {
 						wordBuffer.append(getWord(line));
 						line = reader.readLine();
 						if (line.length() <= 0) break;
-						if (getLabel(line).equals(ner.label + label_begin)) break;
+						if (getLabel(line).contains(label_begin)) break;
 					}
 				}
 				else {
@@ -75,7 +75,6 @@ abstract public class CRFModel implements NewWordDetector {
 					wordBuffer.append(getWord(line));
 					line = reader.readLine();
 				}
-
 				String word = wordBuffer.toString();// 这是一个词
 				if (ner == Ner.nw) {
 					if (config.renmingribaoWord.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
@@ -102,7 +101,7 @@ abstract public class CRFModel implements NewWordDetector {
 
 	public void train(String[] inputFiles, Ner ner) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
-		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.model+ ".template";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template";
 		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model+ ".crf";
 		convert2TrainInput(inputFiles, ner);
 		crfToolWrapper.train(template, model, trainData);
@@ -110,12 +109,10 @@ abstract public class CRFModel implements NewWordDetector {
 
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
-		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.model + ".template";
-		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model + ".crf";
 		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", ner.pattern, ".crfin");
+				".", this.getClass().getSimpleName(), ".", ner.label, ".crfin");
 		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", ner.pattern, ".crfout");
+				".", this.getClass().getSimpleName(), ".", ner.label, ".crfout");
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput, ner);
 		crfToolWrapper.decode("data/model/" + this.getClass().getSimpleName() + "." + ner.model + ".model", crfppInput,
 				crfppOutput);

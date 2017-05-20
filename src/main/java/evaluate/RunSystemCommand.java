@@ -30,6 +30,7 @@ public class RunSystemCommand {
 			BufferedReader read = new BufferedReader(new InputStreamReader(in));
 			String line = null;
 			while ((line = read.readLine()) != null) {
+				System.err.print("\r" + line);
 				logger.trace(line);
 			}
 			in.close();
@@ -37,7 +38,7 @@ public class RunSystemCommand {
 			in = pro.getErrorStream();
 			read = new BufferedReader(new InputStreamReader(err));
 			while ((line = read.readLine()) != null) {
-				logger.trace(line);
+				logger.error(line);
 			}
 			in.close();
 			logger.trace("---------------------------------------------------------------------");

@@ -59,7 +59,7 @@ public class ConvertHalfWidthToFullWidth {
 			Pattern posPattern = Pattern.compile("／[^／]+$");
 			Matcher m;
 			while ((line = reader.readLine()) != null) {
-				line = ToDBC(line).replace('—', '－');//.破折号
+				line = ToDBC(line).replace('—', '－').replace('―', '－');//.破折号
 				String[] segs = line.split(" +");
 				StringBuffer stringBuffer = new StringBuffer();
 				for (String seg : segs) {

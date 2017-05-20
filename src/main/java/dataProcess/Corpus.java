@@ -68,7 +68,6 @@ public class Corpus {
 	}
 
 	public static HashSet<String> extractWord(String inputFile, Ner nerType) {
-		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -89,7 +88,7 @@ public class Corpus {
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
-									wordInfoInCorpus.addWordInfo(word + "\t" + config.category(word) + "\t" + word
+									config.wordInfoInCorpus_total.addWordInfo(word + "\t" + config.category(word) + "\t" + word
 											.length() + "\t" + pos));
 							wordList.add(word);
 							writer.newLine();

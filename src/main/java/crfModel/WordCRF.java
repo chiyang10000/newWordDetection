@@ -158,7 +158,7 @@ public class WordCRF extends CRFModel implements Serializable {
 
 					int goldenIndex = 0;
 					String gs = golden[0], as = "";
-					char label = label_single;
+					String label = label_single;
 					for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含且不等于as，
 						//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
 						Term term = ansj.get(i);

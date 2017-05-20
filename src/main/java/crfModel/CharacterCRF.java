@@ -28,12 +28,12 @@ public class CharacterCRF extends CRFModel {
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
+		characterCRF.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {
-			//if (ner != Ner.nw) continue;
-			characterCRF.train(corpus, ner);
+			//if (ner != Ner.nr) continue;
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner, ner),
-					characterCRF.getClass().getSimpleName() + "." + ner.pattern + " " + al);
+					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
+					characterCRF.getClass().getSimpleName() + "." + ner.label + "." + al);
 		}
 	}
 
@@ -85,18 +85,18 @@ public class CharacterCRF extends CRFModel {
 							String word = config.removePos(seg);
 							String pos = config.getPos(seg);
 							if (word.length() == 1) {
-								if (pos.contains(ner.pattern))
-									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_single));//bio 还是bemsio
+								if (pos.matches(ner.pattern))
+									writer.println(String.format("%s\t%s", features.get(index++), pos + label_single));//bio 还是bemsio
 								else
 									writer.println(String.format("%s\t%s", features.get(index++), label_other));
 
 							} else {
-								if (pos.contains(ner.pattern)) {
-									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_begin));
+								if (pos.matches(ner.pattern)) {
+									writer.println(String.format("%s\t%s", features.get(index++), pos + label_begin));
 									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_meddle));// bio 还是bemsio
+										writer.println(String.format("%s\t%s", features.get(index++), pos + label_meddle));// bio 还是bemsio
 									}
-									writer.println(String.format("%s\t%s", features.get(index++), ner.label + label_end));
+									writer.println(String.format("%s\t%s", features.get(index++), pos + label_end));
 								} else {
 									for (int i = 0; i < word.length(); i++)
 										writer.println(String.format("%s\t%s", features.get(index++), label_other));

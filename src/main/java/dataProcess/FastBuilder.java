@@ -14,7 +14,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  *
@@ -23,7 +22,7 @@ import java.util.TreeMap;
  */
 public class FastBuilder {
 
-	private static final Logger LOG = LoggerFactory.getLogger(FastBuilder.class);
+	private static final Logger logger = LoggerFactory.getLogger(FastBuilder.class);
 
 	public final static String stopwords = "[【】［］“”（）《》，、｜。？！：；]";
 	//public final static String stopwords = config.punctExcludeRegx;
@@ -64,6 +63,7 @@ public class FastBuilder {
 
 	public String genLeft(String rawTextFile, int maxLen) {
 
+		logger.info("gen FreqLeft from {}...", rawTextFile);
 		File rawFile = new File(rawTextFile);
 
 		File dir = rawFile.getParentFile();
@@ -179,6 +179,7 @@ public class FastBuilder {
 
 	public String genFreqRight(String rawTextFile, int maxLen) {
 
+		logger.info("gen FreqRight from {}...", rawTextFile);
 		File rawFile = new File(rawTextFile);
 
 		File dir = rawFile.getParentFile();
@@ -209,7 +210,6 @@ public class FastBuilder {
 				}
 			}
 			writer.flush();
-			System.out.println("gen sorting...");
 			sortFile(ngramFile, ngramSort);
 			
 			try(BufferedReader nsr = Files.newReader(ngramSort, Charsets.UTF_8)) {
@@ -377,7 +377,7 @@ public class FastBuilder {
 
 	public void extractWords(String freqFile, String entropyFile, String prefix) {
 
-		LOG.info("start to extract words");
+		logger.info("start to extract words");
 		
 		//TreeMap<String, double[]> posProp = this.loadPosprop();
 
@@ -400,13 +400,13 @@ public class FastBuilder {
 				tree.put(seg[0], Integer.parseInt(seg[1]));
 				total += 1;
 			}
-			LOG.info("build freq TST done!");
+			logger.info("build freq TST done! size: {}", tree.size());
 			line = null;
 			int cnt = 0;
 			while (null != (line = er.readLine())) {
 				cnt += 1;
 				if (cnt % 100000 == 0) {
-					LOG.info("extract words done: " + cnt);
+					logger.info("extract words done: " + cnt);
 				}
 				String[] seg = line.split("\t");
 				//if (3 != seg.length)
@@ -444,10 +444,10 @@ public class FastBuilder {
 
 			}
 			//ww.close();
-			LOG.info("start to sort extracted words");
+			logger.info("start to sort extracted words");
 			ww.flush();
 			sortFile(wfile, wsfile);
-			LOG.info("all done");
+			logger.info("all done");
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

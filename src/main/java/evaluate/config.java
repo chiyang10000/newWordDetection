@@ -5,6 +5,7 @@ import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
 import dataProcess.ConvertHalfWidthToFullWidth;
 import dataProcess.Corpus;
+import dataProcess.WordInfoInCorpus;
 import org.nlpcn.commons.lang.util.ObjConver;
 
 import java.io.BufferedInputStream;
@@ -65,6 +66,8 @@ public class config {
 	public static String trainDataInput = "data/test/input/train.txt.src";
 	public static String totalDataInput = "data/test/input/total.txt.src";
 
+	public static WordInfoInCorpus wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
+	public static WordInfoInCorpus wordInfoInCorpus_corpus = new WordInfoInCorpus(config.corpusFile);
 
 	static {
 		Properties prop = new Properties();
