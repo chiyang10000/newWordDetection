@@ -22,7 +22,7 @@ import java.util.List;
 public class WordCRF extends CRFModel implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
-	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusFile);
+	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 	public Analysis parser;
 
 	{

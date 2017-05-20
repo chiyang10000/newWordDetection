@@ -28,8 +28,8 @@ public class config {
 	final public static double thresholdNeighborEntropy = 1.5;
 	final public static Integer testSize = 5;
 
-	public static final String timeRegx = "([\\p{IsDigit}：兆亿万千百]+((年[前初底末]?)|(月[中初末底]?)|[日号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|" +
-			"(年代)|(小时))?)";
+	public static final String timeRegx = "([\\p{IsDigit}：兆亿万千百十九八七六五四三二一]+" +
+			"(([年月日][前初中底末]?)|[号时分秒点]|(秒钟)|(点钟)|(月份)|(世纪)|(年代)|(小时))?)";
 	public static final String pureLetterStringRegex = "([\\p{IsLatin}\\p{IsCyrillic}]+)";
 	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％：∶／×－＋·～]+)";
 	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+型?)";
@@ -93,7 +93,7 @@ public class config {
 	}
 
 	final public static Corpus renmingribaoWord = new Corpus(renmingribao);
-	public static WordInfoInCorpus wordInfoInCorpus_total;
+	public static WordInfoInCorpus wordInfoInCorpus_total ;
 	//public static WordInfoInCorpus wordInfoInCorpus_corpus = new WordInfoInCorpus(config.corpusFile);
 
 

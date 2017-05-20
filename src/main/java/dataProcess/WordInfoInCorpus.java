@@ -38,8 +38,9 @@ public class WordInfoInCorpus {
 	}
 
 	public static void clean() {
-		RunSystemCommand.run("find data/corpus -name *.data | xargs rm");
-		RunSystemCommand.run("find data/corpus -name merge* | xargs rm");
+		RunSystemCommand.run("rm data/corpus/*.tmp");
+		RunSystemCommand.run("rm data/corpus/*.tmp2");
+		RunSystemCommand.run("rm data/corpus/*.data");
 	}
 
 	public String addWordInfo(String line) {

@@ -26,6 +26,10 @@ abstract public class CRFModel implements NewWordDetector {
 	public String model, template, trainData;
 
 	{
+		if (System.getProperty("os.name").contains("Win")) {
+			config.isCRFsuite = true;
+			config.algorithm = "ap";
+		}
 		if (config.isCRFsuite) {
 			crfToolWrapper = new CRFsuiteWrapper(this);
 		} else

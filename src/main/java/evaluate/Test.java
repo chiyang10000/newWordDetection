@@ -95,7 +95,8 @@ public class Test {
 	}
 
 	public static void clean() {
-		RunSystemCommand.run("find tmp -type f | grep -v gitignore | xargs rm");
+		RunSystemCommand.run("rm tmp/*");
+		RunSystemCommand.run("rm data/info/*");
 	}
 
 	public static void main(String... args) {
@@ -129,7 +130,7 @@ public class Test {
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile), newWordDetector.detectNewWord(inputFile, outputFile, nerType),
-						newWordDetector.getClass().getSimpleName() + "." + nerType);
+						newWordDetector.getClass().getSimpleName() + "." + nerType.label);
 			}
 		}
 		logger.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
