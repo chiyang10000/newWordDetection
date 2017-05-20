@@ -45,7 +45,8 @@ public class WordCRF extends CRFModel implements Serializable {
 		WordCRF wordCRF = new WordCRF();
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			if (ner != Ner.nw) continue;
-			wordCRF.calcMostRecallInAnsj(config.testData, ner);
+			config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
+			wordCRF.calcMostRecallInAnsj(config.totalData, ner);
 			wordCRF.train(new String[]{config.trainData}, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					wordCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
