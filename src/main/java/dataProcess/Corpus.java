@@ -63,7 +63,7 @@ public class Corpus {
 	}
 
 	static void clean() {
-		RunSystemCommand.run("rm data/corpus/*.words");
+		//RunSystemCommand.run("rm data/corpus/*.words");
 		RunSystemCommand.run("find data/test -type f | xargs rm");
 	}
 

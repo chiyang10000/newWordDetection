@@ -27,10 +27,10 @@ public class CharacterCRF extends CRFModel {
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
-		//characterCRF.train(corpus, Ner.ner);
+		characterCRF.train(corpus, Ner.ner);
 		//characterCRF.train(corpus, Ner.nw);
 		for (Ner ner : Ner.supported) {
-			//if (ner != Ner.nr) continue;
+			if (ner == Ner.nw) continue;
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
 					characterCRF.getClass().getSimpleName() + "." + ner.label);
