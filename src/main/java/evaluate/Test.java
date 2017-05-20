@@ -27,7 +27,6 @@ public class Test {
 		logger.debug("shuffle is {}", config.isShuffle);
 		logger.debug("word filter is {} ", config.isNewWordFilter);
 		logger.debug("exclude new word pattern {}", config.newWordExcludeRegex);
-
 	}
 
 	/**
@@ -123,10 +122,6 @@ public class Test {
 		newWordDetectors.add(ansjNlpAnalysis);
 		newWordDetectors.add(characterCRF);
 		newWordDetectors.add(wordCRF);
-		if (config.isTrain) {
-			characterCRF.main();
-			wordCRF.main();
-		}
 
 		String inputFile = config.testDataInput;
 		String outputFile;

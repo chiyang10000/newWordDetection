@@ -70,6 +70,7 @@ public class config {
 	public static String totalDataInput = "data/test/input/total.txt.src";
 
 	public static Set<String> trainModel = new HashSet<>();
+	public static Set<String> testModel = new HashSet<>();
 	static {
 		Properties prop = new Properties();
 		try {
@@ -83,6 +84,12 @@ public class config {
 					String[] tmp = prop.getProperty(key).split(",");
 					for (String tmp0: tmp)
 						trainModel.add(tmp0);
+					continue;
+				}
+				if (key.equals("test")) {
+					String[] tmp = prop.getProperty(key).split(",");
+					for (String tmp0: tmp)
+						testModel.add(tmp0);
 					continue;
 				}
 				Field field = config.class.getField(key);
