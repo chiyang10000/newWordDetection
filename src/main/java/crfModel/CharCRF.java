@@ -28,6 +28,8 @@ public class CharCRF extends CRFModel {
 		String[] corpus = new String[]{config.trainData};
 		CharCRF charCRF = new CharCRF();
 
+		if (config.trainModel.contains(Ner.ner.name))
+			charCRF.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {
 			if (config.trainModel.contains(ner.name))
 				charCRF.train(corpus, ner);

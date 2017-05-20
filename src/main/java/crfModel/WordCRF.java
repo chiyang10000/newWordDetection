@@ -39,13 +39,16 @@ public class WordCRF extends CRFModel implements Serializable {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
 		}
+		String[] corpus = new String[]{config.trainData};
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
 		config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
+		if (config.trainModel.contains(Ner.ner.name))
+			wordCRF.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			wordCRF.calcMostRecallInAnsj(config.testData, ner);
 			if (config.trainModel.contains(ner.name))
-				wordCRF.train(new String[]{config.trainData}, ner);
+				wordCRF.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
