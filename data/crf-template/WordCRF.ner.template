@@ -1,0 +1,41 @@
+# Unigram: word0, length1, pos2, tf3, pmi4, le5, re6, tf with previous word7
+#Upmi:%x[0,4]
+
+# length
+Ulen01:%x[0,1]
+Ulen02:%x[-1,1]/%x[0,1]
+Ulen03:%x[0,1]/%x[1,1]
+
+# 词性
+Upos01:%x[-1,2]
+Upos02:%x[0,2]
+Upos03:%x[1,2]
+Upos15:%x[-1,2]/%x[0,2]
+Upos16:%x[0,2]/%x[1,2]
+Upos17:%x[-1,2]/%x[1,2]
+
+# re le
+Ule:%x[0,5]
+Ure:%x[0,6]
+U100:%x[-1,6]/%x[0,5]
+U10:%x[0,6]/%x[1,5]
+
+# tf
+Utf:%x[0,3]
+U11:%x[-1,3]/%x[0,3]
+U12:%x[0,3]/%x[1,3]
+U111:%x[-1,3]/[1,3]
+
+# 词
+#U011:%x[-1,0]
+#U012:%x[0,0]
+#U013:%x[1,0]
+#U15:%x[-1,0]/%x[0,0]
+#U16:%x[0,0]/%x[1,0]
+#U17:%x[-1,0]/%x[1,0]
+
+UtfJoined01:%x[-2,7]
+UtfJoined02:%x[-1,7]
+UtfJoined03:%x[0,7]
+
+B

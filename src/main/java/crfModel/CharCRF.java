@@ -28,10 +28,9 @@ public class CharCRF extends CRFModel {
 		String[] corpus = new String[]{config.trainData};
 		CharCRF characterCRF = new CharCRF();
 
-		characterCRF.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {
 			if (config.trainModel.contains(ner.name))
-				characterCRF.train(corpus, Ner.nw);
+				characterCRF.train(corpus, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					characterCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.label, ner),
 					ner, characterCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
