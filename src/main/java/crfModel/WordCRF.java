@@ -22,7 +22,7 @@ import static evaluate.config.testDataInput;
  * Created by don on 27/04/2017.
  */
 public class WordCRF extends CRFModel implements Serializable {
-	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
+	private static final Logger logger = LoggerFactory.getLogger(CharCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
 	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
 	public Analysis parser;

@@ -3,7 +3,7 @@ package evaluate;
 import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.AnsjNlp;
 import ansj.AnsjTo;
-import crfModel.CharacterCRF;
+import crfModel.CharCRF;
 import crfModel.WordCRF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -112,7 +112,7 @@ public class Test {
 		Ner.calcOOV();
 
 		WordCRF wordCRF = new WordCRF();
-		CharacterCRF characterCRF = new CharacterCRF();
+		CharCRF characterCRF = new CharCRF();
 		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxStringLength);
 		AnsjTo ansjToAnalysis = new AnsjTo();
 		AnsjNlp ansjNlpAnalysis = new AnsjNlp();
