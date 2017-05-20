@@ -102,6 +102,10 @@ public class Test {
 	}
 
 	public static void main(String... args) {
+		if (args.length > 0) {
+			config.isCRFsuite = true;
+			config.algorithm = args[0];
+		}
 		clean();
 		Ner.calcOOV();
 
