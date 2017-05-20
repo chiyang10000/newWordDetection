@@ -14,6 +14,9 @@ import java.lang.reflect.Field;
 import java.util.Iterator;
 import java.util.Properties;
 
+import static evaluate.Test.readWordList;
+import static evaluate.Test.test;
+
 /**
  * Created by wan on 4/25/2017.
  */
@@ -32,7 +35,7 @@ public class config {
 			"((([年月日]|(世纪)|(年代))[前初中底末]?)|[号时分秒点]|(秒钟)|(点钟)|(月份)|(小时))?)";
 	public static final String pureLetterStringRegex = "([\\p{IsLatin}\\p{IsCyrillic}]+)";
 	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％：∶／×－＋·～]+)";
-	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+型?)";
+	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+)";
 	final public static String punctExcludeRegx = "([　°～｜■＋±\\pP&&[^·－／]]+)";
 	final public static String newWordExcludeRegex = String.join("|", pureNumStringRegex, pureLetterStringRegex,
 			letterWithNumStringRegex, timeRegx, punctExcludeRegx);
@@ -114,22 +117,12 @@ public class config {
 	}
 
 	public static void main(String... args) {
-		System.err.println("15小时".matches(timeRegx));
-		System.out.println(removePos("a/b//l"));
-		System.out.println(Double.parseDouble("-Infinity"));
-		System.out.println(Double.NEGATIVE_INFINITY);
-		System.out.println("７".matches(newWordExcludeRegex));
-		System.out.println("Ｐ".matches(newWordExcludeRegex));
-		System.out.println("１∶１００".matches(".*∶.*") + "1:100");
-		System.out.println("Семёрка".matches(newWordExcludeRegex));
-		System.out.println("你".matches("\\p{IsHan}"));
-		if ("指令／秒".matches("[\\p{IsHan}·－／]+"))
-			try {
-				String tmp = PinyinHelper.convertToPinyinString("ak艾克", ",", PinyinFormat.WITH_TONE_NUMBER);
-				System.out.println(tmp);
-			} catch (PinyinException e) {
-				e.printStackTrace();
-			}
+		for (Ner type : Ner.supported) {
+			test(
+					readWordList(config.getAnswerFile(config.trainDataInput, type)),
+					readWordList(config.getAnswerFile(config.testDataInput, type)),
+					type.pattern + " data info");
+		}
 	}
 
 	static public String category(String word) {
