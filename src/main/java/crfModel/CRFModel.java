@@ -115,7 +115,7 @@ abstract public class CRFModel implements NewWordDetector {
 	}
 
 	public void train(String[] inputFiles, Ner ner) {
-		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
+		model = "data/model/"  + crfToolWrapper.getClass().getSimpleName() + "." +  this.getClass().getSimpleName() + "." + ner.model+ ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template";
 		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model+ ".crf";
 		convert2TrainInput(inputFiles, ner);
@@ -123,15 +123,13 @@ abstract public class CRFModel implements NewWordDetector {
 	}
 
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
-		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
+		model = "data/model/"  + crfToolWrapper.getClass().getSimpleName() + "." +  this.getClass().getSimpleName() + "." + ner.model+ ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template"; //crfsuite 要用到
-		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", ner.label, ".crfin");
-		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
-				".", this.getClass().getSimpleName(), ".", ner.label, ".crfout");
+		String prefix = String.join(".", "tmp/crf/" + inputFile.replaceAll(".*/", "") , this.getClass() .getSimpleName(), ner.label);
+		String crfppInput = String.join(".", prefix, "crfin");
+		String crfppOutput = String.join(".", prefix, "crfout");
 		convertSrc2TestInput(new String[]{inputFile}, crfppInput, ner);
-		crfToolWrapper.decode("data/model/" + this.getClass().getSimpleName() + "." + ner.model + ".model", crfppInput,
-				crfppOutput);
+		crfToolWrapper.decode(model, crfppInput, crfppOutput);
 		return convertTestOuput2Res(crfppOutput, outputFile, ner);
 	}
 
