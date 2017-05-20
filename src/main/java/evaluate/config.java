@@ -82,8 +82,10 @@ public class config {
 				String key = it.next();
 				if (key.equals("train")) {
 					String[] tmp = prop.getProperty(key).split(",");
-					for (String tmp0: tmp)
+					for (String tmp0: tmp) {
 						trainModel.add(tmp0);
+						System.err.println(tmp0);
+					}
 					continue;
 				}
 				if (key.equals("test")) {
