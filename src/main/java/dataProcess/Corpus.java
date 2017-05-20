@@ -239,6 +239,7 @@ public class Corpus {
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
 		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
 
+		config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner type : Ner.supported) {
 			extractWord(config.trainData, type);
 			extractWord(config.testData, type);

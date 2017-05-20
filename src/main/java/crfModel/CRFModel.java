@@ -48,45 +48,56 @@ abstract public class CRFModel implements NewWordDetector {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 			PrintWriter writer = new PrintWriter(new FileWriter(newWordFile));
 			String line = reader.readLine();
+			StringBuilder context = new StringBuilder("^");
 
 			while (true) {
 				if (line == null) break;
 				if (line.length() == 0) {
 					line = reader.readLine();
+					if (line == null) break;
+						context = new StringBuilder(getWord(line));
 					continue;
 				}
+				if (context.length() > 10)
+					context.deleteCharAt(0);
 				StringBuilder wordBuffer = new StringBuilder();
+				//System.err.println(context);
 				FieldAppender fieldAppender = null;
 				String label_head = getLabel(line);
-				if (getLabel(line).contains(label_begin)) {
-					while (!getLabel(line).contains(label_other) && !getLabel(line).contains(label_single)) {
+				String label = label_head;
+				if (label.contains(label_begin)) {
+					while (!label.contains(label_other) && !label.contains(label_single)) {
 						if (fieldAppender == null)
 							fieldAppender = new FieldAppender(line);
 						else
 							fieldAppender.append(line);
 						wordBuffer.append(getWord(line));
 						line = reader.readLine();
+						context.append(getWord(line));
 						if (line.length() <= 0) break;
-						if (getLabel(line).contains(label_begin)) break;
+						label = getLabel(line);
+						if (label.contains(label_begin)) break;
 					}
 				}
 				else {
 					fieldAppender = new FieldAppender(line);
 					wordBuffer.append(getWord(line));
 					line = reader.readLine();
+					context.append(getWord(line));
 				}
 				String word = wordBuffer.toString();// 这是一个词
+				//System.err.println(context);
 				if (ner == Ner.nw) {
 					if (config.renmingribaoWord.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
-						newWordList.put(word, fieldAppender.toString());
-						writer.println(word + "\t" + fieldAppender);
+						newWordList.put(word, context + "\t" + fieldAppender.toString());
+						writer.println(word + "\t" + context + "\t" + fieldAppender);
 					}
 				} // nw
 				if (ner != Ner.nw) {
 					if (label_head.equals(ner.label + label_begin) || label_head.equals(ner.label + label_single)) //单字名称 和 多字名称
 						if (!newWordList.keySet().contains(word)) {
-							newWordList.put(word, fieldAppender.toString());
-							writer.println(word + "\t" + fieldAppender);
+							newWordList.put(word, context + "\t" + fieldAppender.toString());
+							writer.println(word + "\t" + context + "\t" + fieldAppender);
 						}
 				} // nr ,ns
 			}
@@ -109,6 +120,7 @@ abstract public class CRFModel implements NewWordDetector {
 
 	public Map<String, String> detectNewWord(String inputFile, String outputFile, Ner ner) {
 		model = "data/model/" + this.getClass().getSimpleName() + "." + ner.model+ ".model";
+		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template"; //crfsuite 要用到
 		String crfppInput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),
 				".", this.getClass().getSimpleName(), ".", ner.label, ".crfin");
 		String crfppOutput = String.join("", "tmp/crf/", inputFile.replaceAll(".*/", ""),

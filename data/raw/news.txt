@@ -1004,7 +1004,7 @@ Sir-C／X-SAR/nx 是/v 在/p Sir-A/nx ，/w Sir-B/nx 基础/n 上/f 发展/v 起
 欧空局/nt 分别/d 于/p 1991年/t 7月/t 和/c 1995年/t 4月/t ，/w 发射/v 了/u 欧洲遥感卫星/nz (/w EuropeanRemoteSensingSatellite/nx ，/w ERS/nx )/w 系列/n 民用/b 雷达/n 成像/vn 卫星/n :/w ERS-1/nx 和/c ERS-2/nx ，/w 主要/d 用于/v 对/p 陆地/n 、/w 海洋/n 、/w 冰川/n 、/w 海岸线/n 等/u 成像/v 。/w 
 卫星/n 采用/v 法国/ns Spot-I/nx 和/c Spot-Ⅱ/nx 卫星/n 使用/v 的/u MK-1/nx 平台/n ，/w 装载/v 了/u C/nx 波段/n SAR/nx ，/w 天线/n 波束/n 指向/n 固定/a ，/w 并/c 采用/v VV/nx 极化/vn 方式/n ，/w 可以/v 获得/v 30/m m/q 空间/n 分辨率/n 和/c 100/m km/q 观测带/n 宽/a 的/u 高/a 质量/n 图像/n 。/w 
 Envisat/nx 是/v ERS/nx 计划/n 的/u 后续/vn ，/w 由/p 欧空局/nt 于/p 2002年/t 3月/t 送入/v 太空/s 的/u 又/d 一/m 颗/q 先进/a 的/u 近/a 极地/n 太阳/n 同步/vn 轨道/n 雷达/n 成像/vn 卫星/n 。/w 
-Envisat/nx 上/f 所/u 搭载/v 的/u ASAR/nx 是/v 基于/p ERS-1/nx //w 2/m 主动/a 微波仪/n (/w AMI/nx )/w 建造/v 的/u ，/w 继承/v 了/u ERS-1／2/nx 　/w AMI/nx 中/f 的/u 成像/vn 模式/n 和/c 波束/n 模式/n ，/w 增强/v 了/u 在/p 工作/vn 模式/n 上/f 的/u 功能/n ，/w 具有/v 多种/m 极化/vn 、/w 可变/vn 入射角/n 、/w 大幅宽/n 等/u 新/a 的/u 特性/n ，/w 它/r 将/d 继续/v 开展/v 对/p 地/n 观测/v 和/c 地球/n 环境/n 的/u 研究/vn 。/w 
+Envisat/nx 上/f 所/u 搭载/v 的/u ASAR/nx 是/v 基于/p ERS-1/nx //w 2/m 主动/a 微波仪/n (/w AMI/nx )/w 建造/v 的/u ，/w 继承/v 了/u ERS-1／2/nx ，/w AMI/nx 中/f 的/u 成像/vn 模式/n 和/c 波束/n 模式/n ，/w 增强/v 了/u 在/p 工作/vn 模式/n 上/f 的/u 功能/n ，/w 具有/v 多种/m 极化/vn 、/w 可变/vn 入射角/n 、/w 大幅宽/n 等/u 新/a 的/u 特性/n ，/w 它/r 将/d 继续/v 开展/v 对/p 地/n 观测/v 和/c 地球/n 环境/n 的/u 研究/vn 。/w 
 意大利/ns 
 2007年/t 6月/t ，/w 由/p 意大利/ns 国防部/nt 与/c 航天局/nt 合作/v 项目/n 的/u 首/m 颗/q 雷达/n 成像/vn 卫星/n Cosmo-Skymed1/nx 卫星/n 的/u 发射/vn 入/vn 轨/n 标志/v 着/u Cosmo-Skymed/nx 星座/n 项目/n 的/u 启动/vn 。/w 
 Cosmo-Skymed/nx 卫星/n 工作/v 在/p X/nx 波段/n (/w 9.6/m GHz/q )/w ，/w 具有/v 多极化/v 、/w 多/a 入射角/n 的/u 特性/n ，/w 具备/v 3/m 种/q 工作/vn 方式/n 和/c 5/m 种/q 分辨率/n 的/u 成像/vn 模式/n :/w ScanSAR/nx (/w 100/m m/q 和/c 30/m m/q )/w 、/w Strip-Map/nx (/w 3/m m/q 和/c 1.5/m m/q )/w 、/w SpotLight/nx (/w 1/m m/q )/w 。/w 
@@ -2395,7 +2395,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 法新社/nt 快讯/n 说/v ，/w 土耳其/ns 首都/n 安卡拉/ns 总统府/n 附近/f 发生/v 飞机/n 爆炸/v ，/w 现场/s 冒/v 起/v 黑/a 烟/n 。/w 
 另/r 据/p 报道/v ，/w 土耳其总统府/nt 官员/n 说/v ，/w 多/a 架/q F16/nx 战机/n 对/p 总统府/n 外围/f 的/u 政变者/n 坦克/n 进行/v 了/u 空袭/vn 。/w 
 该/r 官员/n 还/d 说/v ，/w 一/m 架/q 参与/v 了/u 袭击/v 土耳其/ns 卫星/n 运营者/n 的/u 军方/n 飞机/n 被/p 击落/v 。/w 
-电视/n 画面/n 显示/v ，/w 数十/m 名/q 彻夜/d 驻守/v 在/p 博斯普鲁斯大/a 桥/ns 的/u 政变/vn 士兵/n 投降/v ，/w 他们/r 走/v 出/v 坦克/n ，/w 双/m 头/n 抱/v 过/u 头顶/n 。/w 
+电视/n 画面/n 显示/v ，/w 数十/m 名/q 彻夜/d 驻守/v 在/p 博斯普鲁斯大桥/ns 的/u 政变/vn 士兵/n 投降/v ，/w 他们/r 走/v 出/v 坦克/n ，/w 双/m 头/n 抱/v 过/u 头顶/n 。/w 
 土耳其/ns 总理/n 说/v ，/w 已/d 任命/v 第一/m 军/n 司令/n 尤米特丁达尔/nr 上将/n 为/v 临时/b 总参谋长/n 。/w 
 此前/t ，/w 总统/n 埃尔多安/nr 曾/d 表示/v 总参谋长/n 下落不明/v 。/w 
 “/w 内忧外患/n ”/w 中/f 的/u 土耳其/ns 
@@ -2440,7 +2440,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土中文化交流与合作协会/nt 会长/n ：/w 政变/v 不/d 会/v 成功/a 
 土中文化交流与合作协会/nt 会长/n 卡德尔·天/nr 在/p 接受/v 《/w 环球时报/nz 》/w 采访/v 时/n 表示/v ，/w 不/d 排除/v 政变/v 是/v 由/p 土耳其/ns 军/n 中/f 少数/m 的/u “/w 居兰运动/nz ”/w 支持者/n 发动/v 的/u ，/w “/w 8月/t 开始/v ，/w 土耳其/ns 军方/n 要/v 进行/v 职务/n 调整/vn ，/w 职务/n 调整/v 对/p 这些/r 居兰运动/nz 支持者/n 的/u 不/d 太/d 有利/a ，/w 土耳其政府/nt 想/v 让/p 他们/r 退休/v ，/w 这/r 引起/v 了/u 他们/r 的/u 不满/an 。/w ”/w 
 卡德尔·天/nr 认为/v 政变/v 不/d 会/v 成功/a ，/w “/w 因为/c 居兰运动/nz 支持者/n 只/d 占/v 土耳其/ns 军方/n 大概/d 1%/m ~/w 2%/m 的/u 比例/n 。/w ”/w 
-已/d 公开/a 的/u 资料/n 显示/v ，/w 居兰运动/nz 在/p 谱系/n 上/f 属于/v 主张/v 公民/n 伊斯兰/nz 的/u “/w 努尔库运动/n ”/w ，/w 创立者/n 为/v 伊斯兰/nz 教育/n 学者/n 法图拉/nr 　/w 居兰/nr 。/w 
+已/d 公开/a 的/u 资料/n 显示/v ，/w 居兰运动/nz 在/p 谱系/n 上/f 属于/v 主张/v 公民/n 伊斯兰/nz 的/u “/w 努尔库运动/n ”/w ，/w 创立者/n 为/v 伊斯兰/nz 教育/n 学者/n 法图拉/nr ，/w 居兰/nr 。/w 
 上世纪/t 70年代/t ，/w 居兰/nr 开始/v 着手/v 建立/v 自己/r 的/u 宗教/n 团体/n ，/w 吸引/v 了/u 一/m 批/q 坚定/a 的/u 支持者/n 。/w 
 上世纪/t 90年代/t ，/w 居兰运动/nz 开始/v 在/p 中亚/ns 国家/n 开设/v 国际/n 学校/n ，/w 影响力/n 扩散/v 至/p 国外/s 。/w 
 居兰运动/nz 的/u 迅速/a 发展/vn 引起/v 土耳其/ns 世俗/n 势力/n 的/u 担忧/vn ，/w 1998年/t 土耳其/ns 法院/n 指控/v 居兰/nr 企图/v “/w 通过/p 伪装/v 的/u 民主/an 和/c 温和/a 的/u 假象/n 颠覆/v 世俗/n 制度/n ”/w 。/w 
@@ -2477,7 +2477,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 据/p 报道/v ，/w 土耳其/ns 当地/s 时间/n 7月/t 15日/t 晚/t ，/w 有/v 土/ns 军人/n 发起/v 行动/v ，/w 控制/v 了/u 安卡拉/ns 、/w 伊斯坦布尔/ns 多/a 个/q 要害/n 部门/n 。/w 
 土/ns 总理/n 称/v ，/w 土军/n 内部/f 有/v 人/n 试图/v 发动/v 政变/v 。/w 
 陆慷/nr 说/v ，/w 外交部/n 和/c 中国驻土耳其使领馆/nt 迄未/d 接到/v 中国/ns 公民/n 受到/v 伤害/v 的/u 报告/n ，/w 并/c 已/d 启动/v 应急/vn 机制/n 。/w 
-据/p 英国卫报/nz 网站/n 报道/v ，/w 土耳其/ns 博斯普鲁斯大/a 桥/ns 上/f 的/u 叛军/n 已经/d 投降/v ，/w 为/p 阻止/v 民众/n 接近/v 叛军/n ，/w 警察/n 向/p 空中/s 鸣枪/v 。/w 
+据/p 英国卫报/nz 网站/n 报道/v ，/w 土耳其/ns 博斯普鲁斯大桥/ns 上/f 的/u 叛军/n 已经/d 投降/v ，/w 为/p 阻止/v 民众/n 接近/v 叛军/n ，/w 警察/n 向/p 空中/s 鸣枪/v 。/w 
 土/ns 军事/n 政变/v 已/d 致/v 至少/d 60/m 人/n 死亡/v 埃尔多安/nr 称/v 将/d 肃清/v 政变者/n 
 新华社/nt 安卡拉/ns 7月/t 16日/t 电/n 土耳其/ns 军方/n 部分/m 军人/n 当地/s 时间/n 15日/t 晚/t 发动/v 军事/n 政变/v 。/w 
 至/p 16日/t 晨/t ，/w 政变/v 已/d 造成/v 至少/d 60/m 人/n 死亡/v ，/w 另/d 有/v 750/m 多/m 名/q 参与政变者/n 被/p 逮捕/v 。/w 
@@ -2559,7 +2559,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 民众/n 在/p 主要/b 城市/n 抗议/v 军事/n 政变/v 
 7月/t 16日/t ，/w 在/p 土耳其/ns 安卡拉/ns ，/w 民众/n 在/p 议会/n 大楼/n 外/f 聚集/v 抗议/v 军事/n 政变/v ，/w 呼吁/v 土耳其/ns 尽快/d 回归/v 和平/n 。/w 
 新华社/nt 记者/n 邹乐/nr 摄/v 
-新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 邹乐/nr 　/w 施春/nr ）/w 土耳其/ns 民众/n 16日/t 晚/t 在/p 首都/n 安卡拉/ns 等/u 主要/b 城市/n 聚集/v ，/w 抗议/v 15日/t 晚/t 突发/v 的/u 军事/n 政变/vn ，/w 呼吁/v 和平/n 与/c 安宁/a 。/w 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 邹乐/nr ，/w 施春/nr ）/w 土耳其/ns 民众/n 16日/t 晚/t 在/p 首都/n 安卡拉/ns 等/u 主要/b 城市/n 聚集/v ，/w 抗议/v 15日/t 晚/t 突发/v 的/u 军事/n 政变/vn ，/w 呼吁/v 和平/n 与/c 安宁/a 。/w 
 据/p 土耳其/ns 《/w 每日新闻/nz 》/w 报道/v ，/w 数千/m 人/n 16日/t 晚/t 聚集/v 在/p 土耳其/ns 最/d 大/a 城市/n 伊斯坦布尔/ns 市中心/s 的/u 塔克西姆广场/ns 。/w 
 他们/r 高唱/v 土耳其/ns 国歌/n ，/w 高呼/v 反对/v 军事/n 政变/v 的/u 口号/n ，/w 斥责/v 政变/v 给/p 土耳其/ns 带来/v 动荡/a 。/w 
 在/p 安卡拉/ns 市中心/s 的/u 红新月广场/ns ，/w 数千/m 民众/n 用/p 土耳其/ns 国旗/n 将/p 广场/n 变成/v 了/u 红色/n 的/u 海洋/n 。/w 
@@ -2572,7 +2572,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 他/r 呼吁/v 政府/n 和/c 民众/n 提高/v 警惕/a 。/w 
 土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
 土耳其/ns 政变/v 已/d 造成/v 161/m 人/n 死亡/v 近/v 3000/m 人/n 被捕/v 
-新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 施春/nr 　/w 邹乐/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 在/p 记者会/n 上/f 说/v ，/w 15日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v 2839/m 名/q 政变参与者/n 。/w 
+新华社/nt 安卡拉/ns 7月/t 16日/t 电/n （/w 记者/n 施春/nr ，/w 邹乐/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 16日/t 在/p 记者会/n 上/f 说/v ，/w 15日/t 晚/t 发动/v 的/u 未遂/vn 军事/n 政变/vn 已/d 造成/v 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v ，/w 同时/t 当局/n 已经/d 逮捕/v 2839/m 名/q 政变参与者/n 。/w 
 他/r 说/v ，/w 目前/t 土耳其政府/nt 已/d 完全/a 掌控/v 局势/n ，/w 共有/v 2839/m 名/q 参与/v 此次/r 军事/n 政变者/n 被/p 逮捕/v ，/w 包括/v 一些/m 高级/a 军官/n ，/w 有/v 20/m 名/q 叛乱/vn 军人/n 被/p 打/v 死/v 。/w 
 此前/t ，/w 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 说/v ，/w 军事/n 政变/v 致/v 194/m 人/n 丧生/v 。/w 
 耶尔德勒姆/nr 警告/v 说/v ，/w 任何/r 国家/n 都/d 不/d 要/v 支持/v 流亡/v 美国/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 领导/v 的/u “/w 居伦运动/n ”/w 。/w 
@@ -2653,7 +2653,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 此次/r 政变/v 已/d 造成/v 160/m 多/m 人/n 死亡/v 、/w 1400/m 多/m 人/n 受伤/v 。/w 
 毫无疑问/d ，/w 本来/d 就/d 因/p 频发/v 的/u 恐怖/a 袭击/vn 而/c 失去/v 安全感/n 的/u 土耳其/ns 人/n ，/w 又/d 一/m 次/q 经历/v 血/n 的/u 洗礼/vn ，/w 会/v 更加/d 感到/v 和平/n 的/u 可贵/an 。/w 
 联大/nt 主席/n 谴责/v 土耳其/ns 未遂/v 政变/v 
-新华社/nt 联合国/nt 7月/t 16日/t 电/n （/w 记者/n 史霄萌/nr 　/w 顾震球/nr ）/w 第70/m 届/q 联合国/nt 大会/n 主席/n 吕克托夫特/nr 16日/t 发表/v 声明/n ，/w 强烈/a 谴责/v 土耳其/ns 部分/m 军方/n 人员/n 企图/v 发动/v 政变/v 。/w 
+新华社/nt 联合国/nt 7月/t 16日/t 电/n （/w 记者/n 史霄萌/nr ，/w 顾震球/nr ）/w 第70/m 届/q 联合国/nt 大会/n 主席/n 吕克托夫特/nr 16日/t 发表/v 声明/n ，/w 强烈/a 谴责/v 土耳其/ns 部分/m 军方/n 人员/n 企图/v 发动/v 政变/v 。/w 
 声明/n 说/v ，/w 国际/n 社会/n 必须/d 全力/d 支持/v 土耳其/ns 的/u 民选/b 政府/n 和/c 法治/n 。/w 
 吕克托夫特/nr 向/p 政变/v 中/f 的/u 死难者/n 表示/v 哀悼/v 。/w 
 土耳其/ns 15日/t 晚/t 发生/v 军事/n 政变/v 。/w 
@@ -2673,7 +2673,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 美/ns 国务卿/n 克里/nr 16日/t 在/p 卢森堡/ns 表示/v ，/w 美/ns 将/d 考虑/v 这个/r 引渡/vn 请求/n ，/w 但/c 土方/n 应/v 提供/v 证明/v 居伦/nr 有/v 罪/n 的/u 证据/n 。/w 
 土/ns 总统/n 要求/v 奥巴马/nr 引渡/v 对立/vn 派别/n 领导人/n 
 新华社/nt 伊斯坦布尔/ns 7月/t 16日/t 电/n （/w 记者/n 易爱军/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 16日/t 再次/d 敦促/v 美国/ns 总统/n 奥巴马/nr 把/p 流亡/v 美国/ns 的/u 对立/vn 派别/n 领导人/n 、/w 宗教/n 人士/n 费特胡拉·居伦/nr 移交/v 给/p 土方/n 。/w 
-埃尔多安/nr 当天/t 在/p 伊斯坦布尔/ns 发表/v 讲话/n 说/v ，/w 他/r 曾/d 要求/v 奥巴马/nr 驱逐/v 居伦/nr 或者/c 把/p 他/r 移交/v 给/p 土耳其/ns ，/w 并/c 告诉/v 奥巴马/nr 　/w 居伦/nr 考虑/v 在/p 土耳其/ns 发动/v 政变/v ，/w 但/c 奥巴马/nr 不予/v 理睬/v 。/w 
+埃尔多安/nr 当天/t 在/p 伊斯坦布尔/ns 发表/v 讲话/n 说/v ，/w 他/r 曾/d 要求/v 奥巴马/nr 驱逐/v 居伦/nr 或者/c 把/p 他/r 移交/v 给/p 土耳其/ns ，/w 并/c 告诉/v 奥巴马/nr ，/w 居伦/nr 考虑/v 在/p 土耳其/ns 发动/v 政变/v ，/w 但/c 奥巴马/nr 不予/v 理睬/v 。/w 
 埃尔多安/nr 说/v ：/w “/w 如果/c 我们/r 是/v 战略/n 伙伴/n ，/w 请/v 满足/v 我们/r 的/u 请求/n 。/w ”/w 
 土耳其/ns 15日/t 晚/t 突发/v 军事/n 政变/v ，/w 导致/v 至少/d 161/m 人/n 死亡/v 和/c 1440/m 人/n 受伤/v 。/w 
 埃尔多安/nr 指责/v 居伦/nr 领导/v 的/u “/w 居伦运动/n ”/w 主导/v 了/u 此次/r 政变/v 。/w 
@@ -2764,7 +2764,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 不过/c 埃尔多安/nr 反复/d 强调/v ，/w 他/r 不/d 会/v 保守/a 处事/v ，/w 而/c 将/d 使用/v 手中/s 的/u 所有/b 宪法/n 权力/n 为/p 土耳其/ns 服务/v 。/w 
 （/w 夏文辉/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 安卡拉/ns :/w 深夜/t ，/w 强烈/a 的/u 枪声/n 、/w 爆炸声/n 当局/n 猝不及防/v 
-7月/t 15日/t ，/w 在/p 土耳其/ns 伊斯坦布尔/ns ，/w 宪兵/n 在/p 博斯普鲁斯大/a 桥/ns 上/f 警戒/v 。/w 
+7月/t 15日/t ，/w 在/p 土耳其/ns 伊斯坦布尔/ns ，/w 宪兵/n 在/p 博斯普鲁斯大桥/ns 上/f 警戒/v 。/w 
 土耳其/ns 总理/n 耶尔德勒姆/nr 15日/t 晚/t 说/v ，/w 土耳其/ns 武装部队/n 总参谋部/n 部分/m 军官/n 当天/t 企图/v 发动/v 军事/n 政变/v 。/w 
 土耳其/ns 宪兵/n 15日/t 夜/t 关闭/v 最/d 大/a 城市/n 伊斯坦布尔/ns 的/u 两/m 座/q 大/a 桥/n 。/w 
 电视/n 画面/n 显示/v 军机/n 在/p 低空/s 飞行/v ，/w 桥上/s 出现/v 坦克/n 。/w 
@@ -2817,7 +2817,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 希腊政府/nt 尚未/d 证实/v 这些/r 土耳其/ns 军人/n 是否/v 参与/v 军事/n 政变/v 。/w 
 新华社/nt 发/v 
 美国防部/nt 说/v 土耳其/ns 关闭/v 打击/v “/w 伊斯兰国/nt ”/w 的/u 空军/n 基地/n 
-新华社/nt 华盛顿/ns 7月/t 16日/t 电/n （/w 记者/n 陆佳飞/nr 　/w 徐剑梅/nr ）/w 美国国防部/nt 16日/t 说/v ，/w 土耳其/ns 关闭/v 了/u 该国/r 南部/f 因吉尔利克空军基地/ns 的/u 领空/n ，/w 以/p 美国/ns 为首/v 的/u 多/a 国/n 联盟/n 对/p 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 因此/c 受/v 影响/v 。/w 
+新华社/nt 华盛顿/ns 7月/t 16日/t 电/n （/w 记者/n 陆佳飞/nr ，/w 徐剑梅/nr ）/w 美国国防部/nt 16日/t 说/v ，/w 土耳其/ns 关闭/v 了/u 该国/r 南部/f 因吉尔利克空军基地/ns 的/u 领空/n ，/w 以/p 美国/ns 为首/v 的/u 多/a 国/n 联盟/n 对/p 极端/n 组织/n “/w 伊斯兰国/nt ”/w 的/u 空中/s 打击/vn 因此/c 受/v 影响/v 。/w 
 美国防部/nt 发言人/n 彼得·库克/nr 当天/t 在/p 一/m 份/q 声明/n 中/f 说/v ，/w 受/v 土耳其/ns 15日/t 晚/t 发生/v 的/u 未遂/vn 军事/n 政变/vn 影响/v ，/w 土/ns 目前/t 对/p 因吉尔利克空军基地/ns 的/u 领空/n 实施/v 禁飞/v 。/w 
 美军/n 和/c 联盟军/n 主要/d 利用/v 该/r 基地/n 对/p 伊拉克/ns 和/c 叙利亚/ns 境内/s 的/u “/w 伊斯兰国/nt ”/w 目标/n 实施/v 空中/s 打击/v 。/w 
 库克/nr 表示/v ，/w 美方/n 正在/d 与/p 土方/n 沟通/v ，/w 以期/v 尽快/d 恢复/v 因吉尔利克空军基地/ns 的/u 使用/vn 。/w 
@@ -2926,7 +2926,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 这/r 是/v 7月/t 16日/t 在/p 土耳其/ns 首都/n 安卡拉/ns 的/u 总统府/n 和/c 宪兵/n 总部/n 大楼/n 路口/n 拍摄/v 的/u 在/p 政变/v 中/f 被/p 损毁/v 的/u 车辆/n 。/w 
 土耳其/ns 武装部队/n 代理/v 总参谋长/n 于米特·丁达尔/nr 16日/t 说/v ，/w 土耳其/ns 15日/t 晚/t 军事/n 政变/v 已/d 致/v 194/m 人/n 丧生/v ，/w 包括/v 41/m 名/q 警察/n ，/w 49/m 名/q 平民/n ，/w 政变参与者/n 104/m 人/n 。/w 
 新华社/nt 记者/n 邹乐/nr 摄/v 
-新华社/nt 安卡拉/ns 7月/t 17日/t 电/n （/w 记者/n 施春/nr 　/w 邹乐/nr ）/w 土耳其/ns 司法/n 部长/n 博兹达/nr 17日/t 说/v ，/w 约/d 6000/m 名/q 军人/n 和/c 法官/n 因/p 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 这/r 将/d 成为/v “/w 土耳其/ns 历史/n 上/f 最/d 大/a 规模/n 的/u 案件/n ”/w 。/w 
+新华社/nt 安卡拉/ns 7月/t 17日/t 电/n （/w 记者/n 施春/nr ，/w 邹乐/nr ）/w 土耳其/ns 司法/n 部长/n 博兹达/nr 17日/t 说/v ，/w 约/d 6000/m 名/q 军人/n 和/c 法官/n 因/p 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 这/r 将/d 成为/v “/w 土耳其/ns 历史/n 上/f 最/d 大/a 规模/n 的/u 案件/n ”/w 。/w 
 博兹达/nr 说/v ，/w 大约/d 3000/m 名/q 军人/n 因/p 涉嫌/v “/w 推翻/v 政府/n ”/w 被/p 逮捕/v 。/w 
 16日/t ，/w 土耳其/ns 检方/n 下令/v 逮捕/v 了/u 2750/m 名/q 涉嫌/v 参与/v “/w 居伦运动/n ”/w 的/u 法官/n 。/w 
 据/p 土耳其/ns 阿纳多卢通讯社/nt 报道/v ，/w 截至/v 当地/s 时间/n 17日/t 22时/t ，/w 至少/d 70/m 名/q 军队/n 将领/n 因/c 涉及/v 未遂/v 军事/n 政变/v 被/p 逮捕/v ，/w 包括/v 这/r 场/q 政变/v 的/u 主谋/n 、/w 前/f 空军/n 司令/n 阿金·厄兹蒂尔克/nr 以及/c 第二/m 军/n 军长/n 、/w 第三/m 军/n 军长/n 、/w 宪兵/n 司令/n 。/w 
@@ -2973,7 +2973,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 15日/t 晚/t 发生/v 未遂/v 政变/v 。/w 
 在/p 政变/v 被/p 挫败/v 后/f ，/w 沙特/ns 国王/n 萨勒曼/nr 在/p 第一/m 时间/n 向/p 埃尔多安/nr 发/v 去/v 贺电/n ，/w 祝贺/v 土耳其/ns 恢复/v 安全/a 和/c 秩序/n 。/w 
 土耳其/ns 总统/n 命令/n 战机/n 全国/n 范围/n 内/f 巡逻/v 
-新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr 　/w 施春/nr ）/w 据/p 土耳其/ns 阿纳多卢通讯社/nt 18日/t 报道/v ，/w 土/ns 总统/n 埃尔多安/nr 17日/t 下令/v 土/ns 军方/n F-16/nx 战机/n 在/p 全国/n 范围/n 内/f 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 控制/vn 和/c 警戒/vn ，/w 以/c 进一步/d 推动/v 针对/p 土/ns 境内/s 的/u 反/b 政府/n 军人/n 、/w 警察/n 及/c 司法/n 人士/n 的/u “/w 肃清/vn ”/w 行动/vn 。/w 
+新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr ，/w 施春/nr ）/w 据/p 土耳其/ns 阿纳多卢通讯社/nt 18日/t 报道/v ，/w 土/ns 总统/n 埃尔多安/nr 17日/t 下令/v 土/ns 军方/n F-16/nx 战机/n 在/p 全国/n 范围/n 内/f 巡逻/v ，/w 加强/v 对/p 空域/n 的/u 控制/vn 和/c 警戒/vn ，/w 以/c 进一步/d 推动/v 针对/p 土/ns 境内/s 的/u 反/b 政府/n 军人/n 、/w 警察/n 及/c 司法/n 人士/n 的/u “/w 肃清/vn ”/w 行动/vn 。/w 
 另/r 据/p 报道/v ，/w 伊斯坦布尔安全总局/nt 局长/n 恰勒什坎/nr 也/d 下令/v 支持/v 政府/n 的/u 部队/n 可/v 在/p 伊斯坦布尔/ns 空域/n 随时/d 击落/v 任何/r 可疑/a 的/u 武装/vn 直升机/n 。/w 
 土耳其/ns 15日/t 夜/t 发生/v 未遂/v 军事/n 政变/v ，/w 事发/v 时/n 部分/m 战机/n 被/p 政变/vn 军人/n 掌控/v 。/w 
 政府/n 在/p 不/d 到/v 一/m 天/q 时间/n 里/f 控制/v 局势/n 。/w 
@@ -2990,7 +2990,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 埃尔多安/nr 自/p 16日/t 凌晨/t 起/v 一直/d 在/p 伊斯坦布尔/ns 坐镇/v 应对/v 此次/r 政变/v 。/w 
 目前/t ，/w 土耳其/ns 军队/n 、/w 警察/n 和/c 司法/n 机构/n 中/f 大量/m 人员/n 因/p 涉嫌/v 参与/v 政变/v 而/c 被捕/v 。/w 
 土耳其/ns 总理/n 说/v 能否/v 引渡/v 居伦/nr 考验/v 土/ns 美/ns 关系/n 
-新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr 　/w 施春/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 18日/t 在/p 安卡拉/ns 表示/v ，/w 能否/v 成功/a 从/p 美国/ns 引渡/v “/w 居伦运动/n ”/w 领导人/n 费特胡拉·居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
+新华社/nt 安卡拉/ns 7月/t 18日/t 电/n （/w 记者/n 邹乐/nr ，/w 施春/nr ）/w 土耳其/ns 总理/n 耶尔德勒姆/nr 18日/t 在/p 安卡拉/ns 表示/v ，/w 能否/v 成功/a 从/p 美国/ns 引渡/v “/w 居伦运动/n ”/w 领导人/n 费特胡拉·居伦/nr 将/d 考验/v 土/ns 美/ns 关系/n 。/w 
 耶尔德勒姆/nr 当天/t 在/p 内阁/n 会议/n 的/u 新闻/n 发布会/n 上/f 说/v ，/w 15日/t 晚/t 土耳其/ns 发生/v 未遂/v 军事/n 政变/v ，/w 这/r 就是/v 土耳其/ns 需要/v 从/p 美国/ns 引渡/v 居伦/nr 的/u 最佳/z 证据/n 。/w 
 耶尔德勒姆/nr 说/v ，/w 此次/r 未遂/v 军事/n 政变/v 导致/v 208/m 人/n 死亡/v ，/w 其中/r 包括/v 60/m 名/q 警察/n 、/w 3/m 名/q 士兵/n 和/c 145/m 名/q 平民/n ，/w 另/d 有/v 1491/m 人/n 受伤/v 。/w 
 政变参与者/n 方面/n 则/c 有/v 24/m 人/n 被/p 打/v 死/v ，/w 50/m 人/n 受伤/v 。/w 
@@ -3313,7 +3313,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 不过/c ，/w 美方/n 专家/n 沃克/nr 说/v ，/w 外界/n 有关/p 美国/ns 在/p 土/ns 核武器/n 安全/a 的/u 担忧/vn 有些/r “/w 过度/v ”/w ，/w 因为/c 这些/r 武器/n 需要/v 来自/v 华盛顿/ns 的/u 指令/n 才/d 会/v 被/p 激活/v 使用/v 。/w 
 （/w 记者/n 徐超/nr ，/w 编辑/n 李宏/nr ，/w 新华/nz 国际/n 客户端/n 报道/v ）/w 
 土耳其/ns 战机/n 轰炸/v 伊拉克/ns 北部/f 库尔德工人党/nt 
-新华社/nt 安卡拉/ns 7月/t 20日/t 电/n （/w 记者/n 邹乐/nr 　/w 施春/nr ）/w 土耳其/ns 武装部队/n 总参谋部/n 20日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军方/n 战机/n 于/p 19日/t 晚/t 轰炸/v 了/u 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 的/u 库尔德工人党/nt （/w 库工党/nt ）/w 目标/n ，/w 打/v 死/v 约/d 20/m 名/q 库工党/nt 分子/n 。/w 
+新华社/nt 安卡拉/ns 7月/t 20日/t 电/n （/w 记者/n 邹乐/nr ，/w 施春/nr ）/w 土耳其/ns 武装部队/n 总参谋部/n 20日/t 发表/v 声明/n 说/v ，/w 土耳其/ns 军方/n 战机/n 于/p 19日/t 晚/t 轰炸/v 了/u 伊拉克/ns 北部/f 哈库尔克/ns 地区/n 的/u 库尔德工人党/nt （/w 库工党/nt ）/w 目标/n ，/w 打/v 死/v 约/d 20/m 名/q 库工党/nt 分子/n 。/w 
 这/r 是/v 15日/t 晚/t 未遂/v 军事/n 政变/v 后/f 土耳其/ns 军方/n 首次/m 采取/v 对外/v 打击/v 行动/v 。/w 
 参与/v 19日/t 行动/v 的/u 土耳其/ns 武装部队/n F-16/nx 战机/n 曾/d 在/p 未遂/v 政变/v 中/f 被/p 政变/vn 军人/n 控制/v 。/w 
 此外/c ，/w 土耳其/ns 总统/n 埃尔多安/nr 20日/t 从/p 伊斯坦布尔/ns 回到/v 首都/n 安卡拉/ns ，/w 召开/v 未遂/v 政变/v 后/f 首次/m 国家安全委员会/nt 会议/n 。/w 
@@ -3385,7 +3385,7 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 美联社/nt 评论/v ，/w 这/r 是/v 埃尔多安/nr 向/p 外界/n 质疑/v 声音/n 发出/v 的/u 一个/m 信号/n ，/w 表明/v 他/r 已经/d 重新/d 控制/v 局面/n 。/w 
 （/w 王宏彬/nr ）/w （/w 新华社/nt 专特稿/n ）/w 
 新闻/n 分析/v ：/w 未遂/v 政变/v 后/f 土/ns 加速/v 向/p 俄/ns 靠拢/v 
-新华社/nt 安卡拉/ns 7月/t 22日/t 电/n （/w 记者/n 施春/nr 　/w 邹乐/nr ）/w 当地/s 时间/n 21日/t 晚/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 在/p 接受/v 媒体/n 采访/v 时/n 表示/v ，/w 土/ns 政府/n 已/d 将/d 涉嫌/v 杀害/v 俄罗斯/ns 苏－24/nx 战机/n 飞行员/n 的/u 两/m 名/q 土耳其/ns 飞行员/n 逮捕/v ，/w 并/c 称/v 这/r 两/m 名/q 嫌犯/n 与/p “/w 居伦运动/n ”/w 有关/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 22日/t 电/n （/w 记者/n 施春/nr ，/w 邹乐/nr ）/w 当地/s 时间/n 21日/t 晚/t ，/w 土耳其/ns 总统/n 埃尔多安/nr 在/p 接受/v 媒体/n 采访/v 时/n 表示/v ，/w 土/ns 政府/n 已/d 将/d 涉嫌/v 杀害/v 俄罗斯/ns 苏－24/nx 战机/n 飞行员/n 的/u 两/m 名/q 土耳其/ns 飞行员/n 逮捕/v ，/w 并/c 称/v 这/r 两/m 名/q 嫌犯/n 与/p “/w 居伦运动/n ”/w 有关/v 。/w 
 埃尔多安/nr 此举/r 可/v 视作/v 对/p 俄/ns 总统/n 普京/nr 投桃报李/v 的/u 举动/n 。/w 
 在/p 本月/r 15日/t 土耳其/ns 未遂/v 政变/v 总体/n 平息/v 后/f ，/w 普京/nr 16日/t 致电/v 埃尔多安/nr ，/w 向/p 政变/v 中/f 的/u 遇难者/n 表示/v 哀悼/v ，/w 表示/v 希望/v 尽快/d 看到/v 土/ns 恢复/v 国家/n 秩序/n 及/c 稳定/a ，/w 并/c 强调/v “/w 不/d 容许/v 国家/n 生活/n 中/f 出现/v 违反/v 宪法/n 的/u 行为/n 和/c 暴力/n 是/v 俄罗斯/ns 的/u 原则性/n 立场/n ”/w 。/w 
 土/ns 俄/ns 两/m 国/n 总统/n 还/d 计划/v 于/p 8月/t 上旬/t 在/p 俄罗斯/ns 举行/v 会晤/v 。/w 
@@ -3440,14 +3440,14 @@ M109A6/nx 带/v “/w 凯夫拉/nz ”/w 装甲/b 的/u 焊接/vn 炮塔/n 。/w
 土耳其/ns 寻求/v 加入/v 欧盟/nt 已经/d 多年/m 。/w 
 （/w 记者/n 陈立希/nr ，/w 编辑/n 李宏/nr ，/w 新华/nz 国际/n 客户端/n 报道/v ）/w 
 土耳其政府/nt 宣布/v 成立/v 紧急状态协调委员会/nt 
-新华社/nt 安卡拉/ns 7月/t 24日/t 电/n （/w 记者/n 施春/nr 　/w 邹乐/nr ）/w 土耳其总理府/nt 23日/t 发表/v 公报/n ，/w 宣布/v 成立/v 以/p 总理/n 比纳利·耶尔德勒姆/nr 为/v 主席/n 的/u 紧急状态协调委员会/nt 。/w 
+新华社/nt 安卡拉/ns 7月/t 24日/t 电/n （/w 记者/n 施春/nr ，/w 邹乐/nr ）/w 土耳其总理府/nt 23日/t 发表/v 公报/n ，/w 宣布/v 成立/v 以/p 总理/n 比纳利·耶尔德勒姆/nr 为/v 主席/n 的/u 紧急状态协调委员会/nt 。/w 
 紧急状态协调委员会/nt 成员/n 由/p 来自/v 土耳其政府/nt 主要/b 部门/n 的/u 代表/n 组成/v ，/w 包括/v 内政部/n 、/w 司法部/n 、/w 外交部/n 、/w 国防部/n 、/w 教育部/n 以及/c 劳动和社会保障部/n 等/u 。/w 
 该/r 委员会/n 的/u 决定/n 一/m 经/p 作/v 出/v ，/w 须/d 由/p 所有/b 相关/vn 政府/n 部门/n 和/c 机构/n 立即/d 执行/v 。/w 
 未来/t 涉及/v 紧急状态/n 的/u 主要/b 协调/vn 工作/n 将/d 由/p 各省/r 省长/n 实施/v 完成/v 。/w 
 土耳其/ns 15日/t 晚/t 至/c 16日/t 凌晨/t 发生/v 未遂/v 军事/n 政变/v 后/f ，/w 已/d 有/v 9000/m 多/m 人/n 被/p 逮捕/v ，/w 包括/v 土/ns 多/a 个/q 部门/n 的/u 国家/n 公务员/n 、/w 警察/n 、/w 法官/n 、/w 宗教/n 和/c 教育/v 人士/n 在内/u 的/u 近/d 5万/m 人/n 被/p 停职/v 。/w 
 21日/t ，/w 土耳其大国民议会/nt 以/p 346/m 票/q 赞成/v 、/w 115/m 票/q 反对/v 的/u 结果/n ，/w 通过/v 了/u 政府/n 提出/v 的/u 实施/v 为期/v 3/m 个/q 月/n 紧急状态/n 的/u 议案/n ，/w 紧急状态/n 决定/n 正式/a 生效/v 。/w 
 土耳其/ns 总统/n 埃尔多安/nr 宣布/v 将/d 对/p 军队/n 系统/a 实行/v 改革/v 
-新华社/nt 安卡拉/ns 7月/t 30日/t 电/n （/w 记者/n 施春/nr 　/w 邹乐/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 30日/t 宣布/v 将/d 对/p 军队/n 系统/n 实行/v 改革/v ，/w 土耳其/ns 武装部队/n 总参谋部/n 和/c 国家情报局/nt 计划/n 划归/v 总统府/n 直接/a 管辖/v 。/w 
+新华社/nt 安卡拉/ns 7月/t 30日/t 电/n （/w 记者/n 施春/nr ，/w 邹乐/nr ）/w 土耳其/ns 总统/n 埃尔多安/nr 30日/t 宣布/v 将/d 对/p 军队/n 系统/n 实行/v 改革/v ，/w 土耳其/ns 武装部队/n 总参谋部/n 和/c 国家情报局/nt 计划/n 划归/v 总统府/n 直接/a 管辖/v 。/w 
 埃尔多安/nr 当晚/t 在/p 接受/v 电视台/n 采访/v 时/n 说/v ，/w 主要/b 改革/vn 措施/n 包括/v ：/w 在/p 经/p 议会/n 同意/v 后/f ，/w 土耳其/ns 武装部队/n 总参谋长/n 和/c 国家情报局/nt 局长/n 将/d 从/p 以往/t 向/p 总理/n 报告/v 改/v 由/p 直接/a 向/p 总统/n 报告/v ，/w 陆海空/n 三军/n 司令/n 将/d 直接/a 向/p 国防部长/n 报告/v ；/w 现有/vn 军事/n 院校/n 解散/v ，/w 成立/v 包括/v 陆海空/n 军事/n 学院/n 在内/u 的/u 国防/n 大学/n ，/w 同时/t 成立/v 一/m 所/q 宪兵/n 学院/n ；/w 军队/n 医院/n 从/p 以往/t 隶属/v 于/p 武装部队/n 改为/v 由/p 卫生部/n 直接/a 管辖/v 。/w 
 埃尔多安/nr 说/v ，/w 土耳其/ns 对/p 美国/ns 提出/v 的/u 引渡/vn 要求/n 一向/d 有求必应/v ，/w 但/c 美国/ns 却/d 拒绝/v 引渡/v 在/v 美/ns 的/u 土耳其/ns 人/n 费特胡拉·居伦/nr 。/w 
 他/r 还/d 表示/v ，/w 土耳其/ns 将/d 继续/v 甄别/v 军队/n 、/w 警察/n 和/c 司法/n 系统/n 中/f 的/u “/w 居伦运动/n ”/w 支持者/n ，/w 并/c 以/p 坚定/a 的/u 决心/n 继续/v 反恐/v 行动/v 。/w 
@@ -5308,7 +5308,7 @@ P-3C/nx 机/n 长/a 35.57/m 米/q ，/w 翼展/n 30.36/m 米/q ，/w 机/n 高/a
 通过/p 建立/v 由/p FPS-3/nx (/w 改/v )/w 、/w FPS-5/nx 、/w FPS-7/nx 雷达/n 组成/v 的/u 陆基/n 预警/vn 探测/vn 系统/n ，/w 实现/v 对/p 弹道导弹/n 的/u 准确/a 预警/v 。/w 
 此外/c ，/w 还/d 在/p 距/p 钓鱼岛/ns 170/m 公里/q 、/w 距/p 台湾/ns 110/m 公里/q 的/u 与那国岛/ns 部署/v 海岸/n 监视/vn 雷达/n ，/w 密切/a 监视/v 西南/f 方向/p 的/u 海上/s 动向/n ，/w 获取/v 的/u 情报/n 与/p 美军/n 共享/v ；/w 计划/v 在/p 2017年/t 位于/v 小笠原/ns 群岛/n 的/u 硫磺岛/ns 新建/v 通信/vn 监听/vn 设施/n ，/w 严密/a 监视/v 中国/ns 军队/n 舰机/n 在/p 西/f 太平洋/ns 上/f 的/u 活动/vn ，/w 牵制/v 和/c 阻挠/v 中国/ns 海军/n 走向/v 远洋/b 。/w 
 日本/ns 陆上/s 自卫队/n 还/d 将/d 以/p 西部/f 军区/n 步兵团/n 为/v 基础/n ，/w 新/d 组建/v 水陆/n 两栖/b 作战旅/n ，/w 为/p 其/r 配备/v “/w 鱼鹰/nz ”/w 运输机/n 、/w 美式/b 水陆/n 两栖/b 战车/n 、/w 高速/b 机动/b 战车/n 、/w “/w 全球鹰/nz ”/w 无/v 人/n 侦察机/n 及/c 濒海/b 战斗舰/n 等/u 。/w 
-建成/v 后/f 将/d 由/p 即将/d 组建/v 的/u 陆上/s 总队/n 指挥/v ，/w 作为/p 未来/t 西南/f 方向/n 夺/v 岛/n 作战/v 的/u 主力军/n 。/w (/w 闫嘉琪/nr 　/w 邱越/nr )/w 
+建成/v 后/f 将/d 由/p 即将/d 组建/v 的/u 陆上/s 总队/n 指挥/v ，/w 作为/p 未来/t 西南/f 方向/n 夺/v 岛/n 作战/v 的/u 主力军/n 。/w (/w 闫嘉琪/nr ，/w 邱越/nr )/w 
 日本/ns 拒绝/v 与/p 中国/ns 就/p 钓鱼岛/ns 问题/n 谈判/v 欲/d 做/v 武力/n 准备/v 
 7月/t 21日/t ，/w 日本/ns 内阁/n 会议/n 审议/v 通过/v 并/c 发表/v 2015年/t 版/n 《/w 防卫/vn 白皮书/n 》/w 。/w 
 今年/t 日本/ns 《/w 防卫/vn 白皮书/n 》/w 仍然/d 老调重弹/v ，/w 大肆/d 渲染/v “/w 中国/ns 威胁/v ”/w 。/w 
@@ -6867,7 +6867,7 @@ LST/nx 标准/n 排水量/n 1653/m 吨/q ，/w 满载/vn 排水量/n 4080/m 吨/
 对/p 此/r ，/w 中国/ns 国防部/nt 一/m 位/q 官员/n 6月/t 30日/t 对/p 《/w 环球时报/nz 》/w 记者/n 表示/v ：/w 这/r 是/v 中国/ns 海军/n 根据/p 年度/n 计划/n 进行/v 的/u 例行性/n 演练/vn 。/w 
 对于/p 外媒/n 高度/n 关注/v 仲裁案/n 裁决/v 之后/f 中国/ns 军队/n 是否/v 会/v 再/d 举行/v 军事/n 演习/v ，/w 中国/ns 军事/n 专家/n 李杰/nr 7月/t 3日/t 表示/v ，/w 不/d 好/a 下/v 定论/n ，/w 要/v 看/v 事态/n 发展/v 。/w 
 目前/t ，/w 美国/ns 有/v 3/m 艘/q 宙斯盾/n 导弹/n 驱逐舰/n 在/p 南海/ns 海域/n 展开/v 警戒/v 监视/v 活动/v 。/w 
-李杰/nr 认为/v ，/w 美国/ns 接下来/c 在/p 南海/ns 采取/v 什么样/r 的/u 行动/vn ，/w 要/v 看/v 菲律宾/ns 新/a 总统/n 杜特尔特/nr 的/u 态度/n ，/w 杜特尔特/nr 配合/v 或者/c 不/d 配合/v ，/w 会/v 让/v 美国/ns 采取/v 不同/a 的/u 行动/vn 。/w （/w 郭媛丹/nr 　/w 王渠/nr ）/w 
+李杰/nr 认为/v ，/w 美国/ns 接下来/c 在/p 南海/ns 采取/v 什么样/r 的/u 行动/vn ，/w 要/v 看/v 菲律宾/ns 新/a 总统/n 杜特尔特/nr 的/u 态度/n ，/w 杜特尔特/nr 配合/v 或者/c 不/d 配合/v ，/w 会/v 让/v 美国/ns 采取/v 不同/a 的/u 行动/vn 。/w （/w 郭媛丹/nr ，/w 王渠/nr ）/w 
 日本/ns 增兵/v 西南/f 诸岛/r 有/v 阴谋/n ：/w 真正/b 意/n 在/p 中国/ns 钓鱼岛/ns 
 据/p 《/w 读卖新闻/nz 》/w 报道/v ，/w 日本/ns 拟/v 在/p 距离/v 钓鱼岛/ns 150/m 多/m 公里/q 的/u 石垣岛/ns 上/f 派驻/v 500/m 人/n 规模/n 的/u 自卫队/n ，/w 以/p 强化/v 所谓/v “/w 西南/s 诸岛/r 防卫/vn 能力/n ”/w 。/w 
 空军/n 专家/n 王明志/nr 在/p 接受/v 央视/n 《/w 今日/t 关注/v 》/w 采访/v 时/n 表示/v ，/w 日本/ns 想/v 在/p 石垣岛/ns 上/f 部署/v 陆上/s 自卫队/n 部队/n ，/w 以及/c 岸对舰导弹/n 、/w 预警/vn 探测/vn 装备/n 和/c 防空/vn 导弹/n 等/u ，/w 目的/n 是/v 在/p 有事/v 时/n 实现/v 快速/d 向/p 钓鱼岛/ns 投送/v 陆上/s 自卫队/n ，/w 使/v 石垣岛/ns 成为/v 日本/ns 陆上/s 的/u 前进/vn 基地/n 。/w 
@@ -7316,7 +7316,7 @@ LST/nx 标准/n 排水量/n 1653/m 吨/q ，/w 满载/vn 排水量/n 4080/m 吨/
 她/r 表示/v ，/w 中方/n 敦促/v 日方/n 恪守/v 中/ns 日/ns 联合/vn 声明/n 确定/v 的/u 原则/n 和/c 迄今/d 向/p 中方/n 所/u 作/v 的/u 承诺/n ，/w 坚持/v 一个/m 中国/ns 原则/n ，/w 妥善/a 处理/v 涉/v 台/ns 问题/n ，/w 不/d 要/v 向/p 台湾/ns 当局/n 和/c 国际/n 社会/n 发出/v 错误/a 信息/n ，/w 不/d 要/v 给/p 中/ns 日/ns 关系/n 制造/v 新/a 的/u 干扰/vn 。/w 
 责任/n 编辑/n ：/w 倪子牮/nr 
 日/ns 对/p 台/ns 窗口/n 改名/v “/w 日本/ns 台湾/ns 交流/vn 协会/n ”/w 日媒/n ：/w 因/c 名称/n 缺/v 地域/n 提示/v 认知/v 有/v 困难/a 
-【/w 环球网/nz 报道/n 记者/n 初晓慧/nr 　/w 齐潇涵/nr 】/w 被/p 视为/v 日本/ns 对/p 台湾/ns 窗口/n 的/u “/w 公益/n 财团法人/n 交流/vn 协会/n ”/w (/w 下文/n 简称/v “/w 交流/vn 协会/n ”/w )/w 12月/t 28日/t 在/p 官网/n 上/f 公布/v ，/w 明年/t 1月/t 1日/t 起/f ，/w 交流/vn 协会/n 变更/v 名称/n 为/v “/w 公益/n 财团法人/n 日本/ns 台湾/ns 交流/vn 协会/n ”/w 。/w 
+【/w 环球网/nz 报道/n 记者/n 初晓慧/nr ，/w 齐潇涵/nr 】/w 被/p 视为/v 日本/ns 对/p 台湾/ns 窗口/n 的/u “/w 公益/n 财团法人/n 交流/vn 协会/n ”/w (/w 下文/n 简称/v “/w 交流/vn 协会/n ”/w )/w 12月/t 28日/t 在/p 官网/n 上/f 公布/v ，/w 明年/t 1月/t 1日/t 起/f ，/w 交流/vn 协会/n 变更/v 名称/n 为/v “/w 公益/n 财团法人/n 日本/ns 台湾/ns 交流/vn 协会/n ”/w 。/w 
 公益/n 财团法人/n 交流/vn 协会/n 在/p 其/r 官网/n 写道/v ：/w “/w 自/p 2017年/t 1月/t 1日/t 起/f ，/w 变更/v 名称/n 为/v ‘/w 公益/n 财团法人/n 日本/ns 台湾/ns 交流/vn 协会/n ’/w 。/w 
 本会/r 今后/t 仍/d 将/d 发挥/v ‘/w 日/ns 台/ns ’/w 间/f 桥梁/n 作用/n ，/w 尽心竭力/v 进一步/d 发展/v ‘/w 日/ns 台/ns 关系/n ’/w 。/w ”/w 
 日本/ns 《/w 朝日新闻/nz 》/w 称/v ，/w “/w 交流/vn 协会/n ”/w 台北/ns 事务所/n 实际上/d 发挥/v 着/u “/w 日本/ns 大使馆/n ”/w 的/u 职能/n ，/w 机构/n 目前/t 所/u 用/vn 名称/n 被/p 指/v 不/d 包含/v “/w 日本/ns ”/w ，/w 认知/v 上/f 有/v 困难/a 。/w 
@@ -7555,7 +7555,7 @@ LST/nx 标准/n 排水量/n 1653/m 吨/q ，/w 满载/vn 排水量/n 4080/m 吨/
 泰国/ns 称/v 不/d 允许/v 南海/ns 争端/n 妨碍/v 中国/ns 与/p 东盟/nt 合作/v 关系/n 
 环球网/nz 报道/v 据/p 泰国/ns 《/w 民族报/nz 》/w 7月/t 12日/t 报道/v ，/w 泰国/ns 外交部/nt 11日/t 表示/v ，/w 在/p 泰国/ns 未来/t 3/m 年/q 担当/v 中国/ns 东盟/nt 协调/vn 国/n 期间/f ，/w 泰国/ns 将/d 不/d 会/v 允许/v 让/v 南海/ns 争端/n 问题/n 妨碍/v 到/v 东盟/nt 与/p 中国/ns 二者/r 之间/f 的/u 合作/vn 。/w 来自/v 西陆/n 军事/n 
 报道/v 说/v ，/w 中国/ns 与/p 这个/r 地区/n 组织/v 合作/v 的/u 主要/b 目的/n 是/v 加强/v 亚洲/ns 社会/n 的/u 力量/n 、/w 促进/v 联系/v 并/c 建立/v 一/m 项/q 南海/ns 地区/n 行为/n 准则/n 。/w 
-泰国/ns 外交部/nt 负责/v 东盟/nt 事务/n 的/u 官员/n 阿萨育德斯里萨穆特/nr （/w Arthayudh/nx 　/w Srisamoot/nx ）/w 当天/t 说/v ，/w 泰国/ns 将/d 会/v 发挥/v 建设性/n 作用/n 并/c 营造/v 地区/n 积极/a 氛围/n ，/w 推进/v 东盟/nt 与/p 中国/ns 当前/t 在/p 诸多/m 领域/n 展开/v 的/u 合作/vn 。/w 
+泰国/ns 外交部/nt 负责/v 东盟/nt 事务/n 的/u 官员/n 阿萨育德斯里萨穆特/nr （/w Arthayudh/nx ，/w Srisamoot/nx ）/w 当天/t 说/v ，/w 泰国/ns 将/d 会/v 发挥/v 建设性/n 作用/n 并/c 营造/v 地区/n 积极/a 氛围/n ，/w 推进/v 东盟/nt 与/p 中国/ns 当前/t 在/p 诸多/m 领域/n 展开/v 的/u 合作/vn 。/w 
 他/r 表示/v ，/w 南海/ns 问题/n 只/d 是/v 东盟/nt 与/p 中国/ns 关系/n 诸多/m 要素/n 中/f 的/u 一/m 项/q ，/w 北京/ns 是/v 这个/r 地区/n 组织/n 的/u 一个/m 重要/a 合作/vn 伙伴/n ，/w 且/c 在/p 地区/n 发展/v 中/f 持续/v 发挥/v 着/u 关键/a 作用/n 。/w 
 在/p 日前/t 于/p 柬埔寨/ns 金边/ns 举行/v 的/u 东盟/nt 系列/n 会议/n 上/f ，/w 南海/ns 问题/n 成为/v 一个/m 热门/a 议题/n 。/w 
 菲律宾/ns 、/w 越南/ns 等/u 国/n 极力/d 在/p 此次/r 会议/n 上/f 推动/v 南海/ns 行为/n 准则/n 的/u 议定/vn ，/w 但/c 东盟/nt 10/m 国/n 内部/f 对/p 此/r 问题/n 立场/n 并/d 未/d 达成/v 统一/v 。/w 
@@ -7573,7 +7573,7 @@ LST/nx 标准/n 排水量/n 1653/m 吨/q ，/w 满载/vn 排水量/n 4080/m 吨/
 但/c 泰国/ns 同样/d 重视/v 和/p 中国/ns 之间/f 的/u 良好/a 关系/n ，/w 两/m 国/n 文化/n 具有/v 多方面/n 相似性/n ，/w 泰国/ns 人民/n 对/p 华人/n 和/c 中国人/nz 尊敬/v 友好/a ，/w 期待/v 着/u 两/m 国/n 间/f 多方面/n 的/u 交流/vn 与/c 合作/vn 。/w 
 而/c 中国/ns 企业/n 之所以/c 在/p 泰国/ns 不如/v 日本/ns 企业/n 踊跃/a ，/w 不仅/c 因为/p 中国/ns 本土/n 市场/n 对/p 资本/n 吸引力/n 巨大/a ，/w 同时/c ，/w 信息/n 渠道/n 的/u 不够/v 畅通/a 也/d 是/v 有碍/v 双边/n 经贸/b 发展/v 的/u 一个/m 因素/n 。/w 
 泰国/ns 皇家/n 海军/n 训练舰/n 编队/n 访问/v 中国/ns 海军/n 南海/ns 舰队/n 
-中新社/nz 湛江/ns 2月/t 9日/t 电/n (/w 张良/nr 　/w 高毅/nr )/w 泰国/ns 皇家/n 海军/n 训练舰/n 编队/n 在/p 泰国/ns 皇家/n 海军/n 学院/n 副/b 院长/n 特利斯特潘斯特/nr 少将/n 的/u 率领/vn 下/f ，/w 9日/t 抵达/v 湛江/ns 某/r 军港/n ，/w 开始/v 对/p 南海/ns 舰队/n 为期/v 4/m 天/q 的/u 友好/a 访问/v 。/w 
+中新社/nz 湛江/ns 2月/t 9日/t 电/n (/w 张良/nr ，/w 高毅/nr )/w 泰国/ns 皇家/n 海军/n 训练舰/n 编队/n 在/p 泰国/ns 皇家/n 海军/n 学院/n 副/b 院长/n 特利斯特潘斯特/nr 少将/n 的/u 率领/vn 下/f ，/w 9日/t 抵达/v 湛江/ns 某/r 军港/n ，/w 开始/v 对/p 南海/ns 舰队/n 为期/v 4/m 天/q 的/u 友好/a 访问/v 。/w 
 当天/t 凌晨/t ，/w 南海/ns 舰队/n “/w 玉林/nz ”/w 号/n 护卫舰/n 在/p 指定/vn 海域/n 与/p 泰/ns 编队/n 会合/v ，/w 组成/v 编队/n 后/f 引导/v 泰/ns 编队/n 进/v 港/n 。/w 
 10时/t 许/m ，/w 南海/ns 舰队/n 在/p 码头/n 举行/v 欢迎/vn 仪式/n ，/w 军乐队/n 列队/v 演奏/v ，/w 欢迎/v 泰国/ns 皇家/n 海军/n 训练舰/n 编队/n 到访/v 。/w 
 随后/f ，/w 编队/n 指挥官/n 一行/n 拜会/v 了/u 南海/ns 舰队/n 司令员/n 沈金龙/nr 少将/n 。/w 
@@ -7685,7 +7685,7 @@ NSC/nx 主任/n 表达/v 了/u 对/p 南海/ns 局势/n 的/u 担心/vn ，/w �
 一/m 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n 2011年/t 以来/f ，/w 在/p 中/ns 美/ns 实力/n 差距/n 缩小/v 、/w 中国/ns 与/p 东盟/nt 成员国/n 实力/n 差距/n 拉/v 大/a 的/u 背景/n 下/f ，/w 菲律宾/ns 、/w 越南/ns 等/u 国家/n 乘着/p 中国/ns 崛/v 而/c 未/d 起/v 的/u 最后/f 机遇期/t 不断/d 在/p 南海/ns 掀起/v 事端/n ，/w 加紧/v 对/p 中国/ns 南海/ns 海域/n 权益/n 的/u 侵蚀/vn ，/w 导致/v 南海/ns 局势/n 风云突变/v ，/w 成为/v 地区/n 安全/a 与/c 稳定/a 的/u 威胁/vn 。/w 
 作为/p 东盟/nt 创始/vn 成员国/n ，/w 泰国/ns 对/p 南海/ns 局势/n 的/u 变化/vn 表现/v 出/v 了/u 极/d 大/a 的/u 关注/vn 。/w 
 然而/c ，/w 作为/p 非争议方/n ，/w 泰国/ns 并/c 未/d 明确/a 地/u 发布/v 过/u 南海/ns 政策/n ，/w 只是/d 通过/p 领导人/n 的/u 一些/m 讲话/n 阐述/v 了/u 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n 。/w 
-时任/v 泰国/ns 外长/n 素拉蓬/nr (/w Surapong/nx 　/w Tov-ichakchaikul/nx )/w 在/p 2012年/t 7月/t 召开/v 的/u 东盟/nt 外长/n 会议/n 期间/f 较为/d 完整/a 地/u 阐述/v 了/u 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n :/w 
+时任/v 泰国/ns 外长/n 素拉蓬/nr (/w Surapong/nx ，/w Tov-ichakchaikul/nx )/w 在/p 2012年/t 7月/t 召开/v 的/u 东盟/nt 外长/n 会议/n 期间/f 较为/d 完整/a 地/u 阐述/v 了/u 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n :/w 
 首先/c ，/w 南海/ns 争端/n 不/d 应该/v 影响/v 东盟/nt —/w 中国/ns 关系/n 的/u 大局/n ，/w “/w 对/p 争议/v 相关方/n 来说/u ，/w 最/d 重要/a 的/u 是/v 冷静/a 、/w 平息/v 紧张/a 局势/n ”/w ；/w 
 第二/m ，/w “/w 争议/v 本身/r 应该/v 由/p 声索方/n 通过/p 谈判/v 解决/v ，/w 但/c 我们/r 不得不/d 意识/v 到/v 争议/v 造成/v 的/u 广泛/a 影响/vn 。/w 
 中国/ns 和/c 东盟/nt 应该/v 在/p 南海/ns 问题/n 上/f 构建/v 互/d 信/v 和/c 共/d 赢/v 的/u 环境/n ，/w 将/p 南海/ns 争端/n 看作/v 合作/v 的/u 机会/n ，/w 而/c 不/d 是/v 冲突/v 的/u 根源/n ”/w ；/w 
@@ -7696,23 +7696,23 @@ NSC/nx 主任/n 表达/v 了/u 对/p 南海/ns 局势/n 的/u 担心/vn ，/w �
 泰国/ns 其他/r 官员/n 对/p 南海/ns 争端/n 的/u 发言/vn 基本/n 都/d 保持/v 了/u 该/r 基调/n 。/w 
 首先/c ，/w 泰国/ns 希望/v 南海/ns 争端/n 局势/n 保持/v “/w 和平/n 与/c 稳定/a ”/w 。/w 
 为/p 此/r ，/w 一方面/c ，/w 作为/p 中国/ns —/w 东盟/nt 关系/n 的/u 协调国/n ，/w 泰国/ns 主张/v 南海/ns 争端/n 不/d 应该/v 成为/v 中国/ns —/w 东盟/nt 关系/n 的/u 障碍/n 。/w 
-2012年/t 7月/t 11日/t ，/w 泰国/ns 外交部/nt 负责/v 东盟/nt 事务/n 的/u 官员/n 阿萨育德·斯里萨穆特/nr (/w Arthayudh/nx 　/w Srisamoot/nx )/w 表示/v ，/w 南海/ns 争端/n 只/d 是/v 东盟/nt 与/c 中国/ns 关系/n 诸多/m 要素/n 中/f 的/u 一/m 项/q 。/w 
+2012年/t 7月/t 11日/t ，/w 泰国/ns 外交部/nt 负责/v 东盟/nt 事务/n 的/u 官员/n 阿萨育德·斯里萨穆特/nr (/w Arthayudh/nx ，/w Srisamoot/nx )/w 表示/v ，/w 南海/ns 争端/n 只/d 是/v 东盟/nt 与/c 中国/ns 关系/n 诸多/m 要素/n 中/f 的/u 一/m 项/q 。/w 
 在/p 泰国/ns 未来/t 三/m 年/q 担当/v 中国/ns —/w 东盟/nt 关系/n 协调国/n 期间/f ，/w 泰国/ns 将/d 不/d 会/v 允许/v 南海/ns 争端/n 妨碍/v 东盟/nt 与/c 中国/ns 二者/r 之间/f 的/u 合作/vn 。/w 
-2013年/t 1月/t ，/w 菲律宾/ns 将/d 与/p 中国/ns 在/p 南海/ns 海域/n 的/u 争端/n 提交/v 《/w 联合国/nt 海洋法/n 公约/n 》/w 附件/n 七/m 下/f 的/u 仲裁/vn 法庭/n 裁决/v ，/w 泰国/ns 外交部/nt 发言人/n 西哈萨克/nr (/w Sihasak/nx 　/w Phuangketkaew/nx )/w 对/p 此/r 说道/v :/w “/w 菲律宾/ns 的/u 举动/n 尽管/c 不/d 代表/v 东盟/nt ，/w 但/c 其/r 有/v 权/n 这样/r 做/v ”/w ，/w “/w 希望/v 菲律宾/ns 的/u 举动/n 不/d 要/v 影响/v 中国/ns —/w 东盟/nt 关系/n 的/u 大局/n ”/w 。/w 
+2013年/t 1月/t ，/w 菲律宾/ns 将/d 与/p 中国/ns 在/p 南海/ns 海域/n 的/u 争端/n 提交/v 《/w 联合国/nt 海洋法/n 公约/n 》/w 附件/n 七/m 下/f 的/u 仲裁/vn 法庭/n 裁决/v ，/w 泰国/ns 外交部/nt 发言人/n 西哈萨克/nr (/w Sihasak/nx ，/w Phuangketkaew/nx )/w 对/p 此/r 说道/v :/w “/w 菲律宾/ns 的/u 举动/n 尽管/c 不/d 代表/v 东盟/nt ，/w 但/c 其/r 有/v 权/n 这样/r 做/v ”/w ，/w “/w 希望/v 菲律宾/ns 的/u 举动/n 不/d 要/v 影响/v 中国/ns —/w 东盟/nt 关系/n 的/u 大局/n ”/w 。/w 
 另一方面/c ，/w 泰国/ns 认为/v 南海/ns 问题/n 的/u 复杂化/vn 、/w 扩大化/vn 不仅/c 不利/a 于/p 南海/ns 争端/n 本身/r 的/u 解决/vn ，/w 不利/a 于/p 东南亚/ns 地区/n 的/u 稳定/an ，/w 因此/c 不/d 希望/v 南海/ns 争端/n 扩大化/v 和/c 国际化/v ，/w 不/d 希望/v 域外/s 大国/n 介入/v 南海/ns 争端/n 。/w 
-2012年/t 7月/t 底/f ，/w 泰国/ns 外交部/nt 新闻司/nt 副/b 司长/n 萨克/nr (/w Sek/nx 　/w Wannamethee/nx )/w 在/p 接受/v 采访/v 时/n 表示/v ，/w 作为/p 中国/ns —/w 东盟/nt 关系/n 协调国/n ，/w 泰国/ns 方面/n 认为/v ，/w 区域/n 合作/v 发展/v 需要/v 一个/m 和平/n 稳定/a 的/u 环境/n ，/w 因此/c 泰国/ns 也/d 很/d 关注/v 南海/ns 局势/n ，/w 但/c 不/d 希望/v 看到/v 南海/ns 争端/n 扩大化/v 和/c 国际化/v 。/w 
+2012年/t 7月/t 底/f ，/w 泰国/ns 外交部/nt 新闻司/nt 副/b 司长/n 萨克/nr (/w Sek/nx ，/w Wannamethee/nx )/w 在/p 接受/v 采访/v 时/n 表示/v ，/w 作为/p 中国/ns —/w 东盟/nt 关系/n 协调国/n ，/w 泰国/ns 方面/n 认为/v ，/w 区域/n 合作/v 发展/v 需要/v 一个/m 和平/n 稳定/a 的/u 环境/n ，/w 因此/c 泰国/ns 也/d 很/d 关注/v 南海/ns 局势/n ，/w 但/c 不/d 希望/v 看到/v 南海/ns 争端/n 扩大化/v 和/c 国际化/v 。/w 
 此外/c ，/w 泰国/ns 希望/v 南海/ns 争议/v 各方/r 通过/p 和平/n 的/u 方式/n 处理/v 争端/n 。/w 
 作为/p 南海/ns 非争端方/n ，/w 南海/ns 局势/n 总体/n 稳定/a ，/w 东南亚/ns 地区/n 和平/n 、/w 南海/ns 海域/n 航行/v 自由/a 和/c 航行/v 安全/a 得到/v 保障/v 才/d 完全/a 符合/v 泰国/ns 的/u 国家/n 利益/n 。/w 
 因此/c ，/w 泰国/ns 不/d 希望/v 南海/ns 局势/n 持续/v 恶化/v ，/w 并/c 表示/v 愿意/v 发挥/v 中国/ns —/w 东盟/nt 关系/n 协调国/n 的/u 作用/n ，/w 为/p 南海/ns 争端/n 的/u 和平/n 解决/vn 贡献/n 力量/n 。/w 
 2012年/t 4月/t 17日/t ，/w 温家宝/nr 总理/n 与/p 泰国/ns 总理/n 就/p 两/m 国/n 建立/v 全面/a 战略/n 合作/v 伙伴/n 关系/n 进行/v 了/u 会谈/vn 。/w 
-当/p 温家宝/nr 总理/n 提出/v 中/ns 泰/ns 双方/n 应/v 密切/a 配合/v ，/w 认真/a 落实/v DOC/nx ，/w 维护/v 南海/ns 和平/n 稳定/a 时/n ，/w 英拉/nr (/w Yinglak/nx 　/w Chin-nawak/nx )/w 总理/n 回应/v 道/v :/w “/w 泰方/n 愿/v 为/p 推动/v 中国/ns —/w 东盟/nt 合作/v ，/w 维护/v 南海/ns 和平/n 稳定/a 发挥/v 积极/a 作用/n 。/w ”/w 
+当/p 温家宝/nr 总理/n 提出/v 中/ns 泰/ns 双方/n 应/v 密切/a 配合/v ，/w 认真/a 落实/v DOC/nx ，/w 维护/v 南海/ns 和平/n 稳定/a 时/n ，/w 英拉/nr (/w Yinglak/nx ，/w Chin-nawak/nx )/w 总理/n 回应/v 道/v :/w “/w 泰方/n 愿/v 为/p 推动/v 中国/ns —/w 东盟/nt 合作/v ，/w 维护/v 南海/ns 和平/n 稳定/a 发挥/v 积极/a 作用/n 。/w ”/w 
 在/p 双方/n 达成/v 的/u 《/w 中/ns 泰/ns 建立/v 全面/a 战略/n 合作/v 伙伴/n 关系/n 联合/v 声明/n 》/w 中/f ，/w 双方/n 积极/a 评价/v 2011年/t 7月/t 中国/ns 与/c 东盟/nt 国家/n 就/p 落实/v DOC/nx 指针/n 达成/v 一致/a ，/w 并/c 启动/v DOC/nx 框架/n 下/f 的/u 合作/vn ；/w 
 鼓励/v 各方/r 以/p DOC/nx 签署/v 十/m 周年/q 为/v 契机/n ，/w 抓住/v 当前/t 难得/a 机遇/n ，/w 全面/a 落实/v DOC/nx ，/w 推进/v 南海/ns 合作/v ，/w 使/v 南海/ns 真正/d 成为/v 和平/n 之/u 海/n 、/w 友谊/n 之/u 海/n 、/w 合作/v 之/u 海/n 。/w 
 2013年/t 1月/t 25日/t ，/w 泰国/ns 外交部/nt 对外/v 表示/v 将/d 与/p 菲律宾/ns 和/c 中国/ns 进行/v 会谈/vn ，/w 以/c 求/v 和平/a 解决/v 南海/ns 争端/n 。/w 
 在/p 提及/v 菲律宾/ns 将/p 其/r 与/c 中国/ns 在/p 南沙/ns 的/u 争议/vn 提交/v 仲裁/vn 法庭/n 裁决/v 时/n ，/w 泰国/ns 外长/n 素拉蓬/nr 表示/v ，/w 各/r 争端方/n 应该/v 根据/p 2002年/t 签署/v 的/u DOC/nx 在/p 中国/ns —/w 东盟/nt 关系/n 框架/n 内/f 通过/p 谈判/v 和平/n 解决/v 争端/n 。/w 
 泰国/ns 外交部/nt 发言人/n 西哈萨克/nr 则/c 表示/v “/w 将/d 想方设法/v 为/p 中/ns 菲/ns 谈判/v 创造/v 条件/n ”/w ，/w 以/c 缓和/v 争端/n 局势/n 。/w 
 2013年/t 7月/t 24日/t ，/w 中共中央军委/nt 副/b 主席/n 范长龙/nr 访问/v 泰国/ns 时/n ，/w 英拉/nr 总理/n 再次/d 向/p 范长龙/nr 表示/v 泰国/ns 希望/v 南海/ns 争端/n 能够/v 以/p 和平/n 的/u 方式/n 解决/v 。/w 
-2014年/t 7月/t ，/w 泰国/ns 代理/v 外交/n 部长/n 西哈萨克/nr 与/c 菲律宾/ns 外长/n 罗萨里奥/nr (/w Albert/nx 　/w del/nx 　/w Rosario/nx )/w 就/p 南海/ns 争端/n 进行/v 会谈/vn 时/n 表示/v :/w “/w 泰国/ns 希望/v 南海/ns 局势/n 缓和/a ，/w 希望/v 争议/vn 各方/r 能够/v 推行/v 建立/v 互/d 信/v 的/u 措施/n ，/w 在/p 任何/r 可能/n 的/u 时候/n 积极/a 开展/v 合作/v 。/w ”/w 
+2014年/t 7月/t ，/w 泰国/ns 代理/v 外交/n 部长/n 西哈萨克/nr 与/c 菲律宾/ns 外长/n 罗萨里奥/nr (/w Albert/nx ，/w del/nx ，/w Rosario/nx )/w 就/p 南海/ns 争端/n 进行/v 会谈/vn 时/n 表示/v :/w “/w 泰国/ns 希望/v 南海/ns 局势/n 缓和/a ，/w 希望/v 争议/vn 各方/r 能够/v 推行/v 建立/v 互/d 信/v 的/u 措施/n ，/w 在/p 任何/r 可能/n 的/u 时候/n 积极/a 开展/v 合作/v 。/w ”/w 
 其次/c ，/w 泰国/ns 还/d 谋求/v 在/p 南海/ns 局势/n 的/u 稳定/an 和/c 南海/ns 争端/n 的/u 解决/vn 上/f “/w 有/v 为/vn ”/w ，/w 彰显/v 自身/r 的/u 地区/n 影响力/n 。/w 
 尽管/c 泰国/ns 南海/ns 争端/n 上/f 不/d 支持/v 任何/r 一方/n 的/u 主张/n ，/w 但/c 也/d 并非/v 完全/a 消极/a 地/u 中立/v ，/w 而是/c 谋求/v 在/p 保持/v 中立/v 的/u 基础/n 上/f 有/v 所/u 作为/n ，/w 彰显/v 自身/r 在/p 东盟/nt 内部/f 的/u 影响力/n 。/w 
 从/p 具体/a 路径/n 上/f 来看/u ，/w 泰国/ns 主要/d 以/p 中国/ns —/w 东盟/nt 关系/n 协调国/n 的/u 身份/n 发起/v 相关/vn 倡议/n ，/w 依托/v 东盟/nt 构筑/v 的/u 多边/n 机制/n 为/p 中国/ns 和/c 东盟/nt 就/p 南海/ns 争端/n 的/u 磋商/vn 搭建/v 平台/n 。/w 
@@ -7745,15 +7745,15 @@ NSC/nx 主任/n 表达/v 了/u 对/p 南海/ns 局势/n 的/u 担心/vn ，/w �
 正/d 如/v 前/f 总理/n 英拉/nr 所/u 言/v :/w “/w 假如/c 我们/r 所/u 在/v 的/u 地区/n 出现/v 紧张/a 和/c 冲突/v ，/w 我们/r 的/u 经济/n 发展/vn 和/c 繁荣/an 将/d 遭受/v 影响/v 。/w 我们/r 在/p 确保/v 航线/n 畅通/a 、/w 避免/v 冲突/v 和/c 打击/v 走私/v 等/u 方面/n 有/v 共同/b 利益/n ，/w 因此/c 我们/r 相信/v 南海/ns 海域/n 应该/v 被/p 看作/v 一个/m 充满/v 合作/vn 机会/n 而/c 不/d 是/v 冲突/v 的/u 地方/n 。/w ”/w 
 2./m 经常/d 扮演/v “/w 协调者/n ”/w 的/u 外交/n 传统/n 作为/p 历史/n 上/f 的/u 东南亚/ns 地区/n 强国/n ，/w 恢复/v 地区/n 大国/n 地位/n 、/w 发挥/v 地区/n 影响力/n 一直/d 是/v 泰国/ns 孜孜以求/v 的/u 目标/n 。/w 
 作为/p 东盟/nt 的/u 创始/vn 成员国/n ，/w 泰国/ns 一直/d 以/p 成为/v 地区/n 大国/n 、/w 扩大/v 其/r 影响力/n 、/w 成为/v 东盟/nt “/w 领头羊/n ”/w 作为/v 国家/n 的/u 战略/n 目标/n 。/w 为了/p 实现/v 此/r 目标/n ，/w 泰国/ns 在/p 地区/n 事务/n 中/f 经常/d 扮演/v “/w 协调者/n ”/w 的/u 角色/n 。/w 
-在/p 东盟/nt 成立/v 之/u 初/n ，/w 泰国/ns 成为/v 东盟/nt 事实上/d 的/u 领导者/n ，/w 时任/v 泰国/ns 外长/n 塔纳·科曼/nr (/w Thanat/nx 　/w Khoman/nx )/w 在/p 1966年/t 4月/t 和/c 5月/t 试图/v 促成/v 印尼/ns 马来西亚/ns 和/c 菲律宾/ns 之间/f 的/u 和解/vn 过程/n 中/f 构思/v 了/u 成立/v 东盟/nt 的/u 想法/n ；/w 
+在/p 东盟/nt 成立/v 之/u 初/n ，/w 泰国/ns 成为/v 东盟/nt 事实上/d 的/u 领导者/n ，/w 时任/v 泰国/ns 外长/n 塔纳·科曼/nr (/w Thanat/nx ，/w Khoman/nx )/w 在/p 1966年/t 4月/t 和/c 5月/t 试图/v 促成/v 印尼/ns 马来西亚/ns 和/c 菲律宾/ns 之间/f 的/u 和解/vn 过程/n 中/f 构思/v 了/u 成立/v 东盟/nt 的/u 想法/n ；/w 
 标志/v 着/u 东盟/nt 正式/a 成立/v 的/u 《/w 曼谷/ns 宣言/n 》/w 在/p 很/d 大/a 程度/n 上/f 也/d 是/v 由/p 泰国/ns 外交家/n 起草/v 的/u 。/w 
 泰国/ns 发挥/v “/w 协调者/n ”/w 的/u 作用/n 缓和/v 了/u 成员国/n 之间/f 的/u 相互/b 对抗/vn ，/w 增强/v 了/u 马来西亚/ns 、/w 印度尼西亚/ns 、/w 菲律宾/ns 、/w 新加坡/ns 和/c 泰国/ns 五/m 个/q 东盟/nt 成员国/n 之间/f 的/u 凝聚力/n 。/w 
 1968年/t 3月/t ，/w 马来西亚/ns 和/c 菲律宾/ns 的/u 矛盾/an 因/p 沙/ns 巴/ns 争端/n 再次/d 激化/v ，/w 东盟/nt 濒临/v 瓦解/v 。/w 
 在/p 此/r 背景/n 下/f ，/w 泰国/ns 外长/n 塔纳·科曼/nr 发挥/v 协调者/n 作用/n ，/w 说服/v 马来西亚/ns 和/c 菲律宾/ns 以/p 东盟/nt 发展/v 大局/n 为重/v ，/w 缓和/v 了/u 马来西亚/ns 和/c 菲律宾/ns 两/m 国/n 的/u 关系/n 。/w 
-1976年/t ，/w 东盟/nt 在/p 印尼/ns 巴厘岛/ns 召开/v 的/u 首脑/n 会议/n 也/d 是/v 在/p 泰国/ns 总理/n 克立·巴莫/nr (/w Kukrit/nx 　/w Pramoj/nx )/w 和/c 新加坡/ns 总理/n 李光耀/nr 的/u 共同/b 努力/an 下/f 促成/v 的/u 。/w 
+1976年/t ，/w 东盟/nt 在/p 印尼/ns 巴厘岛/ns 召开/v 的/u 首脑/n 会议/n 也/d 是/v 在/p 泰国/ns 总理/n 克立·巴莫/nr (/w Kukrit/nx ，/w Pramoj/nx )/w 和/c 新加坡/ns 总理/n 李光耀/nr 的/u 共同/b 努力/an 下/f 促成/v 的/u 。/w 
 1991年/t ，/w 泰国/ns 成功/a 主办/v 了/u 解决/v 柬埔寨/ns 问题/n 的/u 会议/n 。/w 
-1995年/t ，/w 泰国/ns 总理/n 川·立派/nr (/w Chuan/nx 　/w Leekphai/nx )/w 公开/a 表示/v 愿意/v 协助/v 调解/v 缅甸/ns 军政府/n 与/c 少数民族/n 地方/n 武装/n 间/f 的/u 纠纷/n 。/w 
-对于/p 棘手/a 的/u 缅甸/ns 问题/n ，/w 泰国/ns 时任/v 外长/n 素林/nr (/w Surin/nx 　/w Pitsuwan/nx )/w 在/p 1998年/t 7月/t 召开/v 的/u 东盟/nt 外长/n 会议/n 上/f 提出/v 了/u “/w 灵活/a 接触/v ”/w 政策/n ，/w 试图/v 在/p 缅甸/ns 问题/n 上/f 发挥/v “/w 协调者/n ”/w 的/u 作用/n ，/w 保持/v 自身/r 在/p 东盟/nt 的/u 影响力/n 。/w 
+1995年/t ，/w 泰国/ns 总理/n 川·立派/nr (/w Chuan/nx ，/w Leekphai/nx )/w 公开/a 表示/v 愿意/v 协助/v 调解/v 缅甸/ns 军政府/n 与/c 少数民族/n 地方/n 武装/n 间/f 的/u 纠纷/n 。/w 
+对于/p 棘手/a 的/u 缅甸/ns 问题/n ，/w 泰国/ns 时任/v 外长/n 素林/nr (/w Surin/nx ，/w Pitsuwan/nx )/w 在/p 1998年/t 7月/t 召开/v 的/u 东盟/nt 外长/n 会议/n 上/f 提出/v 了/u “/w 灵活/a 接触/v ”/w 政策/n ，/w 试图/v 在/p 缅甸/ns 问题/n 上/f 发挥/v “/w 协调者/n ”/w 的/u 作用/n ，/w 保持/v 自身/r 在/p 东盟/nt 的/u 影响力/n 。/w 
 总之/c ，/w 作为/p 东盟/nt 的/u 中坚/n 力量/n ，/w 泰国/ns 在/p 东盟/nt 内部/f 的/u 整合/vn 中/f 起/v 着/u 特殊/a 的/u 作用/n ，/w 经常/d 在/p 地区/n 安全/a 的/u 维护/vn 中/f 扮演/v “/w 协调者/n ”/w 角色/n ，/w 并/c 在/p 这/r 一/m 过程/n 中/f 提高/v 自身/r 国际/n 地位/n ，/w 维持/v 其/r 地区/n 影响力/n 。/w 
 随着/p 东盟/nt 的/u 扩大/vn ，/w 泰国/ns 逐渐/d 成为/v 东盟/nt 新/a 老/a 成员国/n 之间/f 关系/n 的/u 桥梁/n 与/c 纽带/n ，/w 其/r 战略/n 地位/n 也/d 因/p 此/r 得以/v 大幅/d 提升/v 。/w 
 近年来/d 泰国/ns 一直/d 积极/a 谋求/v 成为/v “/w 东盟/nt 领头羊/n ”/w 。/w 
@@ -7789,7 +7789,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 作为/p 东盟/nt 的/u 创始/vn 成员国/n 之一/r ，/w 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n 并非/v 偶然/a 的/u 。/w 
 尤其/d 从/p 泰国/ns 对/p 南海/ns 争端/n 态度/n 的/u 成因/n 来看/u ，/w 经济/n 和/c 外交/n 方面/n 的/u 战略/n 考量/v 会/v 使/v 泰国/ns 对/p 南海/ns 争端/n 的/u 态度/n 维持/v 一定/b 的/u 延续性/n 和/c 稳定性/n 。/w 
 因此/c 泰国/ns 将/d 会/v 继续/v 对/p 南海/ns 争端/n 给予/v 高度/n 的/u 关注/vn 。/w 
-尽管/c 泰国/ns 自/p 2013年/t 11月/t 以来/f 发生/v 了/u 政局/n 动乱/v ，/w 陆军/n 总司令/n 巴育/nr (/w Prayuth/nx 　/w Chan-ocha/nx )/w 于/p 2014年/t 8月/t 25日/t 成为/v 过渡/vn 政府/n 总理/n ，/w 但/c 泰国/ns 既定/b 的/u 对外/vn 政策/n 不/d 会/v 受到/v 实质性/n 的/u 影响/vn ，/w 泰国/ns 对/p 自身/r 东盟/nt —/w 中国/ns 关系/n 协调国/n 身份/n 和/c 责任/n 的/u 认知/vn 不/d 会/v 发生/v 根本性/n 的/u 变化/vn 。/w 
+尽管/c 泰国/ns 自/p 2013年/t 11月/t 以来/f 发生/v 了/u 政局/n 动乱/v ，/w 陆军/n 总司令/n 巴育/nr (/w Prayuth/nx ，/w Chan-ocha/nx )/w 于/p 2014年/t 8月/t 25日/t 成为/v 过渡/vn 政府/n 总理/n ，/w 但/c 泰国/ns 既定/b 的/u 对外/vn 政策/n 不/d 会/v 受到/v 实质性/n 的/u 影响/vn ，/w 泰国/ns 对/p 自身/r 东盟/nt —/w 中国/ns 关系/n 协调国/n 身份/n 和/c 责任/n 的/u 认知/vn 不/d 会/v 发生/v 根本性/n 的/u 变化/vn 。/w 
 一方面/c ，/w 泰国/ns 将/d 会/v 继续/v 希望/v 南海/ns 争端/n 不/d 影响/v 中国/ns —/w 东盟/nt 关系/n ，/w 南海/ns 海域/n 维持/v 和平/n 与/c 稳定/a ，/w 南海/ns 争端/n 不/d 进一步/d 扩大/v ，/w 因为/c 这样/r 才/d 符合/v 泰国/ns 的/u 国家/n 利益/n 。/w 
 尽管/c 泰国/ns 再次/d 发生/v 了/u 军事/n 政变/v ，/w 但/c 正/d 如/v 亚洲和平与和解委员会/nt 秘书长/n 郭萨·朱迪昆/nr (/w KobsakChutikul/nx )/w 所/u 说/v :/w “/w 泰国/ns 频发/v 的/u 政变/vn 并/c 不/d 会/v 对/p 泰/ns 中/ns 关系/n 造成/v 破坏/v ，/w 因为/c 无论/c 谁/r 上台/v 都/d 会/v 把/p 中国/ns 视作/v 优先/vn 要务/n 。/w ”/w 
 因此/c ，/w 泰国/ns 将/d 会/v 继续/v 认同/v 中国/ns 和平/n 解决/v 南海/ns 争端/n 、/w 拒绝/v 域外/s 大国/n 介入/v 南海/ns 争端/n 的/u 主张/n ，/w 将/p 南海/ns 争端/n 控制/v 在/p 中国/ns —/w 东盟/nt 关系/n 框架/n 下/f ，/w 积极/a 和/c 中国/ns 一起/s 落实/v “/w 双轨/n 政策/n ”/w ，/w 推动/v 全面/a 有效/a 落实/v DOC/nx ，/w 把/p 南海/ns 建设/v 成/v 和平/n 之/u 海/n 、/w 友谊/n 之/u 海/n 、/w 合作/v 之/u 海/n 。/w 
@@ -7835,7 +7835,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 今年/t 中国/ns 的/u 表现/vn 特别/d 值得/v 关注/v ，/w 如/v 在/p 日本海/ns 举行/v 的/u “/w 中/ns 俄/ns 海上/s 联合/v -/w 2015/m ”/w 演习/v ，/w 不但/c 海军/n 参加/v ，/w 解放军/n 空军/n 也/d 参加/v 了/u 该/r 演习/v ，/w 这/r 意味着/v 中国/ns 军兵种/n 之间/f 的/u 界限/n 正在/d 适应/v 世界/n 军事/n 发展/v 潮流/n 。/w 
 中国/ns 空军/n 越来越/d 具/v 国际/n 范儿/n ，/w 无论/c 是/v 飞行/v 表演/v 、/w 航展/n ，/w 还/d 是/v 空降兵/n 比赛/v 等/u ，/w 中国/ns 空军/n 正/d 越来越/d 积极/a 地/u 出现/v 在/p 国际/n 舞台/n 上/f 。/w 
 泰国/ns 总理/n ：/w 南海/ns 问题/n 必须/d 依据/p 国际法/n 解决/v 
-【/w 财新网/nz 】/w （/w 驻/v 新加坡/ns 记者/n 陈立雄/nr ）/w 泰国/ns 总理/n 巴育/nr （/w Prayut/nx 　/w Chan-o-cha/nx ）/w 于/p 6月/t 3日/t 就/p 南海/ns 争端/n 表示/v ，/w “/w 我们/r 必须/d 推动/v 飞越/v 自由/a 、/w 航行/v 自由/a ，/w 且/c 基于/p 包括/v 《/w 联合国/nt 海洋法/n 公约/n 》/w 在内/u 的/u 国际法/n 和平/a 解决/v 争端/n 。/w ”/w 
+【/w 财新网/nz 】/w （/w 驻/v 新加坡/ns 记者/n 陈立雄/nr ）/w 泰国/ns 总理/n 巴育/nr （/w Prayut/nx ，/w Chan-o-cha/nx ）/w 于/p 6月/t 3日/t 就/p 南海/ns 争端/n 表示/v ，/w “/w 我们/r 必须/d 推动/v 飞越/v 自由/a 、/w 航行/v 自由/a ，/w 且/c 基于/p 包括/v 《/w 联合国/nt 海洋法/n 公约/n 》/w 在内/u 的/u 国际法/n 和平/a 解决/v 争端/n 。/w ”/w 
 当天/t 晚间/t ，/w 为期/v 三/m 天/n 的/u “/w 香格里拉/ns 对话/v ”/w 拉开/v 序幕/n 。/w 
 巴育/nr 发表/v 主旨/n 讲演/v 提出/v 上述/b 看法/n 。/w 
 这/r 位/q 总理/n 还/d 说/v ，/w 海上/s 问题/n 不/d 该/v 成为/v 零/m 和/c 博弈/v 。/w 
@@ -7851,7 +7851,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 他/r 誓言/n ，/w 泰国/ns 将/d 沿着/p 此前/r 制定/v 的/u 路线图/n 回归/v 民主/a 国家/n 。/w 
 该/r 国/n 将/d 于/p 8月/t 7日/t 就/p 新/a 宪法/n 举行/v 全民/n 公/n 投/v 。/w 
 泰国/ns 就/p 南海/ns 问题/n 表态/v ：/w 支持/v 中国/ns 
-据/p 英国/ns 路透社/nt 9月/t 7日/t 报道/v ，/w 周三/t （/w 9月/t 7日/t ）/w ，/w 泰国/ns 政府/n 发言人/n 素空塔帕提帕克/nr (/w Weerachon/nx 　/w Sukondhapatipak/nx )/w 称/v ，/w 在/p 南海/ns 地区/n 争端/n 中/f ，/w 泰国/ns 支持/v 中国/ns 维护/v 海洋/n 和平/n 的/u 努力/an 。/w 
+据/p 英国/ns 路透社/nt 9月/t 7日/t 报道/v ，/w 周三/t （/w 9月/t 7日/t ）/w ，/w 泰国/ns 政府/n 发言人/n 素空塔帕提帕克/nr (/w Weerachon/nx ，/w Sukondhapatipak/nx )/w 称/v ，/w 在/p 南海/ns 地区/n 争端/n 中/f ，/w 泰国/ns 支持/v 中国/ns 维护/v 海洋/n 和平/n 的/u 努力/an 。/w 
 素空塔帕提帕克/nr 在/p 接受/v 路透社/nt 采访/v 时/n 说/v ：/w “/w 促进/v 海上/s 和平/n 与/c 稳定/a 对/p 各方/r 非常/d 重要/a ，/w 而/c 泰国/ns 支持/v 中国/ns 在/p 这/r 方面/n 的/u 努力/an 。/w ”/w 
 在/p 南海/ns 争端/n 中/f ，/w 泰国/ns 向来/d 保持/v 保持/v 中立/vn 立场/n 。/w 
 但是/c 7日/t 菲律宾/ns 国防部/nt 发布/v 图片/n 宣称/v 中国/ns 船只/n 出现/v 在/p 有/v 争议/v 浅滩/n 附近/f 数/m 小时/n 后/f ，/w 泰国/ns 明确/a 表达/v 了/u 自己/r 的/u 立场/n 。/w 
@@ -7884,7 +7884,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 (/w 原/b 标题/n ：/w 外媒/n ：/w 泰国/ns 欲/d 打造/v 潜艇/n 编队/n 应对/v 南海/ns 不测/b 局面/n 
 菲律宾/ns 妄称/v 中国/ns 船只/n 现身/v 南海/ns 争议区/n 遭/v 泰国/ns 打/v 脸/n 
 原/b 标题/n ：/w 泰国/ns 政府/n 发言人/n ：/w 泰国/ns 支持/v 中国/ns 维护/v 海洋/n 和平/n 的/u 努力/an 
-国际/n 在线/v 专稿/n ：/w 据/p 英国/ns 路透社/nt 9月/t 7日/t 报道/v ，/w 周三/t （/w 9月/t 7日/t ）/w ，/w 泰国/ns 政府/n 发言人/n 素空塔帕提帕克/nr (/w Weerachon/nx 　/w Sukondhapatipak/nx )/w 称/v ，/w 在/p 南海/ns 地区/n 争端/n 中/f ，/w 泰国/ns 支持/v 中国/ns 维护/v 海洋/n 和平/n 的/u 努力/an 。/w 
+国际/n 在线/v 专稿/n ：/w 据/p 英国/ns 路透社/nt 9月/t 7日/t 报道/v ，/w 周三/t （/w 9月/t 7日/t ）/w ，/w 泰国/ns 政府/n 发言人/n 素空塔帕提帕克/nr (/w Weerachon/nx ，/w Sukondhapatipak/nx )/w 称/v ，/w 在/p 南海/ns 地区/n 争端/n 中/f ，/w 泰国/ns 支持/v 中国/ns 维护/v 海洋/n 和平/n 的/u 努力/an 。/w 
 素空塔帕提帕克/nr 在/p 接受/v 路透社/nt 采访/v 时/n 说/v ：/w “/w 促进/v 海上/s 和平/n 与/c 稳定/a 对/p 各方/r 非常/d 重要/a ，/w 而/c 泰国/ns 支持/v 中国/ns 在/p 这/r 方面/n 的/u 努力/an 。/w ”/w 
 在/p 南海/ns 争端/n 中/f ，/w 泰国/ns 向来/d 保持/v 中立/vn 立场/n 。/w 
 但是/c 7日/t 菲律宾/ns 国防部/nt 发布/v 图片/n 宣称/v 中国/ns 船只/n 出现/v 在/p 有/v 争议/vn 浅滩/n 附近/f 数/m 小时/n 后/f ，/w 泰国/ns 明确/a 表达/v 了/u 自己/r 的/u 立场/n 。/w 
@@ -7898,7 +7898,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 至关重要/a 的/u 是/v ，/w 我们/r 还/d 需要/v 各方/r 共同/d 努力/a 及早/d 完成/v “/w 南海/ns 各方/r 行为/n 准则/n ”/w ，/w 团结/v 一致/a 才能/v 更加/d 强大/a 。/w 
 另/r 据/p 印尼/ns 外交部/nt 消息/n ，/w 印尼/ns 敦促/v 各方/r 保持/v 克制/v ，/w 不/d 要/v 采取/v 导致/v 局势/n 紧张/a 的/u 行动/vn 。/w 
 印尼/ns 还/d 呼吁/v 各方/r 继续/v 维持/v 区域/n 内/f 的/u 和平/n 稳定/an 。/w （/w 环球网/nz ）/w 
-缅北/ns 果敢/ns 冲突/vn 与/c 中国/ns 西南/s 安全/a 罗圣荣/nr 　/w 汪爱平/nr 
+缅北/ns 果敢/ns 冲突/vn 与/c 中国/ns 西南/s 安全/a 罗圣荣/nr ，/w 汪爱平/nr 
 2009年/t 8月/t ，/w 缅甸/ns 军政府/n 以/p 果敢/ns 特区/n 枪械/n 修理厂/n 制造/v 毒品/n 为由/v 欲/d 搜查/v 该厂/r ，/w 遭/v 拒/v 后/f 军政府/n 向/p 果敢/ns 特区/n 调派/v 军队/n ，/w 与/p 果敢/ns 特区/n 政府/n 主席/n 彭家声/nr 领导/n 的/u 果敢/ns 同盟军/n 形成/v 对峙/v ，/w 继而/c 引发/v 军事/n 冲突/vn ，/w 引起/v 国际/n 社会/n 的/u 普遍/a 关注/vn 。/w 
 果敢/ns 冲突/vn 之所以/c 成为/v 国际/n 社会/n 关注/v 的/u 焦点/n ，/w 其一/r 固然/c 是/v 缅甸/ns 的/u “/w 果敢/ns 民族/n ”/w 及/c 果敢/ns 特区/n 与/p 中国/ns 有着/v 比较/d 特殊/a 的/u 历史/n 渊源/n ，/w 其二/r 则/c 是/v 果敢/ns 事件/n 攸关/v 中国/ns 的/u 西南/s 安全/a 。/w 
 摒除/v 源于/v 缅/ns 政府军/n 缉毒/v 的/u 表象/n ，/w 果敢/ns 冲突/vn 爆发/v 的/u 深/a 层次/n 原因/n 是/v 什么/r ，/w 其/r 对/p 中国/ns 的/u 西南/s 安全/a 将/d 产生/v 何种/r 影响/vn ，/w 这/r 正是/v 本文/r 所/u 要/v 探讨/v 的/u 问题/n 和/c 意义/n 所在/n 。/w 
@@ -8405,7 +8405,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 2011年/t 6月/t 克钦独立军/n 与/p 政府军/n 再/d 一/m 次/q 冲突/v ，/w 此后/r 战事/n 不/d 断/v 。/w 
 2014年/t 底/f 彭家声/nr 复出/v ，/w 并/c 在/p 克钦独立军/n 的/u 帮助/vn 下/f 组建/v 武装力量/n 。/w 
 2015年/t 大选/v 在即/v ，/w 缅政府/nt 为/p 实现/v 统一/a 、/w 克钦独立军/n 和/c 果敢/nz 同盟军/n 为/p 获取/v 高度/d 自治/v 和/c 更/d 多/a 政治/n 资本/n ，/w 双方/n 发生/v 冲突/v 。/w 
-目前/t ，/w 针对/p 缅北/ns 局势/n 的/u 研究/vn 相对/d 较/d 少/a ，/w 已/d 有/v 文献/n 主要/d 从/p “/w 民地武/n ”/w 和/c 政府军/n 之间/f 的/u 冲突/vn 根源/n 、/w 冲突/vn 现状/n 和/c 冲突/vn 影响/vn 因素/n 来/v 探讨/v 。/w 其中/r ,/w TNI/nx （/w Transnational/nx 　/w Institute/nx ）/w 就/p 20世纪/t 80年代/t 中期/f 缅北/ns 冲突/vn 态势/n 、/w 发展/v 的/u 选择/vn ，/w 缅甸/ns 如何/r 摆脱/v 周而复始/v 的/u 冲突/vn 等/u 问题/n 进行/v 了/u 深入/a 探讨/vn ，/w 并/c 提出/v ：/w 简单/a 的/u 停火/vn 协定/n 无法/v 解决/v 缅甸/ns 冲突/v 、/w 民族/n 地区/n 实际/a 问题/n ，/w 增加/v 对/p 少数民族/n 的/u 尊重/vn 等/u 将/d 是/v 解决/v 冲突/v 的/u 关键/n [/w 1/m -/w 2/m ]/w 。/w 
+目前/t ，/w 针对/p 缅北/ns 局势/n 的/u 研究/vn 相对/d 较/d 少/a ，/w 已/d 有/v 文献/n 主要/d 从/p “/w 民地武/n ”/w 和/c 政府军/n 之间/f 的/u 冲突/vn 根源/n 、/w 冲突/vn 现状/n 和/c 冲突/vn 影响/vn 因素/n 来/v 探讨/v 。/w 其中/r ,/w TNI/nx （/w Transnational/nx ，/w Institute/nx ）/w 就/p 20世纪/t 80年代/t 中期/f 缅北/ns 冲突/vn 态势/n 、/w 发展/v 的/u 选择/vn ，/w 缅甸/ns 如何/r 摆脱/v 周而复始/v 的/u 冲突/vn 等/u 问题/n 进行/v 了/u 深入/a 探讨/vn ，/w 并/c 提出/v ：/w 简单/a 的/u 停火/vn 协定/n 无法/v 解决/v 缅甸/ns 冲突/v 、/w 民族/n 地区/n 实际/a 问题/n ，/w 增加/v 对/p 少数民族/n 的/u 尊重/vn 等/u 将/d 是/v 解决/v 冲突/v 的/u 关键/n [/w 1/m -/w 2/m ]/w 。/w 
 龚丽娜/nr 等/u [/w 3/m ]/w 则/c 运用/v 宗族/n 灭绝/v 预测/v 模型/n ，/w 预测/v 了/u 缅政府/nt 实施/v 的/u 边境/s 警卫队/n 改编/v 政策/n 实施/v 对/p 正在/d 发生/v 的/u 国内/s 冲突/v 的/u 影响/vn ，/w 结果/n 表明/v 该/r 政策/n 加剧/v 了/u 双方/n 的/u 冲突/vn ，/w 但/c 尚未/d 达到/v 宗族/n 灭绝/v 的/u 程度/n 。/w 
 也/d 有/v 学者/n 就/p 缅甸/ns 民族/n 冲突/v 的/u 根源/n 、/w 动力/n 机制/n 和/c 出路/n 进行/v 了/u 分析/vn [/w 4/m -/w 5/m ]/w ,/w 其他/r 学者/n 则/c 就/p 缅北/ns 冲突/v 对/p 中国/ns 安全/a 的/u 影响/vn 进行/v 了/u 探讨/vn [/w 6/m -/w 7/m ]/w 。/w 
 总体/n 上/f ，/w 已/d 有/v 研究/vn 主要/d 从/p 缅甸/ns 族群/n 关系/n 的/u 视角/n 对/p 缅北/ns 地区/n 的/u 冲突/vn 进行/v 分析/vn ，/w 多/m 侧重/v 于/p 其/r 产生/vn 原因/n 和/c 解决/v 冲突/v 的/u 对策/n 措施/n ；/w 研究/v 范围/n 局限于/v 缅甸/ns 内部/f 冲突/v 。/w 
@@ -8473,7 +8473,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 再次/d ，/w 利用/v 非政府/b 组织/n ，/w 加强/v 与/p 草根/n 阶层/n 的/u 联系/vn 。/w 
 美国/ns 大力/d 资助/v 非政府/b 组织/n ，/w 结合/v 缅甸/ns 高度/d 自由/a 的/u 媒体/n ，/w 通过/p 舆论/n 和/c 非政府/b 组织/n 的/u 力量/n 加强/v 与/p 其他/r 政党/n 和/c 民众/n 的/u 联系/vn 。/w 
 利用/v 在/p 缅/ns 华企/n 投资/v 的/u 不足/an 和/c 华人/n 与/c 民众/n 之间/f 的/u 隔阂/n ，/w 通过/p 媒体/n 舆论/n 加剧/v 双方/n 矛盾/a ，/w 通过/p 非政府/b 组织/n 给/p 中国/ns 在/p 缅/ns 投资/v 设置/v 障碍/n ，/w 无论/c 是/v 中/ns 缅/ns 输油/vn 管道/n 修建/v 中/f 遇到/v 的/u 阻挠/vn ，/w 还/d 是/v 密松/ns 水电站/n 的/u 搁浅/vn 以及/c 莱比塘/ns 铜矿/n 受到/v 的/u 抵制/vn ，/w 非政府/b 组织/n 都/d 在/p 其中/r 扮演/v 了/u 重要/a 角色/n 。/w 
-美国/ns 此举/r 意/n 在/v 通过/p “/w 巧/a 实力/n ”/w （/w smart/nx 　/w power/nx ）/w 削弱/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n ，/w 从而/c 干预/v 中国/ns 在/p 亚太/ns 地区/n 的/u 发展/vn 。/w 
+美国/ns 此举/r 意/n 在/v 通过/p “/w 巧/a 实力/n ”/w （/w smart/nx ，/w power/nx ）/w 削弱/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n ，/w 从而/c 干预/v 中国/ns 在/p 亚太/ns 地区/n 的/u 发展/vn 。/w 
 最后/f ，/w 在/p 全/a 缅/ns 境内/s 寻找/v 可以/v 利用/v 的/u 任何/r 力量/n ，/w 使/v 缅甸/ns 局势/n 更加/d 复杂化/v ，/w 从而/c 降低/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n 。/w 
 2015年/t 修/v 宪/n 和/c 大选/v 在即/v ，/w 根据/p 当前/t 宪法/n ，/w 昂山素季/nr 无法/v 参选/v 。/w 
 针对/p 这/r 一/m 事实/n ，/w 美国/ns 一方面/c 积极/a 敦促/v 缅甸/ns 修/v 宪/n ，/w 确定/v 昂山素季/nr 的/u 合法/a 地位/n ；/w 另一方面/c ，/w 谴责/v 缅政府/nt 对/p “/w 民地武/n ”/w 的/u 武力/n 镇压/v ，/w 试图/v 利用/v 其他/r 的/u 民族/n 武装/n ，/w 培育/v 支持/v 昂山素季/nr 的/u 武装力量/n 或/c 寻找/v 新/a 的/u 代理人/n 。/w 
@@ -8496,7 +8496,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 除了/p 战略/n 地位/n ，/w 中国/ns 对/p 缅甸/ns 的/u 长期/b 投资/vn ，/w 中/ns 缅/ns 边境线/n 的/u 安全/an 、/w 能源/n 安全/a 以及/c 历次/b 冲突/v 带来/v 的/u 威胁/vn 都/d 是/v 中国/ns 不/d 能/v 忽视/v 的/u 重要/a 因素/n 。/w 
 因此/c ，/w 中国/ns 一直/d 致力/v 于/p 处理/v 好/a 与/p 缅甸/ns 的/u 关系/n 。/w 
 3.2.2/m 美国/ns 重返/v 亚太/ns 后/f 的/u 中/ns 缅/ns 关系/n 当前/t ，/w 中国/ns 与/p 缅甸/ns 的/u 关系/n 从/p 主动/a 逐渐/d 向/p 被动/a 转变/v ，/w 其/r 影响力/n 在/d 不断/d 受到/v 挑战/v ；/w 中国/ns 开始/v 由/p 之前/f 单纯/a 地/u 发展/v 经济/n 向/p 发展/v 经济/n 同时/t 兼顾/v 主动/a 处理/v 好/a 中/ns 缅/ns 关系/n 转变/v 。/w 
-2009年/t 之前/f 缅甸/ns 在/p 国际/n 和/c 国内/s 均/d 依赖/v 中国/ns ，/w 2009年/t 之后/f ，/w 缅甸/ns 开始/v 在/p 不同/a 国家/n 之间/f 寻求/v 平衡/a ，/w 2011年/t 密松/ns 水电站/n 被迫/d 停工/v 就/d 是/v 缅甸/ns 制衡/v 中国/ns 的/u 开始/v [/w 32/m ]/w ,/w 缅甸/ns 将/d 成为/v 中国/ns 外交/n 政策/n 调整/v 的/u 触发点/n [/w 33/m ]/w 。/w 对/p 此/r ，/w 中国/ns 开始/v 放缓/v 在/p 缅甸/ns 投资/v ，/w 2012/t 财政/n 年度/n （/w Fiscal/nx 　/w Year/nx ）/w 中国/ns 在/p 缅/ns 投资/v 仅/d 为/v 4.07亿/m 美元/q ，/w 而/c 前/f 2/m 个/q 财政/n 年度/n （/w 2010/t 、/w 2011年/t ）/w 则/c 分别/d 为/v 43.5亿/m 美元/q 和/c 82.7亿/m 美元/q [/w 34/m ]/w 。/w 主动/a 改善/v 与/p 缅甸/ns 的/u 关系/n ，/w 加大/v 了/u 高级/a 官员/n 访/v 缅/ns 的/u 力度/n 。/w 
+2009年/t 之前/f 缅甸/ns 在/p 国际/n 和/c 国内/s 均/d 依赖/v 中国/ns ，/w 2009年/t 之后/f ，/w 缅甸/ns 开始/v 在/p 不同/a 国家/n 之间/f 寻求/v 平衡/a ，/w 2011年/t 密松/ns 水电站/n 被迫/d 停工/v 就/d 是/v 缅甸/ns 制衡/v 中国/ns 的/u 开始/v [/w 32/m ]/w ,/w 缅甸/ns 将/d 成为/v 中国/ns 外交/n 政策/n 调整/v 的/u 触发点/n [/w 33/m ]/w 。/w 对/p 此/r ，/w 中国/ns 开始/v 放缓/v 在/p 缅甸/ns 投资/v ，/w 2012/t 财政/n 年度/n （/w Fiscal/nx ，/w Year/nx ）/w 中国/ns 在/p 缅/ns 投资/v 仅/d 为/v 4.07亿/m 美元/q ，/w 而/c 前/f 2/m 个/q 财政/n 年度/n （/w 2010/t 、/w 2011年/t ）/w 则/c 分别/d 为/v 43.5亿/m 美元/q 和/c 82.7亿/m 美元/q [/w 34/m ]/w 。/w 主动/a 改善/v 与/p 缅甸/ns 的/u 关系/n ，/w 加大/v 了/u 高级/a 官员/n 访/v 缅/ns 的/u 力度/n 。/w 
 积极/a 介入/v 缅甸/ns 冲突/v ，/w 2013年/t 11月/t 克/ns 缅/ns 冲突/v ，/w 中国/ns 作为/p 调停方/n 促成/v 和谈/v ；/w 2015年/t 缅北/ns 冲突/v 加剧/v ，/w 中国/ns 呼吁/v 及早/d 进行/v 和谈/vn 。/w 
 3.2.3/m 允许/v 短期/b 冲突/v 中国/ns 的/u 长远/a 发展/v 需要/v 一个/m 和平/n 统一/a 的/u 缅甸/ns ，/w 但/c 就/p 缅甸/ns 目前/t 的/u 局势/n ，/w 加之/c 西方/s 外部/f 势力/n 的/u 干预/vn ，/w 当前/t 中国/ns 在/p 缅甸/ns 的/u 被动/a 局面/n 以及/c 中国/ns 对/p 中/ns 缅/ns 之间/f 关系/n 走向/v 的/u 预测/vn 和/c 判断/vn ，/w 短期/b 内/f 中国/ns 允许/v 缅北/ns 冲突/v 存在/v 。/w 
 究/v 其/r 原因/n ，/w 缅政府/nt 在/p 解禁/v 前后/f 对/p 中国/ns 的/u 反差/n 行为/n 让/v 中国/ns 对/p 缅甸政府/nt 有/v 了/u 新/a 的/u 认识/n ，/w 中国/ns 需要/v 这/r 场/q 冲突/v 转移/v 缅甸/ns 国内/s 对/p 中国/ns 的/u 过分/a 关注/v 。/w 
@@ -9087,7 +9087,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 我们/r 是/v 倡导/v 和平/n 的/u 嘛/y ，/w 是/v 缅甸/ns 亲美派/n 不/d 要/v 和平/n 嘛/y ，/w 那/r 就/d 让/v 民地武/n 打/v 掉/v 了/u 捣乱/v 的/u 亲美派/n 好/a 了/y 。/w 
 只有/c 这样/r ，/w 缅甸/ns 民族/n 和解/v 才/d 能/v 真正/d 实现/v ，/w 缅甸/ns 才/d 会/v 真正/d 实现/v 和平/n 稳定/a ，/w 中/ns 缅/ns 经济/n 合作/v 也/d 才/d 能/v 快速/d 发展/v 。/w 
 （/w 作者/n 署名/v ：/w 红色/n 中华/n 狮子/n ）/w 
-【/w 环球时报/nz 记者/n 邱永峥/nr 　/w 曲翔宇/nr 】/w 缅甸/ns 渺瓦底/nz 网站/n 9日/t 发布/v 消息/n 称/v ，/w 果敢/nz 同盟军/n 当日/t 攻/v 入/v 果敢/nz 首府/n 老街/ns ，/w 与/p 缅甸/ns 国防军/n 发生/v 冲突/v 。/w 
+【/w 环球时报/nz 记者/n 邱永峥/nr ，/w 曲翔宇/nr 】/w 缅甸/ns 渺瓦底/nz 网站/n 9日/t 发布/v 消息/n 称/v ，/w 果敢/nz 同盟军/n 当日/t 攻/v 入/v 果敢/nz 首府/n 老街/ns ，/w 与/p 缅甸/ns 国防军/n 发生/v 冲突/v 。/w 
 报道/v 称/v ，/w 缅甸/ns 国防军/n 得/v 到/v 线报/n 对/p 老街/ns 进行/v 搜查/vn 时/n ，/w 与/p 果敢/nz 同盟军/n 在/p 老街/ns 西北部/f 爆发/v 2/m 次/q 冲突/v ，/w 在/p 西南部/s 某/r 村庄/n 爆发/v 1/m 次/q 冲突/v 。/w 
 目前/t 缅甸/ns 国防军/n 仍/d 在/p 老街/ns 进行/v 排查/vn 和/c 梳理/vn ，/w 防止/v 同盟军/n 在/p 当地/s 安营扎寨/v 。/w 
 缅甸政府/nt 正/d 尽力/d 在/p 全国/n 范围/n 内/f 达成/v 停火/v 协议/n 。/w 
@@ -9306,7 +9306,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 2014年/t 底/f 彭家声/nr 复出/v ，/w 并/c 在/p 克钦独立军/n 的/u 帮助/vn 下/f 组建/v 武装力量/n 。/w 
 2015年/t 大选/v 在即/v ，/w 缅政府/nt 为/p 实现/v 统一/a 、/w 克钦独立军/n 和/c 果敢/nz 同盟军/n 为/p 获取/v 高度/d 自治/v 和/c 更/d 多/a 政治/n 资本/n ，/w 双方/n 发生/v 冲突/v 。/w 
 目前/t ，/w 针对/p 缅北/ns 局势/n 的/u 研究/vn 相对/d 较/d 少/a ，/w 已/d 有/v 文献/n 主要/d 从/p “/w 民地武/n ”/w 和/c 政府军/n 之间/f 的/u 冲突/vn 根源/n 、/w 冲突/vn 现状/n 和/c 冲突/vn 影响/vn 因素/n 来/v 探讨/v 。/w 
-其中/r ,/w TNI/nx （/w Transnational/nx 　/w Institute/nx ）/w 就/p 20世纪/t 80年代/t 中期/f 缅北/ns 冲突/vn 态势/n 、/w 发展/v 的/u 选择/vn ，/w 缅甸/ns 如何/r 摆脱/v 周而复始/v 的/u 冲突/vn 等/u 问题/n 进行/v 了/u 深入/a 探讨/vn ，/w 并/c 提出/v ：/w 简单/a 的/u 停火/vn 协定/n 无法/v 解决/v 缅甸/ns 冲突/v 、/w 民族/n 地区/n 实际/a 问题/n ，/w 增加/v 对/p 少数民族/n 的/u 尊重/vn 等/u 将/d 是/v 解决/v 冲突/v 的/u 关键/n [/w 1/m -/w 2/m ]/w 。/w 
+其中/r ,/w TNI/nx （/w Transnational/nx ，/w Institute/nx ）/w 就/p 20世纪/t 80年代/t 中期/f 缅北/ns 冲突/vn 态势/n 、/w 发展/v 的/u 选择/vn ，/w 缅甸/ns 如何/r 摆脱/v 周而复始/v 的/u 冲突/vn 等/u 问题/n 进行/v 了/u 深入/a 探讨/vn ，/w 并/c 提出/v ：/w 简单/a 的/u 停火/vn 协定/n 无法/v 解决/v 缅甸/ns 冲突/v 、/w 民族/n 地区/n 实际/a 问题/n ，/w 增加/v 对/p 少数民族/n 的/u 尊重/vn 等/u 将/d 是/v 解决/v 冲突/v 的/u 关键/n [/w 1/m -/w 2/m ]/w 。/w 
 龚丽娜/nr 等/u [/w 3/m ]/w 则/c 运用/v 宗族/n 灭绝/v 预测/v 模型/n ，/w 预测/v 了/u 缅政府/nt 实施/v 的/u 边境/s 警卫队/n 改编/v 政策/n 实施/v 对/p 正在/d 发生/v 的/u 国内/s 冲突/v 的/u 影响/vn ，/w 结果/n 表明/v 该/r 政策/n 加剧/v 了/u 双方/n 的/u 冲突/vn ，/w 但/c 尚未/d 达到/v 宗族/n 灭绝/v 的/u 程度/n 。/w 
 也/d 有/v 学者/n 就/p 缅甸/ns 民族/n 冲突/v 的/u 根源/n 、/w 动力/n 机制/n 和/c 出路/n 进行/v 了/u 分析/vn [/w 4/m -/w 5/m ]/w ,/w 其他/r 学者/n 则/c 就/p 缅北/ns 冲突/v 对/p 中国/ns 安全/a 的/u 影响/vn 进行/v 了/u 探讨/vn [/w 6/m -/w 7/m ]/w 。/w 
 总体/n 上/f ，/w 已/d 有/v 研究/vn 主要/d 从/p 缅甸/ns 族群/n 关系/n 的/u 视角/n 对/p 缅北/ns 地区/n 的/u 冲突/vn 进行/v 分析/vn ，/w 多/m 侧重/v 于/p 其/r 产生/vn 原因/n 和/c 解决/v 冲突/v 的/u 对策/n 措施/n ；/w 研究/v 范围/n 局限于/v 缅甸/ns 内部/f 冲突/v 。/w 
@@ -9374,7 +9374,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 再次/d ，/w 利用/v 非政府/b 组织/n ，/w 加强/v 与/p 草根/n 阶层/n 的/u 联系/vn 。/w 
 美国/ns 大力/d 资助/v 非政府/b 组织/n ，/w 结合/v 缅甸/ns 高度/d 自由/a 的/u 媒体/n ，/w 通过/p 舆论/n 和/c 非政府/b 组织/n 的/u 力量/n 加强/v 与/p 其他/r 政党/n 和/c 民众/n 的/u 联系/vn 。/w 
 利用/v 在/p 缅/ns 华企/n 投资/v 的/u 不足/an 和/c 华人/n 与/c 民众/n 之间/f 的/u 隔阂/n ，/w 通过/p 媒体/n 舆论/n 加剧/v 双方/n 矛盾/a ，/w 通过/p 非政府/b 组织/n 给/p 中国/ns 在/p 缅/ns 投资/v 设置/v 障碍/n ，/w 无论/c 是/v 中/ns 缅/ns 输油/vn 管道/n 修建/v 中/f 遇到/v 的/u 阻挠/vn ，/w 还/d 是/v 密松/ns 水电站/n 的/u 搁浅/vn 以及/c 莱比塘/ns 铜矿/n 受到/v 的/u 抵制/vn ，/w 非政府/b 组织/n 都/d 在/p 其中/f 扮演/v 了/u 重要/a 角色/n 。/w 
-美国/ns 此举/r 意/n 在/v 通过/p “/w 巧/a 实力/n ”/w （/w smart/nx 　/w power/nx ）/w 削弱/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n ，/w 从而/c 干预/v 中国/ns 在/p 亚太/ns 地区/n 的/u 发展/vn 。/w 
+美国/ns 此举/r 意/n 在/v 通过/p “/w 巧/a 实力/n ”/w （/w smart/nx ，/w power/nx ）/w 削弱/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n ，/w 从而/c 干预/v 中国/ns 在/p 亚太/ns 地区/n 的/u 发展/vn 。/w 
 最后/f ，/w 在/p 全/a 缅/ns 境内/s 寻找/v 可以/v 利用/v 的/u 任何/r 力量/n ，/w 使/v 缅甸/ns 局势/n 更加/d 复杂化/v ，/w 从而/c 降低/v 中国/ns 在/p 缅甸/ns 的/u 影响力/n 。/w 
 2015年/t 修/v 宪/n 和/c 大选/v 在即/v ，/w 根据/p 当前/t 宪法/n ，/w 昂山素季/nr 无法/v 参选/v 。/w 
 针对/p 这/r 一/m 事实/n ，/w 美国/ns 一方面/c 积极/a 敦促/v 缅甸/ns 修/v 宪/n ，/w 确定/v 昂山素季/nr 的/u 合法/a 地位/n ；/w 另一方面/c ，/w 谴责/v 缅政府/nt 对/p “/w 民地武/n ”/w 的/u 武力/n 镇压/v ，/w 试图/v 利用/v 其他/r 的/u 民族/n 武装/n ，/w 培育/v 支持/v 昂山素季/nr 的/u 武装力量/n 或/c 寻找/v 新/a 的/u 代理人/n 。/w 
@@ -9397,7 +9397,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 除了/p 战略/n 地位/n ，/w 中国/ns 对/p 缅甸/ns 的/u 长期/b 投资/vn ，/w 中/ns 缅/ns 边境线/n 的/u 安全/an 、/w 能源/n 安全/a 以及/c 历次/b 冲突/v 带来/v 的/u 威胁/vn 都/d 是/v 中国/ns 不/d 能/v 忽视/v 的/u 重要/a 因素/n 。/w 
 因此/c ，/w 中国/ns 一直/d 致力/v 于/p 处理/v 好/a 与/p 缅甸/ns 的/u 关系/n 。/w 
 3.2.2/m 美国/ns 重返/v 亚太/ns 后/f 的/u 中/ns 缅/ns 关系/n 当前/t ，/w 中国/ns 与/p 缅甸/ns 的/u 关系/n 从/p 主动/a 逐渐/d 向/p 被动/a 转变/v ，/w 其/r 影响力/n 在/d 不断/d 受到/v 挑战/v ；/w 中国/ns 开始/v 由/p 之前/f 单纯/a 地/u 发展/v 经济/n 向/p 发展/v 经济/n 同时/t 兼顾/v 主动/a 处理/v 好/a 中/ns 缅/ns 关系/n 转变/v 。/w 
-2009年/t 之前/f 缅甸/ns 在/p 国际/n 和/c 国内/s 均/d 依赖/v 中国/ns ，/w 2009年/t 之后/f ，/w 缅甸/ns 开始/v 在/p 不同/a 国家/n 之间/f 寻求/v 平衡/a ，/w 2011年/t 密松/ns 水电站/n 被迫/d 停工/v 就/d 是/v 缅甸/ns 制衡/v 中国/ns 的/u 开始/v [/w 32/m ]/w ,/w 缅甸/ns 将/d 成为/v 中国/ns 外交/n 政策/n 调整/v 的/u 触发点/n [/w 33/m ]/w 。/w 对/p 此/r ，/w 中国/ns 开始/v 放缓/v 在/p 缅甸/ns 投资/v ，/w 2012/t 财政/n 年度/n （/w Fiscal/nx 　/w Year/nx ）/w 中国/ns 在/p 缅/ns 投资/v 仅/d 为/v 4.07亿/m 美元/q ，/w 而/c 前/f 2/m 个/q 财政/n 年度/n （/w 2010/t 、/w 2011年/t ）/w 则/c 分别/d 为/v 43.5亿/m 美元/q 和/c 82.7亿/m 美元/q [/w 34/m ]/w 。/w 主动/a 改善/v 与/p 缅甸/ns 的/u 关系/n ，/w 加大/v 了/u 高级/a 官员/n 访/v 缅/ns 的/u 力度/n 。/w 
+2009年/t 之前/f 缅甸/ns 在/p 国际/n 和/c 国内/s 均/d 依赖/v 中国/ns ，/w 2009年/t 之后/f ，/w 缅甸/ns 开始/v 在/p 不同/a 国家/n 之间/f 寻求/v 平衡/a ，/w 2011年/t 密松/ns 水电站/n 被迫/d 停工/v 就/d 是/v 缅甸/ns 制衡/v 中国/ns 的/u 开始/v [/w 32/m ]/w ,/w 缅甸/ns 将/d 成为/v 中国/ns 外交/n 政策/n 调整/v 的/u 触发点/n [/w 33/m ]/w 。/w 对/p 此/r ，/w 中国/ns 开始/v 放缓/v 在/p 缅甸/ns 投资/v ，/w 2012/t 财政/n 年度/n （/w Fiscal/nx ，/w Year/nx ）/w 中国/ns 在/p 缅/ns 投资/v 仅/d 为/v 4.07亿/m 美元/q ，/w 而/c 前/f 2/m 个/q 财政/n 年度/n （/w 2010/t 、/w 2011年/t ）/w 则/c 分别/d 为/v 43.5亿/m 美元/q 和/c 82.7亿/m 美元/q [/w 34/m ]/w 。/w 主动/a 改善/v 与/p 缅甸/ns 的/u 关系/n ，/w 加大/v 了/u 高级/a 官员/n 访/v 缅/ns 的/u 力度/n 。/w 
 积极/a 介入/v 缅甸/ns 冲突/v ，/w 2013年/t 11月/t 克/ns 缅/ns 冲突/v ，/w 中国/ns 作为/p 调停方/n 促成/v 和谈/v ；/w 2015年/t 缅北/ns 冲突/v 加剧/v ，/w 中国/ns 呼吁/v 及早/d 进行/v 和谈/vn 。/w 
 3.2.3/m 允许/v 短期/b 冲突/v 中国/ns 的/u 长远/a 发展/v 需要/v 一个/m 和平/n 统一/a 的/u 缅甸/ns ，/w 但/c 就/p 缅甸/ns 目前/t 的/u 局势/n ，/w 加之/c 西方/s 外部/f 势力/n 的/u 干预/vn ，/w 当前/t 中国/ns 在/p 缅甸/ns 的/u 被动/a 局面/n 以及/c 中国/ns 对/p 中/ns 缅/ns 之间/f 关系/n 走向/v 的/u 预测/vn 和/c 判断/vn ，/w 短期/b 内/f 中国/ns 允许/v 缅北/ns 冲突/v 存在/v 。/w 
 究/v 其/r 原因/n ，/w 缅政府/nt 在/p 解禁/v 前后/f 对/p 中国/ns 的/u 反差/n 行为/n 让/v 中国/ns 对/p 缅甸政府/nt 有/v 了/u 新/a 的/u 认识/n ，/w 中国/ns 需要/v 这/r 场/q 冲突/v 转移/v 缅甸/ns 国内/s 对/p 中国/ns 的/u 过分/a 关注/v 。/w 
@@ -9556,7 +9556,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 1991年/t 的/u 海湾/ns 战争/n 后/f ，/w 印度/ns 军队/n 发现/v 了/u 巡航导弹/n 系统/n 的/u 巨大/a 威力/n ，/w 但/c 这/r 对于/p 反舰/n 导弹/n 都/d 无力/v 研制/v 的/u 印度/ns 来说/u 似乎/d 太/d 远/a 了/u 些/q 。/w 
 俄/ns 印/ns 成立/v 合资/v 公司/n 
 随着/p 苏联/ns 解体/v 的/u 经济/n 困境/n ，/w 俄罗斯导弹设计局/nt 出现/v 了/u 捧/v 着/u 金/b 饭碗/n 要饭/v 的/u 窘境/n ，/w 而/c 印度/ns 反舰/n 导弹/n 的/u 发展/vn 又/d 不/d 顺利/a ，/w 在/p 印/ns 俄/ns 双方/n 友好/a 历史/n 关系/n 和/c 展开/v 战略/n 合作/v 的/u 国际/n 背景/n 下/f ，/w 1999年/t 双方/n 签署/v 了/u 一/m 项/q 协议/n 致力/v 于/p 开发/v 一/m 种/q 新/a 的/u 反舰/n 导弹/n ，/w 设计/v 代号/n PJ-10/nx ，/w 将/d 以/p 原有/v 的/u SS-N-2/P-800/nx 红宝石/nz 反舰/n 导弹/n 为/v 基础/n 开发/v 。/w 
-印度/ns 方面/n 为/v 印度国防研究与发展组织/nt ，/w 俄罗斯/ns 方面/n 为/v 机械制造工艺科学生产联合体/nt (/w NPO/nx 　/w Mashinostroyenia/nx )/w ，/w 根据/p 协议/n 印/ns 俄/ns 建立/v 合资/v 公司/n 布拉莫斯宇航公司/nt 进行/v 开发/vn ，/w 印度/ns 方面/n 出资/v 1.2623亿/m 美元/q 占据/v 50.5%/m 的/u 股权/n ，/w 俄罗斯/ns 方面/n 出资/v 1.2375亿/m 美元/q 持有/v 49.5%/m 的/u 股权/n 。/w 
+印度/ns 方面/n 为/v 印度国防研究与发展组织/nt ，/w 俄罗斯/ns 方面/n 为/v 机械制造工艺科学生产联合体/nt (/w NPO/nx ，/w Mashinostroyenia/nx )/w ，/w 根据/p 协议/n 印/ns 俄/ns 建立/v 合资/v 公司/n 布拉莫斯宇航公司/nt 进行/v 开发/vn ，/w 印度/ns 方面/n 出资/v 1.2623亿/m 美元/q 占据/v 50.5%/m 的/u 股权/n ，/w 俄罗斯/ns 方面/n 出资/v 1.2375亿/m 美元/q 持有/v 49.5%/m 的/u 股权/n 。/w 
 技术/n 基于/p 红宝石/nz 反舰/n 导弹/n 
 作为/p 布拉莫斯/nz 导弹/n 的/u 基础/n ，/w 红宝石/nz 反舰/n 导弹/n 早/a 在/p 1983年/t 就/d 开始/v 研制/v 工作/v ，/w 到/p 1999年/t 实际上/d 已经/d 完成/v 开发/v 准备/v 服役/v ，/w 机械制造工艺科学生产联合体/nt 作为/p 苏联/nt 时代/n 导弹/n 研制/v 生产/v 的/u 巨头/n 对于/p 开发/v 反舰/n 导弹/n 也/d 可以/v 说/v 是/v 轻/a 车/n 路/n 熟/a ，/w 因此/c 布拉莫斯/nz 反舰/n 导弹/n 的/u 研制/vn 并/c 没有/d 遇到/v 什么/r 大/a 的/u 障碍/n 。/w 
 实际上/d ，/w 最/d 早/a 的/u 布拉莫斯/nz 导弹/n 就/d 可以/v 看做/v 是/v 红宝石/nz 导弹/n 根据/p 印度/ns 工业/n 基础/n 降级/v 的/u 版本/n ，/w 方便/v 印度/ns 参与/v 研制/v 和/c 进行/v 生产/vn 。/w 
@@ -9597,19 +9597,19 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 除了/p 传统/n 的/u 反舰/n 任务/n ，/w 印度/ns 在/p 布拉莫斯/nz 导弹/n 上/f 还/d 派生/v 出/v 陆攻/vn 巡航导弹/n 的/u 版本/n ，/w 同/d 为/v 超音速/n 导弹/n ，/w 这/r 很/d 容易/a 让/v 人/n 想起/v 十多/m 年/q 前/f 中国/ns C-301/nx 超音速/n 巡航导弹/n 的/u 钓鱼/vn 工程/n 。/w 
 说/v 到/v 这里/r 就/d 不能不/d 说/v 印度/ns 的/u 无奈/an ，/w 印度/ns 的/u 老/a 对手/n 巴基斯坦/ns 巡航导弹/n 发展/v 很/d 快/a ，/w 走/v 到/v 了/u 印度/ns 的/u 前面/f ，/w 700/m 公里/q 射程/n 的/u 巴布尔/nz (/w Babur/nx )/w 巡航导弹/n 2005年/t 就/d 进行/v 了/u 试射/vn ，/w 350/m 公里/q 射程/n 的/u 空基雷鸣/nz (/w RAAD/nx )/w 巡航导弹/n 2007/m 也/d 进行/v 了/u 试射/vn ，/w 这/r 对/p 印度/ns 构成/v 了/u 很/d 大/a 压力/n 。/w 
 印度/ns 研制/v 的/u 无畏/nz (/w Nirbhay/nx )/w 巡航导弹/n 尽管/c 设计/v 指标/n 要/v 好/a 一些/m 达到/v 了/u 1000/m 公里/q 的/u 射程/n ，/w 但是/c 到/v 了/u 2010年/t 的/u 今天/t 甚至/d 还/d 没有/d 进入/v 系统/n 整合/v 的/u 阶段/n ，/w 试射/v 和/c 服役/v 更是/d 遥遥无期/v 。/w 
-布拉莫斯/nz Block/nx 　/w I/nx 陆攻型/b 表现/v 平平/z 
+布拉莫斯/nz Block/nx ，/w I/nx 陆攻型/b 表现/v 平平/z 
 面对/v 巴基斯坦/ns 巡航导弹/n 发展/v 咄咄逼人/v 的/u 压力/n ，/w 印度国防研究与发展组织/nt 发现/v ，/w 如果/c 单纯/a 等待/v 无畏/nz 巡航导弹/n 研制/v 成功/a 的话/u ，/w 印度/ns 将/d 很/d 快/a 单方面/d 受到/v 巡航导弹/n 威胁/v ，/w 开发/v 一/m 种/q 新/a 的/u 巡航导弹/n 抵消/v 巴基斯坦/ns 的/u 巡航导弹/n 打击/vn 能力/n 迫在眉睫/v 。/w 
 由于/c 巴基斯坦/ns 方面/n 即将/d 试射/v 巡航导弹/n ，/w 印度/ns 却/d 无力/v 短/a 时间/n 开发/v 出/v 全新/b 的/u 巡航导弹/n ，/w 于是/c 预定/v 用于/v 反舰/n 的/u 布拉莫斯/nz 导弹/n 就/d 被/p 赶/v 鸭子/n 上/v 架/n ，/w 成/v 了/u 陆攻/vn 巡航导弹/n 。/w 
 2004年/t 12月/t 印度/ns 陆军/n 布拉莫斯/nz 巡航导弹/n 进行/v 了/u 首次/m 试射/v ，/w 2007年/t 3月/t 再次/d 试射/v ，/w 分别/d 攻击/v 了/u 地面/n 目标/n ，/w 2007年/t 6月/t 布拉莫斯/nz 导弹/n 交付/v 印度/ns 陆军/n 使用/v 。/w 
 这/r 种/q 导弹/n 改进/v 了/u 反舰型/b 巡航导弹/n 的/u 导引头/n ，/w 使/v 之/r 能/v 实现/v 对/p 陆地/n 目标/n 的/u 攻击/vn 。/w 
-虽然/c BlockI型/b 布拉莫斯/nz 导弹/n 在/p 宣传/v 资料/n 和/c 印度/ns 网友/n 的/u 帖子/n 中/f 被/p 吹/v 得/u 天花乱坠/a ，/w 不过/c 从/p 布拉莫斯宇航公司/nt 公布/v 的/u 录像/n 看/u ，/w 布拉莫斯/nz Block/nx 　/w I/nx 导弹/n 的/u 目标/n 识别/v 能力/n 很/d 弱/a ，/w 靶标/n 是/v 平坦/a 地面/n 上/f 孤零零/z 的/u 房子/n ，/w 还/d 装有/v 角/n 反射器/n ，/w 对于/p 复杂/a 地形/n 下/f 的/u 目标/n ，/w 布拉莫斯/nz 巡航导弹/n 识别/vn 能力/n 不足/a ，/w 这/r 也/d 是/v 老式/b 主动/a 雷达/n 导引头/n 的/u 通病/n ，/w 即使/c 是/v 新式/a 主动/a 雷达/n 导引头/n 的/u RBS-15MK3/nx 反舰/n 导弹/n 也/d 只/d 有/v 有限/a 的/u 对/p 陆/n 攻击/v 能力/n 。/w 
-2008年/t ，/w 印度/ns 海军/n 使用/v 布拉莫斯/nz Block/nx 　/w I/nx 导弹/n 进行/v 了/u 首次/m 有/v 海/n 到/v 陆/n 的/u 试射/vn ，/w 这/r 是/v 布拉莫斯/nz 导弹/n 的/u 第15/m 次/q 试射/vn ，/w 是/v 印度/ns 海军/n 历史/n 上/f 第一/m 次/q 陆攻/vn 巡航导弹/n 的/u 试射/vn 。/w 
-布拉莫斯/nz Block/nx 　/w II/nx 陆攻型/n 效果/n 有限/a 
-由于/c 来自/v P-270/nx 的/u 主动/a 导引头/n 缺乏/v 分辨/vn 能力/n ，/w 更/d 专业/a 的/u 布拉莫斯/nz Block/nx 　/w II/nx 巡航导弹/n 被/p 开发/v 出来/v ，/w 据传/v 使用/v 先进/a 的/u Ka/nx 波段/n 毫米波/n 主动/a 雷达/n 导引头/n 代替/v 了/u 分辨/vn 能力/n 差/a 的/u X/nx 波段/n 主动/a 雷达/n 导引头/n ，/w Ka/nx 波段/n 导引头/n 可能/v 来自/v KH-25MAE/nx 导弹/n ，/w KH-25MAE/nx 导弹/n 的/u 毫米波/n 导引头/n 具备/v 在/p 4/m 公里/q 距离/n 上/f 发现/v 坦克/n 的/u 能力/n 。/w 
-2009年/t 1月/t 布拉莫斯/nz Block/nx 　/w II/nx 导弹/n 打靶/v 失败/v ，/w 曾/d 引发/v 印度/ns 陆军/n 的/u 抗议/vn ，/w 声称/v 除非/c 证明/v 布拉莫斯/nz 可靠/a 否则/c 不/d 会/v 继续/v 装备/v ，/w 好/a 在/p 后/f 继/v 的/u 试验/vn 取得/v 了/u 成功/a ，/w 布拉莫斯宇航公司/nt 称/v 导弹/n 击中/v 了/u 一/m 组/q 建筑/n 中/f 的/u 小/a 房子/n 。/w 
-目前/t 为止/u 布拉莫斯/nz Block/nx 　/w II/nx 陆攻/vn 巡航导弹/n 在/p 印度/ns 陆军/n 进行/v 了/u 3/m 次/q 成功/a 发射/vn ，/w 验证/v 了/u 攻击/v 地面/n 目标/n 的/u 能力/n 。/w 
+虽然/c BlockI型/b 布拉莫斯/nz 导弹/n 在/p 宣传/v 资料/n 和/c 印度/ns 网友/n 的/u 帖子/n 中/f 被/p 吹/v 得/u 天花乱坠/a ，/w 不过/c 从/p 布拉莫斯宇航公司/nt 公布/v 的/u 录像/n 看/u ，/w 布拉莫斯/nz Block/nx ，/w I/nx 导弹/n 的/u 目标/n 识别/v 能力/n 很/d 弱/a ，/w 靶标/n 是/v 平坦/a 地面/n 上/f 孤零零/z 的/u 房子/n ，/w 还/d 装有/v 角/n 反射器/n ，/w 对于/p 复杂/a 地形/n 下/f 的/u 目标/n ，/w 布拉莫斯/nz 巡航导弹/n 识别/vn 能力/n 不足/a ，/w 这/r 也/d 是/v 老式/b 主动/a 雷达/n 导引头/n 的/u 通病/n ，/w 即使/c 是/v 新式/a 主动/a 雷达/n 导引头/n 的/u RBS-15MK3/nx 反舰/n 导弹/n 也/d 只/d 有/v 有限/a 的/u 对/p 陆/n 攻击/v 能力/n 。/w 
+2008年/t ，/w 印度/ns 海军/n 使用/v 布拉莫斯/nz Block/nx ，/w I/nx 导弹/n 进行/v 了/u 首次/m 有/v 海/n 到/v 陆/n 的/u 试射/vn ，/w 这/r 是/v 布拉莫斯/nz 导弹/n 的/u 第15/m 次/q 试射/vn ，/w 是/v 印度/ns 海军/n 历史/n 上/f 第一/m 次/q 陆攻/vn 巡航导弹/n 的/u 试射/vn 。/w 
+布拉莫斯/nz Block/nx ，/w II/nx 陆攻型/n 效果/n 有限/a 
+由于/c 来自/v P-270/nx 的/u 主动/a 导引头/n 缺乏/v 分辨/vn 能力/n ，/w 更/d 专业/a 的/u 布拉莫斯/nz Block/nx ，/w II/nx 巡航导弹/n 被/p 开发/v 出来/v ，/w 据传/v 使用/v 先进/a 的/u Ka/nx 波段/n 毫米波/n 主动/a 雷达/n 导引头/n 代替/v 了/u 分辨/vn 能力/n 差/a 的/u X/nx 波段/n 主动/a 雷达/n 导引头/n ，/w Ka/nx 波段/n 导引头/n 可能/v 来自/v KH-25MAE/nx 导弹/n ，/w KH-25MAE/nx 导弹/n 的/u 毫米波/n 导引头/n 具备/v 在/p 4/m 公里/q 距离/n 上/f 发现/v 坦克/n 的/u 能力/n 。/w 
+2009年/t 1月/t 布拉莫斯/nz Block/nx ，/w II/nx 导弹/n 打靶/v 失败/v ，/w 曾/d 引发/v 印度/ns 陆军/n 的/u 抗议/vn ，/w 声称/v 除非/c 证明/v 布拉莫斯/nz 可靠/a 否则/c 不/d 会/v 继续/v 装备/v ，/w 好/a 在/p 后/f 继/v 的/u 试验/vn 取得/v 了/u 成功/a ，/w 布拉莫斯宇航公司/nt 称/v 导弹/n 击中/v 了/u 一/m 组/q 建筑/n 中/f 的/u 小/a 房子/n 。/w 
+目前/t 为止/u 布拉莫斯/nz Block/nx ，/w II/nx 陆攻/vn 巡航导弹/n 在/p 印度/ns 陆军/n 进行/v 了/u 3/m 次/q 成功/a 发射/vn ，/w 验证/v 了/u 攻击/v 地面/n 目标/n 的/u 能力/n 。/w 
 毫米波/n 导引头/n 波长/n 短/a 精度/n 高/a ，/w 作为/v 一/m 种/q 全天候/b 精确/a 制导/v 技术/n 在/p 对/p 陆/n 攻击/v 导弹/n 上/f 应用/v 不/d 少/a ，/w 如/v 美国/ns AGM-114/nx 海尔法/nz 和/c 派生/v 而/c 出/v 的/u 欧洲/ns 硫磺石/nz ，/w AGM-88E/nx 反/vn 辐射/vn 导弹/n 以及/c 俄国/ns 的/u KH-25MAE/nx 导弹/n 等/u 。/w 
-不过/c 布拉莫斯/nz Block/nx 　/w II/nx 巡航导弹/n 末段/s 速度/n 快/a ，/w 导引头/n 探测/v 距离/n 短/a ，/w 导致/v 反应/vn 时间/n 不足/v ，/w 其/r 高空/s 弹道/n 在/p 先进/a 防空/vn 导弹/n 的/u 拦截/v 下/f 突防/v 效果/n 也/d 并不/d 乐观/a 。/w 
+不过/c 布拉莫斯/nz Block/nx ，/w II/nx 巡航导弹/n 末段/s 速度/n 快/a ，/w 导引头/n 探测/v 距离/n 短/a ，/w 导致/v 反应/vn 时间/n 不足/v ，/w 其/r 高空/s 弹道/n 在/p 先进/a 防空/vn 导弹/n 的/u 拦截/v 下/f 突防/v 效果/n 也/d 并不/d 乐观/a 。/w 
 目前/t 服役/v 的/u 陆攻/vn 巡航导弹/n 如/v 美国/ns 的/u BGM-119/nx 战斧/nz ，/w AGM-158/nx ，/w 欧洲/ns 的/u 风暴阴影/nz 和/c 金牛座/nz ，/w 普遍/a 是/v 采用/v 中段/s 地形/n 匹配/v //w GPS/nx 制导/v 加/v 末段/s 红外/n 成像/v 制导/v ，/w 具有/v 好/a 得/u 多/a 的/u 性能/n 。/w 
 印度/ns 海军/n 的/u P-15B/nx 驱逐舰/n 上/f ，/w 仍然/d 使用/v 亚音速/n 的/u 无畏/nz 远程/b 巡航导弹/n ，/w 可知/v 印度/ns 军方/n 眼中/s 陆攻型/b 布拉莫斯/nz 导弹/n 无法/v 取代/v 真正/b 的/u 陆攻/vn 巡航导弹/n 。/w 
 布拉莫斯/nz 导弹/n 作为/p 印度/ns 自行/d 生产/v 的/u 先进/a 导弹/n ，/w 比/p 原有/v 的/u 冥河/nz 和/c 海鹰/nz 反舰/n 导弹/n 技术/n 上/f 有/v 很/d 大/a 的/u 提高/vn ，/w 加以/v 软硬件/n 的/u 改进/v 后/f 也/d 形成/v 了/u 印度/ns 迫切/a 需要/v 的/u 对/p 陆/n 攻击/v 能力/n 。/w 
@@ -9663,7 +9663,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 皮莱/nr 称/v ，/w “/w 布拉莫斯/nz ”/w 超音速/n 巡航导弹/n 在/p 2001年/t 成功/a 进行/v 了/u 首次/m 飞行/vn 试验/vn ，/w 自/p 那时/r 起/v 更/d 先进/a 的/u 武器/n 系统/n 被/p 先后/d 开发/v 出来/v 。/w 
 皮莱/nr 还/d 称/v ，/w 在/p 印度/ns 总理/n 莫迪/nr 的/u “/w 印度/ns 制造/v ”/w 政策/n 的/u 号召/v 下/f ，/w 印度/ns 有/v 必要/a 采取/v 公私/n 合营/v 的/u 方式/n 来/v 打造/v 本国/r 军工/n 复合体/n 。/w 
 印/ns 专家/n ：/w 印度/ns 5/m 年/q 内/f 将/d 成为/v 导弹/n 领域/n 超级/b 强国/n 
-[/w brahmand/nx 网站/n 2012年/t 5月/t 25日/t 报道/v ]/w 印度/ns 布拉莫斯宇航公司/nt (/w Brahmos/nx 　/w Aerospace/nx )/w 首席/n 执行官/n 皮莱/nr (/w Sivathanu/nx 　/w Pillai/nx )/w 博士/n 称/v ，/w 通过/p 对/p 高/a 超音速/n 巡航导弹/n 技术/n 的/u 研发/vn ，/w 印度/ns 将/d 在/p 未来/t 五/m 年/q 内/f 成为/v 导弹/n 技术/n 领域/n 的/u 超级/b 强国/n 。/w 
+[/w brahmand/nx 网站/n 2012年/t 5月/t 25日/t 报道/v ]/w 印度/ns 布拉莫斯宇航公司/nt (/w Brahmos/nx ，/w Aerospace/nx )/w 首席/n 执行官/n 皮莱/nr (/w Sivathanu/nx ，/w Pillai/nx )/w 博士/n 称/v ，/w 通过/p 对/p 高/a 超音速/n 巡航导弹/n 技术/n 的/u 研发/vn ，/w 印度/ns 将/d 在/p 未来/t 五/m 年/q 内/f 成为/v 导弹/n 技术/n 领域/n 的/u 超级/b 强国/n 。/w 
 皮莱/nr 博士/n 表示/v ，/w 在/p 掌握/v 巡航导弹/n 技术/n 以后/f ，/w 印度/ns 已经/d 开始/v 一个/m 更/d 大/a 的/u 导弹/n 研发/v 计划/n ：/w 将/p 导弹/n 的/u 飞行/vn 速度/n 由/p 2.8/m 马赫/q 数/n 增加/v 至/p 7/m 马赫/q 数/n 。/w 
 印度/ns 高/a 超音速/n 导弹/n 的/u 概念/n 将/d 在/p 2016年/t 实现/v 。/w 
 而/c 通过/p 研制/v 布拉莫斯/nz 超音速/n 巡航导弹/n ，/w 印度/ns 已经/d 在/p 导弹/n 技术/n 领域/n 位于/v 国际/n 领先/v 水平/n 。/w 
@@ -9740,7 +9740,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 如果/c 在/p 印度/ns 核/n 力量/n 快速/d 发展/v 的/u 过程/n 当中/f ，/w 没有/d 形成/v 这/r 种/q 核/n 大国/n 的/u 意识/n ，/w 没有/d 认识/v 到/v 核/n 大国/n 所/u 需要/v 承担/v 的/u 国际/n 责任/n 的话/u ，/w 那么/c ，/w 印度/ns 的/u 核/n 力量/n 就/d 会/v 成为/v 世界/n 的/u 一个/m 噩梦/n 。/w 
 反之/c ，/w 如果/c 印度/ns 在/p 核/n 力量/n 发展/v 过程/n 当中/f ，/w 能够/v 认识/v 到/v 所/u 要/v 承担/v 的/u 国际/n 责任/n ，/w 那么/c 它/r 给/p 世界/n 带来/v 的/u 除了/p 武力/n 威胁/v 之外/f ，/w 或许/d 还/d 会/v 有/v 更/d 重要/a 的/u 意义/n 。/w (/w 陈虎/nr )/w 
 印度/ns 称/v 计划/v 利用/v 烈火5/nz 技术/n 研制/v 反卫星/n 武器/n 
-[/w 据/p 国际合众社/nt 2012年/t 4月/t 23日/t 报道/v ]/w 印度国防研究与发展组织/nt 主任/n 萨拉斯瓦特/nr (/w VK/nx 　/w Saraswat/nx )/w 表示/v ，/w 继/p 成功/a 试射/v “/w 烈火/nz ”/w -/w 5/m 远程/b 导弹/n 后/f ，/w 印度/ns 将/d 打算/v 研制/v 反卫星/n 武器/n (/w ASAT/nx )/w 。/w 
+[/w 据/p 国际合众社/nt 2012年/t 4月/t 23日/t 报道/v ]/w 印度国防研究与发展组织/nt 主任/n 萨拉斯瓦特/nr (/w VK/nx ，/w Saraswat/nx )/w 表示/v ，/w 继/p 成功/a 试射/v “/w 烈火/nz ”/w -/w 5/m 远程/b 导弹/n 后/f ，/w 印度/ns 将/d 打算/v 研制/v 反卫星/n 武器/n (/w ASAT/nx )/w 。/w 
 他/r 称/v “/w 烈火/nz ”/w -/w 5/m 的/u 成功/a 发射/vn 为/p 印度/ns 开启/v 了/u “/w 新纪元/n ”/w 。/w 
 他/r 表示/v ，/w “/w 烈火/nz ”/w -/w 5/m 的/u 成功/an ，/w “/w 除了/p 为/p 战略/n 防御/v 增添/v 了/u 新/a 工具/n 之外/f ，/w 还/d 为/p 建造/v ASAT/nx 和/c 按/p 需/v 发射/v 迷你/b //w 微/a 卫星/n 带/v 来/v 了/u 极/d 好/a 的/u 机遇/n 。/w ”/w 
 ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w 
@@ -9755,7 +9755,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 2011年/t 印度/ns 对/p 航天/n 计划/n 中/f 的/u 反弹道导弹/n (/w ABM/nx )/w 元素/n 进行/v 了/u 实战/n 试验/vn 。/w 
 2010年/t 3月/t 进行/v 了/u 一/m 次/q 试验/vn ，/w 是/v 其/r 弹道导弹/n 防御/vn 系统/n 拦截器/n 系列/n 中/f 的/u 第六/m 次/q 试验/vn 。/w 
 此/r 次/q 试验/v 成功/a 对/p 技术/n 进行/v 了/u 验证/vn ，/w 这些/r 技术/n 将/d 集成/v 到/p 印度/ns 导弹/n 防御/vn 能力/n 上/f 。/w 
-(/w 中国航天系统科学与工程研究院/nt 陈菲/nr 　/w 王宜晓/nr )/w 
+(/w 中国航天系统科学与工程研究院/nt 陈菲/nr ，/w 王宜晓/nr )/w 
 印度/ns 热衷/v 研发/v 反卫星/n 武器/n 称/v 受到/v 来自/v 中国/ns 威胁/v 
 狂热/a 追求/v “/w 反卫星/n ”/w 
 太空/s 已经/d 成为/v 21世纪/t 信息化/v 战争/n 中/f 必须/d 争夺/v 的/u “/w 高/a 地/n ”/w ，/w 这/r 一/m 观点/n 已经/d 被/p 全世界/n 的/u 军事/n 专家/n 所/u 接受/v 。/w 
@@ -9841,7 +9841,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 但/c 有/v 消息/n 称/v ，/w 由于/c 奥巴马/nr 政府/n 对/p 导弹/n 防御/v 计划/n 持持/v 反对/v 态度/n ，/w 所以/c 美/ns 印/ns 两/m 国/n 何时/r 展开/v 下/f 一/m 轮/q 对话/n 还/d 未/d 达成/v 一致/a 。/w 
 印度/ns 或/c 将/d 购买/v 以色列/ns “/w 箭式/n ”/w 导弹/n 防御/vn 系统/n 或/c 美国/ns “/w 爱国者/nz 3/m ”/w 型/n 导弹/n ，/w 这/r 也/d 被/p 列入/v 印度/ns 导弹/n 防御/v 计划/n 的/u 一/m 部分/n 。/w 
 此外/c ，/w 印度/ns 也/d 致力/v 于/p 其/r 卫星/n 防御/v 技术/n 的/u 研究/vn 。/w 
-几/m 周/q 前/f ，/w 印度/ns 国防部长/n 科学/a 顾问/n 萨拉斯瓦特/nr (/w V/nx 　/w K/nx 　/w Saraswat/nx )/w 在/p 班加罗尔/ns 说/v ：/w “/w 印度/ns 没有/v 太空/s 作战/v 的/u 政策/n ，/w 但/c 作为/p 导弹/n 防御/v 计划/n 的/u 一/m 部分/n ，/w 我们/r 要/v 掌握/v 所有/b 技术/n 要素/n ，/w 从而/c 形成/v 一个/m 完整/a 的/u 防御/vn 体系/n ；/w 这样/r 才能/v 保卫/v 自己/r 的/u 卫星/n ，/w 是/v 为/p 未来/t 做好/v 准备/v 。/w ”/w 
+几/m 周/q 前/f ，/w 印度/ns 国防部长/n 科学/a 顾问/n 萨拉斯瓦特/nr (/w V/nx ，/w K/nx ，/w Saraswat/nx )/w 在/p 班加罗尔/ns 说/v ：/w “/w 印度/ns 没有/v 太空/s 作战/v 的/u 政策/n ，/w 但/c 作为/p 导弹/n 防御/v 计划/n 的/u 一/m 部分/n ，/w 我们/r 要/v 掌握/v 所有/b 技术/n 要素/n ，/w 从而/c 形成/v 一个/m 完整/a 的/u 防御/vn 体系/n ；/w 这样/r 才能/v 保卫/v 自己/r 的/u 卫星/n ，/w 是/v 为/p 未来/t 做好/v 准备/v 。/w ”/w 
 印度/ns 政府/n 还/d 表示/v ，/w 中国/ns 具备/v 反卫星/n 武器/n 试验/v 的/u 能力/n 本质/n 上/f 是/v 对/p 印度/ns 安全/a 构成/v 威胁/v 。/w 
 文章/n 称/v ，/w 国际/n 空间/n 监视/v 机构/n 人员/n 称/v ，/w 中国/ns 进行/v 反卫星/n 武器/n 试验/v 后/f ，/w 立刻/d 产生/v 了/u 百万/m 个/q 1/m 毫米/q 至/c 1/m 厘米/q 大小/n 的/u 碎片/n 、/w 4万/m 个/q 1/m 厘米/q -/w 10/m 厘米/q 的/u 碎片/n ，/w 以及/c 800/m 个/q 10/m 厘米/q 以上/f 的/u 碎片/n 。/w 
 据/p 美方/n 估计/v ，/w 轨道/n 上/f 仍/d 遗留/v 了/u 97%/m 的/u 碎片/n 。/w 
@@ -9873,14 +9873,14 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 与此同时/t ，/w 萨拉斯瓦特/nr 的/u 更/d 多/a 言论/n 被/p 媒体/n 爆/v 出/v ，/w 作为/v 支撑/v 这/r 一/m 结论/n 的/u 论据/n 。/w 
 印度/ns ANI/nx 通讯社/n 题为/v “/w DRDO/nx 负责人/n ：/w 印度/ns 导弹/n 项目/n 领先/v 中国/ns ”/w 的/u 报道/n 说/v ，/w 中国/ns 今年/t 1月/t 成功/a 进行/v 了/u 一/m 次/q 陆基/n 中段/f 反导/v 拦截/v 试验/vn 。/w 
 但/c 萨拉斯瓦特/nr 表示/v 中国/ns 的/u 反导/vn 系统/n 只能/v 拦截/v 射程/n 1000/m 公里/q 以下/f 的/u 战术/n 弹道导弹/n ，/w 类似/vn 项目/n 印度/ns 1999年/t 就/d 已/d 启动/v ，/w 在/p 能力/n 方面/n 印度/ns 也/d 领先/v 于/p 中国/ns 。/w 
-印度/ns EXPRESS/nx 　/w BUZZ/nx 新闻网/n 11日/t 援引/v 萨拉斯瓦特/nr 的/u 话/n 说/v ，/w 反导/v 是/v 印度/ns 强/a 于/p 中国/ns 的/u 一个/m 领域/n 。/w 
+印度/ns EXPRESS/nx ，/w BUZZ/nx 新闻网/n 11日/t 援引/v 萨拉斯瓦特/nr 的/u 话/n 说/v ，/w 反导/v 是/v 印度/ns 强/a 于/p 中国/ns 的/u 一个/m 领域/n 。/w 
 他/r 说/v ，/w 印度/ns 国产/b 反导/vn 系统/n 在/p 不久/m 的/u 将来/t 就/d 要/v 试射/v ，/w 而且/c 比/p 中国/ns 的/u 更为/d 复杂/a 。/w 
-据/p EXPRESS/nx 　/w BUZZ/nx 新闻网/n 报道/v ，/w 萨拉斯瓦特/nr 还/d 说/v ，/w 中国/ns 2007年/t 进行/v 过/u 反卫星/n 试验/vn ，/w 此前/t 中国/ns 的/u 导弹/n 项目/n 一直/d 非常/d 神秘/a ，/w 而/c 印度/ns 的/u 项目/n 2006年/t 就/d 已/d 开始/v 。/w 
+据/p EXPRESS/nx ，/w BUZZ/nx 新闻网/n 报道/v ，/w 萨拉斯瓦特/nr 还/d 说/v ，/w 中国/ns 2007年/t 进行/v 过/u 反卫星/n 试验/vn ，/w 此前/t 中国/ns 的/u 导弹/n 项目/n 一直/d 非常/d 神秘/a ，/w 而/c 印度/ns 的/u 项目/n 2006年/t 就/d 已/d 开始/v 。/w 
 7日/t 试射/v 的/u “/w 烈火—3/nz ”/w 导弹/n 射高/n 为/v 384/m 公里/q ，/w 如果/c 缩短/v 射程/n 的话/u ，/w 射高/n 能/v 达到/v 1000/m 公里/q ，/w 满足/v 反卫星/n 打击/v 要求/n 。/w 
 《/w 印度/ns 时报/n 》/w 11日/t 总结/v 说/v ，/w 萨拉斯瓦特/nr 告诉/v 人们/n ，/w 在/p 反导/v 竞技场/n 上/f ，/w 印度/ns 远远/d 超过/v 中国/ns ，/w 并且/c 印度/ns 同样/d 拥有/v 反卫星/n 能力/n 。/w 
 既然如此/c ，/w 印度/ns 为何/r 没有/d 进行/v 反卫星/n 试验/vn ？/w 印度/ns 亚洲/ns 通讯社/n 说/v ，/w 萨拉斯瓦特/nr 的/u 解释/vn 是/v 印度/ns 无意/v 展示/v 这/r 一/m 实力/n ，/w 因为/c 这/r 不/d 是/v 印度/ns 发展/v 的/u 首要/b 目标/n 。/w 
 印度/ns 称/v 计划/v 利用/v 烈火/n 5/m 技术/n 研制/v 反卫星/n 武器/n 
-[/w 据/p 国际合众社/nt 2012年/t 4月/t 23日/t 报道/v ]/w 印度国防研究与发展组织/nt 主任/n 萨拉斯瓦特/nr (/w VK/nx 　/w Saraswat/nx )/w 表示/v ，/w 继/v 成功/a 试射/v “/w 烈火/nz ”/w -/w 5/m 远程/b 导弹/n 后/f ，/w 印度/ns 将/d 打算/v 研制/v 反卫星/n 武器/n (/w ASAT/nx )/w 。/w 
+[/w 据/p 国际合众社/nt 2012年/t 4月/t 23日/t 报道/v ]/w 印度国防研究与发展组织/nt 主任/n 萨拉斯瓦特/nr (/w VK/nx ，/w Saraswat/nx )/w 表示/v ，/w 继/v 成功/a 试射/v “/w 烈火/nz ”/w -/w 5/m 远程/b 导弹/n 后/f ，/w 印度/ns 将/d 打算/v 研制/v 反卫星/n 武器/n (/w ASAT/nx )/w 。/w 
 他/r 称/v “/w 烈火/nz ”/w -/w 5/m 的/u 成功/a 发射/vn 为/p 印度/ns 开启/v 了/u “/w 新纪元/n ”/w 。/w 
 他/r 表示/v ，/w “/w 烈火/nz ”/w -/w 5/m 的/u 成功/an ，/w “/w 除了/p 为/p 战略/n 防御/v 增添/v 了/u 新/a 工具/n 之外/f ，/w 还/d 为/p 建造/v ASAT/nx 和/c 按/p 需/v 发射/v 迷你/b //w 微/a 卫星/n 带/v 来/v 了/u 极/d 好/a 的/u 机遇/n 。/w ”/w 
 ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w 
@@ -9895,7 +9895,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 2011年/t 印度/ns 对/p 航天/n 计划/n 中/f 的/u 反弹道导弹/n (/w ABM/nx )/w 元素/n 进行/v 了/u 实战/n 试验/vn 。/w 
 2010年/t 3月/t 进行/v 了/u 一/m 次/q 试验/v ，/w 是/v 其/r 弹道导弹/n 防御/vn 系统/n 拦截器/n 系列/n 中/f 的/u 第六/m 次/q 试验/v 。/w 
 此/r 次/q 试验/v 成功/a 对/p 技术/n 进行/v 了/u 验证/vn ，/w 这些/r 技术/n 将/d 集成/v 到/p 印度/ns 导弹/n 防御/v 能力/n 上/f 。/w 
-(/w 中国航天系统科学与工程研究院/nt 陈菲/nr 　/w 王宜晓/nr )/w 
+(/w 中国航天系统科学与工程研究院/nt 陈菲/nr ，/w 王宜晓/nr )/w 
 印度/ns 欲/d 对/p 邻国/n 形成/v "/w 布拉莫斯/nz "/w 导弹/n 包围圈/n 
 2010-03-28/t 03:28/t 来源/v ：/w 新京报/nz 共/d ？/w 0/m ？/w 条/q 评论/n 关键/a 字/n ：/w 布拉莫斯/nz ，/w 印度/ns 陆军/n ，/w 印度/ns 海军/n 
 27日/t ，/w 印度/ns 军方/n 成功/a 试射/v 两/m 枚/q 可/v 携带/v 核弹头/n 的/u 国产/b 短程/b 导弹/n ;/w 21日/t ，/w 印度/ns 首次/m 成功/a 进行/v 新型/b 巡航导弹/n “/w 布拉莫斯/nz ”/w 的/u 垂直/vn 试射/vn 更/d 引/v 人/n 关注/v 。/w 
@@ -9942,7 +9942,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 性能/n 
 布拉莫斯/nz 威力/n 超/v 战斧/nz 
 2/m 分钟/q 内/f 可/v 完成/v 发射/v ，/w 可/v 实行/v “/w 外科/n 手术/n 式/n 攻击/v ”/w 
-布拉莫斯/nz 导弹/n (/w BrahMos/nx )/w 是/v 俄罗斯/ns 于/p 1995年/t 邀请/v 印度/ns 共同/d 投资/v 开发/v 的/u 超音速/n 导弹/n ，/w 连/p 它/r 的/u 名字/n 也/d 是/v 由/p 印度/ns 布拉马普特拉河/n (/w Brahmaputra/nx 　/w River/nx )/w 和/c 俄罗斯/ns 莫斯科河/ns (/w Moscow/nx 　/w River/nx )/w 衍生/v 而/c 来/v ，/w 意/n 在/v 体现/v 俄/ns 印/ns 之间/f 的/u 亲密/a 关系/n 。/w 
+布拉莫斯/nz 导弹/n (/w BrahMos/nx )/w 是/v 俄罗斯/ns 于/p 1995年/t 邀请/v 印度/ns 共同/d 投资/v 开发/v 的/u 超音速/n 导弹/n ，/w 连/p 它/r 的/u 名字/n 也/d 是/v 由/p 印度/ns 布拉马普特拉河/n (/w Brahmaputra/nx ，/w River/nx )/w 和/c 俄罗斯/ns 莫斯科河/ns (/w Moscow/nx ，/w River/nx )/w 衍生/v 而/c 来/v ，/w 意/n 在/v 体现/v 俄/ns 印/ns 之间/f 的/u 亲密/a 关系/n 。/w 
 布拉莫斯/nz 导弹/n 看上去/v 像/v 细长/z 的/u “/w 飞行/vn 铅笔/n ”/w ，/w 速度/n 可/v 达/v 2.8/m 马赫/q ，/w 并/c 能/v 垂直/v 发射/v 。/w 
 皮莱/nr 博士/n 声称/v ，/w 布拉莫斯/nz 导弹/n 可/v 在/p 2/m 分钟/q 内/f 完成/v 发射/v ，/w 而/c 印度/ns 陆军/n 现役/b 的/u 大地/nz 短程/b 弹道导弹/n 则/d 需要/v 20/m 分钟/q 甚至/d 更/d 长/a 时间/n 才能/v 发射/v ，/w “/w 如果/c 布拉莫斯/nz 导弹/n 从/p 印/ns 控/v 克什米尔/ns 发射/v ，/w 就/d 能/v 在/p 30/m 秒/q 内/f 打击/v 巴/ns 控/v 克什米尔/ns 境内/s 的/u 恐怖/a 训练营/n ，/w 这/r 一/m 威力/n 甚至/d 超过/v 美国/ns 战斧/nz 导弹/n ”/w 。/w 
 据悉/v ，/w 印度/ns 目前/t 已/d 装备/v 和/c 在/d 研/v 的/u 布拉莫斯/nz 导弹/n 家族/n 主要/d 包括/v 海基/n 、/w 陆基/n 和/c 空基型/b 超音速/n 巡航导弹/n 。/w 
@@ -9959,7 +9959,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 俄/ns 印/ns 联合/v 研制/v 的/u “/w 布拉莫斯/nz ”/w 巡航导弹/n 
 印度/ns 时报/n 报道/v ，/w 印度/ns 海军/n 一/m 名/q 高级/a 官员/n 21日/t 说/v ，/w 印度/ns 海军/n 当天/t 在/p 东部/f 奥里萨邦/ns 沿海地区/s 成功/a 进行/v 了/u 新型/b 巡航导弹/n “/w 布拉莫斯/nz ”/w 的/u 垂直/vn 试射/vn 。/w 
 印度/ns 陆军/n 超过/v 两/m 个/q 团/n 则/c 正在/d 引入/v “/w 布拉莫斯/nz ”/w Block-II/nx 对/p 地/n 攻击/v 巡航导弹/n ，/w 因为/c 巴基斯坦/ns 军队/n 此前/t 装备/v 了/u 由/p 中国/ns 帮助/v 研发/v 的/u 具备/v 核/n 打击/v 能力/n 的/u Babur/nx 对/p 陆/n 攻击/v 巡航导弹/n 。/w 
-布拉莫斯航空航天公司/nt 主管/n 西瓦萨努·皮莱/nr (/w Sivathanu/nx 　/w Pillai/nx )/w 在/p 接受/v 印度/ns 时报/n 采访/v 时/n 称/v ：/w “/w 这/r 枚/q 导弹/n 由/p 印度/ns 兰沃号/nz (/w INS/nx 　/w Ranvir/nx ，/w D54/nx )/w 军舰/n 垂直/vn 弹射/vn 发射/vn 装置/n 发射/v ，/w 精确/a 击中/v INS/nx 　/w Meen/nx 号/n 靶/n 舰/n 。/w 此/r 次/q 试射/v 达到/v 任务/n 要求/n ，/w 取得/v 了/u 百分之百/m 的/u 成功/an 。/w ”/w 
+布拉莫斯航空航天公司/nt 主管/n 西瓦萨努·皮莱/nr (/w Sivathanu/nx ，/w Pillai/nx )/w 在/p 接受/v 印度/ns 时报/n 采访/v 时/n 称/v ：/w “/w 这/r 枚/q 导弹/n 由/p 印度/ns 兰沃号/nz (/w INS/nx ，/w Ranvir/nx ，/w D54/nx )/w 军舰/n 垂直/vn 弹射/vn 发射/vn 装置/n 发射/v ，/w 精确/a 击中/v INS/nx ，/w Meen/nx 号/n 靶/n 舰/n 。/w 此/r 次/q 试射/v 达到/v 任务/n 要求/n ，/w 取得/v 了/u 百分之百/m 的/u 成功/an 。/w ”/w 
 他/r 还/d 表示/v ：/w “/w 此/r 次/q 试射/v 尤其/d 重要/a ，/w 自/p 垂直/vn 发射/vn 装置/n 发射/v 之后/f ，/w 导弹/n 以/p 2.8/m 马赫/q 的/u 速度/n 飞行/v ，/w 然后/c 直接/a 击中/v 目标/n 。/w ”/w 
 报道/v 称/v ，/w 印度/ns 海军/n 已经/d 在/p 部分/m 战舰/n 上/f 列/v 装/v 了/u 射程/n 为/v 290/m 公里/q 的/u “/w 布拉莫斯/nz ”/w 导弹/n 。/w 
 此前/t ，/w 其/r 曾/d 耗资/v 71.1亿/m 卢比/q (/w 约/d 合/v 1.54亿/m 美元/q )/w 订购/v 了/u 49/m 套/q “/w 布拉莫斯/nz ”/w 倾斜/v 发射/v 装置/n 。/w 
@@ -10008,7 +10008,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 (/w 中国航空工业发展研究中心/nt 星月/nr )/w (/w 本文/r 来源/n ：/w 中国国防科技信息网/nz )/w 
 印度/ns 国产/b 第二/m 艘/q 隐身/vn 战舰/n 下水/v 装有/v 布拉莫斯/nz 导弹/n 
 东方网/nz 9月/t 18日/t 消息/n ：/w 印度/ns 时报/n 9月/t 17日/t 报道/v 印度/ns 海军/n 第二/m 艘/q 排水量/n 为/v 6500/m 吨/q 的/u 隐身/vn 驱逐舰/n 将/d 于/p 9月/t 18日/t 下水/v ，/w 该/r 艘/q 驱逐舰/n 装备/v 有/v 世界/n 先进/a 的/u 武器/n 系统/n ，/w 包括/v 超音速/n “/w 布拉莫斯/nz ”/w (/w BrahMos/nx )/w 舰队/n 舰/n 导弹/n 。/w 
-该/r 驱逐舰/n 被/p 命名/v 为/v “/w 科钦/nz “/w (/w INS/nx 　/w Kochi/nx )/w 号/n ，/w 由/p 印度海军设计理事会/nt 设计/v ，/w 由/p 位于/v 孟买/ns 的/u 马扎岗船坞有限公司/nt 建造/v ，/w 是/v 一/m 艘/q 完全/a 由/p 本土/n 研制/v 和/c 建造/v 的/u 舰艇/n 。/w 
+该/r 驱逐舰/n 被/p 命名/v 为/v “/w 科钦/nz “/w (/w INS/nx ，/w Kochi/nx )/w 号/n ，/w 由/p 印度海军设计理事会/nt 设计/v ，/w 由/p 位于/v 孟买/ns 的/u 马扎岗船坞有限公司/nt 建造/v ，/w 是/v 一/m 艘/q 完全/a 由/p 本土/n 研制/v 和/c 建造/v 的/u 舰艇/n 。/w 
 该/r 舰艇/n 的/u 特点/n 之一/r 就/d 是/v 不易/a 被/p 敌方/n 的/u 雷达/n 探测/v 。/w 
 除了/p 装备/v 有/v “/w 布拉莫斯/nz ”/w 导弹/n 以外/f ，/w 该/r 驱逐舰/n 还/d 装备/v 有/v 远程舰/n 对/p 空/n 导弹/n 和/c 多功能/b 雷达/n 系统/n ，/w 该/r 雷达/n 能/v 为/p 舰艇/n 提供/v 敌方/n 水面/n 和/c 空中/s 目标/n 的/u 精确/a 数据/n 。/w 
 印度/ns 海军/n 发言人/n 表示/v ，/w 该/r 艘/q 驱逐舰/n 配备/v 的/u 4/m 座/q AK-630/nx 速射/v 舰炮/n 和/c 中程/b 舰炮/n 将/d 为/p 舰艇/n 提供/v 超强/b 的/u 近/a 距离/n 防御/v 能力/n 。/w 
@@ -10037,16 +10037,16 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 《/w 印度/ns 教徒/n 报/n 》/w 称/v ，/w 该/r 导弹/n 最/d 高/a 速度/n 大于/v 5/m 马赫/q ，/w 几乎/d 不/d 可能/v 被/p 拦截/v ，/w 而且/c 可以/v 准确/a 击中/v 甚至/c 体积/n 比较/d 微小/a 的/u 地面/n 目标/n ；/w 早前/f 中国/ns 空军/n 上校/n 戴旭/nr 曾/d 对/p 媒体/n 称/v ，/w 布拉莫斯/nz 导弹/n 是/v 世界/n 上/f 唯一/b 一/m 种/q 超音速/n 巡航导弹/n ，/w 只/d 有/v 印/ns 俄/ns 可以/v 研制/v ，/w 威力/n 极大/a ，/w 美国/ns 著名/a 的/u 战斧式/n 导弹/n 也/d 仅仅/d 是/v 亚音速/n 导弹/n 。/w 
 印度/ns 将/d 购/v 更/d 多/a 布拉莫斯/nz 导弹/n 苏30MKI/nz 明年/t 试射/v 
 俄罗斯新闻社/nt 2月/t 2日/t 刊登/v 了/u 一/m 篇/q 名为/v 《/w 印度/ns 将/d 购买/v 更/d 多/a 布拉莫斯/nz 导弹/n 》/w 的/u 文章/n 。/w 
-布拉莫斯航空航天公司/nt 主管/n 西瓦萨努皮莱/nr （/w Sivathanu/nx 　/w Pillai/nx ）/w 周二/t 向/p 俄新社/nt 表示/v ，/w 印度/ns 计划/v 为/p 其/r 部队/n 引进/v 的/u 新/a 的/u 布拉莫斯/nz （/w BrahMos/nx ）/w 导弹/n 。/w 
+布拉莫斯航空航天公司/nt 主管/n 西瓦萨努皮莱/nr （/w Sivathanu/nx ，/w Pillai/nx ）/w 周二/t 向/p 俄新社/nt 表示/v ，/w 印度/ns 计划/v 为/p 其/r 部队/n 引进/v 的/u 新/a 的/u 布拉莫斯/nz （/w BrahMos/nx ）/w 导弹/n 。/w 
 东方网/nz 2月/t 4日/t 消息/n ：/w 俄罗斯新闻社/nt 2月/t 2日/t 刊登/v 了/u 一/m 篇/q 名为/v 《/w 印度/ns 将/d 购买/v 更/d 多/a 布拉莫斯/nz 导弹/n 》/w 的/u 文章/n 。/w 
 该/r 文/n 披露/v ，/w 俄/ns 印/ns 合资/v 的/u 布拉莫斯航空航天公司/nt 目前/t 已经/d 成功/a 研制/v 出/v 新/a 的/u “/w 布拉莫斯/nz ”/w 导弹/n 。/w 
 这/r 种/q 新/a 导弹/n 速度/n 将/d 达/v 5/m 马赫/q 高速/b ，/w 这/r 使/v 其/r 难以/d 被/p 拦截/v 。/w 
 另外/c ，/w 空基版/n 的/u “/w 布拉莫斯/nz ”/w 导弹/n 也/d 将/d 在/p 明年/t 完成/v SU-30MKI/nx 为/v 载台/n 的/u 试射/vn 。/w 
 据悉/v ，/w 在/p 未来/t 十/m 年/q 内/f ，/w 该/r 导弹/n 将/d 获得/v 印度/ns 军方/n 1000/m 枚/q 的/u 定单/n 和/c 500/m 枚/q 的/u 出口/vn 定单/n 。/w 
-文章/n 称/v ，/w 布拉莫斯航空航天公司/nt 主管/n 西瓦萨努皮莱/nr （/w Sivathanu/nx 　/w Pillai/nx ）/w 周二/t 向/p 俄新社/nt 表示/v ，/w 印度/ns 计划/v 为/p 其/r 部队/n 引进/v 的/u 新/a 的/u 布拉莫斯/nz （/w BrahMos/nx ）/w 导弹/n 。/w 
+文章/n 称/v ，/w 布拉莫斯航空航天公司/nt 主管/n 西瓦萨努皮莱/nr （/w Sivathanu/nx ，/w Pillai/nx ）/w 周二/t 向/p 俄新社/nt 表示/v ，/w 印度/ns 计划/v 为/p 其/r 部队/n 引进/v 的/u 新/a 的/u 布拉莫斯/nz （/w BrahMos/nx ）/w 导弹/n 。/w 
 布拉莫斯航空航天公司/nt 于/p 1998年/t 由/p 印/ns 俄/ns 合资/v 成立/v ，/w 研制/v 、/w 生产/v 和/c 销售/v “/w 布拉莫斯/nz ”/w 超音速/n 反舰/n 导弹/n 。/w 
 海基/n 和/c 陆基版/n 的/u 布拉莫斯/nz 导弹/n 已/d 测试/v 成功/a ，/w 并/c 开始/v 在/p 印度/ns 陆军/n 和/c 海军/n 中/f 服役/v 。/w 
-在/p 本/r 周二/t 早/a 些/q 时候/n ，/w 俄罗斯/ns 安全/a 部门/n 负责人/n 尼古拉帕特鲁舍夫/nr （/w Nikolai/nx 　/w Patrushev/nx ）/w ，/w 参观/v 了/u 位于/v 新德里/ns 布拉莫斯/nz 总部/n 。/w 
+在/p 本/r 周二/t 早/a 些/q 时候/n ，/w 俄罗斯/ns 安全/a 部门/n 负责人/n 尼古拉帕特鲁舍夫/nr （/w Nikolai/nx ，/w Patrushev/nx ）/w ，/w 参观/v 了/u 位于/v 新德里/ns 布拉莫斯/nz 总部/n 。/w 
 “/w 布拉莫斯/nz ”/w 名字/n 的/u 由来/n 其实/d 是/v 布拉马普特拉河市/ns 和/c 莫斯科/ns 两/m 座/q 城市/n 的/u 缩写/n 。/w 
 该/r 新型/b 导弹/n 被/p 外界/n 称之为/v “/w 拉莫斯布/nz ”/w Block-2/nx ，/w 最/d 高/a 飞行/vn 速度/n 可以/v 超过/v 5/m 马赫/q ，/w 这者/r 特点/n 将/d 使/v 其/r 几乎/d 无法/v 被/p 拦截/v 。/w 
 同时/t ，/w 高性能/n 目标/n 识别/v 能力/n 将/d 使/v 其/r 能/v 有效/a 的/u 对付/v 那些/r 低/a 可见度/n 的/u 地面/n 目标/n 。/w 
@@ -10059,18 +10059,18 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 不过/c ，/w 这/r 需要/v 对/p 搭载/v “/w 布拉莫斯/nz ”/w -/w A/nx 导弹/n 的/u 苏-30MKI/nz 战斗机/n 进行/v 必要/a 的/u 修改/vn ，/w 这/r 一/m 工作/v 目前/t 正/d 由/p 印度/ns 斯坦航空有限公司/nt （/w HAL/nx ）/w 和/c 俄罗斯/ns 苏霍伊设计局/nt 公共/d 进行/v 。/w 
 文章/n 称/v ，/w 国际/n 武器/n 分析师/n 估计/v ，/w 印度/ns 可能/v 在/p 未来/t 10/m 年/q 为/p 其/r 军队/n 购买/v 1000/m 枚/q “/w 布拉莫斯/nz ”/w 导弹/n ；/w 同时/t ，/w 在/p 此/r 期间/f ，/w 还/d 很/d 可能/v 会/v 向/p 其他/r 国家/n 出口/v 大约/d 500/m 枚/q “/w 布拉莫斯/nz ”/w 导弹/n 。/w 
 印/ns 俄/ns 布拉莫斯/nz 巡航导弹/n 2012年/t 年底/t 完成/v 空射/v 试验/v 
-东方网/nz 12月/t 6日/t 消息/n ：/w 据/p 英国/ns 《/w 简氏/n 防务/n 周刊/n 》/w 2009年/t 12月/t 1日/t 报道/v 2009年/t 11月/t 28日/t ，/w 印度/ns -/w 俄罗斯/ns 合资/v 的/u “/w 布拉莫斯/nz ”/w (/w BrahMos/nx )/w 公司/n 首席/n 执行官/n Sivathanu/nx 　/w Pillai/nx 宣布/v ，/w “/w 布拉莫斯/nz ”/w 超音速/n 反舰/n 巡航导弹/n 将/d 于/p 2012年/t 年底/t 完成/v 空射/v 试验/v ，/w 并且/c 机载/b 发射/v 试验/v 将/d 与/p 潜艇/n 发射/v 试验/v 并行/v 开展/v 。/w 
-俄罗斯/ns 机器制造研究与生产中心/nt (/w Machine/nx 　/w Building/nx 　/w Research/nx and/nx 　/w Production/nx Centre/nx )/w 负责/v 俄罗斯/ns 方面/n “/w 布拉莫斯/nz ”/w 导弹/n 与/c 载机/n 的/u 集成/vn 工作/vn 。/w 
-2009年/t 年初/t ，/w 该/r 中心/n 总/b 设计师/n Alexander/nx 　/w Leonov/nx 向/p 俄罗斯/ns 媒体/n 透露/v ，/w 已经/d 为/p 机载/b “/w 布拉莫斯/nz ”/w 巡航导弹/n 研发/v 了/u 采用/v 新/a 技术/n 的/u 新型/b 发动机/n ，/w 使/v 导弹/n 能够/v 从/p 高空/s 发射/v 。/w 
+东方网/nz 12月/t 6日/t 消息/n ：/w 据/p 英国/ns 《/w 简氏/n 防务/n 周刊/n 》/w 2009年/t 12月/t 1日/t 报道/v 2009年/t 11月/t 28日/t ，/w 印度/ns -/w 俄罗斯/ns 合资/v 的/u “/w 布拉莫斯/nz ”/w (/w BrahMos/nx )/w 公司/n 首席/n 执行官/n Sivathanu/nx ，/w Pillai/nx 宣布/v ，/w “/w 布拉莫斯/nz ”/w 超音速/n 反舰/n 巡航导弹/n 将/d 于/p 2012年/t 年底/t 完成/v 空射/v 试验/v ，/w 并且/c 机载/b 发射/v 试验/v 将/d 与/p 潜艇/n 发射/v 试验/v 并行/v 开展/v 。/w 
+俄罗斯/ns 机器制造研究与生产中心/nt (/w Machine/nx ，/w Building/nx ，/w Research/nx and/nx ，/w Production/nx Centre/nx )/w 负责/v 俄罗斯/ns 方面/n “/w 布拉莫斯/nz ”/w 导弹/n 与/c 载机/n 的/u 集成/vn 工作/vn 。/w 
+2009年/t 年初/t ，/w 该/r 中心/n 总/b 设计师/n Alexander/nx ，/w Leonov/nx 向/p 俄罗斯/ns 媒体/n 透露/v ，/w 已经/d 为/p 机载/b “/w 布拉莫斯/nz ”/w 巡航导弹/n 研发/v 了/u 采用/v 新/a 技术/n 的/u 新型/b 发动机/n ，/w 使/v 导弹/n 能够/v 从/p 高空/s 发射/v 。/w 
 当前/t 集成/v 工作/v 的/u 重点/n 是/v 将/p 导弹/n 装/v 到/p 飞机/n 上/f ，/w 并/c 在/p 飞行/v 试验/v 中/f 集成/v 相关/vn 系统/n 。/w 
 机载/b “/w 布拉莫斯/nz ”/w 导弹/n 长/a 8.3/m 米/q 、/w 弹径/n 670/m 毫米/q ，/w 发射/v 质量/n 2550/m 千克/q 。/w 
 印度/ns 陆军/n 和/c 海军/n 现/t 已/d 分别/d 装备/v 陆射型/b 和/c 舰载型/b “/w 布拉莫斯/nz ”/w 导弹/n ，/w 最/d 快/a 飞行/vn 速度/n 952/m 米／秒/q (/w 2.8/m 马赫/q )/w ，/w 射程/n 达/v 290/m 千米/q 。/w 
 俄/ns 印/ns 五代机/n 将/d 配/v "/w 布拉莫斯/nz "/w 导弹/n 可/v 打击/v 航母/n 
-印度/ns 布拉莫斯航空航天公司/nt 首席/n 执行官/n Sivathanu/nx 　/w Pillai/nx 在/p 印度/ns 2010/t 防务展/n 期间/f 对外/v 宣布/v ，/w 制造/v 这/r 种/q 导弹/n 需要/v 一定/b 时间/n 。/w 
+印度/ns 布拉莫斯航空航天公司/nt 首席/n 执行官/n Sivathanu/nx ，/w Pillai/nx 在/p 印度/ns 2010/t 防务展/n 期间/f 对外/v 宣布/v ，/w 制造/v 这/r 种/q 导弹/n 需要/v 一定/b 时间/n 。/w 
 毫无疑问/d ，/w 未来/t 的/u 布拉莫斯/nz 二型/b 高/a 超音速/n 巡航导弹/n 将/d 与/p 俄/ns -/w 印/ns 联合/v 研制/v 的/u 最/d 新式/a 隐身/vn 第五/m 代/q 战机/n 相/d 匹配/v ，/w 并/c 将/d 制造/v 出/v 性能/n 独特/a 的/u 航空/n -/w 导弹/n 反舰/n 系统/n 。/w 
-中国国防科技信息网/nz 3月/t 10日/t 报道/v 据/p 俄罗斯/ns 《/w 军事/n 平衡/a 》/w 网站/n 2010年/t 2月/t 18日/t 报道/v 俄罗斯/ns 与/c 印度/ns 合资企业/n BrahMos/nx 　/w Aerospace/nx 正在/d 研制/v 能够/v 以/p 5/m ~/w 7/m 马赫/q 速度/n 飞行/v 的/u 高/a 超音速/n 巡航导弹/n 。/w 
+中国国防科技信息网/nz 3月/t 10日/t 报道/v 据/p 俄罗斯/ns 《/w 军事/n 平衡/a 》/w 网站/n 2010年/t 2月/t 18日/t 报道/v 俄罗斯/ns 与/c 印度/ns 合资企业/n BrahMos/nx ，/w Aerospace/nx 正在/d 研制/v 能够/v 以/p 5/m ~/w 7/m 马赫/q 速度/n 飞行/v 的/u 高/a 超音速/n 巡航导弹/n 。/w 
 被/p 称为/v 布拉莫斯/nz 二型/b 的/u 高/a 超音速/n 巡航导弹/n 目前/t 处于/v 设计/v 和/c 技术/n 研制/v 阶段/n 。/w 
-印度/ns 布拉莫斯航空航天公司/nt 首席/n 执行官/n Sivathanu/nx 　/w Pillai/nx 在/p 印度/ns 2010/t 防务展/n 期间/f 对外/v 宣布/v ，/w 制造/v 这/r 种/q 导弹/n 需要/v 一定/b 时间/n 。/w 
+印度/ns 布拉莫斯航空航天公司/nt 首席/n 执行官/n Sivathanu/nx ，/w Pillai/nx 在/p 印度/ns 2010/t 防务展/n 期间/f 对外/v 宣布/v ，/w 制造/v 这/r 种/q 导弹/n 需要/v 一定/b 时间/n 。/w 
 我们/r 的/u 目的/n 是/v 制造/v 世界/n 上/f 飞行/vn 速度/n 最/d 快/a 的/u 巡航导弹/n 。/w 
 预计/v ，/w 高/a 超音速/n 巡航导弹/n 将/d 在/p 目前/t 研制/v 的/u 空基型/b 布拉莫斯/nz 导弹/n 基础/n 制造/v 。/w 
 从/p 2012年/t 起/v 空基型/b 布拉莫斯/nz 导弹/n 将/d 装备/v 苏-30MKI/nz 歼击机/n 。/w 
@@ -10131,7 +10131,7 @@ GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f �
 由于/c 发动机/n 动力/n 不足/v ，/w Kaveri/nx 项目/n 最终/d 被/p 终止/v 。/w 
 “/w 无畏/nz ”/w -/w 1/m （/w Nirbhay/nx ？/w I/nx ）/w 是/v 适用/v 于/p 海军/n 的/u 巡航导弹/n ，/w 既/c 可/v 用于/v 舰射/v 又/d 可/v 用于/v 潜射/v ，/w 射程/n 为/v 1500/m 千米/q ，/w 全/a 重/n 1000/m 千克/q ，/w 其/r 目前/t 所/u 使用/v 的/u 发动机/n 采用/v 冲压式/n 喷气/v 技术/n 。/w 
 在/p 2014年/t 10月/t DRDO/nx 对/p 该/r 导弹/n 成功/a 进行/v 了/u 试验/vn ，/w 结果/d 表明/v 其/r 全部/m 参数/n 都/d 达到/v 了/u 相应/vn 标准/n 。/w 
-兼任/v 印度/ns 国防部长/n 的/u 科学/n 顾问/n 和/c DRDO/nx 负责人/n 的/u 钱德尔将军/nr （/w General/nx ？/w Avinash/nx ？/w Chander/nx ）/w 在/p 2014年/t 那/r 次/q 导弹/n 成功/a 试射/v 后/f 曾/d 称/v ：/w “/w 陆/n 、/w 海/n 、/w 空/n 、/w 潜/v 四/n 种/q 版本/n 的/u “/w 无畏/nz ”/w 巡航导弹/n 将/d 陆续/d 研发/v 费/n ，/w 其/r 第一/m 个/q 版本/n ——/w 对/p 陆/n 攻击/v 巡航导弹/n 将/d 在/p 3/m 年/q 内/f 交付/v 。/w ”/w （/w 中国航天系统科学与工程研究院/nt 孙硕/nr 　/w 张连庆/nr ）/w 
+兼任/v 印度/ns 国防部长/n 的/u 科学/n 顾问/n 和/c DRDO/nx 负责人/n 的/u 钱德尔将军/nr （/w General/nx ？/w Avinash/nx ？/w Chander/nx ）/w 在/p 2014年/t 那/r 次/q 导弹/n 成功/a 试射/v 后/f 曾/d 称/v ：/w “/w 陆/n 、/w 海/n 、/w 空/n 、/w 潜/v 四/n 种/q 版本/n 的/u “/w 无畏/nz ”/w 巡航导弹/n 将/d 陆续/d 研发/v 费/n ，/w 其/r 第一/m 个/q 版本/n ——/w 对/p 陆/n 攻击/v 巡航导弹/n 将/d 在/p 3/m 年/q 内/f 交付/v 。/w ”/w （/w 中国航天系统科学与工程研究院/nt 孙硕/nr ，/w 张连庆/nr ）/w 
 印度/ns 计划/v 在/p 中/ns 印/ns 边境/s 部署/v 超音速/n 巡航导弹/n 
 有/v 消息/n 称/v ，/w 8月/t 3日/t ，/w 印/ns 政府/n 已/d 批准/v 陆军/n 采购/v 近/a 百/m 枚/q 升级版/n “/w 布拉莫斯/nz ”/w 超音速/n 巡航导弹/n 并/c 计划/v 部署/v 在/p 该国/r 东北部/f 地区/n 。/w 
 该/r 新闻/n 甫/d 一/m 公布/v ，/w 引起/v 媒体/n 普遍/a 关注/v 。/w 
@@ -10296,7 +10296,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 张国凤/nr 认为/v ，/w 印度/ns 军备/n 最/d 大/a 的/u 不足/an 是/v 过于/d 注重/v 进口/v ，/w 影响/v 了/u 本国/r 军事/n 工业/n 的/u 发展/vn 和/c 国防/n 装备/n 的/u 自主/vn 创新/vn 。/w 
 阔气/a 坚定/a 地/u 向/p 西方/s “/w 获取/v ”/w 先进/a 战备/n ，/w 同时/t 又/d 向/p 周边/n 小国/n 出售/v 自主/v 研发/v 的/u 武器/n ，/w 是/v 近年来/d 印度/ns 军售/v 的/u 主要/b 特点/n 。/w 
 据/p 外媒/n 报道/v ，/w 俄罗斯/ns 和/c 印度/ns 的/u 布拉莫斯航空航天合资企业/nt 准备/v 向/p 越南/ns 出口/v 布拉莫斯/nz 超音速/n 巡航导弹/n ，/w 非正式/b 谈判/v 已经/d 开始/v 。/w 
-说/v 一/m 口/q 流利/a 普通话/n 的/u 印度尼赫鲁大学/nt 学者/n 高兴/nr （/w BINOD/nx 　/w SINGH/nx ）/w 认为/v ，/w 过去/t 印度/ns 是/v 一个/m 南亚/ns 国家/n ，/w 中国/ns 是/v 一个/m 东亚/ns 国家/n ，/w 现在/t 中国/ns 和/c 印度/ns 进入/v 了/u 传统/n 领域/n 以外/f 的/u 地区/n ，/w 开始/v 呈现/v 出/v 大国/n 的/u 姿态/n 。/w 
+说/v 一/m 口/q 流利/a 普通话/n 的/u 印度尼赫鲁大学/nt 学者/n 高兴/nr （/w BINOD/nx ，/w SINGH/nx ）/w 认为/v ，/w 过去/t 印度/ns 是/v 一个/m 南亚/ns 国家/n ，/w 中国/ns 是/v 一个/m 东亚/ns 国家/n ，/w 现在/t 中国/ns 和/c 印度/ns 进入/v 了/u 传统/n 领域/n 以外/f 的/u 地区/n ，/w 开始/v 呈现/v 出/v 大国/n 的/u 姿态/n 。/w 
 他/r 解释/v 称/v ，/w 1992年/t 印度/ns 政府/n 提出/v “/w 向/p 东/f 政策/n ”/w ，/w 强调/v 发展/v 与/p 东南亚/ns 国家/n 的/u 关系/n ，/w 印度/ns 政府/n 推动/v 这/r 一/m 政策/n 主要/d 是/v 为了/p 加强/v 同/p 东南亚/ns 各国/r 的/u 贸易/vn 联系/vn 。/w 
 最近/t 印度/ns 在/p 东南亚/ns 、/w 甚至/d 在/p 东亚/ns 地区/n 的/u 活动/vn ，/w 实际/n 上/f 主要/d 是/v 短期/b 利益/n 和/c 规划/n ，/w 并/c 不/d 是/v 对/p “/w 中国/ns 威胁/v ”/w 的/u 反应/vn 。/w 
 警惕/v 中国/ns 发展/v 
@@ -10670,7 +10670,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 而/c 随着/p 缅甸/ns 大选/v 临近/v ，/w 各种/r 势力/n 参与/v 期间/f ，/w 局势/n 可能/v 会/v 更加/d 扑朔迷离/v 。/w 
 如何/r 在/p 努力/a 为/v 这些/r 无辜/n 的/u 中国/ns 百姓/n 争取/v 合法/a 权利/n 和/c 维护/v 两/m 国/n 关系/n 间/f 取得/v “/w 双赢/v ”/w ，/w 的确/d 非常/d 考验/v 中国/ns 政府/n 的/u 智慧/n 和/c 耐心/n 。/w 
 150/m 余/m 名/q 中国/ns 伐木/vn 工人/n 在/p 缅甸/ns 被/p 判/v 重刑/n 中方/n 交涉/v 
-【/w 环球/n 时报/n 记者/n 刘畅/nr 　/w 王晓雄/nr 】/w 据/p 缅甸/ns 中文/n 网/n 22日/t 报道/v ，/w 缅甸/ns 一/m 家/q 地方/n 法院/n 当日/t 对/p 中国/ns 伐木工/n 案/n 做出/v 判决/v ，/w 涉案/vn 人员/n 155/m 人/n 中/f ，/w 153/m 人/n 被/p 判/v 终身/n 监禁/v ，/w 另/r 两/m 人/n 由于/c 只/d 有/v 17/m 岁/q 尚未/d 成年/v ，/w 被/p 判/v 10/m 年/q 监禁/v 。/w 
+【/w 环球/n 时报/n 记者/n 刘畅/nr ，/w 王晓雄/nr 】/w 据/p 缅甸/ns 中文/n 网/n 22日/t 报道/v ，/w 缅甸/ns 一/m 家/q 地方/n 法院/n 当日/t 对/p 中国/ns 伐木工/n 案/n 做出/v 判决/v ，/w 涉案/vn 人员/n 155/m 人/n 中/f ，/w 153/m 人/n 被/p 判/v 终身/n 监禁/v ，/w 另/r 两/m 人/n 由于/c 只/d 有/v 17/m 岁/q 尚未/d 成年/v ，/w 被/p 判/v 10/m 年/q 监禁/v 。/w 
 此/r 消息/n 一/m 出/v 引发/v 中国/ns 舆论界/n 震惊/v 。/w 
 中国/ns 驻/v 缅甸/ns 大使馆/n 新闻/n 和/c 公共/b 外交/n 处/n 负责人/n 22日/t 接受/v 《/w 环球/n 时报/n 》/w 记者/n 采访/v 时/n 表示/v ，/w 使馆/n 正/d 加紧/v 核实/v 情况/n ，/w 据/p 侧面/f 了解/v ，/w 中国/ns 伐木工/n 所/u 获/v 刑罚/n 与/p 上述/b 报道/n 有/v 出入/n ，/w 使馆/n 正在/d 就/d 此案/r 向/p 缅方/n 提出/v 严正/a 交涉/v 。/w 
 泰国/ns 《/w 民族/n 报/n 》/w 22日/t 报道/v 称/v ，/w 一/m 名/q 不/d 愿/v 透露/v 姓名/n 的/u 警方/n 官员/n 称/v ，/w 缅北/ns 密支那县/ns 法院/n 根据/p 《/w 公共/b 财产/n 保护法/n 》/w 对/p 中国/ns 伐木/vn 工人/n 做出/v 终身/n 监禁/v 和/c 10/m 年/q 有期徒刑/n 的/u 判决/vn 。/w 
@@ -10781,7 +10781,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 朱振明/nr 对/p 《/w 环球/n 时报/n 》/w 记者/n 说/v ，/w 不/d 排除/v 缅甸/ns 政府军/n 利用/v 非法/s 伐木/v 事件/n 打压/v 克钦军/n 的/u 可能/n ，/w 缅甸/ns 政府军/n 与/p 克钦/ns 独立军/n 发生/v 过/u 好几/m 次/q 冲突/vn ，/w 有时候/d 冲突/v 的/u 理由/n 就/d 是/v 阻止/v 克钦军/n “/w 把/p 国家/n 资源/n 运/v 到/v 国外/s 去/v ”/w 。/w 
 从/p 这个/r 角度/n 看/u ，/w 这/r 次/q 也/d 可能/v 不/d 单纯/a 是/v 为了/p 伐木/vn 问题/n ，/w 可能/v 更/d 多/a 还是/c 为了/p 打击/v 克钦军/n 。/w 
 而且/c 现在/t 缅北/ns 政治/n 形势/n 很/d 不/d 稳定/a ，/w 去年/t 11月/t 19日/t 的/u 事件/n 发生/v 后/f ，/w 双方/n 都/d 摩拳擦掌/v ，/w 互不相让/v 。/w 
-【/w 环球/n 时报/n 赴/v 缅北/ns 特派/v 记者/n 邱永峥/nr 环球/n 时报/n 记者/n 刘畅/nr 　/w 王采丽/nr 】/w 
+【/w 环球/n 时报/n 赴/v 缅北/ns 特派/v 记者/n 邱永峥/nr 环球/n 时报/n 记者/n 刘畅/nr ，/w 王采丽/nr 】/w 
 缅甸/ns 打击/v 非法/d 伐木/v 行动/vn 致/v 500/m 名/q 中国/ns 工人/n 紧急/a 避难/v 
 【/w 环球/n 时报/n 综合/v 报道/v 】/w 美军/n 将领/n “/w 考察/v ”/w 之际/f ，/w 缅北/ns 形势/n 正/d 持续/v 紧张/a 。/w 
 12日/t ，/w 缅甸/ns 政府军/n 分别/d 在/p 缅北/ns 萨尔温江/ns 以西/f 的/u 勐波/ns 地区/n 和/c 克钦/ns 歪莫/ns 地区/n 与/c “/w 民地武/n ”/w 发生/v 激烈/a 交火/v ，/w 造成/v 双方/n 多/a 人/n 伤亡/v 。/w 
@@ -10837,7 +10837,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 但/c 此次/r 在/d 审/v 案件/n 如何/r 宣判/v ，/w 155/m 名/q 中国/ns 公民/n 是否/v 能/v 按/p 此前/t 的/u 一些/m 经验/n 提前/v 回家/v ，/w 还/d 不得而知/v 。/w 
 （/w 原/b 标题/n ：/w 缅北/ns 被捕/vn 中国/ns 伐木工/n 诉讼/v 仍/d 在/d 审理/v 家属/n 尚/d 不/d 能/v 探视/v ）/w 
 中方/n 就/p 200/m 名/q 中国/ns 伐木工/n 被/p 扣/v 失联/v 事件/n 进入/v 缅北/ns 
-【/w 环球/n 时报/n 记者/n 邱永峥/nr 　/w 刘畅/nr 】/w 缅北/ns 克钦/ns 地区/n 的/u 战火/n 19日/t 仍/d 未/d 平息/v 。/w 
+【/w 环球/n 时报/n 记者/n 邱永峥/nr ，/w 刘畅/nr 】/w 缅北/ns 克钦/ns 地区/n 的/u 战火/n 19日/t 仍/d 未/d 平息/v 。/w 
 中国/ns 外交部/nt 和/c 驻/v 缅甸/ns 大使馆/n 迅速/a 就/p 可能/v 受/v 战火/n 波及/v 的/u 中国/ns 公民/n 情况/n 做出/v 反应/v 。/w 
 《/w 环球/n 时报/n 》/w 从/p 克钦/ns 独立军/n 最/d 高/a 指挥/n 机构/n 得知/v ，/w 进攻/v 帕敢/ns 地区/n 的/u 缅甸/ns 政府军/n 19日/t 提出/v 停火/v ，/w 双方/n 的/u 战斗/vn 却/d 并/d 没有/v 因/p 此/r 停止/v 。/w 
 在/p 19日/t 的/u 例行/vn 记者/n 会上/t ，/w 中国/ns 外交部/nt 发言人/n 洪磊/nr 表示/v ，/w 中国/ns 外交部/nt 正在/d 进一步/d 了解/v 、/w 核实/v 缅北/ns 局势/n 相关/vn 情况/n 。/w 
@@ -11020,7 +11020,7 @@ LRCM/nx 项目/n 只/d 是/v 印度/ns 一系列/b 巡航导弹/n 发展/v 计�
 这/r 种/q 复杂性/n 表现/v 在/p 缅甸/ns 政府/n 内部/f 对/p 华/ns 关系/n 上/f 出现/v 的/u 不同/a 声音/n 。/w 
 云南省/ns 社科院/n 东南亚/ns 问题/n 专家/n 朱振明/nr 30日/t 对/p 《/w 环球/n 时报/n 》/w 表示/v ，/w 我们/r 需要/v 做/v 的/u 反思/vn 很多/m 。/w 
 这个/r 事件/n 提醒/v 民众/n 一定/d 要/v 以/p 合法/a 手续/n 出国/v ，/w 在/p 国外/s 也/d 不/d 能/v 乱来/v 。/w 
-【/w 环球/n 时报/n 驻/v 缅甸/ns 、/w 德国/ns 特约/b 记者/n 刘明浩/nr 　/w 青木/nr 　/w 倪浩/nr 　/w 甄翔/nr 】/w 
+【/w 环球/n 时报/n 驻/v 缅甸/ns 、/w 德国/ns 特约/b 记者/n 刘明浩/nr ，/w 青木/nr ，/w 倪浩/nr ，/w 甄翔/nr 】/w 
 环球/n 时报/n ：/w 155/m 名/q 被/p 释/v 回国/v 伐木者/r 不/d 是/v 英雄/n 
 缅甸/ns 总统/n 吴登盛/nr 今天/t 签署/v 大赦令/n ，/w 立即/d 释放/v 6966/m 名/q 服刑/vn 人员/n ，/w 其中/r 包括/v 不久前/t 被/p 缅甸/ns 判刑/v 的/u 155/m 名/q 中国/ns 伐木/vn 工人/n 。/w 
 这/r 批/q 获释/v 的/u 中国/ns 伐木/vn 工人/n 已/d 于/p 今天/t 下午/t 离开/v 密支那/ns 监狱/n ，/w 乘车/v 前往/v 中/ns 缅/ns 边境/s 。/w 
@@ -11878,7 +11878,7 @@ MinZawOo/nr 说/v 中国/ns 要求/v 某些/r 叛乱/vn 组织/n ，/w 除非/c 
 他/r 还/d 说/v ，/w 1月/t 到/c 8月/t ，/w 中国人/n 入侵/v 了/u 42/m 次/q ，/w 而/c 去年/t 同期/d 只/d 有/v 9/m 次/q 。/w 
 外交部/nt ：/w 中/ns 印/ns 边界/n 问题/n 不/d 影响/v 两/m 国/n 关系/n 发展/v 
 原/b 标题/n ：/w 外交部/nt ：/w 中/ns 印/ns 边境/s 长期/d 保持/v 和平/a 安宁/a 边界/n 问题/n 不/d 影响/v 两/m 国/n 关系/n 发展/v 
-中新社/nt 北京/ns 9月/t 16日/t 电/n (/w 余湛奕/nr 　/w 郭君宇/nr )/w 中国/ns 外交部/nt 发言人/n 洪磊/nr 16日/t 在/p 例行/vn 记者会/n 上/f 表示/v ，/w 中国/ns 和/p 印度/ns 边境/s 长期/d 保持/v 和平/a 与/c 安宁/a ，/w 边界/n 问题/n 没有/d 影响/v 中/ns 印/ns 关系/n 的/u 发展/vn 。/w 
+中新社/nt 北京/ns 9月/t 16日/t 电/n (/w 余湛奕/nr ，/w 郭君宇/nr )/w 中国/ns 外交部/nt 发言人/n 洪磊/nr 16日/t 在/p 例行/vn 记者会/n 上/f 表示/v ，/w 中国/ns 和/p 印度/ns 边境/s 长期/d 保持/v 和平/a 与/c 安宁/a ，/w 边界/n 问题/n 没有/d 影响/v 中/ns 印/ns 关系/n 的/u 发展/vn 。/w 
 中方/n 希望/v 两/m 国/n 继续/v 努力/a ，/w 保持/v 这/r 一/m 良好/a 态势/n 。/w 
 有/v 记者/n 问/v ，/w 请/v 介绍/v 习近平/nr 主席/n 访问/v 印度/ns 的/u 日程/n 。/w 
 两/m 国/n 是否/v 会/v 签署/v 投资/v 合作/v 协议/n 以及/c 谈及/v 边界/n 问题/n ？/w 
@@ -12362,7 +12362,7 @@ BM／C3I/nx 网络/n 各/r 组成部分/n 之间/f 的/u 主要/b 通信/vn 线�
 以/p 军事/n 反制/vn 措施/n 为/v 后盾/n ，/w 外交/n 和/c 经济/n 措施/n 为/v 冲锋/v 在/p 前/f 的/u 突击/vn 集群/n ，/w 预计/v 不/d 会/v 太/d 久/a ，/w 中国/ns 将/d 会/v 对/p 美/ns 韩/ns “/w 萨德/n 入/v 韩/ns ”/w 计划/n 发起/v 全面/a “/w 进攻/v ”/w 。/w 
 这/r “/w 进攻/v ”/w 不止/v 于/p 朝鲜/ns 半岛/n 一隅/n ，/w 而是/c 会/v 出现/v 在/p 中/ns 美/ns 亚太/ns 区域/n 的/u 所有/b 实际/n “/w 接触线/n ”/w 上/f 。/w 
 韩/ns 美/ns 防长/n 称/v 将/d 按/p 计划/n 年内/t 部署/v “/w 萨德/n ”/w 反导/vn 系统/n 
-新华社/nz 首尔/ns 2月/t 3日/t 电/n （/w 记者/n 杜白羽/nr 　/w 耿学鹏/nr ）/w 韩国/ns 国防部/nt 3日/t 发布/v 消息/n 称/v ，/w 韩国/ns 国防部/nt 长官/n 韩民求/nr 当天/t 在/p 首尔/ns 会见/v 来访/v 的/u 美国/ns 新任/b 防长/n 马蒂斯/nr ，/w 双方/n 表示/v 将/d 按/p 计划/n 推进/v 今年/t 年内/t 在/p 韩/ns 部署/v “/w 萨德/n ”/w 反导/vn 系统/n 。/w 
+新华社/nz 首尔/ns 2月/t 3日/t 电/n （/w 记者/n 杜白羽/nr ，/w 耿学鹏/nr ）/w 韩国/ns 国防部/nt 3日/t 发布/v 消息/n 称/v ，/w 韩国/ns 国防部/nt 长官/n 韩民求/nr 当天/t 在/p 首尔/ns 会见/v 来访/v 的/u 美国/ns 新任/b 防长/n 马蒂斯/nr ，/w 双方/n 表示/v 将/d 按/p 计划/n 推进/v 今年/t 年内/t 在/p 韩/ns 部署/v “/w 萨德/n ”/w 反导/vn 系统/n 。/w 
 马蒂斯/nr 在/p 会见/v 之前/f 举行/v 的/u 新闻/n 发布会/n 上/f 表示/v ，/w 鉴于/p 目前/t 朝鲜/ns 半岛/n 局势/n ，/w 美方/n 将/d 采取/v 防卫/vn 措施/n 以/p 保护/v 驻/v 韩/ns 美军/n 和/c 韩方/n ，/w 包括/v 部署/v “/w 萨德/n ”/w 反导/vn 系统/n 。/w 
 他/r 还/d 称/v ，/w 美方/n 将/d 坚持/v 对/p 盟友/n 的/u 防卫/vn 承诺/v 以及/c “/w 延伸/v 威慑/v ”/w 承诺/vn 。/w 
 韩民求/nr 表示/v ，/w 马蒂斯/nr 首次/d 出访/v 选择/v 韩国/ns 显示/v 了/u 美国/ns 新/a 政府/n 对/p 韩/ns 美/ns 同盟/n 的/u 坚定/a 立场/n ，/w 希望/v 以此/d 为/v 契机/n 发展/v 韩/ns 美/ns 同盟/n 关系/n 。/w 
@@ -12420,7 +12420,7 @@ BM／C3I/nx 网络/n 各/r 组成部分/n 之间/f 的/u 主要/b 通信/vn 线�
 韩国/ns 外交/n 人士/n 还/d 对/p 媒体/n 说/v ，/w “/w 在/p 需要/v 参院/n 批准/v 的/u 外交/n 安保/n 内阁/n 官员/n 中/f ，/w 只有/c 马蒂斯/nr 以/p 超/v 党派/n 的/u 支持/vn 获得/v 了/u 批准/v ”/w 。/w 
 周永生/nr 2日/t 接受/v 《/w 环球/n 时报/n 》/w 记者/n 采访/v 时/n 说/v ，/w 以往/t 美国/ns 新任/b 防长/n 首次/d 出访/v 以/p 日本/ns 居多/v ，/w 也/d 有/v 以/p 欧洲/ns 或者/c 澳大利亚/ns 为/v 首站/n 的/u 情况/n 。/w 
 马蒂斯/nr 第一/m 次/q 外访/v 选择/v 韩/ns 日/ns ，/w 释放/v 了/u 一个/m 很/d 明显/a 的/u 信号/n ，/w 即/v 表明/v 特朗普/nr 政府/n 要/v 加强/v 同/p 日/ns 韩/ns 的/u 军事/n 合作/vn 。/w 
-【/w 环球/n 时报/n 驻/v 韩国/ns 、/w 美国/ns 、/w 日本/ns 特派/v 特约/b 记者/n 陈尚文/nr 　/w 张朋辉/nr 　/w 蒋丰/nr 环球/n 时报/n 记者/n 倪浩/nr 　/w 柳玉鹏/nr 】/w 
+【/w 环球/n 时报/n 驻/v 韩国/ns 、/w 美国/ns 、/w 日本/ns 特派/v 特约/b 记者/n 陈尚文/nr ，/w 张朋辉/nr ，/w 蒋丰/nr 环球/n 时报/n 记者/n 倪浩/nr ，/w 柳玉鹏/nr 】/w 
 韩媒/n 妄称/v 中国/ns 干涉/v 萨德/n 有悖于/v 道义/n 有失/v 大国/n 风范/n 
 近日/t ，/w 韩国/ns 首都/n 防卫/vn 司令部/n 第一/m 防空旅/n 等/u 9/m 支/q 防空/vn 部队/n 在/p 忠清南道/ns 大川/ns 射击场/n 实施/v 了/u “/w 天马/n ”/w 中低空/b 近程/b 防空/vn 导弹/n 的/u 实弹/n 射击/vn 演习/vn 。/w 
 这/r 是/v 韩国/ns 军方/n 时隔/v 四/m 年/q 再次/d 启动/v 这/r 一/m 演习/vn 。/w 
@@ -12647,7 +12647,7 @@ BM／C3I/nx 网络/n 各/r 组成部分/n 之间/f 的/u 主要/b 通信/vn 线�
 我们/r 要求/v 其/r 当政者/r 应/v 停止/v 部署/v 萨德/n ，/w 因为/c 它/r 对/p 中国/ns 构成/v 严重/a 威胁/v 。/w 
 我们/r 也/d 希望/v 半岛/n 的/u 南北/f 双方/n 的/u 决策/n 要/v 顾及/v 左邻右舍/n ，/w 以邻为壑/v 的/u 政策/n 要/v 不/d 得/v ，/w 否则/c ，/w 都/d 必须/d 付出/v 应有/v 的/u 代价/n 。/w 
 韩媒/n :/w 中国/ns 突/d 查/v 乐天/nz 集团/n 疑/v 为/v 报复/v 部署/v 萨德/n 
-【/w 环球/n 时报/n 驻/v 韩国/ns 特派/vn 记者/n 陈尚文/nr 　/w 李萌/nr 】/w 多/m 家/q 韩国/ns 媒体/n 2日/t 报道/v 称/v ，/w 中国/ns 有关/vn 部门/n 自/p 11月/t 29日/t 起/f ，/w 针对/p 北京/ns 、/w 上海/ns 、/w 成都/ns 等/u 地/n 150/m 余/m 处/q 乐天/nz 集团/n 营业/vn 场所/n 进行/v 消防/n 安全/an 、/w 卫生/an 、/w 税务/n 检查/v 。/w 
+【/w 环球/n 时报/n 驻/v 韩国/ns 特派/vn 记者/n 陈尚文/nr ，/w 李萌/nr 】/w 多/m 家/q 韩国/ns 媒体/n 2日/t 报道/v 称/v ，/w 中国/ns 有关/vn 部门/n 自/p 11月/t 29日/t 起/f ，/w 针对/p 北京/ns 、/w 上海/ns 、/w 成都/ns 等/u 地/n 150/m 余/m 处/q 乐天/nz 集团/n 营业/vn 场所/n 进行/v 消防/n 安全/an 、/w 卫生/an 、/w 税务/n 检查/v 。/w 
 因为/p 乐天/nz 集团/n 向/p 韩军/n 转让/v 庆尚北道/ns 星州/ns 高尔夫/n 球场/n 作为/v 萨德/n 部署/vn 地/n ，/w 韩媒/n 和/c 业界/n 猜疑/v ，/w 这/r 是/v 中国/ns 政府/n 的/u 报复/vn 措施/n 。/w 
 韩国/ns 政府/n 也/d 对/p 此/r 表示/v 密切/a 关注/v ，/w 并/c 开会/v 研究/v 应对/vn 措施/n 。/w 
 据/p 韩国/ns 《/w 每日/r 经济/n 》/w 报道/v ，/w 成都/ns 乐天/nz 百货/n 1日/t 称/v ，/w 该/r 商场/n 11月/t 29日/t 被/p 突击/v 消防/n 检查/v 约/d 2/m 小时/n ，/w 是/v 该店/r 开业/v 3/m 年/q 来/f 首次/d 遭/v 省级/b 消防/n 检查/v 。/w 
@@ -13137,7 +13137,7 @@ AN／TPY-2/nx 的/u 雷达/n 天线/n 不/d 能/v 进行/v 360/m 度/q 旋转/v 
 路透社/nz 记者/n 15日/t 报道/v 说/v ：/w “/w 星州/ns 的/u 人们/n ，/w 很多/m 是/v 种/v 香瓜/n 的/u 农民/n ，/w 展示/v 了/u 这个/r 国家/n 的/u 民主/a 精神/n ，/w 他们/r 庄重/a 肃穆/a 地/u 坐/v 在/p 一起/s ，/w 一边/d 削发/v ，/w 一边/d 跟着/v 他们/r 的/u 领袖/n 高呼/v ‘/w 不/d 要/v 萨德/n !/w ’/w ”/w 。/w 
 当天/t 韩国/ns 许多/m 地方/n 也/d 爆发/v 各种/r 大规模/d 反/v 萨德/n 示威/v 。/w 
 仅/d 在/p 首尔/ns 一/m 地/n ，/w 15日/t 上午/t ，/w 多/m 个/q 市民/n 团体/n 在/p 首尔/ns 的/u 大学路/ns 举行/v 反对/v 萨德/n 的/u 示威/vn ，/w 并/c 沿着/p 市中心/s 游行/v ；/w 下午/t ，/w 部分/n 韩国/ns 市民/n 团体/n 的/u 成员/n 在/p 首尔/ns 麻浦/ns 街头/s 举行/v 反/v 萨德/n 游行/v ；/w 晚上/t 7时/t ，/w 多/m 个/q 大学生/n 团体/n 又/d 在/p 首尔/ns 市中心/s 的/u 钟阁/ns 举行/v 了/u 反/v 萨德/n 大学生/n 文化节/n 。/w 
-【/w 环球/n 时报/n 驻/v 韩国/ns 特派/vn 特约/b 记者/n 陈尚文/nr 　/w 王伟/nr 环球/n 时报/n 驻/v 朝鲜/ns 特派/vn 记者/n 周之然/nr 环球/n 时报/n 记者/n 郭孝伟/nr 】/w 
+【/w 环球/n 时报/n 驻/v 韩国/ns 特派/vn 特约/b 记者/n 陈尚文/nr ，/w 王伟/nr 环球/n 时报/n 驻/v 朝鲜/ns 特派/vn 记者/n 周之然/nr 环球/n 时报/n 记者/n 郭孝伟/nr 】/w 
 韩媒/n 炒作/v 萨德/n 招/v 来/v 大国/n 报复/v 挑拨/v 称/v 中国/ns 抛开/v 风度/n 
 [/w 环球/n 时报/n 综合/v 报道/v ]/w “/w 萨德/n ”/w 入/v 韩/ns 引发/v 的/u 争议/vn 持续/v 发酵/v 。/w 
 14日/t ，/w 首尔/ns 市内/n 再次/d 爆发/v 反/v “/w 萨德/n ”/w 示威/v ，/w 大批/m 民众/n 参加/v 。/w 
@@ -13287,7 +13287,7 @@ AN／TPY-2/nx 的/u 雷达/n 天线/n 不/d 能/v 进行/v 360/m 度/q 旋转/v 
 针对/p 美国/ns 和/c 韩国/ns 宣布/v 决定/v 在/p 驻/v 韩/ns 美军/n 基地/n 部署/v 末段/f 高空/s 区域/n 防御/vn 系统/n 即/v “/w 萨德/n ”/w 系统/n 的/u 消息/n ，/w 朝鲜/ns 人民军/n 总参谋部/n 11日/t 首次/d 发表/v 声明/n 回应/v ，/w 称/v 一旦/d 美/ns 韩/ns 确定/v 在/p 韩/ns 部署/v “/w 萨德/n ”/w 系统/n 的/u 位置/n 和/c 场所/n ，/w 朝方/n 将/d 采取/v “/w 物理性/n 措施/n ”/w 予以/v 应对/vn 。/w 
 朝鲜/ns 人民军/n 总参谋部/n 的/u 这/r 份/q 声明/n 说/v ，/w 朝军/n 具备/v “/w 足够/v 的/u 最/d 新/a 进攻性/n 打击/vn 手段/n ”/w ，/w 美国/ns 热衷/v 于/p 通过/p 部署/v “/w 萨德/n ”/w 系统/n “/w 挑起/v 战争/n ”/w ，/w 而/c 朝方/n 对/p 此/r “/w 将/d 采取/v 更加/d 无情/a 且/c 有力/a 的/u 持续/vn 反制/vn 措施/n ”/w 。/w 
 俄/ns 再次/d 加快/v 北方/n 四岛/n 军事/n 建设/v 反制/v 萨德/n 部署/v 
-【/w 环球/n 时报/n 驻/v 日本/ns 特约/b 记者/n 李珍/nr 　/w 柳玉鹏/nr 】/w 俄罗斯/ns 再次/d 加强/v 南千岛群岛/ns (/w 日本/ns 称/v 北方/n 四岛/n )/w 的/u 防御/vn ，/w 正/d 在/p 其中/r 两/m 岛/n ——/w 国后岛/ns 和/c 择捉岛/ns 上/f 修建/v 防御工事/n 、/w 训练场/n 、/w 弹药/n 及/c 武器/n 装备/n 仓库/n 。/w 
+【/w 环球/n 时报/n 驻/v 日本/ns 特约/b 记者/n 李珍/nr ，/w 柳玉鹏/nr 】/w 俄罗斯/ns 再次/d 加强/v 南千岛群岛/ns (/w 日本/ns 称/v 北方/n 四岛/n )/w 的/u 防御/vn ，/w 正/d 在/p 其中/r 两/m 岛/n ——/w 国后岛/ns 和/c 择捉岛/ns 上/f 修建/v 防御工事/n 、/w 训练场/n 、/w 弹药/n 及/c 武器/n 装备/n 仓库/n 。/w 
 日媒/n 认为/v 这/r 是/v “/w 受/v 美/ns 韩/ns 决定/v 在/p 韩国/ns 部署/v 萨德/n 反导/vn 系统/n 的/u 影响/vn ”/w 。/w 
 据/p 俄新网/n 11日/t 报道/v ，/w 俄罗斯联邦/ns 特种/b 建设局/nt 新闻处/n 发言人/n 称/v ：/w “/w 目前/t 共有/v 超过/v 500/m 名/q 建筑/n 工人/n 和/c 100/m 台/q 装备/n 参与/v 修建/v 国后岛/ns 和/c 择捉岛/ns 上/f 的/u 军事/n 基础/n 设施/n 。/w 
 岛上/s 还/d 将/d 修建/v 其他/r 基础/n 设施/n ，/w 包括/v 军人/n 宿舍/n 、/w 文化/n 休闲/vn 和/c 体育/c 中心/n ，/w 共建/v 有/v 392/m 座/q 建筑/n 。/w ”/w 该/r 发言人/n 还/d 称/v ，/w 所有/b 设施/n 都/d 将/d 使用/v 最新型/n 轻钢/n 结构/n 的/u 安全/a 材料/n 建设/v ，/w 既/c 环保/n 又/d 保暖/a ，/w 同时/c 可/v 经受/v 9.5/m 级/q 地震/n ，/w 使用/vn 寿命/n 可/v 达/v 100/m 年/q 。/w 

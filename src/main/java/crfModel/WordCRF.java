@@ -22,7 +22,7 @@ import java.util.List;
 public class WordCRF extends CRFModel implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 	static private HashSet<String> wrong = new HashSet<>();
-	private WordInfoInCorpus wordInfoInCorpus;
+	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.corpusFile);
 	public Analysis parser;
 
 	{
@@ -34,11 +34,9 @@ public class WordCRF extends CRFModel implements Serializable {
 	}
 
 	public static void main(String... args) {
-		String al = "";
 		if (args.length >0 ) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
-			al = args[0];
 		}
 		Test.clean();
 		WordCRF wordCRF = new WordCRF();
@@ -47,7 +45,7 @@ public class WordCRF extends CRFModel implements Serializable {
 			if (type != Ner.nw) continue;
 			wordCRF.train(new String[]{config.trainData}, type);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, type)), wordCRF.detectNewWord(config
-					.testDataInput, "tmp/tmp." + type.pattern, type), wordCRF.getClass().getSimpleName() + "." + type.pattern + "." + al);
+					.testDataInput, "tmp/tmp." + type.pattern, type), wordCRF.getClass().getSimpleName() + "." + type.pattern);
 		}
 	}
 
@@ -140,7 +138,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
+		///wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
@@ -266,7 +264,7 @@ public class WordCRF extends CRFModel implements Serializable {
 	@Override
 	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner) {
 		try {
-			wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
+			//wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
 
 			for (String inputFile : inputFiles) {

@@ -54,16 +54,16 @@ public class Test {
 			for (String word : ans.keySet())
 				if (golden.keySet().contains(word) || golden.keySet().contains(config.newWordFileter(word))) {
 					hit++;
-					pWriter.println(word + "\t" + ans.get(word) + "\tyes");
+					pWriter.println(word + "\t" + ans.get(word) + "\tTrue");
 				}
 				else
-					pWriter.println(word + "\t" + ans.get(word) + "\tno");
+					pWriter.println(word + "\t" + ans.get(word) + "\tFalse");
 			for (String word : golden.keySet())
 				if (ans.keySet().contains(word)) {
-					rWriter.println(word + "\t" + golden.get(word) + "\tyes");
+					rWriter.println(word + "\t" + golden.get(word) + "\tTrue");
 				}
 				else
-					rWriter.println(word + "\t" + golden.get(word) + "\tno");
+					rWriter.println(word + "\t" + golden.get(word) + "\tFalse");
 			float p = (float) hit / select * 100;
 			float r = (float) hit / sum * 100;
 			float f1 = (float) 2.0 * p * r / (p + r);

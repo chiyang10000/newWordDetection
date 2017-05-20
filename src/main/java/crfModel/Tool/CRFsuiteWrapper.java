@@ -23,7 +23,6 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 
 	static {
 		if (!System.getProperty("os.name").contains("Linux")) {
-			System.err.println("crfsuite only avail in linux");
 		}
 		//windows 和 unix这里有区别
 		if (!new File(crfsuite).exists())

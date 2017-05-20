@@ -19,21 +19,21 @@ public class CharacterCRF extends CRFModel {
 	private static final Logger logger = LoggerFactory.getLogger(CharacterCRF.class);
 
 	public static void main(String... args) {
-		String al = "";
+		//String al = "";
 		if (args.length > 0) {
 			config.isCRFsuite = true;
 			config.algorithm = args[0];
-			al = args[0];
 		}
 		String[] corpus = new String[]{config.trainData};
 		CharacterCRF characterCRF = new CharacterCRF();
 
-		characterCRF.train(corpus, Ner.ner);
+		//characterCRF.train(corpus, Ner.ner);
+		//characterCRF.train(corpus, Ner.nw);
 		for (Ner ner : Ner.supported) {
 			//if (ner != Ner.nr) continue;
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					characterCRF.detectNewWord (config.testDataInput, "tmp/tmp." + ner.label, ner),
-					characterCRF.getClass().getSimpleName() + "." + ner.label + "." + al);
+					characterCRF.getClass().getSimpleName() + "." + ner.label);
 		}
 	}
 

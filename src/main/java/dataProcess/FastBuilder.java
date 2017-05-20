@@ -412,8 +412,6 @@ public class FastBuilder {
 				//if (3 != seg.length)
 					//continue;
 				String w = seg[0];
-				if (w.matches(config.newWordExcludeRegex))
-					continue;
 				int f = Integer.parseInt(seg[1]);
 				double le = Double.parseDouble(seg[2]);
 				double re = Double.parseDouble(seg[3]);
