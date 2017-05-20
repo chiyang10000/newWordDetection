@@ -46,11 +46,11 @@ public class WordCRF extends CRFModel implements Serializable {
 		if (config.trainModel.contains(Ner.ner.name))
 			wordCRF.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {//;= config.ns;
-			wordCRF.calcMostRecallInAnsj(config.testData, ner);
 			if (config.trainModel.contains(ner.name))
 				wordCRF.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
+			wordCRF.calcMostRecallInAnsj(config.testData, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
 					wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.name, ner),
 					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
@@ -216,9 +216,9 @@ public class WordCRF extends CRFModel implements Serializable {
 								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner
 										.pattern)) {
 									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
-										label = label_single; // 正确的单个词3
+										label = goldenTag[goldenIndex]+label_single; // 正确的单个词3
 									else
-										label = label_end; // 新词结尾1 或者
+										label = goldenTag[goldenIndex]+label_end; // 新词结尾1
 									if (!gs.equals(golden[goldenIndex]))
 										debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
 								} else
@@ -232,9 +232,9 @@ public class WordCRF extends CRFModel implements Serializable {
 									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches
 											(ner.pattern)) {
 										if (as.length() == ansjWord.length())
-											label = label_begin; // 新词开头0
+											label = goldenTag[goldenIndex]+label_begin; // 新词开头0
 										else
-											label = label_meddle; // 新词中部2
+											label = goldenTag[goldenIndex]+label_meddle; // 新词中部2
 									} else
 										label = label_other;
 								} else { // gs被as包含了
