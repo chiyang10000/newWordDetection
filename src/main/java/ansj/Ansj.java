@@ -1,5 +1,6 @@
 package ansj;
 
+import dataProcess.Corpus;
 import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.Test;
@@ -89,7 +90,7 @@ public class Ansj implements NewWordDetector {
 				for (Term term : list) {
 					String word = term.getRealName(), pos = term.getNatureStr();
 					if (ner == ner.nw) {
-						if ((config.renmingribaoWord.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
+						if ((Corpus.isNewWord(word, pos)) && !newWordList.keySet().contains(word)
 								) {
 							newWordList.put(word, pos);
 							writer.append(word + "\t" + pos);

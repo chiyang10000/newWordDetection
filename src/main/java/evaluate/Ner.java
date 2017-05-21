@@ -39,4 +39,9 @@ public class Ner {
 				ner, "count", "counter"
 		);
 	}
+	public static void main(String... args) {
+		calcOOV();
+		for (Ner ner: Ner.supported)
+			System.err.println(ner.name + "\t" + ner.oov);
+	}
 }

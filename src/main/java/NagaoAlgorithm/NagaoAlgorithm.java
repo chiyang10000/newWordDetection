@@ -264,7 +264,7 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(out));
 			for (String word : wordTFNeighbor.keySet()) {
-				if (word.length() <= 1 || !config.renmingribaoWord.isNewWord(word, null))
+				if (word.length() <= 1 || !Corpus.isNewWord(word, null))
 					continue;
 				TFNeighbor tfNeighbor = wordTFNeighbor.get(word);
 
@@ -298,7 +298,7 @@ public class NagaoAlgorithm implements Serializable, NewWordDetector {
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
 			for (String word : wordTFNeighbor.keySet()) {
-				if (word.length() <= 1 || !config.renmingribaoWord.isNewWord(word, null))
+				if (word.length() <= 1 || !Corpus.isNewWord(word, null))
 					continue;
 				if (word.matches(".*[年月日时分秒].*"))
 					continue;

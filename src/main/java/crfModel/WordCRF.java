@@ -87,7 +87,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		HashSet<String> newWordList = new HashSet<>();
 		HashSet<String> validNewWordList = new HashSet<>();
 		try {
-			newWordList.addAll(Corpus.extractWord(inputFile, ner));
+			newWordList.addAll(Test.readWordList(config.getAnswerFile(inputFile, ner)).keySet());
 			reader = new BufferedReader(new FileReader(inputFile));
 			while ((srcline = reader.readLine()) != null) {
 				srcline = srcline.replaceAll("/([^ ]*|$)", "");// 去掉词性

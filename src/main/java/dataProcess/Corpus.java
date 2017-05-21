@@ -16,44 +16,36 @@ import java.util.*;
 public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
 	public Set<String> wordList;
-	public HashSet<Character> characterList = new HashSet<>();
-	public int charCount = 0;
+	final public static Corpus renMinRiBao = new Corpus(config.renmingribao);
+	public static Corpus trainData;
 
-	public Corpus(String inputFile){
+	public Corpus(String inputFile) {
 		wordList = countSeg(inputFile);
 	}
 
 	Set<String> countSeg(String inputFile) {
 		Set<String> wordList;
 		CounterMap wordCounter = new CounterMap();
-				if (!new File(config.getWordListFile(inputFile)).exists()) {
+		if (!new File(config.getWordListFile(inputFile)).exists()) {
 			logger.info("Scanning word list from {}...", inputFile);
-				try {
-					BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
-							.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
-					String tmp;
-					while ((tmp = reader.readLine()) != null) {
-						String[] segs = tmp.split(config.sepWordRegex);
-						for (String word : segs) {
-							word = config.removePos(word).replaceAll("\\[", "");
-							if (!word.matches(config.newWordExcludeRegex))
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
+						.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
+				String tmp;
+				while ((tmp = reader.readLine()) != null) {
+					String[] segs = tmp.split(config.sepWordRegex);
+					for (String word : segs) {
+						word = config.removePos(word).replaceAll("\\[", "");
+						if (!word.matches(config.newWordExcludeRegex))
 							wordCounter.incr(word);
-						}
 					}
-				} catch (java.io.IOException e) {
-					e.printStackTrace();
-					logger.error("Reading word list from {} err!", inputFile);
 				}
-			wordList = wordCounter.countAll().keySet();
-			for (String word : wordList) {
-				for (int i = 0; i < word.length(); i++) {
-					characterList.add(word.charAt(i));
-					charCount++;
-				}
+			} catch (java.io.IOException e) {
+				e.printStackTrace();
+				logger.error("Reading word list from {} err!", inputFile);
 			}
+			wordList = wordCounter.countAll().keySet();
 			logger.info("[{}] word list size: {}", inputFile, wordList.size());
-			logger.info("Basic character list size: {}", characterList.size());
-			logger.info("character count : {}", charCount);
 			wordCounter.output(config.getWordListFile(inputFile));
 		} else {
 			logger.info("Reading word lits from {} ...", config.getWordListFile(inputFile));
@@ -74,9 +66,8 @@ public class Corpus {
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			inputFile = inputFile.replaceAll("^.*/", "");// 保留单独的文件名
-			inputFile = inputFile.replaceAll("\\.tagNW", "");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile + ".src", nerType)));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(
+					inputFile.replaceAll("^./", "") + ".src", nerType)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.trim().length() == 0) continue;
@@ -84,14 +75,17 @@ public class Corpus {
 					String word = config.removePos(w);
 					String pos = config.getPos(w);
 					try {
-						//System.err.println(line);
 						if (
-								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config .newWordExcludeRegex)
-										|| nerType == Ner.nw && config.renmingribaoWord.isNewWord(word, pos)
+								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config.newWordExcludeRegex)
+										||
+										(nerType == Ner.nw && renMinRiBao.isNewWord(word) &&
+												!(inputFile == config.testData && !trainData.isNewWord(word))
+										)
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
-									config.wordInfoInCorpus_total.addWordInfo(word + "\t" + config.category(word) + "\t" + word
+									config.wordInfoInCorpus_total.addWordInfo(word + "\t" + config.category(word) +
+											"\t" + word
 											.length() + "\t" + pos));
 							wordList.add(word);
 							writer.newLine();
@@ -109,7 +103,7 @@ public class Corpus {
 		return wordList;
 	}
 
-	public boolean isNewWord(String word, String pos) {
+	private boolean isNewWord(String word) {
 		if (word.length() <= 1)
 			return false;
 		//标点符号，含字母和数字的不算
@@ -117,12 +111,15 @@ public class Corpus {
 		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
 
 		word = config.newWordFileter(word);
-		if (word.matches(config.newWordExcludeRegex)
-				)
+		if (word.matches(config.newWordExcludeRegex))
 			return false;
 		if (!wordList.contains(word))
 			return true;
 		return false;
+	}
+
+	public static boolean isNewWord(String word, String pos) {
+		return renMinRiBao.isNewWord(word) && trainData.isNewWord(word);
 	}
 
 	/**
@@ -139,26 +136,26 @@ public class Corpus {
 			List<String> article = new ArrayList<>();
 			BufferedWriter writerTotal = new BufferedWriter(new FileWriter(totalFile));
 
-				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				String line;
-				StringBuilder buffer = new StringBuilder();
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0) continue;
-					curr = line.substring(line.length() - 3).replaceAll("/.*", "").matches(".*[稿\\pP&&[^】]]");
-					if (last && !curr) {
-						article.add(buffer.toString());
-						writerTotal.append(buffer.toString());
-						totalSize += buffer.length();
-						writerTotal.newLine();
-						buffer = new StringBuilder();
-					}
-					buffer.append(line);
-					buffer.append("\n");
-					last = curr;
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			String line;
+			StringBuilder buffer = new StringBuilder();
+			while ((line = reader.readLine()) != null) {
+				if (line.length() == 0) continue;
+				curr = line.substring(line.length() - 3).replaceAll("/.*", "").matches(".*[稿\\pP&&[^】]]");
+				if (last && !curr) {
+					article.add(buffer.toString());
+					writerTotal.append(buffer.toString());
+					totalSize += buffer.length();
+					writerTotal.newLine();
+					buffer = new StringBuilder();
 				}
-				//没清空的
-				article.add(buffer.toString());
-				writerTotal.append(buffer.toString());
+				buffer.append(line);
+				buffer.append("\n");
+				last = curr;
+			}
+			//没清空的
+			article.add(buffer.toString());
+			writerTotal.append(buffer.toString());
 			writerTotal.close();
 
 			if (config.isShuffle) {
@@ -237,6 +234,8 @@ public class Corpus {
 		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
+		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
+		trainData = new Corpus(config.trainData);
 
 		convertToSrc(new String[]{config.testData}, config.testDataInput);
 		convertToSrc(new String[]{config.trainData}, config.trainDataInput);

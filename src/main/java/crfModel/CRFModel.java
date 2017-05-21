@@ -4,6 +4,7 @@ import Feature.FieldAppender;
 import crfModel.Tool.CRFPPWrapper;
 import crfModel.Tool.CRFsuiteWrapper;
 import crfModel.Tool.CrfToolInterface;
+import dataProcess.Corpus;
 import evaluate.Ner;
 import evaluate.NewWordDetector;
 import evaluate.config;
@@ -92,7 +93,7 @@ abstract public class CRFModel implements NewWordDetector {
 				String word = wordBuffer.toString();// 这是一个词
 				//System.err.println(context);
 				if (ner == Ner.nw) {
-					if (config.renmingribaoWord.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
+					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
 						newWordList.put(word, context + "\t" + fieldAppender.toString());
 						writer.println(word + "\t" + context + "\t" + fieldAppender);
 					}

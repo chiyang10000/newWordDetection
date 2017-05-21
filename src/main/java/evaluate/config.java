@@ -48,10 +48,7 @@ public class config {
 	public static Integer levelNum = 10;
 	public static Integer maxStringLength = 8;
 
-	public static boolean isNagaoLoadedFromFile = false; //new File("data/model/nagao.corpus").exists();
-	public static boolean isNagaoSavedIntoFile = false;
 	public static boolean isLoadCorpus = false;
-	public static Boolean isTrain = true;
 	public static Boolean isShuffle = false;
 	public static Boolean isNewWordFilter = true;
 	public static Boolean isCRFsuite = true;
@@ -114,7 +111,6 @@ public class config {
 		RunSystemCommand.run("mkdir data/test/ans");
 	}
 
-	final public static Corpus renmingribaoWord = new Corpus(renmingribao);
 	public static WordInfoInCorpus wordInfoInCorpus_total ;
 	//public static WordInfoInCorpus wordInfoInCorpus_corpus = new WordInfoInCorpus(config.corpusFile);
 
