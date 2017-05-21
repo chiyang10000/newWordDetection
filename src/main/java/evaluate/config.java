@@ -102,6 +102,7 @@ public class config {
 		} catch (Exception e) {
 			System.err.println(e);
 		}
+		RunSystemCommand.run("mkdir info");
 		RunSystemCommand.run("mkdir tmp");
 		RunSystemCommand.run("mkdir tmp/crf");
 		RunSystemCommand.run("mkdir data");

@@ -42,8 +42,8 @@ public class Test {
 		select = ans.size();
 		hit = 0;
 		try {
-			PrintWriter pWriter = new PrintWriter(new FileWriter(String.join(".","data/info/", type.name, method, tool, "p")));
-			PrintWriter rWriter = new PrintWriter(new FileWriter(String.join(".","data/info/", type.name, method, tool, "r")));
+			PrintWriter pWriter = new PrintWriter(new FileWriter(String.join(".","info/"+type.name, method, tool, "p")));
+			PrintWriter rWriter = new PrintWriter(new FileWriter(String.join(".","info/"+type.name, method, tool, "r")));
 			for (String word : ans.keySet())
 				if (golden.keySet().contains(word) || golden.keySet().contains(config.newWordFileter(word))) {
 					hit++;
