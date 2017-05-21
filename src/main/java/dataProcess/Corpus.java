@@ -119,6 +119,8 @@ public class Corpus {
 	}
 
 	public static boolean isNewWord(String word, String pos) {
+		if (trainData == null)
+			trainData = new Corpus(config.trainData);
 		return renMinRiBao.isNewWord(word) && trainData.isNewWord(word);
 	}
 
