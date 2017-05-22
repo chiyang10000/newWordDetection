@@ -3,9 +3,7 @@ package dataProcess;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.Serializable;
+import java.io.*;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -30,7 +28,19 @@ public class CounterMap implements Serializable {
 			e.printStackTrace();
 		}
 	}
-
+public void input(String inputFile){
+		logger.debug("Read CouterMap from {}", inputFile);
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			String line;
+			while ((line = reader.readLine())!=null){
+				String[] tmps = line.split("\\s+");
+				incrby(tmps[0], Integer.parseInt(tmps[1]));
+			}
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}
 	public CounterMap() {
 	}
 

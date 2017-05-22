@@ -60,11 +60,11 @@ abstract public class CRFModel implements NewWordDetector {
 				if (line.length() == 0) {
 					line = reader.readLine();
 					if (line == null) break;
-						context = new StringBuilder(getWord(line));
+						context = new StringBuilder("^" + getWord(line));
 					continue;
 				}
-				if (context.length() > 10)
-					context.deleteCharAt(0);
+				if (context.length() > 12)
+					context.delete(0, context.length() -12);
 				StringBuilder wordBuffer = new StringBuilder();
 				//System.err.println(context);
 				FieldAppender fieldAppender = null;

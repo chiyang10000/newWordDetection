@@ -27,7 +27,7 @@ public class Corpus {
 		Set<String> wordList;
 		CounterMap wordCounter = new CounterMap();
 		if (!new File(config.getWordListFile(inputFile)).exists()) {
-			logger.info("Scanning word list from {}...", inputFile);
+			logger.debug("Scanning word list from {}...", inputFile);
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
 						.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
@@ -238,13 +238,11 @@ public class Corpus {
 	public static void main(String... args) throws IOException {
 
 
-		/*
 		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
 		RunSystemCommand.run("rm data/corpus/*");
-		*/
 		trainData = new Corpus(config.trainData);
 
 		convertToSrc(new String[]{config.testData}, config.getInputFile(config.testData));

@@ -14,16 +14,29 @@ import java.util.HashSet;
  * Created by wan on 5/19/2017.
  */
 public class posPattern {
-	CounterMap counterMap = new CounterMap();
 	private static Logger logger = LoggerFactory.getLogger(posPattern.class);
-	void countPosPattern(String inputFile) {
+	public static posPattern renminribao = new posPattern(config.renmingribao);
+	CounterMap counterMap = new CounterMap();
+	private posPattern(String inputFile) {
+		readPosPattern(inputFile);
+	}
+	private void readPosPattern(String inputFile) {
+		String tmp = "data/corpus/"+inputFile.replaceAll("^.*/", "") + ".posPattern";
+		if (new File(tmp).exists()) {
+			logger.debug("read pos pattern from {}", tmp);
+			counterMap.input(tmp);
+
+		}
+		else countPosPattern(inputFile);
+	}
+	private void countPosPattern(String inputFile) {
 		logger.debug("counting pos pattern from {}", inputFile);
 		try (BufferedReader input = new BufferedReader(new FileReader(inputFile))){
 			String line;
 			while ((line = input.readLine())!= null) {
 				line = line.replace('[', ' ').replaceAll("][^ ]+", " ");
-				line = line.replaceAll("/nx", "/en");
-				line = line.replaceAll("[^ ]+/", "").trim();
+				//line = line.replaceAll("/nx", "/en");
+				line = line.replaceAll("[^ ]+/", "").trim().toLowerCase();
 				String[] segs = line.split(" +");
 				//System.out.println(line);
 				for (int i = 0; i < segs.length-2; i++){
@@ -32,14 +45,18 @@ public class posPattern {
 					counterMap.incr(tmp);
 				}
 			}
-			counterMap.output("tmp/"+inputFile.replaceAll("^.*/", "") + ".posPattern");
+			String tmp = "data/corpus/"+inputFile.replaceAll("^.*/", "") + ".posPattern";
+			counterMap.output(tmp);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	void countPosPattern(String inputFile, posPattern exist) {
+	public boolean isDefined(String tmp) {
+		return counterMap.get(tmp) > 1;
+	}
+	static void countPosPattern(String inputFile, posPattern exist) {
 		HashSet<String> kk = new HashSet<>();
 		try (BufferedReader input = new BufferedReader(new FileReader(inputFile))){
 			String line;
@@ -52,7 +69,6 @@ public class posPattern {
 				for (int i = 0; i < segs.length-2; i++){
 					String tmp = String.join("/", segs[i], segs[i+1], segs[i+2]);
 					tmp = String.join("/", segs[i].substring(0,1), segs[i+1].substring(0,1), segs[i+2].substring(0,1));
-					counterMap.incr(tmp);
 					if (!segs[i].matches("[\\p{IsLatin}]+"))
 						continue;
 					if (kk.contains(tmp))
@@ -60,7 +76,7 @@ public class posPattern {
 					if (!tmp.contains("w"))
 						if(!tmp.contains("u"))
 							if(!tmp.contains("y"))
-					if (!(exist.counterMap.get(tmp) > 3)) {
+					if (!exist.isDefined(tmp)) {
 						kk.add(tmp);
 						System.err.println(jj[i] + jj[i + 1] + jj[i + 2]);
 						tt++;
@@ -68,7 +84,6 @@ public class posPattern {
 				}
 				//System.out.println(line);
 			}
-			counterMap.output("tmp/tmp");
 			System.err.println(tt);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -78,12 +93,9 @@ public class posPattern {
 	}
 	public static void main(String... args) {
 		Ansj.segFile(new ToAnalysis(), config.getInputFile(config.totalData), "tmp/ansj.txt");
-		posPattern p1 = new posPattern();
-		p1.countPosPattern(config.renmingribao);
-		posPattern p2 = new posPattern();
-		p2.countPosPattern(config.totalData);
-		posPattern pp = new posPattern();
-		pp.countPosPattern("tmp/ansj.txt", p1);
-		//pp.countPosPattern(config.totalData, p1);
+		posPattern p1 = new posPattern(config.renmingribao);
+		posPattern p2 = new posPattern(config.totalData);
+		countPosPattern("tmp/ansj.txt", p1);
+		//countPosPattern(config.totalData, p1);
 	}
 }

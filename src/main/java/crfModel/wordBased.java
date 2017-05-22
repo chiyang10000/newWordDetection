@@ -6,12 +6,12 @@ import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
+import dataProcess.posPattern;
 import evaluate.Ner;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
-import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,7 +64,7 @@ public class wordBased extends CRFModel implements Serializable {
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		//if (true) return;
+		if (true) return;
 		if (gs.matches(config.newWordExcludeRegex))
 			return;
 		if (wrong.contains(gs))
@@ -152,7 +152,7 @@ public class wordBased extends CRFModel implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
+		wordInfoInCorpus = new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
@@ -221,9 +221,9 @@ public class wordBased extends CRFModel implements Serializable {
 								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner
 										.pattern)) {
 									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
-										label = goldenTag[goldenIndex]+label_single; // 正确的单个词3
+										label = goldenTag[goldenIndex] + label_single; // 正确的单个词3
 									else
-										label = goldenTag[goldenIndex]+label_end; // 新词结尾1
+										label = goldenTag[goldenIndex] + label_end; // 新词结尾1
 									if (!gs.equals(golden[goldenIndex]))
 										debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
 								} else
@@ -237,9 +237,9 @@ public class wordBased extends CRFModel implements Serializable {
 									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches
 											(ner.pattern)) {
 										if (as.length() == ansjWord.length())
-											label = goldenTag[goldenIndex]+label_begin; // 新词开头0
+											label = goldenTag[goldenIndex] + label_begin; // 新词开头0
 										else
-											label = goldenTag[goldenIndex]+label_meddle; // 新词中部2
+											label = goldenTag[goldenIndex] + label_meddle; // 新词中部2
 									} else
 										label = label_other;
 								} else { // gs被as包含了
@@ -257,12 +257,15 @@ public class wordBased extends CRFModel implements Serializable {
 							}
 						}// nr ns
 
-						if (i > 0)
-							writer.println(new WordFeature(ansj.get(i - 1).getRealName(), ansjWord, term.getNatureStr
-									()).toString() + '\t' + label);
-						else
-							writer.println(new WordFeature("", ansjWord, term.getNatureStr()).toString() + '\t' +
-									label);
+						String prePos = "^", preprePos = "^", preWord = "";
+						if (i >= 2)
+							preprePos = ansj.get(i - 2).getNatureStr();
+						if (i >= 1) {
+							prePos = ansj.get(i - 1).getNatureStr();
+							preWord = ansj.get(i - 1).getRealName();
+						}
+						writer.println(new WordFeature(preWord, ansjWord, preprePos, prePos, term.getNatureStr())
+								.toString() + '\t' + label);
 
 						if (ansjWord.matches(config.sepSentenceRegex))
 							writer.println();// 断句换行
@@ -282,8 +285,8 @@ public class wordBased extends CRFModel implements Serializable {
 	@Override
 	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner) {
 		try {
-			wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
-			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
+			wordInfoInCorpus = new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
+			PrintWriter writer = new PrintWriter(new FileWriter(crfppInput));
 
 			for (String inputFile : inputFiles) {
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -291,29 +294,31 @@ public class wordBased extends CRFModel implements Serializable {
 				while ((line = reader.readLine()) != null) {
 
 					if (line.length() == 0) {
-						writer.newLine();
+						writer.println();
 						continue;
 						// 空行
 					}
 
-					List<Term> list = parser.parseStr(line).getTerms();
+					List<Term> ansj = parser.parseStr(line).getTerms();
 
-					for (int i = 0; i < list.size(); i++) {
-						Term term = list.get(i);
+					for (int i = 0; i < ansj.size(); i++) {
+						Term term = ansj.get(i);
 						String word = term.getRealName();
 						String pos = term.getNatureStr();
-
-						if (i > 0)
-							writer.append(new WordFeature(list.get(i - 1).getRealName(), word, pos).toString() +
-									"\tN");
-						else
-							writer.append(new WordFeature("", word, pos).toString() + "\tN");
-						writer.newLine();
+						String prePos = "^", preprePos = "^", preWord = "";
+						if (i >= 2)
+							preprePos = ansj.get(i - 2).getNatureStr();
+						if (i >= 1) {
+							prePos = ansj.get(i - 1).getNatureStr();
+							preWord = ansj.get(i - 1).getRealName();
+						}
+						writer.println(
+								new WordFeature(preWord, word, preprePos, prePos, pos).toString() + "\tN");
 
 						if (word.matches(config.sepSentenceRegex))
-							writer.newLine();// 句子断开
+							writer.println();// 句子断开
 					}
-					writer.newLine();// todo 分割句子
+					writer.println();// todo 分割句子
 				}
 			}
 			writer.close();
@@ -332,13 +337,21 @@ public class wordBased extends CRFModel implements Serializable {
 		int tf;
 		int pmi;
 		int tfWithPreWord;
+		String posWindow;
 
-		WordFeature(String preWord, String word, String pos) {
+		WordFeature(String preWord, String word, String preprePos, String prePos, String Pos) {
 			this.word = word;
+			if (Pos.equals("null"))
+				Pos = "*";
+			if (prePos.equals("null"))
+				prePos = "*";
+			if (preprePos.equals("null"))
+				preprePos = "*";
+			posWindow = String.join("/", preprePos.substring(0, 1), prePos.substring(0, 1), Pos.substring(0, 1));
 			length = word.length();
 			if (length > config.maxStringLength) // 长度比较长的变短
 				length = config.maxStringLength + 1;
-			this.pos = pos;
+			this.pos = Pos;
 			try {
 				tf = wordInfoInCorpus.discreteWordInfo.getTF(word);
 				pmi = wordInfoInCorpus.discreteWordInfo.getPMI(word);
@@ -358,7 +371,7 @@ public class wordBased extends CRFModel implements Serializable {
 		public String toString() {
 			String pinying = "";
 			try {
-				pinying = PinyinHelper.convertToPinyinString(word, ",", PinyinFormat.WITHOUT_TONE);
+				pinying = PinyinHelper.convertToPinyinString(word, "", PinyinFormat.WITHOUT_TONE);
 			} catch (PinyinException e) {
 				e.printStackTrace();
 			}
@@ -371,6 +384,7 @@ public class wordBased extends CRFModel implements Serializable {
 					Integer.toString(leftEntropy),
 					Integer.toString(rightEntropy),
 					Integer.toString(tfWithPreWord),
+					posPattern.renminribao.isDefined(posWindow) ? "T" : "F",
 					pinying
 			);
 		}

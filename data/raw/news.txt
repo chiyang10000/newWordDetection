@@ -1838,7 +1838,7 @@ AIM-7/nx “/w 麻雀/nz ”/w 式/b 空对空/n 导弹/n ，/w 美国/ns 于/p 
 装备/n F-15/nx 、/w F-16/nx 战机/n 。/w 
 美军/n “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 联合/v 制导/v 攻击/v 武器/n 
 “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 又/d 叫/v “/w 联合/v 制导/v 攻击/v 武器/n ”/w ，/w 这/r 种/q 炸弹/n 是/v 为/p 适应/v 美国/ns 空军/n 和/c 海军/n 发展/v 要求/n 而/c 研制/v 的/u ，/w 是/v 一/m 种/q 用/p 美军/n 现存/v 的/u 普通/a 常规/n 炸弹/n 升级/v 发展/v 而/c 来/v ，/w 利用/v 卫星/n 定位/vn 系统/n (/w GPS/nx )/w 引导/v 的/u 全天候/b 、/w 自动/d 寻的/a 常规/n 炸弹/n 。/w 
-由/p Mk-80250/nx 磅/q 、/w Mk-81500/nx 磅/q 、/w Mk-831000/nx 磅/q 和/c Mk-842000/nx 磅/q 常规/n 炸弹/n 改进/v 而/c 来/v 的/u “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 分别/d 编号/v 为/v GBU-29/nx 、/w GBU-30/nx 、/w GBU-31/nx 和/c GBU-32/nx 等/u 。/w 
+由/p Mk-80/nx 　/w 250/m 磅/q 、/w Mk-81/nx　/w 500/m 磅/q 、/w Mk-83/nx 　/w 1000/m 磅/q 和/c Mk-84/nx 　/w 2000/m 磅/q 常规/n 炸弹/n 改进/v 而/c 来/v 的/u “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 分别/d 编号/v 为/v GBU-29/nx 、/w GBU-30/nx 、/w GBU-31/nx 和/c GBU-32/nx 等/u 。/w 
 这/r 种/q 炸弹/n 尾部/n 安装/v 了/u GPS/nx 全球/n 卫星/n 定位/vn 系统/n 装置/n ，/w 能够/v 在/p 任何/r 天气/n 情况/n 下/f 精确/a 命中/v 目标/n ，/w 不/d 象/v 一般/a 的/u 激光/n 制导/vn 武器/n 容易/a 受到/v 云/n 、/w 雾/n 以及/c 其他/r 恶劣/a 的/u 天气/n 的/u 限制/v 。/w 
 “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 能/v 从/p 距离/p 目标/n 24/m 公里/q 的/u 高度/n 投/v 下/v ，/w 并/c 在/p GPS/nx 的/u 矫正/v 下/f 精确/a 落/v 到/v 目标/n 之上/f ，/w 误差/n 仅/d 在/v 13/m 米/q 之内/f ，/w 并/c 达到/v 95%/m 的/u 系统/n 可靠性/n 。/w 
 B-1/nx ,/w B-2/nx ,/w B-52/nx ,/w F／A-18/nx ,/w F-16/nx 飞机/n 都/d 可/v 投掷/v 此/r 物/n 。/w 
@@ -8578,7 +8578,7 @@ DOC/nx 的/u 签署/vn 标志/v 着/u 中国/ns 已经/d 开始/v 转变/v “/w
 由于/c 缅北/ns 地区/n 处于/v 边远/b 亚热带/n 山区/n ，/w 一般/a 海拔/n 1000/m -/w 1300/m 米/q ，/w 长期/d 受/v 雨水/n 侵蚀/v 和/c 河流/n 切割/v ，/w 地面/n 起伏/v 大/a ，/w 多/a 山峰/n 山谷/n 以及/c 断陷/vn 盆地/n ，/w 大/a 部队/n 行进/v 作战/v 非常/d 困难/a ，/w 同时/t 少数民族/n 大多/d 武器/n 不/d 落后/a ，/w 训练/vn 水平/n 较/d 高/a ，/w 以及/c 其他/r 原因/n ，/w 致使/v ，/w 缅甸/ns 军队/n 历次/b 扫荡/vn 都/d 告/v 失败/v 。/w 
 近/a 20/m 年/q ，/w 缅甸政府/nt 在/p 政治/n ，/w 经济/n ，/w 文化/n 上/f 对/p 缅北/ns 少数民族/n 进入/v 怀柔/b 政策/n ，/w 分化/v 打击/v 策略/n 以/c 削弱/v 少数民族/n 武器/n 力量/n 。/w 
 另一方面/c 缅甸政府/nt 也/d 从/p 1988年/t 起/v 不断/d 扩军备战/v ，/w 直到/v 今天/t ，/w 缅军/n 兵力/n 已/d 达到/v 50万/m 人/n 。/w 
-在/p 武器/n 装备/v 上/f 有/v 了/u 较/d 大/a 幅度/n 改善/v ，/w 比如/v 引进/v 50/m 架/q 米/n 24/m 武装/n 直升机/n 及/c K-8/nx 高教机/n 、/w 59D改型/b 坦克/n 、/w SH-1155/nz 毫米/q 车载/b 榴弹炮/n 、/w 新型/b 100/m 毫米/q 轮式/b 突击炮/n 、/w 米格29/nz 战机/n 、/w 红旗12型/b 防空/v 导弹/n 、/w 97式/b 外贸/n 步枪/n 。/w 。/w 。/w 。/w 。/w 
+在/p 武器/n 装备/v 上/f 有/v 了/u 较/d 大/a 幅度/n 改善/v ，/w 比如/v 引进/v 50/m 架/q 米/n 24/m 武装/n 直升机/n 及/c K-8/nx 高教机/n 、/w 59D改型/b 坦克/n 、/w SH-11/nx 　/w 55/m 毫米/q 车载/b 榴弹炮/n 、/w 新型/b 100/m 毫米/q 轮式/b 突击炮/n 、/w 米格29/nz 战机/n 、/w 红旗12型/b 防空/v 导弹/n 、/w 97式/b 外贸/n 步枪/n 。/w 。/w 。/w 。/w 。/w 
 缅北/ns 少数民族/n 同样/d 信奉/v ：/w “/w 没有/v 军队/n ，/w 就/d 没有/v 一切/r ”/w 。/w 
 虽然/c 缅北/ns 大部分/m 武装/n 都/d 与/p 政府/n 达成/v 和平/n 协议/n ，/w 他们/r 利用/v 各种/r 方式/n 补充/v 兵员/n ，/w 走私/v 武器/n 。/w 
 为了/p 筹措/v 资金/n ，/w 缅北/ns 武装/n 出售/v 锡/n ，/w 翡翠/n ，/w 玉石/n ，/w 硬木/n ，/w 甚至/c 还/d 有/v 毒品/n 。/w 
