@@ -34,8 +34,8 @@ public class Ner {
 	public static void calcOOV() {
 		for (Ner ner: Ner.supported)
 		ner.oov = Test.test(
-				readWordList(config.getAnswerFile(config.trainDataInput, ner)),
-				readWordList(config.getAnswerFile(config.testDataInput, ner)),
+				readWordList(config.getAnswerFile(config.trainData, ner)),
+				readWordList(config.getAnswerFile(config.testData, ner)),
 				ner, "count", "counter"
 		);
 	}

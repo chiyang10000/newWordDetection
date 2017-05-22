@@ -63,11 +63,11 @@ public class Corpus {
 	}
 
 	public static HashSet<String> extractWord(String inputFile, Ner nerType) {
+		WordInfoInCorpus wordInfo = new WordInfoInCorpus(config.getInputFile(inputFile));
 		HashSet<String> wordList = new HashSet<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(
-					inputFile.replaceAll("^./", "") + ".src", nerType)));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(config.getAnswerFile(inputFile, nerType)));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.trim().length() == 0) continue;
@@ -84,7 +84,7 @@ public class Corpus {
 								)
 										&& !wordList.contains(word)) {
 							writer.append(
-									config.wordInfoInCorpus_total.addWordInfo(word + "\t" + config.category(word) +
+									wordInfo.addWordInfo(word + "\t" + config.category(word) +
 											"\t" + word
 											.length() + "\t" + pos));
 							wordList.add(word);
@@ -166,7 +166,7 @@ public class Corpus {
 				RunSystemCommand.run("rm data/model/*.model");
 			}
 			Random random = new Random();
-			int s = random.nextInt(totalSize - totalSize / config.testSize);//截取的起始位置
+			int s = 300000;//random.nextInt(totalSize - totalSize / config.testSize);//todo 截取的起始位置
 			int i = 0;
 			int currentSize = 0;
 			BufferedWriter writerTrain = new BufferedWriter(new FileWriter(trainFile));
@@ -237,13 +237,14 @@ public class Corpus {
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
+		RunSystemCommand.run("rm data/corpus/*");
 		trainData = new Corpus(config.trainData);
 
-		convertToSrc(new String[]{config.testData}, config.testDataInput);
-		convertToSrc(new String[]{config.trainData}, config.trainDataInput);
-		convertToSrc(new String[]{config.totalData}, config.totalDataInput);
+		convertToSrc(new String[]{config.testData}, config.getInputFile(config.testData));
+		convertToSrc(new String[]{config.trainData}, config.getInputFile(config.trainData));
+		convertToSrc(new String[]{config.totalData}, config.getInputFile(config.totalData));
 
-		config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
+		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner type : Ner.supported) {
 			extractWord(config.trainData, type);
 			extractWord(config.testData, type);

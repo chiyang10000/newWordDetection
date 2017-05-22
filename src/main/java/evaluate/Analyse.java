@@ -16,7 +16,7 @@ public class Analyse {
 		//ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.renmingribao, "tmp/tmp");
 		//Corpus.convertToSrc(new String[]{"tmp/tmp"}, config.corpusFile);
 		Corpus tmp = new Corpus(config.totalData);
-		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
+		WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.getInputFile(config.totalData));
 		PrintWriter writer = new PrintWriter(new FileWriter("data/info/word.info"));
 		for (String word: tmp.wordList)
 			if (!word.matches(config.newWordExcludeRegex)) {

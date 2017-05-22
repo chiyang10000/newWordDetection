@@ -15,8 +15,8 @@ import java.util.List;
  * 命名实体识别当成
  * Created by wan on 4/24/2017.
  */
-public class CharCRF extends CRFModel {
-	private static final Logger logger = LoggerFactory.getLogger(CharCRF.class);
+public class charBased extends CRFModel {
+	private static final Logger logger = LoggerFactory.getLogger(charBased.class);
 
 	public static void main(String... args) {
 		//String al = "";
@@ -26,18 +26,18 @@ public class CharCRF extends CRFModel {
 			config.algorithm = args[0];
 		}
 		String[] corpus = new String[]{config.trainData};
-		CharCRF charCRF = new CharCRF();
+		charBased charBased = new charBased();
 
 		if (config.trainModel.contains(Ner.ner.name))
-			charCRF.train(corpus, Ner.ner);
+			charBased.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {
 			if (config.trainModel.contains(ner.name))
-				charCRF.train(corpus, ner);
+				charBased.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
-			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					charCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.name, ner),
-					ner, charCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
+			Test.test(Test.readWordList(config.getAnswerFile(config.testData, ner)),
+					charBased.detectNewWord(config.getInputFile(config.testData), "tmp/tmp." + ner.name, ner),
+					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
 	}

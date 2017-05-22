@@ -8,6 +8,7 @@ import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
+import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,10 +20,10 @@ import java.util.List;
 /**
  * Created by don on 27/04/2017.
  */
-public class WordCRF extends CRFModel implements Serializable {
-	private static final Logger logger = LoggerFactory.getLogger(CharCRF.class);
+public class wordBased extends CRFModel implements Serializable {
+	private static final Logger logger = LoggerFactory.getLogger(charBased.class);
 	static private HashSet<String> wrong = new HashSet<>();
-	private WordInfoInCorpus wordInfoInCorpus = new WordInfoInCorpus(config.totalDataInput);
+	private WordInfoInCorpus wordInfoInCorpus;
 	public Analysis parser;
 
 	{
@@ -30,7 +31,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		parser.setIsNameRecognition(false);
 		parser.setIsNumRecognition(false);
 		parser.setIsQuantifierRecognition(false);
-		Ansj.segFile(parser, config.totalDataInput, "tmp/wordCRF.ansj.txt");
+		Ansj.segFile(parser, config.getInputFile(config.totalData), "tmp/wordCRF.ansj.txt");
 	}
 
 	public static void main(String... args) {
@@ -41,25 +42,26 @@ public class WordCRF extends CRFModel implements Serializable {
 		}
 		String[] corpus = new String[]{config.trainData};
 		Test.clean();
-		WordCRF wordCRF = new WordCRF();
-		config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
+		wordBased wordBased = new wordBased();
+		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		if (config.trainModel.contains(Ner.ner.name))
-			wordCRF.train(corpus, Ner.ner);
+			wordBased.train(corpus, Ner.ner);
+		String data = config.testData;
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			if (config.trainModel.contains(ner.name))
-				wordCRF.train(corpus, ner);
+				wordBased.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
-			wordCRF.calcMostRecallInAnsj(config.testData, ner);
-			Test.test(Test.readWordList(config.getAnswerFile(config.testDataInput, ner)),
-					wordCRF.detectNewWord(config.testDataInput, "tmp/tmp." + ner.name, ner),
-					ner, wordCRF.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
+			wordBased.calcMostRecallInAnsj(config.testData, ner);
+			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),
+					wordBased.detectNewWord(config.getInputFile(data), "tmp/tmp." + ner.name, ner),
+					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
 	}
 
 	static void debug(int i, List<Term> ansj, int goldenIndex, String[] golden, String[] goldenTag, String gs) {
-		if (true) return;
+		//if (true) return;
 		if (gs.matches(config.newWordExcludeRegex))
 			return;
 		if (wrong.contains(gs))
@@ -147,7 +149,7 @@ public class WordCRF extends CRFModel implements Serializable {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		///wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
+		wordInfoInCorpus =  new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
@@ -277,7 +279,7 @@ public class WordCRF extends CRFModel implements Serializable {
 	@Override
 	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner) {
 		try {
-			//wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
+			wordInfoInCorpus =  new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
 			BufferedWriter writer = new BufferedWriter(new FileWriter(crfppInput));
 
 			for (String inputFile : inputFiles) {

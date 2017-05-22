@@ -3,8 +3,8 @@ package evaluate;
 import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.AnsjNlp;
 import ansj.AnsjTo;
-import crfModel.CharCRF;
-import crfModel.WordCRF;
+import crfModel.charBased;
+import crfModel.wordBased;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -110,20 +110,19 @@ public class Test {
 		clean();
 		Ner.calcOOV();
 
-		WordCRF wordCRF = new WordCRF();
-		CharCRF characterCRF = new CharCRF();
-		NagaoAlgorithm nagao = new NagaoAlgorithm(config.maxStringLength);
-		AnsjTo ansjToAnalysis = new AnsjTo();
-		AnsjNlp ansjNlpAnalysis = new AnsjNlp();
+		wordBased wordBased = new wordBased();
+		charBased charBased = new charBased();
+		AnsjTo ansjTo = new AnsjTo();
+		AnsjNlp ansjNlp = new AnsjNlp();
 
 		ArrayList<NewWordDetector> newWordDetectors = new ArrayList<>();
 		//newWordDetectors.add(nagao);
-		newWordDetectors.add(ansjToAnalysis);
-		newWordDetectors.add(ansjNlpAnalysis);
-		newWordDetectors.add(characterCRF);
-		newWordDetectors.add(wordCRF);
+		newWordDetectors.add(ansjTo);
+		newWordDetectors.add(ansjNlp);
+		newWordDetectors.add(charBased);
+		newWordDetectors.add(wordBased);
 
-		String inputFile = config.testDataInput;
+		String inputFile = config.getInputFile(config.testData);
 		String outputFile;
 
 

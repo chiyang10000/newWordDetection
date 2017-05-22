@@ -62,9 +62,6 @@ public class config {
 	final public static String testData = "data/test/test.txt";
 	final public static String trainData = "data/test/train.txt";
 	final public static String totalData = "data/test/total.txt";
-	public static String testDataInput = "data/test/input/test.txt.src";
-	public static String trainDataInput = "data/test/input/train.txt.src";
-	public static String totalDataInput = "data/test/input/total.txt.src";
 
 	public static Set<String> trainModel = new HashSet<>();
 	public static Set<String> testModel = new HashSet<>();
@@ -111,7 +108,7 @@ public class config {
 		RunSystemCommand.run("mkdir data/test/ans");
 	}
 
-	public static WordInfoInCorpus wordInfoInCorpus_total ;
+	//public static WordInfoInCorpus wordInfoInCorpus_total ;
 	//public static WordInfoInCorpus wordInfoInCorpus_corpus = new WordInfoInCorpus(config.corpusFile);
 
 
@@ -134,8 +131,8 @@ public class config {
 	public static void main(String... args) {
 		for (Ner type : Ner.supported) {
 			test(
-					readWordList(config.getAnswerFile(config.trainDataInput, type)),
-					readWordList(config.getAnswerFile(config.testDataInput, type)),
+					readWordList(config.getAnswerFile(config.trainData, type)),
+					readWordList(config.getAnswerFile(config.testData, type)),
 					type, "count", "count"
 			);
 		}
@@ -159,6 +156,9 @@ public class config {
 		return "data/test/ans/" + inputFile.replaceAll(".*/", "") + "." + ner.name;
 	}
 
+	public static String getInputFile(String inputFile) {
+		return "data/test/input/" + inputFile.replaceAll(".*/", "") + ".src";
+	}
 	public static String getWordListFile(String inputFile) {
 		return "data/corpus/wordlist/" + inputFile.replaceAll(".*/", "") + ".wordlist";
 	}
