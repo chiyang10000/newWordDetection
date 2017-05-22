@@ -1,4 +1,4 @@
-# Unigram: word0, length1, pos2, tf3, pmi4, le5, re6, tf with previous word7
+# Unigram: word0, length1, pos2, tf3, pmi4, le5, re6, tf with previous word7, 拼音8
 #Upmi:%x[0,4]
 
 # length

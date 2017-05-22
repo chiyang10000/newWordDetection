@@ -1,6 +1,9 @@
 package crfModel;
 
 import ansj.Ansj;
+import com.github.stuxuhai.jpinyin.PinyinException;
+import com.github.stuxuhai.jpinyin.PinyinFormat;
+import com.github.stuxuhai.jpinyin.PinyinHelper;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
 import evaluate.Ner;
@@ -353,6 +356,12 @@ public class wordBased extends CRFModel implements Serializable {
 
 		@Override
 		public String toString() {
+			String pinying = "";
+			try {
+				pinying = PinyinHelper.convertToPinyinString(word, ",", PinyinFormat.WITHOUT_TONE);
+			} catch (PinyinException e) {
+				e.printStackTrace();
+			}
 			return String.join("\t",
 					word,
 					Integer.toString(length),
@@ -361,8 +370,8 @@ public class wordBased extends CRFModel implements Serializable {
 					Integer.toString(pmi),
 					Integer.toString(leftEntropy),
 					Integer.toString(rightEntropy),
-					Integer.toString(tfWithPreWord)
-					//word.matches("^型$") ? "T": "F"
+					Integer.toString(tfWithPreWord),
+					pinying
 			);
 		}
 	}

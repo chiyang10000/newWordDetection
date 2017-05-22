@@ -1,5 +1,8 @@
 package Feature;
 
+import com.github.stuxuhai.jpinyin.PinyinException;
+import com.github.stuxuhai.jpinyin.PinyinFormat;
+import com.github.stuxuhai.jpinyin.PinyinHelper;
 import evaluate.config;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.Analysis;
@@ -41,28 +44,36 @@ public class CharacterFeature {
 		//System.err.println(sentence);
 		List<Term> src = ansj.parseStr(sentence).getTerms();
 		List<String> res = new ArrayList<>();
-		//String preWordPos = "^", preWord = "^";
 		for (int i = 0; i < src.size(); i++) {
 			Term term = src.get(i);
 			String word = term.getRealName();
 			String pos = term.getNatureStr();
-			//String postWord = i != src.size() - 1 ? src.get(i + 1).getRealName() : "$";
-			//String postWordPos = i != src.size() - 1 ? src.get(i + 1).getNatureStr() : "$";
 
+			String pinying = "";
+			try {
 			if (word.length() == 1) {
-				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "S"));
+				pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(0)), "", PinyinFormat .WITHOUT_TONE);
+				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "S", pinying));
 			} else if (word.length() == 2) {
-				//res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "B", preWord, preWordPos, postWord, postWordPos));
-				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "B"));
-				res.add(String.join("\t", Character.toString(word.charAt(1)), word, pos, "E"));
+				pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(0)), "", PinyinFormat .WITHOUT_TONE);
+				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "B", pinying));
+				pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(1)), "", PinyinFormat .WITHOUT_TONE);
+				res.add(String.join("\t", Character.toString(word.charAt(1)), word, pos, "E", pinying));
 			} else {
-				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "B"));
-				for (int k = 1; k < word.length() - 1; k++)
-					res.add(String.join("\t", Character.toString(word.charAt(k)), word, pos, "M"));
-				res.add(String.join("\t", Character.toString(word.charAt(word.length() - 1)), word, pos, "E"));
+				pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(0)), "", PinyinFormat .WITHOUT_TONE);
+				res.add(String.join("\t", Character.toString(word.charAt(0)), word, pos, "B", pinying));
+				for (int k = 1; k < word.length() - 1; k++) {
+					pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(k)), "", PinyinFormat .WITHOUT_TONE);
+					res.add(String.join("\t", Character.toString(word.charAt(k)), word, pos, "M", pinying));
+				}
+				pinying = PinyinHelper.convertToPinyinString(Character.toString(word.charAt(word.length() - 1)), "",
+						PinyinFormat
+						.WITHOUT_TONE);
+				res.add(String.join("\t", Character.toString(word.charAt(word.length() - 1)), word, pos, "E", pinying));
 			}
-			//preWord = word;
-			//preWordPos = pos;
+			} catch (PinyinException e) {
+				e.printStackTrace();
+			}
 		}
 		return res;
 	}
