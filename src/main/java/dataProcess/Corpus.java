@@ -92,7 +92,7 @@ public class Corpus {
 							wordList.add(word);
 							writer.newLine();
 							if (i>0)
-							if (isNewWord(word, null) && isNewWord(config.removePos(strs[i-1]), null))
+							if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i-1])))
 								System.err.println(strs[i-1] +"\t" + strs[i]);
 						}
 					} catch (IOException e) {

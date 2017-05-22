@@ -3,19 +3,26 @@ package dataProcess;
 import ansj.Ansj;
 import evaluate.config;
 import org.ansj.splitWord.analysis.ToAnalysis;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import javax.swing.plaf.basic.BasicScrollPaneUI;
 import java.io.*;
+import java.util.HashSet;
 
 /**
  * Created by wan on 5/19/2017.
  */
 public class posPattern {
 	CounterMap counterMap = new CounterMap();
+	private static Logger logger = LoggerFactory.getLogger(posPattern.class);
 	void countPosPattern(String inputFile) {
+		logger.debug("counting pos pattern from {}", inputFile);
 		try (BufferedReader input = new BufferedReader(new FileReader(inputFile))){
 			String line;
 			while ((line = input.readLine())!= null) {
 				line = line.replace('[', ' ').replaceAll("][^ ]+", " ");
+				line = line.replaceAll("/nx", "/en");
 				line = line.replaceAll("[^ ]+/", "").trim();
 				String[] segs = line.split(" +");
 				//System.out.println(line);
@@ -33,12 +40,12 @@ public class posPattern {
 		}
 	}
 	void countPosPattern(String inputFile, posPattern exist) {
+		HashSet<String> kk = new HashSet<>();
 		try (BufferedReader input = new BufferedReader(new FileReader(inputFile))){
 			String line;
 			int tt =0 ;
 			while ((line = input.readLine())!= null) {
 				line = line.replace('[', ' ').replaceAll("][^ ]+", " ");
-				line = line.replaceAll("/en", "/nx");
 				String[] jj = line.split(" +");
 				line = line.replaceAll("[^ ]+/", "");
 				String[] segs = line.split(" +");
@@ -48,10 +55,13 @@ public class posPattern {
 					counterMap.incr(tmp);
 					if (!segs[i].matches("[\\p{IsLatin}]+"))
 						continue;
+					if (kk.contains(tmp))
+						continue;
 					if (!tmp.contains("w"))
 						if(!tmp.contains("u"))
 							if(!tmp.contains("y"))
-					if (!exist.counterMap.countAll().keySet().contains(tmp)) {
+					if (!(exist.counterMap.get(tmp) > 3)) {
+						kk.add(tmp);
 						System.err.println(jj[i] + jj[i + 1] + jj[i + 2]);
 						tt++;
 					}
@@ -73,7 +83,7 @@ public class posPattern {
 		posPattern p2 = new posPattern();
 		p2.countPosPattern(config.totalData);
 		posPattern pp = new posPattern();
-		//pp.countPosPattern("tmp/ansj.txt", p2);
-		pp.countPosPattern(config.totalData, p1);
+		pp.countPosPattern("tmp/ansj.txt", p1);
+		//pp.countPosPattern(config.totalData, p1);
 	}
 }
