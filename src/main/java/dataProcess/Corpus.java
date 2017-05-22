@@ -71,7 +71,9 @@ public class Corpus {
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (line.trim().length() == 0) continue;
-				for (String w : line.split(config.sepWordRegex)) {
+				String[] strs = line.split(config.sepWordRegex);
+				for (int i = 0; i < strs.length; i++) {
+					String w = strs[i];
 					String word = config.removePos(w);
 					String pos = config.getPos(w);
 					try {
@@ -89,6 +91,9 @@ public class Corpus {
 											.length() + "\t" + pos));
 							wordList.add(word);
 							writer.newLine();
+							if (i>0)
+							if (isNewWord(word, null) && isNewWord(config.removePos(strs[i-1]), null))
+								System.err.println(strs[i-1] +"\t" + strs[i]);
 						}
 					} catch (IOException e) {
 						logger.debug("untagged {}", line);
@@ -233,11 +238,13 @@ public class Corpus {
 	public static void main(String... args) throws IOException {
 
 
+		/*
 		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
 		RunSystemCommand.run("rm data/corpus/*");
+		*/
 		trainData = new Corpus(config.trainData);
 
 		convertToSrc(new String[]{config.testData}, config.getInputFile(config.testData));

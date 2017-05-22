@@ -1,8 +1,10 @@
 package evaluate;
 
+import ansj.Ansj;
 import dataProcess.ConvertHalfWidthToFullWidth;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
+import org.ansj.splitWord.analysis.ToAnalysis;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,6 +15,9 @@ import java.io.PrintWriter;
  */
 public class Analyse {
 	static public void main(String... args) throws IOException {
+		Ansj.segFile(new ToAnalysis(), config.getInputFile(config.totalData),"tmp/tmp");
+		if (true)
+			return;
 		//ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.renmingribao, "tmp/tmp");
 		//Corpus.convertToSrc(new String[]{"tmp/tmp"}, config.corpusFile);
 		Corpus tmp = new Corpus(config.totalData);

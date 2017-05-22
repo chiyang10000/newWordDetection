@@ -33,10 +33,11 @@ public class config {
 	final public static double thresholdNeighborEntropy = 1.5;
 	final public static Integer testSize = 5;
 
-	public static final String timeRegx = "([\\p{IsDigit}：－～兆亿万千百十九八七六五四三二一]+" +
-			"((([年月日]|(世纪)|(年代))[前初中底末]?)|[号时分秒点]|(秒钟)|(点钟)|(月份)|(小时))?)";
+	public static final String timeRegx =
+			"([\\p{IsDigit}－～：兆亿万千百十九八七六五四三二一]+" +
+			"((([年月日]|(世纪)|(年代))[前初中底末]?)|[号时分秒点]|(秒钟)|(点钟)|(月份)|(小时)))";
 	public static final String pureLetterStringRegex = "([\\p{IsLatin}\\p{IsCyrillic}]+)";
-	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％：∶／×－＋·～]+)";
+	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％∶：／×－＋·～]+)";
 	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+)";
 	final public static String punctExcludeRegx = "([　°～｜■＋±\\pP&&[^·－／]]+)";
 	final public static String newWordExcludeRegex = String.join("|", pureNumStringRegex, pureLetterStringRegex,
@@ -52,7 +53,7 @@ public class config {
 	public static Boolean isShuffle = false;
 	public static Boolean isNewWordFilter = true;
 	public static Boolean isCRFsuite = true;
-	public static String algorithm = "ap";
+	public static String algorithm = " -p feature.minfreq=2";
 
 
 	final public static String news = "data/raw/news.txt";
@@ -78,7 +79,6 @@ public class config {
 					String[] tmp = prop.getProperty(key).split(",");
 					for (String tmp0: tmp) {
 						trainModel.add(tmp0);
-						System.err.println(tmp0);
 					}
 					continue;
 				}
@@ -129,6 +129,8 @@ public class config {
 	}
 
 	public static void main(String... args) {
+		for(String tmp: new String[]{"21", "20世纪末", "90年代", "5月","四月中", "三点钟","０３：２８"})
+			System.err.println(tmp +"\t "+tmp.matches(timeRegx));
 		for (Ner type : Ner.supported) {
 			test(
 					readWordList(config.getAnswerFile(config.trainData, type)),

@@ -29,7 +29,7 @@ abstract public class CRFModel implements NewWordDetector {
 	{
 		if (System.getProperty("os.name").contains("Win")) {
 			config.isCRFsuite = true;
-			config.algorithm = "ap";
+			config.algorithm = "ap" + config.algorithm;
 		}
 		if (config.isCRFsuite) {
 			crfToolWrapper = new CRFsuiteWrapper(this);

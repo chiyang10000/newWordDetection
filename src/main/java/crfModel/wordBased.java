@@ -41,7 +41,7 @@ public class wordBased extends CRFModel implements Serializable {
 		Ner.calcOOV();
 		if (args.length > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = args[0];
+			config.algorithm = args[0] + config.algorithm;
 		}
 		String[] corpus = new String[]{config.trainData};
 		Test.clean();

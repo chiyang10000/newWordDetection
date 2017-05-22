@@ -158,7 +158,7 @@ M113/nx 装甲/b 输送车/n 只/d 装备/v 一/m 挺/q 外/f 置/v 机枪/n ，
 具体/a 编成/v 为/v ：/w 司令部/n 机关/n 和/c 直属/vn 分队/n 共/d 2232/m 人/n ，/w 其中/r 师部/n 与/c 师部连/n 268/m 人/n ，/w 军事/n 情报营/n 355/m 人/n ，/w 通信营/n 488/m 人/n ，/w 防空/vn 炮兵营/n 452/m 人/n ，/w 工兵营/n 401/m 人/n ，/w 防化连/n 129/m 人/n ，/w 宪兵连/n 98/m 人/n ，/w 师乐队/n 41/m 人/n ；/w 每个/r 旅部/n 与/c 旅部连/n 共/d 264/m 人/n ；/w 9/m 个/q 步兵营/n ，/w 每营/r 697/m 人/n ，/w 共计/v 6273/m 人/n ；/w 航空旅/n 1075/m 人/n ，/w 编/v 有/v 旅部/n 与/c 旅部连/n 194/m 人/n ，/w 攻击/v 直升机/n 营/n 245/m 人/n ，/w 战斗/vn 航空营/n 210/m 人/n ，/w 空中/s 侦察/vn 中队/n 426/m 人/n ；/w 空降/vn 野战/b 炮兵团/n 1404/m 人/n ，/w 其中/r 司令部/n 与/c 司令部/n 连/n 120/m 人/n ，/w 3/m 个/q 野炮营/n ，/w 每营/r 428/m 人/n ；/w 师/n 支援/vn 司令部/n 共/d 1691/m 人/n ，/w 编/v 有/v 司令部/n 与/c 司令部/n 连/n 及/c 物资/n 管理/vn 中心/n 187/m 人/n ，/w 补给/vn 运输营/n 412/m 人/n ，/w 军械/n 修理/vn 营/n 513/m 人/n ，/w 航空/n 维修连/n 214/m 人/n ，/w 卫生营/n 365/m 人/n 。/w 
 该师/r 在/p 任务/n 需要/v 时/n ，/w 还/d 可/v 增/v 编/v 1/m 个/q 轻型/b 坦克营/n 。/w 
 80/m 年代/n 末/f 以来/f ，/w 第82/m 空降师/n 陆续/d 换/v 装/v 了/u 更为/d 先进/a 的/u 武器/n 装备/n ，/w 加强/v 了/u 其/r 综合/v 作战/v 能力/n 。/w 
-目前/t ，/w 其/r 主要/b 装备/n 有/v ：/w “/w 复仇者/nz ”/w 防空/vn 导弹/n 系统/n 48/m 套/q ，/w “/w 陶/a ”/w 式/b 导弹/n 发射架/n 188/m 具/q ，/w 105/m 毫米/q 牵引式/b 榴弹炮/n 54/m 门/q ，/w 60/m 毫米/q 迫击炮/n 54/m 门/q ，/w 81/m 毫米/q 迫击炮/n 36/m 门/q ，/w M551/nx “/w 谢里登/nr ”/w 轻型/b 坦克/n 54/m 辆/q ，/w AH—64型/b 攻击/vn 直升机/n 30/m 架/q ，/w OH—58/m 型/b 观察/vn 直升机/n 43/m 架/q ，/w EH—60型/b 电子/n 干扰/vn 直升机/n 3/m 架/q ，/w UH—60型/b 多/a 用途/n 直升机/n 41/m 架/q 。/w 
+目前/t ，/w 其/r 主要/b 装备/n 有/v ：/w “/w 复仇者/nz ”/w 防空/vn 导弹/n 系统/n 48/m 套/q ，/w “/w 陶/a ”/w 式/b 导弹/n 发射架/n 188/m 具/q ，/w 105/m 毫米/q 牵引式/b 榴弹炮/n 54/m 门/q ，/w 60/m 毫米/q 迫击炮/n 54/m 门/q ，/w 81/m 毫米/q 迫击炮/n 36/m 门/q ，/w M551/nx “/w 谢里登/nr ”/w 轻型/b 坦克/n 54/m 辆/q ，/w AH—64型/b 攻击/vn 直升机/n 30/m 架/q ，/w OH—58型/b 观察/vn 直升机/n 43/m 架/q ，/w EH—60型/b 电子/n 干扰/vn 直升机/n 3/m 架/q ，/w UH—60型/b 多/a 用途/n 直升机/n 41/m 架/q 。/w 
 二/m 、/w 主要/b 任务/n 
 第82/m 空降师/n 战略/n 机动/b 能力/n 强/a ，/w 因此/c 一直/d 在/p 美/ns 本土/n 担任/v 战略/n 预备队/n ，/w 是/v 美/ns 中央/n 总部/n 下/f 辖/v 陆军/n 四/m 个/q 快速/b 反应师/n 之一/r ，/w 可/v 向/p 全世界/n 任一/r 地区/n 实施/v 快速/d 部署/v 。/w 
 该师/r 可/v 完成/v 战略/n 、/w 战役/n 和/c 战术/n 多种/m 任务/n ，/w 具体/a 有/v ：/w 通过/p 垂直/v 作战/v ，/w 夺取/v 和/c 扼守/v 重要/a 目标/n ；/w 扩张/v 核武器/n 或/c 化学武器/n 的/u 作战/vn 效果/n ；/w 营救/v 被/p 围困/v 在/p 海外/s 的/u 美国/ns 公民/n ；/w 增援/v 前沿/s 部署/vn 部队/n ；/w 遂行/v 大规模/b 战术/n 袭击/v ；/w 担任/v 战略/n 或/c 战区/n 预备队/n ；/w 为/p 准备/v 长/a 时间/n 的/u 地面/n ／/w 空中/s 作战/vn ，/w 夺取/v 1/m 个/q 或/c 多/m 个/q 中间/f 基地/n 或/c 前进/vn 作战/vn 基地/n 等/u 。/w 
@@ -649,7 +649,7 @@ F-15/nx 主要/b 的/u 设计/vn 主要/d 是/v 突出/a 空战/vn 格斗/vn 能
 第493/m 中队/n 的/u F-15C/nx 和/c 494/m 中队/n 的/u F-15E/nx 参加/v 了/u 1999年/t 3月/t 24日/t 开始/v 的/u 对/p 南联盟/nz 实施/v 空袭/v 的/u 任务/n 。/w 
 动力/n 装置/n 早期/f 装/v 两/m 台/q 普惠/nz 公司/n F100-PW-100/nx 涡扇/n 发动机/n ，/w 单/m 台/q 静推力/n 65.2/m 千牛/q ，/w 加力/n 推力/n 105.9/m 千牛/q ，/w 1991年/t 后/f 换装/vn 推力/n 为/v 129/m 千牛/q 一级/b 的/u F110-GE-129/nx 或/c F100-PW-229/nx 涡扇/n 发动机/n 。/w 
 主要/b 机载/b 设备/n 是/v 休斯/nz 公司/n 的/u AN／APG-70/nx (/w C／D型/b )/w 或/c AN／APG-63/nx (/w A／B型/b )/w 火控/b 雷达/n ，/w AN／ASN-108/nx 姿态/n //w 方向/n 参考/vn 系统/n ，/w AN／ALQ-119/nx 电子/n 干扰/vn 吊舱/n ，/w AN／ARN-118/nx 塔康/nz 系统/n ，/w AN／ASN-109/nx 惯性/n 导航/vn 系统/n ，/w AN／AWG-20/nx 火控/b 系统/n ，/w AN／ASK-6/nx 大气/n 数据/n 计算机/n ，/w CP-1075／AYK/nx 中央/n 数据/n 计算机/n 等/u 。/w 
-武器/n ：/w 1/m 门/q M61-A120/nx 毫米/q 六/m 管/q 机炮/n ，/w 备弹/n 940/m 发/q ，/w 外部/f 可以/v 同时/t 挂/v 4/m 枚/q AIM-9L/nx “/w 响尾蛇/nz ”/w 近距/n 和/c AIM-7F/nx “/w 麻雀/nz ”/w 中距/n 空空导弹/n ，/w 或/c 8/m 枚/q AIM-120/nx 先进/a 中距/n 空空导弹/n ，/w 对/p 地/u 攻击/v 时/n 可/v 携带/v 各种/r 炸弹/n 、/w 火箭弹/n 等/u 。/w 
+武器/n ：/w 1/m 门/q M61A-1/nx ——/w 20/m 毫米/q 六/m 管/q 机炮/n ，/w 备弹/n 940/m 发/q ，/w 外部/f 可以/v 同时/t 挂/v 4/m 枚/q AIM-9L/nx “/w 响尾蛇/nz ”/w 近距/n 和/c AIM-7F/nx “/w 麻雀/nz ”/w 中距/n 空空导弹/n ，/w 或/c 8/m 枚/q AIM-120/nx 先进/a 中距/n 空空导弹/n ，/w 对/p 地/u 攻击/v 时/n 可/v 携带/v 各种/r 炸弹/n 、/w 火箭弹/n 等/u 。/w 
 尺寸/n 数据/n 机长/n 19.43/m 米/q ，/w 机高/n 5.63/m 米/q ，/w 翼展/n 13.05/m 米/q ，/w 机翼/n 面积/n 56.5/m 平方米/q ，/w 展弦比/n 3.01/m 。/w 
 重量/n 及/c 载荷/n 空机/n 重量/n 12973/m 千克/q ，/w 最/d 大/a 起飞/vn 重量/n 30845/m 千克/q (/w 制空/vn 战斗机/n 20244/m 千克/q )/w ，/w 最/d 大/a 燃油/n 重量/n (/w 机内/s )/w 6103/m 千克/q ，/w (/w 外挂/v ，/w 2/m 个/q 保形/n 油箱/n 和/c 3/m 个/q 副油箱/n )/w 9818/m 千克/q ，/w 最/d 大/a 外挂/vn 武器/n 载荷/n 10705/m 千克/q 。/w 
 性能/n 数据/n 最/d 大/a 平飞/vn 速度/n M2.5/nx ，/w 进场/vn 速度/n 232/m 千米／小时/q ，/w 实用/a 升限/n 18300/m 米/q ，/w 起飞/v 滑跑/vn 距离/n (/w 截击/v )/w 274/m 米/q ，/w 着陆/v 滑跑/v 距离/n (/w 截击/v ，/w 不/d 用/v 减速/vn 伞/n )/w 1067/m 米/q ，/w 最/d 大/a 续航/vn 时间/n (/w 无/v 空中/s 加油/v )/w 5/m 小时/n 15分/t ，/w (/w 空中/s 加油/v )/w 15/m 小时/n ，/w 转场/vn 航程/n (/w 带/v 保形/n 油箱/n )/w 5745/m 千米/q ，/w (/w 不/d 带/v 保形/n 油箱/n )/w 4631/m 千米/q ，/w 限制/v 过载/v 9/m +/v -/v 3/m g/q 。/w 
@@ -732,11 +732,11 @@ F—16/nx 主要/b 型别/n
 F—16/nx 至今/d 已/d 有/v 10/m 多种/m 改型/n ，/w 如/v 单座/b 战斗机/n 、/w 双座/b 战斗/vn ／/w 教练机/n ，/w 侦察机/n 、/w 先进/a 技术/n 试验机/n 等/u 类别/n 其/r 不同/a 的/u 构型/n 可能/v 达/v 几十/m 种/q ，/w 但/c 最/d 主要/b 的/u 型别/n 只/d 有/v 4/m 种/q ：/w A型/b ，/w 基本型/b ；/w B型/b ，/w 双座/b 战斗/vn ／/w 教练型/b ；/w C型/b ，/w A型/b 的/u 改进型/b ；/w D型/b ，/w B型/b 的/u 改进型/b 。/w 
 F—16A／B型/b 一起/d 装备/v 部队/n 。/w 
 A型/b 与/p B型/b 的/u 比例/n 是/v 2：1/m ，/w 也就是说/c ，/w 每/r 装备/v 两/m 架/q A型/b 战斗机/n ，/w 就/d 要/v 同时/t 装备/v 一/m 架/q B型/b ，/w 主要/d 作为/v 教练型/b 。/w 
-最初/b 美军/n 装备/v 的/u 都/d 是/v 这种/r A／B/nx 型/b 战斗机/n 。/w 
+最初/b 美军/n 装备/v 的/u 都/d 是/v 这种/r A／B/型/b 战斗机/n 。/w 
 后来/t 经过/p 不断/d 改进/v ，/w 在/p 1984年/t 出产/v F-16A／B/nx 的/u 改进型/b F—16C／D/nx 。/w 
 刚/d 一/d 开始/v ，/w 美国/ns 国会/n 不/d 批准/v 向/p 国外/s 输出/v F—16A／B/nx 这样/r 的/u 战斗机/n 。/w 
 后来/t ，/w F—16C／D/nx 诞生/v 了/y ，/w 美国/ns 国会/n 才/d 批准/v 向/p 国外/s 销售/v F—16A／B/nx 战斗机/n 。/w 
-目前/t 美国/ns 空/n 、/w 海军/n 共/d 有/v F—16/nx 战斗机/n 2800/m 余/m 架/q ，/w 大部分/m 为/v F—16C／D/nx 型/n 。/w 
+目前/t 美国/ns 空/n 、/w 海军/n 共/d 有/v F—16/nx 战斗机/n 2800/m 余/m 架/q ，/w 大部分/m 为/v F—16C／D型/n 。/w 
 第15/m 批/q 生产型/b F-16B/nx 飞机/n 第15/m 批/q 生产型/b F—16B/nx 是/v 新/a 一代/n 战斗机/n 。/w 
 由于/c 它/r 加大/v 了/u 尾冀/n ，/w 所以/c 在/p 大迎角/n 操纵/v 时/n 更加/d 安全/a ，/w 同时/t 也/d 改变/v 了/u 低速/n 飞行/v 和/c 进场/v 着陆/v 时/n 的/u 操纵性/n 。/w 
 但是/c ，/w 尾翼/n 加大/v 也/d 带来/v 了/u 机动/b 飞行/v 中/f 阻力/n 增大/v 的/u 问题/n 。/w 
@@ -818,7 +818,7 @@ A／V-8B/nx “/w 鹞/nz ”/w 战斗机/n 是/v AV-8A/nx 的/u 改进型/b ，/
 主要/d 用于/v 近距/n 空中/s 支援/v 和/c 侦察/v 。/w 
 1987年/t 6月/t 首次/m 试飞/v 成功/a ，/w 1989年/t 9月/t 交付/v 部队/n 。/w 
 乘员/n 1/m 人/n ，/w 装备/v F402-RR-406A/nx 涡扇式/b 发动机/n ，/w 19378/m 公斤/q 推力/n 。/w 
-翼展/n 9.25/m 米/q ，/w 机长/n 14.12/m ，/w 机高/n 3.55/m 米/q ，/w 最/d 大/a 时速/n 马赫/q 0.87/m ，/w 实用/a 升限/n 16764/m 米/q ，/w 最/d 大/a 起飞/vn 重量/n 14061/m 公斤/q ，/w 作战/vn 半径/n 1112/m 公里/q ，/w 转场/vn 航程/n 3641/m 公里/q ，/w 起飞/v 滑跑距/n 366/m 米/q 。/w 
+翼展/n 9.25/m 米/q ，/w 机长/n 14.12/m ，/w 机高/n 3.55/m 米/q ，/w 最/d 大/a 时速/n 0.87/m 马赫/q ，/w 实用/a 升限/n 16764/m 米/q ，/w 最/d 大/a 起飞/vn 重量/n 14061/m 公斤/q ，/w 作战/vn 半径/n 1112/m 公里/q ，/w 转场/vn 航程/n 3641/m 公里/q ，/w 起飞/v 滑跑距/n 366/m 米/q 。/w 
 主要/b 武器/n 包括/v 2/m 门/q 25/m 毫米/q GAU-12/nx 五/m 管/q 航炮/n 、/w 7/m 个/q 外挂/vn 点/n (/w 可/v 用于/v 挂载/v 各类/r 空对空/n 和/c 空对地/n 弹药/n 。/w )/w ，/w 可/v 为/p 美国/ns 海军/n 陆战队/n 提供/v 有效/a 的/u 远程/b 火力/n 支援/vn 。/w 
 F-117A/nx “/w 夜鹰/nz ”/w 
 F-117A/nx 是/v 美国/ns 前/f 洛克希德/nz 公司/n 研制/v 的/u 隐身/vn 攻击机/n 。/w 
@@ -868,7 +868,7 @@ F-117A/nx 战斗机/n 的/u 所有/b 武器/n 都/d 挂/v 在/p 武器/n 舱/n �
 为了/p 支援/v 美/ns 国防军/n 别动队/n 在/p 巴拿马/ns 里奥阿托/ns 的/u 空降/vn 作战/vn ，/w 空军/n 首次/m 出动/v 了/u F—l17A/nx 隐形/b 战斗机/n 参战/v 。/w 
 20日/t 消展/n ，/w 英国/ns 第37/m 战术/n 战斗机/n 联队/n 的/u 6/m 架/q F—117A/nx ，/w 从/p 内华达州/ns 的/u 托诺帕/ns 基地/n 起飞/v 前往/v 巴拿马/ns 。/w 
 中途/s 飞行/v 18/m 个/q 小时/n ，/w 经过/p 4/m 、/w 5/m 次/q 空中/s 加油/v ，/w 才/d 飞/v 到/v 目的地/n 。/w 
-当/p 飞机/n 飞过/v 里奥阿托/ns 上空/s 时/n ，/w 其中/r 2/m 架/q F—l17A/nx 轰炸/v 了/u 里奥阿托/ns 军营/n ，/w 各/r 投下/v l/nx 枚/q 900/m 千克/q 的/u 激光/n 制导/vn 炸弹/n 。/w 
+当/p 飞机/n 飞过/v 里奥阿托/ns 上空/s 时/n ，/w 其中/r 2/m 架/q F—l17A/nx 轰炸/v 了/u 里奥阿托/ns 军营/n ，/w 各/r 投下/v 1/m 枚/q 900/m 千克/q 的/u 激光/n 制导/vn 炸弹/n 。/w 
 这/r 两/m 颗/q 炸弹/n 并/d 没有/v 直接/a 扔/v 在/p 兵营/n 内/f ，/w 而/c 是/v 投/v 在/p 兵营/n 附近/f 的/u 一/m 片/q 开阔/vn 地上/s 。/w 
 这样/r 做/v 据说/v 是/v 旨在/v 使/v 效忠于/v 诺列加/nr 将军/n 的/u 军队/n “/w 惊慌失措/v ，/w 以/p 削弱/v 其/r 战斗力/n ”/w ，/w 而/c 不/d 是/v 为了/p 消灭/v 他们/r 。/w 
 另外/r 4/m 架/q F—I17A/nx ，/w 有/v 2/m 架/q 留着/v 备用/v ，/w 2/m 架/q 中途/s 返回/v 基地/n 。/w 
@@ -1495,7 +1495,7 @@ BGM-109D/nx 布撒型/b 对/p 陆/n 攻击/vn 导弹/n
 中国人民解放军/nt 海军/n 拥有/v 的/u 092型/b （/w 北约/nt 代号/n 夏级/n ）/w SSBN/nx ，/w 装有/v 12/m 枚/q 单/b 弹头/n 的/u 巨浪/nz 1型/b SLBM/nx ，/w 射程/n 2，000/m 千米/q 。/w 
 中国/ns 海军/n 正在/d 研究/v 新/a 的/u 094型/b SSBN/nx ，/w 它/r 可能/v 将/d 装备/v 16/m 枚/q 也/d 正在/d 开发/v 的/u 巨浪/n 2型/b SLBM/nx （/w 可能/v 配备/v 分导式/n 多弹头/n ）/w 。/w 
 目前/t 我国/n 的/u 094级/n （/w 西方/s 称为/v 晋级/n ）/w 弹道导弹/n 核潜艇/n 已/d 有/v 3/m 艘/q 部署/v ，/w 另/d 有/v 2/m 艘/q 在/d 建/v 。/w 
-092型/b 弹道导弹/n 核潜艇/n （/w 北约/nt 代号/n “/w 夏/t ”/w 级/n ）/w 是/v 中国/ns 自行/d 研制/v 的/u 第一/m 代/q 弹道导弹/n 核潜艇/n ，/w 共/d 建造/v 4/m 艘/q 〔/w 4/m 艘/q 潜艇/n 都/d 为/v 一个/m 编号/n ，/w 仅/d 解放军/n 内/f 用/p 甲/M 乙/M 丙/M 丁/M 表示/v ，/w 所以/c 部分/m 人/n 认为/v 该级/r 只/d 有/v 一/m 艘/q 潜艇/n 〕/w ，/w 命名/v 为/v 长征/nz 6/m 号/q 。/w 
+092型/b 弹道导弹/n 核潜艇/n （/w 北约/nt 代号/n “/w 夏/t ”/w 级/n ）/w 是/v 中国/ns 自行/d 研制/v 的/u 第一/m 代/q 弹道导弹/n 核潜艇/n ，/w 共/d 建造/v 4/m 艘/q 〔/w 4/m 艘/q 潜艇/n 都/d 为/v 一个/m 编号/n ，/w 仅/d 解放军/n 内/f 用/p 甲/m 乙/m 丙/m 丁/m 表示/v ，/w 所以/c 部分/m 人/n 认为/v 该级/r 只/d 有/v 一/m 艘/q 潜艇/n 〕/w ，/w 命名/v 为/v 长征/nz 6/m 号/q 。/w 
 它/r 是/v 基于/p 091型/b 攻击型/b 核动力/n 潜艇/n 发展/v 而/c 来/v 。/w 
 装备/v 有/v 12/m 枚/q 射程/n 约/d 为/v 2000/m 千米/q 的/u “/w 巨浪-1/nz ”/w 型/b 潜射/vn 弹道导弹/n 。/w 
 陆基型/b 
@@ -1932,7 +1932,7 @@ BLU-82/nx 既/c 可/v 采用/v 地面/n 雷达/n 制导/v ，/w 也/d 可用/v �
 该/r 基地/n 综合/vn 设施/n 完善/a ，/w 战略/n 地位/n 重要/a ，/w 已/d 成为/v 美军/n 在/p 太平洋/n 地区/n 最/d 重要/a 的/u 海/n 、/w 空/n 作战/vn 基地/n 和/c 后勤/n 补给/vn 基地/n ，/w 被/p 称之为/v “/w 印度洋/n 上/f 不/d 沉/v 的/u 航空母舰/n ”/w 。/w 
 目前/t ，/w 美军/n 正/d 准备/v 把/p 6/m 架/q B-2/nx 隐身/vn 轰炸机/n 部署/v 在/p 迪戈加西亚/ns 。/w (/w 完/v )/w 
 贾巴尔/nr 空军/n 基地/n 
-贾巴尔/nr 空军/n 基地/n 位于/v 北纬/b 51/m 度/q 57/m 分/t ，/w 东经/b 55/m 度/q 18/m 分/t ，/w 科威特城/ns 西南/f 35/m 英里/q ，/w 有/v 两/m 条/q 长/a 3500/m 米/q 的/u 跑道/n 。/w 
+贾巴尔/nr 空军/n 基地/n 位于/v 北纬/b 51/m 度/q 57/m 分/q ，/w 东经/b 55/m 度/q 18/m 分/q ，/w 科威特城/ns 西南/f 35/m 英里/q ，/w 有/v 两/m 条/q 长/a 3500/m 米/q 的/u 跑道/n 。/w 
 驻/v 有/v 美国/ns 空军/n 第379/m 远征/vn 联队/n 的/u 数/m 千/m 空军/n 人员/n ，/w 配备/v 多种/m 战机/n 和/c 补给/vn 飞机/n 。/w 
 该/r 联队/n 的/u F-15E/nx 战机/n 经常/d 执行/v 对/p 伊拉克/ns 南部/f 禁飞区/n 巡逻/vn 任务/n 。/w 
 该/r 沙漠/n 机场/n 是/v 美/ns 空军/n 在/p 海湾/n 的/u 中转/vn 与/c 后勤/n 中心/n 。/w 
@@ -4015,7 +4015,7 @@ M58地雷清除线电荷/nx 美军/n 攻/v 进城/v 后/f ，/w 发现/v 武装/
 当时/t A连/n 的/u 士兵/n 在/p 11月/t 12日/t 清理/v 完/v 一/m 栋/q 建筑/n ，/w 连长/n 西姆斯/nr 打算/v 在/p 这/r 栋/q 建筑/n 的/u 顶楼/n 建立/v 一个/m 前线/s 观察点/n ；/w 当/p 他/r 进入/v 这/r 栋/q 建筑/n 时/n 他/r 询问/v 手下/n 是否/v 已经/d 检查/v 仔细/a ，/w 手下/n 回答/v 没有/v 问题/n ；/w 然而/c 这/r 栋/q 建筑/n 的/u 墙角/n 挖/v 有/v 一个/m 蜘蛛/n 洞/n ，/w 一个/m 武装/n 分子/n 在/p 美军/n 对/p 建筑/n 检查/v 完毕/v 后/f 悄悄/d 从/p 这里/r 爬/v 了/u 进去/v 并/d 藏/v 在/p 了/u 楼上/s ，/w 西姆斯/nr 上楼/v 时/n 突然/a 遭到/v 了/u 这个/r 武装/n 分子/n 的/u 射击/vn 而/c 当场/d 身亡/v ；/w 西姆斯/nr 是/v 整个/b 费卢杰/ns 战役/n 中/b 美军/n 战死/v 的/u 最/d 高/a 级别/n 军官/n 。/w 
 同/p 在/p 13日/t ，/w 陆战/n 1/m 团/n 3/m 营/n 的/u 卡塞尔/nr 军士/n 和/c 军医/n 米切尔/nr 在/p 与/p 战友/n 们/r 推进/v 时/n 发现/v 有/v 一/m 名/q 受伤/v 的/u 陆战/n 队员/n 倒/v 在/p 一/m 栋/q 建筑/n 门口/s ，/w 而/c 另/r 有/v 数/m 名/q 陆战/n 队员/n 正/d 困/v 在/p 建筑/n 内/f 与/p 里面/f 的/u 武装/n 分子/n 进行/v 激战/v 。/w 
 卡塞尔/nr 和/c 米切尔/nr 立即/d 组织/v 了/u 一些/m 人/n 杀/v 进/v 了/u 这/r 栋/q 建筑/n ；/w 他们/r 发现/v 建筑/n 内/f 密布/v 楼梯/n 和/c 房间/n ，/w 先头/f 进入/v 的/u 陆战/n 队员/n 正/d 和/c 武装/n 分子/n 在/p 不同/a 的/u 房屋/n 内/f 混战/v ，/w 子弹/n 和/c 手雷/n 不断/d 从/p 楼梯/n 上/f 和/c 房屋/n 内/f 飞/v 出/v 。/w 
-米切尔/nr 和/c 卡塞尔/nr 立即/d 兵/n 分/q 两/m 路/q ，/w 冲向/v 了/u 不同/a 的/u 房间/n 。/w 
+米切尔/nr 和/c 卡塞尔/nr 立即/d 兵/n 分/v 两/m 路/q ，/w 冲向/v 了/u 不同/a 的/u 房间/n 。/w 
 军医/n 米切尔/nr 在/p 一个/m 房间/n 内/f 发现/v 了/u 一/m 名/q 重伤/n 的/u 战友/n ，/w 立即/d 对/p 他/r 进行/v 紧急/a 救治/v ；/w 卡塞尔/nr 则/c 在/p 准备/v 进入/v 一个/m 房间/n 时/n 在/p 门口/s 差点/d 和/p 一个/m 武装/n 分子/n 撞/v 个/q 满怀/n ，/w 卡塞尔/nr 抢先/v 一/m 步/q 开枪/v 将/p 对手/n 击倒/v ，/w 但/c 随后/d 从/p 身旁/s 的/u 楼梯/n 上/f 射/v 下/v 一/m 串/q 的/u 子弹/n 和/c 手雷/n ，/w 卡塞尔/nr 身/n 中/v 数/m 枪/n 且/c 小腿/n 被/p 弹片/n 炸伤/v ，/w 但/c 仍然/d 匍匐/v 进入/v 了/u 房间/n ，/w 并/c 将/p 一/m 名/q 受/v 重伤/n 的/u 战友/n 尼科尔/nr 拖/v 向/p 了/u 安全/a 区域/n 。/w 
 正当/p 卡塞尔/nr 在/p 为/p 尼科尔/nr 进行/v 救治/v 时/n ，/w 突然/a 从/p 房间/n 外/f 飞/v 进/v 一/m 枚/q 手榴弹/n ，/w 在/p 其/r 爆炸/v 的/u 一瞬间/t 卡塞尔/nr 将/p 尼科尔/nr 压/v 在/p 了/u 身下/s ，/w 他/r 本人/r 的/u 手臂/n 、/w 大腿/n 、/w 臀部/n 均/d 被/p 炸伤/v 。/w 
 这时/r 米切尔/nr 进屋/v 增援/v ，/w 发现/v 两/m 人/n 还/d 均/d 有/v 意识/n ，/w 卡塞尔/nr 正/d 手/n 握/v 一/m 把/p 9/m 毫米/q 手枪/n 守/v 着/u 房门/n 。/w 
@@ -7436,7 +7436,7 @@ LST/nx 标准/n 排水量/n 1653/m 吨/q ，/w 满载/vn 排水量/n 4080/m 吨/
 日方/n 代表/n 应该/v 了解/v “/w 已/r 所/u 不/d 欲/v ，/w 勿/v 施/v 于/p 人/n ”/w 的/u 涵养/n ，/w 主动/a 放弃/v 核/n 灾区/n 食品/n 输/v 台/ns 。/w 
 倘若/c 蔡英文/nr 当局/n 依旧/z 如此/r ，/w 人民/n 再次/d 上街/v 应该/v 是/v 可以/v 期待/v 的/u 结果/n 。/w 
 (/w 郑博文/nr ，/w 屏东大学/nt 副/b 教授/n )/w 
-泰国/ns 学者/n 评/v 南海/ns 仲裁/v ：/w 轻率/a 下结论/v 公信力/n 将/d 受/v 质疑/v 
+泰国/ns 学者/n 评/v 南海/ns 仲裁/v ：/w 轻率/a 下/v 结论/n 公信力/n 将/d 受/v 质疑/v 
 由/p 菲律宾/ns 阿基诺/nr 政府/n 单方面/d 提起/v 的/u 所谓/v 南海/ns 仲裁案/n 近日/t 将/d 公布/v 裁决/vn 结果/n 。/w 
 泰国/ns 正大管理学院/nt 校长/n 助理/n 洪风/nr 教授/n 认为/v ，/w 如果/c 仲裁庭/n 轻率/a 地/u 得出/v 结论/n ，/w 国际/n 法庭/n 本身/r 的/u 公信力/n 将/d 受到/v 严重/a 质疑/v 。/w 
 菲律宾/ns 2013年/t 就/p 南海/ns 争端/n 问题/n 向/p 海牙/ns 常设/v 仲裁/vn 法院/n 提起/v 仲裁/v 。/w 
@@ -10127,7 +10127,7 @@ ASAT/nx 武器/n 要求/v 高度/n 达到/v 804.65/m 千米/q 。/w
 据/p 防务/n 世界/n 网站/n 2015年/t 1月/t 13日/t 报道/v ，/w 印度/ns “/w 无畏/nz ”/w （/w Nirbhay/nx ）/w 远程/b 亚/b 声速/n 巡航导弹/n 将/d 使用/v 全新/b 小型/b 涡扇/n 发动机/n ，/w 该/r 发动机/n 由/p 印度燃气涡轮开发公司/nt （/w GTRE/nx ）/w 制造/v 。/w 
 根据/p 印度国防研究与发展组织/nt 的/u 消息/n （/w DRDO/nx ）/w ，/w GTRE/nx 目前/t 正在/d 进行/v 巡航导弹/n 发动机/n 的/u 地面/n 试验/vn ，/w 目前/t 尚未/d 对/p 该/r 发动机/n 正式/a 命名/v 。/w 
 发动机/n 的/u 技术/n 指标/n 尚未/d 透露/v 。/w 
-GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f 曾/d 为/p 印度/ns 空军/n “/w 光辉/nz ”/w 式/n （/w Tejas/nx ）/w 轻型/b 战斗机/n 制造/v 卡佛里/nz I型/b （/w Kaveri/nx ？/w I/nx ）/w 发动机/n 。/w 
+GTRE/nx 坐落/v 于/p 班加罗尔/ns （/w Bangalore/nx ）/w ，/w 早前/f 曾/d 为/p 印度/ns 空军/n “/w 光辉/nz ”/w 式/n （/w Tejas/nx ）/w 轻型/b 战斗机/n 制造/v 卡佛里/nz I型/b （/w Kaveri/nx 　/w I/nx ）/w 发动机/n 。/w 
 由于/c 发动机/n 动力/n 不足/v ，/w Kaveri/nx 项目/n 最终/d 被/p 终止/v 。/w 
 “/w 无畏/nz ”/w -/w 1/m （/w Nirbhay/nx ？/w I/nx ）/w 是/v 适用/v 于/p 海军/n 的/u 巡航导弹/n ，/w 既/c 可/v 用于/v 舰射/v 又/d 可/v 用于/v 潜射/v ，/w 射程/n 为/v 1500/m 千米/q ，/w 全/a 重/n 1000/m 千克/q ，/w 其/r 目前/t 所/u 使用/v 的/u 发动机/n 采用/v 冲压式/n 喷气/v 技术/n 。/w 
 在/p 2014年/t 10月/t DRDO/nx 对/p 该/r 导弹/n 成功/a 进行/v 了/u 试验/vn ，/w 结果/d 表明/v 其/r 全部/m 参数/n 都/d 达到/v 了/u 相应/vn 标准/n 。/w 
@@ -12044,7 +12044,7 @@ NDTV/nx 新闻网/n 称/v ，/w 最近/t 印度/ns 军方/n 强化/v 了/u 边�
 用/p BAE/nx 公司/n 的/u 话/n 说/v ：/w “/w 这/r 款/q 榴弹炮/n 陆运/v 、/w 空运/v 、/w 海运/v 都/d 极为/d 便利/a ，/w 特点/n 就/d 是/v 用/p 最/d 小/a 的/u 物流/n 实现/v 最/d 大/a 的/u 可靠性/n 。/w ”/w 
 据/p 报道/v ，/w M777/nx 榴弹炮/n 自/p 2006年/t 就/d 在/p 阿富汗/ns 使用/v 过/u 。/w 
 报道/v 指出/v ，/w 印军/n 规模/n 世界/n 排行/v 第四/m ，/w 目前/t 高度/d 依赖/v 博福斯式/n 加农炮/n 。/w 
-印方/n 在/p 1987年/t 向/p 瑞典/ns 公司/n 购买/v 了/u 410/m 枚/q 该/v 型/n 火炮/n ，/w 然而/c 这/r 项/q 交易/n 卷入/v 到/v 了/u 腐败/a 丑闻/n 之中/f ，/w 时/n 任/v 印度/ns 总理/n 拉吉夫·甘地/nr 被/p 指控/v 收受/v 回扣/n 。/w 
+印方/n 在/p 1987年/t 向/p 瑞典/ns 公司/n 购买/v 了/u 410/m 枚/q 该/r 型/n 火炮/n ，/w 然而/c 这/r 项/q 交易/n 卷入/v 到/v 了/u 腐败/a 丑闻/n 之中/f ，/w 时/n 任/v 印度/ns 总理/n 拉吉夫·甘地/nr 被/p 指控/v 收受/v 回扣/n 。/w 
 (/w 实习/v 编译/v ：/w 陈啸/nr 审稿/v ：/w 谭利娅/nr )/w 
 中/ns 印/ns 边界/n 未定/v 我/r 系/v 例行/v 巡逻/v 
 原/b 标题/n ：/w 中/ns 印/ns 边界/n 未定/v 我/r 系/v 例行/v 巡逻/v 
@@ -12155,12 +12155,12 @@ NDTV/nx 新闻网/n 称/v ，/w 最近/t 印度/ns 军方/n 强化/v 了/u 边�
 正如/p 印度/ns 安全/a 战略/n 专家/n 苏布拉姆尼亚安/nr 最近/t 所/u 称/v ，/w “/w 印度/ns 人/n 从/p 心理/n 上/f 并/d 未/d 原谅/v 中国人/n 1962年/t 的/u 入侵/vn ，/w 它/r 把/p 巴基斯坦/ns 军队/n 的/u 核/n 与/c 导弹/n 计划/n 归咎/v 于/p 中国/ns 的/u 核扩散/n ，/w 指责/v 中国/ns 在/p 印度洋/ns 建立/v 像/v ‘/w 珍珠/n 链/n ’/w 一样/a 的/u 基地/n ，/w 用以/d 包围/v 印度/ns ，/w 并且/c 印度/ns 对/p 中国/ns 海军/n 实力/n 的/u 增长/vn 以及/c 这/r 支/q 海军/n 进入/v 印度洋/ns 感到/v 惊恐/a 。/w 
 而/c 印度/ns 对/p 中国/ns 在/p 核供应集团/nt 就/p 印/ns 核/n 交易/v 豁免/v 问题/n 讨论/v 中/f 的/u ‘/w 阴险/a 狡诈/a ’/w 感到/v 更加/d 愤怒/a …/w …/w ”/w 
 资料图/n ：/w 1962年/t 中/ns 印/ns 战争/n 期间/f ，/w 解放军/n 56式/n 班/n 用/p 机枪/n 阵地/n 对/p 敌/n 开火/v 
-在/p 新德里/ns 时/n ，/w 笔者/n 也/d 曾经/d 与/p 创造/v 了/u “/w Chindia/nx ”/w 一/m 词/n 的/u 印度/ns 现任/b 商务/n 国务/n 部长/n 贾伊拉姆·拉梅什/nr 谈起/v 过/u 1962年/t 战争/n 对/p 印度/ns 人/n 的/u 影响/vn 。/w 
+在/p 新德里/ns 时/n ，/w 笔者/n 也/d 曾经/d 与/p 创造/v 了/u “/w Chindia/nx ”/w 一/m 词/n 的/u 印度/ns 现任/b 商务/n 国务/n 部长/n 贾伊拉姆·拉梅什/nr 谈/v 起/v 过/u 1962年/t 战争/n 对/p 印度/ns 人/n 的/u 影响/vn 。/w 
 后来/t 我/r 在/p 他/r 的/u 专著/n 《/w 理解/v Chindia/nx ：/w 关于/p 中国/ns 与/c 印度/ns 的/u 思考/vn 》/w 一/m 书/n 上/f 看到/v 这样/r 一/m 段/q 话/n ，/w “/w 如果/c 说/v 绝大多数/m 印度/ns 人/n 对/p 中国/ns 有/v 很/d 强/a 的/u 戒备/vn 心理/n ，/w 恐怕/d 不/d 算是/v 夸张/v 。/w 1962年/t 10月/t 至/c 11月/t ，/w 喜马拉雅山/ns 下/f 的/u 那/r 场/q 很/d 大/a 程度/n 是/v 自/r 讨/v 的/u 大/a 溃败/vn 在/p 我们/r 的/u 记忆/n 中/f 仍然/d 挥之不去/v 。/w ”/w 
 贾伊拉姆/nr 提及/v 中国/ns 总理/n 温家宝/nr 在/p 会见/v 印度/ns 前/f 国防部长/n 费尔南德斯/nr 时/n 说/v 过/u 的/u 一/m 句/q 话/n ，/w “/w 在/p 过去/t 2200年/t 的/u 时间/n 里/f ，/w 或者/c 说/v ，/w 将近/d 99.9%/m 的/u 时候/n ，/w 中/ns 印/ns 两/m 国/n 致力/v 于/p 友好/a 合作/v 。/w ”/w 
 贾伊拉姆/nr 指出/v ，/w 很/d 明显/a 地/u ，/w “/w 1962年/t 在/p 温家宝/nr 历史/n 算术/n 中/f 占据/v 了/u 剩下/v 的/u 0.1%/m 里/q 的/u 绝大部分/m ，/w 但/c 它/r 留下/v 的/u 阴影/n 却/d 格外/d 地/u 长久/a ”/w 。/w 
 ？/w 末段/f 高空/s 区域/n 防御/vn 系统/n （/w 英语/n ：/w TerminalHighAltitudeAreaDefense/nx ，/w 缩写/n ：/w THAAD/nx ，/w 汉语/n 音译/n 为/v 萨德/n ）/w 是/v 美国/ns 导弹/n 防御局/nt 和/c 美国/ns 陆军/n 隶下/v 的/u 陆基/n 战区/n 反导/vn 系统/n ，/w 一般/a 简称/v 为/v 萨德/n 反导/vn 系统/n 。/w 
-末段/f 高空/s 区域/n 防御/vn 系统/n 的/u 前身/n 是/v 历经/v 多次/d 失败/v 而/c 告终/v 的/u 战区/n 高空/s 区域/n 防御/vn 系统/n ，/w 美国/ns 陆军/n 于/p 2004年/t 对/p 该/r 系统/n 进行/v 重新/d 设计/v ，/w 并/c 重新/d 命名/v 为/v 现名/n ，/w 类似/v 于/p 海军/n 的/u 宙斯盾/n 作战/vn 系统/n ，/w 由/p 指管/vn 通情/n 指挥/vn 系统/n ，/w 拦截/vn 系统/n ，/w 发射/vn 系统/n 和/c 雷达/n 及其/c 支援/vn 设备/n 组成/v 。/w 
+末段/f 高空/s 区域/n 防御/vn 系统/n 的/u 前身/n 是/v 历经/v 多次/d 失败/v 而/c 告终/v 的/u 战区/n 高空/s 区域/n 防御/vn 系统/n ，/w 美国/ns 陆军/n 于/p 2004年/t 对/p 该/r 系统/n 进行/v 重新/d 设计/v ，/w 并/c 重新/d 命名/v 为/v 现名/n ，/w 类似/v 于/p 海军/n 的/u 宙斯盾/n 作战/vn 系统/n ，/w 由/p 指管通情/nz 指挥/vn 系统/n ，/w 拦截/vn 系统/n ，/w 发射/vn 系统/n 和/c 雷达/n 及其/c 支援/vn 设备/n 组成/v 。/w 
 2007年/t 10月/t ，/w 末段/f 高空/s 区域/n 防御/vn 系统/n 在/p 美国/ns 太平洋/ns 导弹/n 靶场/n 成功/a 完成/v 大气层/n 外/f 的/u 拦截/vn 试验/vn 。/w 
 末段/f 高空/s 区域/n 防御/vn 系统/n 作为/v 专门/d 用于/v 对付/v 大规模/b 弹道导弹/n 袭击/v 的/u 防御/vn 系统/n ，/w 其/r 独特/a 优势/n 是/v 在/p 防御/v 大规模/b 导弹/n 威胁/v 的/u 同时/n ，/w 为/p 作战/vn 部队/n 提供/v 更加/d 灵活/a 的/u 使用/vn 选择/vn 。/w 
 其/r 目的/n 不/d 是/v 取代/v 而是/c 补充/v MIM-104/nx 防空/vn 导弹/n 以及/c 海军/n 宙斯盾/n 弹道导弹/n 防御/vn 系统/n 、/w 陆基/n 中段/f 防御/vn 系统/n 和/c 美国/ns 在/p 世界/n 各地/r 部署/v 的/u 预警/vn 雷达/n 与/c 传感器/n ，/w 从而/c 使/v 美军/n 具备/v 多层/b 弹道导弹/n 防御/vn 能力/n ，/w 是/v 战略性/n 进攻/vn 武器/n 。/w 

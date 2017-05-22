@@ -23,7 +23,7 @@ public class charBased extends CRFModel {
 		Ner.calcOOV();
 		if (args.length > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = args[0];
+			config.algorithm = args[0] + config.algorithm;
 		}
 		String[] corpus = new String[]{config.trainData};
 		charBased charBased = new charBased();

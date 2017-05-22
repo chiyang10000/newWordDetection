@@ -12,6 +12,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by wan on 4/28/2017.
@@ -45,8 +47,17 @@ public class Ansj implements NewWordDetector {
 			try (BufferedReader reader = new BufferedReader(new FileReader(input));
 				 BufferedWriter writer = new BufferedWriter(new FileWriter(output))
 			) {
+				Pattern datePattern = Pattern.compile(config.timeRegx);
 				String line, tmp;
 				while ((line = reader.readLine()) != null) {
+					/*//todo 时间识别
+					Matcher dateMatcher = datePattern.matcher(line);
+					while(dateMatcher.find()) {
+						String t = dateMatcher.group();
+						if (!t.matches("[\\p{IsDigit}]+.*"))
+							System.err.println(t+"\t"+line);
+					}
+					*/
 					tmp = parser.parseStr(line).toString(" ");
 					writer.append(tmp);
 					writer.newLine();
