@@ -41,6 +41,7 @@ public class WordInfoInCorpus {
 		RunSystemCommand.run("rm data/corpus/*.tmp");
 		RunSystemCommand.run("rm data/corpus/*.tmp2");
 		RunSystemCommand.run("rm data/corpus/*.data");
+		RunSystemCommand.run("rm data/corpus/*.words_sort");
 	}
 
 	public String addWordInfo(String line) {

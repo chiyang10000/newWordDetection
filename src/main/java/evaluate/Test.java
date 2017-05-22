@@ -127,7 +127,7 @@ public class Test {
 
 
 		for (Ner nerType : Ner.supported) {
-			String answerFile = config.getAnswerFile(inputFile, nerType);
+			String answerFile = config.getAnswerFile(config.testData, nerType);
 			logger.debug("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
 				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile
