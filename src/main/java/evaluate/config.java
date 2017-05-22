@@ -32,6 +32,7 @@ public class config {
 	final public static double thresholdTF = 3;
 	final public static double thresholdNeighborEntropy = 1.5;
 	final public static Integer testSize = 5;
+	public static String comment;
 
 	public static final String timeRegx =
 			"([\\p{IsDigit}－～：兆亿万千百十九八七六五四三二一]+" +

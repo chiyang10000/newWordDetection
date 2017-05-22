@@ -66,11 +66,11 @@ public class Test {
 		if (hit == 0)
 			return 100;
 		if (!tool.equals("counter"))
-		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t",
+		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}",
 				df.format(f1), df.format(p), df.format(r),
 				df.format(type.oov),
 				hit, select, sum,
-				type.name, method, tool
+				type.name, method, tool, config.comment
 		);
 		return 100 - p;
 	}
