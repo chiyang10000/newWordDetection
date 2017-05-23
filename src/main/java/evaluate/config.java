@@ -34,7 +34,7 @@ public class config {
 	public static String comment;
 
 	public static final String timeRegx =
-			"([\\p{IsDigit}－～：兆亿万千百十九八七六五四三二一]+" +
+			"([\\p{IsDigit}－～：兆亿万千百十九八七六五四三二一零○]+" +
 			"((([年月日]|(世纪)|(年代))[前初中底末]?)|[号时分秒点]|(秒钟)|(点钟)|(月份)|(小时)))";
 	public static final String pureLetterStringRegex = "([\\p{IsLatin}\\p{IsCyrillic}]+)";
 	public static final String pureNumStringRegex = "(第?[兆亿万千百\\p{IsDigit}，．％∶：／×－＋·～]+)";

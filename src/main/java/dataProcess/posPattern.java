@@ -43,6 +43,9 @@ public class posPattern {
 					String tmp = String.join("/", segs[i], segs[i+1], segs[i+2]);
 					tmp = String.join("/", segs[i].substring(0,1), segs[i+1].substring(0,1), segs[i+2].substring(0, 1));
 					counterMap.incr(tmp);
+					tmp = String.join("/", segs[i], segs[i+1]);
+					counterMap.incr(tmp);
+					counterMap.incr(segs[i]);
 				}
 			}
 			String tmp = "data/corpus/"+inputFile.replaceAll("^.*/", "") + ".posPattern";
@@ -55,6 +58,9 @@ public class posPattern {
 	}
 	public boolean isDefined(String tmp) {
 		return counterMap.get(tmp) > 1;
+	}
+	public int count(String tmp) {
+		return counterMap.get(tmp);
 	}
 	static void countPosPattern(String inputFile, posPattern exist) {
 		HashSet<String> kk = new HashSet<>();

@@ -51,11 +51,11 @@ public class wordBased extends CRFModel implements Serializable {
 			wordBased.train(corpus, Ner.ner);
 		String data = config.testData;
 		for (Ner ner : Ner.supported) {//;= config.ns;
-			if (config.trainModel.contains(ner.name))
-				wordBased.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
 			wordBased.calcMostRecallInAnsj(config.testData, ner);
+			if (config.trainModel.contains(ner.name))
+				wordBased.train(corpus, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),
 					wordBased.detectNewWord(config.getInputFile(data), "tmp/tmp." + ner.name, ner),
 					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
@@ -107,8 +107,18 @@ public class wordBased extends CRFModel implements Serializable {
 							Term term = ansj.get(i);
 							as += term.getRealName();
 							if (gs.equals(as)) {
-								if (newWordList.contains(gs))
+								if (newWordList.contains(gs)) {
+
+									String t = "", u = "";
+									int p = i;
+									while (!t.equals(gs)) {
+										t = ansj.get(p).getRealName() + t;
+										u = ansj.get(p).toString() + " " + u;
+										p--;
+									}
+									System.err.println(gs + "=" + u);
 									validNewWordList.add(gs);
+								}
 								as = "";
 								if (k + 1 < golden.length) {
 									gs = golden[++k];
@@ -120,8 +130,17 @@ public class wordBased extends CRFModel implements Serializable {
 									}
 								}
 								if (gs.equals(as)) {
-									if (newWordList.contains(gs))
+									if (newWordList.contains(gs)) {
+										String t = "", u = "";
+										int p = i;
+										while (!t.equals(gs)) {
+											t = ansj.get(p).getRealName() + t;
+											u = ansj.get(p).toString() + " " + u;
+											p--;
+										}
+										System.err.println(gs + "=" + u);
 										validNewWordList.add(gs);
+									}
 									as = "";
 									if (k + 1 < golden.length) {
 										gs = golden[++k];
