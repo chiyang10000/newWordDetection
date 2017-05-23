@@ -88,7 +88,7 @@ public class Test {
 			while ((line = reader.readLine()) != null) {
 				String[] tmp = line.split("\\t", 2);
 				//tmp[0] = config.newWordFileter(tmp[0]);
-				wordList.put(tmp[0], tmp[1]);
+				wordList.put(config.newWordFileter(tmp[0]), tmp[1]);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

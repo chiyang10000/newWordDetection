@@ -7,10 +7,9 @@ import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
 import org.nlpcn.commons.lang.util.ObjConver;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.lang.reflect.Field;
+import java.nio.charset.Charset;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Properties;
@@ -46,6 +45,7 @@ public class config {
 
 	public static final String pureChineseStringRegex = "([\\p{IsHan}]+)";
 	public static final String chineseJoinedStringRegex = "([\\p{IsHan}·－／]+)";
+	public static String newWordRemove;
 
 	public static Integer levelNum = 10;
 	public static Integer maxStringLength = 8;
@@ -71,8 +71,8 @@ public class config {
 		Properties prop = new Properties();
 		try {
 			//读取属性文件a.properties
-			InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
-			prop.load(in);     ///加载属性列表
+			FileInputStream input = new FileInputStream(new File("config.properties"));
+			prop.load(new InputStreamReader(input, Charset.forName("UTF-8")));     ///加载属性列表
 			Iterator<String> it = prop.stringPropertyNames().iterator();
 			while (it.hasNext()) {
 				String key = it.next();
@@ -93,7 +93,7 @@ public class config {
 				field.set(null, ObjConver.conversion(prop.getProperty(key), field.getType()));
 				System.out.println(key + "=" + prop.getProperty(key));
 			}
-			in.close();
+			input.close();
 		} catch (Exception e) {
 			System.err.println(e);
 		}
@@ -125,7 +125,7 @@ public class config {
 
 	static public String newWordFileter(String word) {
 		if (isNewWordFilter)
-			return word.replaceAll("(公司$)", "");
+			return word.replaceAll(newWordRemove, "");
 		return word;
 	}
 
