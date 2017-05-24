@@ -84,7 +84,8 @@ public class Corpus {
 												!(inputFile == config.testData && !trainData.isNewWord(word))
 										)
 								)
-										&& !wordList.contains(word)) {
+										&& !wordList.contains(word))
+						if (word.length()>0){
 							int lRE=9, rLE=9;
 							if (i>0)
 								lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i-1]));
@@ -246,13 +247,11 @@ public class Corpus {
 	 */
 	public static void main(String... args) throws IOException {
 
-/*
 		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
 		RunSystemCommand.run("rm data/corpus/*");
-*/
 		trainData = new Corpus(config.trainData);
 
 		convertToSrc(new String[]{config.testData}, config.getInputFile(config.testData));
