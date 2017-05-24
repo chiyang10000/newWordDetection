@@ -19,11 +19,13 @@ public class charBased extends CRFModel {
 	private static final Logger logger = LoggerFactory.getLogger(charBased.class);
 
 	public static void main(String... args) {
-		//String al = "";
+		String al = "";
+		if (args.length >0)
+			al = args[0];
 		Ner.calcOOV();
-		if (args.length > 0) {
+		if (al.length() > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = args[0] + config.algorithm;
+			config.algorithm = al + config.algorithm;
 		}
 		String[] corpus = new String[]{config.trainData};
 		charBased charBased = new charBased();
@@ -31,6 +33,8 @@ public class charBased extends CRFModel {
 		if (config.trainModel.contains(Ner.ner.name))
 			charBased.train(corpus, Ner.ner);
 		for (Ner ner : Ner.supported) {
+			//if (ner == Ner.nw)
+			//	continue;
 			if (config.trainModel.contains(ner.name))
 				charBased.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))

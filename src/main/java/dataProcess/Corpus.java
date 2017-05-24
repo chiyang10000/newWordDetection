@@ -80,12 +80,12 @@ public class Corpus {
 						if (
 								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config.newWordExcludeRegex)
 										||
-										(nerType == Ner.nw && renMinRiBao.isNewWord(word) &&
-												!(inputFile == config.testData && !trainData.isNewWord(word))
+										(nerType == Ner.nw && renMinRiBao.isNewWord(word)
+											//&&	!(inputFile == config.testData && !trainData.isNewWord(word))
 										)
 								)
 										&& !wordList.contains(word))
-						if (word.length()>0){
+						{
 							int lRE=9, rLE=9;
 							if (i>0)
 								lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i-1]));
@@ -117,6 +117,55 @@ public class Corpus {
 		}
 		return wordList;
 	}
+	static void otherWord(String inputFile) {
+		WordInfoInCorpus wordInfo = new WordInfoInCorpus(config.getInputFile(inputFile));
+		HashSet<String> wordList = new HashSet<>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("info/info.all"));
+			String line = null;
+			while ((line = reader.readLine()) != null) {
+				if (line.trim().length() == 0) continue;
+				String[] strs = line.split(config.sepWordRegex);
+				for (int i = 0; i < strs.length; i++) {
+					String w = strs[i];
+					String word = config.removePos(w);
+					String pos = config.getPos(w);
+					try {
+						if (!wordList.contains(word))
+							if (!word.matches(config.newWordExcludeRegex))
+							{
+								int lRE=9, rLE=9;
+								if (i>0)
+									lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i-1]));
+								if (i<strs.length-1)
+									rLE = wordInfo.discreteWordInfo.getLE(config.removePos(strs[i+1]));
+								writer.append(
+										wordInfo.addWordInfo(String.join("\t",
+												word,config.category(word),
+												Integer.toString(word .length()),
+												pos,
+												Integer.toString(lRE),
+												Integer.toString(rLE),
+												renMinRiBao.isNewWord(word) ? "True" :"False"
+										)));
+								wordList.add(word);
+								writer.newLine();
+								if (i>0)
+									if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i-1])))
+										System.err.println(strs[i-1] +"\t" + strs[i]);
+							}
+					} catch (IOException e) {
+						logger.debug("untagged {}", line);
+					}
+				}
+			}
+			logger.info("{} word in {}", wordList.size(), inputFile);
+			writer.close();
+		} catch (IOException e) {
+			logger.error("err");
+		}
+	}
 
 	private boolean isNewWord(String word) {
 		if (word.length() <= 1)
@@ -136,7 +185,7 @@ public class Corpus {
 	public static boolean isNewWord(String word, String pos) {
 		if (trainData == null)
 			trainData = new Corpus(config.trainData);
-		return renMinRiBao.isNewWord(word) && trainData.isNewWord(word);
+		return renMinRiBao.isNewWord(word);// && trainData.isNewWord(word);
 	}
 
 	/**
@@ -246,7 +295,6 @@ public class Corpus {
 	 * @param args
 	 */
 	public static void main(String... args) throws IOException {
-
 		clean();
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
@@ -264,6 +312,7 @@ public class Corpus {
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
+otherWord(config.totalData);
 	}
 
 }

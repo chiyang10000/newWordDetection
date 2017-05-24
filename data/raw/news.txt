@@ -1838,7 +1838,7 @@ AIM-7/nx “/w 麻雀/nz ”/w 式/b 空对空/n 导弹/n ，/w 美国/ns 于/p 
 装备/n F-15/nx 、/w F-16/nx 战机/n 。/w 
 美军/n “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 联合/v 制导/v 攻击/v 武器/n 
 “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 又/d 叫/v “/w 联合/v 制导/v 攻击/v 武器/n ”/w ，/w 这/r 种/q 炸弹/n 是/v 为/p 适应/v 美国/ns 空军/n 和/c 海军/n 发展/v 要求/n 而/c 研制/v 的/u ，/w 是/v 一/m 种/q 用/p 美军/n 现存/v 的/u 普通/a 常规/n 炸弹/n 升级/v 发展/v 而/c 来/v ，/w 利用/v 卫星/n 定位/vn 系统/n (/w GPS/nx )/w 引导/v 的/u 全天候/b 、/w 自动/d 寻的/a 常规/n 炸弹/n 。/w 
-由/p Mk-80/nx 　/w 250/m 磅/q 、/w Mk-81/nx　/w 500/m 磅/q 、/w Mk-83/nx 　/w 1000/m 磅/q 和/c Mk-84/nx 　/w 2000/m 磅/q 常规/n 炸弹/n 改进/v 而/c 来/v 的/u “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 分别/d 编号/v 为/v GBU-29/nx 、/w GBU-30/nx 、/w GBU-31/nx 和/c GBU-32/nx 等/u 。/w 
+由/p Mk-80/nx 　/w 250/m 磅/q 、/w Mk-81/nx 　/w 500/m 磅/q 、/w Mk-83/nx 　/w 1000/m 磅/q 和/c Mk-84/nx 　/w 2000/m 磅/q 常规/n 炸弹/n 改进/v 而/c 来/v 的/u “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 分别/d 编号/v 为/v GBU-29/nx 、/w GBU-30/nx 、/w GBU-31/nx 和/c GBU-32/nx 等/u 。/w 
 这/r 种/q 炸弹/n 尾部/n 安装/v 了/u GPS/nx 全球/n 卫星/n 定位/vn 系统/n 装置/n ，/w 能够/v 在/p 任何/r 天气/n 情况/n 下/f 精确/a 命中/v 目标/n ，/w 不/d 象/v 一般/a 的/u 激光/n 制导/vn 武器/n 容易/a 受到/v 云/n 、/w 雾/n 以及/c 其他/r 恶劣/a 的/u 天气/n 的/u 限制/v 。/w 
 “/w 杰达姆/nz ”/w (/w JDAM/nx )/w 能/v 从/p 距离/p 目标/n 24/m 公里/q 的/u 高度/n 投/v 下/v ，/w 并/c 在/p GPS/nx 的/u 矫正/v 下/f 精确/a 落/v 到/v 目标/n 之上/f ，/w 误差/n 仅/d 在/v 13/m 米/q 之内/f ，/w 并/c 达到/v 95%/m 的/u 系统/n 可靠性/n 。/w 
 B-1/nx ,/w B-2/nx ,/w B-52/nx ,/w F／A-18/nx ,/w F-16/nx 飞机/n 都/d 可/v 投掷/v 此/r 物/n 。/w 
@@ -5728,7 +5728,7 @@ B-52/nx 现役/n 76/m 架/q ，/w 仍然/d 是/v 美国/ns 空军/n 战略/n 轰
 对/p 此/r 外交部/nt 发言人/n 洪磊/nr 在/p 今天/t (/w 12日/t )/w 的/u 记者会/n 上/f 表示/v ，/w 印尼/ns 对/p 中国/ns 的/u 南沙/ns 群岛/n 没有/d 提出/v 领土/n 要求/n 。/w 
 纳土纳/ns 群岛/n 主权/n 属于/v 印尼/n ，/w 中方/n 也/d 没有/d 表示/v 异议/n 。/w 
 中国/ns 一贯/d 致力于/v 与/p 直接/a 有关/v 的/u 当事国/n 通过/p 谈判/v 协商/v 和平/n 解决/v 相关/vn 问题/n 。/w 
-按照/p 英国/ns 路透社/nz 11日/t 的/u 报道/n ，/w 印度尼西亚/nr 安全/a 部长/n 卢胡特·潘查伊坦/nr (/w LuhutPanjaitan/nx )/w 称/v ，/w 印尼/ns 正/d 试图/v 接触/v 中国/ns 方面/n 。/w 
+按照/p 英国/ns 路透社/nz 11日/t 的/u 报道/n ，/w 印度尼西亚/ns 安全/a 部长/n 卢胡特·潘查伊坦/nr (/w LuhutPanjaitan/nx )/w 称/v ，/w 印尼/ns 正/d 试图/v 接触/v 中国/ns 方面/n 。/w 
 他/r 说/v ，/w 印尼/ns 认为/v 中国/ns 对/p 纳土纳/ns 群岛/n 的/u 部分/n 领土/n 拥有/v 主权/n 的/u 说法/n 没有/v 法律/n 依据/n ：/w “/w 我们/r 希望/v 就/p 近期/t 通过/p 对话/v 找到/v 解决/v 问题/n 的/u 方案/n ，/w 否则/c 我们/r 可能/v 将/p 中国/ns 告/v 到/v 国际/n 刑事/b 法庭/n ”/w 。/w 
 潘查伊坦/nr 补充/v 称/v ，/w 印尼/ns 不/d 愿/v 看到/v 在/p 这/r 一/m 地区/n 的/u 权力/n 较量/v ，/w 他们/r 希望/v 能够/v 通过/p 对话/v 和平/n 解决/v 问题/n 。/w 
 报道/v 表示/v ，/w 虽然/c 潘查伊坦/nr 称/v 是/v 国际/n 刑事/b 法庭/n ，/w 但/c 实际上/d 可能/v 指/v 的/u 是/v 国际/n 仲裁/vn 法庭/n ，/w 因为/p 国际/n 刑事/b 法庭/n 主要/d 审理/v 涉及/v 国际/n 社会/n 的/u 非常/d 严重/a 的/u 战争/n 罪/n 案件/n 。/w 

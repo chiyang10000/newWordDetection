@@ -38,19 +38,22 @@ public class wordBased extends CRFModel implements Serializable {
 	}
 
 	public static void main(String... args) {
+		String al = "";
+		if (args.length >0)
+			al = args[0];
 		Ner.calcOOV();
-		if (args.length > 0) {
+		if (al.length() > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = args[0] + config.algorithm;
+			config.algorithm = al + config.algorithm;
 		}
 		String[] corpus = new String[]{config.trainData};
 		Test.clean();
 		wordBased wordBased = new wordBased();
 		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
-		if (config.trainModel.contains(Ner.ner.name))
-			wordBased.train(corpus, Ner.ner);
 		String data = config.testData;
 		for (Ner ner : Ner.supported) {//;= config.ns;
+			if (ner == Ner.ner)
+				continue;
 			if (!config.testModel.contains(ner.name))
 				continue;
 			wordBased.calcMostRecallInAnsj(config.testData, ner);

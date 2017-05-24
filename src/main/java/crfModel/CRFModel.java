@@ -66,12 +66,11 @@ abstract public class CRFModel implements NewWordDetector {
 				if (context.length() > 12)
 					context.delete(0, context.length() -12);
 				StringBuilder wordBuffer = new StringBuilder();
-				//System.err.println(context);
 				FieldAppender fieldAppender = null;
 				String label_head = getLabel(line);
 				String label = label_head;
 				if (label.contains(label_begin)) {
-					while (!label.contains(label_other) && !label.contains(label_single)) {
+					while (!label.contains(label_other) && !label.contains(label_single)) {//todo 瞎搞了
 						if (fieldAppender == null)
 							fieldAppender = new FieldAppender(line);
 						else
@@ -91,7 +90,7 @@ abstract public class CRFModel implements NewWordDetector {
 					context.append(getWord(line));
 				}
 				String word = wordBuffer.toString();// 这是一个词
-				//System.err.println(context);
+				//if (word.length() ==0) return null;
 				if (ner == Ner.nw) {
 					if (Corpus.isNewWord(word, null) && !newWordList.keySet().contains(word)) {
 						newWordList.put(word, context + "\t" + fieldAppender.toString());

@@ -57,7 +57,7 @@ public class posPattern {
 		}
 	}
 	public boolean isDefined(String tmp) {
-		return counterMap.get(tmp) > 1;
+		return counterMap.get(tmp) > 2;
 	}
 	public int count(String tmp) {
 		return counterMap.get(tmp);
