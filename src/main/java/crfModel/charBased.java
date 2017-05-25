@@ -23,6 +23,7 @@ public class charBased extends CRFModel {
 		if (args.length >0)
 			al = args[0];
 		Ner.calcOOV();
+		al = "";
 		if (al.length() > 0) {
 			config.isCRFsuite = true;
 			config.algorithm = al + config.algorithm;

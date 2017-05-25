@@ -57,6 +57,8 @@ public class wordBased extends CRFModel implements Serializable {
 			if (!config.testModel.contains(ner.name))
 				continue;
 			wordBased.calcMostRecallInAnsj(config.testData, ner);
+			if (true)
+				return;
 			if (config.trainModel.contains(ner.name))
 				wordBased.train(corpus, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),

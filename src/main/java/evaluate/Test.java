@@ -78,7 +78,7 @@ public class Test {
 	public static double p, r, f1;
 	public static int hit, select, sum;
 
-	public static Map<String, String> readWordList(String inputFile) {
+	public static HashMap<String, String> readWordList(String inputFile) {
 		HashMap<String, String> wordList = new HashMap<>();
 
 		BufferedReader reader = null;
@@ -107,7 +107,7 @@ public class Test {
 			config.isCRFsuite = true;
 			config.algorithm = args[0] + config.algorithm;
 		}
-		clean();
+		//clean();
 		Ner.calcOOV();
 
 		wordBased wordBased = new wordBased();
@@ -125,7 +125,21 @@ public class Test {
 		String inputFile = config.getInputFile(config.testData);
 		String outputFile;
 
+		HashMap<String, String> tmp = readWordList("tmp/tmp.new");
+		HashMap<String, String> tmp1 = readWordList("tmp/tmp.per");
+		HashMap<String, String> tmp2 = readWordList("tmp/tmp.loc");
+		HashMap<String, String> tmp3 = readWordList("tmp/tmp.org");
+		//for (String t: tmp1.keySet()) tmp.put(t,"nr");
+		//for (String t: tmp2.keySet()) tmp.put(t,"ns");
+		for (String t: tmp3.keySet()) tmp.put(t,"nt");
+		test(readWordList(config.getAnswerFile(config.testData, Ner.nw)), tmp, Ner.nw, "混合", "新词加实体识别");
 
+		test(readWordList(config.getAnswerFile(config.testData, Ner.nr)), tmp, Ner.nr, "混合", "新词加实体识别");
+		test(readWordList(config.getAnswerFile(config.testData, Ner.ns)), tmp, Ner.ns, "混合", "新词加实体识别");
+		test(readWordList(config.getAnswerFile(config.testData, Ner.nt)), tmp, Ner.nt, "混合", "新词加实体识别");
+
+		if (true)
+		return;
 		for (Ner nerType : Ner.supported) {
 			String answerFile = config.getAnswerFile(config.testData, nerType);
 			logger.debug("+++++++   {}   ++++++++", answerFile);
