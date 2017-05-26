@@ -117,7 +117,7 @@ public class Corpus {
 		}
 		return wordList;
 	}
-	static void otherWord(String inputFile) {
+	static void getInfoForAllWord(String inputFile) {
 		WordInfoInCorpus wordInfo = new WordInfoInCorpus(config.getInputFile(inputFile));
 		HashSet<String> wordList = new HashSet<>();
 		try {
@@ -312,7 +312,7 @@ public class Corpus {
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
-otherWord(config.totalData);
+getInfoForAllWord(config.totalData);
 	}
 
 }

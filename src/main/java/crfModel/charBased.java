@@ -20,9 +20,11 @@ public class charBased extends CRFModel {
 
 	public static void main(String... args) {
 		String al = "";
-		if (args.length >0)
+		if (args.length > 0)
 			al = args[0];
 		Ner.calcOOV();
+		al = "lbfgs";
+		//al = "ap";
 		al = "";
 		if (al.length() > 0) {
 			config.isCRFsuite = true;
@@ -33,6 +35,7 @@ public class charBased extends CRFModel {
 
 		if (config.trainModel.contains(Ner.ner.name))
 			charBased.train(corpus, Ner.ner);
+		String data = config.totalData;
 		for (Ner ner : Ner.supported) {
 			//if (ner == Ner.nw)
 			//	continue;
@@ -40,34 +43,35 @@ public class charBased extends CRFModel {
 				charBased.train(corpus, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
-			Test.test(Test.readWordList(config.getAnswerFile(config.testData, ner)),
-					charBased.detectNewWord(config.getInputFile(config.testData), "tmp/tmp." + ner.name, ner),
-					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
+			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),
+					charBased.detectNewWord(config.getInputFile(data), "tmp/tmp." + ner.name, ner),
+					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithm : "crf")
 			);
 		}
 	}
 
 	@Override
-	public void convertSrc2TestInput(String[] inputFiles, String outputFile, Ner ner) {
-		logger.debug("convert {} to {} for {}", inputFiles, outputFile, ner.pattern);
+	public void convertSrc2TestInput(String inputFile, String outputFile, Ner ner) {
+		logger.debug("convert {} to {} for {}", inputFile, outputFile, ner.pattern);
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(outputFile));
 			BufferedReader reader;
 			String line;
-			for (String inputFile : inputFiles) {
-				reader = new BufferedReader(new FileReader(inputFile));
+			reader = new BufferedReader(new FileReader(inputFile));
 
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0) continue;
-					List<String> features = CharacterFeature.getRes(line);
-					for (String feature : features) {
-						writer.println(feature + "\tN");
-						if (getWord(feature).matches(config.sepSentenceRegex))// 断句
-							writer.println();
-					}
+			while ((line = reader.readLine()) != null) {
+				if (line.length() == 0) {
+					writer.println();
+					continue;
 				}
-
+				List<String> features = CharacterFeature.getRes(line);
+				for (String feature : features) {
+					writer.println(feature + "\tN");
+					if (getWord(feature).matches(config.sepSentenceRegex))// 断句
+						writer.println();
+				}
 			}
+
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

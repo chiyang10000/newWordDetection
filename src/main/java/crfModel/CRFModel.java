@@ -27,10 +27,12 @@ abstract public class CRFModel implements NewWordDetector {
 	public String model, template, trainData;
 
 	{
+		/*
 		if (System.getProperty("os.name").contains("Win")) {
 			config.isCRFsuite = true;
 			config.algorithm = "ap" + config.algorithm;
 		}
+		*/
 		if (config.isCRFsuite) {
 			crfToolWrapper = new CRFsuiteWrapper(this);
 		} else
@@ -132,14 +134,14 @@ abstract public class CRFModel implements NewWordDetector {
 		);
 		String crfppInput = String.join(".", prefix, "crfin");
 		String crfppOutput = String.join(".", prefix, "crfout");
-		convertSrc2TestInput(new String[]{inputFile}, crfppInput, ner);
+		convertSrc2TestInput(inputFile, crfppInput, ner);
 		crfToolWrapper.decode(model, crfppInput, crfppOutput);
 		return convertTestOuput2Res(crfppOutput, outputFile, ner);
 	}
 
 	abstract void convert2TrainInput(String[] inputFiles, Ner ner);
 
-	abstract void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner);
+	abstract void convertSrc2TestInput(String inputFile, String crfppInput, Ner ner);
 
 
 }

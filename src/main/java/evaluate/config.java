@@ -41,7 +41,7 @@ public class config {
 	public static final String letterWithNumStringRegex = "([\\p{IsDigit}\\p{IsCyrillic}\\p{IsLatin}．／－·～]+)";
 	final public static String punctExcludeRegx = "([　°～｜■＋±\\pP&&[^·－／]]+)";
 	final public static String newWordExcludeRegex = String.join("|", pureNumStringRegex, pureLetterStringRegex,
-			letterWithNumStringRegex, timeRegx, punctExcludeRegx);
+			timeRegx, punctExcludeRegx);
 
 	public static final String pureChineseStringRegex = "([\\p{IsHan}]+)";
 	public static final String chineseJoinedStringRegex = "([\\p{IsHan}·－／]+)";
@@ -54,7 +54,7 @@ public class config {
 	public static Boolean isShuffle = false;
 	public static Boolean isNewWordFilter = true;
 	public static Boolean isCRFsuite = true;
-	public static String algorithm = " -p feature.minfreq=2";
+	public static String algorithm = "";//" -p feature.minfreq=2";
 
 
 	final public static String news = "data/raw/news.txt";
@@ -91,22 +91,18 @@ public class config {
 				}
 				Field field = config.class.getField(key);
 				field.set(null, ObjConver.conversion(prop.getProperty(key), field.getType()));
-				System.out.println(key + "=" + prop.getProperty(key));
+				//System.out.println(key + "=" + prop.getProperty(key));
 			}
 			input.close();
 		} catch (Exception e) {
 			System.err.println(e);
 		}
-		RunSystemCommand.run("mkdir info");
-		RunSystemCommand.run("mkdir tmp");
-		RunSystemCommand.run("mkdir tmp/crf");
-		RunSystemCommand.run("mkdir data");
-		RunSystemCommand.run("mkdir data/corpus");
-		RunSystemCommand.run("mkdir data/corpus/wordlist");
-		RunSystemCommand.run("mkdir data/model");
-		RunSystemCommand.run("mkdir data/test");
-		RunSystemCommand.run("mkdir data/test/input");
-		RunSystemCommand.run("mkdir data/test/ans");
+		String[] dirList = {"info", "tmp", "tmp/crf", "data", "data/corpus", "data/corpus/wordlist", "data/model",
+				"data/test", "data/test/input", "data/test/ans"};
+		for (String dir: dirList)
+			if (!new File(dir).exists()){
+				new File(dir).mkdir();
+			}
 	}
 
 	//public static WordInfoInCorpus wordInfoInCorpus_total ;

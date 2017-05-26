@@ -4,10 +4,12 @@ import ansj.Ansj;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
+import dataProcess.ConvertHalfWidthToFullWidth;
 import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
 import dataProcess.posPattern;
 import evaluate.Ner;
+import evaluate.RunSystemCommand;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
@@ -39,7 +41,7 @@ public class wordBased extends CRFModel implements Serializable {
 
 	public static void main(String... args) {
 		String al = "";
-		if (args.length >0)
+		if (args.length > 0)
 			al = args[0];
 		Ner.calcOOV();
 		if (al.length() > 0) {
@@ -307,49 +309,52 @@ public class wordBased extends CRFModel implements Serializable {
 	}
 
 	@Override
-	public void convertSrc2TestInput(String[] inputFiles, String crfppInput, Ner ner) {
+	public void convertSrc2TestInput(String inputFile, String crfppInput, Ner ner) {
 		try {
-			wordInfoInCorpus = new WordInfoInCorpus(inputFiles[0]);// todo 这个为了方便，可能有bug
+			//ConvertHalfWidthToFullWidth.convertFileToFulll(inputFile, "tmp.tmp");
+			ConvertHalfWidthToFullWidth.convertFileToFulll(inputFile, inputFile+".fullWidth");
+			wordInfoInCorpus = new WordInfoInCorpus(inputFile + ".fullWidth", "wordinfo.tmp");// todo 这个为了方便，可能有bug
 			PrintWriter writer = new PrintWriter(new FileWriter(crfppInput));
 
-			for (String inputFile : inputFiles) {
-				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				String line;
-				while ((line = reader.readLine()) != null) {
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile+".fullWidth"));
+			String line;
+			while ((line = reader.readLine()) != null) {
 
-					if (line.length() == 0) {
-						writer.println();
-						continue;
-						// 空行
-					}
-
-					List<Term> ansj = parser.parseStr(line).getTerms();
-
-					for (int i = 0; i < ansj.size(); i++) {
-						Term term = ansj.get(i);
-						String word = term.getRealName();
-						String pos = term.getNatureStr();
-						String prePos = "^", preprePos = "^", preWord = "";
-						if (i >= 2)
-							preprePos = ansj.get(i - 2).getNatureStr();
-						if (i >= 1) {
-							prePos = ansj.get(i - 1).getNatureStr();
-							preWord = ansj.get(i - 1).getRealName();
-						}
-						writer.println(
-								new WordFeature(preWord, word, preprePos, prePos, pos).toString() + "\tN");
-
-						if (word.matches(config.sepSentenceRegex))
-							writer.println();// 句子断开
-					}
-					writer.println();// todo 分割句子
+				if (line.length() == 0) {
+					writer.println();
+					continue;
+					// 空行
 				}
+
+				List<Term> ansj = parser.parseStr(line).getTerms();
+
+				for (int i = 0; i < ansj.size(); i++) {
+					Term term = ansj.get(i);
+					String word = term.getRealName();
+					String pos = term.getNatureStr();
+					String prePos = "^", preprePos = "^", preWord = "";
+					if (i >= 2)
+						preprePos = ansj.get(i - 2).getNatureStr();
+					if (i >= 1) {
+						prePos = ansj.get(i - 1).getNatureStr();
+						preWord = ansj.get(i - 1).getRealName();
+					}
+					writer.println(
+							new WordFeature(preWord, word, preprePos, prePos, pos).toString() + "\tN");
+
+					if (word.matches(config.sepSentenceRegex))
+						writer.println();// 句子断开
+				}
+				writer.println();// todo 分割句子
 			}
+			reader.close();
 			writer.close();
 		} catch (java.io.IOException e) {
 			logger.error("count word using ansj error");
 			e.printStackTrace();
 		}
+		RunSystemCommand.run("rm *.fullWidth");
+		RunSystemCommand.run("rm *.tmp");
 	}
 
 	class WordFeature {

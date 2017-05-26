@@ -16,9 +16,8 @@ import java.io.*;
 import java.util.Map;
 
 /**
- *
- * @author Jennifer
- * modified by 万只羊 todo 这段代码比较丑
+ * Created by don on 08/05/2017.
+ * todo 这段代码比较丑
  */
 public class FastBuilder {
 
@@ -68,10 +67,10 @@ public class FastBuilder {
 
 		File dir = rawFile.getParentFile();
 
-		File ngramFile = new File(dir, "ngram_left.data");
-		File ngramSort = new File(dir, "sort_ngram_left.data");
-		File ngramfreq = new File(dir, "freq_ngram_left.data");
-		File ngramFreqSort = new File(dir, "freq_ngram_left_sort.data");
+		File ngramFile = new File(dir, "ngram_left.tmp");
+		File ngramSort = new File(dir, "sort_ngram_left.tmp");
+		File ngramfreq = new File(dir, "freq_ngram_left.tmp");
+		File ngramFreqSort = new File(dir, "freq_ngram_left_sort.tmp");
 
 		try (BufferedReader breader = Files.newReader(rawFile, Charsets.UTF_8);
 				BufferedWriter writer = Files.newWriter(ngramFile,
@@ -184,10 +183,10 @@ public class FastBuilder {
 
 		File dir = rawFile.getParentFile();
 
-		File ngramFile = new File(dir, "ngram.data");
-		File ngramSort = new File(dir, "ngram_sort.data");
-		File ngramfreq = new File(dir, "freq_ngram.data");
-		File ngramfreqSort = new File(dir, "freq_ngram_sort.data");
+		File ngramFile = new File(dir, "ngram.tmp");
+		File ngramSort = new File(dir, "ngram_sort.tmp");
+		File ngramfreq = new File(dir, "freq_ngram.tmp");
+		File ngramfreqSort = new File(dir, "freq_ngram_sort.tmp");
 
 		try (BufferedReader breader = Files.newReader(rawFile, Charsets.UTF_8);
 				BufferedWriter writer = Files.newWriter(ngramFile,
@@ -298,9 +297,9 @@ public class FastBuilder {
 
 		File frFile = new File(freqRight);
 		File lFile = new File(left);
-		File mergeTmp = new File(frFile.getParentFile(), "merge.tmp");
-		File mergeTmp2 = new File(frFile.getParentFile(), "merge.tmp2");
-		File mergeFile = new File(frFile.getParentFile(), "merge_entropy.data");
+		File mergeTmp = new File(frFile.getParentFile(), "merge1.tmp");
+		File mergeTmp2 = new File(frFile.getParentFile(), "merge2.tmp");
+		File mergeFile = new File(frFile.getParentFile(), "merge_entropy.tmp");
 
 		try (BufferedReader rr = Files.newReader(frFile, Charsets.UTF_8);
 				BufferedReader lr = Files.newReader(lFile, Charsets.UTF_8);
@@ -355,7 +354,10 @@ public class FastBuilder {
 				mf.write(seg1[0] + "\t" + freq + "\t" + le + "\t" + re + "\n");
 
 			}
-
+			rr.close();
+			lr.close();
+			mw.close();
+			mf.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -386,7 +388,7 @@ public class FastBuilder {
 		File ffile = new File(freqFile);
 		File efile = new File(entropyFile);
 		File wfile = new File(efile.getParentFile(), prefix + ".words");
-		File wsfile = new File(efile.getParentFile(), prefix + ".words_sort");
+		//File wsfile = new File(efile.getParentFile(), prefix + ".words_sort");
 
 		try (BufferedReader fr = Files.newReader(ffile, Charsets.UTF_8);
 				BufferedReader er = Files.newReader(efile, Charsets.UTF_8);
@@ -444,7 +446,7 @@ public class FastBuilder {
 			//ww.close();
 			logger.info("start to sort extracted words");
 			ww.flush();
-			sortFile(wfile, wsfile);
+			//sortFile(wfile, wsfile);
 			logger.info("all done");
 
 		} catch (FileNotFoundException e) {

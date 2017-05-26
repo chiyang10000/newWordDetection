@@ -36,12 +36,17 @@ public class WordInfoInCorpus {
 			calcWordInfo();
 		}
 	}
+	public WordInfoInCorpus(String corpusInput, String output) {
+		this.corpusInput = corpusInput;
+		corpus = corpusInput+".tmp";
+		while (!loadWordInfo()) {
+			calcWordInfo();
+		}
+	}
 
 	public static void clean() {
 		RunSystemCommand.run("rm data/corpus/*.tmp");
-		RunSystemCommand.run("rm data/corpus/*.tmp2");
-		RunSystemCommand.run("rm data/corpus/*.data");
-		RunSystemCommand.run("rm data/corpus/*.words_sort");
+		RunSystemCommand.run("rm *.tmp");
 	}
 
 	public String addWordInfo(String line) {
@@ -74,6 +79,7 @@ public class WordInfoInCorpus {
 				writer.newLine();
 				writerDis.newLine();
 			}
+			reader.close();
 			writer.close();
 			writerDis.close();
 		} catch (IOException e) {
@@ -112,10 +118,11 @@ public class WordInfoInCorpus {
 						wordInfo.put(seg[0], tmp);
 					}
 				}
+				reader.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			logger.info("{} strings in the corpus", wordInfo.size());
+			logger.info("{} strings in the [{}]", wordInfo.size(), corpusInput);
 			discreteWordInfo = new DiscreteWordInfo(config.levelNum, tfList, pmiList, leList, reList);
 			return true;
 		} // file exist!
@@ -232,6 +239,7 @@ public class WordInfoInCorpus {
 			tf = new double[levelNum + 1];
 			le = new double[levelNum + 1];
 			re = new double[levelNum + 1];
+			System.err.println("discrete level of (tf, pmi, le, re) in "+ corpusInput);
 			for (int i = 0; i < levelNum; i++) {
 				pmi[i] = tmp_pmi[i * tmp_pmi.length / levelNum];
 				tf[i] = tmp_tf[i * tmp_tf.length / levelNum];
