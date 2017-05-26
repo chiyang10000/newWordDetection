@@ -78,32 +78,33 @@ public class Corpus {
 					String pos = config.getPos(w);
 					try {
 						if (
-								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config.newWordExcludeRegex)
+								(nerType != nerType.nw && pos.contains(nerType.pattern) && !word.matches(config
+										.newWordExcludeRegex)
 										||
 										(nerType == Ner.nw && renMinRiBao.isNewWord(word)
-											//&&	!(inputFile == config.testData && !trainData.isNewWord(word))
+												//&&	!(inputFile == config.testData && !trainData.isNewWord(word))
 										)
 								)
-										&& !wordList.contains(word))
-						{
-							int lRE=9, rLE=9;
-							if (i>0)
-								lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i-1]));
-							if (i<strs.length-1)
-								rLE = wordInfo.discreteWordInfo.getLE(config.removePos(strs[i+1]));
+										&& !wordList.contains(word)) {
+							int lRE = 9, rLE = 9;
+							if (i > 0)
+								lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i - 1]));
+							if (i < strs.length - 1)
+								rLE = wordInfo.discreteWordInfo.getLE(config.removePos(strs[i + 1]));
 							writer.append(
 									wordInfo.addWordInfo(String.join("\t",
-											word,config.category(word),
-											Integer.toString(word .length()),
+											word, config.category(word),
+											Integer.toString(word.length()),
 											pos,
 											Integer.toString(lRE),
 											Integer.toString(rLE)
 									)));
 							wordList.add(word);
 							writer.newLine();
-							if (i>0)
-							if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i-1])))
-								System.err.println(strs[i-1] +"\t" + strs[i]);
+							if (i > 0)
+								if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i -
+										1])))
+									System.err.println(strs[i - 1] + "\t" + strs[i]);
 						}
 					} catch (IOException e) {
 						logger.debug("untagged {}", line);
@@ -117,6 +118,7 @@ public class Corpus {
 		}
 		return wordList;
 	}
+
 	static void getInfoForAllWord(String inputFile) {
 		WordInfoInCorpus wordInfo = new WordInfoInCorpus(config.getInputFile(inputFile));
 		HashSet<String> wordList = new HashSet<>();
@@ -133,27 +135,27 @@ public class Corpus {
 					String pos = config.getPos(w);
 					try {
 						if (!wordList.contains(word))
-							if (!word.matches(config.newWordExcludeRegex))
-							{
-								int lRE=9, rLE=9;
-								if (i>0)
-									lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i-1]));
-								if (i<strs.length-1)
-									rLE = wordInfo.discreteWordInfo.getLE(config.removePos(strs[i+1]));
+							if (!word.matches(config.newWordExcludeRegex)) {
+								int lRE = 9, rLE = 9;
+								if (i > 0)
+									lRE = wordInfo.discreteWordInfo.getRE(config.removePos(strs[i - 1]));
+								if (i < strs.length - 1)
+									rLE = wordInfo.discreteWordInfo.getLE(config.removePos(strs[i + 1]));
 								writer.append(
 										wordInfo.addWordInfo(String.join("\t",
-												word,config.category(word),
-												Integer.toString(word .length()),
+												word, config.category(word),
+												Integer.toString(word.length()),
 												pos,
 												Integer.toString(lRE),
 												Integer.toString(rLE),
-												renMinRiBao.isNewWord(word) ? "True" :"False"
+												renMinRiBao.isNewWord(word) ? "True" : "False"
 										)));
 								wordList.add(word);
 								writer.newLine();
-								if (i>0)
-									if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i-1])))
-										System.err.println(strs[i-1] +"\t" + strs[i]);
+								if (i > 0)
+									if (renMinRiBao.isNewWord(word) && renMinRiBao.isNewWord(config.removePos(strs[i -
+											1])))
+										System.err.println(strs[i - 1] + "\t" + strs[i]);
 							}
 					} catch (IOException e) {
 						logger.debug("untagged {}", line);
@@ -260,26 +262,24 @@ public class Corpus {
 
 	}
 
-	public static String convertToSrc(String[] inputFiles, String outputFile) {
+	public static String convertToSrc(String inputFile, String outputFile) {
 		BufferedReader reader = null;
 		int word = 0, article = 0;
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			for (String inputFile : inputFiles) {
-				reader = new BufferedReader(new FileReader(inputFile));
-				String line;
-				while ((line = reader.readLine()) != null) {
-					if (line.length() == 0) {
-						article++;
-						writer.newLine();
-						continue;
-					}
-					line = line.replaceAll("/[^ ]+", "");
-					line = line.replaceAll(" +", "");
-					writer.append(line);
+			reader = new BufferedReader(new FileReader(inputFile));
+			String line;
+			while ((line = reader.readLine()) != null) {
+				if (line.length() == 0) {
+					article++;
 					writer.newLine();
-					word += line.length();
+					continue;
 				}
+				line = line.replaceAll("/[^ ]+", "");
+				line = line.replaceAll(" +", "");
+				writer.append(line);
+				writer.newLine();
+				word += line.length();
 			}
 			writer.close();
 			logger.info("{} article {} characters in {}", article, word, outputFile);
@@ -302,9 +302,9 @@ public class Corpus {
 		RunSystemCommand.run("rm data/corpus/*");
 		trainData = new Corpus(config.trainData);
 
-		convertToSrc(new String[]{config.testData}, config.getInputFile(config.testData));
-		convertToSrc(new String[]{config.trainData}, config.getInputFile(config.trainData));
-		convertToSrc(new String[]{config.totalData}, config.getInputFile(config.totalData));
+		convertToSrc(config.testData, config.getInputFile(config.testData));
+		convertToSrc(config.trainData, config.getInputFile(config.trainData));
+		convertToSrc(config.totalData, config.getInputFile(config.totalData));
 
 		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner type : Ner.supported) {
@@ -312,7 +312,7 @@ public class Corpus {
 			extractWord(config.testData, type);
 			extractWord(config.totalData, type);
 		}
-getInfoForAllWord(config.totalData);
+		getInfoForAllWord(config.totalData);
 	}
 
 }

@@ -139,16 +139,16 @@ public class config {
 
 	static public String category(String word) {
 		if (word.matches(pureLetterStringRegex))
-			return "纯字母";
+			return "letter";
 		if (word.matches(pureNumStringRegex))
-			return "纯数字";
+			return "num";
 		if (word.matches(letterWithNumStringRegex))
-			return "字母和数字连字符组合";
+			return "letter-num";
 		if (word.matches(pureChineseStringRegex))
-			return "纯汉字";
+			return "chinese";
 		if (word.matches(chineseJoinedStringRegex))
-			return "汉字加连字符斜杠分隔符";
-		return "混合";
+			return "chineseWithHyphen";
+		return "mix_string";
 	}
 
 	public static String getAnswerFile(String inputFile, Ner ner) {

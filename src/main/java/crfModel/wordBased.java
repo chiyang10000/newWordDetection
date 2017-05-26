@@ -48,23 +48,21 @@ public class wordBased extends CRFModel implements Serializable {
 			config.isCRFsuite = true;
 			config.algorithm = al + config.algorithm;
 		}
-		String[] corpus = new String[]{config.trainData};
+		String trainData= config.trainData;
+		String testData = config.testData;
 		Test.clean();
 		wordBased wordBased = new wordBased();
 		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
-		String data = config.testData;
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			if (ner == Ner.ner)
 				continue;
 			if (!config.testModel.contains(ner.name))
 				continue;
 			wordBased.calcMostRecallInAnsj(config.testData, ner);
-			if (true)
-				return;
 			if (config.trainModel.contains(ner.name))
-				wordBased.train(corpus, ner);
-			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),
-					wordBased.detectNewWord(config.getInputFile(data), "tmp/tmp." + ner.name, ner),
+				wordBased.train(trainData, ner);
+			Test.test(Test.readWordList(config.getAnswerFile(testData, ner)),
+					wordBased.detectNewWord(config.getInputFile(testData), "tmp/tmp." + ner.name, ner),
 					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
 			);
 		}
@@ -171,18 +169,16 @@ public class wordBased extends CRFModel implements Serializable {
 	 * 新词是bme
 	 * 标注分词后的文件，有可能某些新词不能由已分割的词合并出来
 	 *
-	 * @param inputFiles 同时设置mostHitInTrainData
 	 */
 	@Override
-	public void convert2TrainInput(String[] inputFiles, Ner ner) {
+	public void convert2TrainInput(String inputFile, Ner ner) {
 		logger.info("levelNum is {}", config.levelNum);
 		BufferedReader reader;
 		String line, goldenSegWithoutTag, srcline;
-		wordInfoInCorpus = new WordInfoInCorpus(Corpus.convertToSrc(inputFiles, "tmp/tmp.train"));// todo
+		wordInfoInCorpus = new WordInfoInCorpus(Corpus.convertToSrc(inputFile, "tmp/tmp.train"));// todo
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
-			for (String inputFile : inputFiles) {
 				reader = new BufferedReader(new FileReader(inputFile));
 
 				while ((line = reader.readLine()) != null) {
@@ -300,7 +296,6 @@ public class wordBased extends CRFModel implements Serializable {
 				} // 每一段
 
 
-			}
 			logger.debug("wrong size {}", wrong.size());
 			writer.close();
 		} catch (IOException e) {

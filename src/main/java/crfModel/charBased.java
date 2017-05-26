@@ -30,21 +30,21 @@ public class charBased extends CRFModel {
 			config.isCRFsuite = true;
 			config.algorithm = al + config.algorithm;
 		}
-		String[] corpus = new String[]{config.trainData};
+		String trainData = config.trainData;
+		String testData = config.testData;
 		charBased charBased = new charBased();
 
 		if (config.trainModel.contains(Ner.ner.name))
-			charBased.train(corpus, Ner.ner);
-		String data = config.totalData;
+			charBased.train(trainData, Ner.ner);
 		for (Ner ner : Ner.supported) {
 			//if (ner == Ner.nw)
 			//	continue;
 			if (config.trainModel.contains(ner.name))
-				charBased.train(corpus, ner);
+				charBased.train(trainData, ner);
 			if (!config.testModel.contains(ner.name))
 				continue;
-			Test.test(Test.readWordList(config.getAnswerFile(data, ner)),
-					charBased.detectNewWord(config.getInputFile(data), "tmp/tmp." + ner.name, ner),
+			Test.test(Test.readWordList(config.getAnswerFile(testData, ner)),
+					charBased.detectNewWord(config.getInputFile(testData), "tmp/tmp." + ner.name, ner),
 					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithm : "crf")
 			);
 		}
@@ -79,87 +79,85 @@ public class charBased extends CRFModel {
 	}
 
 	@Override
-	public void convert2TrainInput(String[] inputFiles, Ner ner) {
-		logger.debug("convert {} to {} for {}", inputFiles, trainData, ner.pattern);
+	public void convert2TrainInput(String inputFile, Ner ner) {
+		logger.debug("convert {} to {} for {}", inputFile, trainData, ner.pattern);
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
-			for (String inputFile : inputFiles) {
-				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-				String tmp;
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			String tmp;
 
-				if (ner != ner.nw) {
-					while ((tmp = reader.readLine()) != null) {
-						if (tmp.trim().length() == 0) continue;
-						String[] segs = tmp.split(config.sepWordRegex);
-						int index = 0;
-						List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ ]+", "").replaceAll(" ",
-								""));
-						for (String seg : segs) {
+			if (ner != ner.nw) {
+				while ((tmp = reader.readLine()) != null) {
+					if (tmp.trim().length() == 0) continue;
+					String[] segs = tmp.split(config.sepWordRegex);
+					int index = 0;
+					List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ ]+", "").replaceAll(" ",
+							""));
+					for (String seg : segs) {
 
-							String word = config.removePos(seg);
-							String pos = config.getPos(seg);
-							if (word.length() == 1) {
-								if (pos.matches(ner.pattern))
-									writer.println(String.format("%s\t%s", features.get(index++), pos + label_single))
-											;//bio 还是bemsio
-								else
-									writer.println(String.format("%s\t%s", features.get(index++), label_other));
+						String word = config.removePos(seg);
+						String pos = config.getPos(seg);
+						if (word.length() == 1) {
+							if (pos.matches(ner.pattern))
+								writer.println(String.format("%s\t%s", features.get(index++), pos + label_single))
+										;//bio 还是bemsio
+							else
+								writer.println(String.format("%s\t%s", features.get(index++), label_other));
 
+						} else {
+							if (pos.matches(ner.pattern)) {
+								writer.println(String.format("%s\t%s", features.get(index++), pos + label_begin));
+								for (int i = 1; i < word.length() - 1; i++) {
+									writer.println(String.format("%s\t%s", features.get(index++), pos +
+											label_meddle));// bio 还是bemsio
+								}
+								writer.println(String.format("%s\t%s", features.get(index++), pos + label_end));
 							} else {
-								if (pos.matches(ner.pattern)) {
-									writer.println(String.format("%s\t%s", features.get(index++), pos + label_begin));
-									for (int i = 1; i < word.length() - 1; i++) {
-										writer.println(String.format("%s\t%s", features.get(index++), pos +
-												label_meddle));// bio 还是bemsio
-									}
-									writer.println(String.format("%s\t%s", features.get(index++), pos + label_end));
-								} else {
-									for (int i = 0; i < word.length(); i++)
-										writer.println(String.format("%s\t%s", features.get(index++), label_other));
-								}
+								for (int i = 0; i < word.length(); i++)
+									writer.println(String.format("%s\t%s", features.get(index++), label_other));
 							}
-							if (word.matches(config.sepSentenceRegex))
-								writer.println();
 						}
-						writer.println();
+						if (word.matches(config.sepSentenceRegex))
+							writer.println();
 					}
-				}// nr
+					writer.println();
+				}
+			}// nr
 
-				if (ner == ner.nw) {
-					while ((tmp = reader.readLine()) != null) {
-						tmp = tmp.trim();
-						if (tmp.length() == 0) continue;
-						String[] segs = tmp.split(config.sepWordRegex);
-						int index = 0;
-						List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ /]+", "").replaceAll(" +",
-								""));
-						for (String seg : segs) {
-							String word = config.removePos(seg);
-							try {
-								if (word.length() == 1) {
-									writer.println(String.format("%s\t%s", features.get(index++), label_single));
-								} else {
-									writer.println(String.format("%s\t%s", features.get(index++), label_begin));
-									for (int i = 1; i < word.length() - 1; i++)
-										writer.println(String.format("%s\t%s", features.get(index++), label_meddle));
-									writer.println(String.format("%s\t%s", features.get(index++), label_end));
-								}
-							} catch (IndexOutOfBoundsException e) {
-								System.err.println("---" + word);
-								System.err.println(index);
-								System.err.println(tmp.replaceAll("/[^ /]+", "").replaceAll(" +", "").length());
-								System.err.println(segs.length);
-								System.err.println(tmp);
+			if (ner == ner.nw) {
+				while ((tmp = reader.readLine()) != null) {
+					tmp = tmp.trim();
+					if (tmp.length() == 0) continue;
+					String[] segs = tmp.split(config.sepWordRegex);
+					int index = 0;
+					List<String> features = CharacterFeature.getRes(tmp.replaceAll("/[^ /]+", "").replaceAll(" +",
+							""));
+					for (String seg : segs) {
+						String word = config.removePos(seg);
+						try {
+							if (word.length() == 1) {
+								writer.println(String.format("%s\t%s", features.get(index++), label_single));
+							} else {
+								writer.println(String.format("%s\t%s", features.get(index++), label_begin));
+								for (int i = 1; i < word.length() - 1; i++)
+									writer.println(String.format("%s\t%s", features.get(index++), label_meddle));
+								writer.println(String.format("%s\t%s", features.get(index++), label_end));
 							}
-							if (word.matches(config.sepSentenceRegex))
-								writer.println();
+						} catch (IndexOutOfBoundsException e) {
+							System.err.println("---" + word);
+							System.err.println(index);
+							System.err.println(tmp.replaceAll("/[^ /]+", "").replaceAll(" +", "").length());
+							System.err.println(segs.length);
+							System.err.println(tmp);
 						}
-
-						writer.println();
+						if (word.matches(config.sepSentenceRegex))
+							writer.println();
 					}
-				}// nw
 
-			} // 读取每个文件
+					writer.println();
+				}
+			}// nw
+
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

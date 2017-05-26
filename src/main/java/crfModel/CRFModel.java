@@ -116,11 +116,11 @@ abstract public class CRFModel implements NewWordDetector {
 		return newWordList;
 	}
 
-	public void train(String[] inputFiles, Ner ner) {
+	public void train(String inputFile, Ner ner) {
 		model = "data/model/"  + crfToolWrapper.getClass().getSimpleName() + "." +  this.getClass().getSimpleName() + "." + ner.model+ ".model";
 		template = "data/crf-template/" + this.getClass().getSimpleName() + "." + ner.template+ ".template";
 		trainData = "tmp/crf/" + this.getClass().getSimpleName() + "." + ner.model+ ".crf";
-		convert2TrainInput(inputFiles, ner);
+		convert2TrainInput(inputFile, ner);
 		crfToolWrapper.train(template, model, trainData);
 	}
 
@@ -139,7 +139,7 @@ abstract public class CRFModel implements NewWordDetector {
 		return convertTestOuput2Res(crfppOutput, outputFile, ner);
 	}
 
-	abstract void convert2TrainInput(String[] inputFiles, Ner ner);
+	abstract void convert2TrainInput(String inputFile, Ner ner);
 
 	abstract void convertSrc2TestInput(String inputFile, String crfppInput, Ner ner);
 
