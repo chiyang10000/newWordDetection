@@ -48,13 +48,13 @@ public class wordBased extends CRFModel implements Serializable {
 			config.isCRFsuite = true;
 			config.algorithm = al + config.algorithm;
 		}
-		String trainData= config.trainData;
-		String testData = config.testData;
+		String trainData= config.totalData;
+		String testData = config.totalData;
 		Test.clean();
 		wordBased wordBased = new wordBased();
 		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner ner : Ner.supported) {//;= config.ns;
-			if (ner == Ner.ner)
+			if (ner != Ner.nw)
 				continue;
 			if (!config.testModel.contains(ner.name))
 				continue;
@@ -63,7 +63,7 @@ public class wordBased extends CRFModel implements Serializable {
 				wordBased.train(trainData, ner);
 			Test.test(Test.readWordList(config.getAnswerFile(testData, ner)),
 					wordBased.detectNewWord(config.getInputFile(testData), "tmp/tmp." + ner.name, ner),
-					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? "ap" : "crf")
+					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithm : "crf")
 			);
 		}
 	}

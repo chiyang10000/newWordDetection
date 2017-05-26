@@ -30,15 +30,15 @@ public class charBased extends CRFModel {
 			config.isCRFsuite = true;
 			config.algorithm = al + config.algorithm;
 		}
-		String trainData = config.trainData;
-		String testData = config.testData;
+		String trainData = config.totalData;
+		String testData = config.totalData;
 		charBased charBased = new charBased();
 
 		if (config.trainModel.contains(Ner.ner.name))
 			charBased.train(trainData, Ner.ner);
 		for (Ner ner : Ner.supported) {
-			//if (ner == Ner.nw)
-			//	continue;
+			if (ner == Ner.nw)
+				continue;
 			if (config.trainModel.contains(ner.name))
 				charBased.train(trainData, ner);
 			if (!config.testModel.contains(ner.name))

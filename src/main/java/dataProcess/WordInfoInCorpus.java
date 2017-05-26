@@ -233,7 +233,7 @@ public class WordInfoInCorpus {
 			Double[] tmp_re = new Double[re_array.size()];
 			tmp_re = re_array.toArray(tmp_re);
 			Arrays.sort(tmp_re);
-			logger.info("tf {} pmi {}  le {} re {}", tmp_tf.length, tmp_pmi.length, tmp_le.length, tmp_re.length);
+			logger.info("[]: tf {} pmi {}  le {} re {}", corpusInput, tmp_tf.length, tmp_pmi.length, tmp_le.length, tmp_re.length);
 
 			pmi = new double[levelNum + 1];
 			tf = new double[levelNum + 1];
