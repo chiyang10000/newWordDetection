@@ -23,7 +23,7 @@ public class FastBuilder {
 
 	private static final Logger logger = LoggerFactory.getLogger(FastBuilder.class);
 
-	public final static String stopwords = "[【】［］“”（）《》，、｜。？！：；]";
+	public final static String stopwords = "[【】［］“”（）《》，、｜。？！：；\\p{Blank}\\p{Cntrl}]";
 	//public final static String stopwords = config.punctExcludeRegx;
 
 	
@@ -46,15 +46,13 @@ public class FastBuilder {
 	}
 	
 	private String reverse(String raw) {
-		StringBuilder bui = new StringBuilder();
-		for (int i = raw.length() - 1; i >= 0; --i)
-			bui.append(raw.charAt(i));
-		return bui.toString();
+		StringBuilder bui = new StringBuilder(raw);
+		return bui.reverse().toString();
 	}
 
 	public void sortFile(File in, File out) {
 		try {
-			ExternalSort.mergeSortedFiles(ExternalSort.sortInBatch(in), out);
+			ExternalSort.mergeSortedFiles(ExternalSort.sortInBatch(in), out);// 按照字符串比较的排序
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -79,10 +77,7 @@ public class FastBuilder {
 						Charsets.UTF_8);) {
 			String line = null;
 			while (null != (line = breader.readLine())) {
-				line = line.replaceAll(stopwords, " ")
-						.replaceAll("\\p{Blank}", " ")
-						.replaceAll("\\p{Space}", " ")
-						.replaceAll("\\p{Cntrl}", " ");
+				line = line.replaceAll(stopwords, " ");
 				for (String sen : Splitter.on(" ").omitEmptyStrings()
 						.splitToList(line)) {
 					sen = reverse(sen.trim());
@@ -195,12 +190,8 @@ public class FastBuilder {
 						Charsets.UTF_8);) {
 			String line = null;
 			while (null != (line = breader.readLine())) {
-				line = line.replaceAll(stopwords, " ")
-						.replaceAll("\\p{Blank}", " ")
-						.replaceAll("\\p{Space}", " ")
-						.replaceAll("\\p{Cntrl}", " ");
-				for (String sen : Splitter.on(" ").omitEmptyStrings()
-						.splitToList(line)) {
+				line = line.replaceAll(stopwords, " ");
+				for (String sen : Splitter.on(" ").omitEmptyStrings() .splitToList(line)) {
 					sen = sen.trim();
 					sen = "^" + sen + "$";
 					for (int i = 1; i < sen.length() - 1; ++i) {
@@ -408,19 +399,19 @@ public class FastBuilder {
 			while (null != (line = er.readLine())) {
 				cnt += 1;
 				if (cnt % 100000 == 0) {
-					logger.info("extract words done: " + cnt);
+					logger.info("extract {} strings done: ", cnt);
 				}
 				String[] seg = line.split("\t");
 				//if (3 != seg.length)
 					//continue;
-				String w = seg[0];
-				int f = Integer.parseInt(seg[1]);
+				String word = seg[0];
+				int tf = Integer.parseInt(seg[1]);
 				double le = Double.parseDouble(seg[2]);
 				double re = Double.parseDouble(seg[3]);
 				long max = -1;
-				for (int s = 1; s < w.length(); ++s) {
-					String lw = w.substring(0, s);
-					String rw = w.substring(s);
+				for (int s = 1; s < word.length(); ++s) {
+					String lw = word.substring(0, s);
+					String rw = word.substring(s);
 					Integer lfObj = tree.getValueForExactKey(lw);
 					Integer rfObj = tree.getValueForExactKey(rw);
 					int lf = -1;
@@ -432,16 +423,13 @@ public class FastBuilder {
 						rf = rfObj.intValue();
 					}
 					if (-1 == lf || -1 == rf) continue;
-					
 					long ff = lf * rf;
 					if (ff > max)
 						max = ff;
 				}
-				double pf = f * total / max;
+				double pf = tf * total / max;
 				double pmi = Math.log(pf) / Math.log(2);
-				ww.write(w + "\t" + f + "\t" + pmi + "\t" + le + "\t" + re + "\n");
-				//System.err.println("h");
-
+				ww.write(word + "\t" + tf + "\t" + pmi + "\t" + le + "\t" + re + "\n");
 			}
 			//ww.close();
 			logger.info("start to sort extracted words");

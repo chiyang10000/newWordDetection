@@ -122,9 +122,9 @@ public class Test {
 		newWordDetectors.add(charBased);
 		newWordDetectors.add(wordBased);
 
-		String inputFile = config.getInputFile(config.testData);
+		String testData = config.totalData;
 		String outputFile;
-
+/*
 		HashMap<String, String> tmp = readWordList("tmp/tmp.new");
 		HashMap<String, String> tmp1 = readWordList("tmp/tmp.per");
 		HashMap<String, String> tmp2 = readWordList("tmp/tmp.loc");
@@ -137,19 +137,17 @@ public class Test {
 		test(readWordList(config.getAnswerFile(config.testData, Ner.nr)), tmp, Ner.nr, "混合", "新词加实体识别");
 		test(readWordList(config.getAnswerFile(config.testData, Ner.ns)), tmp, Ner.ns, "混合", "新词加实体识别");
 		test(readWordList(config.getAnswerFile(config.testData, Ner.nt)), tmp, Ner.nt, "混合", "新词加实体识别");
+		*/
 
-		if (true)
-		return;
 		for (Ner nerType : Ner.supported) {
-			String answerFile = config.getAnswerFile(config.testData, nerType);
+			String answerFile = config.getAnswerFile(testData, nerType);
 			logger.debug("+++++++   {}   ++++++++", answerFile);
 			for (NewWordDetector newWordDetector : newWordDetectors) {
-				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile
-						.replaceAll(".*/", ""));
+				outputFile = String.format("tmp/%s.%s", newWordDetector.getClass().getSimpleName(), answerFile.replaceAll(".*/", ""));
 				Test.test(readWordList(answerFile),
-						newWordDetector.detectNewWord(inputFile, outputFile, nerType),
+						newWordDetector.detectNewWord(testData, outputFile, nerType),
 						nerType, newWordDetector.getClass().getSimpleName(),
-						newWordDetector.getClass().getName().contains("CRF") ? (config.isCRFsuite ? "ap": "crf") : "ansj");
+						newWordDetector.getClass().getName().contains("CRF") ? (config.isCRFsuite ? config.algorithm: "crf++") : "ansj");
 			}
 		}
 		logger.debug("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

@@ -49,7 +49,7 @@ public class wordBased extends CRFModel implements Serializable {
 			config.algorithm = al + config.algorithm;
 		}
 		String trainData= config.trainData;
-		String testData = config.testData;
+		String testData = config.totalData;
 		Test.clean();
 		wordBased wordBased = new wordBased();
 		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);

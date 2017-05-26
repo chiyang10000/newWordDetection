@@ -17,7 +17,6 @@ public class Corpus {
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
 	public Set<String> wordList;
 	final public static Corpus renMinRiBao = new Corpus(config.renmingribao);
-	public static Corpus trainData;
 
 	public Corpus(String inputFile) {
 		wordList = countSeg(inputFile);
@@ -95,9 +94,9 @@ public class Corpus {
 									wordInfo.addWordInfo(String.join("\t",
 											word, config.category(word),
 											Integer.toString(word.length()),
-											pos,
-											Integer.toString(lRE),
-											Integer.toString(rLE)
+											pos
+											//, Integer.toString(lRE)
+											//,Integer.toString(rLE)
 									)));
 							wordList.add(word);
 							writer.newLine();
@@ -185,8 +184,6 @@ public class Corpus {
 	}
 
 	public static boolean isNewWord(String word, String pos) {
-		if (trainData == null)
-			trainData = new Corpus(config.trainData);
 		return renMinRiBao.isNewWord(word);// && trainData.isNewWord(word);
 	}
 
@@ -300,7 +297,6 @@ public class Corpus {
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");
 		RunSystemCommand.run("rm data/corpus/*");
-		trainData = new Corpus(config.trainData);
 
 		convertToSrc(config.testData, config.getInputFile(config.testData));
 		convertToSrc(config.trainData, config.getInputFile(config.trainData));
