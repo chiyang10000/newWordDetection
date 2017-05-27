@@ -36,7 +36,7 @@ public class wordBased extends CRFModel implements Serializable {
 		parser.setIsNameRecognition(false);
 		parser.setIsNumRecognition(false);
 		parser.setIsQuantifierRecognition(false);
-		Ansj.segFile(parser, config.getInputFile(config.totalData), "tmp/wordCRF.ansj.txt");
+		//Ansj.segFile(parser, config.getInputFile(config.totalData), "tmp/wordCRF.ansj.txt");
 	}
 
 	public static void main(String... args) {
