@@ -34,7 +34,7 @@ public class Corpus {
 				while ((tmp = reader.readLine()) != null) {
 					String[] segs = tmp.split(config.sepWordRegex);
 					for (String word : segs) {
-						word = config.removePos(word).replaceAll("\\[", "");
+						word = config.removePos(word).replaceAll("[\\[［]", "");
 						if (!word.matches(config.newWordExcludeRegex))
 							wordCounter.incr(word);
 					}
