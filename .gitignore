@@ -3,12 +3,12 @@ out/
 target/
 tmp/
 data/corpus/
-data/model/
 data/test/
 *.log
 *.jar
 /data/info/new.info
 /data/info/new.infoDis
 /data/info/.ipynb_checkpoints/
+/tar
 *.r
 *.p
