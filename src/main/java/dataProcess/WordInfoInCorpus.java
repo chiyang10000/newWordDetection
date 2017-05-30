@@ -33,7 +33,7 @@ public class WordInfoInCorpus {
 
 	public WordInfoInCorpus(String corpusInput, String output) {
 		this.corpusInput = corpusInput;
-		corpus = corpusInput + ".tmp";
+		corpus = output;
 		while (!loadWordInfo()) {
 			calcWordInfo();
 		}
@@ -92,12 +92,13 @@ public class WordInfoInCorpus {
 	 * 读入所有词的信息
 	 */
 	private boolean loadWordInfo() {
-		if (new File(corpus + ".words").exists()) {
+		logger.debug("Trying to read [{}] word info into corpus", corpus);
+		if (new File("tmp/" + corpus + ".words").exists()) {
 			ArrayList<Integer> tfList = new ArrayList();
 			ArrayList<Double> leList = new ArrayList<>(), reList = new ArrayList<>(), pmiList = new ArrayList();
 			try {
 				logger.debug("Reading [{}] word info into corpus", corpus);
-				BufferedReader reader = new BufferedReader(new FileReader(corpus + ".words"));
+				BufferedReader reader = new BufferedReader(new FileReader("tmp/" + corpus + ".words"));
 				String line;
 				while ((line = reader.readLine()) != null) {
 					String seg[] = line.split("\t");
