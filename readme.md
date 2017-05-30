@@ -1,10 +1,15 @@
 # 新词发现毕业设计
 
-## 0. 论文
+## 论文
 - google scholar
     > unknown OR new word detection OR identification
 - cnki 
     > 新词发现 新词识别 新词检测
+    
+## 可以优化的地方
+- 把StringFreq里面的计算左右熵的算法改一下
+- 不算pmi,算pmi花了很多时间，而且没有用到
+- 现在把字母串的过滤功能去掉了，对连字符拼接的字母串的识别效果不是很好
 
 ## 基本用法
 ```
@@ -64,5 +69,5 @@ java -server -cp target/*with-dependencies.jar <main.class>
     > maven编译生成的jar包
 7. tar.sh
     > 打包运行时的必要文件到tar这个文件夹里面
-8 config.properties
+8. config.properties
     > 配置运行时的参数

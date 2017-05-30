@@ -14,8 +14,8 @@ import java.util.*;
  * Created by wan on 4/7/2017.
  */
 public class Corpus {
-	final public static Corpus renMinRiBao = new Corpus(config.renmingribao);
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
+	private static final Corpus renMinRiBao = new Corpus(config.renmingribao);
 	public Set<String> wordList;
 
 	public Corpus(String inputFile) {
@@ -246,6 +246,9 @@ public class Corpus {
 	 */
 	public static void main(String... args) throws IOException {
 		clean();
+		config.testData = "data/test/test.txt";
+		config.trainData = "data/test/train.txt";
+		config.totalData = "data/test/total.txt";
 		ConvertHalfWidthToFullWidth.convertFileToFulllKeepPos(config.news, config.newWordFile);
 		shuffleAndSplit(config.newWordFile, config.trainData, config.testData, config.totalData);
 		RunSystemCommand.run("rm data/corpus/wordlist/train.txt.wordlist");

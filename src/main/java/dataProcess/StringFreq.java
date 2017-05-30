@@ -43,6 +43,7 @@ public class StringFreq {
 		File rawFile = new File(rawTextFile);
 
 		File dir = rawFile.getParentFile();
+		rawTextFile = rawTextFile.replaceAll("^.*/", "");
 
 		File ngramFile = new File("tmp/", rawTextFile + ".ngram_left.tmp");
 		File ngramSort = new File("tmp/", rawTextFile + ".sort_ngram_left.tmp");
@@ -154,10 +155,9 @@ public class StringFreq {
 
 		logger.info("gen FreqRight from {}...", rawTextFile);
 		File rawFile = new File(rawTextFile);
+		rawTextFile = rawTextFile.replaceAll("^.*/", "");
 
-		File dir = rawFile.getParentFile();
-
-		File ngramFile = new File("tmp", rawTextFile + ".ngram.tmp");
+		File ngramFile = new File("tmp/" + rawTextFile + ".ngram.tmp");
 		File ngramSort = new File("tmp", rawTextFile + ".ngram_sort.tmp");
 		File ngramfreq = new File("tmp", rawTextFile + ".freq_ngram.tmp");
 		File ngramfreqSort = new File("tmp", rawTextFile + ".freq_ngram_sort.tmp");
