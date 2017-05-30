@@ -11,8 +11,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.*;
-import java.util.regex.Matcher;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
@@ -27,16 +28,15 @@ public class Ansj implements NewWordDetector {
 		Ner.calcOOV();
 		Ansj ansj1 = new AnsjTo();
 		Ansj ansj2 = new AnsjNlp();
-		String data = config.testData;
-		for (Ner type: Ner.supported) {
+		for (Ner type : Ner.supported) {
 			Test.test(
-					Test.readWordList(config.getAnswerFile(data, type)),
-					ansj1.detectNewWord(config.getInputFile(data), "tmp/ansjTo." + type.pattern, type),
+					Test.readWordList(config.getAnswerFile(config.testData, type)),
+					ansj1.detectNewWord(config.getInputFile(config.testData), "tmp/ansjTo." + type.pattern, type),
 					type, ansj1.getClass().getSimpleName(), "ansj"
 			);
 			Test.test(
-					Test.readWordList(config.getAnswerFile(data, type)),
-					ansj2.detectNewWord(config.getInputFile(data), "tmp/ansjNlp." + type.pattern, type),
+					Test.readWordList(config.getAnswerFile(config.testData, type)),
+					ansj2.detectNewWord(config.getInputFile(config.testData), "tmp/ansjNlp." + type.pattern, type),
 					type, ansj2.getClass().getSimpleName(), "ansj"
 			);
 		}

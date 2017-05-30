@@ -14,20 +14,14 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by don on 08/05/2017.
+ * Created by wan on 5/8/2017.
  */
 public class WordInfoInCorpus {
 	private static final Logger logger = LoggerFactory.getLogger(WordInfoInCorpus.class);
-	String corpus, corpusInput;
 	public DiscreteWordInfo discreteWordInfo;
 	public ExactWordInfo exactWordInfo = new ExactWordInfo();
+	String corpus, corpusInput;
 	private RadixTree<WordInfo> wordInfo = new ConcurrentRadixTree<>(new DefaultCharArrayNodeFactory());
-
-	public static void main(String... args) {
-		RunSystemCommand.run("rm data/corpus/*.words*");
-		clean();
-		new WordInfoInCorpus(config.news);
-	}
 
 	public WordInfoInCorpus(String corpusInput) {
 		this.corpusInput = corpusInput;
@@ -36,12 +30,19 @@ public class WordInfoInCorpus {
 			calcWordInfo();
 		}
 	}
+
 	public WordInfoInCorpus(String corpusInput, String output) {
 		this.corpusInput = corpusInput;
-		corpus = corpusInput+".tmp";
+		corpus = corpusInput + ".tmp";
 		while (!loadWordInfo()) {
 			calcWordInfo();
 		}
+	}
+
+	public static void main(String... args) {
+		RunSystemCommand.run("rm data/corpus/*.words*");
+		clean();
+		new WordInfoInCorpus(config.news);
 	}
 
 	public static void clean() {
@@ -133,14 +134,14 @@ public class WordInfoInCorpus {
 	private void calcWordInfo() {
 		logger.debug("Calc [{}] word info into corpus ...", corpus);
 		ConvertHalfWidthToFullWidth.convertFileToFulll(corpusInput, corpus); // 全角半角的转换
-		FastBuilder builder = new FastBuilder();
-		String left, right, entropyfile, rawpath = corpus;
+		StringFreq builder = new StringFreq();
+		String left, right, entropyFile, rawpath = corpus;
 
 		right = builder.genFreqRight(rawpath, config.maxStringLength + 1);
 		left = builder.genLeft(rawpath, config.maxStringLength + 1);
-		entropyfile = builder.mergeEntropy(right, left);
+		entropyFile = builder.mergeEntropy(right, left);
 
-		builder.extractWords(right, entropyfile, rawpath.replaceAll(".*[/\\\\]", ""));
+		builder.extractWords(right, entropyFile, rawpath.replaceAll(".*[/\\\\]", ""));
 		clean();
 	}
 
@@ -169,7 +170,7 @@ public class WordInfoInCorpus {
 		}
 
 		double getPMI(String word) {
-			if (word.matches(FastBuilder.stopwords))
+			if (word.matches(StringFreq.stopwords))
 				return 10000;
 			if (word.length() > config.maxStringLength) {
 				int off = (word.length() - config.maxStringLength) / 2;
@@ -235,11 +236,11 @@ public class WordInfoInCorpus {
 			Arrays.sort(tmp_re);
 			logger.info("[]: tf {} pmi {}  le {} re {}", corpusInput, tmp_tf.length, tmp_pmi.length, tmp_le.length, tmp_re.length);
 
-			pmi = new double[levelNum + 1];
 			tf = new double[levelNum + 1];
+			pmi = new double[levelNum + 1];
 			le = new double[levelNum + 1];
 			re = new double[levelNum + 1];
-			System.err.println("discrete level of (tf, pmi, le, re) in "+ corpusInput);
+			System.err.println("discrete level of (tf, pmi, le, re) in " + corpusInput);
 			for (int i = 0; i < levelNum; i++) {
 				pmi[i] = tmp_pmi[i * tmp_pmi.length / levelNum];
 				tf[i] = tmp_tf[i * tmp_tf.length / levelNum];

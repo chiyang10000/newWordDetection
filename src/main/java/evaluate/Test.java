@@ -1,6 +1,5 @@
 package evaluate;
 
-import NagaoAlgorithm.NagaoAlgorithm;
 import ansj.AnsjNlp;
 import ansj.AnsjTo;
 import crfModel.charBased;
@@ -21,6 +20,8 @@ import java.util.Map;
 public class Test {
 	static final DecimalFormat df = new DecimalFormat("##.000");
 	static final Logger logger = LoggerFactory.getLogger("report");
+	public static double p, r, f1;
+	public static int hit, select, sum;
 
 	static {
 		logger.debug("---------****----------\n");
@@ -29,21 +30,14 @@ public class Test {
 		logger.debug("exclude new word pattern {}", config.newWordExcludeRegex);
 	}
 
-	/**
-	 * 传入一个已分词好的文件。
-	 */
-	public static void testOnSeg(String inputFile) {
-		// todo
-	}
-
 	public static double test(Map<String, String> golden, Map<String, String> ans,
 							  Ner type, String method, String tool) {
 		sum = golden.size();
 		select = ans.size();
 		hit = 0;
 		try {
-			PrintWriter pWriter = new PrintWriter(new FileWriter(String.join(".","info/"+type.name, method, tool, "p")));
-			PrintWriter rWriter = new PrintWriter(new FileWriter(String.join(".","info/"+type.name, method, tool, "r")));
+			PrintWriter pWriter = new PrintWriter(new File(String.join(".", "info/" + type.name, method, tool, "p")), "utf8");
+			PrintWriter rWriter = new PrintWriter(new File(String.join(".", "info/" + type.name, method, tool, "r")));
 			for (String word : ans.keySet())
 				if (golden.keySet().contains(word) || golden.keySet().contains(config.newWordFileter(word))) {
 					hit++;
@@ -66,17 +60,14 @@ public class Test {
 		if (hit == 0)
 			return 100;
 		if (!tool.equals("counter"))
-		logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}",
-				df.format(f1), df.format(p), df.format(r),
-				df.format(type.oov),
-				hit, select, sum,
-				type.name, method, tool, config.comment
-		);
+			logger.info("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}",
+					df.format(f1), df.format(p), df.format(r),
+					df.format(type.oov),
+					hit, select, sum,
+					type.name, method, tool, config.comment
+			);
 		return 100 - p;
 	}
-
-	public static double p, r, f1;
-	public static int hit, select, sum;
 
 	public static HashMap<String, String> readWordList(String inputFile) {
 		HashMap<String, String> wordList = new HashMap<>();
@@ -105,7 +96,7 @@ public class Test {
 	public static void main(String... args) {
 		if (args.length > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = args[0] + config.algorithm;
+			config.algorithmInCRFSuite = args[0] + config.algorithmInCRFSuite;
 		}
 		//clean();
 		Ner.calcOOV();
@@ -147,7 +138,7 @@ public class Test {
 				Test.test(readWordList(answerFile),
 						newWordDetector.detectNewWord(testData, outputFile, nerType),
 						nerType, newWordDetector.getClass().getSimpleName(),
-						newWordDetector.getClass().getName().contains("CRF") ? (config.isCRFsuite ? config.algorithm: "crf++") : "ansj");
+						newWordDetector.getClass().getName().contains("CRF") ? (config.isCRFsuite ? config.algorithmInCRFSuite : "crf++") : "ansj");
 			}
 		}
 		logger.debug("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");

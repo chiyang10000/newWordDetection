@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by don on 04/05/2017.
+ * Created by don on 5/4/2017.
  */
 public class ConvertHalfWidthToFullWidth {
 	/**
@@ -59,7 +59,8 @@ public class ConvertHalfWidthToFullWidth {
 			Pattern posPattern = Pattern.compile("／[^／]+$");
 			Matcher m;
 			while ((line = reader.readLine()) != null) {
-				line = ToDBC(line).replace('—', '－').replace('―', '－').replace('　', '，');;//.破折号
+				line = ToDBC(line).replace('—', '－').replace('―', '－').replace('　', '，');
+				;//.破折号
 				String[] segs = line.split(" +");
 				StringBuffer stringBuffer = new StringBuffer();
 				for (String seg : segs) {
@@ -81,6 +82,7 @@ public class ConvertHalfWidthToFullWidth {
 		}
 		return outputFile;
 	}
+
 	public static String convertFileToFulll(String inputFile, String outputFile) {
 		try (
 				BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -88,7 +90,7 @@ public class ConvertHalfWidthToFullWidth {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				line = ToDBC(line).replace('—', '－').replace('―', '－')//破折号
-				.replace(' ', '，').replace('　', '，');//.空格断开
+						.replace(' ', '，').replace('　', '，');//.空格断开
 				writer.append(line.trim());
 				writer.newLine();
 			}
@@ -97,6 +99,7 @@ public class ConvertHalfWidthToFullWidth {
 		}
 		return outputFile;
 	}
+
 	public static void main(String... args) throws IOException {
 		convertFileToFulllKeepPos("CRFPPWrapper/CRFPPWrapper", "CRFPPWrapper/full.txt");
 	}

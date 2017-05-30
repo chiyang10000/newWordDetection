@@ -8,11 +8,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by don on 07/05/2017.
+ * 用来运行系统命令的，兼容linux和windows
+ * Created by wan on 5/7/2017.
  */
 public class RunSystemCommand {
 	static String shell = "bash", option = "-c";
 	static private Logger logger = LoggerFactory.getLogger("debug");
+
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
 			shell = "cmd";
@@ -28,7 +30,7 @@ public class RunSystemCommand {
 			InputStream in = pro.getInputStream();
 			InputStream err = pro.getErrorStream();
 			BufferedReader read = new BufferedReader(new InputStreamReader(in));
-			String line = null;
+			String line;
 			while ((line = read.readLine()) != null) {
 				System.err.print("\r" + line);
 				logger.trace(line);

@@ -14,44 +14,12 @@ import java.util.*;
  * Created by wan on 4/7/2017.
  */
 public class Corpus {
+	final public static Corpus renMinRiBao = new Corpus(config.renmingribao);
 	private static final Logger logger = LoggerFactory.getLogger(Corpus.class);
 	public Set<String> wordList;
-	final public static Corpus renMinRiBao = new Corpus(config.renmingribao);
 
 	public Corpus(String inputFile) {
 		wordList = countSeg(inputFile);
-	}
-
-	Set<String> countSeg(String inputFile) {
-		Set<String> wordList;
-		CounterMap wordCounter = new CounterMap();
-		if (!new File(config.getWordListFile(inputFile)).exists()) {
-			logger.debug("Scanning word list from {}...", inputFile);
-			try {
-				BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
-						.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
-				String tmp;
-				while ((tmp = reader.readLine()) != null) {
-					String[] segs = tmp.split(config.sepWordRegex);
-					for (String word : segs) {
-						word = config.removePos(word).replaceAll("[\\[［]", "");
-						if (!word.matches(config.newWordExcludeRegex))
-							wordCounter.incr(word);
-					}
-				}
-			} catch (java.io.IOException e) {
-				e.printStackTrace();
-				logger.error("Reading word list from {} err!", inputFile);
-			}
-			wordList = wordCounter.countAll().keySet();
-			logger.info("[{}] word list size: {}", inputFile, wordList.size());
-			wordCounter.output(config.getWordListFile(inputFile));
-		} else {
-			logger.info("Reading word lits from {} ...", config.getWordListFile(inputFile));
-			wordList = Test.readWordList(config.getWordListFile(inputFile)).keySet();
-			logger.info("[{}] word list size: {}", inputFile, wordList.size());
-		}
-		return wordList;
 	}
 
 	static void clean() {
@@ -166,21 +134,6 @@ public class Corpus {
 		} catch (IOException e) {
 			logger.error("err");
 		}
-	}
-
-	private boolean isNewWord(String word) {
-		if (word.length() <= 1)
-			return false;
-		//标点符号，含字母和数字的不算
-		//if (pos != null)
-		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
-
-		word = config.newWordFileter(word);
-		if (word.matches(config.newWordExcludeRegex))
-			return false;
-		if (!wordList.contains(word))
-			return true;
-		return false;
 	}
 
 	public static boolean isNewWord(String word, String pos) {
@@ -309,6 +262,53 @@ public class Corpus {
 			extractWord(config.totalData, type);
 		}
 		getInfoForAllWord(config.totalData);
+	}
+
+	Set<String> countSeg(String inputFile) {
+		Set<String> wordList;
+		CounterMap wordCounter = new CounterMap();
+		if (!new File(config.getWordListFile(inputFile)).exists()) {
+			logger.debug("Scanning word list from {}...", inputFile);
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(ConvertHalfWidthToFullWidth
+						.convertFileToFulllKeepPos(inputFile, "tmp/tmp")));
+				String tmp;
+				while ((tmp = reader.readLine()) != null) {
+					String[] segs = tmp.split(config.sepWordRegex);
+					for (String word : segs) {
+						word = config.removePos(word).replaceAll("[\\[［]", "");
+						if (!word.matches(config.newWordExcludeRegex))
+							wordCounter.incr(word);
+					}
+				}
+			} catch (java.io.IOException e) {
+				e.printStackTrace();
+				logger.error("Reading word list from {} err!", inputFile);
+			}
+			wordList = wordCounter.countAll().keySet();
+			logger.info("[{}] word list size: {}", inputFile, wordList.size());
+			wordCounter.output(config.getWordListFile(inputFile));
+		} else {
+			logger.info("Reading word lits from {} ...", config.getWordListFile(inputFile));
+			wordList = Test.readWordList(config.getWordListFile(inputFile)).keySet();
+			logger.info("[{}] word list size: {}", inputFile, wordList.size());
+		}
+		return wordList;
+	}
+
+	private boolean isNewWord(String word) {
+		if (word.length() <= 1)
+			return false;
+		//标点符号，含字母和数字的不算
+		//if (pos != null)
+		//if (pos.matches("[tmq]")) return false;// todo 去除数量词 和 时间词
+
+		word = config.newWordFileter(word);
+		if (word.matches(config.newWordExcludeRegex))
+			return false;
+		if (!wordList.contains(word))
+			return true;
+		return false;
 	}
 
 }

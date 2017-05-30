@@ -15,9 +15,6 @@ public class CRFPPWrapper extends CrfToolInterface {
 	static String crf_learn = new File("lib/crfpp/crf_learn").getAbsolutePath();
 	private static Logger logger = LoggerFactory.getLogger(CRFPPWrapper.class);
 
-	public CRFPPWrapper(CRFModel tmp) {
-		super(tmp);
-	}
 	static {
 		if (System.getProperty("os.name").contains("Win")) {
 			crf_test += ".exe";
@@ -28,6 +25,9 @@ public class CRFPPWrapper extends CrfToolInterface {
 			logger.error("{} not exits!", crf_test);
 	}
 
+	public CRFPPWrapper(CRFModel tmp) {
+		super(tmp);
+	}
 
 	public void decode(String modelFile, String bemsInputFile, String bemsOutputFile) {
 		String cmd = String.join(" ", crf_test, "-m", modelFile, bemsInputFile, "-o", bemsOutputFile);

@@ -14,12 +14,7 @@ import java.io.*;
 public class CRFsuiteWrapper extends CrfToolInterface {
 	static String crfsuite = new File("lib/crfsuite/bin/crfsuite").getAbsolutePath();
 	static String templateConverter = new File("lib/crfsuite/template.py").getAbsolutePath();
-	String algorithm = "-a " + config.algorithm;
 	private static Logger logger = LoggerFactory.getLogger(CRFsuiteWrapper.class);
-
-	public CRFsuiteWrapper(CRFModel tmp) {
-		super(tmp);
-	}
 
 	static {
 		if (!System.getProperty("os.name").contains("Linux")) {
@@ -29,6 +24,11 @@ public class CRFsuiteWrapper extends CrfToolInterface {
 			logger.error("{} not exits!", crfsuite);
 	}
 
+	String algorithm = "-a " + config.algorithmInCRFSuite;
+
+	public CRFsuiteWrapper(CRFModel tmp) {
+		super(tmp);
+	}
 
 	public void decode(String modelFile, String bemsInputFile, String bemsOutputFile) {
 		RunSystemCommand.run(String.join(" ", "python", templateConverter, crfModelWrapper.template,

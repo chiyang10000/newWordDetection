@@ -1,6 +1,5 @@
 package crfModel;
 
-import ansj.Ansj;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
@@ -9,7 +8,6 @@ import dataProcess.Corpus;
 import dataProcess.WordInfoInCorpus;
 import dataProcess.posPattern;
 import evaluate.Ner;
-import evaluate.RunSystemCommand;
 import evaluate.Test;
 import evaluate.config;
 import org.ansj.domain.Term;
@@ -23,13 +21,13 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * Created by don on 27/04/2017.
+ * Created by wan on 4/27/2017.
  */
 public class wordBased extends CRFModel implements Serializable {
 	private static final Logger logger = LoggerFactory.getLogger(charBased.class);
 	static private HashSet<String> wrong = new HashSet<>();
-	private WordInfoInCorpus wordInfoInCorpus;
 	public Analysis parser;
+	private WordInfoInCorpus wordInfoInCorpus;
 
 	{
 		parser = new ToAnalysis();
@@ -46,24 +44,21 @@ public class wordBased extends CRFModel implements Serializable {
 		Ner.calcOOV();
 		if (al.length() > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = al + config.algorithm;
+			config.algorithmInCRFSuite = al + config.algorithmInCRFSuite;
 		}
-		String trainData= config.totalData;
-		String testData = config.totalData;
 		Test.clean();
 		wordBased wordBased = new wordBased();
-		//config.wordInfoInCorpus_total = new WordInfoInCorpus(config.totalDataInput);
 		for (Ner ner : Ner.supported) {//;= config.ns;
 			if (ner != Ner.nw)
 				continue;
-			if (!config.testModel.contains(ner.name))
+			if (!config.testModelList.contains(ner.name))
 				continue;
 			wordBased.calcMostRecallInAnsj(config.testData, ner);
-			if (config.trainModel.contains(ner.name))
-				wordBased.train(trainData, ner);
-			Test.test(Test.readWordList(config.getAnswerFile(testData, ner)),
-					wordBased.detectNewWord(config.getInputFile(testData), "tmp/tmp." + ner.name, ner),
-					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithm : "crf")
+			if (config.trainModelList.contains(ner.name))
+				wordBased.train(config.trainData, ner);
+			Test.test(Test.readWordList(config.getAnswerFile(config.testData, ner)),
+					wordBased.detectNewWord(config.getInputFile(config.testData), "tmp/tmp." + ner.name, ner),
+					ner, wordBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithmInCRFSuite : "crf")
 			);
 		}
 	}
@@ -112,7 +107,7 @@ public class wordBased extends CRFModel implements Serializable {
 							Term term = ansj.get(i);
 							as += term.getRealName();
 							if (gs.equals(as)) {
-								if (newWordList.contains(gs)) {
+								if (newWordList.contains(gs) && !validNewWordList.contains(gs)) {
 
 									String t = "", u = "";
 									int p = i;
@@ -135,7 +130,7 @@ public class wordBased extends CRFModel implements Serializable {
 									}
 								}
 								if (gs.equals(as)) {
-									if (newWordList.contains(gs)) {
+									if (newWordList.contains(gs) && !validNewWordList.contains(gs)) {
 										String t = "", u = "";
 										int p = i;
 										while (!t.equals(gs)) {
@@ -168,7 +163,6 @@ public class wordBased extends CRFModel implements Serializable {
 	 * 正确的单个词是s
 	 * 新词是bme
 	 * 标注分词后的文件，有可能某些新词不能由已分割的词合并出来
-	 *
 	 */
 	@Override
 	public void convert2TrainInput(String inputFile, Ner ner) {
@@ -179,121 +173,121 @@ public class wordBased extends CRFModel implements Serializable {
 		// 这个为了方便，可能有bug
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(trainData));
-				reader = new BufferedReader(new FileReader(inputFile));
+			reader = new BufferedReader(new FileReader(inputFile));
 
-				while ((line = reader.readLine()) != null) {
-					goldenSegWithoutTag = line.replaceAll("/[^ /]+", "");// 去掉词性
-					srcline = goldenSegWithoutTag.replaceAll(" ", "");
+			while ((line = reader.readLine()) != null) {
+				goldenSegWithoutTag = line.replaceAll("/[^ /]+", "");// 去掉词性
+				srcline = goldenSegWithoutTag.replaceAll(" ", "");
 
-					if (srcline.length() == 0) continue;// 不是空行
-					String[] golden = goldenSegWithoutTag.split(config.sepWordRegex);
-					String[] goldenTag = line.replaceAll("[^ ]+/", "").split(config.sepWordRegex);
-					List<Term> ansj = parser.parseStr(srcline).getTerms();
+				if (srcline.length() == 0) continue;// 不是空行
+				String[] golden = goldenSegWithoutTag.split(config.sepWordRegex);
+				String[] goldenTag = line.replaceAll("[^ ]+/", "").split(config.sepWordRegex);
+				List<Term> ansj = parser.parseStr(srcline).getTerms();
 
-					int goldenIndex = 0;
-					String gs = golden[0], as = "";
-					String label = label_single;
-					for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含且不等于as，
-						//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
-						Term term = ansj.get(i);
-						String ansjWord = term.getRealName();
-						as += ansjWord;
+				int goldenIndex = 0;
+				String gs = golden[0], as = "";
+				String label = label_single;
+				for (int i = 0; i < ansj.size(); i++) {// 总保证循环体开始之前 gs包含且不等于as，
+					//if (gs.length() == 0) logger.debug("{}\n{}", i, line); //这句话还修了一个bug呢
+					Term term = ansj.get(i);
+					String ansjWord = term.getRealName();
+					as += ansjWord;
 
 
-						if (ner == ner.nw) {
-							//BEM S
-							if (gs.equals(as)) {
-								if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
-									label = label_single; // 正确的单个词3
-								else {
-									label = label_end; // 新词结尾1 或者 未识别序列 结尾
+					if (ner == ner.nw) {
+						//BEM S
+						if (gs.equals(as)) {
+							if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
+								label = label_single; // 正确的单个词3
+							else {
+								label = label_end; // 新词结尾1 或者 未识别序列 结尾
+								if (!gs.equals(golden[goldenIndex]))
+									debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
+							}
+							as = "";
+							if (goldenIndex + 1 < golden.length) {
+								gs = golden[++goldenIndex];
+							}
+						} else {
+							if (gs.contains(as)) {// gs还没被补全
+								if (as.length() == ansjWord.length())
+									label = label_begin; // 新词开头0
+								else
+									label = label_meddle; // 新词中部2
+							} else { // gs被as包含了
+								while (!gs.contains(as)) {
+									gs += golden[++goldenIndex];
+								}
+								if (gs.equals(as)) {
 									if (!gs.equals(golden[goldenIndex]))
 										debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
-								}
-								as = "";
-								if (goldenIndex + 1 < golden.length) {
-									gs = golden[++goldenIndex];
-								}
-							} else {
-								if (gs.contains(as)) {// gs还没被补全
-									if (as.length() == ansjWord.length())
-										label = label_begin; // 新词开头0
-									else
-										label = label_meddle; // 新词中部2
-								} else { // gs被as包含了
-									while (!gs.contains(as)) {
-										gs += golden[++goldenIndex];
-									}
-									if (gs.equals(as)) {
-										if (!gs.equals(golden[goldenIndex]))
-											debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
-										label = label_end;// 这个序列包含了多个词, 但是这个序列并不是新词
-										as = "";
-										if (goldenIndex + 1 < golden.length) {
-											gs = golden[++goldenIndex];
-										}
+									label = label_end;// 这个序列包含了多个词, 但是这个序列并不是新词
+									as = "";
+									if (goldenIndex + 1 < golden.length) {
+										gs = golden[++goldenIndex];
 									}
 								}
 							}
-						} // nw
+						}
+					} // nw
 
-						if (ner != ner.nw) {
-							//BEM S O
-							if (gs.equals(as)) {
-								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner
-										.pattern)) {
-									if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
-										label = goldenTag[goldenIndex] + label_single; // 正确的单个词3
+					if (ner != ner.nw) {
+						//BEM S O
+						if (gs.equals(as)) {
+							if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches(ner
+									.pattern)) {
+								if (golden[goldenIndex].length() == ansjWord.length()) // 正确的单个词
+									label = goldenTag[goldenIndex] + label_single; // 正确的单个词3
+								else
+									label = goldenTag[goldenIndex] + label_end; // 新词结尾1
+								if (!gs.equals(golden[goldenIndex]))
+									debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
+							} else
+								label = label_other;
+							as = "";
+							if (goldenIndex + 1 < golden.length) {
+								gs = golden[++goldenIndex];
+							}
+						} else {
+							if (gs.contains(as)) {// gs还没被补全
+								if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches
+										(ner.pattern)) {
+									if (as.length() == ansjWord.length())
+										label = goldenTag[goldenIndex] + label_begin; // 新词开头0
 									else
-										label = goldenTag[goldenIndex] + label_end; // 新词结尾1
-									if (!gs.equals(golden[goldenIndex]))
-										debug(i, ansj, goldenIndex, golden, goldenTag, gs);// for debug
+										label = goldenTag[goldenIndex] + label_meddle; // 新词中部2
 								} else
 									label = label_other;
-								as = "";
-								if (goldenIndex + 1 < golden.length) {
-									gs = golden[++goldenIndex];
+							} else { // gs被as包含了
+								while (!gs.contains(as)) {
+									gs += golden[++goldenIndex];
 								}
-							} else {
-								if (gs.contains(as)) {// gs还没被补全
-									if (gs.length() == golden[goldenIndex].length() && goldenTag[goldenIndex].matches
-											(ner.pattern)) {
-										if (as.length() == ansjWord.length())
-											label = goldenTag[goldenIndex] + label_begin; // 新词开头0
-										else
-											label = goldenTag[goldenIndex] + label_meddle; // 新词中部2
-									} else
-										label = label_other;
-								} else { // gs被as包含了
-									while (!gs.contains(as)) {
-										gs += golden[++goldenIndex];
-									}
-									if (gs.equals(as)) {
-										label = label_other;// 这个序列包含了多个词, 但是这个序列并不是新词
-										as = "";
-										if (goldenIndex + 1 < golden.length) {
-											gs = golden[++goldenIndex];
-										}
+								if (gs.equals(as)) {
+									label = label_other;// 这个序列包含了多个词, 但是这个序列并不是新词
+									as = "";
+									if (goldenIndex + 1 < golden.length) {
+										gs = golden[++goldenIndex];
 									}
 								}
 							}
-						}// nr ns
-
-						String prePos = "^", preprePos = "^", preWord = "";
-						if (i >= 2)
-							preprePos = ansj.get(i - 2).getNatureStr();
-						if (i >= 1) {
-							prePos = ansj.get(i - 1).getNatureStr();
-							preWord = ansj.get(i - 1).getRealName();
 						}
-						writer.println(new WordFeature(preWord, ansjWord, preprePos, prePos, term.getNatureStr())
-								.toString() + '\t' + label);
+					}// nr ns
 
-						if (ansjWord.matches(config.sepSentenceRegex))
-							writer.println();// 断句换行
-					} //处理分词结果的每个词
-					writer.println();
-				} // 每一段
+					String prePos = "^", preprePos = "^", preWord = "";
+					if (i >= 2)
+						preprePos = ansj.get(i - 2).getNatureStr();
+					if (i >= 1) {
+						prePos = ansj.get(i - 1).getNatureStr();
+						preWord = ansj.get(i - 1).getRealName();
+					}
+					writer.println(new WordFeature(preWord, ansjWord, preprePos, prePos, term.getNatureStr())
+							.toString() + '\t' + label);
+
+					if (ansjWord.matches(config.sepSentenceRegex))
+						writer.println();// 断句换行
+				} //处理分词结果的每个词
+				writer.println();
+			} // 每一段
 
 
 			logger.debug("wrong size {}", wrong.size());
@@ -307,11 +301,11 @@ public class wordBased extends CRFModel implements Serializable {
 	public void convertSrc2TestInput(String inputFile, String crfppInput, Ner ner) {
 		try {
 			//ConvertHalfWidthToFullWidth.convertFileToFulll(inputFile, "tmp.tmp");
-			ConvertHalfWidthToFullWidth.convertFileToFulll(inputFile, inputFile+".fullWidth");
+			ConvertHalfWidthToFullWidth.convertFileToFulll(inputFile, inputFile + ".fullWidth");
 			wordInfoInCorpus = new WordInfoInCorpus(inputFile + ".fullWidth", "wordinfo.tmp");// todo 这个为了方便，可能有bug
 			PrintWriter writer = new PrintWriter(new FileWriter(crfppInput));
 
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile+".fullWidth"));
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile + ".fullWidth"));
 			String line;
 			while ((line = reader.readLine()) != null) {
 
@@ -348,8 +342,6 @@ public class wordBased extends CRFModel implements Serializable {
 			logger.error("count word using ansj error");
 			e.printStackTrace();
 		}
-		RunSystemCommand.run("rm *.fullWidth");
-		RunSystemCommand.run("rm *.tmp");
 	}
 
 	class WordFeature {

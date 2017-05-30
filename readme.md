@@ -2,61 +2,67 @@
 
 ## 0. 论文
 - google scholar
-> unknown OR new word detection OR identification
+    > unknown OR new word detection OR identification
 - cnki 
-> 新词发现 新词识别 新词检测
+    > 新词发现 新词识别 新词检测
 
-## 1. 问题
-- unicode中非utf8字符，可能有bug
-- 低频词和数据稀疏性
-- 按照自己的语料训练，可能繁体字和半角符号不知道会怎样。
-- crf_test需要自己准备
-- 这语料没有标好啊
-- [ ]现在的shuffle是以句子为单位的。
-- [ ]nagao算法的Ptable应该用指针
-- [ ]词频的离散是相对于所有字串的
-- 新词的定义
-    - 不在词表里面的
-    - 分词器分不出来且不在词表里面的
-
-## 2. 计划
-- [ ] 5.10论文初稿
-- [x] 字母词和数字去掉
-- [x] BEMS变成分词文件和新词
-- [x] 原始文件变成分词bems文件（单字特征
-- [ ] 4.25看论文
-- [x] 4.25实现字特征的crf
-- [ ] 4.25测试分词准确率
-- [ ] 4.25确定测试数据
-- [ ] 4.25保留连字符
-- [ ] 4.25提取词典的词频
-- [ ] a+b松测度的结果
-- [ ] 命名实体识别
+## 基本用法
+```
+本程序可以在linux和windows上运行。
+java -cp target/detect.jar main.Main -i <输入文件>
+接下来当前文件会生成per.txt, loc.txt, org.txt, new.txt四个文件
+分别对应输入文件中人名，地名，机构名，新词。
+其中新词指的是人民日报语料2000年前3个月中未出现的词。词表见data/corpus/wordlist/renminribao.txt.wordlist。第一行为出现的词，第二行为其出现的频率。
+可修改此文件来减少或者增大基本词表。
+输出文件中，第一行为对应的人名，地名，机构名，新词，第二行为他们所在的上下文，其他各行为调试信息
+```
 
 
-## 3.想法
-- [x] 将所有标点符号当做断句的东西，而不只是句号
-- [ ] 讨论评价的方法
-- [ ] 搞更多的数据
-- [ ] 特征可以加上字符类型
-- [ ] 部分准确率
-- [ ] 改进分词系统的效果
-
-## 4.运行
-### 4.1 IDEA
+## 1.运行
+### 1.1 IDEA
     
     右键iml文件导入，右键pom.xml导入。
     
-### 4.2 teminal
+### 1.2 teminal
 ```shell
 git clone https://github.com/chiyang10000/newWordDetection
 cd newWordDetection
-scp wanchiyang@lab:~/newWordDetection/data/model/*.model data/model/
 mvn package
-java -server -cp target/*with-dependencies.jar
+java -server -cp target/*with-dependencies.jar <main.class>
 ```
-
 1. dataProcess.Corpus
     > 生成数据
-2. evaluate.Test
+2. crfModel.charBased
+    > 训练命名实体识别模型
+3. crfModel.wordBased
+    > 训练未登录词识别模型
+4. evaluate.Test
     > 运行测试
+    
+## 2. 文件组织
+1. data/
+    > 原始数据和缓存数据
+    1. data/model/
+        > 放的是训练出来的模型文件 
+    2. data/raw/
+        > 放原始数据文件
+    3. data/crf-template
+        > 放crfpp模板文件
+    4. data/corpus/
+        > 放缓存的词表信息
+    5. data/jupyter
+        > 从info/生成报表
+    6. data/test
+        > 运行dataProcess.Corpus之后的生成的测试文件
+2. library/
+    > ansj的字典文件,用来修正一些分词错误
+3. tmp/
+    > 运行时的一些临时文件
+4. info/
+    > 运行的一些结果统计
+6. target/
+    > maven编译生成的jar包
+7. tar.sh
+    > 打包运行时的必要文件到tar这个文件夹里面
+8 config.properties
+    > 配置运行时的参数

@@ -1,10 +1,9 @@
 package ansj;
 
-import evaluate.config;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 
 /**
- * Created by don on 08/05/2017.
+ * Created by wan on 5/8/2017.
  */
 public class AnsjNlp extends Ansj {
 	public AnsjNlp() {

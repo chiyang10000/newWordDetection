@@ -4,48 +4,52 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.Comparator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Created by wan on 5/17/2017.
+ */
 public class CounterMap implements Serializable {
 	static private final Logger logger = LoggerFactory.getLogger(CounterMap.class);
 	private static final long serialVersionUID = -3903452740943758085L;
 
 	private Map<String, MutableInteger> count = new ConcurrentHashMap<>();
 
-	public void output(String outputFile){
-		logger.debug("outputing CouterMap to {}", outputFile);
-		try {
-			Map<String, MutableInteger> map = SortByValue.sortByValue(count);
-			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-			for (Map.Entry<String, MutableInteger> entry: map.entrySet()){
-				writer.append(entry.getKey() + "\t" +entry.getValue().get());
-				writer.newLine();
-			}
-			writer.close();
-		}catch (Exception e){
-			e.printStackTrace();
-		}
-	}
-public void input(String inputFile){
-		logger.debug("Read CouterMap from {}", inputFile);
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-			String line;
-			while ((line = reader.readLine())!=null){
-				String[] tmps = line.split("\\s+");
-				incrby(tmps[0], Integer.parseInt(tmps[1]));
-			}
-		}catch (Exception e){
-			e.printStackTrace();
-		}
-	}
 	public CounterMap() {
 	}
 
 	public CounterMap(int capacitySize) {
 		count = new ConcurrentHashMap<>(capacitySize);
+	}
+
+	public void output(String outputFile) {
+		logger.debug("outputing CouterMap to {}", outputFile);
+		try {
+			Map<String, MutableInteger> map = SortByValue.sortByValue(count);
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			for (Map.Entry<String, MutableInteger> entry : map.entrySet()) {
+				writer.append(entry.getKey() + "\t" + entry.getValue().get());
+				writer.newLine();
+			}
+			writer.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void input(String inputFile) {
+		logger.debug("Read CouterMap from {}", inputFile);
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] tmps = line.split("\\s+");
+				incrBy(tmps[0], Integer.parseInt(tmps[1]));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void incr(String key) {
@@ -57,7 +61,7 @@ public void input(String inputFile){
 		}
 	}
 
-	public void incrby(String key, int delta) {
+	public void incrBy(String key, int delta) {
 
 		MutableInteger initValue = new MutableInteger(delta);
 		// 利用 HashMap 的put方法弹出旧值的特性
@@ -78,7 +82,7 @@ public void input(String inputFile){
 		return count;
 	}
 
-	private static final class MutableInteger implements Comparable{
+	private static final class MutableInteger implements Comparable {
 		private int val;
 
 		public MutableInteger(int val) {
@@ -92,6 +96,7 @@ public void input(String inputFile){
 		public void set(int val) {
 			this.val = val;
 		}
+
 		// 为了方便打印
 		public String toString() {
 			return Integer.toString(val);
@@ -99,7 +104,7 @@ public void input(String inputFile){
 
 		@Override
 		public int compareTo(Object o) {
-			return ((MutableInteger)o).get() - this.get();
+			return ((MutableInteger) o).get() - this.get();
 		}
 	}
 }

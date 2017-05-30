@@ -2,6 +2,7 @@ package Feature;
 
 /**
  * Created by wan on 5/17/2017.
+ * 把每一行的信息按列拼起来
  */
 public class FieldAppender {
 	StringBuilder[] stringBuilders;

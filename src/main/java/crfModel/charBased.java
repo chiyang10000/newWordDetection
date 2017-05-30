@@ -11,8 +11,6 @@ import java.io.*;
 import java.util.List;
 
 /**
- * 新词发现当成分词问题做
- * 命名实体识别当成
  * Created by wan on 4/24/2017.
  */
 public class charBased extends CRFModel {
@@ -28,24 +26,22 @@ public class charBased extends CRFModel {
 		al = "";
 		if (al.length() > 0) {
 			config.isCRFsuite = true;
-			config.algorithm = al + config.algorithm;
+			config.algorithmInCRFSuite = al + config.algorithmInCRFSuite;
 		}
-		String trainData = config.totalData;
-		String testData = config.totalData;
 		charBased charBased = new charBased();
 
-		if (config.trainModel.contains(Ner.ner.name))
-			charBased.train(trainData, Ner.ner);
+		if (config.trainModelList.contains(Ner.ner.name))
+			charBased.train(config.trainData, Ner.ner);
 		for (Ner ner : Ner.supported) {
 			if (ner == Ner.nw)
 				continue;
-			if (config.trainModel.contains(ner.name))
-				charBased.train(trainData, ner);
-			if (!config.testModel.contains(ner.name))
+			if (config.trainModelList.contains(ner.name))
+				charBased.train(config.trainData, ner);
+			if (!config.testModelList.contains(ner.name))
 				continue;
-			Test.test(Test.readWordList(config.getAnswerFile(testData, ner)),
-					charBased.detectNewWord(config.getInputFile(testData), "tmp/tmp." + ner.name, ner),
-					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithm : "crf")
+			Test.test(Test.readWordList(config.getAnswerFile(config.testData, ner)),
+					charBased.detectNewWord(config.getInputFile(config.testData), "tmp/tmp." + ner.name, ner),
+					ner, charBased.getClass().getSimpleName(), (config.isCRFsuite ? config.algorithmInCRFSuite : "crf")
 			);
 		}
 	}
