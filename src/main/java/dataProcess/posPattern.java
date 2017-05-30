@@ -13,8 +13,8 @@ import java.util.HashSet;
  * Created by wan on 5/19/2017.
  */
 public class posPattern {
-	public static posPattern renminribao = new posPattern(config.renmingribao);
 	private static Logger logger = LoggerFactory.getLogger(posPattern.class);
+	public static posPattern renminribao = new posPattern(config.renmingribao);
 	CounterMap counterMap = new CounterMap();
 
 	private posPattern(String inputFile) {
