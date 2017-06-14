@@ -13,6 +13,10 @@
 
 ## 基本用法（repo里面已经有模型文件了，不用重新训练）
 ```
+git clone https://github.com/chiyang10000/newWordDetection
+cd newWordDetection
+mvn package
+./tar.sh
 cd tar
 ./init.sh # 安装crfpp
 java -cp target/detect.jar main.Main -i <输入文件>
@@ -33,6 +37,7 @@ java -cp target/detect.jar main.Main -i <输入文件>
 git clone https://github.com/chiyang10000/newWordDetection
 cd newWordDetection
 mvn package
+./init.sh # 安装 crfpp
 java -server -cp target/*with-dependencies.jar <main.class>
 ```
 1. dataProcess.Corpus
