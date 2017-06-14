@@ -13,7 +13,8 @@
 
 ## 基本用法（repo里面已经有模型文件了，不用重新训练）
 ```
-本程序可以在linux和windows上运行。
+cd tar
+./init.sh # 安装crfpp
 java -cp target/detect.jar main.Main -i <输入文件>
 接下来当前文件会生成per.txt, loc.txt, org.txt, new.txt四个文件
 分别对应输入文件中人名，地名，机构名，新词。
