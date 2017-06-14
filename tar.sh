@@ -12,3 +12,4 @@ cp data/model/* tar/data/model
 cp target/newWordDetection-1.0-jar-with-dependencies.jar tar/target/detect.jar
 cp data/corpus/wordlist/renminribao.txt.wordlist tar/data/corpus/wordlist/renminribao.txt.wordlist
 cp config.properties tar/config.properties
+cp init.sh tar/
